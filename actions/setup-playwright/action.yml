@@ -1,0 +1,37 @@
+name: Setup Node + Playwright
+description: >-
+  Sets up Node.js with npm caching, installs dependencies, and installs
+  Playwright browsers. Shared by System-B15 consumer repos' E2E jobs.
+
+inputs:
+  node-version:
+    description: Node.js version to set up.
+    required: false
+    default: "24"
+  install-command:
+    description: Command that installs the repo's Node dependencies.
+    required: false
+    default: npm ci
+  browsers:
+    description: Space-separated Playwright browsers to install.
+    required: false
+    default: chromium
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: npm
+
+    - name: Install Node dependencies
+      shell: bash
+      run: ${{ inputs.install-command }}
+
+    - name: Install Playwright browsers
+      shell: bash
+      env:
+        BROWSERS: ${{ inputs.browsers }}
+      run: npx playwright install $BROWSERS --with-deps
