@@ -11,7 +11,7 @@ inputs:
   hive-token:
     description: >-
       PAT with read access to the Hive repository. Pass the repo's secret,
-      e.g. `${{ secrets.CLASSIC_ACCESS_TOKEN || secrets.HIVE_REPO_TOKEN }}`.
+      e.g. secrets.CLASSIC_ACCESS_TOKEN or secrets.HIVE_REPO_TOKEN.
     required: true
   hive-repo:
     description: Hive repository (owner/name).
