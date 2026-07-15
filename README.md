@@ -48,15 +48,16 @@ What it does, in order:
    `extra-hosts`.
 5. **Image acquisition** — `image-source: build` (default) builds from source
    with the built images cached per Hive commit SHA; `image-source: registry`
-   pulls prebuilt images (see contract below).
+   pulls the images published by System-B15/pyhive's "Publish Hive Images"
+   workflow (see below).
 6. **Boot + init** — compose up, migrate, collectstatic, seed service
    accounts/tags/programs, non-interactive superuser (`admin`/`Password1`).
 7. **Readiness check** — polls `https://hive.org/` until it responds.
 
 Key inputs (all optional except `hive-token`): `hive-repo`, `hive-ref`,
 `extra-hosts`, `python-version`, `image-source`, `registry-prefix`,
-`registry-tag`, `cache-version`, `free-disk-space`, `wait-attempts`.
-Outputs: `hive-sha`, `cache-hit`.
+`registry-token`, `registry-tag`, `cache-version`, `free-disk-space`,
+`wait-attempts`. Outputs: `hive-sha`, `cache-hit`.
 
 ### `actions/setup-playwright`
 
@@ -64,31 +65,38 @@ Node.js setup (with npm cache) + `npm ci` + Playwright browser install.
 Inputs: `node-version` (default `24`), `install-command` (default `npm ci`),
 `browsers` (default `chromium`).
 
-## Roadmap: build Hive once, reuse everywhere
+## Build Hive once, reuse everywhere
 
-Today every consumer repo builds Hive from source (mitigated by a per-repo
-image cache — `actions/cache` does not share across repos). The end state is
-that Hive is built **once** when its branch updates and every consumer pulls
-the published images.
+By default every consumer repo builds Hive from source (mitigated by a
+per-repo image cache — `actions/cache` does not share across repos). The end
+state is that Hive is built **once** when its branch updates and every
+consumer pulls the published images.
 
-### What the Hive team needs to add (publish contract)
+### The publisher: System-B15/pyhive "Publish Hive Images"
 
-A workflow in the Hive repo that, on every push to the consumed branch
-(currently `feature/sso`):
+Since we don't control the Hive repo, publishing lives in
+[System-B15/pyhive](https://github.com/System-B15/pyhive) (the org's
+Hive-adjacent repo, which already holds a Hive PAT for its sync workflow).
+Nightly (and on `workflow_dispatch`) it:
 
-1. Builds the prod images exactly as `setup-hive` does today
+1. Resolves the tip of `hivelms/Hive@feature/sso`; exits early if
+   `ghcr.io/system-b15/hive/core:<sha>` already exists.
+2. Otherwise builds the prod images exactly as `setup-hive` does
    (`manage_hive.py build_deps` + `docker compose -f docker-compose.yaml build`).
-2. For every runtime image `hive/<service>:<tag>` (base images excluded),
-   pushes it to a registry as:
-   - `<registry-prefix>/<service>:<commit-sha>` (required — consumers pin by SHA)
-   - `<registry-prefix>/<service>:<branch-tag>` (optional convenience tag)
+3. Pushes every runtime image `hive/<service>` (base images excluded) as
+   `ghcr.io/system-b15/hive/<service>:<commit-sha>` plus a `feature-sso`
+   branch tag. The `core` anchor image is pushed last, so the existence
+   check never sees a partial set.
 
-   where `<registry-prefix>` defaults to `ghcr.io/hivelms/hive` in
-   `setup-hive`, and `<service>` is the compose image name with the `hive/`
-   prefix stripped.
-3. Grants the consumer repos (or the org) read access to the packages.
+**Package access:** the images contain the private Hive backend — packages
+must stay **private**. Grant each consumer repo read access under the
+package's settings → Manage Actions access; the consumer's default
+`GITHUB_TOKEN` (the `registry-token` default) then works. Alternatively pass
+a PAT with `read:packages` as `registry-token`.
 
-Once that exists, consumers switch by adding one input:
+### Switching a consumer to pulled images
+
+One input:
 
 ```yaml
       - name: Set up Hive
@@ -100,6 +108,15 @@ Once that exists, consumers switch by adding one input:
 
 No other consumer changes are needed — the checkout (still required for the
 compose file and init scripts), boot, and readiness steps are identical.
+
+### If the Hive team ever publishes natively
+
+A workflow in `hivelms/Hive` pushing the same
+`<registry-prefix>/<service>:<sha>` layout on every push to the consumed
+branch (instead of pyhive's nightly poll) makes publishing immediate —
+consumers then just point `registry-prefix` at it. A `repository_dispatch`
+to pyhive's publish workflow (like the `hive-release` dispatch it already
+sends) achieves the same without moving the build.
 
 ## Versioning
 

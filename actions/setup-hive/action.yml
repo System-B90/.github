@@ -52,9 +52,18 @@ inputs:
     description: >-
       Registry namespace holding published Hive images (registry mode only).
       Images are expected at "<prefix>/<service>:<tag>" where <service> is the
-      compose image name with the "hive/" prefix stripped.
+      compose image name with the "hive/" prefix stripped. The default is
+      populated by System-B15/pyhive's "Publish Hive Images" workflow.
     required: false
-    default: ghcr.io/hivelms/hive
+    default: ghcr.io/system-b15/hive
+  registry-token:
+    description: >-
+      Token used to `docker login` before pulling (registry mode only). The
+      default GITHUB_TOKEN works when the Hive packages grant this repo
+      access (package settings → Manage Actions access); otherwise pass a PAT
+      with read:packages.
+    required: false
+    default: ${{ github.token }}
   registry-tag:
     description: >-
       Image tag to pull in registry mode. Defaults to the checked-out Hive
@@ -198,8 +207,9 @@ runs:
 
     # Registry mode: pull each runtime image the compose file declares from
     # the published namespace and retag it to the local name the compose file
-    # expects ("hive/<service>:<tag>"). Requires the Hive team's publish
-    # workflow to have pushed "<registry-prefix>/<service>:<tag>".
+    # expects ("hive/<service>:<tag>"). Images are published by
+    # System-B15/pyhive's "Publish Hive Images" workflow as
+    # "<registry-prefix>/<service>:<sha>".
     - name: Pull Hive images from registry
       if: inputs.image-source == 'registry'
       shell: bash
@@ -207,8 +217,13 @@ runs:
       env:
         REGISTRY_PREFIX: ${{ inputs.registry-prefix }}
         REGISTRY_TAG: ${{ inputs.registry-tag }}
+        REGISTRY_TOKEN: ${{ inputs.registry-token }}
         HIVE_SHA: ${{ steps.hive_sha.outputs.sha }}
       run: |
+        registry_host="${REGISTRY_PREFIX%%/*}"
+        if [ -n "$REGISTRY_TOKEN" ]; then
+          echo "$REGISTRY_TOKEN" | docker login "$registry_host" -u "$GITHUB_ACTOR" --password-stdin
+        fi
         tag="${REGISTRY_TAG:-$HIVE_SHA}"
         images=$(docker compose -f docker-compose.yaml config --images | grep '^hive/' | sort -u)
         if [ -z "$images" ]; then
@@ -221,7 +236,7 @@ runs:
           remote="${REGISTRY_PREFIX}/${name}:${tag}"
           echo "Pulling ${remote} -> ${img}"
           if ! docker pull "$remote"; then
-            echo "::error::Failed to pull ${remote}. Hive may not publish images yet — fall back to image-source: build, or check the registry-prefix/registry-tag inputs."
+            echo "::error::Failed to pull ${remote}. Check: System-B15/pyhive's 'Publish Hive Images' workflow has run for this Hive commit; this repo has read access to the packages (package settings → Manage Actions access) or registry-token is a PAT with read:packages; registry-prefix/registry-tag inputs are correct. Fall back to image-source: build if needed."
             exit 1
           fi
           docker tag "$remote" "$img"
