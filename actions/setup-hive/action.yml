@@ -1,0 +1,338 @@
+name: Setup Hive
+description: >-
+  Boots a full Hive (LMS backend / SSO identity provider) stack on the current
+  runner for E2E testing. Handles runner disk cleanup, Hive checkout, image
+  acquisition (source build with commit-keyed cache, or registry pull once
+  Hive publishes images), stack initialization, and the readiness check.
+  Shared by all System-B15 consumer repos (Bluz, Peek-a-boo, Madash) so the
+  Hive boot sequence lives in exactly one place.
+
+inputs:
+  hive-token:
+    description: >-
+      PAT with read access to the Hive repository. Pass the repo's secret,
+      e.g. `${{ secrets.CLASSIC_ACCESS_TOKEN || secrets.HIVE_REPO_TOKEN }}`.
+    required: true
+  hive-repo:
+    description: Hive repository (owner/name).
+    required: false
+    default: hivelms/Hive
+  hive-ref:
+    description: Hive branch/ref to check out.
+    required: false
+    default: feature/sso
+  hive-path:
+    description: Directory (relative to the workspace) to check Hive out into.
+    required: false
+    default: hive
+  hive-hostname:
+    description: Hostname mapped to 127.0.0.1 that Hive's nginx serves.
+    required: false
+    default: hive.org
+  extra-hosts:
+    description: >-
+      Extra /etc/hosts lines for the consumer app, one per line,
+      e.g. "127.0.0.3 bluz.dev".
+    required: false
+    default: ""
+  python-version:
+    description: Python version to set up (used by Hive's manage script and consumer scripts).
+    required: false
+    default: "3.11"
+  image-source:
+    description: >-
+      Where Hive runtime images come from. "build" clones and builds from
+      source, caching the built images keyed on the Hive commit SHA (current
+      default). "registry" pulls prebuilt images from a container registry —
+      usable once the Hive team publishes prod images (see the org .github
+      README for the expected publish contract).
+    required: false
+    default: build
+  registry-prefix:
+    description: >-
+      Registry namespace holding published Hive images (registry mode only).
+      Images are expected at "<prefix>/<service>:<tag>" where <service> is the
+      compose image name with the "hive/" prefix stripped. The default is
+      populated by System-B15/pyhive's "Publish Hive Images" workflow.
+    required: false
+    default: ghcr.io/system-b15/hive
+  registry-token:
+    description: >-
+      Token used to `docker login` before pulling (registry mode only). The
+      default GITHUB_TOKEN works when the Hive packages grant this repo
+      access (package settings → Manage Actions access); otherwise pass a PAT
+      with read:packages.
+    required: false
+    default: ${{ github.token }}
+  registry-tag:
+    description: >-
+      Image tag to pull in registry mode. Defaults to the checked-out Hive
+      commit SHA.
+    required: false
+    default: ""
+  cache-version:
+    description: Bump to invalidate the built-image cache (build mode only).
+    required: false
+    default: v1
+  free-disk-space:
+    description: >-
+      Remove preinstalled runner toolchains (~30 GB of .NET/Android/GHC/CodeQL)
+      before building. GitHub-hosted ubuntu runners otherwise run out of disk
+      while saving Hive's ~13 images.
+    required: false
+    default: "true"
+  wait-attempts:
+    description: Readiness-check attempts (5s apart) before failing.
+    required: false
+    default: "90"
+
+outputs:
+  hive-sha:
+    description: The Hive commit SHA that was checked out.
+    value: ${{ steps.hive_sha.outputs.sha }}
+  cache-hit:
+    description: Whether the built-image cache was hit (build mode only).
+    value: ${{ steps.hive_images_cache.outputs.cache-hit }}
+
+runs:
+  using: composite
+  steps:
+    # Preinstalled SDKs (dotnet/android/ghc/CodeQL) eat ~30GB the job never
+    # uses. Building + saving Hive's images later fills the root partition
+    # without this ("no space left on device" on docker save).
+    - name: Free disk space
+      if: inputs.free-disk-space == 'true'
+      shell: bash
+      run: |
+        echo "Disk space before cleanup:"
+        df -h /
+        sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc \
+          /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+        sudo docker image prune -af || true
+        echo "Disk space after cleanup:"
+        df -h /
+
+    # The Hive repository is private — checkout needs a PAT with read access.
+    # Fail early with an actionable message instead of a cryptic checkout error.
+    - name: Verify Hive checkout token and branch
+      shell: bash
+      env:
+        HIVE_CHECKOUT_TOKEN: ${{ inputs.hive-token }}
+        HIVE_REPO: ${{ inputs.hive-repo }}
+        HIVE_REF: ${{ inputs.hive-ref }}
+      run: |
+        if [ -z "$HIVE_CHECKOUT_TOKEN" ]; then
+          echo "::error::No Hive checkout token configured. Pass a PAT with read access to ${HIVE_REPO} via the hive-token input (repo Settings → Secrets and variables → Actions)."
+          exit 1
+        fi
+        repo_code=$(curl -s -o /dev/null -w "%{http_code}" \
+          -H "Authorization: token ${HIVE_CHECKOUT_TOKEN}" \
+          "https://api.github.com/repos/${HIVE_REPO}")
+        if [ "$repo_code" = "401" ]; then
+          echo "::error::The Hive checkout token is invalid, expired, or revoked (HTTP 401). Generate a new PAT and update the secret."
+          exit 1
+        fi
+        if [ "$repo_code" != "200" ]; then
+          echo "::error::The token cannot read ${HIVE_REPO} (HTTP $repo_code). Check: classic PAT has the 'repo' scope; the org allows classic PATs (or SSO-authorize the token); a fine-grained PAT must be approved by the org admins."
+          exit 1
+        fi
+        branch_code=$(curl -s -o /dev/null -w "%{http_code}" \
+          -H "Authorization: token ${HIVE_CHECKOUT_TOKEN}" \
+          "https://api.github.com/repos/${HIVE_REPO}/branches/${HIVE_REF}")
+        if [ "$branch_code" != "200" ]; then
+          echo "::error::The token can read ${HIVE_REPO}, but branch '${HIVE_REF}' was not found (HTTP $branch_code). Available branches:"
+          curl -s -H "Authorization: token ${HIVE_CHECKOUT_TOKEN}" \
+            "https://api.github.com/repos/${HIVE_REPO}/branches?per_page=100" \
+            | python3 -c "import json,sys; [print(' -', b['name']) for b in json.load(sys.stdin)]"
+          exit 1
+        fi
+        echo "Hive token OK — repository and branch '${HIVE_REF}' are reachable."
+
+    # blob:limit=50k mirrors Hive's documented clone (skips >1.5 GiB of large
+    # blobs; git lazy-fetches any that the checkout needs).
+    - name: Checkout Hive
+      uses: actions/checkout@v7
+      with:
+        repository: ${{ inputs.hive-repo }}
+        ref: ${{ inputs.hive-ref }}
+        token: ${{ inputs.hive-token }}
+        path: ${{ inputs.hive-path }}
+        filter: blob:limit=50k
+        persist-credentials: false
+
+    - name: Map local hostnames
+      shell: bash
+      env:
+        HIVE_HOSTNAME: ${{ inputs.hive-hostname }}
+        EXTRA_HOSTS: ${{ inputs.extra-hosts }}
+      run: |
+        echo "127.0.0.1 ${HIVE_HOSTNAME}" | sudo tee -a /etc/hosts
+        if [ -n "$EXTRA_HOSTS" ]; then
+          echo "$EXTRA_HOSTS" | while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            echo "$line" | sudo tee -a /etc/hosts
+          done
+        fi
+
+    - name: Setup Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Resolve Hive commit
+      id: hive_sha
+      shell: bash
+      working-directory: ${{ inputs.hive-path }}
+      run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+    # Hive rarely changes, so cache its built prod images keyed on the
+    # checked-out Hive commit. On a hit we `docker load` and skip the
+    # multi-minute build; when the Hive ref advances, the key changes and we
+    # rebuild + re-cache. No restore-keys — an inexact hit would run stale
+    # images against a newer checkout, so only an exact SHA reuses.
+    # NOTE: actions/cache is per-repo — this does not share across consumer
+    # repos. True cross-repo reuse arrives with registry mode.
+    - name: Cache Hive prod images
+      id: hive_images_cache
+      if: inputs.image-source == 'build'
+      uses: actions/cache@v6
+      with:
+        path: /tmp/hive-images.tar
+        key: hive-prod-images-${{ inputs.cache-version }}-${{ steps.hive_sha.outputs.sha }}
+
+    - name: Load cached Hive images
+      if: inputs.image-source == 'build' && steps.hive_images_cache.outputs.cache-hit == 'true'
+      shell: bash
+      run: docker load -i /tmp/hive-images.tar
+
+    # Registry mode: pull each runtime image the compose file declares from
+    # the published namespace and retag it to the local name the compose file
+    # expects ("hive/<service>:<tag>"). Images are published by
+    # System-B15/pyhive's "Publish Hive Images" workflow as
+    # "<registry-prefix>/<service>:<sha>".
+    - name: Pull Hive images from registry
+      if: inputs.image-source == 'registry'
+      shell: bash
+      working-directory: ${{ inputs.hive-path }}
+      env:
+        REGISTRY_PREFIX: ${{ inputs.registry-prefix }}
+        REGISTRY_TAG: ${{ inputs.registry-tag }}
+        REGISTRY_TOKEN: ${{ inputs.registry-token }}
+        HIVE_SHA: ${{ steps.hive_sha.outputs.sha }}
+      run: |
+        registry_host="${REGISTRY_PREFIX%%/*}"
+        if [ -n "$REGISTRY_TOKEN" ]; then
+          echo "$REGISTRY_TOKEN" | docker login "$registry_host" -u "$GITHUB_ACTOR" --password-stdin
+        fi
+        tag="${REGISTRY_TAG:-$HIVE_SHA}"
+        images=$(docker compose -f docker-compose.yaml config --images | grep '^hive/' | sort -u)
+        if [ -z "$images" ]; then
+          echo "::error::No 'hive/*' images found in docker-compose.yaml — cannot map registry images."
+          exit 1
+        fi
+        for img in $images; do
+          name="${img#hive/}"
+          name="${name%%:*}"
+          remote="${REGISTRY_PREFIX}/${name}:${tag}"
+          echo "Pulling ${remote} -> ${img}"
+          if ! docker pull "$remote"; then
+            echo "::error::Failed to pull ${remote}. Check: System-B15/pyhive's 'Publish Hive Images' workflow has run for this Hive commit; this repo has read access to the packages (package settings → Manage Actions access) or registry-token is a PAT with read:packages; registry-prefix/registry-tag inputs are correct. Fall back to image-source: build if needed."
+            exit 1
+          fi
+          docker tag "$remote" "$img"
+        done
+
+    # Bring Hive up in PROD mode (manage_hive.py default env) and run its init
+    # non-interactively. This inlines manage_hive.py's prod update()+init()
+    # rather than calling them, so the build can be skipped entirely when
+    # images came from cache or registry (a plain `docker compose build` would
+    # rebuild — `docker load`/`docker pull` restore images, not layer cache).
+    #
+    # CI adaptations vs `manage_hive.py init`:
+    #  * build_deps first on a build-mode miss — prod's update skips it, but a
+    #    source build needs the base images (hive/*-base) built.
+    #  * createsuperuser --noinput — init's is interactive and hangs.
+    #  * dev-only `frontend yarn`/`dummy_db` omitted — prod serves a pre-built
+    #    frontend and consumers seed Hive via pyhive.
+    # Prod omits the dev override, so pin -f docker-compose.yaml. Hive's
+    # committed .env sets HIVE_HOSTNAME_PLAIN=hive.org, ships sample SSL keys,
+    # and its nginx publishes 80/443.
+    - name: Build & Initialize Hive
+      shell: bash
+      working-directory: ${{ inputs.hive-path }}
+      env:
+        IMAGE_SOURCE: ${{ inputs.image-source }}
+        HIVE_CACHE_HIT: ${{ steps.hive_images_cache.outputs.cache-hit }}
+      run: |
+        # Cap Hive's prod resource footprint for CI. Hive's committed .env
+        # sets HIVE_CORE_WORKERS=10 × HIVE_CORE_THREADS=8 gunicorn workers,
+        # which on a 2-vCPU runner starves the consumer app's build/runtime
+        # (OOM/crash-loop → never ready). docker-compose.yaml loads
+        # .env.override (optional) after .env.
+        cat > .env.override <<'EOF'
+        HIVE_CORE_WORKERS=2
+        HIVE_CORE_THREADS=2
+        HIVE_NGINX_WORKERS=1
+        EOF
+        compose="docker compose -f docker-compose.yaml"
+
+        if [ "$IMAGE_SOURCE" = "registry" ]; then
+          echo "Using registry-pulled Hive images — skipping build."
+        elif [ "$HIVE_CACHE_HIT" = "true" ]; then
+          echo "Reusing cached Hive images — skipping build."
+        else
+          echo "No Hive image cache — building from source."
+          python3 manage_hive.py build_deps
+          $compose build
+          # Build cache/dangling layers from compiling nginx/frontend/core
+          # from source aren't needed once the final images exist, and
+          # `docker save` below needs roughly another full copy's worth of
+          # disk for the tar — reclaim first.
+          docker builder prune -af || true
+        fi
+
+        # Start the stack from (cached, pulled, or freshly built) images. The
+        # DB volume is never cached, so migrations + seeding run every time.
+        $compose up -d
+        $compose exec -T core python manage.py migrate
+        $compose exec -T core python manage.py collectstatic --noinput
+        $compose exec -T database sh /update.sh
+        $compose exec -T core python manage.py service_accounts
+        $compose exec -T core python manage.py load_tags
+        $compose exec -T \
+          -e DJANGO_SUPERUSER_USERNAME=admin \
+          -e DJANGO_SUPERUSER_PASSWORD=Password1 \
+          -e DJANGO_SUPERUSER_EMAIL=admin@hive.org \
+          core python manage.py createsuperuser --noinput
+        $compose exec -T core python manage.py load_programs
+
+        # On a build-mode miss, save the runtime images so the next run
+        # reuses them (actions/cache uploads the tar in its post step). Base
+        # images are excluded — they are only needed to build.
+        if [ "$IMAGE_SOURCE" = "build" ] && [ "$HIVE_CACHE_HIT" != "true" ]; then
+          imgs=$(docker images 'hive/*' --format '{{.Repository}}:{{.Tag}}' | grep -v -- '-base' || true)
+          if [ -n "$imgs" ]; then
+            echo "Disk space before saving Hive image cache:"
+            df -h /
+            echo "Saving Hive images for cache:"; echo "$imgs"
+            docker save -o /tmp/hive-images.tar $imgs
+          fi
+        fi
+
+    - name: Wait for Hive
+      shell: bash
+      env:
+        HIVE_HOSTNAME: ${{ inputs.hive-hostname }}
+        WAIT_ATTEMPTS: ${{ inputs.wait-attempts }}
+      run: |
+        for i in $(seq 1 "$WAIT_ATTEMPTS"); do
+          code=$(curl -ks -o /dev/null -w "%{http_code}" "https://${HIVE_HOSTNAME}/" || true)
+          if [ "$code" -ge 200 ] && [ "$code" -lt 500 ]; then
+            echo "Hive is up (HTTP $code)"
+            exit 0
+          fi
+          echo "Attempt $i/$WAIT_ATTEMPTS - Hive not ready yet (HTTP $code), waiting 5s..."
+          sleep 5
+        done
+        echo "::error::Hive failed to become ready in time"
+        exit 1
