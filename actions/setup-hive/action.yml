@@ -4,7 +4,7 @@ description: >-
   runner for E2E testing. Handles runner disk cleanup, Hive checkout, image
   acquisition (source build with commit-keyed cache, or registry pull once
   Hive publishes images), stack initialization, and the readiness check.
-  Shared by all System-B15 consumer repos (Bluz, Peek-a-boo, Madash) so the
+  Shared by all System-B90 consumer repos (Bluz, Peek-a-boo, Madash) so the
   Hive boot sequence lives in exactly one place.
 
 inputs:
@@ -53,9 +53,9 @@ inputs:
       Registry namespace holding published Hive images (registry mode only).
       Images are expected at "<prefix>/<service>:<tag>" where <service> is the
       compose image name with the "hive/" prefix stripped. The default is
-      populated by System-B15/pyhive's "Publish Hive Images" workflow.
+      populated by System-B90/pyhive's "Publish Hive Images" workflow.
     required: false
-    default: ghcr.io/system-b15/hive
+    default: ghcr.io/system-b90/hive
   registry-token:
     description: >-
       Token used to `docker login` before pulling (registry mode only). The
@@ -208,7 +208,7 @@ runs:
     # Registry mode: pull each runtime image the compose file declares from
     # the published namespace and retag it to the local name the compose file
     # expects ("hive/<service>:<tag>"). Images are published by
-    # System-B15/pyhive's "Publish Hive Images" workflow as
+    # System-B90/pyhive's "Publish Hive Images" workflow as
     # "<registry-prefix>/<service>:<sha>".
     - name: Pull Hive images from registry
       if: inputs.image-source == 'registry'
@@ -236,7 +236,7 @@ runs:
           remote="${REGISTRY_PREFIX}/${name}:${tag}"
           echo "Pulling ${remote} -> ${img}"
           if ! docker pull "$remote"; then
-            echo "::error::Failed to pull ${remote}. Check: System-B15/pyhive's 'Publish Hive Images' workflow has run for this Hive commit; this repo has read access to the packages (package settings → Manage Actions access) or registry-token is a PAT with read:packages; registry-prefix/registry-tag inputs are correct. Fall back to image-source: build if needed."
+            echo "::error::Failed to pull ${remote}. Check: System-B90/pyhive's 'Publish Hive Images' workflow has run for this Hive commit; this repo has read access to the packages (package settings → Manage Actions access) or registry-token is a PAT with read:packages; registry-prefix/registry-tag inputs are correct. Fall back to image-source: build if needed."
             exit 1
           fi
           docker tag "$remote" "$img"

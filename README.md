@@ -1,4 +1,4 @@
-# System-B15 Shared CI
+# System-B90 Shared CI
 
 Reusable composite actions for the org's CI pipelines. Consumer repos (Bluz,
 Peek-a-boo, Madash) all run their E2E suites against a live Hive backend —
@@ -17,13 +17,13 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Set up Hive
-        uses: System-B15/.github/actions/setup-hive@main
+        uses: System-B90/.github/actions/setup-hive@main
         with:
           hive-token: ${{ secrets.CLASSIC_ACCESS_TOKEN || secrets.HIVE_REPO_TOKEN }}
           extra-hosts: 127.0.0.3 myapp.dev
 
       - name: Set up Node + Playwright
-        uses: System-B15/.github/actions/setup-playwright@main
+        uses: System-B90/.github/actions/setup-playwright@main
 
       # ... boot your own stack, run tests ...
 ```
@@ -48,7 +48,7 @@ What it does, in order:
    `extra-hosts`.
 5. **Image acquisition** — `image-source: build` (default) builds from source
    with the built images cached per Hive commit SHA; `image-source: registry`
-   pulls the images published by System-B15/pyhive's "Publish Hive Images"
+   pulls the images published by System-B90/pyhive's "Publish Hive Images"
    workflow (see below).
 6. **Boot + init** — compose up, migrate, collectstatic, seed service
    accounts/tags/programs, non-interactive superuser (`admin`/`Password1`).
@@ -72,19 +72,19 @@ per-repo image cache — `actions/cache` does not share across repos). The end
 state is that Hive is built **once** when its branch updates and every
 consumer pulls the published images.
 
-### The publisher: System-B15/pyhive "Publish Hive Images"
+### The publisher: System-B90/pyhive "Publish Hive Images"
 
 Since we don't control the Hive repo, publishing lives in
-[System-B15/pyhive](https://github.com/System-B15/pyhive) (the org's
+[System-B90/pyhive](https://github.com/System-B90/pyhive) (the org's
 Hive-adjacent repo, which already holds a Hive PAT for its sync workflow).
 Nightly (and on `workflow_dispatch`) it:
 
 1. Resolves the tip of `hivelms/Hive@feature/sso`; exits early if
-   `ghcr.io/system-b15/hive/core:<sha>` already exists.
+   `ghcr.io/system-b90/hive/core:<sha>` already exists.
 2. Otherwise builds the prod images exactly as `setup-hive` does
    (`manage_hive.py build_deps` + `docker compose -f docker-compose.yaml build`).
 3. Pushes every runtime image `hive/<service>` (base images excluded) as
-   `ghcr.io/system-b15/hive/<service>:<commit-sha>` plus a `feature-sso`
+   `ghcr.io/system-b90/hive/<service>:<commit-sha>` plus a `feature-sso`
    branch tag. The `core` anchor image is pushed last, so the existence
    check never sees a partial set.
 
@@ -100,7 +100,7 @@ One input:
 
 ```yaml
       - name: Set up Hive
-        uses: System-B15/.github/actions/setup-hive@main
+        uses: System-B90/.github/actions/setup-hive@main
         with:
           hive-token: ${{ secrets.CLASSIC_ACCESS_TOKEN || secrets.HIVE_REPO_TOKEN }}
           image-source: registry
