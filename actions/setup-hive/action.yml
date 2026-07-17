@@ -2,23 +2,29 @@ name: Setup Hive
 description: >-
   Boots a full Hive (LMS backend / SSO identity provider) stack on the current
   runner for E2E testing. Handles runner disk cleanup, Hive checkout, image
-  acquisition (source build with commit-keyed cache, or registry pull once
-  Hive publishes images), stack initialization, and the readiness check.
-  Shared by all System-B15 consumer repos (Bluz, Peek-a-boo, Madash) so the
-  Hive boot sequence lives in exactly one place.
+  acquisition (source build with commit-keyed cache, or registry pull),
+  stack initialization, and the readiness check. Shared by all System-B90
+  consumer repos (Bluz, Peek-a-boo, Madash, hive-core) so the Hive boot
+  sequence lives in exactly one place.
 
 inputs:
   hive-token:
     description: >-
-      PAT with read access to the Hive repository. Pass the repo's secret,
-      e.g. secrets.CLASSIC_ACCESS_TOKEN or secrets.HIVE_REPO_TOKEN.
-    required: true
+      PAT with read access to the Hive repository. Only required for
+      image-source: build (it clones Hive's private source to build from).
+      image-source: registry does not need this at all — it reads
+      docker-compose.yaml/.env from pyhive-repo's public hive-stack/
+      directory instead of checking out private Hive source.
+      Pass the repo's secret, e.g. secrets.CLASSIC_ACCESS_TOKEN or
+      secrets.HIVE_REPO_TOKEN.
+    required: false
+    default: ""
   hive-repo:
-    description: Hive repository (owner/name).
+    description: Hive repository (owner/name). Build mode only.
     required: false
     default: hivelms/Hive
   hive-ref:
-    description: Hive branch/ref to check out.
+    description: Hive branch/ref to check out (build mode) or match in pyhive's hive-stack (registry mode).
     required: false
     default: feature/sso
   hive-path:
@@ -36,26 +42,35 @@ inputs:
     required: false
     default: ""
   python-version:
-    description: Python version to set up (used by Hive's manage script and consumer scripts).
+    description: Python version to set up (build mode only — Hive's manage script needs it).
     required: false
     default: "3.11"
   image-source:
     description: >-
-      Where Hive runtime images come from. "build" clones and builds from
-      source, caching the built images keyed on the Hive commit SHA (current
-      default). "registry" pulls prebuilt images from a container registry —
-      usable once the Hive team publishes prod images (see the org .github
-      README for the expected publish contract).
+      Where Hive runtime images come from. "build" clones hivelms/Hive
+      (private, needs hive-token) and builds from source, caching the built
+      images keyed on the Hive commit SHA. "registry" (recommended) pulls
+      prebuilt images published by pyhive-repo's "Publish Hive Images"
+      workflow, and reads the matching docker-compose.yaml/.env from that
+      same repo's public hive-stack/ directory — no token needed at all.
     required: false
     default: build
+  pyhive-repo:
+    description: >-
+      Repository (owner/name) whose hive-stack/ directory and published
+      images registry mode reads. Must be a public repo (or one this
+      workflow's default token can read) — registry mode intentionally
+      does not accept a token for this checkout.
+    required: false
+    default: System-B90/pyhive
   registry-prefix:
     description: >-
       Registry namespace holding published Hive images (registry mode only).
       Images are expected at "<prefix>/<service>:<tag>" where <service> is the
       compose image name with the "hive/" prefix stripped. The default is
-      populated by System-B15/pyhive's "Publish Hive Images" workflow.
+      populated by pyhive-repo's "Publish Hive Images" workflow.
     required: false
-    default: ghcr.io/system-b15/hive
+    default: ghcr.io/system-b90/hive
   registry-token:
     description: >-
       Token used to `docker login` before pulling (registry mode only). The
@@ -66,8 +81,8 @@ inputs:
     default: ${{ github.token }}
   registry-tag:
     description: >-
-      Image tag to pull in registry mode. Defaults to the checked-out Hive
-      commit SHA.
+      Image tag to pull in registry mode. Defaults to the HIVE_SHA recorded
+      in pyhive-repo's hive-stack/ directory at publish time.
     required: false
     default: ""
   cache-version:
@@ -88,8 +103,8 @@ inputs:
 
 outputs:
   hive-sha:
-    description: The Hive commit SHA that was checked out.
-    value: ${{ steps.hive_sha.outputs.sha }}
+    description: The Hive commit SHA that was checked out (build mode) or recorded in hive-stack/HIVE_SHA (registry mode).
+    value: ${{ steps.hive_sha.outputs.sha || steps.hive_sha_registry.outputs.sha }}
   cache-hit:
     description: Whether the built-image cache was hit (build mode only).
     value: ${{ steps.hive_images_cache.outputs.cache-hit }}
@@ -112,9 +127,47 @@ runs:
         echo "Disk space after cleanup:"
         df -h /
 
+    # ── Registry mode: no Hive checkout, no hive-token ─────────────────────
+    # Reads docker-compose.yaml/.env/HIVE_SHA from pyhive-repo's public
+    # hive-stack/ directory instead of checking out private Hive source —
+    # that's the whole point of registry mode: consumer repos don't need
+    # their own PAT with read access to hivelms/Hive just to get two config
+    # files, when the images (the actual thing that used to require the
+    # checkout to build) are already published.
+    - name: Checkout Hive stack config (registry mode)
+      if: inputs.image-source == 'registry'
+      uses: actions/checkout@v7
+      with:
+        repository: ${{ inputs.pyhive-repo }}
+        path: ${{ inputs.hive-path }}
+        sparse-checkout: |
+          hive-stack
+        sparse-checkout-cone-mode: false
+
+    - name: Flatten hive-stack config (registry mode)
+      if: inputs.image-source == 'registry'
+      shell: bash
+      working-directory: ${{ inputs.hive-path }}
+      run: |
+        if [ ! -f hive-stack/docker-compose.yaml ]; then
+          echo "::error::${{ inputs.pyhive-repo }}#hive-stack/docker-compose.yaml not found. Has 'Publish Hive Images' run there yet?"
+          exit 1
+        fi
+        mv hive-stack/* .
+        rmdir hive-stack
+
+    - name: Resolve Hive commit (registry mode)
+      id: hive_sha_registry
+      if: inputs.image-source == 'registry'
+      shell: bash
+      working-directory: ${{ inputs.hive-path }}
+      run: echo "sha=$(cat HIVE_SHA)" >> "$GITHUB_OUTPUT"
+
+    # ── Build mode: full Hive checkout, needs hive-token ───────────────────
     # The Hive repository is private — checkout needs a PAT with read access.
     # Fail early with an actionable message instead of a cryptic checkout error.
     - name: Verify Hive checkout token and branch
+      if: inputs.image-source == 'build'
       shell: bash
       env:
         HIVE_CHECKOUT_TOKEN: ${{ inputs.hive-token }}
@@ -122,7 +175,7 @@ runs:
         HIVE_REF: ${{ inputs.hive-ref }}
       run: |
         if [ -z "$HIVE_CHECKOUT_TOKEN" ]; then
-          echo "::error::No Hive checkout token configured. Pass a PAT with read access to ${HIVE_REPO} via the hive-token input (repo Settings → Secrets and variables → Actions)."
+          echo "::error::No Hive checkout token configured. image-source: build clones private Hive source and needs a PAT — pass one via hive-token (repo Settings → Secrets and variables → Actions), or switch to image-source: registry (no token needed)."
           exit 1
         fi
         repo_code=$(curl -s -o /dev/null -w "%{http_code}" \
@@ -151,6 +204,7 @@ runs:
     # blob:limit=50k mirrors Hive's documented clone (skips >1.5 GiB of large
     # blobs; git lazy-fetches any that the checkout needs).
     - name: Checkout Hive
+      if: inputs.image-source == 'build'
       uses: actions/checkout@v7
       with:
         repository: ${{ inputs.hive-repo }}
@@ -159,6 +213,19 @@ runs:
         path: ${{ inputs.hive-path }}
         filter: blob:limit=50k
         persist-credentials: false
+
+    - name: Setup Python
+      if: inputs.image-source == 'build'
+      uses: actions/setup-python@v6
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Resolve Hive commit
+      id: hive_sha
+      if: inputs.image-source == 'build'
+      shell: bash
+      working-directory: ${{ inputs.hive-path }}
+      run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
     - name: Map local hostnames
       shell: bash
@@ -174,24 +241,13 @@ runs:
           done
         fi
 
-    - name: Setup Python
-      uses: actions/setup-python@v6
-      with:
-        python-version: ${{ inputs.python-version }}
-
-    - name: Resolve Hive commit
-      id: hive_sha
-      shell: bash
-      working-directory: ${{ inputs.hive-path }}
-      run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-
     # Hive rarely changes, so cache its built prod images keyed on the
     # checked-out Hive commit. On a hit we `docker load` and skip the
     # multi-minute build; when the Hive ref advances, the key changes and we
     # rebuild + re-cache. No restore-keys — an inexact hit would run stale
     # images against a newer checkout, so only an exact SHA reuses.
     # NOTE: actions/cache is per-repo — this does not share across consumer
-    # repos. True cross-repo reuse arrives with registry mode.
+    # repos. Prefer image-source: registry for cross-repo reuse.
     - name: Cache Hive prod images
       id: hive_images_cache
       if: inputs.image-source == 'build'
@@ -207,9 +263,8 @@ runs:
 
     # Registry mode: pull each runtime image the compose file declares from
     # the published namespace and retag it to the local name the compose file
-    # expects ("hive/<service>:<tag>"). Images are published by
-    # System-B15/pyhive's "Publish Hive Images" workflow as
-    # "<registry-prefix>/<service>:<sha>".
+    # expects ("hive/<service>:<tag>"). Images are published by pyhive-repo's
+    # "Publish Hive Images" workflow as "<registry-prefix>/<service>:<sha>".
     - name: Pull Hive images from registry
       if: inputs.image-source == 'registry'
       shell: bash
@@ -218,7 +273,7 @@ runs:
         REGISTRY_PREFIX: ${{ inputs.registry-prefix }}
         REGISTRY_TAG: ${{ inputs.registry-tag }}
         REGISTRY_TOKEN: ${{ inputs.registry-token }}
-        HIVE_SHA: ${{ steps.hive_sha.outputs.sha }}
+        HIVE_SHA: ${{ steps.hive_sha_registry.outputs.sha }}
       run: |
         registry_host="${REGISTRY_PREFIX%%/*}"
         if [ -n "$REGISTRY_TOKEN" ]; then
@@ -236,7 +291,7 @@ runs:
           remote="${REGISTRY_PREFIX}/${name}:${tag}"
           echo "Pulling ${remote} -> ${img}"
           if ! docker pull "$remote"; then
-            echo "::error::Failed to pull ${remote}. Check: System-B15/pyhive's 'Publish Hive Images' workflow has run for this Hive commit; this repo has read access to the packages (package settings → Manage Actions access) or registry-token is a PAT with read:packages; registry-prefix/registry-tag inputs are correct. Fall back to image-source: build if needed."
+            echo "::error::Failed to pull ${remote}. Check: pyhive-repo's 'Publish Hive Images' workflow has run for this Hive commit; this repo has read access to the packages (package settings → Manage Actions access) or registry-token is a PAT with read:packages; registry-prefix/registry-tag inputs are correct. Fall back to image-source: build if needed."
             exit 1
           fi
           docker tag "$remote" "$img"
