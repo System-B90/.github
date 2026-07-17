@@ -63,7 +63,7 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b15\<repo-name>` — 
   - JS/TS: `npx eslint --fix && npx prettier --write`
   - Python: `ruff format . && ruff check --fix .`
 - For failing tests that are genuine bugs (not something you can fix in scope): use `test.fails()` or `test.skip()` and open a GitHub issue. **Never delete tests.**
-- **Regression tests for bugs:** Every closed bug issue must have a dedicated regression test committed alongside the fix. The test should fail on the pre-fix code and pass after. This ensures the bug cannot silently resurface.
+- **Regression tests for bugs:** Every closed bug issue must have a dedicated regression test committed alongside the fix. The test must fail on the pre-fix code and pass after. This prevents bugs from silently resurfacing.
 - Never push to archived repos.
 - Never skip hooks (`--no-verify`, `-n`) to force a commit through.
 
