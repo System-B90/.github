@@ -153,8 +153,11 @@ runs:
           echo "::error::${{ inputs.pyhive-repo }}#hive-stack/docker-compose.yaml not found. Has 'Publish Hive Images' run there yet?"
           exit 1
         fi
-        mv hive-stack/* .
-        rmdir hive-stack
+        # Bash's * glob skips dotfiles (hive-stack/.env) by default, which
+        # left it behind and made rmdir fail on a non-empty directory.
+        cp -a hive-stack/. .
+        rm -rf hive-stack
+
 
     - name: Resolve Hive commit (registry mode)
       id: hive_sha_registry
