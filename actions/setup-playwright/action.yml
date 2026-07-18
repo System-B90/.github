@@ -1,7 +1,7 @@
 name: Setup Node + Playwright
 description: >-
   Sets up Node.js with npm caching, installs dependencies, and installs
-  Playwright browsers. Shared by System-B15 consumer repos' E2E jobs.
+  Playwright browsers. Shared by System-B90 consumer repos' E2E jobs.
 
 inputs:
   node-version:
