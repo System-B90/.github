@@ -143,6 +143,8 @@ runs:
         sparse-checkout: |
           hive-stack
         sparse-checkout-cone-mode: false
+        token: ""
+        persist-credentials: false
 
     - name: Flatten hive-stack config (registry mode)
       if: inputs.image-source == 'registry'
