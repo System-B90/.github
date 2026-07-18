@@ -21,14 +21,14 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 | **hive-nextauth** | Shared NextAuth.js + Hive SSO helpers — `@system-b90/hive-nextauth`. |
 | **.github** | Org-wide CI reusable workflows and composite actions (this repo). |
 
-Local checkouts all live under `C:\Users\mkupe\Code\system-b15\<repo-name>` — the parent directory is still named `system-b15` even though the org itself is `System-B90`. Directories suffixed `-wt-*` (e.g. `bluz-wt-shared-pkgs`) are `git worktree` checkouts of the main repo on a different branch, not independent repos.
+Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Directories suffixed `-wt-*` (e.g. `bluz-wt-shared-pkgs`) are `git worktree` checkouts of the main repo on a different branch, not independent repos.
 
 ## The Hive backend
 
 - Hive is a Django/Python LMS backend maintained by the **HiveLMS** org — a different org, not System-B90.
 - **Never touch `hivelms/Hive` or anything under the hivelms org.** It is completely off limits.
 - Integrate with Hive only via its API. Never modify Hive source.
-- The Hive OpenAPI spec lives at `api/core.yaml` in the pyhive repo (`C:\Users\mkupe\Code\system-b15\pyhive`) and is what pyhive's typed core is generated from.
+- The Hive OpenAPI spec lives at `api/core.yaml` in the pyhive repo (`C:\Users\mkupe\Code\system-b90\pyhive`) and is what pyhive's typed core is generated from.
 
 ## Tech stack
 
