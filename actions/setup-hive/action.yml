@@ -58,9 +58,9 @@ inputs:
   pyhive-repo:
     description: >-
       Repository (owner/name) whose hive-stack/ directory and published
-      images registry mode reads. Must be a public repo (or one this
-      workflow's default token can read) — registry mode intentionally
-      does not accept a token for this checkout.
+      images registry mode reads. Must be a public repo (or one the
+      default GITHUB_TOKEN can read) — this checkout uses github.token,
+      not a dedicated hive-token, since it only reads two config files.
     required: false
     default: System-B90/pyhive
   registry-prefix:
@@ -143,7 +143,7 @@ runs:
         sparse-checkout: |
           hive-stack
         sparse-checkout-cone-mode: false
-        token: ""
+        token: ${{ github.token }}
         persist-credentials: false
 
     - name: Flatten hive-stack config (registry mode)
