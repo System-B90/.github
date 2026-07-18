@@ -10,13 +10,14 @@ description: >-
 inputs:
   hive-token:
     description: >-
-      PAT with read access to the Hive repository. Only required for
-      image-source: build (it clones Hive's private source to build from).
-      image-source: registry does not need this at all — it reads
-      docker-compose.yaml/.env from pyhive-repo's public hive-stack/
-      directory instead of checking out private Hive source.
-      Pass the repo's secret, e.g. secrets.CLASSIC_ACCESS_TOKEN or
-      secrets.HIVE_REPO_TOKEN.
+      PAT with read access to org repos. Required for image-source: build
+      (clones Hive's private source). Also used for image-source: registry's
+      checkout of pyhive-repo's hive-stack/ directory, since pyhive-repo is
+      private and the default GITHUB_TOKEN can't read across repos even
+      within the same org — falls back to github.token if omitted, which
+      only works if pyhive-repo is public or this repo has been granted
+      explicit read access to it.
+      Pass the repo's secret, e.g. secrets.SYSTEM_B90_READ.
     required: false
     default: ""
   hive-repo:
@@ -127,13 +128,15 @@ runs:
         echo "Disk space after cleanup:"
         df -h /
 
-    # ── Registry mode: no Hive checkout, no hive-token ─────────────────────
-    # Reads docker-compose.yaml/.env/HIVE_SHA from pyhive-repo's public
-    # hive-stack/ directory instead of checking out private Hive source —
-    # that's the whole point of registry mode: consumer repos don't need
-    # their own PAT with read access to hivelms/Hive just to get two config
-    # files, when the images (the actual thing that used to require the
-    # checkout to build) are already published.
+    # ── Registry mode: no Hive checkout, no hive-token needed for Hive
+    # itself ─────────────────────────────────────────────────────────────
+    # Reads docker-compose.yaml/.env/HIVE_SHA from pyhive-repo's hive-stack/
+    # directory instead of checking out private Hive source. pyhive-repo is
+    # itself private, and GITHUB_TOKEN is always scoped to the triggering
+    # repo only — it can't clone another org repo even with the org's
+    # Actions "access" setting turned on (that setting only covers reusable
+    # workflows/artifacts, not checkout). So this still needs a token with
+    # cross-repo read; hive-token doubles as that token here.
     - name: Checkout Hive stack config (registry mode)
       if: inputs.image-source == 'registry'
       uses: actions/checkout@v7
@@ -143,7 +146,7 @@ runs:
         sparse-checkout: |
           hive-stack
         sparse-checkout-cone-mode: false
-        token: ${{ github.token }}
+        token: ${{ inputs.hive-token || github.token }}
         persist-credentials: false
 
     - name: Flatten hive-stack config (registry mode)
