@@ -15,7 +15,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 | **bluz** | Main frontend/backend app. Scheduling + curriculum (Gantt) management. Next.js 14, TypeScript. The primary product. |
 | **madash** | Secondary app — status/dashboard (journal, call-to-Hadas board, system health). Next.js, TypeScript. Stateless, no DB. |
 | **peek-a-boo** | Third app — student monitoring. Next.js, TypeScript. |
-| **pyhive** | Python client library for the Hive LMS API. Install: `pip install git+https://github.com/System-B90/pyhive.git@main`. |
+| **pyhive** | Python client library for the Hive LMS API. Install via the org's pip index (see Package conventions below), or `pip install git+https://github.com/System-B90/pyhive.git@main` for an unreleased ref. |
 | **hive-core** | Shared TypeScript types and error classes — `@system-b90/hive-core`. |
 | **session-ws** | Shared WebSocket session server — `@system-b90/session-ws`. |
 | **hive-nextauth** | Shared NextAuth.js + Hive SSO helpers — `@system-b90/hive-nextauth`. |
@@ -46,7 +46,9 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 - All shared npm packages are scoped `@system-b90/*`, published to GitHub Packages.
 - To install: add an `.npmrc` with `@system-b90:registry=https://npm.pkg.github.com`.
 - Auth requires `NPM_TOKEN` or `GITHUB_TOKEN` with `read:packages` scope.
-- pyhive installs via `git+https://...`, **not** PyPI.
+- pyhive is **not** on the official PyPI. It's published to a private PEP 503 index hosted as static files in this repo (`pypi/`), served over `raw.githubusercontent.com` with a PAT for auth:
+  `pip install PyHiveLMS --index-url https://<user>:<PAT>@raw.githubusercontent.com/System-B90/.github/main/pypi/`
+  `pyhive`'s `publish.yml` copies each tagged release's wheels into `pypi/pyhive/` and regenerates `pypi/generate_index.py`'s output here on every `v*` tag push. For an unreleased ref, `git+https://...` still works.
 - App repos (`bluz`, `madash`, `peek-a-boo`) are unscoped, private, and don't publish — no `@system-b90/` prefix on their own `package.json` name.
 
 ## Git workflow
