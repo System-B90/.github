@@ -1,0 +1,21 @@
+{
+  "name": "bluz-cli",
+  "description": "Skill + auto-setup for the bluz CLI (scheduling/curriculum API) — installs the CLI if missing and teaches an agent to drive it without reading source.",
+  "author": {
+    "name": "Michael K. Steinberg"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ensure-bluz-cli.js\"",
+            "timeout": 30,
+            "statusMessage": "Checking bluz CLI install..."
+          }
+        ]
+      }
+    ]
+  }
+}

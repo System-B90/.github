@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bluz-cli",
+  "description": "bluz CLI skill and auto-setup for driving the Bluz scheduling/curriculum API from any Claude Code session in this repo.",
+  "owner": {
+    "name": "Michael K. Steinberg"
+  },
+  "plugins": [
+    {
+      "name": "bluz-cli",
+      "description": "Auto-installs the bluz CLI on session start and teaches the agent every command, payload shape, and known server quirk — no source reading required.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
