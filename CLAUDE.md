@@ -5,7 +5,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 ## Org overview
 
 - **System-B90** — מערכות בלמ"סיות עבור הבי"ס — LMS tooling for a school.
-- Org: `github.com/System-B90`. All repos are **private**.
+- Org: `github.com/System-B90`. All repos are **private**, except `.github` itself — GitHub requires the org-profile `.github` repo to be public for its README/health files to render.
 - This file lives in the `.github` repo (checked out locally as `org-github` — the directory name doesn't match the GitHub repo name, don't let that confuse path assumptions).
 
 ## Repos and their purpose
@@ -46,10 +46,10 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 - All shared npm packages are scoped `@system-b90/*`, published to GitHub Packages.
 - To install: add an `.npmrc` with `@system-b90:registry=https://npm.pkg.github.com`.
 - Auth requires `NPM_TOKEN` or `GITHUB_TOKEN` with `read:packages` scope.
-- pyhive is **not** on the official PyPI. It's published to a private PEP 503 index hosted as static files in this repo (`pypi/`), served over `raw.githubusercontent.com` with a PAT for auth:
-  `pip install PyHiveLMS --index-url https://<user>:<PAT>@raw.githubusercontent.com/System-B90/.github/main/pypi/`
-  `pyhive`'s `publish.yml` copies each tagged release's wheels into `pypi/pyhive/` and regenerates `pypi/generate_index.py`'s output here on every `v*` tag push. For an unreleased ref, `git+https://...` still works.
-  In most cases, the user and PAT fields are not required since the user will have SSH creds configured.
+- pyhive is **not** on the official PyPI. It's published to a PEP 503 index hosted as static files in this repo (`pypi/`), served over `raw.githubusercontent.com`. No auth is required to install — `.github` is public (see Org overview above):
+  `pip install PyHiveLMS --index-url https://raw.githubusercontent.com/System-B90/.github/main/pypi/`
+  `pyhive`'s `publish.yml` copies each tagged release's wheels into `pypi/pyhivelms/` (the PEP 503-normalized project name — **not** `pyhive`, the import name) and regenerates `pypi/generate_index.py`'s output here on every `v*` tag push. For an unreleased ref, `git+https://...` still works (that one does need SSH/HTTPS git creds, since `pyhive` itself is private).
+  `raw.githubusercontent.com` is CDN-cached (roughly 5–10 min TTL) — a just-published release may not show up in the index immediately.
 - App repos (`bluz`, `madash`, `peek-a-boo`) are unscoped, private, and don't publish — no `@system-b90/` prefix on their own `package.json` name.
 
 ## Git workflow
@@ -72,9 +72,13 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 
 ## Secrets available in CI
 
-- `ACCESS_TOKEN` — PAT with repo + packages scope, available in all repos, used for cross-repo operations.
-- `NPM_TOKEN` — alias for `ACCESS_TOKEN`, used for GitHub Packages auth.
-- `GITHUB_TOKEN` — standard Actions token, limited to the current repo.
+Secret names are **not** uniform across repos — verify with `gh secret list` in the target repo before assuming a name exists; don't copy a workflow's `secrets.X` reference across repos without checking.
+
+- `SYSTEM_B90_READ` — the only PAT confirmed present in every repo (as of 2026-07-19). Read-scoped; not sufficient for pushes to other repos.
+- `ACCESS_TOKEN` — PAT with repo + packages scope, used for cross-repo operations (e.g. pyhive's `publish.yml` pushing into `.github`). Present in `madash`, `peek-a-boo`, `pyhive`; **absent** from `bluz`, `hive-core`, `session-ws`, `hive-nextauth`.
+- `CLASSIC_ACCESS_TOKEN` — used as an `ACCESS_TOKEN` fallback in some workflows (e.g. `bluz`, pyhive's `publish-hive-images.yml`); present in `bluz` where `ACCESS_TOKEN` is not.
+- `HIVE_REPO_TOKEN` — scoped for checking out/pushing to Hive-related repos; present in `bluz`, `pyhive`.
+- `GITHUB_TOKEN` — standard Actions token, auto-provided, limited to the current repo.
 
 ## What NOT to do
 
