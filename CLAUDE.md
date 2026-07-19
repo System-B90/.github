@@ -53,6 +53,34 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 - `bluz-cli` (from the private `bluz` repo) follows the identical pattern: `pip install bluz-cli --index-url https://raw.githubusercontent.com/System-B90/.github/main/pypi/`. `bluz`'s `release-pipeline.yml` `publish-cli-index` job copies each tagged release's wheel into `pypi/bluz-cli/` and regenerates the index on every `v*` tag push, using `CLASSIC_ACCESS_TOKEN` (bluz has no `ACCESS_TOKEN` secret — see Secrets available in CI below).
 - App repos (`bluz`, `madash`, `peek-a-boo`) are unscoped, private, and don't publish — no `@system-b90/` prefix on their own `package.json` name.
 
+## Claude Code plugins hosted here
+
+Plugins live under `plugins/<name>/` — each is a self-contained Claude Code
+plugin (`.claude-plugin/plugin.json` + `.claude-plugin/marketplace.json` +
+`skills/`, optionally `hooks/`). `.github` is the distribution point for any
+plugin whose source repo is private, so installing never requires cloning
+that private repo.
+
+Currently hosted:
+
+| Plugin | Source repo | What it does |
+| --- | --- | --- |
+| `bluz-cli` | `bluz` (private) | Skill + auto-install for the `bluz` CLI. `SessionStart` hook `pip install`s `bluz-cli` from this repo's pip index (see Package conventions) if missing — no Bluz checkout needed. |
+
+Install any hosted plugin:
+
+```
+/plugin marketplace add System-B90/.github
+/plugin install <plugin-name>@<plugin-name>
+```
+
+e.g. `/plugin install bluz-cli@bluz-cli`. Uninstall with
+`/plugin uninstall <plugin-name>@<plugin-name>`.
+
+Adding a new plugin here: create `plugins/<name>/` following the `bluz-cli`
+layout, keep its `marketplace.json` `source` as `"./"` (self-referencing,
+consistent with `bluz-cli`'s), and add a row to the table above.
+
 ## Git workflow
 
 - Never commit directly to `main`/`master` — always use a feature branch.
