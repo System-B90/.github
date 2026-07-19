@@ -49,6 +49,7 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 - pyhive is **not** on the official PyPI. It's published to a private PEP 503 index hosted as static files in this repo (`pypi/`), served over `raw.githubusercontent.com` with a PAT for auth:
   `pip install PyHiveLMS --index-url https://<user>:<PAT>@raw.githubusercontent.com/System-B90/.github/main/pypi/`
   `pyhive`'s `publish.yml` copies each tagged release's wheels into `pypi/pyhive/` and regenerates `pypi/generate_index.py`'s output here on every `v*` tag push. For an unreleased ref, `git+https://...` still works.
+  In most cases, the user and PAT fields are not required since the user will have SSH creds configured.
 - App repos (`bluz`, `madash`, `peek-a-boo`) are unscoped, private, and don't publish — no `@system-b90/` prefix on their own `package.json` name.
 
 ## Git workflow
