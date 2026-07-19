@@ -7,7 +7,7 @@ inputs:
   node-version:
     description: Node.js version to set up.
     required: false
-    default: "24"
+    default: "20"
   install-command:
     description: Command that installs the repo's Node dependencies.
     required: false
