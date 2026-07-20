@@ -15,7 +15,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 | **bluz** | Main frontend/backend app. Scheduling + curriculum (Gantt) management. Next.js 14, TypeScript. The primary product. Ships a companion `bluz-cli` Python CLI, published to the org's pip index (see Package conventions) — its Claude Code plugin lives here in `.github` under `plugins/bluz-cli/` since bluz itself is private. |
 | **madash** | Secondary app — status/dashboard (journal, call-to-Hadas board, system health). Next.js, TypeScript. Stateless, no DB. |
 | **peek-a-boo** | Third app — student monitoring. Next.js, TypeScript. |
-| **pyhive** | Python client library for the Hive LMS API. Install via the org's pip index (see Package conventions below), or `pip install git+https://github.com/System-B90/pyhive.git@main` for an unreleased ref. |
+| **pyhive** | Python client library for the Hive LMS API. Install via the org's pip index (see Package conventions below), or `pip install git+https://github.com/System-B90/pyhive.git@master` for an unreleased ref. |
 | **hive-core** | Shared TypeScript types and error classes — `@system-b90/hive-core`. |
 | **session-ws** | Shared WebSocket session server — `@system-b90/session-ws`. |
 | **hive-nextauth** | Shared NextAuth.js + Hive SSO helpers — `@system-b90/hive-nextauth`. |
