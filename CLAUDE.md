@@ -74,8 +74,7 @@ Install any hosted plugin:
 /plugin install <plugin-name>@<plugin-name>
 ```
 
-e.g. `/plugin install bluz-cli@bluz-cli`. Uninstall with
-`/plugin uninstall <plugin-name>@<plugin-name>`.
+e.g. `/plugin install bluz-cli@bluz-cli`.
 
 Adding a new plugin here: create `plugins/<name>/` following the `bluz-cli`
 layout, keep its `marketplace.json` `source` as `"./"` (self-referencing,
