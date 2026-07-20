@@ -13,7 +13,7 @@ installs the CLI from the org's public pip index instead.
 ```
 
 On the next session start, the plugin checks whether `bluz` is on PATH and
-installs it from `https://raw.githubusercontent.com/System-B90/.github/main/pypi/`
+installs it from `https://system-b90.github.io/.github/pypi/`
 if it isn't — no auth, no Bluz clone.
 
 ## What it does
