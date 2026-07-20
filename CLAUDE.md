@@ -46,11 +46,12 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 - All shared npm packages are scoped `@system-b90/*`, published to GitHub Packages.
 - To install: add an `.npmrc` with `@system-b90:registry=https://npm.pkg.github.com`.
 - Auth requires `NPM_TOKEN` or `GITHUB_TOKEN` with `read:packages` scope.
-- pyhive is **not** on the official PyPI. It's published to a PEP 503 index hosted as static files in this repo (`pypi/`), served over `raw.githubusercontent.com`. No auth is required to install — `.github` is public (see Org overview above):
-  `pip install PyHiveLMS --index-url https://raw.githubusercontent.com/System-B90/.github/main/pypi/`
+- pyhive is **not** on the official PyPI. It's published to a PEP 503 index hosted as static files in this repo (`pypi/`), served over **GitHub Pages** (`https://system-b90.github.io/.github/`). No auth is required to install — `.github` is public (see Org overview above):
+  `pip install PyHiveLMS --index-url https://system-b90.github.io/.github/pypi/`
   `pyhive`'s `publish.yml` copies each tagged release's wheels into `pypi/pyhivelms/` (the PEP 503-normalized project name — **not** `pyhive`, the import name) and regenerates `pypi/generate_index.py`'s output here on every `v*` tag push. For an unreleased ref, `git+https://...` still works (that one does need SSH/HTTPS git creds, since `pyhive` itself is private).
-  `raw.githubusercontent.com` is CDN-cached (roughly 5–10 min TTL) — a just-published release may not show up in the index immediately.
-- `bluz-cli` (from the private `bluz` repo) follows the identical pattern: `pip install bluz-cli --index-url https://raw.githubusercontent.com/System-B90/.github/main/pypi/`. `bluz`'s `release-pipeline.yml` `publish-cli-index` job copies each tagged release's wheel into `pypi/bluz-cli/` and regenerates the index on every `v*` tag push, using `CLASSIC_ACCESS_TOKEN` (bluz has no `ACCESS_TOKEN` secret — see Secrets available in CI below).
+  GitHub Pages is CDN-cached (roughly a few minutes TTL) — a just-published release may not show up in the index immediately.
+  **Note:** `raw.githubusercontent.com` does NOT work for this — it maps URLs 1:1 to repo file paths with no directory-index fallback, so pip's request for the bare package directory (`pypi/<pkg>/`) 404s even though `generate_index.py` writes a valid `index.html` there. GitHub Pages serves that `index.html` for directory requests, which is why the index has to be hosted there instead.
+- `bluz-cli` (from the private `bluz` repo) follows the identical pattern: `pip install bluz-cli --index-url https://system-b90.github.io/.github/pypi/`. `bluz`'s `release-pipeline.yml` `publish-cli-index` job copies each tagged release's wheel into `pypi/bluz-cli/` and regenerates the index on every `v*` tag push, using `CLASSIC_ACCESS_TOKEN` (bluz has no `ACCESS_TOKEN` secret — see Secrets available in CI below).
 - App repos (`bluz`, `madash`, `peek-a-boo`) are unscoped, private, and don't publish — no `@system-b90/` prefix on their own `package.json` name.
 
 ## Claude Code plugins hosted here

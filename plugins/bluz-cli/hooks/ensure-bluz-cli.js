@@ -4,14 +4,15 @@
 // SessionStart hook: makes `bluz` usable with zero manual setup, without
 // needing any Bluz source checkout. Checks whether the CLI is on PATH; if
 // not, installs it from the org's public pip index (System-B90/.github,
-// PEP 503 static index served over raw.githubusercontent.com — no auth
-// required, same pattern as pyhive). Silent-fails on any error — must never
-// block session start.
+// PEP 503 static index served over GitHub Pages — no auth required, same
+// pattern as pyhive). raw.githubusercontent.com does NOT work here: it has
+// no directory-index fallback, so pip's request for the bare package
+// directory 404s. Silent-fails on any error — must never block session
+// start.
 
 const { spawnSync } = require("child_process");
 
-const INDEX_URL =
-    "https://raw.githubusercontent.com/System-B90/.github/main/pypi/";
+const INDEX_URL = "https://system-b90.github.io/.github/pypi/";
 
 function commandExists() {
     const probe = spawnSync("bluz", ["--version"], { stdio: "ignore" });
