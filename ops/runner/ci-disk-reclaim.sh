@@ -9,9 +9,9 @@
 # Author: Michael K. Steinberg
 #
 # Deliberately does NOT touch:
-#   - volumes      : the Hive Postgres/Redis data lives there
 #   - containers   : running or stopped, they are never this script's business
 #   - anything under /home
+#   - volumes still attached to a container (see the volume pass below)
 #
 # Images are filtered by age so an image a queued job just pulled but has not
 # started using yet is never yanked out from under it. Build cache has no such
@@ -60,6 +60,44 @@ fi
 # the host daemon never touches it, so images pulled by every e2e run
 # accumulate there indefinitely. Same age filter, for the same reason: a job
 # in flight has just pulled the Hive images it is using.
+# Dangling volumes. This script originally skipped volumes entirely, to keep
+# Hive's Postgres/Redis data safe -- but that also spared the anonymous volumes
+# every torn-down bluz-test-* stack leaves behind. Teardown removes the
+# containers and not their anonymous volumes, so one per Mongo/Postgres per run
+# accumulated forever. On 2026-09-03 that was ~47GB of the 455GB disk, with the
+# host at 8GB free and every Hive-booting job failing in `Set up Hive` while
+# this script reported "0B reclaimed, needs a human" each hour
+# (System-B90/.github#12).
+#
+# Two guards keep the original intent intact:
+#   - `dangling=true` is Docker's own "attached to no container, running or
+#     stopped" filter, so anything a live or paused stack is using is excluded.
+#   - the same age floor the images use, read off the volume's own directory,
+#     so a stack that is mid-bring-up (volume created, container not started)
+#     is never yanked out from under itself.
+prune_dangling_volumes() {
+    local cutoff_secs volume dir removed=0 now
+    now=$(date +%s)
+    # IMAGE_MIN_AGE is a docker duration ("6h"); convert to seconds for find.
+    cutoff_secs=$(( $(printf '%s' "$IMAGE_MIN_AGE" | tr -dc '0-9') * 3600 ))
+
+    for volume in $(docker volume ls -q --filter dangling=true 2>/dev/null); do
+        dir=$(docker volume inspect "$volume" --format '{{.Mountpoint}}' 2>/dev/null) || continue
+        [ -n "$dir" ] && [ -d "$dir" ] || continue
+        # Age of the volume directory itself, not its contents.
+        local mtime age
+        mtime=$(stat -c %Y "$dir" 2>/dev/null) || continue
+        age=$(( now - mtime ))
+        [ "$age" -ge "$cutoff_secs" ] || continue
+        if docker volume rm "$volume" >/dev/null 2>&1; then
+            removed=$((removed + 1))
+        fi
+    done
+    log "pruned ${removed} dangling volume(s) older than ${IMAGE_MIN_AGE}"
+}
+
+prune_dangling_volumes
+
 for runner in $(docker ps --filter name=runner --format '{{.Names}}' 2>/dev/null); do
     if ! timeout 30 docker exec "$runner" docker info >/dev/null 2>&1; then
         continue  # no inner daemon (the light runner has none)
