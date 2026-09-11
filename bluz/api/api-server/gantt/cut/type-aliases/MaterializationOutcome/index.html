@@ -632,6 +632,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#hivesubjectsunavailable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hiveSubjectsUnavailable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ok" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -699,16 +710,16 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/gantt/cut</a> / MaterializationOutcome</p>
 <h1 id="type-alias-materializationoutcome">Type Alias: MaterializationOutcome<a class="headerlink" href="#type-alias-materializationoutcome" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>MaterializationOutcome</strong> = { <code>errors</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; } | { <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
+<p><strong>MaterializationOutcome</strong> = { <code>errors</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; } | { <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>hiveSubjectsUnavailable</code>: <code>boolean</code>; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/gantt/cut.ts#L712">ui/src/api-server/gantt/cut.ts:712</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/cut.ts#L813">ui/src/api-server/gantt/cut.ts:813</a></p>
 <p>The documents a plan materializes into, plus what producing them created.</p>
 <h2 id="union-members">Union Members<a class="headerlink" href="#union-members" title="Permanent link">&para;</a></h2>
 <h3 id="type-literal">Type Literal<a class="headerlink" href="#type-literal" title="Permanent link">&para;</a></h3>
 <p>{ <code>errors</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; }</p>
 <hr />
 <h3 id="type-literal_1">Type Literal<a class="headerlink" href="#type-literal_1" title="Permanent link">&para;</a></h3>
-<p>{ <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
+<p>{ <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>hiveSubjectsUnavailable</code>: <code>boolean</code>; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
 <h4 id="createdcourses">createdCourses<a class="headerlink" href="#createdcourses" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>createdCourses</strong>: <code>object</code>[]</p>
@@ -717,6 +728,14 @@
 <blockquote>
 <p><strong>documents</strong>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]</p>
 </blockquote>
+<h4 id="hivesubjectsunavailable">hiveSubjectsUnavailable<a class="headerlink" href="#hivesubjectsunavailable" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>hiveSubjectsUnavailable</strong>: <code>boolean</code></p>
+</blockquote>
+<p>True when Hive could not supply the module → subject map and at
+least one event was left subject-less because of it (#662). The
+events are still written; the caller is expected to tell the user
+a reload will fix their colours.</p>
 <h4 id="ok">ok<a class="headerlink" href="#ok" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>ok</strong>: <code>true</code></p>

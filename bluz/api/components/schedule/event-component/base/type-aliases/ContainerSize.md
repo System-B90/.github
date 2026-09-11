@@ -8,7 +8,7 @@
 
 > **ContainerSize** = `object`
 
-Defined in: [ui/src/components/schedule/event-component/base.tsx:38](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/event-component/base.tsx#L38)
+Defined in: [ui/src/components/schedule/event-component/base.tsx:39](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/event-component/base.tsx#L39)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-component/base.tsx:38](https://git
 
 > **height**: `number`
 
-Defined in: [ui/src/components/schedule/event-component/base.tsx:40](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/event-component/base.tsx#L40)
+Defined in: [ui/src/components/schedule/event-component/base.tsx:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/event-component/base.tsx#L41)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/schedule/event-component/base.tsx:40](https://git
 
 > **width**: `number`
 
-Defined in: [ui/src/components/schedule/event-component/base.tsx:39](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/event-component/base.tsx#L39)
+Defined in: [ui/src/components/schedule/event-component/base.tsx:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/event-component/base.tsx#L40)

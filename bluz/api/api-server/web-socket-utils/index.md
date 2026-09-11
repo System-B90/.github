@@ -8,4 +8,5 @@
 
 ## Functions
 
+- [NotifyStudentsOfCalendarChange](functions/NotifyStudentsOfCalendarChange.md)
 - [SendServerRequestToSessionServer](functions/SendServerRequestToSessionServer.md)

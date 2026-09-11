@@ -6,6 +6,10 @@
 
 # components/schedule/calendar/calendar/UseCalendarHandlers
 
+## Type Aliases
+
+- [GridInteraction](type-aliases/GridInteraction.md)
+
 ## Functions
 
 - [useCalendarHandlers](functions/useCalendarHandlers.md)

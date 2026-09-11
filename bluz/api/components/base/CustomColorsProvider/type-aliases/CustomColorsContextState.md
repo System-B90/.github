@@ -8,7 +8,7 @@
 
 > **CustomColorsContextState** = `object`
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:26](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L26)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L26)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/CustomColorsProvider.tsx:26](https://github.
 
 > **addCustomColor**: (`colorData`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:34](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L34)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L34)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/base/CustomColorsProvider.tsx:34](https://github.
 
 > **customColors**: [`CustomColor`](../../../../api-shared/types/custom-color/type-aliases/CustomColor.md)[]
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:28](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L28)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L28)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/base/CustomColorsProvider.tsx:28](https://github.
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:27](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L27)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L27)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/base/CustomColorsProvider.tsx:27](https://github.
 
 > **deleteCustomColor**: (`colorId`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:36](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L36)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:36](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L36)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [ui/src/components/base/CustomColorsProvider.tsx:36](https://github.
 
 > **getCustomColor**: (`id`) => [`CustomColor`](../../../../api-shared/types/custom-color/type-aliases/CustomColor.md) \| `null`
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:30](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L30)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:30](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L30)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [ui/src/components/base/CustomColorsProvider.tsx:30](https://github.
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:29](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L29)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:29](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L29)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [ui/src/components/base/CustomColorsProvider.tsx:29](https://github.
 
 > **updateCustomColor**: (`color`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/CustomColorsProvider.tsx:35](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/CustomColorsProvider.tsx#L35)
+Defined in: [ui/src/components/base/CustomColorsProvider.tsx:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/CustomColorsProvider.tsx#L35)
 
 #### Parameters
 

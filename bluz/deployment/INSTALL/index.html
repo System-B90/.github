@@ -689,6 +689,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Upgrading a live deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#air-gapped-offline-bundle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Air-gapped (offline bundle)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -775,7 +792,9 @@ instead — see <a href="#co-located-hive">Co-located Hive</a> below.</p>
 </tbody>
 </table>
 <p>The online bundle also needs outbound access to <code>ghcr.io</code>. The offline bundle
-ships every image as a <code>.tar</code> under <code>images/</code> and needs no registry access.</p>
+ships every image as a <code>.tar</code> under <code>images/</code> and every Python package the
+wizard needs as a wheel under <code>wheels/</code>, so it needs neither registry nor PyPI
+access.</p>
 <h2 id="what-the-installer-asks-you">What the installer asks you<a class="headerlink" href="#what-the-installer-asks-you" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -819,13 +838,14 @@ for you and written to <code>.env</code>.</p>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── docker-compose.hive-local.yml   # overlay, co-located Hive only
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── .env                            # written by the wizard — contains secrets
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── install.sh / install.ps1
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── update.sh                       # in-place upgrade to a newer release
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── update.sh                       # in-place upgrade to a newer release (online or --package)
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>├── link-hive.sh / link-hive.ps1
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>├── setup.py, requirements.txt      # the configuration wizard
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>├── nginx/ssl/                      # cert.pem + key.pem
 <a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>├── VERSION                         # which release this is
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>├── images/                         # offline bundle only
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>└── TROUBLESHOOTING.md
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>├── images/                         # offline bundle only — image .tar archives
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>├── wheels/                         # offline bundle only — vendored Python wheels
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>└── TROUBLESHOOTING.md
 </code></pre></div>
 <p><strong><code>.env</code> must stay next to <code>docker-compose.yml</code>.</strong> Compose has two separate
 <code>.env</code> mechanisms — <code>env_file:</code> for container environments, and its own <code>${VAR}</code>
@@ -891,6 +911,26 @@ to the bundle's <code>VERSION</code> file when GitHub is unreachable; <code>--ve
 pins it explicitly. <code>--skip-backup</code> accepts the risk of an unrecoverable migration;
 <code>--yes</code> skips the confirmation prompt. It refuses to run against a stopped
 stack — use <code>./install.sh</code> for a first install.</p>
+<h4 id="air-gapped-offline-bundle">Air-gapped (offline bundle)<a class="headerlink" href="#air-gapped-offline-bundle" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>./update.sh<span class="w"> </span>--package<span class="w"> </span>/media/usb/bluz-offline-v1.1.0.tar.gz
+</code></pre></div>
+<p>Same upgrade, no registry access. Point <code>--package</code> at the <strong>full new offline
+package</strong> — the downloaded <code>bluz-offline-&lt;tag&gt;.tar.gz</code> or a directory it was
+already extracted into. Run it from the directory the <em>running</em> deployment lives
+in; the package is only read from.</p>
+<p>What it does differently: the version comes from the package's <code>VERSION</code> file
+(never from GitHub), every <code>images/*.tar</code> in it is <code>docker load</code>ed — the database
+images included, since a release may move those pins — and the deployment's own
+bundle files (<code>docker-compose.yml</code>, the overlay, <code>install.sh</code>, <code>update.sh</code>,
+<code>link-hive.sh</code>, <code>setup.py</code>, <code>requirements.txt</code>, <code>backup/*.sh</code>, <code>VERSION</code>) are
+replaced with the package's, with the previous copies kept in
+<code>.bundle-bak-&lt;old-version&gt;/</code>. Your <code>.env</code>, <code>nginx/ssl/</code> and every data volume are
+untouched. Everything else — backup first, roll <code>ui</code> → <code>sessions</code> → <code>proxy</code>,
+verify, rollback hint on failure — is identical.</p>
+<p>Pointing <code>--package</code> at the <em>online</em> bundle fails immediately with that
+diagnosis: it ships no images, so it cannot upgrade an air-gapped host.
+<code>--package</code> cannot be combined with <code>--version</code> or <code>--pre-release</code> — a package
+carries exactly one release.</p>
 <p>Re-running the installer over an existing <code>.env</code> also works and is the fallback
 when the stack is down: it skips the wizard and updates <code>BLUZ_VERSION</code> from the
 new <code>VERSION</code> file, but it does not back up or roll services one at a time.</p>

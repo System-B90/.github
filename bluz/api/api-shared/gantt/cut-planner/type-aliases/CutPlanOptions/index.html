@@ -673,13 +673,13 @@
 <blockquote>
 <p><strong>CutPlanOptions</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L296">ui/src/api-shared/gantt/cut-planner.ts:296</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L296">ui/src/api-shared/gantt/cut-planner.ts:296</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="acceptedconstraintmoves">acceptedConstraintMoves?<a class="headerlink" href="#acceptedconstraintmoves" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>acceptedConstraintMoves?</strong>: <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L320">ui/src/api-shared/gantt/cut-planner.ts:320</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L320">ui/src/api-shared/gantt/cut-planner.ts:320</a></p>
 <p>Constraint-solver moves the user accepted, by event id. Proposals not
 listed here are reported but not applied — the cut never silently moves
 an event the user mapped deliberately.</p>
@@ -688,7 +688,7 @@ an event the user mapped deliberately.</p>
 <blockquote>
 <p><code>optional</code> <strong>autoSpillover?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L309">ui/src/api-shared/gantt/cut-planner.ts:309</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L309">ui/src/api-shared/gantt/cut-planner.ts:309</a></p>
 <p>Auto-spillover: rebalance each week so no day carries more than its
 working window, cascading work forward within the week. Defaults to on —
 pass <code>false</code> for the pre-#… raw stacking behaviour.</p>
@@ -697,7 +697,7 @@ pass <code>false</code> for the pre-#… raw stacking behaviour.</p>
 <blockquote>
 <p><code>optional</code> <strong>force?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L303">ui/src/api-shared/gantt/cut-planner.ts:303</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L303">ui/src/api-shared/gantt/cut-planner.ts:303</a></p>
 <p>When true, an unmapped event or an unsatisfied recurrence no longer
 fails the whole plan — the offending event is dropped and planning
 continues. Lets a user explicitly cut an unfinished gantt. A missing
@@ -707,7 +707,7 @@ start date is still fatal (nothing is datable without it).</p>
 <blockquote>
 <p><code>optional</code> <strong>insertBreaks?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L314">ui/src/api-shared/gantt/cut-planner.ts:314</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L314">ui/src/api-shared/gantt/cut-planner.ts:314</a></p>
 <p>Break post-pass: spread a day's leftover slack through the day as real
 הפסקה events instead of leaving it as an empty tail. Defaults to on.</p>
 <hr />
@@ -715,7 +715,7 @@ start date is still fatal (nothing is datable without it).</p>
 <blockquote>
 <p><code>optional</code> <strong>weekOverflowResolutions?</strong>: <code>Record</code>\&lt;<code>string</code>, <a href="../../../cut-rules/type-aliases/WeekOverflowResolution/"><code>WeekOverflowResolution</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L325">ui/src/api-shared/gantt/cut-planner.ts:325</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L325">ui/src/api-shared/gantt/cut-planner.ts:325</a></p>
 <p>Per-week answer to a <code>week-overflow</code> decision. Absent weeks use
 <code>OVERFLOW_RULES.defaultResolution</code> (<code>overlap-source</code>).</p>
 

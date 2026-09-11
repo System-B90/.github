@@ -761,7 +761,7 @@
 <blockquote>
 <p><strong>ApiCutPreviewOccurrence</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L86">ui/src/api-shared/types/gantt/cut.ts:86</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L93">ui/src/api-shared/types/gantt/cut.ts:93</a></p>
 <p>A single dated, timed occurrence in a cut preview — the pure planner's
 output enriched with display metadata. Dates are ISO strings so the payload
 survives JSON transport; the client re-hydrates with dayjs.</p>
@@ -770,34 +770,34 @@ survives JSON transport; the client re-hydrates with dayjs.</p>
 <blockquote>
 <p><strong>breakKind</strong>: <code>null</code> | <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L110">ui/src/api-shared/types/gantt/cut.ts:110</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L117">ui/src/api-shared/types/gantt/cut.ts:117</a></p>
 <p>Which break rule produced it (<code>BreakKind</code>), or null for a real event.</p>
 <hr />
 <h3 id="endtime">endTime<a class="headerlink" href="#endtime" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>endTime</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L104">ui/src/api-shared/types/gantt/cut.ts:104</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L111">ui/src/api-shared/types/gantt/cut.ts:111</a></p>
 <p>ISO datetime.</p>
 <hr />
 <h3 id="eventtype">eventType<a class="headerlink" href="#eventtype" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>eventType</strong>: <a href="../../../models/event/enumerations/ModuleEventType/"><code>ModuleEventType</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L90">ui/src/api-shared/types/gantt/cut.ts:90</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L97">ui/src/api-shared/types/gantt/cut.ts:97</a></p>
 <p>ModuleEventType of the source gantt event.</p>
 <hr />
 <h3 id="gantteventid">ganttEventId<a class="headerlink" href="#gantteventid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>ganttEventId</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L87">ui/src/api-shared/types/gantt/cut.ts:87</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L94">ui/src/api-shared/types/gantt/cut.ts:94</a></p>
 <hr />
 <h3 id="hivesubjectid">hiveSubjectId<a class="headerlink" href="#hivesubjectid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>hiveSubjectId</strong>: <code>null</code> | <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L96">ui/src/api-shared/types/gantt/cut.ts:96</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L103">ui/src/api-shared/types/gantt/cut.ts:103</a></p>
 <p>Hive subject id the source gantt event is linked to, or null when the
 event is a non-Hive placeholder. Lets the preview color occurrences by
 their real subject color, matching the actual schedule (#331).</p>
@@ -806,34 +806,34 @@ their real subject color, matching the actual schedule (#331).</p>
 <blockquote>
 <p><strong>isGeneratedBreak</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L108">ui/src/api-shared/types/gantt/cut.ts:108</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L115">ui/src/api-shared/types/gantt/cut.ts:115</a></p>
 <p>True for a break the post-pass invented rather than a gantt event.</p>
 <hr />
 <h3 id="isrecurrenceecho">isRecurrenceEcho<a class="headerlink" href="#isrecurrenceecho" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>isRecurrenceEcho</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L106">ui/src/api-shared/types/gantt/cut.ts:106</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L113">ui/src/api-shared/types/gantt/cut.ts:113</a></p>
 <p>True when this is a recurrence echo rather than the mapped start day.</p>
 <hr />
 <h3 id="moduletitle">moduleTitle<a class="headerlink" href="#moduletitle" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>moduleTitle</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L98">ui/src/api-shared/types/gantt/cut.ts:98</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L105">ui/src/api-shared/types/gantt/cut.ts:105</a></p>
 <hr />
 <h3 id="occurrencedate">occurrenceDate<a class="headerlink" href="#occurrencedate" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>occurrenceDate</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L100">ui/src/api-shared/types/gantt/cut.ts:100</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L107">ui/src/api-shared/types/gantt/cut.ts:107</a></p>
 <p>ISO date (yyyy-MM-dd) of the occurrence.</p>
 <hr />
 <h3 id="spilled">spilled<a class="headerlink" href="#spilled" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>spilled</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L115">ui/src/api-shared/types/gantt/cut.ts:115</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L122">ui/src/api-shared/types/gantt/cut.ts:122</a></p>
 <p>True when the balancer relocated this occurrence off the day it was
 mapped to. Drives the preview's moved/unmoved highlight.</p>
 <hr />
@@ -841,20 +841,20 @@ mapped to. Drives the preview's moved/unmoved highlight.</p>
 <blockquote>
 <p><strong>startTime</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L102">ui/src/api-shared/types/gantt/cut.ts:102</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L109">ui/src/api-shared/types/gantt/cut.ts:109</a></p>
 <p>ISO datetime.</p>
 <hr />
 <h3 id="syllabustitle">syllabusTitle<a class="headerlink" href="#syllabustitle" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>syllabusTitle</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L97">ui/src/api-shared/types/gantt/cut.ts:97</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L104">ui/src/api-shared/types/gantt/cut.ts:104</a></p>
 <hr />
 <h3 id="title">title<a class="headerlink" href="#title" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>title</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L88">ui/src/api-shared/types/gantt/cut.ts:88</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L95">ui/src/api-shared/types/gantt/cut.ts:95</a></p>
 
 
 

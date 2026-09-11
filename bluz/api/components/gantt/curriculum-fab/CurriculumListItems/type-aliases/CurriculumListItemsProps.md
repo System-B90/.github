@@ -6,46 +6,28 @@
 
 # Type Alias: CurriculumListItemsProps
 
-> **CurriculumListItemsProps** = `object`
+> **CurriculumListItemsProps** = `object` & [`GanttCreationDeletionCallbackProps`](../../CurriculumActionItems/type-aliases/GanttCreationDeletionCallbackProps.md)
 
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx:14](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx#L14)
+Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx#L15)
 
-## Properties
+## Type Declaration
 
 ### currentCurriculum?
 
 > `optional` **currentCurriculum?**: [`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx:19](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx#L19)
-
-***
-
 ### curriculumsData
 
 > **curriculumsData**: `Record`\<[`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md), [`GanttCurriculumDocument`](../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx:16](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx#L16)
-
-***
-
 ### groups
 
-> **groups**: [`CurriculumGroups`](../../utils/type-aliases/CurriculumGroups.md)
-
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx:17](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx#L17)
-
-***
+> **groups**: [`CurriculumGroups`](../../../state/curriculum-list/types/type-aliases/CurriculumGroups.md)
 
 ### isFetchingDetails
 
 > **isFetchingDetails**: `boolean`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx:15](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx#L15)
-
-***
-
 ### setCurrentCurriculum
 
 > **setCurrentCurriculum**: `Dispatch`\<`SetStateAction`\<[`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`\>\>
-
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx:18](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-fab/CurriculumListItems.tsx#L18)

@@ -8,7 +8,7 @@
 
 > **AiMessage** = `object`
 
-Defined in: [ui/src/api-shared/types/ai.ts:34](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L34)
+Defined in: [ui/src/api-shared/types/ai.ts:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L34)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:34](https://github.com/System-B90/Blu
 
 > **content**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:37](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L37)
+Defined in: [ui/src/api-shared/types/ai.ts:37](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L37)
 
 Empty on an assistant turn that only requested tools.
 
@@ -26,7 +26,7 @@ Empty on an assistant turn that only requested tools.
 
 > `optional` **name?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:43](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L43)
+Defined in: [ui/src/api-shared/types/ai.ts:43](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L43)
 
 Tool turns only, for rendering the transcript.
 
@@ -36,7 +36,7 @@ Tool turns only, for rendering the transcript.
 
 > **role**: [`AiRole`](../enumerations/AiRole.md)
 
-Defined in: [ui/src/api-shared/types/ai.ts:35](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L35)
+Defined in: [ui/src/api-shared/types/ai.ts:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L35)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:35](https://github.com/System-B90/Blu
 
 > `optional` **toolCallId?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:41](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L41)
+Defined in: [ui/src/api-shared/types/ai.ts:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L41)
 
 Tool turns only — which call this answers.
 
@@ -54,6 +54,6 @@ Tool turns only — which call this answers.
 
 > `optional` **toolCalls?**: [`AiToolCall`](AiToolCall.md)[]
 
-Defined in: [ui/src/api-shared/types/ai.ts:39](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L39)
+Defined in: [ui/src/api-shared/types/ai.ts:39](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L39)
 
 Assistant turns only.

@@ -6,7 +6,7 @@
 
 # Class: CurriculumPullBackError
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:232](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L232)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:247](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L247)
 
 Thrown by the client wrapper when a pull-back is rejected. Carries the coded
 reason (no linked iteration / nothing to pull back) so the dialog can render
@@ -26,7 +26,7 @@ a specific Hebrew message instead of a generic network error.
 
 > **new CurriculumPullBackError**(`payload`): `CurriculumPullBackError`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:238](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L238)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:253](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L253)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:238](https://github.com/System
 
 > `readonly` **code**: [`CurriculumPullBackErrorCode`](../type-aliases/CurriculumPullBackErrorCode.md)
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:236](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L236)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:251](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L251)
 
 #### Implementation of
 

@@ -8,7 +8,7 @@
 
 > **AiToolContext** = `object`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:15](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/tools/types.ts#L15)
+Defined in: [ui/src/api-server/ai/tools/types.ts:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L15)
 
 Everything a tool may know about the session it runs in.
 
@@ -18,7 +18,7 @@ Everything a tool may know about the session it runs in.
 
 > **actor**: `object`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/tools/types.ts#L21)
+Defined in: [ui/src/api-server/ai/tools/types.ts:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L21)
 
 The signed-in staff member, for write attribution.
 
@@ -36,7 +36,7 @@ The signed-in staff member, for write attribution.
 
 > `optional` **curriculumId?**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:19](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/tools/types.ts#L19)
+Defined in: [ui/src/api-server/ai/tools/types.ts:19](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L19)
 
 Curriculum the user is looking at, when on a Gantt screen.
 
@@ -46,7 +46,7 @@ Curriculum the user is looking at, when on a Gantt screen.
 
 > `optional` **iterationId?**: [`IterationId`](../../../../../api-shared/types/iteration/type-aliases/IterationId.md)
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:17](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/tools/types.ts#L17)
+Defined in: [ui/src/api-server/ai/tools/types.ts:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L17)
 
 Target iteration; undefined means the current one.
 
@@ -56,7 +56,7 @@ Target iteration; undefined means the current one.
 
 > **readController**: () => `Promise`\<[`DatabaseController`](../../../../mongo-db-controller/classes/DatabaseController.md)\>
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:23](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/tools/types.ts#L23)
+Defined in: [ui/src/api-server/ai/tools/types.ts:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L23)
 
 Calendar store scoped to [iterationId](#iterationid), resolved lazily.
 
@@ -70,7 +70,7 @@ Calendar store scoped to [iterationId](#iterationid), resolved lazily.
 
 > **writeController**: () => `Promise`\<[`DatabaseController`](../../../../mongo-db-controller/classes/DatabaseController.md)\>
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:25](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/tools/types.ts#L25)
+Defined in: [ui/src/api-server/ai/tools/types.ts:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L25)
 
 Same, but refuses a past iteration. Write tools use this one.
 

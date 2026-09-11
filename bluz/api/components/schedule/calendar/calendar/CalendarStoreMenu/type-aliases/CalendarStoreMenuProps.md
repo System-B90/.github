@@ -8,7 +8,7 @@
 
 > **CalendarStoreMenuProps**\<`TEntry`\> = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:25](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L25)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **actions**: [`StoreEntryAction`](StoreEntryAction.md)\<`TEntry`\>[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:57](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L57)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:57](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L57)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **busyId**: `null` \| `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:50](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L50)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:50](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L50)
 
 Non-null while one entry is mutating; disables all row actions.
 
@@ -40,7 +40,7 @@ Non-null while one entry is mutating; disables all row actions.
 
 > `optional` **children?**: `ReactNode`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:59](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L59)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:59](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L59)
 
 Extra nodes rendered next to the popover (e.g. confirmation dialogs).
 
@@ -50,7 +50,7 @@ Extra nodes rendered next to the popover (e.g. confirmation dialogs).
 
 > **createIcon**: `ReactNode`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:44](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L44)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L44)
 
 Icon of the create button.
 
@@ -60,7 +60,7 @@ Icon of the create button.
 
 > **createLabel**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:42](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L42)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L42)
 
 Label of the create button.
 
@@ -70,7 +70,7 @@ Label of the create button.
 
 > `optional` **disabled?**: `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:34](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L34)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L34)
 
 Disables the toolbar button and swaps its tooltip for `disabledTooltip`
 ("coming soon" placeholders). The popover never opens while set.
@@ -81,7 +81,7 @@ Disables the toolbar button and swaps its tooltip for `disabledTooltip`
 
 > `optional` **disabledTooltip?**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:36](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L36)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:36](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L36)
 
 Tooltip shown instead of `tooltip` while `disabled` is set.
 
@@ -91,7 +91,7 @@ Tooltip shown instead of `tooltip` while `disabled` is set.
 
 > **emptyText**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:46](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L46)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:46](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L46)
 
 Text shown when the store holds no entries.
 
@@ -101,7 +101,7 @@ Text shown when the store holds no entries.
 
 > **entries**: `TEntry`[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:47](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L47)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:47](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L47)
 
 ***
 
@@ -109,7 +109,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **icon**: `ReactNode`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:29](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L29)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:29](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L29)
 
 Icon inside the toolbar button.
 
@@ -119,7 +119,7 @@ Icon inside the toolbar button.
 
 > **loading**: `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:48](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L48)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:48](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L48)
 
 ***
 
@@ -127,7 +127,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **nameLabel**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:40](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L40)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L40)
 
 Label of the "new entry name" text field.
 
@@ -137,7 +137,7 @@ Label of the "new entry name" text field.
 
 > **onCreate**: (`label`) => `Promise`\<`void`\> \| `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:54](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L54)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:54](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L54)
 
 Create a new entry from the current calendar under the given name.
 
@@ -157,7 +157,7 @@ Create a new entry from the current calendar under the given name.
 
 > **onRefresh**: () => `Promise`\<`void`\> \| `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:52](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L52)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L52)
 
 Fetch the entry list. Called whenever the popover opens.
 
@@ -171,7 +171,7 @@ Fetch the entry list. Called whenever the popover opens.
 
 > **renderEntry**: (`entry`) => `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:56](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L56)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:56](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L56)
 
 Primary and secondary text for one row.
 
@@ -199,7 +199,7 @@ Primary and secondary text for one row.
 
 > **title**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:38](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L38)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:38](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L38)
 
 Popover heading.
 
@@ -209,6 +209,6 @@ Popover heading.
 
 > **tooltip**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:27](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L27)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L27)
 
 Tooltip on the toolbar button.

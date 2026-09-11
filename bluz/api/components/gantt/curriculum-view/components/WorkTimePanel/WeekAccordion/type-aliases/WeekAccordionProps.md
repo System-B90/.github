@@ -8,7 +8,7 @@
 
 > **WeekAccordionProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:11](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L11)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L11)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/We
 
 > **canAddDay**: `boolean`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:14](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L14)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L14)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/We
 
 > **canEdit**: `boolean`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:13](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L13)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L13)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/We
 
 > **onAddDay**: (`weekId`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:15](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L15)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L15)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/We
 
 > **onWeekCommentChange**: (`weekId`, `nextComment`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:16](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L16)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L16)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/We
 
 > **onWeekCommentKeyDown**: (`event`, `weekId`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:18](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L18)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L18)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/We
 
 > **onWeekCommentSave**: (`weekId`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:17](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L17)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L17)
 
 #### Parameters
 
@@ -112,4 +112,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/We
 
 > **weekId**: [`GanttWeekId`](../../../../../../../api-shared/types/gantt/models/week/type-aliases/GanttWeekId.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:12](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L12)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/WeekAccordion.tsx#L12)

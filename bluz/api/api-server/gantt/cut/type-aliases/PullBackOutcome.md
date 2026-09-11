@@ -8,4 +8,4 @@
 
 > **PullBackOutcome** = \{ `error`: [`ApiCurriculumPullBackError`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumPullBackError.md); `ok`: `false`; \} \| \{ `ok`: `true`; `result`: [`ApiCurriculumPullBackResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumPullBackResponse.md); \}
 
-Defined in: [ui/src/api-server/gantt/cut.ts:83](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/gantt/cut.ts#L83)
+Defined in: [ui/src/api-server/gantt/cut.ts:85](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/cut.ts#L85)

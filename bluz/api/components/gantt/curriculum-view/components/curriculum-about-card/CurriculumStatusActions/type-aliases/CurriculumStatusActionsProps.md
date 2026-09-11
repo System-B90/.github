@@ -6,22 +6,20 @@
 
 # Type Alias: CurriculumStatusActionsProps
 
-> **CurriculumStatusActionsProps** = `object`
+> **CurriculumStatusActionsProps** = `object` & [`GanttCreationDeletionCallbackProps`](../../../../../curriculum-fab/CurriculumActionItems/type-aliases/GanttCreationDeletionCallbackProps.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx:12](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx#L12)
+Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx#L15)
 
-## Properties
+## Type Declaration
 
 ### curriculum
 
 > **curriculum**: [`GanttCurriculumDocument`](../../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx:14](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx#L14)
-
-***
-
 ### curriculumId
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx:13](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumStatusActions.tsx#L13)
+### setCurrentCurriculum?
+
+> `optional` **setCurrentCurriculum?**: `Dispatch`\<`SetStateAction`\<[`GanttCurriculumId`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`\>\>

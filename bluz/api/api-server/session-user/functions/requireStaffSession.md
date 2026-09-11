@@ -8,7 +8,7 @@
 
 > **requireStaffSession**(): `Promise`\<`AuthSessionUser` & `object`\>
 
-Defined in: [ui/src/api-server/session-user.ts:38](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/session-user.ts#L38)
+Defined in: [ui/src/api-server/session-user.ts:58](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/session-user.ts#L58)
 
 Gates a route to Segel/Admin clearance (#199). Every request re-checks the
 JWT, not just the one-time sign-in gate in `sso.ts`'s `signInCallback`.

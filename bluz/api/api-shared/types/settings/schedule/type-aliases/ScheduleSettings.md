@@ -8,7 +8,7 @@
 
 > **ScheduleSettings** = `object`
 
-Defined in: [ui/src/api-shared/types/settings/schedule.ts:3](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/settings/schedule.ts#L3)
+Defined in: [ui/src/api-shared/types/settings/schedule.ts:3](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/settings/schedule.ts#L3)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/settings/schedule.ts:3](https://github.com/
 
 > **calendarDayEndTime**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/schedule.ts:11](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/settings/schedule.ts#L11)
+Defined in: [ui/src/api-shared/types/settings/schedule.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/settings/schedule.ts#L11)
 
 Calendar view's latest visible time ("HH:mm"), react-big-calendar's `max`.
 
@@ -26,7 +26,7 @@ Calendar view's latest visible time ("HH:mm"), react-big-calendar's `max`.
 
 > **calendarDayStartTime**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/schedule.ts:9](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/settings/schedule.ts#L9)
+Defined in: [ui/src/api-shared/types/settings/schedule.ts:9](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/settings/schedule.ts#L9)
 
 Calendar view's earliest visible time ("HH:mm"), react-big-calendar's `min`.
 
@@ -36,7 +36,7 @@ Calendar view's earliest visible time ("HH:mm"), react-big-calendar's `min`.
 
 > **dayStartTime**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/schedule.ts:5](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/settings/schedule.ts#L5)
+Defined in: [ui/src/api-shared/types/settings/schedule.ts:5](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/settings/schedule.ts#L5)
 
 Default day start time ("HH:mm") used when cutting a curriculum into the schedule.
 
@@ -46,6 +46,6 @@ Default day start time ("HH:mm") used when cutting a curriculum into the schedul
 
 > **weekendHomeStartTime**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/schedule.ts:7](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/settings/schedule.ts#L7)
+Defined in: [ui/src/api-shared/types/settings/schedule.ts:7](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/settings/schedule.ts#L7)
 
 Start time ("HH:mm") for the schedule after a weekend spent at home.

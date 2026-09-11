@@ -8,7 +8,7 @@
 
 > **ConstraintMoveProposal** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:61](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L61)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:61](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L61)
 
 A cross-day move the solver would like to make, pending user approval.
 
@@ -18,7 +18,7 @@ A cross-day move the solver would like to make, pending user approval.
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:62](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L62)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:62](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L62)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:62](https://github.com/S
 
 > **eventTitle**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:63](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L63)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:63](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L63)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:63](https://github.com/S
 
 > **fromDayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:64](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L64)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:64](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L64)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:64](https://github.com/S
 
 > **reason**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:67](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L67)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:67](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L67)
 
 The constraint this move satisfies, in human terms.
 
@@ -52,4 +52,4 @@ The constraint this move satisfies, in human terms.
 
 > **toDayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:65](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L65)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:65](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L65)

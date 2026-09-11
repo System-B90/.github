@@ -22,6 +22,7 @@
 - [buildScheduleEvent](functions/buildScheduleEvent.md)
 - [countOverlappingOccurrences](functions/countOverlappingOccurrences.md)
 - [cutCurriculumToSchedule](functions/cutCurriculumToSchedule.md)
+- [cutEventFilter](functions/cutEventFilter.md)
 - [getCutStatus](functions/getCutStatus.md)
 - [indexCurriculumEvents](functions/indexCurriculumEvents.md)
 - [materializeCurriculumEvents](functions/materializeCurriculumEvents.md)

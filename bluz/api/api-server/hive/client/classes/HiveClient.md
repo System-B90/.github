@@ -6,7 +6,7 @@
 
 # Class: HiveClient
 
-Defined in: [ui/src/api-server/hive/client.ts:39](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L39)
+Defined in: [ui/src/api-server/hive/client.ts:39](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L39)
 
 Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, cookie-auth fetch, users/classes) lives in
@@ -52,7 +52,7 @@ Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:15
 
 > **createLesson**(`data`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
 
-Defined in: [ui/src/api-server/hive/client.ts:89](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L89)
+Defined in: [ui/src/api-server/hive/client.ts:89](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L89)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [ui/src/api-server/hive/client.ts:89](https://github.com/System-B90/
 
 > **createLessonRule**(`parentId`, `data`): `Promise`\<`LessonRule`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:145](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L145)
+Defined in: [ui/src/api-server/hive/client.ts:145](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L145)
 
 #### Parameters
 
@@ -92,7 +92,7 @@ Defined in: [ui/src/api-server/hive/client.ts:145](https://github.com/System-B90
 
 > **deleteLesson**(`id`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:116](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L116)
+Defined in: [ui/src/api-server/hive/client.ts:116](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L116)
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: [ui/src/api-server/hive/client.ts:116](https://github.com/System-B90
 
 > **deleteLessonRule**(`parentId`, `id`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:177](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L177)
+Defined in: [ui/src/api-server/hive/client.ts:177](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L177)
 
 #### Parameters
 
@@ -132,7 +132,7 @@ Defined in: [ui/src/api-server/hive/client.ts:177](https://github.com/System-B90
 
 > **getClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:40](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L40)
+Defined in: [ui/src/api-server/hive/client.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L40)
 
 All Hive classes; pass a `type` to filter (e.g. Student Group / Room).
 
@@ -150,7 +150,7 @@ All Hive classes; pass a `type` to filter (e.g. Student Group / Room).
 
 > **getLesson**(`id`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
 
-Defined in: [ui/src/api-server/hive/client.ts:82](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L82)
+Defined in: [ui/src/api-server/hive/client.ts:82](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L82)
 
 #### Parameters
 
@@ -168,7 +168,7 @@ Defined in: [ui/src/api-server/hive/client.ts:82](https://github.com/System-B90/
 
 > **getLessonRule**(`parentId`, `id`): `Promise`\<`LessonRule`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:138](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L138)
+Defined in: [ui/src/api-server/hive/client.ts:138](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L138)
 
 #### Parameters
 
@@ -190,7 +190,7 @@ Defined in: [ui/src/api-server/hive/client.ts:138](https://github.com/System-B90
 
 > **getLessonRules**(`parentId`): `Promise`\<`LessonRule`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:131](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L131)
+Defined in: [ui/src/api-server/hive/client.ts:131](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L131)
 
 #### Parameters
 
@@ -208,7 +208,7 @@ Defined in: [ui/src/api-server/hive/client.ts:131](https://github.com/System-B90
 
 > **getLessons**(`params?`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:74](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L74)
+Defined in: [ui/src/api-server/hive/client.ts:74](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L74)
 
 #### Parameters
 
@@ -226,7 +226,7 @@ Defined in: [ui/src/api-server/hive/client.ts:74](https://github.com/System-B90/
 
 > **getModuleQueues**(`moduleId`): `Promise`\<`Queue`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:68](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L68)
+Defined in: [ui/src/api-server/hive/client.ts:68](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L68)
 
 The queues of one Hive module — the only queues a lesson rule may point
 at (Hive rejects user queues on a rule).
@@ -247,7 +247,7 @@ at (Hive rejects user queues on a rule).
 
 > **getModules**(): `Promise`\<[`Module`](../../../../api-shared/types/module/type-aliases/Module.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L58)
+Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L58)
 
 #### Returns
 
@@ -259,7 +259,7 @@ Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/
 
 > **getRooms**(): `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:44](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L44)
+Defined in: [ui/src/api-server/hive/client.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L44)
 
 #### Returns
 
@@ -271,7 +271,7 @@ Defined in: [ui/src/api-server/hive/client.ts:44](https://github.com/System-B90/
 
 > **getSubjects**(): `Promise`\<[`Subject`](../../../../api-shared/types/subject/type-aliases/Subject.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:52](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L52)
+Defined in: [ui/src/api-server/hive/client.ts:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L52)
 
 #### Returns
 
@@ -283,7 +283,7 @@ Defined in: [ui/src/api-server/hive/client.ts:52](https://github.com/System-B90/
 
 > **patchLesson**(`id`, `data`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
 
-Defined in: [ui/src/api-server/hive/client.ts:105](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L105)
+Defined in: [ui/src/api-server/hive/client.ts:105](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L105)
 
 #### Parameters
 
@@ -305,7 +305,7 @@ Defined in: [ui/src/api-server/hive/client.ts:105](https://github.com/System-B90
 
 > **patchLessonRule**(`parentId`, `id`, `data`): `Promise`\<`LessonRule`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:165](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L165)
+Defined in: [ui/src/api-server/hive/client.ts:165](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L165)
 
 #### Parameters
 
@@ -331,7 +331,7 @@ Defined in: [ui/src/api-server/hive/client.ts:165](https://github.com/System-B90
 
 > **setLessonForClass**(`classId`, `lessonId`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:123](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L123)
+Defined in: [ui/src/api-server/hive/client.ts:123](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L123)
 
 #### Parameters
 
@@ -353,7 +353,7 @@ Defined in: [ui/src/api-server/hive/client.ts:123](https://github.com/System-B90
 
 > **updateLesson**(`id`, `data`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
 
-Defined in: [ui/src/api-server/hive/client.ts:97](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L97)
+Defined in: [ui/src/api-server/hive/client.ts:97](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L97)
 
 #### Parameters
 
@@ -375,7 +375,7 @@ Defined in: [ui/src/api-server/hive/client.ts:97](https://github.com/System-B90/
 
 > **updateLessonRule**(`parentId`, `id`, `data`): `Promise`\<`LessonRule`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:153](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/hive/client.ts#L153)
+Defined in: [ui/src/api-server/hive/client.ts:153](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L153)
 
 #### Parameters
 

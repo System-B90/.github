@@ -8,7 +8,7 @@
 
 > **safeTitle**(`title`): `string`
 
-Defined in: [ui/src/api-shared/common.ts:26](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/common.ts#L26)
+Defined in: [ui/src/api-shared/common.ts:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/common.ts#L26)
 
 Sanitizes a human-readable title into a filesystem/URL-safe token.
 Keeps ASCII alphanumerics and the Hebrew Unicode block (֐-׿); everything

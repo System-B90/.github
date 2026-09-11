@@ -13,4 +13,5 @@
 ## Functions
 
 - [getSessionUser](functions/getSessionUser.md)
+- [getStaffSession](functions/getStaffSession.md)
 - [requireStaffSession](functions/requireStaffSession.md)

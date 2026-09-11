@@ -8,7 +8,8 @@
 
 ## Type Aliases
 
-- [CreateNewCurriculumProps](type-aliases/CreateNewCurriculumProps.md)
+- [CurriculumActionItemsProps](type-aliases/CurriculumActionItemsProps.md)
+- [GanttCreationDeletionCallbackProps](type-aliases/GanttCreationDeletionCallbackProps.md)
 
 ## Functions
 

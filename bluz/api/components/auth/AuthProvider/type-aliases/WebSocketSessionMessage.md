@@ -8,7 +8,7 @@
 
 > **WebSocketSessionMessage** = `object`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/auth/AuthProvider.tsx#L21)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/auth/AuthProvider.tsx#L21)
 
 ## Indexable
 
@@ -20,4 +20,4 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:21](https://github.com/Syst
 
 > **type**: [`MessageTypes`](../../../../settings/enumerations/MessageTypes.md)
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:22](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/auth/AuthProvider.tsx#L22)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/auth/AuthProvider.tsx#L22)

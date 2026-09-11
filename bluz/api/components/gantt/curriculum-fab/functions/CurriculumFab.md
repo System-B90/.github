@@ -8,7 +8,7 @@
 
 > **CurriculumFab**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/index.tsx:42](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-fab/index.tsx#L42)
+Defined in: [ui/src/components/gantt/curriculum-fab/index.tsx:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-fab/index.tsx#L35)
 
 ## Parameters
 

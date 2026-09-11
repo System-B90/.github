@@ -8,7 +8,7 @@
 
 > **areEventsEqual**(`event1`, `event2`): `boolean`
 
-Defined in: [ui/src/components/schedule/types/EventUtils.ts:104](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/schedule/types/EventUtils.ts#L104)
+Defined in: [ui/src/components/schedule/types/EventUtils.ts:104](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/types/EventUtils.ts#L104)
 
 ## Parameters
 

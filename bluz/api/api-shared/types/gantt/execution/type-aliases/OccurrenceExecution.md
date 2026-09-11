@@ -8,7 +8,7 @@
 
 > **OccurrenceExecution** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:33](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/execution.ts#L33)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:33](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/execution.ts#L33)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/execution.ts:33](https://github.com/S
 
 > **actual**: [`ActualOccurrenceExecution`](ActualOccurrenceExecution.md) \| `null`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:42](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/execution.ts#L42)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/execution.ts#L42)
 
 null ⇒ the generated schedule event was deleted/archived.
 
@@ -26,7 +26,7 @@ null ⇒ the generated schedule event was deleted/archived.
 
 > **drifted**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:44](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/execution.ts#L44)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/execution.ts#L44)
 
 Convenience flag: actual missing or any compared field differs.
 
@@ -36,7 +36,7 @@ Convenience flag: actual missing or any compared field differs.
 
 > **occurrenceDate**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:35](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/execution.ts#L35)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/execution.ts#L35)
 
 Planned occurrence date (yyyy-MM-dd) — the join key with the schedule.
 
@@ -46,7 +46,7 @@ Planned occurrence date (yyyy-MM-dd) — the join key with the schedule.
 
 > **planned**: `null` \| [`PlannedOccurrenceExecution`](PlannedOccurrenceExecution.md)
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:40](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/execution.ts#L40)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/execution.ts#L40)
 
 Planned attributes; null for orphaned actual events whose planned
 occurrence no longer exists in the current plan (gantt edited post-cut).

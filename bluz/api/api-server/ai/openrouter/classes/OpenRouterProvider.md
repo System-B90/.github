@@ -6,7 +6,7 @@
 
 # Class: OpenRouterProvider
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:147](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/openrouter.ts#L147)
+Defined in: [ui/src/api-server/ai/openrouter.ts:147](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L147)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/openrouter.ts:147](https://github.com/System-B
 
 > **new OpenRouterProvider**(`options`): `OpenRouterProvider`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:157](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/openrouter.ts#L157)
+Defined in: [ui/src/api-server/ai/openrouter.ts:157](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L157)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/api-server/ai/openrouter.ts:157](https://github.com/System-B
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:149](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/openrouter.ts#L149)
+Defined in: [ui/src/api-server/ai/openrouter.ts:149](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L149)
 
 Model used when a request does not name one.
 
@@ -68,7 +68,7 @@ Model used when a request does not name one.
 
 > `readonly` **name**: `"openrouter"` = `"openrouter"`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:148](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/openrouter.ts#L148)
+Defined in: [ui/src/api-server/ai/openrouter.ts:148](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L148)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -82,7 +82,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:176](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/openrouter.ts#L176)
+Defined in: [ui/src/api-server/ai/openrouter.ts:176](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L176)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -106,7 +106,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:199](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/ai/openrouter.ts#L199)
+Defined in: [ui/src/api-server/ai/openrouter.ts:199](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L199)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

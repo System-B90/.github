@@ -8,7 +8,7 @@
 
 > **CalendarSnapshotRestoreResult** = `object`
 
-Defined in: [ui/src/api-shared/types.ts:71](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types.ts#L71)
+Defined in: [ui/src/api-shared/types.ts:71](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L71)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types.ts:71](https://github.com/System-B90/Bluz/b
 
 > **rangeEnd**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:75](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types.ts#L75)
+Defined in: [ui/src/api-shared/types.ts:75](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L75)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types.ts:75](https://github.com/System-B90/Bluz/b
 
 > **rangeStart**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:74](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types.ts#L74)
+Defined in: [ui/src/api-shared/types.ts:74](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L74)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/types.ts:74](https://github.com/System-B90/Bluz/b
 
 > **removedCount**: `number`
 
-Defined in: [ui/src/api-shared/types.ts:73](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types.ts#L73)
+Defined in: [ui/src/api-shared/types.ts:73](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L73)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/api-shared/types.ts:73](https://github.com/System-B90/Bluz/b
 
 > **restoredCount**: `number`
 
-Defined in: [ui/src/api-shared/types.ts:72](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types.ts#L72)
+Defined in: [ui/src/api-shared/types.ts:72](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L72)

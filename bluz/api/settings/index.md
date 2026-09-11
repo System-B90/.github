@@ -9,6 +9,7 @@
 ## Enumerations
 
 - [MessageTypes](enumerations/MessageTypes.md)
+- [WsScope](enumerations/WsScope.md)
 
 ## Variables
 
@@ -19,6 +20,7 @@
 - [IMMUTABLE\_CACHE\_MAX\_TTL](variables/IMMUTABLE_CACHE_MAX_TTL.md)
 - [MAX\_EVENT\_RANGE\_DAYS](variables/MAX_EVENT_RANGE_DAYS.md)
 - [MILLISECONDS\_IN\_A\_DAY](variables/MILLISECONDS_IN_A_DAY.md)
+- [STUDENT\_SYNC\_ID](variables/STUDENT_SYNC_ID.md)
 - [USER\_AUTH\_COOKIE\_NAME](variables/USER_AUTH_COOKIE_NAME.md)
 
 ## Functions

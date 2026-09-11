@@ -8,7 +8,7 @@
 
 > **normalizeWindows**(`windows`): [`Interval`](../type-aliases/Interval.md)[]
 
-Defined in: [ui/src/api-shared/interval-layout.ts:34](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/interval-layout.ts#L34)
+Defined in: [ui/src/api-shared/interval-layout.ts:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/interval-layout.ts#L34)
 
 Sorts windows and merges every overlapping or touching pair, so downstream
 walks can assume a strictly increasing, non-overlapping sequence. Empty and

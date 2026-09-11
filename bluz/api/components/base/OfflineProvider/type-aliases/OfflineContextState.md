@@ -8,7 +8,7 @@
 
 > **OfflineContextState** = `object`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:17](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L17)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L17)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:17](https://github.com/S
 
 > **captureEventBeforeEdit**: (`event`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:23](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L23)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L23)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:23](https://github.com/S
 
 > **captureInitialEvents**: (`events`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:24](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L24)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L24)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:24](https://github.com/S
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:18](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L18)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L18)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:18](https://github.com/S
 
 > **getCapturedEvent**: (`eventId`) => [`Event`](../../../../api-shared/types/event/type-aliases/Event.md) \| `null`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:27](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L27)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L27)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:27](https://github.com/S
 
 > **getCapturedState**: () => `Record`\<[`EventId`](../../../../api-shared/types/event/type-aliases/EventId.md), [`Event`](../../../../api-shared/types/event/type-aliases/Event.md)\>
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:28](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L28)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L28)
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:28](https://github.com/S
 
 > **isEventCreatedLocally**: (`eventId`) => `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:30](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L30)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:30](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L30)
 
 #### Parameters
 
@@ -108,7 +108,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:30](https://github.com/S
 
 > **markEventCreatedLocally**: (`eventId`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:29](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L29)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:29](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L29)
 
 #### Parameters
 
@@ -126,7 +126,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:29](https://github.com/S
 
 > **offlineMode**: `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:19](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L19)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:19](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L19)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:19](https://github.com/S
 
 > **purgeCapturedEvents**: (`eventIds`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:26](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L26)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L26)
 
 #### Parameters
 
@@ -152,7 +152,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:26](https://github.com/S
 
 > **purgeCapturedState**: () => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:25](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L25)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L25)
 
 #### Returns
 
@@ -164,7 +164,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:25](https://github.com/S
 
 > **pushDialogOpen**: `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L21)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L21)
 
 ***
 
@@ -172,7 +172,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:21](https://github.com/S
 
 > **setOfflineMode**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:20](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L20)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:20](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L20)
 
 ***
 
@@ -180,4 +180,4 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:20](https://github.com/S
 
 > **setPushDialogOpen**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:22](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/OfflineProvider.tsx#L22)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/OfflineProvider.tsx#L22)

@@ -8,7 +8,7 @@
 
 > **getSpilloverMinutesByDay**(`spans`): `Record`\<[`GanttDayId`](../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDayId.md), `number`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:314](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L314)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:314](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L314)
 
 Per-day scheduled minutes with multi-day spillover applied: each event
 contributes only the minutes it consumes on that specific day, so hours

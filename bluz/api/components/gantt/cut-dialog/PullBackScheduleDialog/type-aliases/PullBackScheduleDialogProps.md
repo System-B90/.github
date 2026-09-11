@@ -8,7 +8,7 @@
 
 > **PullBackScheduleDialogProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L21)
+Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L21)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:21](h
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:23](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L23)
+Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L23)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:23](h
 
 > `optional` **curriculumTitle?**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:24](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L24)
+Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L24)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:24](h
 
 > **onClose**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:25](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L25)
+Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L25)
 
 #### Returns
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:25](h
 
 > `optional` **onSuccess?**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:27](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L27)
+Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L27)
 
 Fired after a successful pull-back so the caller can flip its cut state.
 
@@ -58,4 +58,4 @@ Fired after a successful pull-back so the caller can flip its cut state.
 
 > **open**: `boolean`
 
-Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:22](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L22)
+Defined in: [ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/cut-dialog/PullBackScheduleDialog.tsx#L22)

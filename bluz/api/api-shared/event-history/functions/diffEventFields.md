@@ -8,7 +8,7 @@
 
 > **diffEventFields**(`before`, `after`): [`EventFieldChange`](../../types/event-history/type-aliases/EventFieldChange.md)[]
 
-Defined in: [ui/src/api-shared/event-history.ts:62](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/event-history.ts#L62)
+Defined in: [ui/src/api-shared/event-history.ts:62](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/event-history.ts#L62)
 
 Field-level diff between two versions of an event document.
 

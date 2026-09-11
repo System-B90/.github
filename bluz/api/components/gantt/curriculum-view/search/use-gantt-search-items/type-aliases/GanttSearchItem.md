@@ -8,7 +8,7 @@
 
 > **GanttSearchItem** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:13](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L13)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L13)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-ite
 
 > `optional` **eventId?**: [`GanttEventId`](../../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEventId.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:23](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L23)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L23)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-ite
 
 > **id**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:15](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L15)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L15)
 
 Unique key for the item (the underlying entity id).
 
@@ -34,7 +34,7 @@ Unique key for the item (the underlying entity id).
 
 > `optional` **moduleId?**: [`GanttModuleId`](../../../../../../api-shared/types/gantt/models/module/type-aliases/GanttModuleId.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:22](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L22)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L22)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-ite
 
 > `optional` **orchestratorName?**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:25](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L25)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L25)
 
 Responsible instructor's display name, for events — also matched against.
 
@@ -52,7 +52,7 @@ Responsible instructor's display name, for events — also matched against.
 
 > **path**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:20](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L20)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:20](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L20)
 
 Full hierarchical path, e.g. `סילבוס / מערך / מופע`.
 
@@ -62,7 +62,7 @@ Full hierarchical path, e.g. `סילבוס / מערך / מופע`.
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L21)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L21)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-ite
 
 > **title**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:18](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L18)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L18)
 
 The item's own name — what the fuzzy search matches against.
 
@@ -80,4 +80,4 @@ The item's own name — what the fuzzy search matches against.
 
 > **type**: [`GanttSearchItemType`](GanttSearchItemType.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:16](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L16)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L16)

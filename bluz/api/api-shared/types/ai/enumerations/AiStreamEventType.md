@@ -6,7 +6,7 @@
 
 # Enumeration: AiStreamEventType
 
-Defined in: [ui/src/api-shared/types/ai.ts:103](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L103)
+Defined in: [ui/src/api-shared/types/ai.ts:103](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L103)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:103](https://github.com/System-B90/Bl
 
 > **Delta**: `"delta"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:105](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L105)
+Defined in: [ui/src/api-shared/types/ai.ts:105](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L105)
 
 A fragment of the assistant's visible answer.
 
@@ -24,7 +24,7 @@ A fragment of the assistant's visible answer.
 
 > **Done**: `"done"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:113](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L113)
+Defined in: [ui/src/api-shared/types/ai.ts:113](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L113)
 
 Terminal success frame.
 
@@ -34,7 +34,7 @@ Terminal success frame.
 
 > **Error**: `"error"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:115](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L115)
+Defined in: [ui/src/api-shared/types/ai.ts:115](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L115)
 
 Terminal failure frame.
 
@@ -44,7 +44,7 @@ Terminal failure frame.
 
 > **ToolProposal**: `"tool_proposal"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:111](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L111)
+Defined in: [ui/src/api-shared/types/ai.ts:111](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L111)
 
 A write tool needs the human to approve it before it runs.
 
@@ -54,7 +54,7 @@ A write tool needs the human to approve it before it runs.
 
 > **ToolResult**: `"tool_result"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:109](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L109)
+Defined in: [ui/src/api-shared/types/ai.ts:109](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L109)
 
 A read tool finished; carries a short human-readable summary.
 
@@ -64,6 +64,6 @@ A read tool finished; carries a short human-readable summary.
 
 > **ToolStart**: `"tool_start"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:107](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L107)
+Defined in: [ui/src/api-shared/types/ai.ts:107](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L107)
 
 A read tool started running.

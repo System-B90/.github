@@ -10,7 +10,7 @@
 
 > **useCurriculumDay**(`dayId`): `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseDay.ts:8](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/UseDay.ts#L8)
+Defined in: [ui/src/components/gantt/state/hooks/UseDay.ts:8](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/UseDay.ts#L8)
 
 ### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/gantt/state/hooks/UseDay.ts:8](https://github.com
 
 > **useCurriculumDay**(`dayId`): `object` & [`BaseGantItem`](../../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & `object` \| `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseDay.ts:9](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/UseDay.ts#L9)
+Defined in: [ui/src/components/gantt/state/hooks/UseDay.ts:9](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/UseDay.ts#L9)
 
 ### Parameters
 

@@ -8,7 +8,7 @@
 
 > **SplittableEvent** = `object`
 
-Defined in: [ui/src/api-shared/break-windows.ts:20](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/break-windows.ts#L20)
+Defined in: [ui/src/api-shared/break-windows.ts:20](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/break-windows.ts#L20)
 
 The subset of an event this module needs, in either representation.
 
@@ -18,7 +18,7 @@ The subset of an event this module needs, in either representation.
 
 > **courses**: `ReadonlyArray`\<[`CourseId`](../../types/course/type-aliases/CourseId.md)\>
 
-Defined in: [ui/src/api-shared/break-windows.ts:25](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/break-windows.ts#L25)
+Defined in: [ui/src/api-shared/break-windows.ts:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/break-windows.ts#L25)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/break-windows.ts:25](https://github.com/System-B9
 
 > **endTime**: `Instant`
 
-Defined in: [ui/src/api-shared/break-windows.ts:23](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/break-windows.ts#L23)
+Defined in: [ui/src/api-shared/break-windows.ts:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/break-windows.ts#L23)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/break-windows.ts:23](https://github.com/System-B9
 
 > **rooms**: `ReadonlyArray`\<[`ResolvableRoom`](../../types/room/type-aliases/ResolvableRoom.md)\>
 
-Defined in: [ui/src/api-shared/break-windows.ts:24](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/break-windows.ts#L24)
+Defined in: [ui/src/api-shared/break-windows.ts:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/break-windows.ts#L24)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/break-windows.ts:24](https://github.com/System-B9
 
 > **splitAcrossBreaks**: `boolean`
 
-Defined in: [ui/src/api-shared/break-windows.ts:26](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/break-windows.ts#L26)
+Defined in: [ui/src/api-shared/break-windows.ts:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/break-windows.ts#L26)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-shared/break-windows.ts:26](https://github.com/System-B9
 
 > **startTime**: `Instant`
 
-Defined in: [ui/src/api-shared/break-windows.ts:22](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/break-windows.ts#L22)
+Defined in: [ui/src/api-shared/break-windows.ts:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/break-windows.ts#L22)
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: [ui/src/api-shared/break-windows.ts:22](https://github.com/System-B9
 
 > **type**: [`EventType`](../../types/event/enumerations/EventType.md)
 
-Defined in: [ui/src/api-shared/break-windows.ts:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/break-windows.ts#L21)
+Defined in: [ui/src/api-shared/break-windows.ts:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/break-windows.ts#L21)

@@ -8,7 +8,7 @@
 
 > **iterationSyncId**(`iterationId?`): `string`
 
-Defined in: [session-server/session-common.ts:77](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L77)
+Defined in: [session-server/session-common.ts:94](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L94)
 
 ## Parameters
 

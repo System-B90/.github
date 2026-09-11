@@ -8,7 +8,7 @@
 
 > **SettingsFormHeaderProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:13](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L13)
 
 The header every settings edit panel shows: an edit badge that turns
 secondary while creating, a title, and a subtitle that also covers the
@@ -22,7 +22,7 @@ strings instead keeps the shape identical across tabs.
 
 > `optional` **action?**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L21)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L21)
 
 Optional trailing control, e.g. the outsider QR button.
 
@@ -32,7 +32,7 @@ Optional trailing control, e.g. the outsider QR button.
 
 > `optional` **icon?**: `React.ElementType`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:15](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L15)
 
 Defaults to the edit pencil; only override when a tab needs its own.
 
@@ -42,7 +42,7 @@ Defaults to the edit pencil; only override when a tab needs its own.
 
 > **isCreating**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:16](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L16)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx
 
 > **isEditing**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:17](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L17)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L17)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx
 
 > **subtitles**: `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:19](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L19)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:19](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L19)
 
 #### creating
 
@@ -78,7 +78,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx
 
 > **titles**: `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:18](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L18)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/FormHeader.tsx#L18)
 
 #### creating
 

@@ -8,7 +8,7 @@
 
 > **ShuffleUsages** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:11](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/shuffles.ts#L11)
+Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/shuffles.ts#L11)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:11](https://github.com/Sy
 
 > **events**: [`ShuffleUsageItem`](ShuffleUsageItem.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:12](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/shuffles.ts#L12)
+Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/shuffles.ts#L12)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:12](https://github.com/Sy
 
 > **modules**: [`ShuffleUsageItem`](ShuffleUsageItem.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:13](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/shuffles.ts#L13)
+Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/shuffles.ts#L13)

@@ -6,7 +6,7 @@
 
 # Enumeration: MessageTypes
 
-Defined in: [session-server/session-common.ts:30](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L30)
+Defined in: [session-server/session-common.ts:31](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L31)
 
 Bluz's complete wire vocabulary. The first four values mirror
 CoreMessageTypes from @system-b90/session-ws (handled by the server core);
@@ -22,7 +22,22 @@ rather than a wire mismatch discovered at runtime (#540 item 8).
 
 > **COURSES\_UPDATE**: `"cu"`
 
-Defined in: [session-server/session-common.ts:39](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L39)
+Defined in: [session-server/session-common.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L40)
+
+***
+
+### CURRENT\_ITERATION\_CHANGED
+
+> **CURRENT\_ITERATION\_CHANGED**: `"cic"`
+
+Defined in: [session-server/session-common.ts:53](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L53)
+
+The current iteration changed (Settings → Iterations → "make current").
+Every per-iteration collection provider resolves its data against
+whichever iteration is current *at request time*, so a switch invalidates
+every already-mounted provider at once (#663). Deliberately unscoped: the
+clients that need to hear it are exactly the ones still pointed at the
+iteration that just stopped being current.
 
 ***
 
@@ -30,7 +45,7 @@ Defined in: [session-server/session-common.ts:39](https://github.com/System-B90/
 
 > **CUSTOM\_COLORS\_UPDATE**: `"ccu"`
 
-Defined in: [session-server/session-common.ts:42](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L42)
+Defined in: [session-server/session-common.ts:43](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L43)
 
 ***
 
@@ -38,7 +53,7 @@ Defined in: [session-server/session-common.ts:42](https://github.com/System-B90/
 
 > **DEREGISTER\_SYNC\_PROVIDER**: `"deregister-sync-provider"`
 
-Defined in: [session-server/session-common.ts:34](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L34)
+Defined in: [session-server/session-common.ts:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L35)
 
 ***
 
@@ -46,7 +61,7 @@ Defined in: [session-server/session-common.ts:34](https://github.com/System-B90/
 
 > **EVENT\_ADDED\_OR\_REMOVED**: `"ear"`
 
-Defined in: [session-server/session-common.ts:36](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L36)
+Defined in: [session-server/session-common.ts:37](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L37)
 
 ***
 
@@ -54,7 +69,7 @@ Defined in: [session-server/session-common.ts:36](https://github.com/System-B90/
 
 > **EVENT\_DATA\_UPDATE**: `"edu"`
 
-Defined in: [session-server/session-common.ts:35](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L35)
+Defined in: [session-server/session-common.ts:36](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L36)
 
 ***
 
@@ -62,7 +77,7 @@ Defined in: [session-server/session-common.ts:35](https://github.com/System-B90/
 
 > **EVENT\_LOCK**: `"el"`
 
-Defined in: [session-server/session-common.ts:45](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L45)
+Defined in: [session-server/session-common.ts:56](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L56)
 
 ***
 
@@ -70,7 +85,7 @@ Defined in: [session-server/session-common.ts:45](https://github.com/System-B90/
 
 > **EVENT\_UNLOCK**: `"eu"`
 
-Defined in: [session-server/session-common.ts:46](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L46)
+Defined in: [session-server/session-common.ts:57](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L57)
 
 ***
 
@@ -78,7 +93,7 @@ Defined in: [session-server/session-common.ts:46](https://github.com/System-B90/
 
 > **OUTSIDERS\_UPDATE**: `"ou"`
 
-Defined in: [session-server/session-common.ts:41](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L41)
+Defined in: [session-server/session-common.ts:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L42)
 
 ***
 
@@ -86,7 +101,7 @@ Defined in: [session-server/session-common.ts:41](https://github.com/System-B90/
 
 > **REGISTER\_SESSION**: `"register-session"`
 
-Defined in: [session-server/session-common.ts:31](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L31)
+Defined in: [session-server/session-common.ts:32](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L32)
 
 ***
 
@@ -94,7 +109,7 @@ Defined in: [session-server/session-common.ts:31](https://github.com/System-B90/
 
 > **REGISTER\_SYNC\_PROVIDER**: `"register-sync-provider"`
 
-Defined in: [session-server/session-common.ts:32](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L32)
+Defined in: [session-server/session-common.ts:33](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L33)
 
 ***
 
@@ -102,7 +117,7 @@ Defined in: [session-server/session-common.ts:32](https://github.com/System-B90/
 
 > **ROOMS\_UPDATE**: `"ru"`
 
-Defined in: [session-server/session-common.ts:40](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L40)
+Defined in: [session-server/session-common.ts:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L41)
 
 ***
 
@@ -110,7 +125,18 @@ Defined in: [session-server/session-common.ts:40](https://github.com/System-B90/
 
 > **SETTINGS\_UPDATE**: `"su"`
 
-Defined in: [session-server/session-common.ts:38](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L38)
+Defined in: [session-server/session-common.ts:39](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L39)
+
+***
+
+### STUDENT\_REFRESH
+
+> **STUDENT\_REFRESH**: `"srf"`
+
+Defined in: [session-server/session-common.ts:63](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L63)
+
+Content-free "something changed, refetch" ping for student sockets
+(#656). Carries no data by construction — see `STUDENT_SYNC_ID`.
 
 ***
 
@@ -118,4 +144,4 @@ Defined in: [session-server/session-common.ts:38](https://github.com/System-B90/
 
 > **SYNC\_OBJECT\_UPDATE**: `"sync-object-update"`
 
-Defined in: [session-server/session-common.ts:33](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/session-server/session-common.ts#L33)
+Defined in: [session-server/session-common.ts:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L34)

@@ -8,7 +8,7 @@
 
 > **EntityActionBuilders**\<`TEntity`, `TContainerId`\> = `object`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:17](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L17)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L17)
 
 Per-entity dispatch builders. Payload key names differ per entity
 (e.g. ADD_MODULE carries `{ module, syllabusId }` while ADD_EVENT carries
@@ -31,7 +31,7 @@ reducer action here.
 
 > **add**: (`entity`, `containerId`) => [`Action`](../../../../reducers/actions/type-aliases/Action.md)
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:21](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L21)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L21)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.t
 
 > `optional` **allocateTime?**: (`id`, `curriculumId`, `duration`) => [`Action`](../../../../reducers/actions/type-aliases/Action.md)
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:30](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L30)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:30](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L30)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.t
 
 > `optional` **discard?**: (`id`) => [`Action`](../../../../reducers/actions/type-aliases/Action.md)
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:29](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L29)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:29](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L29)
 
 Deletes a doc outright rather than unlinking it from `containerId`
 (unlike `remove`). Used to undo an optimistic `create` by discarding
@@ -101,7 +101,7 @@ its temp entity — see `create`'s `buildOptimistic` parameter (#381).
 
 > **remove**: (`containerId`, `id`) => [`Action`](../../../../reducers/actions/type-aliases/Action.md)
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:23](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L23)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L23)
 
 #### Parameters
 
@@ -123,7 +123,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.t
 
 > **update**: (`id`, `updates`) => [`Action`](../../../../reducers/actions/type-aliases/Action.md)
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:22](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L22)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L22)
 
 #### Parameters
 

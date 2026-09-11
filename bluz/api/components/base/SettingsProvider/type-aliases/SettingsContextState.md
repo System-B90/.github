@@ -8,7 +8,7 @@
 
 > **SettingsContextState** = `object`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:95](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L95)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:95](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L95)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:95](https://github.com/
 
 > **breakfastTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:108](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L108)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:108](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L108)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:108](https://github.com
 
 > **calendarDayEndTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:106](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L106)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:106](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L106)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:106](https://github.com
 
 > **calendarDayStartTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:104](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L104)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:104](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L104)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:104](https://github.com
 
 > **dayStartTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:100](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L100)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:100](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L100)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:100](https://github.com
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:96](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L96)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:96](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L96)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:96](https://github.com/
 
 > **dinnerTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:112](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L112)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:112](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L112)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:112](https://github.com
 
 > **isReadOnlyIteration**: `boolean`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:115](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L115)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:115](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L115)
 
 True while viewing a past iteration — its settings are read-only.
 
@@ -74,7 +74,7 @@ True while viewing a past iteration — its settings are read-only.
 
 > **lunchTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:110](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L110)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:110](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L110)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:110](https://github.com
 
 > **prayerTimes**: [`PrayerSettings`](../../../../api-shared/types/settings/prayer/type-aliases/PrayerSettings.md)
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:97](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L97)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:97](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L97)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:97](https://github.com/
 
 > **updateBreakfastTime**: (`newBreakfastTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:109](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L109)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:109](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L109)
 
 #### Parameters
 
@@ -108,7 +108,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:109](https://github.com
 
 > **updateCalendarDayEndTime**: (`newCalendarDayEndTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:107](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L107)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:107](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L107)
 
 #### Parameters
 
@@ -126,7 +126,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:107](https://github.com
 
 > **updateCalendarDayStartTime**: (`newCalendarDayStartTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:105](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L105)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:105](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L105)
 
 #### Parameters
 
@@ -144,7 +144,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:105](https://github.com
 
 > **updateDayStartTime**: (`newDayStartTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:101](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L101)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:101](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L101)
 
 #### Parameters
 
@@ -162,7 +162,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:101](https://github.com
 
 > **updateDinnerTime**: (`newDinnerTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:113](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L113)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:113](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L113)
 
 #### Parameters
 
@@ -180,7 +180,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:113](https://github.com
 
 > **updateLunchTime**: (`newLunchTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:111](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L111)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:111](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L111)
 
 #### Parameters
 
@@ -198,7 +198,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:111](https://github.com
 
 > **updatePrayerTime**: (`key`, `value`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:99](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L99)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:99](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L99)
 
 #### Parameters
 
@@ -220,7 +220,7 @@ keyof [`PrayerSettings`](../../../../api-shared/types/settings/prayer/type-alias
 
 > **updatePrayerTimes**: (`newPrayerTimes`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:98](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L98)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:98](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L98)
 
 #### Parameters
 
@@ -238,7 +238,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:98](https://github.com/
 
 > **updateWeekendHomeStartTime**: (`newWeekendHomeStartTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:103](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L103)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:103](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L103)
 
 #### Parameters
 
@@ -256,4 +256,4 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:103](https://github.com
 
 > **weekendHomeStartTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:102](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/base/SettingsProvider.tsx#L102)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:102](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/SettingsProvider.tsx#L102)

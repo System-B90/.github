@@ -8,7 +8,7 @@
 
 > `const` **NEVER\_SCHEDULE\_DAY\_INDICES**: `ReadonlyArray`\<[`GanttDayIndex`](../../../types/gantt/models/day/enumerations/GanttDayIndex.md)\>
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:407](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-rules.ts#L407)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:407](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L407)
 
 Days that never receive spilled or solver-moved events regardless of their
 configured capacity.

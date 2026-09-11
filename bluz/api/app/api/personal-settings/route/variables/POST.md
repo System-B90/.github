@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/personal-settings/route.ts:28](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/app/api/personal-settings/route.ts#L28)
+Defined in: [ui/src/app/api/personal-settings/route.ts:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/app/api/personal-settings/route.ts#L26)
 
 POST /api/personal-settings — replace the current user's personal settings.
 

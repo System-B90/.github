@@ -8,7 +8,7 @@
 
 > **ConstraintPlacement** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:39](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L39)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:39](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L39)
 
 Where an event currently sits, in the linear day timeline.
 
@@ -18,7 +18,7 @@ Where an event currently sits, in the linear day timeline.
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:42](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L42)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L42)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:42](https://github.com/S
 
 > **dayIndex**: [`GanttDayIndex`](../../../types/gantt/models/day/enumerations/GanttDayIndex.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:45](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L45)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:45](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L45)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:45](https://github.com/S
 
 > **dayOrdinal**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:44](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L44)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L44)
 
 Index of the day in the flattened week→day timeline.
 
@@ -44,7 +44,7 @@ Index of the day in the flattened week→day timeline.
 
 > **durationMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:47](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L47)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:47](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L47)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:47](https://github.com/S
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:40](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L40)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L40)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:40](https://github.com/S
 
 > **moduleId**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:41](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L41)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L41)
 
 ***
 
@@ -68,4 +68,4 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:41](https://github.com/S
 
 > **weekId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:46](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L46)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:46](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L46)

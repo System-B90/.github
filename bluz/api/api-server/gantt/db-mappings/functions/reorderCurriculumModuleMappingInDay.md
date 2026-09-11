@@ -8,7 +8,7 @@
 
 > **reorderCurriculumModuleMappingInDay**(`curriculumId`, `moduleId`, `eventId`, `dayId`, `newSortOrder`): `Promise`\<`RowList`\<`never`[]\>\>
 
-Defined in: [ui/src/api-server/gantt/db-mappings.ts:149](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/gantt/db-mappings.ts#L149)
+Defined in: [ui/src/api-server/gantt/db-mappings.ts:149](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/db-mappings.ts#L149)
 
 Reorders modules or events within a specific day.
 Implements a fractional/float-based update for the sortOrder.

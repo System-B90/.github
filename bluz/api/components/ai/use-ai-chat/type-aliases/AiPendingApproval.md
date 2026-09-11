@@ -8,7 +8,7 @@
 
 > **AiPendingApproval** = `object`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:40](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/ai/use-ai-chat.ts#L40)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/ai/use-ai-chat.ts#L40)
 
 A write the model wants to make, waiting on the user.
 
@@ -18,7 +18,7 @@ A write the model wants to make, waiting on the user.
 
 > **arguments**: `unknown`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:44](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/ai/use-ai-chat.ts#L44)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/ai/use-ai-chat.ts#L44)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:44](https://github.com/System-B
 
 > **name**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:42](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/ai/use-ai-chat.ts#L42)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/ai/use-ai-chat.ts#L42)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:42](https://github.com/System-B
 
 > **summary**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:43](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/ai/use-ai-chat.ts#L43)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:43](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/ai/use-ai-chat.ts#L43)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:43](https://github.com/System-B
 
 > **toolCallId**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:41](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/ai/use-ai-chat.ts#L41)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/ai/use-ai-chat.ts#L41)

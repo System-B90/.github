@@ -8,4 +8,4 @@
 
 > `const` **GanttRecurrenceExceptionContext**: `Context`\<[`GanttRecurrenceExceptionContextType`](../type-aliases/GanttRecurrenceExceptionContextType.md) \| `undefined`\>
 
-Defined in: [ui/src/components/gantt/state/recurrence-exceptions/context.ts:48](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/state/recurrence-exceptions/context.ts#L48)
+Defined in: [ui/src/components/gantt/state/recurrence-exceptions/context.ts:48](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/recurrence-exceptions/context.ts#L48)

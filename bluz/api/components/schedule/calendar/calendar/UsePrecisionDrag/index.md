@@ -9,4 +9,3 @@
 ## Functions
 
 - [dampDragDelta](functions/dampDragDelta.md)
-- [usePrecisionDrag](functions/usePrecisionDrag.md)

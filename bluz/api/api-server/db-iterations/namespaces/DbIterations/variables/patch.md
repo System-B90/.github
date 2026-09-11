@@ -8,7 +8,7 @@
 
 > `const` **patch**: (`id`, `patch`) => `Promise`\<[`Iteration`](../../../../../api-shared/types/iteration/type-aliases/Iteration.md)\> = `patchIteration`
 
-Defined in: [ui/src/api-server/db-iterations.ts:364](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-server/db-iterations.ts#L364)
+Defined in: [ui/src/api-server/db-iterations.ts:380](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/db-iterations.ts#L380)
 
 Patch an iteration. Setting `isCurrent: true` atomically demotes whichever
 iteration was previously current, so exactly one stays current.

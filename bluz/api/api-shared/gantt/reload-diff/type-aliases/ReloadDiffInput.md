@@ -8,7 +8,7 @@
 
 > **ReloadDiffInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:52](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/reload-diff.ts#L52)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/reload-diff.ts#L52)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/reload-diff.ts:52](https://github.com/Syste
 
 > **actual**: [`DbEventDocument`](../../../types/event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:56](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/reload-diff.ts#L56)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:56](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/reload-diff.ts#L56)
 
 Live cut events currently in the schedule for this curriculum.
 
@@ -26,7 +26,7 @@ Live cut events currently in the schedule for this curriculum.
 
 > **desired**: [`DbEventDocument`](../../../types/event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:54](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/reload-diff.ts#L54)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:54](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/reload-diff.ts#L54)
 
 Documents the current plan would produce, ids irrelevant.
 
@@ -36,7 +36,7 @@ Documents the current plan would produce, ids irrelevant.
 
 > `optional` **lastManualEditByEvent?**: `ReadonlyMap`\<`string`, [`ReloadConflictReason`](../../../types/gantt/reload/type-aliases/ReloadConflictReason.md)\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:60](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/reload-diff.ts#L60)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:60](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/reload-diff.ts#L60)
 
 Explanation per manually-edited event, for the conflicts dialog.
 
@@ -46,7 +46,7 @@ Explanation per manually-edited event, for the conflicts dialog.
 
 > **manuallyEditedIds**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:58](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/reload-diff.ts#L58)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:58](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/reload-diff.ts#L58)
 
 Event ids the change log marks as manually edited.
 
@@ -56,6 +56,6 @@ Event ids the change log marks as manually edited.
 
 > `optional` **overrideEventIds?**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:62](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/reload-diff.ts#L62)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:62](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/reload-diff.ts#L62)
 
 Manually-edited events the user chose to overwrite anyway.

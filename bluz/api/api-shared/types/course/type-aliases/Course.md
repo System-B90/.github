@@ -8,7 +8,7 @@
 
 > **Course** = `object`
 
-Defined in: [ui/src/api-shared/types/course.ts:4](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/course.ts#L4)
+Defined in: [ui/src/api-shared/types/course.ts:4](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/course.ts#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/course.ts:4](https://github.com/System-B90/
 
 > **color**: [`Color`](../../../common/type-aliases/Color.md) \| `null`
 
-Defined in: [ui/src/api-shared/types/course.ts:7](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/course.ts#L7)
+Defined in: [ui/src/api-shared/types/course.ts:7](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/course.ts#L7)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/course.ts:7](https://github.com/System-B90/
 
 > `optional` **description?**: `string`
 
-Defined in: [ui/src/api-shared/types/course.ts:11](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/course.ts#L11)
+Defined in: [ui/src/api-shared/types/course.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/course.ts#L11)
 
 Optional free-text description (e.g. provenance of auto-created courses).
 
@@ -34,7 +34,7 @@ Optional free-text description (e.g. provenance of auto-created courses).
 
 > **id**: [`CourseId`](CourseId.md)
 
-Defined in: [ui/src/api-shared/types/course.ts:5](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/course.ts#L5)
+Defined in: [ui/src/api-shared/types/course.ts:5](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/course.ts#L5)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/types/course.ts:5](https://github.com/System-B90/
 
 > `optional` **instructorIds?**: `number`[]
 
-Defined in: [ui/src/api-shared/types/course.ts:9](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/course.ts#L9)
+Defined in: [ui/src/api-shared/types/course.ts:9](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/course.ts#L9)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-shared/types/course.ts:9](https://github.com/System-B90/
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/course.ts:6](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/course.ts#L6)
+Defined in: [ui/src/api-shared/types/course.ts:6](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/course.ts#L6)
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: [ui/src/api-shared/types/course.ts:6](https://github.com/System-B90/
 
 > `optional` **parentId?**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/course.ts:8](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/course.ts#L8)
+Defined in: [ui/src/api-shared/types/course.ts:8](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/course.ts#L8)

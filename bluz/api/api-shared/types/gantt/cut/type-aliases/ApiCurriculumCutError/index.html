@@ -620,6 +620,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#foreigncurriculumid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        foreignCurriculumId?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#message" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -662,33 +673,41 @@
 <blockquote>
 <p><strong>ApiCurriculumCutError</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L174">ui/src/api-shared/types/gantt/cut.ts:174</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L182">ui/src/api-shared/types/gantt/cut.ts:182</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="code">code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>code</strong>: <a href="../CurriculumCutErrorCode/"><code>CurriculumCutErrorCode</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L175">ui/src/api-shared/types/gantt/cut.ts:175</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L183">ui/src/api-shared/types/gantt/cut.ts:183</a></p>
 <hr />
 <h3 id="count">count?<a class="headerlink" href="#count" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>count?</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L179">ui/src/api-shared/types/gantt/cut.ts:179</a></p>
-<p>Present for <code>already-cut</code>: how many cut events already exist in the iteration.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L190">ui/src/api-shared/types/gantt/cut.ts:190</a></p>
+<p>Present for <code>already-cut</code> (this curriculum's own live cut events) and for
+<code>foreign-cut</code> (another curriculum's, still live in the same iteration).</p>
 <hr />
 <h3 id="errors">errors?<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>errors?</strong>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L177">ui/src/api-shared/types/gantt/cut.ts:177</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L185">ui/src/api-shared/types/gantt/cut.ts:185</a></p>
 <p>Present for <code>invalid-plan</code>: the pure planner's collected validation errors.</p>
+<hr />
+<h3 id="foreigncurriculumid">foreignCurriculumId?<a class="headerlink" href="#foreigncurriculumid" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>foreignCurriculumId?</strong>: <code>string</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L192">ui/src/api-shared/types/gantt/cut.ts:192</a></p>
+<p>Present for <code>foreign-cut</code>: the curriculum whose cut is occupying the iteration.</p>
 <hr />
 <h3 id="message">message?<a class="headerlink" href="#message" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>message?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/cut.ts#L181">ui/src/api-shared/types/gantt/cut.ts:181</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L194">ui/src/api-shared/types/gantt/cut.ts:194</a></p>
 <p>Human-readable Hebrew message describing the rejection.</p>
 
 

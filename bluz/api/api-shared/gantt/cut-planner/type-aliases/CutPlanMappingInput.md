@@ -8,7 +8,7 @@
 
 > **CutPlanMappingInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:98](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L98)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:98](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L98)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:98](https://github.com/Syste
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:100](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L100)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:100](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L100)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:100](https://github.com/Syst
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:99](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L99)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:99](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L99)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:99](https://github.com/Syste
 
 > **sortOrder**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:101](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-planner.ts#L101)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:101](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L101)

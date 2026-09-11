@@ -8,4 +8,4 @@
 
 > **ApiEventGetResponse** = [`DbEventDocument`](DbEventDocument.md)[] \| [`DbEventDocument`](DbEventDocument.md) \| `null` \| `Record`\<[`EventId`](EventId.md), `Partial`\<[`DbEventDocument`](DbEventDocument.md)\>\>
 
-Defined in: [ui/src/api-shared/types/event.ts:303](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/event.ts#L303)
+Defined in: [ui/src/api-shared/types/event.ts:303](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event.ts#L303)

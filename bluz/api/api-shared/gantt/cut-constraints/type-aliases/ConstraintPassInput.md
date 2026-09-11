@@ -8,7 +8,7 @@
 
 > **ConstraintPassInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:80](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L80)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:80](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L80)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:80](https://github.com/S
 
 > **days**: `Record`\<`string`, [`ConstraintDayInfo`](ConstraintDayInfo.md)\>
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:82](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L82)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:82](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L82)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:82](https://github.com/S
 
 > **entities**: [`ConstraintEntity`](ConstraintEntity.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:84](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L84)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:84](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L84)
 
 Constraints owned by events and modules, indexed by owner id.
 
@@ -34,7 +34,7 @@ Constraints owned by events and modules, indexed by owner id.
 
 > **eventIdsByModule**: `Record`\<`string`, `string`[]\>
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:86](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L86)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:86](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L86)
 
 Module id → the event ids it contains, for module-level constraints.
 
@@ -44,7 +44,7 @@ Module id → the event ids it contains, for module-level constraints.
 
 > **placements**: [`ConstraintPlacement`](ConstraintPlacement.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:81](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L81)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:81](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L81)
 
 ***
 
@@ -52,6 +52,6 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:81](https://github.com/S
 
 > **titleByEventId**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:88](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/gantt/cut-constraints.ts#L88)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:88](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L88)
 
 Display titles for events, used in violation messages.

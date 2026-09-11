@@ -8,7 +8,7 @@
 
 > **AiStreamEvent** = \{ `text`: `string`; `type`: [`Delta`](../enumerations/AiStreamEventType.md#delta); \} \| \{ `awaitingApproval`: `boolean`; `messages`: [`AiMessage`](AiMessage.md)[]; `model`: `string`; `type`: [`Done`](../enumerations/AiStreamEventType.md#done); `usage?`: [`AiUsage`](AiUsage.md); \} \| \{ `message`: `string`; `messages?`: [`AiMessage`](AiMessage.md)[]; `type`: [`Error`](../enumerations/AiStreamEventType.md#error); \} \| \{ `arguments`: `unknown`; `name`: `string`; `summary`: `string`; `toolCallId`: `string`; `type`: [`ToolProposal`](../enumerations/AiStreamEventType.md#toolproposal); \} \| \{ `name`: `string`; `ok`: `boolean`; `summary`: `string`; `toolCallId`: `string`; `type`: [`ToolResult`](../enumerations/AiStreamEventType.md#toolresult); \} \| \{ `name`: `string`; `toolCallId`: `string`; `type`: [`ToolStart`](../enumerations/AiStreamEventType.md#toolstart); \}
 
-Defined in: [ui/src/api-shared/types/ai.ts:122](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/ai.ts#L122)
+Defined in: [ui/src/api-shared/types/ai.ts:122](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L122)
 
 One frame of a streamed turn. A turn ends with exactly one `Done` **or**
 one `Error`, never both.

@@ -15,6 +15,7 @@
 - [PersonalSettingsDocument](type-aliases/PersonalSettingsDocument.md)
 - [ProjectionMap](type-aliases/ProjectionMap.md)
 - [RoomExtendedInfoDocument](type-aliases/RoomExtendedInfoDocument.md)
+- [StudentEngagementDocument](type-aliases/StudentEngagementDocument.md)
 
 ## Variables
 

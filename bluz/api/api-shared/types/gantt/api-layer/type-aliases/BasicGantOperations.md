@@ -8,7 +8,7 @@
 
 > **BasicGantOperations**\<`TEntity`, `TCreatePayload`\> = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:37](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/api-layer.ts#L37)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:37](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/api-layer.ts#L37)
 
 The DB-facing operations a Gantt entity must provide for the generic
 collection/item route builders. Declared here so `api-server` can implement
@@ -30,7 +30,7 @@ it without importing from the route layer that consumes it.
 
 > **createNewItem**: (`payload`) => `Promise`\<[`ApiT`](ApiT.md)\<`TEntity`\> \| `TEntity`\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:49](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/api-layer.ts#L49)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:49](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/api-layer.ts#L49)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:49](https://github.com/S
 
 > **deleteItem**: (`id`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:56](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/api-layer.ts#L56)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:56](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/api-layer.ts#L56)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:56](https://github.com/S
 
 > **getItem**: (`id`) => `Promise`\<`any`\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:48](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/api-layer.ts#L48)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:48](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/api-layer.ts#L48)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:48](https://github.com/S
 
 > **getMultipleItems**: (`ids`) => `Promise`\<`TEntity`[]\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:47](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/api-layer.ts#L47)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:47](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/api-layer.ts#L47)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:47](https://github.com/S
 
 > **listItems**: (`withParents?`) => `Promise`\<`Record`\<`TEntity`\[`"id"`\], \{ `title`: `TEntity`\[`"title"`\]; \}\> \| `Record`\<`TEntity`\[`"id"`\], `TEntity`\[`"title"`\]\>\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:41](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/api-layer.ts#L41)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/api-layer.ts#L41)
 
 #### Parameters
 
@@ -120,7 +120,7 @@ Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:41](https://github.com/S
 
 > **updateItem**: (`id`, `updates`) => `Promise`\<`TEntity`\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:52](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/api-shared/types/gantt/api-layer.ts#L52)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/api-layer.ts#L52)
 
 #### Parameters
 

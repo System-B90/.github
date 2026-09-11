@@ -10,3 +10,4 @@
 
 - [formatRange](functions/formatRange.md)
 - [isolateLtr](functions/isolateLtr.md)
+- [isolateRtl](functions/isolateRtl.md)

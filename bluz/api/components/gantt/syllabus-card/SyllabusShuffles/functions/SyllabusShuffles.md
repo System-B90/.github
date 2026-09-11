@@ -8,7 +8,7 @@
 
 > **SyllabusShuffles**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/gantt/syllabus-card/SyllabusShuffles.tsx:34](https://github.com/System-B90/Bluz/blob/72b498f531abad6a8e8b0b2f7413585dd5159749/ui/src/components/gantt/syllabus-card/SyllabusShuffles.tsx#L34)
+Defined in: [ui/src/components/gantt/syllabus-card/SyllabusShuffles.tsx:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/syllabus-card/SyllabusShuffles.tsx#L34)
 
 Free-text chips editor for the syllabus' shuffle (student group) names.
 Modules and events can then be tagged with a subset of these names.
