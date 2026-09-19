@@ -1,0 +1,64 @@
+name: CI
+
+# Until now nothing in this repo was tested or linted — `pages.yml` deploys the
+# published content and that is all. The code here is org-wide infrastructure:
+# `scripts/publish.py` is how every package repo cuts a release, and
+# `actions/` is what every consuming repo's E2E depends on. A typo in either
+# was discovered by a red run somewhere else.
+on:
+    pull_request:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+permissions:
+    contents: read
+
+jobs:
+    # GitHub-hosted on purpose, against the org CLAUDE.md default: the whole
+    # job is seconds long and only fires on PRs to this repo. Nothing here
+    # boots a Hive stack or builds an image, so it is not what the minutes
+    # budget is about. One job with sequential steps rather than a lint/test
+    # split, per the same guidance — the split would multiply checkout and
+    # install I/O for no parallelism worth having at this size.
+    check:
+        name: Lint and test
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v7
+
+            - name: Setup Python
+              uses: actions/setup-python@v7
+              with:
+                  python-version: "3.11"
+
+            - name: Install
+              run: python -m pip install --upgrade pip pytest pyyaml ruff
+
+            - name: Ruff
+              run: ruff check scripts tests
+
+            - name: Ruff format
+              run: ruff format --check scripts tests
+
+            # Pre-installed on ubuntu-latest; the pytest suite also has a
+            # shellcheck case that skips when the binary is absent, so this
+            # step is what guarantees it actually runs somewhere.
+            - name: Shellcheck
+              run: shellcheck ops/runner/*.sh
+
+            # Fails on a renamed input, a moved script, or a composite `run:`
+            # step missing its `shell:` — the breakage classes that otherwise
+            # only surface in a consuming repo's E2E run.
+            - name: Validate composite actions
+              run: python scripts/validate_actions.py
+
+            - name: Pytest
+              run: pytest -q

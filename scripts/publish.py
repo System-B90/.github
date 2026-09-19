@@ -43,18 +43,24 @@ def main() -> None:
 
     branch = run("git", "branch", "--show-current", cwd=repo)
     if branch not in ("main", "master"):
-        sys.exit(f"Must be on main/master to publish (version-bump commits skip the PR flow), currently on '{branch}'")
+        sys.exit(
+            f"Must be on main/master to publish (version-bump commits skip the PR flow), currently on '{branch}'"
+        )
     if run("git", "status", "--porcelain", cwd=repo):
         sys.exit("Working tree not clean, commit or stash first")
 
-    pyproject.write_text(text.replace(f'version = "{old_version}"', f'version = "{new_version}"', 1))
+    pyproject.write_text(
+        text.replace(f'version = "{old_version}"', f'version = "{new_version}"', 1)
+    )
     run("git", "add", "pyproject.toml", cwd=repo)
     run("git", "commit", "-m", f"Vibe-Bumped version to {new_version}", cwd=repo)
     run("git", "push", "origin", branch, cwd=repo)
     run("git", "tag", "-a", f"v{new_version}", "-m", f"v{new_version}", cwd=repo)
     run("git", "push", "origin", f"v{new_version}", cwd=repo)
 
-    print(f"{old_version} -> {new_version}. Tag v{new_version} pushed — CI will build, cut the GitHub Release, and update the pip index.")
+    print(
+        f"{old_version} -> {new_version}. Tag v{new_version} pushed — CI will build, cut the GitHub Release, and update the pip index."
+    )
 
 
 if __name__ == "__main__":

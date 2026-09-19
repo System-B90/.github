@@ -83,7 +83,11 @@ prune_dangling_volumes() {
 
     for volume in $(docker volume ls -q --filter dangling=true 2>/dev/null); do
         dir=$(docker volume inspect "$volume" --format '{{.Mountpoint}}' 2>/dev/null) || continue
-        [ -n "$dir" ] && [ -d "$dir" ] || continue
+        # Spelled as an explicit negation rather than `A && B || continue`:
+        # that form reads as if-then-else but runs C whenever A||B fails,
+        # which is right here and confusing everywhere else (shellcheck
+        # SC2015 flags it for exactly that reason).
+        if [ -z "$dir" ] || [ ! -d "$dir" ]; then continue; fi
         # Age of the volume directory itself, not its contents.
         local mtime age
         mtime=$(stat -c %Y "$dir" 2>/dev/null) || continue
