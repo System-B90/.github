@@ -88,7 +88,9 @@ if [ "$n" -eq 0 ]; then echo "{free_before}G"; else echo "{after}G"; fi''',
     env = dict(os.environ)
     env["PATH"] = f"{bin_dir}{os.pathsep}{env['PATH']}"
     env["FLOOR_GB"] = "30"
-    proc = subprocess.run(["bash", str(_SCRIPT)], capture_output=True, text=True, env=env)
+    proc = subprocess.run(
+        ["bash", str(_SCRIPT)], capture_output=True, text=True, env=env, check=False
+    )
     return Result(
         returncode=proc.returncode,
         stdout=proc.stdout,
@@ -259,5 +261,5 @@ def test_script_passes_shellcheck() -> None:
     if not shutil.which("shellcheck"):
         pytest.skip("shellcheck not installed")
 
-    proc = subprocess.run(["shellcheck", str(_SCRIPT)], capture_output=True, text=True)
+    proc = subprocess.run(["shellcheck", str(_SCRIPT)], capture_output=True, text=True, check=False)
     assert proc.returncode == 0, proc.stdout
