@@ -256,6 +256,49 @@ def test_ignores_templated_script_paths(tmp_path: Path) -> None:
     assert problems == []
 
 
+@pytest.mark.parametrize(
+    "prefix",
+    ["$GITHUB_ACTION_PATH", "${GITHUB_ACTION_PATH}", "${{ github.action_path }}"],
+)
+def test_resolves_action_path_prefixed_scripts(tmp_path: Path, prefix: str) -> None:
+    # A composite step runs from the workspace, so an extracted script has to
+    # be invoked through the action's own path. If that read as "templated"
+    # like any other $-path, extracting logic out of inline YAML would quietly
+    # opt it out of the very check that makes extraction safe.
+    body = f"""\
+        name: Demo
+        description: A demo action.
+        runs:
+          using: composite
+          steps:
+            - shell: bash
+              run: bash "{prefix}/wait-for-db.sh"
+        """
+    problems = _problems(tmp_path, body)
+
+    assert any("script that does not exist" in p for p in problems)
+
+
+@pytest.mark.parametrize(
+    "prefix",
+    ["$GITHUB_ACTION_PATH", "${GITHUB_ACTION_PATH}", "${{ github.action_path }}"],
+)
+def test_accepts_an_action_path_prefixed_script_that_exists(tmp_path: Path, prefix: str) -> None:
+    body = f"""\
+        name: Demo
+        description: A demo action.
+        runs:
+          using: composite
+          steps:
+            - shell: bash
+              run: bash "{prefix}/wait-for-db.sh"
+        """
+    action_yml = _write(tmp_path, body)
+    (action_yml.parent / "wait-for-db.sh").write_text("#!/usr/bin/env bash\n")
+
+    assert validator.validate_action(action_yml, tmp_path) == []
+
+
 def test_catches_an_input_without_a_description(tmp_path: Path) -> None:
     problems = _problems(tmp_path, VALID.replace("    description: A token.\n", ""))
 

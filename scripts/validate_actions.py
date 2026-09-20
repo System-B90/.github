@@ -28,6 +28,14 @@ _EXPRESSION = re.compile(r"\$\{\{(.*?)\}\}", re.DOTALL)
 # docker image. Only the first is checkable from inside this repo.
 _LOCAL_USES = re.compile(r"^\./")
 
+# `$GITHUB_ACTION_PATH/x.sh`, `${GITHUB_ACTION_PATH}/x.sh` and the
+# `${{ github.action_path }}/x.sh` expression form all mean "next to
+# action.yml". The expression form contains spaces, which would split the path
+# in two before it could be recognised, so it is folded onto the env-var form
+# before any scanning happens.
+_ACTION_PATH_EXPRESSION = re.compile(r"\$\{\{\s*github\.action_path\s*\}\}")
+_ACTION_PATH_PREFIX = re.compile(r"^\$\{?GITHUB_ACTION_PATH\}?/")
+
 REQUIRED_METADATA = ("name", "description", "runs")
 
 
@@ -59,8 +67,17 @@ def _referenced_scripts(action: dict, action_dir: Path) -> list[tuple[str, Path]
         run = step.get("run") if isinstance(step, dict) else None
         if not isinstance(run, str):
             continue
-        for match in re.finditer(r"(?:bash|sh)\s+(\S+\.sh)", run):
+        run = _ACTION_PATH_EXPRESSION.sub("$GITHUB_ACTION_PATH", run)
+        for match in re.finditer(r"(?:bash|sh)\s+\"?(\S+?\.sh)\"?", run):
             raw = match.group(1)
+            # A composite step runs from the workspace, not the action dir, so
+            # an extracted script is invoked through the action's own path.
+            # Resolving that prefix is what lets the check see those files at
+            # all -- otherwise every extracted script reads as "templated".
+            resolved_prefix = _ACTION_PATH_PREFIX.sub("", raw, count=1)
+            if resolved_prefix != raw:
+                found.append((raw, (action_dir / resolved_prefix).resolve()))
+                continue
             if "${{" in raw or "$" in raw:
                 continue  # templated path; not statically resolvable
             if raw.startswith("/"):

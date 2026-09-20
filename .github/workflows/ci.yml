@@ -52,7 +52,7 @@ jobs:
             # shellcheck case that skips when the binary is absent, so this
             # step is what guarantees it actually runs somewhere.
             - name: Shellcheck
-              run: shellcheck ops/runner/*.sh
+              run: shellcheck ops/runner/*.sh actions/*/*.sh
 
             # Fails on a renamed input, a moved script, or a composite `run:`
             # step missing its `shell:` — the breakage classes that otherwise
