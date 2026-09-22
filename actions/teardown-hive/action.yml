@@ -41,27 +41,7 @@ runs:
       shell: bash
       env:
         HIVE_PATH: ${{ inputs.hive-path }}
-      run: |
-        set +e
-        if [ -f "${HIVE_PATH}/docker-compose.yaml" ]; then
-          echo "Bringing the Hive stack down..."
-          docker compose -f "${HIVE_PATH}/docker-compose.yaml" down -v --remove-orphans
-        else
-          echo "No ${HIVE_PATH}/docker-compose.yaml — nothing to compose-down."
-        fi
-
-        # Compose only removes what its project file still describes. A stack
-        # that was killed mid-bring-up, or brought up from a since-deleted
-        # workspace, leaves hive-* containers that compose no longer knows
-        # about — and those hold bind-mounted data files open, which blocks the
-        # next run's workspace cleanup.
-        leftovers=$(docker ps -aq --filter "name=^/hive-")
-        if [ -n "$leftovers" ]; then
-          echo "Removing leftover hive-* containers:"
-          docker ps -a --filter "name=^/hive-" --format '  {{.Names}} ({{.Status}})'
-          docker rm -f $leftovers
-        fi
-        exit 0
+      run: bash "$GITHUB_ACTION_PATH/teardown-stack.sh"
 
     - name: Reclaim disk
       if: always() && inputs.prune != 'none'
