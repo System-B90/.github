@@ -43,7 +43,9 @@ def generate_root_index() -> None:
 def main() -> None:
     package_name = normalize(sys.argv[1]) if len(sys.argv) > 1 else None
     package_dirs = (
-        [PYPI_ROOT / package_name] if package_name else [d for d in PYPI_ROOT.iterdir() if d.is_dir()]
+        [PYPI_ROOT / package_name]
+        if package_name
+        else [d for d in PYPI_ROOT.iterdir() if d.is_dir()]
     )
     for package_dir in package_dirs:
         generate_package_index(package_dir)
