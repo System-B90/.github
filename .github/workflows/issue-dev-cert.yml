@@ -15,13 +15,21 @@ on:
             san:
                 description: SAN list (e.g. DNS:madash.localhost,DNS:localhost,IP:127.0.0.1,IP:::1)
                 required: true
+            runner:
+                description: 'Runner environment to execute on'
+                required: false
+                default: 'self-hosted'
+                type: choice
+                options:
+                    - self-hosted
+                    - github-hosted
 
 permissions:
     contents: read
 
 jobs:
     issue:
-        runs-on: [self-hosted, light]
+        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux", "light"]') }}
         steps:
             - uses: actions/checkout@v7
             - name: Sign leaf cert
