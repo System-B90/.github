@@ -60,11 +60,14 @@ jobs:
             - name: Ruff format
               run: ruff format --check scripts tests
 
-            # Pre-installed on ubuntu-latest; the pytest suite also has a
+            # Self-hosted runners don't ship shellcheck, so install it from
+            # PyPI (bundles the binary). The pytest suite also has a
             # shellcheck case that skips when the binary is absent, so this
             # step is what guarantees it actually runs somewhere.
             - name: Shellcheck
-              run: shellcheck ops/runner/*.sh actions/*/*.sh
+              run: |
+                  python -m pip install --quiet shellcheck-py
+                  shellcheck ops/runner/*.sh actions/*/*.sh
 
             # Fails on a renamed input, a moved script, or a composite `run:`
             # step missing its `shell:` — the breakage classes that otherwise
