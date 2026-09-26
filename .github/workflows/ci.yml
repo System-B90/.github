@@ -36,7 +36,7 @@ jobs:
     # install I/O for no parallelism worth having at this size.
     check:
         name: Lint and test
-        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "python"]') }}
+        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux", "python"]') }}
         timeout-minutes: 10
 
         steps:
