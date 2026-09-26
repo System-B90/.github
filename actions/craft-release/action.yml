@@ -61,7 +61,7 @@ runs:
       shell: bash
       run: >-
         python -m pip install --quiet --upgrade pip
-        "sb90-deploy==${{ inputs.sb90-deploy-version }}"
+        "sb90-deploy[bundle]==${{ inputs.sb90-deploy-version }}"
         --extra-index-url https://system-b90.github.io/.github/pypi/
 
     - name: Craft bundles
