@@ -1,0 +1,180 @@
+name: Acquire shared Hive
+description: >-
+  Takes exclusive use of the persistent Hive instance on the mks90-laptop-wsl
+  runners and hands it over in its clean baseline state. Pair it with
+  actions/shared-hive-release under `if: always()`.
+
+  Unlike actions/setup-hive this boots nothing per run: the instance stays up
+  between jobs and is reset in seconds (Postgres template copy + Redis flush —
+  see actions/shared-hive/hive-shared.sh). That speed is only safe because
+  consumers run small, NON-DESTRUCTIVE verifications: media and course files
+  are not reset.
+
+  Exclusivity is a host-local flock, not an API lock. Every runner that can
+  reach this instance runs on the same WSL host and talks to the same Docker
+  daemon, so the host is the right place for the mutex, and a flock can't be
+  orphaned: when a job ends or is cancelled the runner kills the processes it
+  started, the lock-holder among them.
+
+  Usage is capped at `max-minutes` (default 25) from the moment the lock is
+  taken. A job still holding it then is cancelled through the API, so do slow
+  work — npm ci, app builds, Playwright install — BEFORE this step. Requires
+  `permissions: actions: write` on the job for that cancellation.
+
+inputs:
+  max-minutes:
+    description: Budget, in minutes, from acquiring the lock. The run is cancelled when it is exceeded.
+    required: false
+    default: "25"
+  wait-minutes:
+    description: How long to queue for the lock before failing.
+    required: false
+    default: "40"
+  github-token:
+    description: Token used to cancel this run when it exceeds max-minutes. Needs actions:write.
+    required: false
+    default: ${{ github.token }}
+  stack-token:
+    description: >-
+      Token able to read pyhive-repo. Only used when the instance is missing
+      (first run on a host, or after `rebuild: true`) to fetch pyhive's
+      hive-stack config and bootstrap it. Without it a missing instance fails
+      the step.
+    required: false
+    default: ""
+  pyhive-repo:
+    description: Repository carrying the published hive-stack/ config.
+    required: false
+    default: System-B90/pyhive
+  rebuild:
+    description: '"true" discards the instance and bootstraps it again (new Hive images, broken baseline).'
+    required: false
+    default: "false"
+
+outputs:
+  hive-url:
+    description: Base URL of the shared Hive.
+    value: https://hive.org
+  docker-network:
+    description: Docker network Hive's nginx is on (alias hive.org), for app containers that need to reach it.
+    value: hive_hive-net
+  admin-username:
+    description: Superuser in the baseline.
+    value: admin
+  admin-password:
+    description: Password of the superuser and of the 'api' service account in the baseline.
+    value: Password1
+
+runs:
+  using: composite
+  steps:
+    - name: Check this runner hosts the shared Hive
+      shell: bash
+      run: |
+        if ! getent hosts hive.org | grep -q '^127\.0\.0\.6 '; then
+          echo "::error::hive.org does not resolve to 127.0.0.6 on ${RUNNER_NAME}. shared-hive-acquire only works on the runners labelled 'shared-hive' (mks90-laptop-wsl*). Check runs-on, or add '127.0.0.6 hive.org' to /etc/hosts on the host."
+          exit 1
+        fi
+        mkdir -p "$HOME/hive-shared/state"
+
+    - name: Wait for exclusive use of the shared Hive
+      shell: bash
+      env:
+        MAX_MINUTES: ${{ inputs.max-minutes }}
+        WAIT_MINUTES: ${{ inputs.wait-minutes }}
+        CANCEL_TOKEN: ${{ inputs.github-token }}
+      run: |
+        set -euo pipefail
+        state="$HOME/hive-shared/state"
+        me="${GITHUB_REPOSITORY}#${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}/${GITHUB_JOB}"
+        run_api="${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+        export me state MAX_MINUTES CANCEL_TOKEN run_api
+
+        # The holder owns the flock for as long as it lives. It is started in its
+        # own session so release can kill it (and its sleep) as one process group;
+        # the runner still reaps it at job end through RUNNER_TRACKING_ID.
+        setsid flock -x -w $((WAIT_MINUTES * 60)) "$HOME/hive-shared/lock" bash -c '
+          printf "%s\n" "$me" > "$state/holder"
+          printf "%s\n" "$(date -u +%FT%TZ)" > "$state/holder_since"
+          sleep $((MAX_MINUTES * 60))
+          echo "$(date -u +%FT%TZ) $me exceeded ${MAX_MINUTES}m — cancelling" >> "$state/overruns.log"
+          curl -sS -X POST -H "Authorization: Bearer $CANCEL_TOKEN" \
+            -H "Accept: application/vnd.github+json" "$run_api/cancel" >> "$state/overruns.log" 2>&1
+          # Give the runner time to stop the job before handing the instance on;
+          # the next holder resets it either way.
+          sleep 90
+        ' >/dev/null 2>&1 &
+        pgid=$!
+        echo "SHARED_HIVE_PGID=$pgid" >> "$GITHUB_ENV"
+        echo "SHARED_HIVE_HOLDER=$me" >> "$GITHUB_ENV"
+
+        start=$(date +%s); last=0
+        while :; do
+          if [ "$(cat "$state/holder" 2>/dev/null)" = "$me" ] && kill -0 "$pgid" 2>/dev/null; then
+            echo "Acquired the shared Hive after $(( $(date +%s) - start ))s. Budget: ${MAX_MINUTES}m."
+            echo "Shared Hive held from $(date -u +%T) UTC, budget ${MAX_MINUTES}m" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if ! kill -0 "$pgid" 2>/dev/null; then
+            echo "::error::Timed out after ${WAIT_MINUTES}m waiting for the shared Hive (held by $(cat "$state/holder" 2>/dev/null || echo unknown) since $(cat "$state/holder_since" 2>/dev/null || echo '?'))."
+            exit 1
+          fi
+          now=$(date +%s)
+          if [ $((now - last)) -ge 60 ]; then
+            echo "Waiting — held by $(cat "$state/holder" 2>/dev/null || echo unknown) since $(cat "$state/holder_since" 2>/dev/null || echo '?')"
+            last=$now
+          fi
+          sleep 3
+        done
+
+    - name: Fetch hive-stack config (bootstrap only)
+      id: stack
+      shell: bash
+      env:
+        REBUILD: ${{ inputs.rebuild }}
+      run: |
+        if [ "$REBUILD" = "true" ] || [ ! -s "$HOME/hive-shared/state/dbname" ]; then
+          echo "needed=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "needed=false" >> "$GITHUB_OUTPUT"
+        fi
+
+    - name: Checkout pyhive hive-stack
+      if: steps.stack.outputs.needed == 'true' && inputs.stack-token != ''
+      uses: actions/checkout@v7
+      with:
+        repository: ${{ inputs.pyhive-repo }}
+        token: ${{ inputs.stack-token }}
+        path: .shared-hive-stack
+        sparse-checkout: hive-stack
+        persist-credentials: false
+
+    - name: Bootstrap the shared Hive
+      if: steps.stack.outputs.needed == 'true'
+      shell: bash
+      env:
+        HIVE_SHARED: ${{ github.action_path }}/../shared-hive/hive-shared.sh
+        STACK_TOKEN: ${{ inputs.stack-token }}
+      run: |
+        if [ ! -f .shared-hive-stack/hive-stack/docker-compose.yaml ]; then
+          echo "::error::The shared Hive needs bootstrapping but no stack-token was given to fetch its config. Pass stack-token (read access to pyhive), or bootstrap on the host: hive-shared.sh bootstrap <hive-stack-dir>."
+          exit 1
+        fi
+        # Images come from the same registry setup-hive's registry mode uses.
+        stack=.shared-hive-stack/hive-stack
+        tag=$(cat "$stack/HIVE_SHA")
+        echo "$STACK_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+        for img in $(docker compose -f "$stack/docker-compose.yaml" config --images | grep '^hive/' | sort -u); do
+          name="${img#hive/}"; name="${name%%:*}"
+          docker pull -q "ghcr.io/system-b90/hive/${name}:${tag}" && docker tag "ghcr.io/system-b90/hive/${name}:${tag}" "$img"
+        done
+        bash "$HIVE_SHARED" bootstrap "$stack"
+        rm -rf .shared-hive-stack
+
+    - name: Reset the shared Hive to its baseline
+      shell: bash
+      env:
+        HIVE_SHARED: ${{ github.action_path }}/../shared-hive/hive-shared.sh
+      run: |
+        bash "$HIVE_SHARED" ensure
+        bash "$HIVE_SHARED" reset
