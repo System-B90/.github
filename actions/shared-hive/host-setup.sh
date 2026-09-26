@@ -29,5 +29,9 @@ if ! grep -q '^generateHosts *= *false' /etc/wsl.conf 2>/dev/null; then
   printf '\n[network]\ngenerateHosts = false\n' >>/etc/wsl.conf
 fi
 
+# Chromium's system libraries for Playwright. setup-playwright can't install
+# them here (no sudo for the runner user), so they are a host prerequisite.
+DEBIAN_FRONTEND=noninteractive apt-get install -y -qq libnss3 libnspr4   libatk1.0-0t64 libatk-bridge2.0-0t64 libcups2t64 libdrm2 libxkbcommon0   libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0   libcairo2 libasound2t64 libxshmfence1 fonts-liberation
+
 ls -l /var/run/docker.sock
 echo "Done. Verify: sudo -u $U docker ps"
