@@ -10,6 +10,15 @@ on:
     push:
         branches: [main]
     workflow_dispatch:
+        inputs:
+            runner:
+                description: 'Runner environment to execute on'
+                required: false
+                default: 'self-hosted'
+                type: choice
+                options:
+                    - self-hosted
+                    - github-hosted
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
@@ -27,7 +36,7 @@ jobs:
     # install I/O for no parallelism worth having at this size.
     check:
         name: Lint and test
-        runs-on: ubuntu-latest
+        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "python"]') }}
         timeout-minutes: 10
 
         steps:
