@@ -37,7 +37,7 @@ log() { echo "[hive-shared] $*"; }
 wait_db() {
   local cid
   cid=$(compose ps -q database)
-  for i in $(seq 1 120); do
+  for _ in $(seq 1 120); do
     if [ "$(docker inspect --format '{{.State.Health.Status}}' "$cid" 2>/dev/null)" = healthy ] &&
       docker exec "$cid" pg_isready -h 127.0.0.1 -p 5432 >/dev/null 2>&1; then
       return 0
