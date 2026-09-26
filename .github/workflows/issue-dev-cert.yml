@@ -44,7 +44,7 @@ jobs:
                   trap 'rm -f "$key"' EXIT
                   printf '%s\n' "$CA_KEY" > "$key"
                   bash dev-ca/issue-cert.sh "$NAME" "$CN" "$SAN" "$key" out
-            - uses: actions/upload-artifact@v4
+            - uses: actions/upload-artifact@v7
               with:
                   name: dev-cert-${{ inputs.name }}
                   path: out/
