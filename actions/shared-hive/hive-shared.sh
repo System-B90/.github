@@ -50,7 +50,7 @@ wait_db() {
 
 cmd_wait() {
   local attempts="${1:-90}" code
-  for i in $(seq 1 "$attempts"); do
+  for _ in $(seq 1 "$attempts"); do
     code=$(curl -ks -o /dev/null -w '%{http_code}' https://hive.org/api/core/ || true)
     if [ "$code" -ge 200 ] 2>/dev/null && [ "$code" -lt 500 ]; then
       log "Hive is answering (HTTP $code)"; return 0
@@ -107,7 +107,7 @@ EOF
   compose exec -T core python manage.py shell -c \
     "from django.contrib.auth import get_user_model as g; u=g().objects.get(username='api'); u.set_password('Password1'); u.save()"
 
-  local db
+  local db; local -a svcs
   db=$(compose exec -T core python manage.py shell -c \
     "from django.conf import settings; print(settings.DATABASES['default']['NAME'])" | tr -d '\r' | tail -1)
   [ -n "$db" ] || { log "Could not determine Hive's database name"; exit 1; }
@@ -115,7 +115,8 @@ EOF
   cp "$src/HIVE_SHA" "$STATE/hive_sha" 2>/dev/null || true
 
   log "Taking baseline of database '$db'"
-  compose stop $(app_services)
+  mapfile -t svcs < <(app_services)
+  compose stop "${svcs[@]}"
   psql_admin "DROP DATABASE IF EXISTS $BASELINE_DB WITH (FORCE)"
   # A template must have no other sessions; the app services are stopped, but
   # powersync/grafana-style clients may linger.
@@ -140,10 +141,11 @@ cmd_ensure() {
 }
 
 cmd_reset() {
-  local db owner
+  local db owner; local -a svcs
   db=$(cat "$STATE/dbname")
   log "Restoring '$db' from baseline"
-  compose stop -t 5 $(app_services)
+  mapfile -t svcs < <(app_services)
+  compose stop -t 5 "${svcs[@]}"
   owner=$(psql_admin "SELECT pg_get_userbyid(datdba) FROM pg_database WHERE datname='$db'")
   psql_admin "DROP DATABASE IF EXISTS \"$db\" WITH (FORCE)"
   psql_admin "CREATE DATABASE \"$db\" TEMPLATE $BASELINE_DB OWNER \"${owner:-root}\""
