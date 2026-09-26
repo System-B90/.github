@@ -8,11 +8,9 @@
 
 > **useModuleEventActions**(): `object`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx#L21)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx:22](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx#L22)
 
 ## Returns
-
-`object`
 
 ### allocateTimeToModuleEvent
 
@@ -36,9 +34,35 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActio
 
 `Promise`\<`void`\>
 
+### applyEventShuffleGroup
+
+> **applyEventShuffleGroup**: (`eventId`, `moduleId`, `shuffles`) => `Promise`\<[`ModuleEventDocument`](../../../../../../../api-client/gantt/module-event/type-aliases/ModuleEventDocument.md)[]\>
+
+Makes the event's shuffle group cover exactly `shuffles`: one sibling
+event per shuffle, so the same lesson can sit at a different time for
+each of them (#699). Fewer than two shuffles ungroups the event.
+
+#### Parameters
+
+##### eventId
+
+`string`
+
+##### moduleId
+
+`string`
+
+##### shuffles
+
+`string`[]
+
+#### Returns
+
+`Promise`\<[`ModuleEventDocument`](../../../../../../../api-client/gantt/module-event/type-aliases/ModuleEventDocument.md)[]\>
+
 ### createEvent
 
-> **createEvent**: (`title`, `moduleId`, `type`, `minimumDuration`, `allocatedDuration`, `hiveSubjectId`, `hiveModuleId`, `hiveLessonId`) => `Promise`\<`object` & [`BaseGantItem`](../../../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../../../../../../../api-client/gantt/base/type-aliases/BaseDocument.md)\>
+> **createEvent**: (`title`, `moduleId`, `type`, `minimumDuration`, `allocatedDuration`, `hiveSubjectId`, `hiveModuleId`, `hiveLessonId`, `orchestratorId`) => `Promise`\<`object` & [`BaseGantItem`](../../../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../../../../../../../api-client/gantt/base/type-aliases/BaseDocument.md)\>
 
 #### Parameters
 
@@ -71,6 +95,10 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActio
 `number` \| `null`
 
 ##### hiveLessonId?
+
+`number` \| `null`
+
+##### orchestratorId?
 
 `number` \| `null`
 

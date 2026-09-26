@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -587,6 +668,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#choice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#delta" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -613,6 +705,28 @@
     <span class="md-ellipsis">
       
         Error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reasoning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reasoningdelta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ReasoningDelta
       
     </span>
   </a>
@@ -681,48 +795,71 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/ai</a> / AiStreamEventType</p>
 <h1 id="enumeration-aistreameventtype">Enumeration: AiStreamEventType<a class="headerlink" href="#enumeration-aistreameventtype" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L103">ui/src/api-shared/types/ai.ts:103</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L136">ui/src/api-shared/types/ai.ts:136</a></p>
 <h2 id="enumeration-members">Enumeration Members<a class="headerlink" href="#enumeration-members" title="Permanent link">&para;</a></h2>
+<h3 id="choice">Choice<a class="headerlink" href="#choice" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Choice</strong>: <code>"choice"</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L150">ui/src/api-shared/types/ai.ts:150</a></p>
+<p>The model is asking the human to pick between options.</p>
+<hr />
 <h3 id="delta">Delta<a class="headerlink" href="#delta" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Delta</strong>: <code>"delta"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L105">ui/src/api-shared/types/ai.ts:105</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L138">ui/src/api-shared/types/ai.ts:138</a></p>
 <p>A fragment of the assistant's visible answer.</p>
 <hr />
 <h3 id="done">Done<a class="headerlink" href="#done" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Done</strong>: <code>"done"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L113">ui/src/api-shared/types/ai.ts:113</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L158">ui/src/api-shared/types/ai.ts:158</a></p>
 <p>Terminal success frame.</p>
 <hr />
 <h3 id="error">Error<a class="headerlink" href="#error" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Error</strong>: <code>"error"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L115">ui/src/api-shared/types/ai.ts:115</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L160">ui/src/api-shared/types/ai.ts:160</a></p>
 <p>Terminal failure frame.</p>
+<hr />
+<h3 id="reasoning">Reasoning<a class="headerlink" href="#reasoning" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Reasoning</strong>: <code>"reasoning"</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L143">ui/src/api-shared/types/ai.ts:143</a></p>
+<p>A fragment of the model's private reasoning. Rendered collapsed: it is
+what makes an answer trustworthy, and noise the rest of the time.</p>
+<hr />
+<h3 id="reasoningdelta">ReasoningDelta<a class="headerlink" href="#reasoningdelta" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>ReasoningDelta</strong>: <code>"reasoning_delta"</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L148">ui/src/api-shared/types/ai.ts:148</a></p>
+<p>A fragment of a reasoning model's chain-of-thought, sent on a wire
+channel separate from the visible answer. Shown collapsed by default.</p>
 <hr />
 <h3 id="toolproposal">ToolProposal<a class="headerlink" href="#toolproposal" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>ToolProposal</strong>: <code>"tool_proposal"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L111">ui/src/api-shared/types/ai.ts:111</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L156">ui/src/api-shared/types/ai.ts:156</a></p>
 <p>A write tool needs the human to approve it before it runs.</p>
 <hr />
 <h3 id="toolresult">ToolResult<a class="headerlink" href="#toolresult" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>ToolResult</strong>: <code>"tool_result"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L109">ui/src/api-shared/types/ai.ts:109</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L154">ui/src/api-shared/types/ai.ts:154</a></p>
 <p>A read tool finished; carries a short human-readable summary.</p>
 <hr />
 <h3 id="toolstart">ToolStart<a class="headerlink" href="#toolstart" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>ToolStart</strong>: <code>"tool_start"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L107">ui/src/api-shared/types/ai.ts:107</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L152">ui/src/api-shared/types/ai.ts:152</a></p>
 <p>A read tool started running.</p>
 
 

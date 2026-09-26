@@ -8,17 +8,27 @@
 
 > **GoogleCalendarStatus** = `object`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L21)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:69](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L69)
 
 Client-safe view of the connection state — no tokens.
 
 ## Properties
 
+### calendar?
+
+> `optional` **calendar?**: [`GoogleCalendarSelection`](GoogleCalendarSelection.md)
+
+Defined in: [ui/src/api-shared/types/google-calendar.ts:78](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L78)
+
+Present while connected.
+
+***
+
 ### clientId
 
 > **clientId**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L26)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:74](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L74)
 
 Public OAuth client id the browser uses for the GIS "Continue with Google" popup.
 
@@ -28,7 +38,7 @@ Public OAuth client id the browser uses for the GIS "Continue with Google" popup
 
 > **configured**: `boolean`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L22)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:70](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L70)
 
 ***
 
@@ -36,7 +46,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:22](https://github.com/S
 
 > **connected**: `boolean`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L23)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:71](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L71)
 
 ***
 
@@ -44,7 +54,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:23](https://github.com/S
 
 > **enabled**: `boolean`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L24)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:72](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L72)
 
 ***
 
@@ -52,6 +62,6 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:24](https://github.com/S
 
 > **scopes**: `string`[]
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L28)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:76](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L76)
 
 OAuth scopes the GIS popup must request.

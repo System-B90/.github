@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -735,14 +816,14 @@
 <blockquote>
 <p><strong>AiToolContext</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L15">ui/src/api-server/ai/tools/types.ts:15</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L33">ui/src/api-server/ai/tools/types.ts:33</a></p>
 <p>Everything a tool may know about the session it runs in.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="actor">actor<a class="headerlink" href="#actor" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>actor</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L21">ui/src/api-server/ai/tools/types.ts:21</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L39">ui/src/api-server/ai/tools/types.ts:39</a></p>
 <p>The signed-in staff member, for write attribution.</p>
 <h4 id="displayname">displayName<a class="headerlink" href="#displayname" title="Permanent link">&para;</a></h4>
 <blockquote>
@@ -757,21 +838,21 @@
 <blockquote>
 <p><code>optional</code> <strong>curriculumId?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L19">ui/src/api-server/ai/tools/types.ts:19</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L37">ui/src/api-server/ai/tools/types.ts:37</a></p>
 <p>Curriculum the user is looking at, when on a Gantt screen.</p>
 <hr />
 <h3 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>iterationId?</strong>: <a href="../../../../../../api-shared/types/iteration/type-aliases/IterationId/"><code>IterationId</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L17">ui/src/api-server/ai/tools/types.ts:17</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L35">ui/src/api-server/ai/tools/types.ts:35</a></p>
 <p>Target iteration; undefined means the current one.</p>
 <hr />
 <h3 id="readcontroller">readController<a class="headerlink" href="#readcontroller" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>readController</strong>: () =&gt; <code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L23">ui/src/api-server/ai/tools/types.ts:23</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L41">ui/src/api-server/ai/tools/types.ts:41</a></p>
 <p>Calendar store scoped to <a href="#iterationid">iterationId</a>, resolved lazily.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>
@@ -780,7 +861,7 @@
 <blockquote>
 <p><strong>writeController</strong>: () =&gt; <code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L25">ui/src/api-server/ai/tools/types.ts:25</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L43">ui/src/api-server/ai/tools/types.ts:43</a></p>
 <p>Same, but refuses a past iteration. Write tools use this one.</p>
 <h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>

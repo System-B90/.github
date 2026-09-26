@@ -9,6 +9,7 @@
 ## Type Aliases
 
 - [RealtimeState](type-aliases/RealtimeState.md)
+- [RealtimeStatusProps](type-aliases/RealtimeStatusProps.md)
 
 ## Variables
 

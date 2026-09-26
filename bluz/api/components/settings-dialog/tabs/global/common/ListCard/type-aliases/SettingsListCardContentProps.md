@@ -8,7 +8,7 @@
 
 > **SettingsListCardContentProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L34)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:34](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L34)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:3
 
 > **addButtonLabel**: [`SettingsAddButtonProps`](../../AddButton/type-aliases/SettingsAddButtonProps.md)\[`"label"`\]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:47](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L47)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:47](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L47)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:4
 
 > **handleStartCreate**: () => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:46](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L46)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:46](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L46)
 
 #### Returns
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:4
 
 > **headerProps**: [`SettingsSectionHeaderProps`](../../SectionHeader/type-aliases/SettingsSectionHeaderProps.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L42)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:42](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L42)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:4
 
 > `optional` **isLoading?**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L41)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:41](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L41)
 
 While true the list shows skeleton rows. Without it an in-flight fetch
 is indistinguishable from an empty collection, and the tab flashes
@@ -56,7 +56,7 @@ is indistinguishable from an empty collection, and the tab flashes
 
 > **items**: `ReactNode`[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L35)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:35](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L35)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:3
 
 > **searchMessages**: `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:48](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L48)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:48](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L48)
 
 #### noEntries
 
@@ -80,7 +80,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:4
 
 > **searchPlaceholder**: [`SettingsSearchFieldProps`](../../SearchField/type-aliases/SettingsSearchFieldProps.md)\[`"placeholder"`\]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:43](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L43)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:43](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L43)
 
 ***
 
@@ -88,7 +88,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:4
 
 > **searchQuery**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L44)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:44](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L44)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:4
 
 > **setSearchQuery**: (`query`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:45](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L45)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx:45](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/ListCard.tsx#L45)
 
 #### Parameters
 

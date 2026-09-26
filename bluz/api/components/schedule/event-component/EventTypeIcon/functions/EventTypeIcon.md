@@ -8,13 +8,13 @@
 
 > **EventTypeIcon**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-component/EventTypeIcon.tsx:19](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/event-component/EventTypeIcon.tsx#L19)
+Defined in: [ui/src/components/schedule/event-component/EventTypeIcon.tsx:19](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/event-component/EventTypeIcon.tsx#L19)
 
 ## Parameters
 
 ### \_\_namedParameters
 
-`object` & `SvgIconOwnProps` & `CommonProps` & `Omit`\<`SVGProps`\<`SVGSVGElement`\>, `"color"` \| `"style"` \| `"className"` \| `"classes"` \| `"children"` \| `"sx"` \| `"fontSize"` \| `"shapeRendering"` \| `"htmlColor"` \| `"inheritViewBox"` \| `"titleAccess"` \| `"viewBox"`\> & `object`
+`object` & `SvgIconOwnProps` & `CommonProps` & `Omit`\<`SVGProps`\<`SVGSVGElement`\>, `"color"` \| `"style"` \| `"children"` \| `"className"` \| `"classes"` \| `"fontSize"` \| `"shapeRendering"` \| `"sx"` \| `"htmlColor"` \| `"inheritViewBox"` \| `"titleAccess"` \| `"viewBox"`\> & `object`
 
 ## Returns
 

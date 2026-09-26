@@ -19,6 +19,8 @@
 - [calculateMinimumRequiredTimeForCurriculum](functions/calculateMinimumRequiredTimeForCurriculum.md)
 - [calculateMinimumRequiredTimeForModule](functions/calculateMinimumRequiredTimeForModule.md)
 - [calculateMinimumRequiredTimeForSyllabus](functions/calculateMinimumRequiredTimeForSyllabus.md)
+- [countEventOccurrences](functions/countEventOccurrences.md)
 - [doShuffleTotalsDiffer](functions/doShuffleTotalsDiffer.md)
 - [getModuleShuffleTotals](functions/getModuleShuffleTotals.md)
 - [getSyllabusShuffleTotals](functions/getSyllabusShuffleTotals.md)
+- [sumCollapsingShuffleGroups](functions/sumCollapsingShuffleGroups.md)

@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -642,6 +723,84 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#recreateoccurrence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        recreateOccurrence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="recreateOccurrence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#curriculumid_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        curriculumId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gantteventid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ganttEventId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#occurrencedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        occurrenceDate
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Returns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -674,7 +833,7 @@
 <blockquote>
 <p><code>const</code> <strong>curriculumExecutionApi</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/execution.ts#L18">ui/src/api-client/gantt/execution.ts:18</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/execution.ts#L36">ui/src/api-client/gantt/execution.ts:36</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="get">get<a class="headerlink" href="#get" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -688,6 +847,21 @@ cut into a schedule yet.</p>
 <p><code>string</code></p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../api-shared/types/gantt/execution/type-aliases/ApiCurriculumExecutionResponse/"><code>ApiCurriculumExecutionResponse</code></a>&gt;</p>
+<h3 id="recreateoccurrence">recreateOccurrence<a class="headerlink" href="#recreateoccurrence" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>readonly</code> <strong>recreateOccurrence</strong>: (<code>curriculumId</code>, <code>ganttEventId</code>, <code>occurrenceDate</code>) =&gt; <code>Promise</code>\&lt;{ <code>createdEvents</code>: <code>number</code>; }&gt; = <code>recreateExecutionOccurrence</code></p>
+</blockquote>
+<p>POST /api/gantt/curriculums/[id]/execution/recreate — re-create the schedule
+event for one deleted cut occurrence (#682).</p>
+<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
+<h5 id="curriculumid_1">curriculumId<a class="headerlink" href="#curriculumid_1" title="Permanent link">&para;</a></h5>
+<p><code>string</code></p>
+<h5 id="gantteventid">ganttEventId<a class="headerlink" href="#gantteventid" title="Permanent link">&para;</a></h5>
+<p><code>string</code></p>
+<h5 id="occurrencedate">occurrenceDate<a class="headerlink" href="#occurrencedate" title="Permanent link">&para;</a></h5>
+<p><code>string</code></p>
+<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
+<p><code>Promise</code>\&lt;{ <code>createdEvents</code>: <code>number</code>; }&gt;</p>
 
 
 

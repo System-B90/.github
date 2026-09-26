@@ -1,0 +1,2319 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Internal developer documentation for the Bluz scheduling & curriculum-management platform.">
+      
+      
+      
+        <link rel="canonical" href="https://system-b90.github.io/bluz/bug-hunt-2026-09/">
+      
+      
+        <link rel="prev" href="../duplication-audit/">
+      
+      
+        <link rel="next" href="../gantt-cut-rules/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Bug Hunt 2026-09 - Bluz Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bug-hunt-september-2026" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Bluz Developer Documentation" class="md-header__button md-logo" aria-label="Bluz Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bluz Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bug Hunt 2026-09
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/system-b90/bluz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    system-b90/bluz
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Bluz Developer Documentation" class="md-nav__button md-logo" aria-label="Bluz Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Bluz Developer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/system-b90/bluz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    system-b90/bluz
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance-and-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance & Scaling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backup-and-restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup & Restore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Quality Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../duplication-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-undo-after-paging-weeks-deleted-the-visible-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Undo after paging weeks deleted the visible week
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-tls-verification-forced-off-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. TLS verification forced off in production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-module-time-allocation-only-applied-to-the-first-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Module time allocation only applied to the first event
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-prayer-events-written-to-the-wrong-iteration-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Prayer events written to the wrong iteration database
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-prayer-wall-clock-read-in-server-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Prayer wall-clock read in server timezone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-snapshot-restore-failed-on-_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Snapshot restore failed on _id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-curriculum-import-dropped-most-event-data-and-all-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Curriculum import dropped most event data and all ordering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-hive-room-reservations-never-listed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Hive room reservations never listed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-duplicate-realtimestatus-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Duplicate RealtimeStatus socket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-failed-personal-settings-load-wiped-saved-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Failed personal-settings load wiped saved preferences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-offline-fetch-failure-indistinguishable-from-no-edits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Offline: fetch failure indistinguishable from "no edits"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-offline-created-then-edited-event-classified-as-modified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Offline: created-then-edited event classified as "modified"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cleared-outsider-fields-reappeared-after-reload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Cleared outsider fields reappeared after reload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-break-pass-pushed-events-into-the-pinned-meal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Break pass pushed events into the pinned meal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-cut-rejected-recurrences-the-gantt-showed-as-satisfied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Cut rejected recurrences the Gantt showed as satisfied
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-gantt-flagged-satisfied-constraints-as-violated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Gantt flagged satisfied constraints as violated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-normalizer-dropped-shuffles-and-dayendtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Normalizer dropped shuffles and dayEndTime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-module-shift-moved-mappings-from-other-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Module shift moved mappings from other weeks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-unlinking-a-syllabus-crashed-the-module-dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Unlinking a syllabus crashed the module dialog
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medium
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Medium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20-drizzle-journal-non-monotonic-migrations-00020003-skipped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Drizzle journal non-monotonic → migrations 0002/0003 skipped
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-hive-lesson-sync-erased-a-hand-picked-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Hive lesson sync erased a hand-picked lesson
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-aiassistantenabled-could-never-be-persisted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. aiAssistantEnabled could never be persisted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-courseroomoutsider-update-bypassed-the-allow-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Course/room/outsider update bypassed the allow-list
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-settings-get-cached-for-a-day-immutable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Settings GET cached for a day, immutable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-constraint-patch-ignored-the-target-unless-type-was-resent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Constraint PATCH ignored the target unless type was resent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-duplicated-event-lost-shuffles-shared-hivelessonid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Duplicated event lost shuffles, shared hiveLessonId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-rapid-prayer-time-edits-reverted-each-other" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Rapid prayer-time edits reverted each other
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-instructor-move-flagged-its-own-source-event-as-a-conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Instructor move flagged its own source event as a conflict
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-staff-calendar-localizer-in-browser-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Staff calendar localizer in browser timezone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-date-picker-move-across-dst-shifted-the-event-by-an-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Date picker move across DST shifted the event by an hour
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-event-type-field-kept-the-previous-events-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        31. Event type field kept the previous event's type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-course-row-kept-a-failed-rename-after-rollback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        32. Course row kept a failed rename after rollback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-week-update-had-no-stale-response-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        33. Week update had no stale-response guard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-constraint-editor-showed-the-literal-string-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        34. Constraint editor showed the literal string "null"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-constraint-solver-reported-pass-0-violations-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        35. Constraint solver reported pass-0 violations only
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-split-events-never-wrapped-at-day-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        36. Split events never wrapped at day end
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-holiday-lookup-off-by-one-day-west-of-utc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        37. Holiday lookup off by one day west of UTC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-reservations-rendered-in-browser-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        38. Reservations rendered in browser timezone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-test-pipeline-exit-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        39. Test pipeline exit codes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#40-release-tagging-rc-tags-sorted-above-the-final-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        40. Release tagging: rc tags sorted above the final release
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Low
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Low">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-iteration-with-only-archived-events-undeletable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        41. Iteration with only archived events undeletable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-lesson-activation-tick-warned-every-30-s-on-a-fresh-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        42. Lesson-activation tick warned every 30 s on a fresh install
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-ai-chat-non-object-body-was-a-500" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        43. AI chat: non-object body was a 500
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-constraint-description-crashed-on-a-deleted-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        44. Constraint description crashed on a deleted owner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-malformed-room-resource-key-silently-became-a-custom-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        45. Malformed room resource key silently became a Custom room
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-room-deep-link-editroom-no-op-for-hive-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        46. Room deep link (?editRoom=) no-op for Hive rooms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-cli-logout-persisted-env-derived-config-login-leaked-bluz_token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        47. CLI logout persisted env-derived config; login leaked BLUZ_TOKEN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-toolspy-ci-traceback-without-gh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        48. tools.py ci traceback without gh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-import_hachnasts-empty-connection-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        49. import_hachnas.ts empty connection string
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-pass-same-day-ui-follow-ups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second pass (same day) — UI follow-ups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reviewed-and-deliberately-left-alone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reviewed and deliberately left alone
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gantt-cut-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gantt Cut Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../e2e-cloud-runbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E2E Cloud Runbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-undo-after-paging-weeks-deleted-the-visible-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Undo after paging weeks deleted the visible week
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-tls-verification-forced-off-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. TLS verification forced off in production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-module-time-allocation-only-applied-to-the-first-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Module time allocation only applied to the first event
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-prayer-events-written-to-the-wrong-iteration-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Prayer events written to the wrong iteration database
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-prayer-wall-clock-read-in-server-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Prayer wall-clock read in server timezone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-snapshot-restore-failed-on-_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Snapshot restore failed on _id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-curriculum-import-dropped-most-event-data-and-all-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Curriculum import dropped most event data and all ordering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-hive-room-reservations-never-listed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Hive room reservations never listed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-duplicate-realtimestatus-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Duplicate RealtimeStatus socket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-failed-personal-settings-load-wiped-saved-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Failed personal-settings load wiped saved preferences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-offline-fetch-failure-indistinguishable-from-no-edits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Offline: fetch failure indistinguishable from "no edits"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-offline-created-then-edited-event-classified-as-modified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Offline: created-then-edited event classified as "modified"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cleared-outsider-fields-reappeared-after-reload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Cleared outsider fields reappeared after reload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-break-pass-pushed-events-into-the-pinned-meal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Break pass pushed events into the pinned meal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-cut-rejected-recurrences-the-gantt-showed-as-satisfied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Cut rejected recurrences the Gantt showed as satisfied
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-gantt-flagged-satisfied-constraints-as-violated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Gantt flagged satisfied constraints as violated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-normalizer-dropped-shuffles-and-dayendtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Normalizer dropped shuffles and dayEndTime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-module-shift-moved-mappings-from-other-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Module shift moved mappings from other weeks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-unlinking-a-syllabus-crashed-the-module-dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Unlinking a syllabus crashed the module dialog
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medium
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Medium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20-drizzle-journal-non-monotonic-migrations-00020003-skipped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Drizzle journal non-monotonic → migrations 0002/0003 skipped
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-hive-lesson-sync-erased-a-hand-picked-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Hive lesson sync erased a hand-picked lesson
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-aiassistantenabled-could-never-be-persisted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. aiAssistantEnabled could never be persisted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-courseroomoutsider-update-bypassed-the-allow-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Course/room/outsider update bypassed the allow-list
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-settings-get-cached-for-a-day-immutable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Settings GET cached for a day, immutable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-constraint-patch-ignored-the-target-unless-type-was-resent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Constraint PATCH ignored the target unless type was resent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-duplicated-event-lost-shuffles-shared-hivelessonid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Duplicated event lost shuffles, shared hiveLessonId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-rapid-prayer-time-edits-reverted-each-other" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Rapid prayer-time edits reverted each other
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-instructor-move-flagged-its-own-source-event-as-a-conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Instructor move flagged its own source event as a conflict
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-staff-calendar-localizer-in-browser-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Staff calendar localizer in browser timezone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-date-picker-move-across-dst-shifted-the-event-by-an-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Date picker move across DST shifted the event by an hour
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-event-type-field-kept-the-previous-events-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        31. Event type field kept the previous event's type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-course-row-kept-a-failed-rename-after-rollback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        32. Course row kept a failed rename after rollback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-week-update-had-no-stale-response-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        33. Week update had no stale-response guard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-constraint-editor-showed-the-literal-string-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        34. Constraint editor showed the literal string "null"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-constraint-solver-reported-pass-0-violations-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        35. Constraint solver reported pass-0 violations only
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-split-events-never-wrapped-at-day-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        36. Split events never wrapped at day end
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-holiday-lookup-off-by-one-day-west-of-utc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        37. Holiday lookup off by one day west of UTC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-reservations-rendered-in-browser-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        38. Reservations rendered in browser timezone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-test-pipeline-exit-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        39. Test pipeline exit codes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#40-release-tagging-rc-tags-sorted-above-the-final-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        40. Release tagging: rc tags sorted above the final release
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Low
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Low">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-iteration-with-only-archived-events-undeletable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        41. Iteration with only archived events undeletable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-lesson-activation-tick-warned-every-30-s-on-a-fresh-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        42. Lesson-activation tick warned every 30 s on a fresh install
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-ai-chat-non-object-body-was-a-500" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        43. AI chat: non-object body was a 500
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-constraint-description-crashed-on-a-deleted-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        44. Constraint description crashed on a deleted owner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-malformed-room-resource-key-silently-became-a-custom-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        45. Malformed room resource key silently became a Custom room
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-room-deep-link-editroom-no-op-for-hive-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        46. Room deep link (?editRoom=) no-op for Hive rooms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-cli-logout-persisted-env-derived-config-login-leaked-bluz_token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        47. CLI logout persisted env-derived config; login leaked BLUZ_TOKEN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-toolspy-ci-traceback-without-gh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        48. tools.py ci traceback without gh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-import_hachnasts-empty-connection-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        49. import_hachnas.ts empty connection string
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-pass-same-day-ui-follow-ups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second pass (same day) — UI follow-ups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reviewed-and-deliberately-left-alone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reviewed and deliberately left alone
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="bug-hunt-september-2026">Bug Hunt — September 2026<a class="headerlink" href="#bug-hunt-september-2026" title="Permanent link">&para;</a></h1>
+<p>A full read-through of the codebase (all four API layers, both component
+trees, the cut pipeline, the Python CLI and the CI/seed scripts) done on
+2026-09-17. Every finding below was verified against source before it was
+fixed; findings that turned out to encode deliberate behaviour are listed at
+the end with the reason they were left alone.</p>
+<p>Verification after the fixes: <code>npm run typecheck</code> clean, ESLint clean on every
+changed file, <code>npm run test:unit</code> 217 files / 2229 tests green (14 regression
+tests added), <code>cli/</code> pytest 165 green, <code>ruff check</code> clean.</p>
+<p>Severity legend: <strong>critical</strong> = data loss or security; <strong>high</strong> = a feature is
+wrong for every user; <strong>medium</strong> = wrong under a common condition; <strong>low</strong> =
+edge case or confusing failure.</p>
+<hr />
+<h2 id="critical">Critical<a class="headerlink" href="#critical" title="Permanent link">&para;</a></h2>
+<h3 id="1-undo-after-paging-weeks-deleted-the-visible-week">1. Undo after paging weeks deleted the visible week<a class="headerlink" href="#1-undo-after-paging-weeks-deleted-the-visible-week" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts</code></p>
+<p>The undo stack survived a remote <code>SET_EVENTS</code> (week paging, iteration switch,
+snapshot restore). <code>syncHistoryTravel</code> then diffed week B against a week-A
+snapshot and pushed that diff to the server: every week-B event got an
+<code>apiDeleteEvent</code>, every week-A event an <code>apiCreateEvent</code>.</p>
+<p><strong>Fix:</strong> a remote <code>SET_EVENTS</code> now resets <code>past</code>/<code>future</code>.</p>
+<h3 id="2-tls-verification-forced-off-in-production">2. TLS verification forced off in production<a class="headerlink" href="#2-tls-verification-forced-off-in-production" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/instrumentation.ts</code></p>
+<p><code>process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"</code> ran unconditionally at boot,
+overriding the <code>.env</code> knob that <code>setup.py</code> writes, so every outbound TLS call
+(Hive SSO token exchange, Google Calendar) accepted any certificate.</p>
+<p><strong>Fix:</strong> only set when not production <em>and</em> the variable is unset.</p>
+<h3 id="3-module-time-allocation-only-applied-to-the-first-event">3. Module time allocation only applied to the first event<a class="headerlink" href="#3-module-time-allocation-only-applied-to-the-first-event" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/gantt/state/reducers/module-reducer.ts</code>,
+<code>ui/src/api-shared/gantt/allocate-time.ts</code></p>
+<p>The reducer called the <code>async</code> <code>allocateTimeToModule</code>; only the first
+iteration ran before the reducer returned, and the rest mutated
+already-committed state with no re-render.</p>
+<p><strong>Fix:</strong> new synchronous <code>planModuleAllocation()</code> planner; the async wrapper
+and the reducer both consume it.</p>
+<hr />
+<h2 id="high">High<a class="headerlink" href="#high" title="Permanent link">&para;</a></h2>
+<h3 id="4-prayer-events-written-to-the-wrong-iteration-database">4. Prayer events written to the wrong iteration database<a class="headerlink" href="#4-prayer-events-written-to-the-wrong-iteration-database" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/prayer.ts</code>, <code>ui/src/app/api/settings/[slug]/route.ts</code></p>
+<p>The settings route resolved the current iteration's controller for the
+setting write, then called <code>updatePrayerEvents</code> without it, so prayer events
+went to the legacy default DB. Found independently by two reviewers.</p>
+<p><strong>Fix:</strong> controller and iteration id threaded through every <code>DbEvent</code> call.</p>
+<h3 id="5-prayer-wall-clock-read-in-server-timezone">5. Prayer wall-clock read in server timezone<a class="headerlink" href="#5-prayer-wall-clock-read-in-server-timezone" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/prayer.ts</code>, <code>ui/src/api-server/db-settings.ts</code></p>
+<p><code>Date#getHours()</code> on a UTC container turned 06:00 Israel into 04:00 Israel.
+Seeded defaults (<code>new Date(1970,0,1,18)</code>) had the same problem in reverse.</p>
+<p><strong>Fix:</strong> read wall-clock via <code>dayjs(...).tz(APP_TIMEZONE)</code>; seed defaults with
+<code>dayjs.tz("1970-01-01 18:00", APP_TIMEZONE)</code>.</p>
+<h3 id="6-snapshot-restore-failed-on-_id">6. Snapshot restore failed on <code>_id</code><a class="headerlink" href="#6-snapshot-restore-failed-on-_id" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/db-calendar-snapshot.ts</code></p>
+<p>Captured events carried the client-echoed hex <code>_id</code> string; <code>replaceOne</code>
+against a live ObjectId document threw "immutable field '_id' altered" and
+aborted the whole restore. The "existing ids" read also sat outside the
+transaction.</p>
+<p><strong>Fix:</strong> <code>_id</code> stripped from replacements; the read moved inside the
+transaction with the session.</p>
+<h3 id="7-curriculum-import-dropped-most-event-data-and-all-ordering">7. Curriculum import dropped most event data and all ordering<a class="headerlink" href="#7-curriculum-import-dropped-most-event-data-and-all-ordering" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/app/api/gantt/curriculums/import/route.ts</code></p>
+<p>Only <code>title/type/minimumDuration</code> were copied for events, and s2m/m2e
+junction rows lost <code>sortOrder</code>. Recurrence, shuffles, lecturers, room
+requirements vanished; module/event order collapsed.</p>
+<p><strong>Fix:</strong> rows go through <code>sanitizeCreatePayload</code> (full column set, enum
+validation → 400), <code>sortOrder</code> carried, <code>hiveLessonId</code> nulled on the copy.</p>
+<h3 id="8-hive-room-reservations-never-listed">8. Hive room reservations never listed<a class="headerlink" href="#8-hive-room-reservations-never-listed" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/app/api/reservations/route.ts</code></p>
+<p>Hive room ids are numbers in Mongo; the query string arrives as a string, so
+the GET filter matched nothing. <code>roomSource=abc</code> also produced a NaN filter.</p>
+<p><strong>Fix:</strong> integer-literal ids coerced to number for Hive; unknown source is a 400.</p>
+<h3 id="9-duplicate-realtimestatus-socket">9. Duplicate RealtimeStatus socket<a class="headerlink" href="#9-duplicate-realtimestatus-socket" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/base/RealtimeStatus.tsx</code>, <code>ui/src/components/auth/AuthProvider.tsx</code></p>
+<p><code>useSessionWebSocketContext()</code> is the connection hook, not a reader. Calling
+it a second time opened a second socket and a second <code>REGISTER_SESSION</code>.</p>
+<p><strong>Fix:</strong> <code>ws</code> passed as a prop from <code>AuthProvider</code>.</p>
+<h3 id="10-failed-personal-settings-load-wiped-saved-preferences">10. Failed personal-settings load wiped saved preferences<a class="headerlink" href="#10-failed-personal-settings-load-wiped-saved-preferences" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/settings-dialog/tabs/PersonalSettings.tsx</code></p>
+<p><code>.finally(() =&gt; setIsLoaded(true))</code> armed the persist effect after a failed
+load, which then PUT the reducer defaults.</p>
+<p><strong>Fix:</strong> <code>isLoaded</code> is set only on success.</p>
+<h3 id="11-offline-fetch-failure-indistinguishable-from-no-edits">11. Offline: fetch failure indistinguishable from "no edits"<a class="headerlink" href="#11-offline-fetch-failure-indistinguishable-from-no-edits" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/schedule/offline-dialogs/push-updates-dialog/index.tsx</code></p>
+<p>A failed <code>apiGetMultipleEvents</code> returned <code>{}</code>; the dialog closed and purged
+the captured offline edits.</p>
+<p><strong>Fix:</strong> returns <code>null</code> on failure; caller re-enters offline mode without purging.</p>
+<h3 id="12-offline-created-then-edited-event-classified-as-modified">12. Offline: created-then-edited event classified as "modified"<a class="headerlink" href="#12-offline-created-then-edited-event-classified-as-modified" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts</code></p>
+<p>Editing an event created offline captured a "before" copy, so reconciliation
+tried <code>apiUpdateEvent</code> on an id the server never saw.</p>
+<p><strong>Fix:</strong> capture skipped when <code>isEventCreatedLocally(id)</code>.</p>
+<h3 id="13-cleared-outsider-fields-reappeared-after-reload">13. Cleared outsider fields reappeared after reload<a class="headerlink" href="#13-cleared-outsider-fields-reappeared-after-reload" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts</code>,
+<code>ui/src/api-shared/types/outsider.ts</code></p>
+<p>Blank fields mapped to <code>undefined</code>, which JSON drops, so the server <code>$set</code>
+kept the old value.</p>
+<p><strong>Fix:</strong> blanks are sent as <code>null</code>.</p>
+<h3 id="14-break-pass-pushed-events-into-the-pinned-meal">14. Break pass pushed events into the pinned meal<a class="headerlink" href="#14-break-pass-pushed-events-into-the-pinned-meal" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/gantt/cut-breaks.ts</code></p>
+<p>Break slack was budgeted from the day's trailing tail, but the shift offset
+reset at the pinned meal, so pre-meal events moved <em>into</em> lunch.</p>
+<p><strong>Fix:</strong> budgets computed per segment between pinned items. Regression test
+reproduces the exact A/B/C/lunch/D scenario.</p>
+<h3 id="15-cut-rejected-recurrences-the-gantt-showed-as-satisfied">15. Cut rejected recurrences the Gantt showed as satisfied<a class="headerlink" href="#15-cut-rejected-recurrences-the-gantt-showed-as-satisfied" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/gantt/cut-planner.ts</code></p>
+<p><code>isRecurrenceSatisfied</code> was called without <code>firstRequiredWeekIdx</code>, ignoring
+<code>recurrenceStartDate</code> (#468) that the UI honours.</p>
+<p><strong>Fix:</strong> planner uses <code>getFirstRequiredRecurrenceWeekIdx</code> like <code>GanttEventRow</code>.</p>
+<h3 id="16-gantt-flagged-satisfied-constraints-as-violated">16. Gantt flagged satisfied constraints as violated<a class="headerlink" href="#16-gantt-flagged-satisfied-constraints-as-violated" title="Permanent link">&para;</a></h3>
+<p><code>.../gantt-view/use-gantt-violations.ts</code></p>
+<p><code>c.maxDelayDays !== undefined &amp;&amp; delta &gt; c.maxDelayDays</code> — server rows carry
+<code>null</code>, and <code>delta &gt; null</code> is <code>delta &gt; 0</code>. "before" also ignored min/max.</p>
+<p><strong>Fix:</strong> <code>!= null</code> checks; delta normalised per relation to match the solver.</p>
+<h3 id="17-normalizer-dropped-shuffles-and-dayendtime">17. Normalizer dropped <code>shuffles</code> and <code>dayEndTime</code><a class="headerlink" href="#17-normalizer-dropped-shuffles-and-dayendtime" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-client/gantt/drizzle-normalize.ts</code>, <code>.../UseWeekActions.tsx</code></p>
+<p>Reload emptied shuffle chips and blanked the day end-time input while the cut
+still used the stored value.</p>
+<p><strong>Fix:</strong> fields carried through normalisation and the server-backed <code>ADD_DAY</code>.</p>
+<h3 id="18-module-shift-moved-mappings-from-other-weeks">18. Module shift moved mappings from other weeks<a class="headerlink" href="#18-module-shift-moved-mappings-from-other-weeks" title="Permanent link">&para;</a></h3>
+<p><code>.../gantt-view/use-gantt-drag.ts</code></p>
+<p><code>linearDays.indexOf(dayId)</code> returned <code>-1</code> for another week's mapping and the
+result was used as an index.</p>
+<p><strong>Fix:</strong> <code>-1</code> skipped in both directions.</p>
+<h3 id="19-unlinking-a-syllabus-crashed-the-module-dialog">19. Unlinking a syllabus crashed the module dialog<a class="headerlink" href="#19-unlinking-a-syllabus-crashed-the-module-dialog" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/gantt/module-dialog/constraints/use-target-options.ts</code></p>
+<p>Orphaned modules dereferenced <code>state.syllabuses[m.syllabusId].title</code>.</p>
+<p><strong>Fix:</strong> modules without a syllabus are skipped.</p>
+<hr />
+<h2 id="medium">Medium<a class="headerlink" href="#medium" title="Permanent link">&para;</a></h2>
+<h3 id="20-drizzle-journal-non-monotonic-migrations-00020003-skipped">20. Drizzle journal non-monotonic → migrations 0002/0003 skipped<a class="headerlink" href="#20-drizzle-journal-non-monotonic-migrations-00020003-skipped" title="Permanent link">&para;</a></h3>
+<p><code>drizzle/meta/_journal.json</code></p>
+<p>Drizzle applies an entry only when its <code>when</code> exceeds the last applied
+<code>created_at</code>. <code>0001</code> (1781869848116) was newer than <code>0002</code>/<code>0003</code>
+(1781524435371/2), so a DB migrated at <code>0001</code> never received the
+<code>sort_order</code> and <code>archived</code> columns.</p>
+<p><strong>Fix:</strong> <code>0002</code>/<code>0003</code> bumped to <code>0001 + 1/2</code> (hashes unaffected).
+<strong>Operational note:</strong> a database already past <code>0004</code> that is missing
+<code>m2e.sort_order</code>/<code>s2m.sort_order</code>/<code>c.archived</code> still needs those two
+migration SQL files applied by hand.</p>
+<h3 id="21-hive-lesson-sync-erased-a-hand-picked-lesson">21. Hive lesson sync erased a hand-picked lesson<a class="headerlink" href="#21-hive-lesson-sync-erased-a-hand-picked-lesson" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/hive/lesson-sync.ts</code></p>
+<p>When the event no longer opened a queue, <code>reconcileEventLesson</code> returned
+<code>null</code> and the caller <code>$set hiveLesson: null</code>, wiping the Segel's choice.</p>
+<p><strong>Fix:</strong> <code>deleteOwnedLesson</code> returns the id to keep; only a Bluz-owned lesson
+is cleared.</p>
+<h3 id="22-aiassistantenabled-could-never-be-persisted">22. <code>aiAssistantEnabled</code> could never be persisted<a class="headerlink" href="#22-aiassistantenabled-could-never-be-persisted" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/db-personal-settings.ts</code></p>
+<p>Missing from the field allow-list.</p>
+<h3 id="23-courseroomoutsider-update-bypassed-the-allow-list">23. Course/room/outsider update bypassed the allow-list<a class="headerlink" href="#23-courseroomoutsider-update-bypassed-the-allow-list" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/db-courses.ts</code>, <code>db-rooms.ts</code>, <code>db-outsiders.ts</code></p>
+<p><code>create*</code> used <code>pickFields</code>; <code>set*</code> spread the whole client payload into <code>$set</code>.</p>
+<h3 id="24-settings-get-cached-for-a-day-immutable">24. Settings GET cached for a day, <code>immutable</code><a class="headerlink" href="#24-settings-get-cached-for-a-day-immutable" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/app/api/settings/[slug]/route.ts</code></p>
+<p>Another user's change was invisible until the browser cache expired. The slug
+was also never validated, so any key could be upserted and broadcast.</p>
+<p><strong>Fix:</strong> 60 s private non-immutable cache; slug must be a known <code>SettingName</code>.</p>
+<h3 id="25-constraint-patch-ignored-the-target-unless-type-was-resent">25. Constraint PATCH ignored the target unless <code>type</code> was resent<a class="headerlink" href="#25-constraint-patch-ignored-the-target-unless-type-was-resent" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/app/api/gantt/curriculums/[id]/constraints/route.ts</code></p>
+<h3 id="26-duplicated-event-lost-shuffles-shared-hivelessonid">26. Duplicated event lost <code>shuffles</code>, shared <code>hiveLessonId</code><a class="headerlink" href="#26-duplicated-event-lost-shuffles-shared-hivelessonid" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/app/api/gantt/events/[id]/duplicate/route.ts</code></p>
+<h3 id="27-rapid-prayer-time-edits-reverted-each-other">27. Rapid prayer-time edits reverted each other<a class="headerlink" href="#27-rapid-prayer-time-edits-reverted-each-other" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/base/SettingsProvider.tsx</code></p>
+<p>Payload built from a render-closure snapshot. <strong>Fix:</strong> <code>prayerTimesRef</code>,
+mirroring the existing meal-settings ref.</p>
+<h3 id="28-instructor-move-flagged-its-own-source-event-as-a-conflict">28. Instructor move flagged its own source event as a conflict<a class="headerlink" href="#28-instructor-move-flagged-its-own-source-event-as-a-conflict" title="Permanent link">&para;</a></h3>
+<p><code>.../instructor-dnd/InstructorDndProvider.tsx</code>, <code>assign.ts</code></p>
+<h3 id="29-staff-calendar-localizer-in-browser-timezone">29. Staff calendar localizer in browser timezone<a class="headerlink" href="#29-staff-calendar-localizer-in-browser-timezone" title="Permanent link">&para;</a></h3>
+<p><code>.../calendar/DndLocalizer.tsx</code></p>
+<p>Segments were computed in <code>APP_TIMEZONE</code> but rendered by a moment localizer in
+device time; a non-Israel viewer lost segments crossing local midnight.
+<strong>Fix:</strong> <code>moment.tz.setDefault(APP_TIMEZONE)</code>, as the student localizer does.</p>
+<h3 id="30-date-picker-move-across-dst-shifted-the-event-by-an-hour">30. Date picker move across DST shifted the event by an hour<a class="headerlink" href="#30-date-picker-move-across-dst-shifted-the-event-by-an-hour" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/schedule/event-dialog/TimeFields.tsx</code></p>
+<h3 id="31-event-type-field-kept-the-previous-events-type">31. Event type field kept the previous event's type<a class="headerlink" href="#31-event-type-field-kept-the-previous-events-type" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/schedule/event-dialog/EventClassification.tsx</code></p>
+<p><code>EventTypeField</code> seeded once; the dialog swaps <code>event.id</code> without remount.
+<strong>Fix:</strong> <code>key={event?.id}</code>.</p>
+<h3 id="32-course-row-kept-a-failed-rename-after-rollback">32. Course row kept a failed rename after rollback<a class="headerlink" href="#32-course-row-kept-a-failed-rename-after-rollback" title="Permanent link">&para;</a></h3>
+<p><code>.../course-settings/CourseItem.tsx</code></p>
+<h3 id="33-week-update-had-no-stale-response-guard">33. Week update had no stale-response guard<a class="headerlink" href="#33-week-update-had-no-stale-response-guard" title="Permanent link">&para;</a></h3>
+<p><code>.../gantt-funcs/UseWeekActions.tsx</code></p>
+<h3 id="34-constraint-editor-showed-the-literal-string-null">34. Constraint editor showed the literal string <code>"null"</code><a class="headerlink" href="#34-constraint-editor-showed-the-literal-string-null" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts</code></p>
+<h3 id="35-constraint-solver-reported-pass-0-violations-only">35. Constraint solver reported pass-0 violations only<a class="headerlink" href="#35-constraint-solver-reported-pass-0-violations-only" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/gantt/cut-constraints.ts</code></p>
+<p>Violations fixed by a later pass stayed reported; ones broken later were dropped.
+<strong>Fix:</strong> the final pass wins.</p>
+<h3 id="36-split-events-never-wrapped-at-day-end">36. Split events never wrapped at day end<a class="headerlink" href="#36-split-events-never-wrapped-at-day-end" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/gantt/cut-planner.ts</code></p>
+<p>Only the plain-stack branch wrapped; split events ran past <code>dayEnd</code>. Wrapped
+events also skipped the meal-window bump.
+<strong>Fix:</strong> shared <code>placeWithWrap</code> helper for both branches.</p>
+<h3 id="37-holiday-lookup-off-by-one-day-west-of-utc">37. Holiday lookup off by one day west of UTC<a class="headerlink" href="#37-holiday-lookup-off-by-one-day-west-of-utc" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/gantt/holidays.ts</code></p>
+<p><code>new HDate(date)</code> reads local getters; callers pass UTC midnight.
+<strong>Fix:</strong> re-anchor the UTC civil date at local midnight.</p>
+<h3 id="38-reservations-rendered-in-browser-timezone">38. Reservations rendered in browser timezone<a class="headerlink" href="#38-reservations-rendered-in-browser-timezone" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/types/reservation.ts</code></p>
+<p><code>reservationDateFixup</code> used bare <code>dayjs()</code> while events use <code>.tz(APP_TIMEZONE)</code>.</p>
+<h3 id="39-test-pipeline-exit-codes">39. Test pipeline exit codes<a class="headerlink" href="#39-test-pipeline-exit-codes" title="Permanent link">&para;</a></h3>
+<p><code>scripts/demo/populate_demo_bluz.ts</code>, <code>scripts/run_tests.py</code></p>
+<p>Seed failures exited 0 (Playwright then ran on an empty DB); "Hive URL not
+found" returned 0; <code>--grep</code>/<code>--spec</code> were interpolated unquoted into a shell
+string. <strong>Fix:</strong> exit 1 paths, <code>shlex.quote</code>.</p>
+<h3 id="40-release-tagging-rc-tags-sorted-above-the-final-release">40. Release tagging: rc tags sorted above the final release<a class="headerlink" href="#40-release-tagging-rc-tags-sorted-above-the-final-release" title="Permanent link">&para;</a></h3>
+<p><code>scripts/publish.py</code></p>
+<p><code>git tag --sort=-v:refname</code> without <code>versionsort.suffix</code> orders
+<code>v1.0.0-rc.12</code> after <code>v1.0.0</code>. <strong>Fix:</strong> <code>-c versionsort.suffix=-rc</code>.</p>
+<hr />
+<h2 id="low">Low<a class="headerlink" href="#low" title="Permanent link">&para;</a></h2>
+<h3 id="41-iteration-with-only-archived-events-undeletable">41. Iteration with only archived events undeletable<a class="headerlink" href="#41-iteration-with-only-archived-events-undeletable" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/db-iterations.ts</code> — count excludes <code>archived: true</code>.</p>
+<h3 id="42-lesson-activation-tick-warned-every-30-s-on-a-fresh-install">42. Lesson-activation tick warned every 30 s on a fresh install<a class="headerlink" href="#42-lesson-activation-tick-warned-every-30-s-on-a-fresh-install" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-server/hive/lesson-activation.ts</code> — uses <code>currentOrNull()</code>.</p>
+<h3 id="43-ai-chat-non-object-body-was-a-500">43. AI chat: non-object body was a 500<a class="headerlink" href="#43-ai-chat-non-object-body-was-a-500" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/app/api/ai/chat/route.ts</code> — <code>requireJsonObjectBody</code>.</p>
+<h3 id="44-constraint-description-crashed-on-a-deleted-owner">44. Constraint description crashed on a deleted owner<a class="headerlink" href="#44-constraint-description-crashed-on-a-deleted-owner" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/types/gantt/models/constraint.ts</code> — optional chaining.</p>
+<h3 id="45-malformed-room-resource-key-silently-became-a-custom-room">45. Malformed room resource key silently became a Custom room<a class="headerlink" href="#45-malformed-room-resource-key-silently-became-a-custom-room" title="Permanent link">&para;</a></h3>
+<p><code>ui/src/api-shared/types/room.ts</code> — throws.</p>
+<h3 id="46-room-deep-link-editroom-no-op-for-hive-rooms">46. Room deep link (<code>?editRoom=</code>) no-op for Hive rooms<a class="headerlink" href="#46-room-deep-link-editroom-no-op-for-hive-rooms" title="Permanent link">&para;</a></h3>
+<p><code>.../room-settings/index.tsx</code> — string compare on <code>String(r.id)</code>.</p>
+<h3 id="47-cli-logout-persisted-env-derived-config-login-leaked-bluz_token">47. CLI <code>logout</code> persisted env-derived config; <code>login</code> leaked <code>BLUZ_TOKEN</code><a class="headerlink" href="#47-cli-logout-persisted-env-derived-config-login-leaked-bluz_token" title="Permanent link">&para;</a></h3>
+<p><code>cli/bluz_cli/commands/auth.py</code> — file-only config for both paths, warning
+when <code>BLUZ_TOKEN</code> is set.</p>
+<h3 id="48-toolspy-ci-traceback-without-gh">48. <code>tools.py ci</code> traceback without <code>gh</code><a class="headerlink" href="#48-toolspy-ci-traceback-without-gh" title="Permanent link">&para;</a></h3>
+<p><code>scripts/tools_impl.py</code> — <code>FileNotFoundError</code> guard.</p>
+<h3 id="49-import_hachnasts-empty-connection-string">49. <code>import_hachnas.ts</code> empty connection string<a class="headerlink" href="#49-import_hachnasts-empty-connection-string" title="Permanent link">&para;</a></h3>
+<p><code>scripts/import_hachnas.ts</code> — env fallback outside the <code>catch</code>.</p>
+<hr />
+<h2 id="second-pass-same-day-ui-follow-ups">Second pass (same day) — UI follow-ups<a class="headerlink" href="#second-pass-same-day-ui-follow-ups" title="Permanent link">&para;</a></h2>
+<p>A second commit closed the remaining UI findings from the schedule/header/
+settings review:</p>
+<ul>
+<li><strong>Iteration-scoped loads unsequenced</strong> (<code>SettingsProvider.tsx</code>,
+  <code>create-collection-provider.tsx</code>): a fast A→B switch let A's late response
+  overwrite B's state and the refs the next save reads from. Generation
+  token / sequence guard on every loader.</li>
+<li><strong>PersonalSettings PUTs raced</strong>: chained so writes land in order.</li>
+<li><strong>Dark-mode branches were dead</strong>: under MUI CSS-variable theming
+  <code>theme.palette.mode</code> is always <code>"light"</code>; converted to
+  <code>theme.applyStyles("dark", …)</code> across the settings dialog, instructor cards
+  and calendar toolbar.</li>
+<li><strong>CourseItem indentation on the wrong edge</strong>: physical <code>mr</code>/<code>borderRight</code>/
+  <code>pr</code> flipped by stylis-rtl; now logical inline-start properties.</li>
+<li><strong>Keyboard Delete</strong> clears the active event so a repeat cannot fire a
+  second failing delete (<code>UseCalendarHandlers.ts</code>).</li>
+<li><strong>FilterIcon badge</strong> ignored the staffing-gaps toggle.</li>
+<li><strong>NameUtils</strong> unique prefix returned a trailing space.</li>
+<li><strong>AuthProvider fetch patch</strong> restores only its own wrapper, keeps <code>this</code>.</li>
+<li><strong>ImportExport</strong> revoked the object URL before the click.</li>
+</ul>
+<h2 id="reviewed-and-deliberately-left-alone">Reviewed and deliberately left alone<a class="headerlink" href="#reviewed-and-deliberately-left-alone" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>SSE unterminated tail</strong> (<code>api-shared/sse.ts</code>): a trailing <code>data:</code> line
+  without newline is dropped. The existing test documents this as intended
+  (half a JSON document must not reach the consumer), matching the SSE spec.</li>
+<li><strong>Read-only when the iteration list fails to load</strong>
+  (<code>IterationProvider.tsx</code>): the test suite names this a "safe default".</li>
+<li><strong><code>interval-layout.ts</code> zero-length segment</strong>: callers (<code>layoutEnd</code>) assume a
+  non-empty array; changing the contract is a wider refactor than the benefit.</li>
+<li><strong><code>run_tests.py</code> random Postgres password on container reuse</strong>, <strong><code>db:push</code>
+  instead of migrate in the test pipeline</strong>, <strong>Google all-day event timezone</strong>,
+  <strong><code>setDbEvent</code> trusting client <code>updatedAt</code></strong>, <strong>recurrence echo minutes
+  missing from insights/weeks tab</strong>, <strong><code>moveEvent</code> leaving mapping <code>moduleId</code>
+  stale</strong>, <strong>unlink dispatching a delete action</strong>: real but each needs a design
+  decision or a schema/API change. Tracked here for follow-up.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 System B90
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

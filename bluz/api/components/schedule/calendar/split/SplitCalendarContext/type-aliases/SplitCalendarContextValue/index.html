@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -620,10 +701,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#opencontextmenu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        openContextMenu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#selectedeventid" class="md-nav__link">
     <span class="md-ellipsis">
       
         selectedEventId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectedeventids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        selectedEventIds
       
     </span>
   </a>
@@ -785,7 +888,7 @@
 <blockquote>
 <p><strong>SplitCalendarContextValue</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L21">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:21</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L28">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:28</a></p>
 <p>Shared state that makes the separate grid boxes of one split event behave as
 a single object: hovering, selecting or dragging any piece lights up all of
 them, and the drag preview can re-lay-out the whole event live because the
@@ -795,31 +898,49 @@ break windows travel with the context.</p>
 <blockquote>
 <p><strong>activeDrag</strong>: <a href="../ActiveDrag/"><code>ActiveDrag</code></a> | <code>null</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L23">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:23</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L30">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:30</a></p>
 <hr />
 <h3 id="breakwindows">breakWindows<a class="headerlink" href="#breakwindows" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>breakWindows</strong>: <code>ReadonlyArray</code>\&lt;<a href="../../../../../../../api-shared/break-windows/type-aliases/BreakWindow/"><code>BreakWindow</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L22">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:22</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L29">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:29</a></p>
 <hr />
 <h3 id="hoveredeventid">hoveredEventId<a class="headerlink" href="#hoveredeventid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>hoveredEventId</strong>: <a href="../../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a> | <code>null</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L24">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:24</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L31">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:31</a></p>
+<hr />
+<h3 id="opencontextmenu">openContextMenu<a class="headerlink" href="#opencontextmenu" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>openContextMenu</strong>: <code>null</code> | <a href="../OpenEventContextMenu/"><code>OpenEventContextMenu</code></a></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L45">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:45</a></p>
+<p><code>null</code> while the calendar is read-only — a past iteration has nothing to
+offer a menu whose every entry is a write, and the tiles then leave the
+browser's own menu alone.</p>
 <hr />
 <h3 id="selectedeventid">selectedEventId<a class="headerlink" href="#selectedeventid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>selectedEventId</strong>: <a href="../../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a> | <code>null</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L25">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:25</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L32">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:32</a></p>
+<hr />
+<h3 id="selectedeventids">selectedEventIds<a class="headerlink" href="#selectedeventids" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>selectedEventIds</strong>: <code>ReadonlySet</code>\&lt;<a href="../../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L38">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:38</a></p>
+<p>Events the user has Ctrl/Cmd+clicked into a multi-selection (#706). The
+tiles draw a selection ring for these exactly as for <code>selectedEventId</code>,
+so a selection of many reads like a selection of one.</p>
 <hr />
 <h3 id="sethoveredeventid">setHoveredEventId<a class="headerlink" href="#sethoveredeventid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>setHoveredEventId</strong>: (<code>eventId</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L26">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:26</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L39">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:39</a></p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="eventid">eventId<a class="headerlink" href="#eventid" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a> | <code>null</code></p>
@@ -830,7 +951,7 @@ break windows travel with the context.</p>
 <blockquote>
 <p><strong>splitEventAt</strong>: (<code>event</code>, <code>atMs</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L28">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:28</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L47">ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:47</a></p>
 <p>Middle-click / Shift+click on a tile: cut the event in two at <code>atMs</code> (#657).</p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
 <h5 id="event">event<a class="headerlink" href="#event" title="Permanent link">&para;</a></h5>

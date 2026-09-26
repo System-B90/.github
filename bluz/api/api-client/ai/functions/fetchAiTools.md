@@ -6,9 +6,9 @@
 
 # Function: fetchAiTools()
 
-> **fetchAiTools**(): `Promise`\<\{ `enabled`: `boolean`; `tools`: `object`[]; \}\>
+> **fetchAiTools**(): `Promise`\<\{ `enabled`: `boolean`; `model`: `string` \| `null`; `tools`: [`AiToolSummary`](../../../api-shared/types/ai/type-aliases/AiToolSummary.md)[]; \}\>
 
-Defined in: [ui/src/api-client/ai.ts:69](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/ai.ts#L69)
+Defined in: [ui/src/api-client/ai.ts:73](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/ai.ts#L73)
 
 Whether this deployment has AI wired up, plus what the assistant can do.
 
@@ -18,4 +18,4 @@ rather than have the assistant look permanently unavailable for a blip.
 
 ## Returns
 
-`Promise`\<\{ `enabled`: `boolean`; `tools`: `object`[]; \}\>
+`Promise`\<\{ `enabled`: `boolean`; `model`: `string` \| `null`; `tools`: [`AiToolSummary`](../../../api-shared/types/ai/type-aliases/AiToolSummary.md)[]; \}\>

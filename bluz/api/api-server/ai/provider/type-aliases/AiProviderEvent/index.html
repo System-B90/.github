@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -568,6 +649,103 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#union-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Union Members
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Union Members">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-literal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type Literal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type Literal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kind
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        text
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-literal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type Literal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-literal_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type Literal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-literal_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type Literal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -591,12 +769,36 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/ai/provider</a> / AiProviderEvent</p>
 <h1 id="type-alias-aiproviderevent">Type Alias: AiProviderEvent<a class="headerlink" href="#type-alias-aiproviderevent" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>AiProviderEvent</strong> = { <code>kind</code>: <code>"final"</code>; <code>result</code>: <a href="../../../../../api-shared/types/ai/type-aliases/AiChatResult/"><code>AiChatResult</code></a>; } | { <code>kind</code>: <code>"text"</code>; <code>text</code>: <code>string</code>; }</p>
+<p><strong>AiProviderEvent</strong> = { <code>kind</code>: <code>"reasoning"</code>; <code>text</code>: <code>string</code>; } | { <code>kind</code>: <code>"final"</code>; <code>result</code>: <a href="../../../../../api-shared/types/ai/type-aliases/AiChatResult/"><code>AiChatResult</code></a>; } | { <code>kind</code>: <code>"reasoning"</code>; <code>text</code>: <code>string</code>; } | { <code>kind</code>: <code>"text"</code>; <code>text</code>: <code>string</code>; }</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/provider.ts#L37">ui/src/api-server/ai/provider.ts:37</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/provider.ts#L37">ui/src/api-server/ai/provider.ts:37</a></p>
 <p>Provider-level stream frame. Deliberately narrower than the app-level
 <code>AiStreamEvent</code>: a provider knows about text and completions, not about
 tool approval or Bluz's transcript.</p>
+<h2 id="union-members">Union Members<a class="headerlink" href="#union-members" title="Permanent link">&para;</a></h2>
+<h3 id="type-literal">Type Literal<a class="headerlink" href="#type-literal" title="Permanent link">&para;</a></h3>
+<p>{ <code>kind</code>: <code>"reasoning"</code>; <code>text</code>: <code>string</code>; }</p>
+<h4 id="kind">kind<a class="headerlink" href="#kind" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>kind</strong>: <code>"reasoning"</code></p>
+</blockquote>
+<p>Private chain-of-thought, on backends that expose it. Kept
+separate from <code>text</code> so the UI can collapse it: merged into the
+answer it would read as the assistant thinking out loud at the
+user, and it is not part of the transcript replayed next turn.</p>
+<h4 id="text">text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>text</strong>: <code>string</code></p>
+</blockquote>
+<hr />
+<h3 id="type-literal_1">Type Literal<a class="headerlink" href="#type-literal_1" title="Permanent link">&para;</a></h3>
+<p>{ <code>kind</code>: <code>"final"</code>; <code>result</code>: <a href="../../../../../api-shared/types/ai/type-aliases/AiChatResult/"><code>AiChatResult</code></a>; }</p>
+<hr />
+<h3 id="type-literal_2">Type Literal<a class="headerlink" href="#type-literal_2" title="Permanent link">&para;</a></h3>
+<p>{ <code>kind</code>: <code>"reasoning"</code>; <code>text</code>: <code>string</code>; }</p>
+<hr />
+<h3 id="type-literal_3">Type Literal<a class="headerlink" href="#type-literal_3" title="Permanent link">&para;</a></h3>
+<p>{ <code>kind</code>: <code>"text"</code>; <code>text</code>: <code>string</code>; }</p>
 
 
 

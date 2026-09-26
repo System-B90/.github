@@ -6,7 +6,7 @@
 
 # Enumeration: EventChangeInitiator
 
-Defined in: [ui/src/api-shared/types/event-history.ts:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L18)
+Defined in: [ui/src/api-shared/types/event-history.ts:18](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L18)
 
 What produced a change. Gantt-produced values are grouped by
 [isGanttInitiator](../functions/isGanttInitiator.md) — everything else counts as a manual edit.
@@ -17,9 +17,19 @@ What produced a change. Gantt-produced values are grouped by
 
 > **AiAssistant**: `"ai-assistant"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:50](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L50)
+Defined in: [ui/src/api-shared/types/event-history.ts:52](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L52)
 
 Change made by the in-app AI assistant on the user's behalf.
+
+***
+
+### ContextMenu
+
+> **ContextMenu**: `"context-menu"`
+
+Defined in: [ui/src/api-shared/types/event-history.ts:50](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L50)
+
+Right-click context menu on a calendar tile (#706).
 
 ***
 
@@ -27,7 +37,7 @@ Change made by the in-app AI assistant on the user's behalf.
 
 > **CopyPaste**: `"copy-paste"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:32](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L32)
+Defined in: [ui/src/api-shared/types/event-history.ts:32](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L32)
 
 Copy/paste (and duplicate) of an existing event.
 
@@ -37,7 +47,7 @@ Copy/paste (and duplicate) of an existing event.
 
 > **DragDrop**: `"drag-drop"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L28)
+Defined in: [ui/src/api-shared/types/event-history.ts:28](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L28)
 
 Drag-and-drop move on the calendar grid.
 
@@ -47,7 +57,7 @@ Drag-and-drop move on the calendar grid.
 
 > **EventDialog**: `"event-dialog"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L26)
+Defined in: [ui/src/api-shared/types/event-history.ts:26](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L26)
 
 Event dialog save.
 
@@ -57,7 +67,7 @@ Event dialog save.
 
 > **GanttCut**: `"gantt-cut"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:20](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L20)
+Defined in: [ui/src/api-shared/types/event-history.ts:20](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L20)
 
 Curriculum → schedule cut (גזירה ללו"ז).
 
@@ -67,7 +77,7 @@ Curriculum → schedule cut (גזירה ללו"ז).
 
 > **GanttPullBack**: `"gantt-pull-back"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L24)
+Defined in: [ui/src/api-shared/types/event-history.ts:24](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L24)
 
 Pull-back of a previous cut (משיכה חזרה).
 
@@ -77,7 +87,7 @@ Pull-back of a previous cut (משיכה חזרה).
 
 > **GanttReload**: `"gantt-reload"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L22)
+Defined in: [ui/src/api-shared/types/event-history.ts:22](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L22)
 
 Schedule reload from an updated gantt (עדכון לו"ז).
 
@@ -87,7 +97,7 @@ Schedule reload from an updated gantt (עדכון לו"ז).
 
 > **GoogleSync**: `"google-sync"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L44)
+Defined in: [ui/src/api-shared/types/event-history.ts:44](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L44)
 
 Pulled in from a linked Google Calendar.
 
@@ -97,7 +107,7 @@ Pulled in from a linked Google Calendar.
 
 > **InstructorAssign**: `"instructor-assign"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L34)
+Defined in: [ui/src/api-shared/types/event-history.ts:34](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L34)
 
 Instructor assignment via the instructor drag-and-drop layer.
 
@@ -107,7 +117,7 @@ Instructor assignment via the instructor drag-and-drop layer.
 
 > **Keyboard**: `"keyboard"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:36](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L36)
+Defined in: [ui/src/api-shared/types/event-history.ts:36](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L36)
 
 Keyboard shortcut on the calendar grid (Delete).
 
@@ -117,7 +127,7 @@ Keyboard shortcut on the calendar grid (Delete).
 
 > **OfflinePush**: `"offline-push"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L40)
+Defined in: [ui/src/api-shared/types/event-history.ts:40](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L40)
 
 Offline-mode push of locally queued edits.
 
@@ -127,7 +137,7 @@ Offline-mode push of locally queued edits.
 
 > **PrayerSettings**: `"prayer-settings"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:38](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L38)
+Defined in: [ui/src/api-shared/types/event-history.ts:38](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L38)
 
 Automatic re-timing driven by the prayer-time settings.
 
@@ -137,7 +147,7 @@ Automatic re-timing driven by the prayer-time settings.
 
 > **Resize**: `"resize"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:30](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L30)
+Defined in: [ui/src/api-shared/types/event-history.ts:30](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L30)
 
 Resize handle on the calendar grid.
 
@@ -147,7 +157,7 @@ Resize handle on the calendar grid.
 
 > **SnapshotRestore**: `"snapshot-restore"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L42)
+Defined in: [ui/src/api-shared/types/event-history.ts:42](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L42)
 
 Restore of a calendar snapshot.
 
@@ -157,7 +167,7 @@ Restore of a calendar snapshot.
 
 > **Split**: `"split"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:46](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L46)
+Defined in: [ui/src/api-shared/types/event-history.ts:46](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L46)
 
 Middle-click / Shift+click split of an event into two on the grid.
 
@@ -167,7 +177,7 @@ Middle-click / Shift+click split of an event into two on the grid.
 
 > **Undo**: `"undo"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:48](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L48)
+Defined in: [ui/src/api-shared/types/event-history.ts:48](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L48)
 
 Ctrl+Z/Ctrl+Y history travel on the calendar.
 
@@ -177,6 +187,6 @@ Ctrl+Z/Ctrl+Y history travel on the calendar.
 
 > **Unknown**: `"unknown"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L52)
+Defined in: [ui/src/api-shared/types/event-history.ts:54](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L54)
 
 Write with no declared initiator (CLI, scripts, legacy call sites).

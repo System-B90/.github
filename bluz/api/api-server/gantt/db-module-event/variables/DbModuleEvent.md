@@ -8,9 +8,42 @@
 
 > `const` **DbModuleEvent**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-module-event.ts:174](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/db-module-event.ts#L174)
+Defined in: [ui/src/api-server/gantt/db-module-event.ts:375](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/db-module-event.ts#L375)
 
 ## Type Declaration
+
+### applyShuffleGroup
+
+> **applyShuffleGroup**: (`eventId`, `moduleId`, `shuffles`) => `Promise`\<\{ `members`: [`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)[]; `removedIds`: `string`[]; \}\>
+
+Makes `eventId` cover exactly `shuffles`, one event per shuffle.
+
+The group is stored as separate rows rather than one event with many times:
+each shuffle's copy has to be placed, cut and Hive-linked on its own. This
+reconciles the group against the requested names in one transaction - the
+origin keeps the first uncovered name, missing names get a fresh copy, and
+members whose name is gone are deleted - so a repeated call is idempotent.
+
+Returns every surviving member plus the ids that were removed, letting the
+client patch its store instead of refetching the curriculum.
+
+#### Parameters
+
+##### eventId
+
+`string`
+
+##### moduleId
+
+`string`
+
+##### shuffles
+
+`string`[]
+
+#### Returns
+
+`Promise`\<\{ `members`: [`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)[]; `removedIds`: `string`[]; \}\>
 
 ### attachParentIds
 
@@ -68,6 +101,26 @@ layer, which has no database handle to pass.
 #### Returns
 
 `Promise`\<`void`\>
+
+### findGroupMembers
+
+> **findGroupMembers**: (`groupId`, `executor`) => `Promise`\<[`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)[]\>
+
+Every event sharing `groupId`, oldest first.
+
+#### Parameters
+
+##### groupId
+
+`string`
+
+##### executor?
+
+[`GanttDbExecutor`](../../type-aliases/GanttDbExecutor.md) = `postgresDb`
+
+#### Returns
+
+`Promise`\<[`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)[]\>
 
 ### getAllocatedTime
 

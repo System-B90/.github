@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -587,6 +668,73 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#recreateoccurrence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        recreateOccurrence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="recreateOccurrence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gantteventid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ganttEventId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#occurrencedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        occurrenceDate
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Returns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#refreshexecution" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -599,7 +747,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#returns" class="md-nav__link">
+  <a href="#returns_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         Returns
@@ -657,22 +805,37 @@
 <blockquote>
 <p><strong>GanttExecutionContextType</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/execution/context.ts#L14">ui/src/components/gantt/state/execution/context.ts:14</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L14">ui/src/components/gantt/state/execution/context.ts:14</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="recreateoccurrence">recreateOccurrence<a class="headerlink" href="#recreateoccurrence" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>recreateOccurrence</strong>: (<code>ganttEventId</code>, <code>occurrenceDate</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L22">ui/src/components/gantt/state/execution/context.ts:22</a></p>
+<p>Re-creates the schedule event for one deleted occurrence (#682), then
+refreshes the comparison so the new "actual" side shows up.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
+<h5 id="gantteventid">ganttEventId<a class="headerlink" href="#gantteventid" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttEventId/"><code>GanttEventId</code></a></p>
+<h5 id="occurrencedate">occurrenceDate<a class="headerlink" href="#occurrencedate" title="Permanent link">&para;</a></h5>
+<p><code>string</code></p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
+<p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<hr />
 <h3 id="refreshexecution">refreshExecution<a class="headerlink" href="#refreshexecution" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>refreshExecution</strong>: () =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/execution/context.ts#L17">ui/src/components/gantt/state/execution/context.ts:17</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L17">ui/src/components/gantt/state/execution/context.ts:17</a></p>
 <p>Re-fetches the execution comparison from the server.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
+<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
 <hr />
 <h3 id="state">state<a class="headerlink" href="#state" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>state</strong>: <a href="../GanttExecutionState/"><code>GanttExecutionState</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/execution/context.ts#L15">ui/src/components/gantt/state/execution/context.ts:15</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L15">ui/src/components/gantt/state/execution/context.ts:15</a></p>
 
 
 

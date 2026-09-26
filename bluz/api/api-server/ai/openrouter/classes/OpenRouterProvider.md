@@ -6,11 +6,11 @@
 
 # Class: OpenRouterProvider
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:147](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L147)
+Defined in: [ui/src/api-server/ai/openrouter.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openrouter.ts#L16)
 
-## Implements
+## Extends
 
-- [`AiProvider`](../../provider/type-aliases/AiProvider.md)
+- [`OpenAiCompatibleProvider`](../../openai-compatible/classes/OpenAiCompatibleProvider.md)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/openrouter.ts:147](https://github.com/System-B
 
 > **new OpenRouterProvider**(`options`): `OpenRouterProvider`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:157](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L157)
+Defined in: [ui/src/api-server/ai/openrouter.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openrouter.ts#L17)
 
 #### Parameters
 
@@ -40,6 +40,8 @@ Defined in: [ui/src/api-server/ai/openrouter.ts:157](https://github.com/System-B
 
 `string`
 
+Attribution headers; OpenRouter uses them for rate-limit tiers.
+
 ###### title?
 
 `string`
@@ -48,33 +50,37 @@ Defined in: [ui/src/api-server/ai/openrouter.ts:157](https://github.com/System-B
 
 `OpenRouterProvider`
 
+#### Overrides
+
+[`OpenAiCompatibleProvider`](../../openai-compatible/classes/OpenAiCompatibleProvider.md).[`constructor`](../../openai-compatible/classes/OpenAiCompatibleProvider.md#constructor)
+
 ## Properties
 
 ### defaultModel
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:149](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L149)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:161](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L161)
 
 Model used when a request does not name one.
 
-#### Implementation of
+#### Inherited from
 
-`AiProvider.defaultModel`
+[`OpenAiCompatibleProvider`](../../openai-compatible/classes/OpenAiCompatibleProvider.md).[`defaultModel`](../../openai-compatible/classes/OpenAiCompatibleProvider.md#defaultmodel)
 
 ***
 
 ### name
 
-> `readonly` **name**: `"openrouter"` = `"openrouter"`
+> `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:148](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L148)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:160](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L160)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
-#### Implementation of
+#### Inherited from
 
-`AiProvider.name`
+[`OpenAiCompatibleProvider`](../../openai-compatible/classes/OpenAiCompatibleProvider.md).[`name`](../../openai-compatible/classes/OpenAiCompatibleProvider.md#name)
 
 ## Methods
 
@@ -82,7 +88,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:176](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L176)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:192](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L192)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -96,9 +102,9 @@ One-shot completion, for callers with nothing to stream to.
 
 `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-#### Implementation of
+#### Inherited from
 
-`AiProvider.chat`
+[`OpenAiCompatibleProvider`](../../openai-compatible/classes/OpenAiCompatibleProvider.md).[`chat`](../../openai-compatible/classes/OpenAiCompatibleProvider.md#chat)
 
 ***
 
@@ -106,7 +112,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:199](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/openrouter.ts#L199)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:215](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L215)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.
@@ -121,6 +127,6 @@ single `final` frame carrying tool calls and usage.
 
 `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-#### Implementation of
+#### Inherited from
 
-`AiProvider.streamChat`
+[`OpenAiCompatibleProvider`](../../openai-compatible/classes/OpenAiCompatibleProvider.md).[`streamChat`](../../openai-compatible/classes/OpenAiCompatibleProvider.md#streamchat)

@@ -74,6 +74,12 @@ Re-exports [Event](../../../../api-shared/types/event/type-aliases/Event.md)
 
 ***
 
+### eventHasCourses
+
+Re-exports [eventHasCourses](../../../../api-shared/types/event/functions/eventHasCourses.md)
+
+***
+
 ### eventHasLecturers
 
 Re-exports [eventHasLecturers](../../../../api-shared/types/event/functions/eventHasLecturers.md)

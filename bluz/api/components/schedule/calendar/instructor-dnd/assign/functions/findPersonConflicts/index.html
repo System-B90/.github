@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -619,6 +700,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#excludeeventids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        excludeEventIds?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -660,9 +752,9 @@
 <p><a href="../../../../../../../">TypeDoc API</a> / <a href="../../">components/schedule/calendar/instructor-dnd/assign</a> / findPersonConflicts</p>
 <h1 id="function-findpersonconflicts">Function: findPersonConflicts()<a class="headerlink" href="#function-findpersonconflicts" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>findPersonConflicts</strong>(<code>events</code>, <code>personId</code>, <code>target</code>): <a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>[]</p>
+<p><strong>findPersonConflicts</strong>(<code>events</code>, <code>personId</code>, <code>target</code>, <code>excludeEventIds?</code>): <a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L133">ui/src/components/schedule/calendar/instructor-dnd/assign.ts:133</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L137">ui/src/components/schedule/calendar/instructor-dnd/assign.ts:137</a></p>
 <p>Finds events that already book a person during the target event's slot —
 the same overlap report the curriculum cut pipeline surfaces.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
@@ -675,6 +767,12 @@ the same overlap report the curriculum cut pipeline surfaces.</p>
 <h3 id="target">target<a class="headerlink" href="#target" title="Permanent link">&para;</a></h3>
 <p><a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a></p>
 <p>The event being dropped onto.</p>
+<h3 id="excludeeventids">excludeEventIds?<a class="headerlink" href="#excludeeventids" title="Permanent link">&para;</a></h3>
+<p>readonly <code>string</code>[] = <code>[]</code></p>
+<p>Events to leave out of the scan besides the target.
+A move runs the target assign before the source unassign, so without this
+the source event itself — still holding the person in state — reported as
+a conflict on every move between overlapping events.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>[]</p>
 <p>Overlapping events the person is already busy in.</p>

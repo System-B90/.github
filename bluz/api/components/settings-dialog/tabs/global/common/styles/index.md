@@ -6,10 +6,7 @@
 
 # components/settings-dialog/tabs/global/common/styles
 
-## Variables
-
-- [settingsCardSx](variables/settingsCardSx.md)
-
 ## Functions
 
 - [iconBadgeSx](functions/iconBadgeSx.md)
+- [settingsCardSx](functions/settingsCardSx.md)

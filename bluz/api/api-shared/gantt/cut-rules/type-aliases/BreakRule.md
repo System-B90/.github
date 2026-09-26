@@ -8,7 +8,7 @@
 
 > **BreakRule** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:176](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L176)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:176](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L176)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-rules.ts:176](https://github.com/System
 
 > **enabled**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:188](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L188)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:188](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L188)
 
 Off-switch for a rule that is specified but not yet actionable.
 
@@ -26,7 +26,7 @@ Off-switch for a rule that is specified but not yet actionable.
 
 > **maximumMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:184](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L184)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:184](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L184)
 
 Longest this break may be stretched to absorb leftover slack.
 
@@ -36,7 +36,7 @@ Longest this break may be stretched to absorb leftover slack.
 
 > **minimumMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:182](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L182)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:182](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L182)
 
 Shortest acceptable length; below this the break is dropped entirely.
 
@@ -46,7 +46,7 @@ Shortest acceptable length; below this the break is dropped entirely.
 
 > **preferredMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:180](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L180)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:180](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L180)
 
 Ideal length in minutes.
 
@@ -56,7 +56,7 @@ Ideal length in minutes.
 
 > **priority**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:178](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L178)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:178](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L178)
 
 Lower number = inserted first when slack is scarce.
 
@@ -66,7 +66,7 @@ Lower number = inserted first when slack is scarce.
 
 > **rationale**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:190](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L190)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:190](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L190)
 
 Why the rule exists — shown in docs and the preview's explanation.
 
@@ -76,6 +76,6 @@ Why the rule exists — shown in docs and the preview's explanation.
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:186](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-rules.ts#L186)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:186](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-rules.ts#L186)
 
 Hebrew title given to the generated הפסקה event.

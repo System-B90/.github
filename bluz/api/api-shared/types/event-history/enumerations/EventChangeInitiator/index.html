@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -591,6 +672,17 @@
     <span class="md-ellipsis">
       
         AiAssistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contextmenu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ContextMenu
       
     </span>
   </a>
@@ -802,7 +894,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/event-history</a> / EventChangeInitiator</p>
 <h1 id="enumeration-eventchangeinitiator">Enumeration: EventChangeInitiator<a class="headerlink" href="#enumeration-eventchangeinitiator" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L18">ui/src/api-shared/types/event-history.ts:18</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L18">ui/src/api-shared/types/event-history.ts:18</a></p>
 <p>What produced a change. Gantt-produced values are grouped by
 <a href="../../functions/isGanttInitiator/">isGanttInitiator</a> — everything else counts as a manual edit.</p>
 <h2 id="enumeration-members">Enumeration Members<a class="headerlink" href="#enumeration-members" title="Permanent link">&para;</a></h2>
@@ -810,119 +902,126 @@
 <blockquote>
 <p><strong>AiAssistant</strong>: <code>"ai-assistant"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L50">ui/src/api-shared/types/event-history.ts:50</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L52">ui/src/api-shared/types/event-history.ts:52</a></p>
 <p>Change made by the in-app AI assistant on the user's behalf.</p>
+<hr />
+<h3 id="contextmenu">ContextMenu<a class="headerlink" href="#contextmenu" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>ContextMenu</strong>: <code>"context-menu"</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L50">ui/src/api-shared/types/event-history.ts:50</a></p>
+<p>Right-click context menu on a calendar tile (#706).</p>
 <hr />
 <h3 id="copypaste">CopyPaste<a class="headerlink" href="#copypaste" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>CopyPaste</strong>: <code>"copy-paste"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L32">ui/src/api-shared/types/event-history.ts:32</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L32">ui/src/api-shared/types/event-history.ts:32</a></p>
 <p>Copy/paste (and duplicate) of an existing event.</p>
 <hr />
 <h3 id="dragdrop">DragDrop<a class="headerlink" href="#dragdrop" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>DragDrop</strong>: <code>"drag-drop"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L28">ui/src/api-shared/types/event-history.ts:28</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L28">ui/src/api-shared/types/event-history.ts:28</a></p>
 <p>Drag-and-drop move on the calendar grid.</p>
 <hr />
 <h3 id="eventdialog">EventDialog<a class="headerlink" href="#eventdialog" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>EventDialog</strong>: <code>"event-dialog"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L26">ui/src/api-shared/types/event-history.ts:26</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L26">ui/src/api-shared/types/event-history.ts:26</a></p>
 <p>Event dialog save.</p>
 <hr />
 <h3 id="ganttcut">GanttCut<a class="headerlink" href="#ganttcut" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>GanttCut</strong>: <code>"gantt-cut"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L20">ui/src/api-shared/types/event-history.ts:20</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L20">ui/src/api-shared/types/event-history.ts:20</a></p>
 <p>Curriculum → schedule cut (גזירה ללו"ז).</p>
 <hr />
 <h3 id="ganttpullback">GanttPullBack<a class="headerlink" href="#ganttpullback" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>GanttPullBack</strong>: <code>"gantt-pull-back"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L24">ui/src/api-shared/types/event-history.ts:24</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L24">ui/src/api-shared/types/event-history.ts:24</a></p>
 <p>Pull-back of a previous cut (משיכה חזרה).</p>
 <hr />
 <h3 id="ganttreload">GanttReload<a class="headerlink" href="#ganttreload" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>GanttReload</strong>: <code>"gantt-reload"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L22">ui/src/api-shared/types/event-history.ts:22</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L22">ui/src/api-shared/types/event-history.ts:22</a></p>
 <p>Schedule reload from an updated gantt (עדכון לו"ז).</p>
 <hr />
 <h3 id="googlesync">GoogleSync<a class="headerlink" href="#googlesync" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>GoogleSync</strong>: <code>"google-sync"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L44">ui/src/api-shared/types/event-history.ts:44</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L44">ui/src/api-shared/types/event-history.ts:44</a></p>
 <p>Pulled in from a linked Google Calendar.</p>
 <hr />
 <h3 id="instructorassign">InstructorAssign<a class="headerlink" href="#instructorassign" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>InstructorAssign</strong>: <code>"instructor-assign"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L34">ui/src/api-shared/types/event-history.ts:34</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L34">ui/src/api-shared/types/event-history.ts:34</a></p>
 <p>Instructor assignment via the instructor drag-and-drop layer.</p>
 <hr />
 <h3 id="keyboard">Keyboard<a class="headerlink" href="#keyboard" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Keyboard</strong>: <code>"keyboard"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L36">ui/src/api-shared/types/event-history.ts:36</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L36">ui/src/api-shared/types/event-history.ts:36</a></p>
 <p>Keyboard shortcut on the calendar grid (Delete).</p>
 <hr />
 <h3 id="offlinepush">OfflinePush<a class="headerlink" href="#offlinepush" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>OfflinePush</strong>: <code>"offline-push"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L40">ui/src/api-shared/types/event-history.ts:40</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L40">ui/src/api-shared/types/event-history.ts:40</a></p>
 <p>Offline-mode push of locally queued edits.</p>
 <hr />
 <h3 id="prayersettings">PrayerSettings<a class="headerlink" href="#prayersettings" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>PrayerSettings</strong>: <code>"prayer-settings"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L38">ui/src/api-shared/types/event-history.ts:38</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L38">ui/src/api-shared/types/event-history.ts:38</a></p>
 <p>Automatic re-timing driven by the prayer-time settings.</p>
 <hr />
 <h3 id="resize">Resize<a class="headerlink" href="#resize" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Resize</strong>: <code>"resize"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L30">ui/src/api-shared/types/event-history.ts:30</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L30">ui/src/api-shared/types/event-history.ts:30</a></p>
 <p>Resize handle on the calendar grid.</p>
 <hr />
 <h3 id="snapshotrestore">SnapshotRestore<a class="headerlink" href="#snapshotrestore" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>SnapshotRestore</strong>: <code>"snapshot-restore"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L42">ui/src/api-shared/types/event-history.ts:42</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L42">ui/src/api-shared/types/event-history.ts:42</a></p>
 <p>Restore of a calendar snapshot.</p>
 <hr />
 <h3 id="split">Split<a class="headerlink" href="#split" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Split</strong>: <code>"split"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L46">ui/src/api-shared/types/event-history.ts:46</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L46">ui/src/api-shared/types/event-history.ts:46</a></p>
 <p>Middle-click / Shift+click split of an event into two on the grid.</p>
 <hr />
 <h3 id="undo">Undo<a class="headerlink" href="#undo" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Undo</strong>: <code>"undo"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L48">ui/src/api-shared/types/event-history.ts:48</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L48">ui/src/api-shared/types/event-history.ts:48</a></p>
 <p>Ctrl+Z/Ctrl+Y history travel on the calendar.</p>
 <hr />
 <h3 id="unknown">Unknown<a class="headerlink" href="#unknown" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Unknown</strong>: <code>"unknown"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L52">ui/src/api-shared/types/event-history.ts:52</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L54">ui/src/api-shared/types/event-history.ts:54</a></p>
 <p>Write with no declared initiator (CLI, scripts, legacy call sites).</p>
 
 

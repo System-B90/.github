@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -626,6 +707,17 @@
     <span class="md-ellipsis">
       
         shuffles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        descriptions?
       
     </span>
   </a>
@@ -1209,19 +1301,22 @@
 <blockquote>
 <p><code>const</code> <strong>ganttApi</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/index.ts#L18">ui/src/api-client/gantt/index.ts:18</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/index.ts#L18">ui/src/api-client/gantt/index.ts:18</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="applyshuffles">applyShuffles<a class="headerlink" href="#applyshuffles" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><code>readonly</code> <strong>applyShuffles</strong>: (<code>syllabusId</code>, <code>shuffles</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt; = <code>apiApplyShuffles</code></p>
+<p><code>readonly</code> <strong>applyShuffles</strong>: (<code>syllabusId</code>, <code>shuffles</code>, <code>descriptions?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt; = <code>apiApplyShuffles</code></p>
 </blockquote>
 <p>Replaces the syllabus' shuffle list, stripping every removed name off the
-modules and events that carry it. Returns what was stripped.</p>
+modules and events that carry it. Returns what was stripped. Omitting
+<code>descriptions</code> keeps the surviving names' current descriptions.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="syllabusid">syllabusId<a class="headerlink" href="#syllabusid" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
 <h5 id="shuffles">shuffles<a class="headerlink" href="#shuffles" title="Permanent link">&para;</a></h5>
 <p><code>string</code>[]</p>
+<h5 id="descriptions">descriptions?<a class="headerlink" href="#descriptions" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions/"><code>ShuffleDescriptions</code></a></p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
 <h3 id="constraints">constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h3>
@@ -1548,95 +1643,111 @@ live cut events, used to toggle between the "cut" and "pull back" actions.</p>
 <blockquote>
 <p><code>readonly</code> <strong>event</strong>: <code>object</code> = <code>moduleEventApi</code></p>
 </blockquote>
+<h4 id="eventapiapplyshufflegroup">event.apiApplyShuffleGroup<a class="headerlink" href="#eventapiapplyshufflegroup" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>apiApplyShuffleGroup</strong>: (<code>eventId</code>, <code>moduleId</code>, <code>shuffles</code>) =&gt; <code>Promise</code>\&lt;{ <code>members</code>: <a href="../../module-event/type-aliases/ModuleEventDocument/"><code>ModuleEventDocument</code></a>[]; <code>removedIds</code>: <code>string</code>[]; }&gt;</p>
+</blockquote>
+<p>Reconciles the event's shuffle group so it covers exactly <code>shuffles</code>, one
+sibling event per name (#699). Returns the surviving members and the ids of
+members dropped because their shuffle is no longer part of the group.</p>
+<h5 id="parameters_25">Parameters<a class="headerlink" href="#parameters_25" title="Permanent link">&para;</a></h5>
+<h6 id="eventid">eventId<a class="headerlink" href="#eventid" title="Permanent link">&para;</a></h6>
+<p><code>string</code></p>
+<h6 id="moduleid_1">moduleId<a class="headerlink" href="#moduleid_1" title="Permanent link">&para;</a></h6>
+<p><code>string</code></p>
+<h6 id="shuffles_1">shuffles<a class="headerlink" href="#shuffles_1" title="Permanent link">&para;</a></h6>
+<p><code>string</code>[]</p>
+<h5 id="returns_25">Returns<a class="headerlink" href="#returns_25" title="Permanent link">&para;</a></h5>
+<p><code>Promise</code>\&lt;{ <code>members</code>: <a href="../../module-event/type-aliases/ModuleEventDocument/"><code>ModuleEventDocument</code></a>[]; <code>removedIds</code>: <code>string</code>[]; }&gt;</p>
 <h4 id="eventapicreate">event.apiCreate<a class="headerlink" href="#eventapicreate" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiCreate</strong>: (<code>payload</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;</p>
 </blockquote>
-<h5 id="parameters_25">Parameters<a class="headerlink" href="#parameters_25" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_26">Parameters<a class="headerlink" href="#parameters_26" title="Permanent link">&para;</a></h5>
 <h6 id="payload_4">payload<a class="headerlink" href="#payload_4" title="Permanent link">&para;</a></h6>
 <p><a href="../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttEventPayload/"><code>CreateGanttEventPayload</code></a></p>
 <h6 id="options_21">options?<a class="headerlink" href="#options_21" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_25">Returns<a class="headerlink" href="#returns_25" title="Permanent link">&para;</a></h5>
+<h5 id="returns_26">Returns<a class="headerlink" href="#returns_26" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;</p>
 <h4 id="eventapidelete">event.apiDelete<a class="headerlink" href="#eventapidelete" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiDelete</strong>: (<code>id</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
 </blockquote>
-<h5 id="parameters_26">Parameters<a class="headerlink" href="#parameters_26" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_27">Parameters<a class="headerlink" href="#parameters_27" title="Permanent link">&para;</a></h5>
 <h6 id="id_6">id<a class="headerlink" href="#id_6" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_22">options?<a class="headerlink" href="#options_22" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_26">Returns<a class="headerlink" href="#returns_26" title="Permanent link">&para;</a></h5>
+<h5 id="returns_27">Returns<a class="headerlink" href="#returns_27" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
 <h4 id="eventapiduplicate">event.apiDuplicate<a class="headerlink" href="#eventapiduplicate" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>apiDuplicate</strong>: (<code>eventId</code>, <code>moduleId</code>) =&gt; <code>Promise</code>\&lt;<a href="../../module-event/type-aliases/ModuleEventDocument/"><code>ModuleEventDocument</code></a>&gt;</p>
 </blockquote>
-<h5 id="parameters_27">Parameters<a class="headerlink" href="#parameters_27" title="Permanent link">&para;</a></h5>
-<h6 id="eventid">eventId<a class="headerlink" href="#eventid" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_28">Parameters<a class="headerlink" href="#parameters_28" title="Permanent link">&para;</a></h5>
+<h6 id="eventid_1">eventId<a class="headerlink" href="#eventid_1" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h6 id="moduleid_1">moduleId<a class="headerlink" href="#moduleid_1" title="Permanent link">&para;</a></h6>
+<h6 id="moduleid_2">moduleId<a class="headerlink" href="#moduleid_2" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h5 id="returns_27">Returns<a class="headerlink" href="#returns_27" title="Permanent link">&para;</a></h5>
+<h5 id="returns_28">Returns<a class="headerlink" href="#returns_28" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../module-event/type-aliases/ModuleEventDocument/"><code>ModuleEventDocument</code></a>&gt;</p>
 <h4 id="eventapiget">event.apiGet<a class="headerlink" href="#eventapiget" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiGet</strong>: (<code>id</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent/"><code>ApiModuleEvent</code></a>&gt;</p>
 </blockquote>
-<h5 id="parameters_28">Parameters<a class="headerlink" href="#parameters_28" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_29">Parameters<a class="headerlink" href="#parameters_29" title="Permanent link">&para;</a></h5>
 <h6 id="id_7">id<a class="headerlink" href="#id_7" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_23">options?<a class="headerlink" href="#options_23" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_28">Returns<a class="headerlink" href="#returns_28" title="Permanent link">&para;</a></h5>
+<h5 id="returns_29">Returns<a class="headerlink" href="#returns_29" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent/"><code>ApiModuleEvent</code></a>&gt;</p>
 <h4 id="eventapigetallocatedtime">event.apiGetAllocatedTime<a class="headerlink" href="#eventapigetallocatedtime" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiGetAllocatedTime</strong>: (<code>itemId</code>, <code>containerId</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<h5 id="parameters_29">Parameters<a class="headerlink" href="#parameters_29" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_30">Parameters<a class="headerlink" href="#parameters_30" title="Permanent link">&para;</a></h5>
 <h6 id="itemid_4">itemId<a class="headerlink" href="#itemid_4" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="containerid_2">containerId<a class="headerlink" href="#containerid_2" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_24">options?<a class="headerlink" href="#options_24" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_29">Returns<a class="headerlink" href="#returns_29" title="Permanent link">&para;</a></h5>
+<h5 id="returns_30">Returns<a class="headerlink" href="#returns_30" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>number</code>&gt;</p>
 <h4 id="eventapigetmany">event.apiGetMany<a class="headerlink" href="#eventapigetmany" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiGetMany</strong>: (<code>ids</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;&gt;</p>
 </blockquote>
-<h5 id="parameters_30">Parameters<a class="headerlink" href="#parameters_30" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_31">Parameters<a class="headerlink" href="#parameters_31" title="Permanent link">&para;</a></h5>
 <h6 id="ids_1">ids<a class="headerlink" href="#ids_1" title="Permanent link">&para;</a></h6>
 <p><code>string</code>[]</p>
 <h6 id="options_25">options?<a class="headerlink" href="#options_25" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_30">Returns<a class="headerlink" href="#returns_30" title="Permanent link">&para;</a></h5>
+<h5 id="returns_31">Returns<a class="headerlink" href="#returns_31" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;&gt;</p>
 <h4 id="eventapilink">event.apiLink<a class="headerlink" href="#eventapilink" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiLink</strong>: (<code>itemId</code>, <code>newParentId</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;</p>
 </blockquote>
-<h5 id="parameters_31">Parameters<a class="headerlink" href="#parameters_31" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_32">Parameters<a class="headerlink" href="#parameters_32" title="Permanent link">&para;</a></h5>
 <h6 id="itemid_5">itemId<a class="headerlink" href="#itemid_5" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="newparentid_1">newParentId<a class="headerlink" href="#newparentid_1" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_26">options?<a class="headerlink" href="#options_26" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_31">Returns<a class="headerlink" href="#returns_31" title="Permanent link">&para;</a></h5>
+<h5 id="returns_32">Returns<a class="headerlink" href="#returns_32" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;</p>
 <h4 id="eventapilist">event.apiList<a class="headerlink" href="#eventapilist" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiList</strong>: (<code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>string</code>&gt;&gt;</p>
 </blockquote>
-<h5 id="parameters_32">Parameters<a class="headerlink" href="#parameters_32" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_33">Parameters<a class="headerlink" href="#parameters_33" title="Permanent link">&para;</a></h5>
 <h6 id="options_27">options?<a class="headerlink" href="#options_27" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_32">Returns<a class="headerlink" href="#returns_32" title="Permanent link">&para;</a></h5>
+<h5 id="returns_33">Returns<a class="headerlink" href="#returns_33" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>string</code>&gt;&gt;</p>
 <h4 id="eventapilistwithparents">event.apiListWithParents<a class="headerlink" href="#eventapilistwithparents" title="Permanent link">&para;</a></h4>
 <blockquote>
@@ -1644,16 +1755,16 @@ live cut events, used to toggle between the "cut" and "pull back" actions.</p>
 </blockquote>
 <p>Same listing as <code>apiList</code>, but each value carries the parent id. Use
 when you need child → parent without fetching each item. See #310.</p>
-<h5 id="parameters_33">Parameters<a class="headerlink" href="#parameters_33" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_34">Parameters<a class="headerlink" href="#parameters_34" title="Permanent link">&para;</a></h5>
 <h6 id="options_28">options?<a class="headerlink" href="#options_28" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_33">Returns<a class="headerlink" href="#returns_33" title="Permanent link">&para;</a></h5>
+<h5 id="returns_34">Returns<a class="headerlink" href="#returns_34" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <a href="../../base/type-aliases/ListEntryWithParent/"><code>ListEntryWithParent</code></a>\&lt;<a href="../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent/"><code>GanttEvent</code></a>&gt;&gt;&gt;</p>
 <h4 id="eventapisetallocatedtime">event.apiSetAllocatedTime<a class="headerlink" href="#eventapisetallocatedtime" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiSetAllocatedTime</strong>: (<code>itemId</code>, <code>containerId</code>, <code>allocatedTime</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
 </blockquote>
-<h5 id="parameters_34">Parameters<a class="headerlink" href="#parameters_34" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_35">Parameters<a class="headerlink" href="#parameters_35" title="Permanent link">&para;</a></h5>
 <h6 id="itemid_6">itemId<a class="headerlink" href="#itemid_6" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="containerid_3">containerId<a class="headerlink" href="#containerid_3" title="Permanent link">&para;</a></h6>
@@ -1662,31 +1773,31 @@ when you need child → parent without fetching each item. See #310.</p>
 <p><code>number</code></p>
 <h6 id="options_29">options?<a class="headerlink" href="#options_29" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_34">Returns<a class="headerlink" href="#returns_34" title="Permanent link">&para;</a></h5>
+<h5 id="returns_35">Returns<a class="headerlink" href="#returns_35" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
 <h4 id="eventapiunlink">event.apiUnlink<a class="headerlink" href="#eventapiunlink" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiUnlink</strong>: (<code>itemId</code>, <code>oldParentId</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
 </blockquote>
-<h5 id="parameters_35">Parameters<a class="headerlink" href="#parameters_35" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_36">Parameters<a class="headerlink" href="#parameters_36" title="Permanent link">&para;</a></h5>
 <h6 id="itemid_7">itemId<a class="headerlink" href="#itemid_7" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="oldparentid_1">oldParentId<a class="headerlink" href="#oldparentid_1" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_30">options?<a class="headerlink" href="#options_30" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_35">Returns<a class="headerlink" href="#returns_35" title="Permanent link">&para;</a></h5>
+<h5 id="returns_36">Returns<a class="headerlink" href="#returns_36" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
 <h4 id="eventapiupdate">event.apiUpdate<a class="headerlink" href="#eventapiupdate" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiUpdate</strong>: (<code>updates</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;</p>
 </blockquote>
-<h5 id="parameters_36">Parameters<a class="headerlink" href="#parameters_36" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_37">Parameters<a class="headerlink" href="#parameters_37" title="Permanent link">&para;</a></h5>
 <h6 id="updates_1">updates<a class="headerlink" href="#updates_1" title="Permanent link">&para;</a></h6>
 <p><code>Partial</code>\&lt;<a href="../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent/"><code>GanttEvent</code></a>&gt; &amp; <code>object</code></p>
 <h6 id="options_31">options?<a class="headerlink" href="#options_31" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_36">Returns<a class="headerlink" href="#returns_36" title="Permanent link">&para;</a></h5>
+<h5 id="returns_37">Returns<a class="headerlink" href="#returns_37" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <a href="../../base/type-aliases/BaseDocument/"><code>BaseDocument</code></a>&gt;</p>
 <h3 id="execution">execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -1699,22 +1810,37 @@ when you need child → parent without fetching each item. See #310.</p>
 <p>GET /api/gantt/curriculums/[id]/execution — תכנון מול ביצוע comparison for a
 curriculum. Resolves to <code>{ events: {} }</code> when the curriculum has not been
 cut into a schedule yet.</p>
-<h5 id="parameters_37">Parameters<a class="headerlink" href="#parameters_37" title="Permanent link">&para;</a></h5>
+<h5 id="parameters_38">Parameters<a class="headerlink" href="#parameters_38" title="Permanent link">&para;</a></h5>
 <h6 id="curriculumid_10">curriculumId<a class="headerlink" href="#curriculumid_10" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h5 id="returns_37">Returns<a class="headerlink" href="#returns_37" title="Permanent link">&para;</a></h5>
+<h5 id="returns_38">Returns<a class="headerlink" href="#returns_38" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/execution/type-aliases/ApiCurriculumExecutionResponse/"><code>ApiCurriculumExecutionResponse</code></a>&gt;</p>
+<h4 id="executionrecreateoccurrence">execution.recreateOccurrence<a class="headerlink" href="#executionrecreateoccurrence" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><code>readonly</code> <strong>recreateOccurrence</strong>: (<code>curriculumId</code>, <code>ganttEventId</code>, <code>occurrenceDate</code>) =&gt; <code>Promise</code>\&lt;{ <code>createdEvents</code>: <code>number</code>; }&gt; = <code>recreateExecutionOccurrence</code></p>
+</blockquote>
+<p>POST /api/gantt/curriculums/[id]/execution/recreate — re-create the schedule
+event for one deleted cut occurrence (#682).</p>
+<h5 id="parameters_39">Parameters<a class="headerlink" href="#parameters_39" title="Permanent link">&para;</a></h5>
+<h6 id="curriculumid_11">curriculumId<a class="headerlink" href="#curriculumid_11" title="Permanent link">&para;</a></h6>
+<p><code>string</code></p>
+<h6 id="gantteventid">ganttEventId<a class="headerlink" href="#gantteventid" title="Permanent link">&para;</a></h6>
+<p><code>string</code></p>
+<h6 id="occurrencedate">occurrenceDate<a class="headerlink" href="#occurrencedate" title="Permanent link">&para;</a></h6>
+<p><code>string</code></p>
+<h5 id="returns_39">Returns<a class="headerlink" href="#returns_39" title="Permanent link">&para;</a></h5>
+<p><code>Promise</code>\&lt;{ <code>createdEvents</code>: <code>number</code>; }&gt;</p>
 <h3 id="getshuffleusages">getShuffleUsages<a class="headerlink" href="#getshuffleusages" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>readonly</code> <strong>getShuffleUsages</strong>: (<code>syllabusId</code>, <code>names</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt; = <code>apiGetShuffleUsages</code></p>
 </blockquote>
 <p>Modules and events currently tagged with any of <code>names</code>.</p>
-<h4 id="parameters_38">Parameters<a class="headerlink" href="#parameters_38" title="Permanent link">&para;</a></h4>
+<h4 id="parameters_40">Parameters<a class="headerlink" href="#parameters_40" title="Permanent link">&para;</a></h4>
 <h5 id="syllabusid_2">syllabusId<a class="headerlink" href="#syllabusid_2" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
 <h5 id="names">names<a class="headerlink" href="#names" title="Permanent link">&para;</a></h5>
 <p><code>string</code>[]</p>
-<h4 id="returns_38">Returns<a class="headerlink" href="#returns_38" title="Permanent link">&para;</a></h4>
+<h4 id="returns_40">Returns<a class="headerlink" href="#returns_40" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
 <h3 id="mappings">mappings<a class="headerlink" href="#mappings" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -1725,58 +1851,58 @@ cut into a schedule yet.</p>
 <p><code>readonly</code> <strong>apiCreate</strong>: (<code>curriculumId</code>, <code>payload</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping/"><code>GanttCurriculumEventDayMapping</code></a>&gt; = <code>apiCreateModuleDayMapping</code></p>
 </blockquote>
 <p>POST: Creates a new module-to-day mapping.</p>
-<h5 id="parameters_39">Parameters<a class="headerlink" href="#parameters_39" title="Permanent link">&para;</a></h5>
-<h6 id="curriculumid_11">curriculumId<a class="headerlink" href="#curriculumid_11" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_41">Parameters<a class="headerlink" href="#parameters_41" title="Permanent link">&para;</a></h5>
+<h6 id="curriculumid_12">curriculumId<a class="headerlink" href="#curriculumid_12" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="payload_5">payload<a class="headerlink" href="#payload_5" title="Permanent link">&para;</a></h6>
 <p><a href="../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttCurriculumEventDayMapping/"><code>CreateGanttCurriculumEventDayMapping</code></a></p>
 <h6 id="options_32">options?<a class="headerlink" href="#options_32" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_39">Returns<a class="headerlink" href="#returns_39" title="Permanent link">&para;</a></h5>
+<h5 id="returns_41">Returns<a class="headerlink" href="#returns_41" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping/"><code>GanttCurriculumEventDayMapping</code></a>&gt;</p>
 <h4 id="mappingsapidelete">mappings.apiDelete<a class="headerlink" href="#mappingsapidelete" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiDelete</strong>: (<code>curriculumId</code>, <code>moduleId</code>, <code>eventId</code>, <code>dayId</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt; = <code>apiDeleteModuleDayMapping</code></p>
 </blockquote>
 <p>DELETE: Removes a module-to-day mapping.</p>
-<h5 id="parameters_40">Parameters<a class="headerlink" href="#parameters_40" title="Permanent link">&para;</a></h5>
-<h6 id="curriculumid_12">curriculumId<a class="headerlink" href="#curriculumid_12" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_42">Parameters<a class="headerlink" href="#parameters_42" title="Permanent link">&para;</a></h5>
+<h6 id="curriculumid_13">curriculumId<a class="headerlink" href="#curriculumid_13" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h6 id="moduleid_2">moduleId<a class="headerlink" href="#moduleid_2" title="Permanent link">&para;</a></h6>
+<h6 id="moduleid_3">moduleId<a class="headerlink" href="#moduleid_3" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h6 id="eventid_1">eventId<a class="headerlink" href="#eventid_1" title="Permanent link">&para;</a></h6>
+<h6 id="eventid_2">eventId<a class="headerlink" href="#eventid_2" title="Permanent link">&para;</a></h6>
 <p><code>string</code> | <code>null</code></p>
 <h6 id="dayid">dayId<a class="headerlink" href="#dayid" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_33">options?<a class="headerlink" href="#options_33" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_40">Returns<a class="headerlink" href="#returns_40" title="Permanent link">&para;</a></h5>
+<h5 id="returns_42">Returns<a class="headerlink" href="#returns_42" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
 <h4 id="mappingsapiget">mappings.apiGet<a class="headerlink" href="#mappingsapiget" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiGet</strong>: (<code>curriculumId</code>, <code>dayId?</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping/"><code>GanttCurriculumEventDayMapping</code></a>[]&gt; = <code>apiGetModuleDayMapping</code></p>
 </blockquote>
 <p>GET: Retrieves all module mappings for a curriculum.</p>
-<h5 id="parameters_41">Parameters<a class="headerlink" href="#parameters_41" title="Permanent link">&para;</a></h5>
-<h6 id="curriculumid_13">curriculumId<a class="headerlink" href="#curriculumid_13" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_43">Parameters<a class="headerlink" href="#parameters_43" title="Permanent link">&para;</a></h5>
+<h6 id="curriculumid_14">curriculumId<a class="headerlink" href="#curriculumid_14" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="dayid_1">dayId?<a class="headerlink" href="#dayid_1" title="Permanent link">&para;</a></h6>
 <p><code>string</code> | <code>string</code>[]</p>
 <h6 id="options_34">options?<a class="headerlink" href="#options_34" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_41">Returns<a class="headerlink" href="#returns_41" title="Permanent link">&para;</a></h5>
+<h5 id="returns_43">Returns<a class="headerlink" href="#returns_43" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping/"><code>GanttCurriculumEventDayMapping</code></a>[]&gt;</p>
 <h4 id="mappingsapiupdate">mappings.apiUpdate<a class="headerlink" href="#mappingsapiupdate" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiUpdate</strong>: (<code>curriculumId</code>, <code>moduleId</code>, <code>eventId</code>, <code>oldMapping</code>, <code>newValues</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping/"><code>GanttCurriculumEventDayMapping</code></a>&gt; = <code>apiUpdateModuleDayMapping</code></p>
 </blockquote>
 <p>PATCH: Updates an existing mapping or reorders it.</p>
-<h5 id="parameters_42">Parameters<a class="headerlink" href="#parameters_42" title="Permanent link">&para;</a></h5>
-<h6 id="curriculumid_14">curriculumId<a class="headerlink" href="#curriculumid_14" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_44">Parameters<a class="headerlink" href="#parameters_44" title="Permanent link">&para;</a></h5>
+<h6 id="curriculumid_15">curriculumId<a class="headerlink" href="#curriculumid_15" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h6 id="moduleid_3">moduleId<a class="headerlink" href="#moduleid_3" title="Permanent link">&para;</a></h6>
+<h6 id="moduleid_4">moduleId<a class="headerlink" href="#moduleid_4" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h6 id="eventid_2">eventId<a class="headerlink" href="#eventid_2" title="Permanent link">&para;</a></h6>
+<h6 id="eventid_3">eventId<a class="headerlink" href="#eventid_3" title="Permanent link">&para;</a></h6>
 <p><code>string</code> | <code>null</code></p>
 <h6 id="oldmapping">oldMapping<a class="headerlink" href="#oldmapping" title="Permanent link">&para;</a></h6>
 <h6 id="dayid_2">dayId<a class="headerlink" href="#dayid_2" title="Permanent link">&para;</a></h6>
@@ -1788,7 +1914,7 @@ cut into a schedule yet.</p>
 <p><code>number</code></p>
 <h6 id="options_35">options?<a class="headerlink" href="#options_35" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_42">Returns<a class="headerlink" href="#returns_42" title="Permanent link">&para;</a></h5>
+<h5 id="returns_44">Returns<a class="headerlink" href="#returns_44" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping/"><code>GanttCurriculumEventDayMapping</code></a>&gt;</p>
 <h3 id="module">module<a class="headerlink" href="#module" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -1803,87 +1929,87 @@ cut into a schedule yet.</p>
 <p><strong>apiDeleteOccurrence</strong>: (<code>eventId</code>, <code>payload</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException/"><code>GanttEventRecurrenceException</code></a>&gt;</p>
 </blockquote>
 <p>POST: Deletes a single recurring occurrence (excepts that day only).</p>
-<h5 id="parameters_43">Parameters<a class="headerlink" href="#parameters_43" title="Permanent link">&para;</a></h5>
-<h6 id="eventid_3">eventId<a class="headerlink" href="#eventid_3" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_45">Parameters<a class="headerlink" href="#parameters_45" title="Permanent link">&para;</a></h5>
+<h6 id="eventid_4">eventId<a class="headerlink" href="#eventid_4" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="payload_6">payload<a class="headerlink" href="#payload_6" title="Permanent link">&para;</a></h6>
-<h6 id="curriculumid_15">curriculumId<a class="headerlink" href="#curriculumid_15" title="Permanent link">&para;</a></h6>
+<h6 id="curriculumid_16">curriculumId<a class="headerlink" href="#curriculumid_16" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="dayid_4">dayId<a class="headerlink" href="#dayid_4" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_36">options?<a class="headerlink" href="#options_36" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_43">Returns<a class="headerlink" href="#returns_43" title="Permanent link">&para;</a></h5>
+<h5 id="returns_45">Returns<a class="headerlink" href="#returns_45" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException/"><code>GanttEventRecurrenceException</code></a>&gt;</p>
 <h4 id="recurrenceexceptionsapiget">recurrenceExceptions.apiGet<a class="headerlink" href="#recurrenceexceptionsapiget" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><code>readonly</code> <strong>apiGet</strong>: (<code>curriculumId</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException/"><code>GanttEventRecurrenceException</code></a>[]&gt; = <code>apiGetRecurrenceExceptions</code></p>
 </blockquote>
 <p>GET: Retrieves every recurrence exception for a curriculum.</p>
-<h5 id="parameters_44">Parameters<a class="headerlink" href="#parameters_44" title="Permanent link">&para;</a></h5>
-<h6 id="curriculumid_16">curriculumId<a class="headerlink" href="#curriculumid_16" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_46">Parameters<a class="headerlink" href="#parameters_46" title="Permanent link">&para;</a></h5>
+<h6 id="curriculumid_17">curriculumId<a class="headerlink" href="#curriculumid_17" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_37">options?<a class="headerlink" href="#options_37" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_44">Returns<a class="headerlink" href="#returns_44" title="Permanent link">&para;</a></h5>
+<h5 id="returns_46">Returns<a class="headerlink" href="#returns_46" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException/"><code>GanttEventRecurrenceException</code></a>[]&gt;</p>
 <h4 id="recurrenceexceptionsapimaterializeoccurrence">recurrenceExceptions.apiMaterializeOccurrence<a class="headerlink" href="#recurrenceexceptionsapimaterializeoccurrence" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>apiMaterializeOccurrence</strong>: (<code>eventId</code>, <code>payload</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;{ <code>event</code>: <code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <code>object</code>; <code>mapping</code>: { <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code>; <code>moduleId</code>: <code>string</code>; }; }&gt;</p>
 </blockquote>
 <p>POST: Materializes a recurring occurrence into its own standalone event.</p>
-<h5 id="parameters_45">Parameters<a class="headerlink" href="#parameters_45" title="Permanent link">&para;</a></h5>
-<h6 id="eventid_4">eventId<a class="headerlink" href="#eventid_4" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_47">Parameters<a class="headerlink" href="#parameters_47" title="Permanent link">&para;</a></h5>
+<h6 id="eventid_5">eventId<a class="headerlink" href="#eventid_5" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="payload_7">payload<a class="headerlink" href="#payload_7" title="Permanent link">&para;</a></h6>
-<h6 id="curriculumid_17">curriculumId<a class="headerlink" href="#curriculumid_17" title="Permanent link">&para;</a></h6>
+<h6 id="curriculumid_18">curriculumId<a class="headerlink" href="#curriculumid_18" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="dayid_5">dayId<a class="headerlink" href="#dayid_5" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
-<h6 id="moduleid_4">moduleId<a class="headerlink" href="#moduleid_4" title="Permanent link">&para;</a></h6>
+<h6 id="moduleid_5">moduleId<a class="headerlink" href="#moduleid_5" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_38">options?<a class="headerlink" href="#options_38" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_45">Returns<a class="headerlink" href="#returns_45" title="Permanent link">&para;</a></h5>
+<h5 id="returns_47">Returns<a class="headerlink" href="#returns_47" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;{ <code>event</code>: <code>object</code> &amp; <a href="../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a> &amp; <code>object</code>; <code>mapping</code>: { <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code>; <code>moduleId</code>: <code>string</code>; }; }&gt;</p>
 <h4 id="recurrenceexceptionsapirestoreoccurrence">recurrenceExceptions.apiRestoreOccurrence<a class="headerlink" href="#recurrenceexceptionsapirestoreoccurrence" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>apiRestoreOccurrence</strong>: (<code>eventId</code>, <code>payload</code>, <code>options?</code>) =&gt; <code>Promise</code>\&lt;{ <code>curriculumId</code>: <code>string</code>; <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code>; }&gt;</p>
 </blockquote>
 <p>DELETE: Restores a previously skipped occurrence (#469).</p>
-<h5 id="parameters_46">Parameters<a class="headerlink" href="#parameters_46" title="Permanent link">&para;</a></h5>
-<h6 id="eventid_5">eventId<a class="headerlink" href="#eventid_5" title="Permanent link">&para;</a></h6>
+<h5 id="parameters_48">Parameters<a class="headerlink" href="#parameters_48" title="Permanent link">&para;</a></h5>
+<h6 id="eventid_6">eventId<a class="headerlink" href="#eventid_6" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="payload_8">payload<a class="headerlink" href="#payload_8" title="Permanent link">&para;</a></h6>
-<h6 id="curriculumid_18">curriculumId<a class="headerlink" href="#curriculumid_18" title="Permanent link">&para;</a></h6>
+<h6 id="curriculumid_19">curriculumId<a class="headerlink" href="#curriculumid_19" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="dayid_6">dayId<a class="headerlink" href="#dayid_6" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <h6 id="options_39">options?<a class="headerlink" href="#options_39" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
-<h5 id="returns_46">Returns<a class="headerlink" href="#returns_46" title="Permanent link">&para;</a></h5>
+<h5 id="returns_48">Returns<a class="headerlink" href="#returns_48" title="Permanent link">&para;</a></h5>
 <p><code>Promise</code>\&lt;{ <code>curriculumId</code>: <code>string</code>; <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code>; }&gt;</p>
 <h3 id="reorderevents">reorderEvents<a class="headerlink" href="#reorderevents" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>readonly</code> <strong>reorderEvents</strong>: (<code>moduleId</code>, <code>eventIds</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt; = <code>apiReorderEvents</code></p>
 </blockquote>
-<h4 id="parameters_47">Parameters<a class="headerlink" href="#parameters_47" title="Permanent link">&para;</a></h4>
-<h5 id="moduleid_5">moduleId<a class="headerlink" href="#moduleid_5" title="Permanent link">&para;</a></h5>
+<h4 id="parameters_49">Parameters<a class="headerlink" href="#parameters_49" title="Permanent link">&para;</a></h4>
+<h5 id="moduleid_6">moduleId<a class="headerlink" href="#moduleid_6" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
 <h5 id="eventids">eventIds<a class="headerlink" href="#eventids" title="Permanent link">&para;</a></h5>
 <p><code>string</code>[]</p>
-<h4 id="returns_47">Returns<a class="headerlink" href="#returns_47" title="Permanent link">&para;</a></h4>
+<h4 id="returns_49">Returns<a class="headerlink" href="#returns_49" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
 <h3 id="reordermodules">reorderModules<a class="headerlink" href="#reordermodules" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>readonly</code> <strong>reorderModules</strong>: (<code>syllabusId</code>, <code>moduleIds</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt; = <code>apiReorderModules</code></p>
 </blockquote>
-<h4 id="parameters_48">Parameters<a class="headerlink" href="#parameters_48" title="Permanent link">&para;</a></h4>
+<h4 id="parameters_50">Parameters<a class="headerlink" href="#parameters_50" title="Permanent link">&para;</a></h4>
 <h5 id="syllabusid_3">syllabusId<a class="headerlink" href="#syllabusid_3" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
 <h5 id="moduleids">moduleIds<a class="headerlink" href="#moduleids" title="Permanent link">&para;</a></h5>
 <p><code>string</code>[]</p>
-<h4 id="returns_48">Returns<a class="headerlink" href="#returns_48" title="Permanent link">&para;</a></h4>
+<h4 id="returns_50">Returns<a class="headerlink" href="#returns_50" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
 <h3 id="syllabus">syllabus<a class="headerlink" href="#syllabus" title="Permanent link">&para;</a></h3>
 <blockquote>

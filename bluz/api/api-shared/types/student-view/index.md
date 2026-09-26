@@ -13,6 +13,8 @@
 - [ApiStudentScheduleGetPayload](type-aliases/ApiStudentScheduleGetPayload.md)
 - [ApiStudentScheduleGetResponse](type-aliases/ApiStudentScheduleGetResponse.md)
 - [StudentEvent](type-aliases/StudentEvent.md)
+- [StudentEventWire](type-aliases/StudentEventWire.md)
+- [StudentSchedule](type-aliases/StudentSchedule.md)
 
 ## Variables
 

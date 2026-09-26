@@ -8,7 +8,7 @@
 
 > **Reservation** = `object`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:7](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L7)
+Defined in: [ui/src/api-shared/types/reservation.ts:8](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L8)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:7](https://github.com/System
 
 > `optional` **\_id?**: `string`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:8](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L8)
+Defined in: [ui/src/api-shared/types/reservation.ts:9](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L9)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:8](https://github.com/System
 
 > **end**: `Dayjs`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L12)
+Defined in: [ui/src/api-shared/types/reservation.ts:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L13)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:12](https://github.com/Syste
 
 > `optional` **note?**: `string`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L15)
+Defined in: [ui/src/api-shared/types/reservation.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L16)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:15](https://github.com/Syste
 
 > **reserverId**: `string`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L14)
+Defined in: [ui/src/api-shared/types/reservation.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L15)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:14](https://github.com/Syste
 
 > **reserverType**: [`ReserverType`](ReserverType.md)
 
-Defined in: [ui/src/api-shared/types/reservation.ts:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L13)
+Defined in: [ui/src/api-shared/types/reservation.ts:14](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L14)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:13](https://github.com/Syste
 
 > **roomId**: [`RoomId`](../../room/type-aliases/RoomId.md)
 
-Defined in: [ui/src/api-shared/types/reservation.ts:9](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L9)
+Defined in: [ui/src/api-shared/types/reservation.ts:10](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L10)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:9](https://github.com/System
 
 > **roomSource**: [`RoomSource`](../../room/enumerations/RoomSource.md)
 
-Defined in: [ui/src/api-shared/types/reservation.ts:10](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L10)
+Defined in: [ui/src/api-shared/types/reservation.ts:11](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L11)
 
 ***
 
@@ -72,4 +72,4 @@ Defined in: [ui/src/api-shared/types/reservation.ts:10](https://github.com/Syste
 
 > **start**: `Dayjs`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/reservation.ts#L11)
+Defined in: [ui/src/api-shared/types/reservation.ts:12](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/reservation.ts#L12)

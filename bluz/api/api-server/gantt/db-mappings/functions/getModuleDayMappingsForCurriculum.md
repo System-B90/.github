@@ -8,7 +8,7 @@
 
 > **getModuleDayMappingsForCurriculum**(`curriculumId`, `filters`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-mappings.ts:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/db-mappings.ts#L24)
+Defined in: [ui/src/api-server/gantt/db-mappings.ts:24](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/db-mappings.ts#L24)
 
 Retrieves curriculum module/event day mappings for a specific curriculum.
 Can be filtered by dayIds and/or weekIds for partial loading.

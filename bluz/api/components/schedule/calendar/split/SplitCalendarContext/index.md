@@ -9,6 +9,7 @@
 ## Type Aliases
 
 - [ActiveDrag](type-aliases/ActiveDrag.md)
+- [OpenEventContextMenu](type-aliases/OpenEventContextMenu.md)
 - [SplitCalendarContextValue](type-aliases/SplitCalendarContextValue.md)
 
 ## Variables

@@ -8,7 +8,7 @@
 
 > **indexCurriculumEvents**(`curriculum`): `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:203](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/cut.ts#L203)
+Defined in: [ui/src/api-server/gantt/cut.ts:208](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/cut.ts#L208)
 
 Walk the full curriculum tree once, indexing every event by id and recording
 the title of the syllabus each event lives under (used as course provenance).
@@ -46,6 +46,19 @@ Owning gantt module id per event — spillover keeps a module together.
 > **moduleTitleById**: `Map`\<`string`, `string`\>
 
 Module titles, used in constraint-violation messages.
+
+### shufflesByEvent
+
+> **shufflesByEvent**: `Map`\<`string`, `string`[]\>
+
+Shuffles each event runs for: its own, else its module's, else its
+syllabus's. Empty when none is set anywhere up the chain.
+
+### syllabusCourseIdsByEvent
+
+> **syllabusCourseIdsByEvent**: `Map`\<`string`, `string`[]\>
+
+Courses (מסלולים) the owning syllabus is assigned to, per event.
 
 ### syllabusIdByEvent
 

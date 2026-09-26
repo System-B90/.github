@@ -8,21 +8,22 @@
 
 > `const` **DbSyllabus**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-syllabus.ts:336](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/db-syllabus.ts#L336)
+Defined in: [ui/src/api-server/gantt/db-syllabus.ts:391](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/db-syllabus.ts#L391)
 
 ## Type Declaration
 
 ### applyShuffles
 
-> **applyShuffles**: (`id`, `shuffles`) => `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
+> **applyShuffles**: (`id`, `requested`, `requestedDescriptions?`) => `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
 
 Replaces the syllabus' shuffle list, cascading every removed name off the
 modules and events that carry it (#485).
 
 Without the cascade the child keeps a dangling name and the UI only offers
 to clear it once the user retypes the deleted shuffle on the syllabus — so
-the caller confirms first (see `SyllabusShuffles`) and this applies both
-sides in one transaction.
+the caller confirms first (see `ShufflesSection`) and this applies both
+sides in one transaction. Descriptions of removed names go with them;
+`requestedDescriptions`, when given, replaces the rest.
 
 #### Parameters
 
@@ -30,9 +31,13 @@ sides in one transaction.
 
 `string`
 
-##### shuffles
+##### requested
 
 `string`[]
+
+##### requestedDescriptions?
+
+[`ShuffleDescriptions`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions.md)
 
 #### Returns
 

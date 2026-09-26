@@ -1,0 +1,1117 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Internal developer documentation for the Bluz scheduling & curriculum-management platform.">
+      
+      
+      
+        <link rel="canonical" href="https://system-b90.github.io/bluz/student-boundary/">
+      
+      
+        <link rel="prev" href="../architecture/">
+      
+      
+        <link rel="next" href="../ai-assistant/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Student Boundary (Security) - Bluz Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#student-boundary-security-priority-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Bluz Developer Documentation" class="md-header__button md-logo" aria-label="Bluz Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bluz Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Student Boundary (Security)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/system-b90/bluz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    system-b90/bluz
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Bluz Developer Documentation" class="md-nav__button md-logo" aria-label="Bluz Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Bluz Developer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/system-b90/bluz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    system-b90/bluz
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-student-is-allowed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a student is allowed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-invariants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The invariants
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-it-is-enforced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where it is enforced
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test map
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-for-changing-any-of-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules for changing any of this
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance-and-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance & Scaling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backup-and-restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup & Restore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Quality Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../duplication-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gantt-cut-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gantt Cut Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../e2e-cloud-runbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E2E Cloud Runbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-student-is-allowed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a student is allowed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-invariants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The invariants
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-it-is-enforced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where it is enforced
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test map
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-for-changing-any-of-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules for changing any of this
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="student-boundary-security-priority-1">Student Boundary — Security Priority #1<a class="headerlink" href="#student-boundary-security-priority-1" title="Permanent link">&para;</a></h1>
+<p><strong>This is the highest-priority security property in Bluz.</strong> Everything else in the app is
+staff talking to staff. The student ("חניך") boundary is the one place where an
+untrusted user renders Bluz's own UI against Bluz's own database, and the only thing
+between them and the staff schedule is the code described here.</p>
+<p>Assume the student is hostile. They are signed in through Hive, they can read the entire
+client bundle, they can see every query parameter the staff calendar uses, and they can
+replay any request by hand with any headers they like. Design and review every change on
+that assumption.</p>
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># The adversarial unit suites (fast, no containers)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">student-data-leak</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">ts</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">student-route-surface</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">ts</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">student-projection-invariants</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">ts</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">student-view-route</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">ts</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">student-clearance-gating</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">ts</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">student-routing-gate</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">ts</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">ws-student-scope</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">ts</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">npx</span> <span class="n">vitest</span> <span class="n">run</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">vitest</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">backend</span><span class="p">/</span><span class="n">student-day-board</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">tsx</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c"># The same boundary against a real Hive student token (needs the docker stack)</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">npx</span> <span class="n">playwright</span> <span class="n">test</span> <span class="p">-</span><span class="n">-config</span> <span class="n">tests</span><span class="p">/</span><span class="n">playwright</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">ts</span> <span class="n">tests</span><span class="p">/</span><span class="n">student-view</span><span class="p">.</span><span class="n">spec</span><span class="p">.</span><span class="n">ts</span>
+</code></pre></div>
+<h2 id="what-a-student-is-allowed">What a student is allowed<a class="headerlink" href="#what-a-student-is-allowed" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Allowed</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages</td>
+<td><code>/student-view</code> only</td>
+<td>Every staff page is under <code>app/(themed)/(post-auth)/</code>, whose layout silently redirects a non-staff session here.</td>
+</tr>
+<tr>
+<td>APIs (read)</td>
+<td><code>GET /api/student-view/schedule</code></td>
+<td>The only readable endpoint. Returns the <code>StudentEvent</code> projection for <strong>the server's current day</strong>.</td>
+</tr>
+<tr>
+<td>APIs (write)</td>
+<td><code>POST /api/student-view/engagement</code></td>
+<td>Duration only. The user id comes from the session and the date from the server clock.</td>
+</tr>
+<tr>
+<td>WebSocket</td>
+<td><code>WsScope.Hanich</code> on <code>STUDENT_SYNC_ID</code></td>
+<td>Empty pings only. A student socket may not register a session.</td>
+</tr>
+</tbody>
+</table>
+<p>Everything else must refuse with 401/403. A logged-in check is <strong>not</strong> a gate: Hanich
+accounts hold real sessions.</p>
+<h2 id="the-invariants">The invariants<a class="headerlink" href="#the-invariants" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Projection, never a document.</strong> <code>StudentEvent</code> is <code>id</code>, <code>name</code>, <code>startTime</code>,
+   <code>endTime</code>, <code>color</code> (resolved hex), <code>rooms</code> (display names), <code>courses</code> (display names).
+   No Hive ids, no subject id, no instructors/lecturers, no notes/tags, no gantt
+   provenance, no <code>hidden</code>/<code>locked</code>/<code>required</code>/<code>personalTalk</code>.</li>
+<li><strong>The colour is a hex string.</strong> A colour <em>id</em> is a custom-colour id or a Hive subject
+   id; returning one leaks the subject. Resolution happens server-side.</li>
+<li><strong>Names, never ids.</strong> A course or room that cannot be resolved to a display name is
+   dropped from the projection, never passed through as an id.</li>
+<li><strong>The day is the server's.</strong> <code>?date=</code> is rejected — not ignored — for a student, so a
+   probe is a hard error rather than a silently-successful request. Only staff previewing
+   may pass one.</li>
+<li><strong>The iteration is the current one.</strong> <code>?it=</code> is stripped for a student, so other
+   iterations stay invisible; the parameter is honoured only for staff.</li>
+<li><strong>Exclusions live in the query.</strong> Hidden events and other days are excluded in the
+   Mongo filter itself, so no later refactor of the mapper can reinstate them.</li>
+<li><strong>Fake events look real.</strong> "פיקטיבי" events are returned as ordinary events by
+   construction — they are meant to be indistinguishable.</li>
+<li><strong>The response envelope is closed.</strong> <code>date</code>, <code>events</code>, <code>calendarDayStartTime</code>,
+   <code>calendarDayEndTime</code>. The grid bounds ride along precisely so the board never needs to
+   call the settings API, which a student may not call.</li>
+<li><strong>The board mounts no staff providers.</strong> <code>StudentDayBoard</code> pulls in no Courses/Hive/
+   Settings provider, no dialogs, no app bar — there is no staff surface in the React
+   tree to inspect, and nothing on screen implies the rest of the app exists.</li>
+<li><strong>The socket carries no data.</strong> Students refetch through the projection endpoint; the
+    student channel broadcasts empty pings. Never add a per-iteration student channel.
+    This is enforced on the wire, not by call-site discipline: <code>STUDENT_SYNC_ID</code> is
+    declared in <code>payloadFreeSyncObjects</code>, so the session-server core strips <code>data</code> from
+    anything targeted at it however the broadcast was issued.</li>
+<li><strong>A ticket opens one socket.</strong> <code>singleUseTickets</code> is on, so a ticket observed inside
+    its 30s TTL cannot be replayed into a second socket carrying the holder's scope, and
+    the core budgets connects per remote address before it even verifies a ticket.</li>
+</ol>
+<h2 id="where-it-is-enforced">Where it is enforced<a class="headerlink" href="#where-it-is-enforced" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Session gate + projection</td>
+<td><code>ui/src/api-server/student-view.ts</code></td>
+</tr>
+<tr>
+<td>The one readable route</td>
+<td><code>ui/src/app/api/student-view/schedule/route.ts</code></td>
+</tr>
+<tr>
+<td>Engagement write</td>
+<td><code>ui/src/app/api/student-view/engagement/route.ts</code></td>
+</tr>
+<tr>
+<td>Staff page redirect</td>
+<td><code>ui/src/app/(themed)/(post-auth)/layout.tsx</code></td>
+</tr>
+<tr>
+<td>Student route shell</td>
+<td><code>ui/src/app/(themed)/(student)/student-view/</code></td>
+</tr>
+<tr>
+<td>Socket scope</td>
+<td><code>ui/src/app/api/ws-ticket/route.ts</code>, <code>session-server.ts</code></td>
+</tr>
+<tr>
+<td>The board itself</td>
+<td><code>ui/src/components/student-view/</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="test-map">Test map<a class="headerlink" href="#test-map" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Suite</th>
+<th>Covers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tests/backend/student-route-surface.test.ts</code></td>
+<td><strong>Whole-surface sweep.</strong> Every <code>route.ts</code> under <code>app/api</code> must gate (directly or through a shared builder) or sit on an explicit <code>PUBLIC_ROUTES</code> allowlist with a reason; the student surface is pinned to exactly two routes; the schedule route stays read-only and engagement write-only; the student component tree imports no staff module and names no non-student endpoint.</td>
+</tr>
+<tr>
+<td><code>tests/backend/student-projection-invariants.test.ts</code></td>
+<td><strong>Gate + builder in isolation.</strong> Every clearance value that may and may not pass, every <code>?date=</code> shape a student could send, and the projection against hostile documents (extra fields, nested staff blobs, inherited properties, <code>__proto__</code>, wrong types) asserted on own <em>and</em> inherited keys.</td>
+</tr>
+<tr>
+<td><code>tests/backend/student-data-leak.test.ts</code></td>
+<td><strong>Adversarial.</strong> Date probes (casing, duplication, encoding, traversal, <code>$ne</code>), iteration probes, forged clearance headers, projection under fully-populated staff documents, unresolvable ids, Hive down, read-only verbs.</td>
+</tr>
+<tr>
+<td><code>tests/backend/student-view-route.test.ts</code></td>
+<td>Field whitelist, envelope keys, calendar hours, room short names, hidden-event filter, colour resolution.</td>
+</tr>
+<tr>
+<td><code>tests/backend/student-clearance-gating.test.ts</code></td>
+<td>Staff routes refusing a Hanich JWT; ws-ticket scope.</td>
+</tr>
+<tr>
+<td><code>tests/backend/student-routing-gate.test.ts</code></td>
+<td>Staff pages redirecting silently — no 403 page, nothing naming what was refused.</td>
+</tr>
+<tr>
+<td><code>tests/backend/ws-student-scope.test.ts</code></td>
+<td>The session server's own gate on the signed scope, the wire-level payload strip on the student channel, and the refusal of a replayed ticket.</td>
+</tr>
+<tr>
+<td><code>tests/backend/student-day-board.test.tsx</code></td>
+<td>The board derives its filters from delivered events only, and issues exactly one request.</td>
+</tr>
+<tr>
+<td><code>tests/student-view.spec.ts</code></td>
+<td>The whole boundary against a real Hive student token: staff APIs, staff pages, the raw response body, the rendered HTML, the socket frames — plus a sweep that scans <strong>every HTTP body and websocket frame the page receives</strong> for staff markers, and asserts the projection's <em>values</em> (hex colours, display names, never a uuid).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rules-for-changing-any-of-this">Rules for changing any of this<a class="headerlink" href="#rules-for-changing-any-of-this" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A failing test in these suites is a <strong>data leak</strong>, not a styling regression. Never relax
+  an assertion to make one pass.</li>
+<li>Adding a field to <code>StudentEvent</code> or to the response envelope is a boundary change:
+  update <code>student-view.ts</code>, the whitelist assertions in both route suites, and this
+  document in the same commit.</li>
+<li>Adding a route under <code>app/api/</code> means calling <code>requireStaffSession()</code> unless you are
+  deliberately extending the student surface — in which case write the adversarial tests
+  first.</li>
+<li>Adding a page outside <code>(post-auth)</code> means gating it yourself; the group layout is what
+  protects everything inside it.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 System B90
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

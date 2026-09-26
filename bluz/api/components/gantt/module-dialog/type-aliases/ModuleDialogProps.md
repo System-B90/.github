@@ -8,7 +8,7 @@
 
 > **ModuleDialogProps** = `object` & `DialogProps`
 
-Defined in: [ui/src/components/gantt/module-dialog/index.tsx:48](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/module-dialog/index.tsx#L48)
+Defined in: [ui/src/components/gantt/module-dialog/index.tsx:54](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/module-dialog/index.tsx#L54)
 
 ## Type Declaration
 
@@ -18,13 +18,13 @@ Defined in: [ui/src/components/gantt/module-dialog/index.tsx:48](https://github.
 
 ### focusEventId?
 
-> `optional` **focusEventId?**: [`GanttEventId`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEventId.md) \| `null`
+> `optional` **focusEventId?**: [`GanttEventId`](../../../../api-shared/types/gantt/models/shared/type-aliases/GanttEventId.md) \| `null`
 
 When set, the matching event row is scrolled into view and highlighted.
 
 ### moduleId
 
-> **moduleId**: [`GanttModuleId`](../../../../api-shared/types/gantt/models/module/type-aliases/GanttModuleId.md) \| `null`
+> **moduleId**: [`GanttModuleId`](../../../../api-shared/types/gantt/models/shared/type-aliases/GanttModuleId.md) \| `null`
 
 ### setOpen
 

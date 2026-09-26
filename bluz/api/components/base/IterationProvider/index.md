@@ -13,4 +13,6 @@
 ## Functions
 
 - [IterationProvider](functions/IterationProvider.md)
+- [noteLocalIterationSwitch](functions/noteLocalIterationSwitch.md)
+- [useActiveIterationHiveUrl](functions/useActiveIterationHiveUrl.md)
 - [useIterationScope](functions/useIterationScope.md)

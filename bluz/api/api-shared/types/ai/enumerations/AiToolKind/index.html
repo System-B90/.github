@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -587,6 +668,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#read" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -637,21 +729,30 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/ai</a> / AiToolKind</p>
 <h1 id="enumeration-aitoolkind">Enumeration: AiToolKind<a class="headerlink" href="#enumeration-aitoolkind" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L50">ui/src/api-shared/types/ai.ts:50</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L50">ui/src/api-shared/types/ai.ts:50</a></p>
 <p>Whether running a tool changes stored data. Read tools run unattended;
 write tools stop the turn and wait for the human to approve the exact call.</p>
 <h2 id="enumeration-members">Enumeration Members<a class="headerlink" href="#enumeration-members" title="Permanent link">&para;</a></h2>
+<h3 id="prompt">Prompt<a class="headerlink" href="#prompt" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Prompt</strong>: <code>"prompt"</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L58">ui/src/api-shared/types/ai.ts:58</a></p>
+<p>Not a data operation at all: the tool's whole effect is to put a
+question to the human and stop the turn. Answered by the client, never
+executed on the server.</p>
+<hr />
 <h3 id="read">Read<a class="headerlink" href="#read" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Read</strong>: <code>"read"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L51">ui/src/api-shared/types/ai.ts:51</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L51">ui/src/api-shared/types/ai.ts:51</a></p>
 <hr />
 <h3 id="write">Write<a class="headerlink" href="#write" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Write</strong>: <code>"write"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L52">ui/src/api-shared/types/ai.ts:52</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L52">ui/src/api-shared/types/ai.ts:52</a></p>
 
 
 

@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -575,6 +656,34 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__namedparameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __namedParameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#returns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -610,9 +719,9 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">components/base/RealtimeStatus</a> / RealtimeStatus</p>
 <h1 id="function-realtimestatus">Function: RealtimeStatus()<a class="headerlink" href="#function-realtimestatus" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>RealtimeStatus</strong>(): <code>Element</code></p>
+<p><strong>RealtimeStatus</strong>(<code>__namedParameters</code>): <code>Element</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/RealtimeStatus.tsx#L58">ui/src/components/base/RealtimeStatus.tsx:58</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/RealtimeStatus.tsx#L67">ui/src/components/base/RealtimeStatus.tsx:67</a></p>
 <p>Publishes the browser's WebSocket connection state into the DOM.</p>
 <p>The realtime layer fails silently by design: <code>SessionWs</code> logs a console
 error and retries on a backoff forever, and every spec drives a single
@@ -630,6 +739,9 @@ entirely. Comparing this against the page's own origin is what catches that.</p>
 <p>The state is sampled rather than subscribed to because the package exposes
 the socket as a ref, which gives no notification when it is replaced on a
 reconnect.</p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
+<p><a href="../../type-aliases/RealtimeStatusProps/"><code>RealtimeStatusProps</code></a></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Element</code></p>
 

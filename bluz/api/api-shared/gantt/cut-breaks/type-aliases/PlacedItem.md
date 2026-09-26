@@ -8,7 +8,7 @@
 
 > **PlacedItem** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L28)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:28](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L28)
 
 One already-placed item on a day, in minutes-of-day.
 
@@ -18,7 +18,7 @@ One already-placed item on a day, in minutes-of-day.
 
 > **endMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:32](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L32)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:32](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L32)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:32](https://github.com/System
 
 > **eventType**: [`ModuleEventType`](../../../types/gantt/models/event/enumerations/ModuleEventType.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:33](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L33)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:33](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L33)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:33](https://github.com/System
 
 > **isExistingBreak**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L42)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:42](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L42)
 
 True for meal events and anything from the הפסקות syllabus. No generated
 break may sit directly against one of these.
@@ -45,7 +45,7 @@ break may sit directly against one of these.
 
 > **isPinned**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L44)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:44](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L44)
 
 Pinned to a clock time (meals) — never shifted to make room for a break.
 
@@ -55,7 +55,7 @@ Pinned to a clock time (meals) — never shifted to make room for a break.
 
 > **key**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:30](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L30)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:30](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L30)
 
 Stable key matching the planner's slot key.
 
@@ -65,7 +65,7 @@ Stable key matching the planner's slot key.
 
 > **roomName**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:37](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L37)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:37](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L37)
 
 Room name once the cut assigns rooms; null today.
 
@@ -75,7 +75,7 @@ Room name once the cut assigns rooms; null today.
 
 > **startMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:31](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L31)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:31](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L31)
 
 ***
 
@@ -83,6 +83,6 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:31](https://github.com/System
 
 > **syllabusId**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-breaks.ts#L35)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:35](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-breaks.ts#L35)
 
 Syllabus the event belongs to; drives the between-syllabuses rule.

@@ -8,7 +8,7 @@
 
 > **ApiEventHistoryEntry** = `object` & `Omit`\<[`EventHistoryEntry`](EventHistoryEntry.md), `"changedAt"`\>
 
-Defined in: [ui/src/api-shared/types/event-history.ts:151](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/event-history.ts#L151)
+Defined in: [ui/src/api-shared/types/event-history.ts:153](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/event-history.ts#L153)
 
 Wire form of [EventHistoryEntry](EventHistoryEntry.md) (dates as ISO strings).
 

@@ -22,4 +22,5 @@
 
 ## Functions
 
+- [apiApplyModuleEventShuffleGroup](functions/apiApplyModuleEventShuffleGroup.md)
 - [apiDuplicateModuleEvent](functions/apiDuplicateModuleEvent.md)

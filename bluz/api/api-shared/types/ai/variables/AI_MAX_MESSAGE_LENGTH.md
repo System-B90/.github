@@ -8,6 +8,6 @@
 
 > `const` **AI\_MAX\_MESSAGE\_LENGTH**: `16000` = `16_000`
 
-Defined in: [ui/src/api-shared/types/ai.ts:174](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L174)
+Defined in: [ui/src/api-shared/types/ai.ts:245](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L245)
 
 Character cap on a single message's content.

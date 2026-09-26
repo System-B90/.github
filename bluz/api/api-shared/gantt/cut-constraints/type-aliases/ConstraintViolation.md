@@ -8,7 +8,7 @@
 
 > **ConstraintViolation** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:71](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L71)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:71](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-constraints.ts#L71)
 
 A constraint that no legal placement can satisfy.
 
@@ -18,7 +18,7 @@ A constraint that no legal placement can satisfy.
 
 > **constraintId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:74](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L74)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:74](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-constraints.ts#L74)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:74](https://github.com/S
 
 > **kind**: `"relational"` \| `"temporal"`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:75](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L75)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:75](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-constraints.ts#L75)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:75](https://github.com/S
 
 > **ownerId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:72](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L72)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:72](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-constraints.ts#L72)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:72](https://github.com/S
 
 > **ownerTitle**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:73](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L73)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:73](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-constraints.ts#L73)
 
 ***
 
@@ -50,6 +50,6 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:73](https://github.com/S
 
 > **reason**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:77](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-constraints.ts#L77)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:77](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-constraints.ts#L77)
 
 Hebrew explanation of what could not be satisfied.

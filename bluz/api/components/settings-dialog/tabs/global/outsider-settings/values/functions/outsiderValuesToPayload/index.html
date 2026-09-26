@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -712,8 +793,11 @@
 <blockquote>
 <p><strong>outsiderValuesToPayload</strong>(<code>values</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L52">ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:52</a></p>
-<p>Maps the form values onto the API payload, trimming and dropping blanks.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L58">ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:58</a></p>
+<p>Maps the form values onto the API payload, trimming blanks to <code>null</code>.</p>
+<p><code>null</code> rather than <code>undefined</code> on purpose: the server applies the payload
+as a plain <code>$set</code>, and <code>JSON.stringify</code> drops <code>undefined</code> keys entirely, so
+a field the user cleared would silently keep its old value on the server.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="values">values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h3>
 <p><a href="../../type-aliases/OutsiderValues/"><code>OutsiderValues</code></a></p>
@@ -721,11 +805,11 @@
 <p><code>object</code></p>
 <h3 id="comment">comment<a class="headerlink" href="#comment" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>comment</strong>: <code>string</code> | <code>undefined</code></p>
+<p><strong>comment</strong>: <code>string</code> | <code>null</code></p>
 </blockquote>
 <h3 id="idnumber">idNumber<a class="headerlink" href="#idnumber" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>idNumber</strong>: <code>string</code> | <code>undefined</code></p>
+<p><strong>idNumber</strong>: <code>string</code> | <code>null</code></p>
 </blockquote>
 <h3 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -733,7 +817,7 @@
 </blockquote>
 <h3 id="personalnumber">personalNumber<a class="headerlink" href="#personalnumber" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>personalNumber</strong>: <code>string</code> | <code>undefined</code></p>
+<p><strong>personalNumber</strong>: <code>string</code> | <code>null</code></p>
 </blockquote>
 <h3 id="phone">phone<a class="headerlink" href="#phone" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -741,7 +825,7 @@
 </blockquote>
 <h3 id="releasedate">releaseDate<a class="headerlink" href="#releasedate" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>releaseDate</strong>: <code>string</code> | <code>undefined</code></p>
+<p><strong>releaseDate</strong>: <code>string</code> | <code>null</code></p>
 </blockquote>
 
 

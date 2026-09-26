@@ -8,7 +8,7 @@
 
 > **toolSpecs**(): [`AiToolSpec`](../../provider/type-aliases/AiToolSpec.md)[]
 
-Defined in: [ui/src/api-server/ai/tools/index.ts:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/index.ts#L24)
+Defined in: [ui/src/api-server/ai/tools/index.ts:80](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/index.ts#L80)
 
 The registry as advertised to the model.
 

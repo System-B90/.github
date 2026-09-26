@@ -8,5 +8,7 @@
 
 ## Functions
 
+- [aiBenchmarkCooldownMs](functions/aiBenchmarkCooldownMs.md)
+- [allowAiBenchmark](functions/allowAiBenchmark.md)
 - [allowAiRequest](functions/allowAiRequest.md)
 - [resetAiRateLimit](functions/resetAiRateLimit.md)

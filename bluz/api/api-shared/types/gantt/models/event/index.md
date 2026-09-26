@@ -15,8 +15,13 @@
 ## Type Aliases
 
 - [GanttEvent](type-aliases/GanttEvent.md)
-- [GanttEventId](type-aliases/GanttEventId.md)
 
 ## Functions
 
 - [defaultModuleEventSplitAcrossBreaks](functions/defaultModuleEventSplitAcrossBreaks.md)
+
+## References
+
+### GanttEventId
+
+Re-exports [GanttEventId](../shared/type-aliases/GanttEventId.md)

@@ -8,7 +8,7 @@
 
 > `const` **PUT**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/calendar/drafts/route.ts:83](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/app/api/calendar/drafts/route.ts#L83)
+Defined in: [ui/src/app/api/calendar/drafts/route.ts:83](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/app/api/calendar/drafts/route.ts#L83)
 
 PUT /api/calendar/drafts — update an existing shared draft's events/label.
 

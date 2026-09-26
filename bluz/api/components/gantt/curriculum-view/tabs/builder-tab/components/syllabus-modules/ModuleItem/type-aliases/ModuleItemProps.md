@@ -8,7 +8,7 @@
 
 > **ModuleItemProps** = `object` & `PaperProps`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/builder-tab/components/syllabus-modules/ModuleItem.tsx:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/tabs/builder-tab/components/syllabus-modules/ModuleItem.tsx#L23)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/builder-tab/components/syllabus-modules/ModuleItem.tsx:23](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/tabs/builder-tab/components/syllabus-modules/ModuleItem.tsx#L23)
 
 Properties for the [ModuleItem](../functions/ModuleItem.md) component.
 
@@ -22,7 +22,7 @@ Optional identifier of the day if the item is placed inside a week panel.
 
 ### moduleId
 
-> **moduleId**: [`GanttModuleId`](../../../../../../../../../api-shared/types/gantt/models/module/type-aliases/GanttModuleId.md)
+> **moduleId**: [`GanttModuleId`](../../../../../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttModuleId.md)
 
 The unique identifier of the Gantt module.
 

@@ -8,7 +8,7 @@
 
 > **GanttEvent** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L25)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:28](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L28)
 
 ## Type Declaration
 
@@ -24,9 +24,21 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:25](https://github.co
 
 > **constraints**: [`GanttConstraint`](../../constraint/type-aliases/GanttConstraint.md)[]
 
+### groupId
+
+> **groupId**: `null` \| `string`
+
+Shuffle group this event belongs to, or null when it stands alone.
+
+The same lesson given to different shuffles at different times is stored
+as one event per shuffle - separate rows, so each can be placed, cut and
+linked to Hive independently - tied together by a shared `groupId`. The
+group is what lets the UI show them as one row and lets time totals count
+the longest member once instead of summing every member (#699).
+
 ### hiveLessonId
 
-> **hiveLessonId**: `null` \| `number`
+> **hiveLessonId**: [`HiveLessonId`](../../../../hive/type-aliases/HiveLessonId.md) \| `null`
 
 Hive lesson id; null when unlinked.
 

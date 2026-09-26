@@ -8,7 +8,7 @@
 
 > **HiveLessonSelectProps** = `object` & `Omit`\<`FormControlProps`, `"onChange"`\>
 
-Defined in: [ui/src/components/base/HiveLessonSelect.tsx:7](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/HiveLessonSelect.tsx#L7)
+Defined in: [ui/src/components/base/HiveLessonSelect.tsx:8](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/HiveLessonSelect.tsx#L8)
 
 ## Type Declaration
 
@@ -47,7 +47,7 @@ Fired with the picked lesson id, or null when cleared.
 
 ##### lessonId
 
-`null` \| `number`
+[`HiveLessonId`](../../../../api-shared/types/hive/type-aliases/HiveLessonId.md) \| `null`
 
 #### Returns
 
@@ -55,6 +55,6 @@ Fired with the picked lesson id, or null when cleared.
 
 ### value
 
-> **value**: `null` \| `number`
+> **value**: [`HiveLessonId`](../../../../api-shared/types/hive/type-aliases/HiveLessonId.md) \| `null`
 
 Selected lesson id (controlled). Use null for no selection.

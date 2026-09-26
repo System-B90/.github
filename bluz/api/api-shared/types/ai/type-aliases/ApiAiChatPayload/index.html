@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -673,14 +754,14 @@
 <blockquote>
 <p><strong>ApiAiChatPayload</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L63">ui/src/api-shared/types/ai.ts:63</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L96">ui/src/api-shared/types/ai.ts:96</a></p>
 <p>Request body of <code>POST /api/ai/chat</code>.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="approvedtoolcallids">approvedToolCallIds?<a class="headerlink" href="#approvedtoolcallids" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>approvedToolCallIds?</strong>: <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L78">ui/src/api-shared/types/ai.ts:78</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L111">ui/src/api-shared/types/ai.ts:111</a></p>
 <p>Tool-call ids the human approved. A write tool runs only when its id is
 listed here, so an approval covers one specific call and nothing else.</p>
 <hr />
@@ -688,21 +769,21 @@ listed here, so an approval covers one specific call and nothing else.</p>
 <blockquote>
 <p><code>optional</code> <strong>curriculumId?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L73">ui/src/api-shared/types/ai.ts:73</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L106">ui/src/api-shared/types/ai.ts:106</a></p>
 <p>Curriculum in view, if the user is on a Gantt screen.</p>
 <hr />
 <h3 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>iterationId?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L71">ui/src/api-shared/types/ai.ts:71</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L104">ui/src/api-shared/types/ai.ts:104</a></p>
 <p>The iteration the questions are about. Omitted means the current one.</p>
 <hr />
 <h3 id="messages">messages<a class="headerlink" href="#messages" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>messages</strong>: <a href="../AiMessage/"><code>AiMessage</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L69">ui/src/api-shared/types/ai.ts:69</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L102">ui/src/api-shared/types/ai.ts:102</a></p>
 <p>Full transcript, oldest first, excluding the system prompt — the server
 owns that. Replay whatever the previous turn's <code>Done</code> event returned so
 assistant tool calls and their results stay paired.</p>
@@ -711,7 +792,7 @@ assistant tool calls and their results stay paired.</p>
 <blockquote>
 <p><code>optional</code> <strong>model?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L80">ui/src/api-shared/types/ai.ts:80</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L113">ui/src/api-shared/types/ai.ts:113</a></p>
 <p>Overrides the server default; normally unset so no vendor slug leaks.</p>
 
 

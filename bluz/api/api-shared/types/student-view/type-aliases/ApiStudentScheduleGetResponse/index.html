@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -587,6 +668,50 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#calendardayendtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        calendarDayEndTime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendardaystarttime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        calendarDayStartTime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coursegroups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        courseGroups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coursenames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        courseNames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#date" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -602,6 +727,17 @@
     <span class="md-ellipsis">
       
         events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roomnames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        roomNames
       
     </span>
   </a>
@@ -640,20 +776,56 @@
 <blockquote>
 <p><strong>ApiStudentScheduleGetResponse</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/student-view.ts#L41">ui/src/api-shared/types/student-view.ts:41</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L66">ui/src/api-shared/types/student-view.ts:66</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="calendardayendtime">calendarDayEndTime<a class="headerlink" href="#calendardayendtime" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>calendarDayEndTime</strong>: <code>string</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L82">ui/src/api-shared/types/student-view.ts:82</a></p>
+<hr />
+<h3 id="calendardaystarttime">calendarDayStartTime<a class="headerlink" href="#calendardaystarttime" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>calendarDayStartTime</strong>: <code>string</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L81">ui/src/api-shared/types/student-view.ts:81</a></p>
+<p>The staff calendar's own grid bounds (<code>HH:mm</code>), so the student board
+shows the same window instead of a bare 00:00-24:00 day. Carried on the
+response because the student bundle mounts no settings provider.</p>
+<hr />
+<h3 id="coursegroups">courseGroups<a class="headerlink" href="#coursegroups" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>courseGroups</strong>: <code>number</code>[][]</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L73">ui/src/api-shared/types/student-view.ts:73</a></p>
+<p>Distinct course-name index sets referenced by events.</p>
+<hr />
+<h3 id="coursenames">courseNames<a class="headerlink" href="#coursenames" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>courseNames</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L71">ui/src/api-shared/types/student-view.ts:71</a></p>
+<p>Course / shuffle display names referenced by <code>courseGroups</code>.</p>
+<hr />
 <h3 id="date">date<a class="headerlink" href="#date" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>date</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/student-view.ts#L43">ui/src/api-shared/types/student-view.ts:43</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L68">ui/src/api-shared/types/student-view.ts:68</a></p>
 <p>The day the events belong to, <code>yyyy-MM-dd</code> in the app timezone.</p>
 <hr />
 <h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>events</strong>: <a href="../StudentEvent/"><code>StudentEvent</code></a>[]</p>
+<p><strong>events</strong>: <a href="../StudentEventWire/"><code>StudentEventWire</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/student-view.ts#L44">ui/src/api-shared/types/student-view.ts:44</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L69">ui/src/api-shared/types/student-view.ts:69</a></p>
+<hr />
+<h3 id="roomnames">roomNames<a class="headerlink" href="#roomnames" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>roomNames</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/student-view.ts#L75">ui/src/api-shared/types/student-view.ts:75</a></p>
+<p>Room display names referenced by <code>events[].rooms</code>.</p>
 
 
 

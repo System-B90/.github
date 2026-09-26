@@ -6,11 +6,20 @@
 
 # Function: isAiConfigured()
 
-> **isAiConfigured**(): `boolean`
+> **isAiConfigured**(`apiKeyOverride?`): `boolean`
 
-Defined in: [ui/src/api-server/ai/index.ts:59](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/index.ts#L59)
+Defined in: [ui/src/api-server/ai/index.ts:101](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/index.ts#L101)
 
 Whether the deployment can serve AI requests at all.
+
+## Parameters
+
+### apiKeyOverride?
+
+`string`
+
+A user's own key, which alone can satisfy this even
+when the server has no key of its own configured.
 
 ## Returns
 

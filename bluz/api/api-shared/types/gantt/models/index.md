@@ -100,7 +100,7 @@ Re-exports [GanttEvent](event/type-aliases/GanttEvent.md)
 
 ### GanttEventId
 
-Re-exports [GanttEventId](event/type-aliases/GanttEventId.md)
+Re-exports [GanttEventId](shared/type-aliases/GanttEventId.md)
 
 ***
 
@@ -118,7 +118,7 @@ Re-exports [GanttModule](module/type-aliases/GanttModule.md)
 
 ### GanttModuleId
 
-Re-exports [GanttModuleId](module/type-aliases/GanttModuleId.md)
+Re-exports [GanttModuleId](shared/type-aliases/GanttModuleId.md)
 
 ***
 

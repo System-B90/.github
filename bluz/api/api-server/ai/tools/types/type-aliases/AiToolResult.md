@@ -8,7 +8,7 @@
 
 > **AiToolResult** = `object`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L28)
+Defined in: [ui/src/api-server/ai/tools/types.ts:46](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L46)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/tools/types.ts:28](https://github.com/System-B
 
 > **data**: `unknown`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:30](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L30)
+Defined in: [ui/src/api-server/ai/tools/types.ts:48](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L48)
 
 Returned to the model. Keep it compact — it is re-sent every turn.
 
@@ -26,6 +26,6 @@ Returned to the model. Keep it compact — it is re-sent every turn.
 
 > **summary**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:32](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/types.ts#L32)
+Defined in: [ui/src/api-server/ai/tools/types.ts:50](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L50)
 
 One Hebrew line shown in the chat transcript.

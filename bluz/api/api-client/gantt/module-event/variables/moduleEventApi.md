@@ -8,9 +8,35 @@
 
 > `const` **moduleEventApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/module-event.ts:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/module-event.ts#L35)
+Defined in: [ui/src/api-client/gantt/module-event.ts:62](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/module-event.ts#L62)
 
 ## Type Declaration
+
+### apiApplyShuffleGroup
+
+> **apiApplyShuffleGroup**: (`eventId`, `moduleId`, `shuffles`) => `Promise`\<\{ `members`: [`ModuleEventDocument`](../type-aliases/ModuleEventDocument.md)[]; `removedIds`: `string`[]; \}\>
+
+Reconciles the event's shuffle group so it covers exactly `shuffles`, one
+sibling event per name (#699). Returns the surviving members and the ids of
+members dropped because their shuffle is no longer part of the group.
+
+#### Parameters
+
+##### eventId
+
+`string`
+
+##### moduleId
+
+`string`
+
+##### shuffles
+
+`string`[]
+
+#### Returns
+
+`Promise`\<\{ `members`: [`ModuleEventDocument`](../type-aliases/ModuleEventDocument.md)[]; `removedIds`: `string`[]; \}\>
 
 ### apiCreate
 

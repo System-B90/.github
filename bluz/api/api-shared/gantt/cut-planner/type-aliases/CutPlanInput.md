@@ -8,7 +8,7 @@
 
 > **CutPlanInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:109](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L109)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:115](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L115)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:109](https://github.com/Syst
 
 > `optional` **breakfastTime?**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:127](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L127)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:133](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L133)
 
 Preferred meal times (`"HH:mm"`), blocked out as breaks during stacking. Any subset may be omitted.
 
@@ -26,7 +26,7 @@ Preferred meal times (`"HH:mm"`), blocked out as breaks during stacking. Any sub
 
 > **days**: `Record`\<`string`, [`CutPlanDayInput`](CutPlanDayInput.md)\>
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:114](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L114)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:120](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L120)
 
 All days referenced by `weeks`, keyed by id.
 
@@ -36,7 +36,7 @@ All days referenced by `weeks`, keyed by id.
 
 > **dayStartTime**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:120](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L120)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:126](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L126)
 
 Day-start time for stacking, `"HH:mm"`.
 
@@ -46,7 +46,7 @@ Day-start time for stacking, `"HH:mm"`.
 
 > `optional` **dinnerTime?**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:129](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L129)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:135](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L135)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:129](https://github.com/Syst
 
 > `optional` **eventIdsByModule?**: `Record`\<`string`, `string`[]\>
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:144](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L144)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:150](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L150)
 
 Module id → the event ids it contains, for module-level constraints.
 
@@ -64,7 +64,7 @@ Module id → the event ids it contains, for module-level constraints.
 
 > **events**: [`CutPlanEventInput`](CutPlanEventInput.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:115](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L115)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:121](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L121)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:115](https://github.com/Syst
 
 > `optional` **lunchTime?**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:128](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L128)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:134](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L134)
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:128](https://github.com/Syst
 
 > **mappings**: [`CutPlanMappingInput`](CutPlanMappingInput.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:117](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L117)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:123](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L123)
 
 Event-to-day mappings (`cMDA` rows with an `eventId`).
 
@@ -90,7 +90,7 @@ Event-to-day mappings (`cMDA` rows with an `eventId`).
 
 > `optional` **moduleConstraints?**: `object`[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:138](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L138)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:144](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L144)
 
 Constraints owned by gantt modules, fanned out to their events.
 
@@ -112,7 +112,7 @@ Constraints owned by gantt modules, fanned out to their events.
 
 > `optional` **prayerTimes?**: `object`[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:136](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L136)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:142](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L142)
 
 Prayer windows (`"HH:mm"` starts) read from the schedule settings by the
 server and handed in here — the pure planner has no way to reach Mongo.
@@ -137,7 +137,7 @@ and neither ever extends a day. See `PRAYER_RULES`.
 
 > **recurrenceExceptions**: [`CutPlanRecurrenceExceptionInput`](CutPlanRecurrenceExceptionInput.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:118](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L118)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:124](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L124)
 
 ***
 
@@ -145,7 +145,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:118](https://github.com/Syst
 
 > **startDate**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:110](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L110)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:116](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L116)
 
 ***
 
@@ -153,7 +153,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:110](https://github.com/Syst
 
 > `optional` **weekendHomeStartTime?**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:125](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L125)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:131](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L131)
 
 Sunday start time (`"HH:mm"`) when the trainee was home (not on
 weekend duty). Falls back to `dayStartTime` when omitted.
@@ -164,6 +164,6 @@ weekend duty). Falls back to `dayStartTime` when omitted.
 
 > **weeks**: [`CutPlanWeekInput`](CutPlanWeekInput.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:112](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-planner.ts#L112)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:118](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-planner.ts#L118)
 
 Weeks in timeline (junction) order.

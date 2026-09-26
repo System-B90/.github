@@ -8,7 +8,7 @@
 
 > **getNextIndexedTitle**(`title`): `string`
 
-Defined in: [ui/src/app/api/gantt/events/\[id\]/duplicate/title-utils.ts:5](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/app/api/gantt/events/[id]/duplicate/title-utils.ts#L5)
+Defined in: [ui/src/app/api/gantt/events/\[id\]/duplicate/title-utils.ts:5](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/app/api/gantt/events/[id]/duplicate/title-utils.ts#L5)
 
 Returns the next indexed title for a duplicated event.
 "Intro" → "Intro (2)", "Intro (2)" → "Intro (3)", etc.

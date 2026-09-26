@@ -21,7 +21,4 @@
 - [ApiHiveUsersGetPayload](type-aliases/ApiHiveUsersGetPayload.md)
 - [ApiHiveUsersGetResponse](type-aliases/ApiHiveUsersGetResponse.md)
 - [HiveLesson](type-aliases/HiveLesson.md)
-
-## Functions
-
-- [lessonModuleId](functions/lessonModuleId.md)
+- [HiveLessonId](type-aliases/HiveLessonId.md)

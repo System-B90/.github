@@ -8,7 +8,7 @@
 
 > `const` **curriculumExecutionApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/execution.ts:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/execution.ts#L18)
+Defined in: [ui/src/api-client/gantt/execution.ts:36](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/execution.ts#L36)
 
 ## Type Declaration
 
@@ -29,3 +29,28 @@ cut into a schedule yet.
 #### Returns
 
 `Promise`\<[`ApiCurriculumExecutionResponse`](../../../../api-shared/types/gantt/execution/type-aliases/ApiCurriculumExecutionResponse.md)\>
+
+### recreateOccurrence
+
+> `readonly` **recreateOccurrence**: (`curriculumId`, `ganttEventId`, `occurrenceDate`) => `Promise`\<\{ `createdEvents`: `number`; \}\> = `recreateExecutionOccurrence`
+
+POST /api/gantt/curriculums/[id]/execution/recreate — re-create the schedule
+event for one deleted cut occurrence (#682).
+
+#### Parameters
+
+##### curriculumId
+
+`string`
+
+##### ganttEventId
+
+`string`
+
+##### occurrenceDate
+
+`string`
+
+#### Returns
+
+`Promise`\<\{ `createdEvents`: `number`; \}\>

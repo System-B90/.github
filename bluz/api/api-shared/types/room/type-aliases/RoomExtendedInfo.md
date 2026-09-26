@@ -8,7 +8,7 @@
 
 > **RoomExtendedInfo** = `object`
 
-Defined in: [ui/src/api-shared/types/room.ts:10](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/room.ts#L10)
+Defined in: [ui/src/api-shared/types/room.ts:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/room.ts#L13)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/room.ts:10](https://github.com/System-B90/B
 
 > **lectureComfortable**: `boolean`
 
-Defined in: [ui/src/api-shared/types/room.ts:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/room.ts#L13)
+Defined in: [ui/src/api-shared/types/room.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/room.ts#L16)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/room.ts:13](https://github.com/System-B90/B
 
 > **lectureSeatCount**: `null` \| `number`
 
-Defined in: [ui/src/api-shared/types/room.ts:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/room.ts#L12)
+Defined in: [ui/src/api-shared/types/room.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/room.ts#L15)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/types/room.ts:12](https://github.com/System-B90/B
 
 > **peAyin**: `boolean`
 
-Defined in: [ui/src/api-shared/types/room.ts:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/room.ts#L14)
+Defined in: [ui/src/api-shared/types/room.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/room.ts#L17)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/api-shared/types/room.ts:14](https://github.com/System-B90/B
 
 > **workstationCount**: `null` \| `number`
 
-Defined in: [ui/src/api-shared/types/room.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/room.ts#L11)
+Defined in: [ui/src/api-shared/types/room.ts:14](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/room.ts#L14)

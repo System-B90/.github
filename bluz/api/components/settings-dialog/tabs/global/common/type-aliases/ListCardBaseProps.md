@@ -8,7 +8,7 @@
 
 > **ListCardBaseProps**\<`TEntity`\> = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:7](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L7)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:7](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L7)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:7](h
 
 > **filteredEntities**: `TEntity`[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:8](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L8)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:8](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L8)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:8](h
 
 > **handleDelete**: (`id`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L16)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:16](
 
 > **handleStartCreate**: () => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L15)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:15](
 
 > `optional` **isLoading?**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:10](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:10](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L10)
 
 Renders skeleton rows instead of "no entries" while the fetch is in flight.
 
@@ -70,7 +70,7 @@ Renders skeleton rows instead of "no entries" while the fetch is in flight.
 
 > **populateFormFrom**: (`entity`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L14)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:14](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L14)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:14](
 
 > **searchQuery**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:11](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L11)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:11](
 
 > **selectedEntity**: `null` \| `TEntity`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L13)
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:13](
 
 > **setSearchQuery**: (`query`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:12](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L12)
 
 #### Parameters
 

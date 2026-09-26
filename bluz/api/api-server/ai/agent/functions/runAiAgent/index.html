@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -640,10 +721,11 @@
 <blockquote>
 <p><strong>runAiAgent</strong>(<code>options</code>): <code>AsyncGenerator</code>\&lt;<a href="../../../../../api-shared/types/ai/type-aliases/AiStreamEvent/"><code>AiStreamEvent</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L110">ui/src/api-server/ai/agent.ts:110</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L135">ui/src/api-server/ai/agent.ts:135</a></p>
 <p>Runs one turn and yields it as a stream of app-level events.</p>
 <p>The turn ends when the model stops calling tools, when a write needs
-approval, or when <a href="../../../../../api-shared/types/ai/variables/AI_MAX_TOOL_ITERATIONS/">AI_MAX_TOOL_ITERATIONS</a> is hit.</p>
+approval, when the model asks the human a question, or when
+<a href="../../../../../api-shared/types/ai/variables/AI_MAX_TOOL_ITERATIONS/">AI_MAX_TOOL_ITERATIONS</a> is hit.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="options">options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
 <p><a href="../../type-aliases/AiAgentRunOptions/"><code>AiAgentRunOptions</code></a></p>

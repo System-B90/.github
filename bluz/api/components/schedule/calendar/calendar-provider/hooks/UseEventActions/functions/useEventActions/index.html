@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -649,6 +730,56 @@
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iseventcreatedlocally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isEventCreatedLocally
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterationscope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iterationScope?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="iterationScope?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isreadonlyiteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isReadOnlyIteration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterationid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iterationId?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -900,9 +1031,9 @@
 <p><a href="../../../../../../../../">TypeDoc API</a> / <a href="../../">components/schedule/calendar/calendar-provider/hooks/UseEventActions</a> / useEventActions</p>
 <h1 id="function-useeventactions">Function: useEventActions()<a class="headerlink" href="#function-useeventactions" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>useEventActions</strong>(<code>events</code>, <code>offlineMode</code>, <code>captureEventBeforeEdit</code>, <code>dispatch</code>, <code>remoteDispatch</code>, <code>markEventCreatedLocally</code>): <code>object</code></p>
+<p><strong>useEventActions</strong>(<code>events</code>, <code>offlineMode</code>, <code>captureEventBeforeEdit</code>, <code>dispatch</code>, <code>remoteDispatch</code>, <code>markEventCreatedLocally</code>, <code>isEventCreatedLocally</code>, <code>iterationScope?</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts#L16">ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts:16</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts#L21">ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts:21</a></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <p><a href="../../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>[]</p>
@@ -916,6 +1047,13 @@
 <p>(<code>action</code>) =&gt; <code>void</code></p>
 <h3 id="markeventcreatedlocally">markEventCreatedLocally<a class="headerlink" href="#markeventcreatedlocally" title="Permanent link">&para;</a></h3>
 <p>(<code>eventId</code>) =&gt; <code>void</code></p>
+<h3 id="iseventcreatedlocally">isEventCreatedLocally<a class="headerlink" href="#iseventcreatedlocally" title="Permanent link">&para;</a></h3>
+<p>(<code>eventId</code>) =&gt; <code>boolean</code></p>
+<h3 id="iterationscope">iterationScope?<a class="headerlink" href="#iterationscope" title="Permanent link">&para;</a></h3>
+<h4 id="isreadonlyiteration">isReadOnlyIteration<a class="headerlink" href="#isreadonlyiteration" title="Permanent link">&para;</a></h4>
+<p><code>boolean</code></p>
+<h4 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h4>
+<p><code>string</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>object</code></p>
 <h3 id="deleteevent">deleteEvent<a class="headerlink" href="#deleteevent" title="Permanent link">&para;</a></h3>
@@ -931,7 +1069,7 @@
 <p><code>void</code></p>
 <h3 id="saveevent">saveEvent<a class="headerlink" href="#saveevent" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>saveEvent</strong>: (<code>eventPartial</code>, <code>initiator</code>) =&gt; <code>void</code></p>
+<p><strong>saveEvent</strong>: (<code>eventPartial</code>, <code>initiator</code>) =&gt; <a href="../../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a> | <code>undefined</code></p>
 </blockquote>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
 <h5 id="eventpartial">eventPartial<a class="headerlink" href="#eventpartial" title="Permanent link">&para;</a></h5>
@@ -939,7 +1077,7 @@
 <h5 id="initiator_1">initiator?<a class="headerlink" href="#initiator_1" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../../../../api-shared/types/event-history/enumerations/EventChangeInitiator/"><code>EventChangeInitiator</code></a> = <code>EventChangeInitiator.EventDialog</code></p>
 <h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
-<p><code>void</code></p>
+<p><a href="../../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a> | <code>undefined</code></p>
 <h3 id="synchistorytravel">syncHistoryTravel<a class="headerlink" href="#synchistorytravel" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>syncHistoryTravel</strong>: (<code>from</code>, <code>to</code>) =&gt; <code>void</code></p>

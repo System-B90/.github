@@ -6,6 +6,10 @@
 
 # api-server/ai/tools/calendar
 
+## Type Aliases
+
+- [AiEventSummary](type-aliases/AiEventSummary.md)
+
 ## Variables
 
 - [CALENDAR\_TOOLS](variables/CALENDAR_TOOLS.md)

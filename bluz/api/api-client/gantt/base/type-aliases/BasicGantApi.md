@@ -8,7 +8,7 @@
 
 > **BasicGantApi**\<`TEntity`, `TCreatePayload`\> = `object`
 
-Defined in: [ui/src/api-client/gantt/base.ts:66](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L66)
+Defined in: [ui/src/api-client/gantt/base.ts:66](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L66)
 
 ## Type Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:66](https://github.com/System-B90/B
 
 > `readonly` **apiCreate**: (`payload`, `options?`) => `Promise`\<`TEntity` & [`BaseDocument`](BaseDocument.md)\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:84](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L84)
+Defined in: [ui/src/api-client/gantt/base.ts:84](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L84)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:84](https://github.com/System-B90/B
 
 > `readonly` **apiDelete**: (`id`, `options?`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:92](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L92)
+Defined in: [ui/src/api-client/gantt/base.ts:92](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L92)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:92](https://github.com/System-B90/B
 
 > `readonly` **apiGet**: (`id`, `options?`) => `Promise`\<[`ApiT`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiT.md)\<`TEntity` & [`BaseDocument`](BaseDocument.md)\>\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:80](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L80)
+Defined in: [ui/src/api-client/gantt/base.ts:80](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L80)
 
 #### Parameters
 
@@ -92,7 +92,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:80](https://github.com/System-B90/B
 
 > `readonly` **apiGetAllocatedTime**: (`itemId`, `containerId`, `options?`) => `Promise`\<`number`\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:116](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L116)
+Defined in: [ui/src/api-client/gantt/base.ts:116](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L116)
 
 #### Parameters
 
@@ -118,7 +118,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:116](https://github.com/System-B90/
 
 > `readonly` **apiGetMany**: (`ids`, `options?`) => `Promise`\<`Record`\<`TEntity`\[`"id"`\], `TEntity` & [`BaseDocument`](BaseDocument.md)\>\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:96](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L96)
+Defined in: [ui/src/api-client/gantt/base.ts:96](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L96)
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:96](https://github.com/System-B90/B
 
 > `readonly` **apiLink**: (`itemId`, `newParentId`, `options?`) => `Promise`\<`TEntity` & [`BaseDocument`](BaseDocument.md)\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:100](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L100)
+Defined in: [ui/src/api-client/gantt/base.ts:100](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L100)
 
 #### Parameters
 
@@ -166,7 +166,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:100](https://github.com/System-B90/
 
 > `readonly` **apiList**: (`options?`) => `Promise`\<`Record`\<`TEntity`\[`"id"`\], `TEntity`\[`"title"`\]\>\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:70](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L70)
+Defined in: [ui/src/api-client/gantt/base.ts:70](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L70)
 
 #### Parameters
 
@@ -184,7 +184,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:70](https://github.com/System-B90/B
 
 > `readonly` **apiListWithParents**: (`options?`) => `Promise`\<`Record`\<`TEntity`\[`"id"`\], [`ListEntryWithParent`](ListEntryWithParent.md)\<`TEntity`\>\>\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:77](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L77)
+Defined in: [ui/src/api-client/gantt/base.ts:77](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L77)
 
 Same listing as `apiList`, but each value carries the parent id. Use
 when you need child → parent without fetching each item. See #310.
@@ -205,7 +205,7 @@ when you need child → parent without fetching each item. See #310.
 
 > `readonly` **apiSetAllocatedTime**: (`itemId`, `containerId`, `allocatedTime`, `options?`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:110](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L110)
+Defined in: [ui/src/api-client/gantt/base.ts:110](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L110)
 
 #### Parameters
 
@@ -235,7 +235,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:110](https://github.com/System-B90/
 
 > `readonly` **apiUnlink**: (`itemId`, `oldParentId`, `options?`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:105](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L105)
+Defined in: [ui/src/api-client/gantt/base.ts:105](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L105)
 
 #### Parameters
 
@@ -261,7 +261,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:105](https://github.com/System-B90/
 
 > `readonly` **apiUpdate**: (`updates`, `options?`) => `Promise`\<`TEntity` & [`BaseDocument`](BaseDocument.md)\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:88](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/base.ts#L88)
+Defined in: [ui/src/api-client/gantt/base.ts:88](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/base.ts#L88)
 
 #### Parameters
 

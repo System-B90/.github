@@ -8,7 +8,7 @@
 
 > **StudentViewSession** = `object`
 
-Defined in: [ui/src/api-server/student-view.ts:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/student-view.ts#L28)
+Defined in: [ui/src/api-server/student-view.ts:36](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/student-view.ts#L36)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/student-view.ts:28](https://github.com/System-B90
 
 > **clearance**: `Clearance`
 
-Defined in: [ui/src/api-server/student-view.ts:29](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/student-view.ts#L29)
+Defined in: [ui/src/api-server/student-view.ts:37](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/student-view.ts#L37)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/student-view.ts:29](https://github.com/System-B90
 
 > **isStaff**: `boolean`
 
-Defined in: [ui/src/api-server/student-view.ts:31](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/student-view.ts#L31)
+Defined in: [ui/src/api-server/student-view.ts:39](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/student-view.ts#L39)
 
 Staff (Segel/Admin) get the preview affordances; students never do.
 
@@ -34,6 +34,6 @@ Staff (Segel/Admin) get the preview affordances; students never do.
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-server/student-view.ts:33](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/student-view.ts#L33)
+Defined in: [ui/src/api-server/student-view.ts:41](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/student-view.ts#L41)
 
 Session-derived user id. Never taken from a request body.

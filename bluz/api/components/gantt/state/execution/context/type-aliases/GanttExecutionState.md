@@ -8,15 +8,15 @@
 
 > **GanttExecutionState** = `object`
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:6](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/execution/context.ts#L6)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:6](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L6)
 
 ## Properties
 
 ### events
 
-> **events**: `Record`\<[`GanttEventId`](../../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEventId.md), [`GanttEventExecution`](../../../../../../api-shared/types/gantt/execution/type-aliases/GanttEventExecution.md)\>
+> **events**: `Record`\<[`GanttEventId`](../../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttEventId.md), [`GanttEventExecution`](../../../../../../api-shared/types/gantt/execution/type-aliases/GanttEventExecution.md)\>
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:8](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/execution/context.ts#L8)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:8](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L8)
 
 Keyed by gantt event id; empty ⇒ curriculum not cut (or still loading).
 
@@ -26,7 +26,7 @@ Keyed by gantt event id; empty ⇒ curriculum not cut (or still loading).
 
 > **hasLoaded**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/execution/context.ts#L11)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:11](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L11)
 
 True once at least one fetch completed (distinguishes "not cut" from "loading").
 
@@ -36,4 +36,4 @@ True once at least one fetch completed (distinguishes "not cut" from "loading").
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:9](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/execution/context.ts#L9)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:9](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/execution/context.ts#L9)

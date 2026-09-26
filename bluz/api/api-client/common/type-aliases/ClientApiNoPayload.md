@@ -8,7 +8,7 @@
 
 > **ClientApiNoPayload**\<`ResponseT`\> = (`props?`) => `Promise`\<`ResponseT`\>
 
-Defined in: [ui/src/api-client/common.ts:112](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/common.ts#L112)
+Defined in: [ui/src/api-client/common.ts:133](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/common.ts#L133)
 
 ## Type Parameters
 

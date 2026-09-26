@@ -8,7 +8,7 @@
 
 > **IterationValues** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:23](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L23)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:23](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L23)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/va
 
 > **endDate**: `Dayjs` \| `null`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:28](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L28)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:28](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L28)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/va
 
 > **hiveUrl**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L26)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:26](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L26)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/va
 
 > **id**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:24](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L24)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:24](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L24)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/va
 
 > **label**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L25)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:25](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L25)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/va
 
 > **startDate**: `Dayjs` \| `null`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L27)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:27](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L27)

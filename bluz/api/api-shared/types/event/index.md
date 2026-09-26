@@ -30,6 +30,7 @@
 ## Functions
 
 - [defaultSplitAcrossBreaks](functions/defaultSplitAcrossBreaks.md)
+- [eventHasCourses](functions/eventHasCourses.md)
 - [eventHasLecturers](functions/eventHasLecturers.md)
 - [eventHasRoom](functions/eventHasRoom.md)
 - [eventHasSubject](functions/eventHasSubject.md)

@@ -9,3 +9,5 @@
 ## Type Aliases
 
 - [BaseGantItem](type-aliases/BaseGantItem.md)
+- [GanttEventId](type-aliases/GanttEventId.md)
+- [GanttModuleId](type-aliases/GanttModuleId.md)

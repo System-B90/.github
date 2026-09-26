@@ -8,7 +8,7 @@
 
 > **EventUnlockMessage** = `object`
 
-Defined in: [ui/src/api-shared/types.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L44)
+Defined in: [ui/src/api-shared/types.ts:44](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L44)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types.ts:44](https://github.com/System-B90/Bluz/b
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:45](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L45)
+Defined in: [ui/src/api-shared/types.ts:45](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L45)
 
 ***
 
@@ -24,4 +24,12 @@ Defined in: [ui/src/api-shared/types.ts:45](https://github.com/System-B90/Bluz/b
 
 > `optional` **iterationId?**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:46](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types.ts#L46)
+Defined in: [ui/src/api-shared/types.ts:50](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L50)
+
+***
+
+### lockedById
+
+> **lockedById**: `string`
+
+Defined in: [ui/src/api-shared/types.ts:49](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L49)

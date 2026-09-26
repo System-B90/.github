@@ -6,9 +6,9 @@
 
 # Function: apiGetStudentSchedule()
 
-> **apiGetStudentSchedule**(`date`, `props?`): `Promise`\<[`ApiStudentScheduleGetResponse`](../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse.md)\>
+> **apiGetStudentSchedule**(`date`, `props?`): `Promise`\<[`StudentSchedule`](../../../api-shared/types/student-view/type-aliases/StudentSchedule.md)\>
 
-Defined in: [ui/src/api-client/student-view.ts:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/student-view.ts#L13)
+Defined in: [ui/src/api-client/student-view.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/student-view.ts#L15)
 
 Fetches the student projection of one day's schedule.
 
@@ -27,4 +27,4 @@ it is rejected by the server, which always serves its own current day.
 
 ## Returns
 
-`Promise`\<[`ApiStudentScheduleGetResponse`](../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse.md)\>
+`Promise`\<[`StudentSchedule`](../../../api-shared/types/student-view/type-aliases/StudentSchedule.md)\>

@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -780,7 +861,7 @@
 <hr />
 <p><a href="../../../">TypeDoc API</a> / <a href="../../">settings</a> / MessageTypes</p>
 <h1 id="enumeration-messagetypes">Enumeration: MessageTypes<a class="headerlink" href="#enumeration-messagetypes" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L31">session-server/session-common.ts:31</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L31">session-server/session-common.ts:31</a></p>
 <p>Bluz's complete wire vocabulary. The first four values mirror
 CoreMessageTypes from @system-b90/session-ws (handled by the server core);
 the rest are Bluz-specific broadcast types.</p>
@@ -792,13 +873,13 @@ rather than a wire mismatch discovered at runtime (#540 item 8).</p>
 <blockquote>
 <p><strong>COURSES_UPDATE</strong>: <code>"cu"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L40">session-server/session-common.ts:40</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L40">session-server/session-common.ts:40</a></p>
 <hr />
 <h3 id="current_iteration_changed">CURRENT_ITERATION_CHANGED<a class="headerlink" href="#current_iteration_changed" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>CURRENT_ITERATION_CHANGED</strong>: <code>"cic"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L53">session-server/session-common.ts:53</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L53">session-server/session-common.ts:53</a></p>
 <p>The current iteration changed (Settings → Iterations → "make current").
 Every per-iteration collection provider resolves its data against
 whichever iteration is current <em>at request time</em>, so a switch invalidates
@@ -810,73 +891,73 @@ iteration that just stopped being current.</p>
 <blockquote>
 <p><strong>CUSTOM_COLORS_UPDATE</strong>: <code>"ccu"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L43">session-server/session-common.ts:43</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L43">session-server/session-common.ts:43</a></p>
 <hr />
 <h3 id="deregister_sync_provider">DEREGISTER_SYNC_PROVIDER<a class="headerlink" href="#deregister_sync_provider" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>DEREGISTER_SYNC_PROVIDER</strong>: <code>"deregister-sync-provider"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L35">session-server/session-common.ts:35</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L35">session-server/session-common.ts:35</a></p>
 <hr />
 <h3 id="event_added_or_removed">EVENT_ADDED_OR_REMOVED<a class="headerlink" href="#event_added_or_removed" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>EVENT_ADDED_OR_REMOVED</strong>: <code>"ear"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L37">session-server/session-common.ts:37</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L37">session-server/session-common.ts:37</a></p>
 <hr />
 <h3 id="event_data_update">EVENT_DATA_UPDATE<a class="headerlink" href="#event_data_update" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>EVENT_DATA_UPDATE</strong>: <code>"edu"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L36">session-server/session-common.ts:36</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L36">session-server/session-common.ts:36</a></p>
 <hr />
 <h3 id="event_lock">EVENT_LOCK<a class="headerlink" href="#event_lock" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>EVENT_LOCK</strong>: <code>"el"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L56">session-server/session-common.ts:56</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L56">session-server/session-common.ts:56</a></p>
 <hr />
 <h3 id="event_unlock">EVENT_UNLOCK<a class="headerlink" href="#event_unlock" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>EVENT_UNLOCK</strong>: <code>"eu"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L57">session-server/session-common.ts:57</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L57">session-server/session-common.ts:57</a></p>
 <hr />
 <h3 id="outsiders_update">OUTSIDERS_UPDATE<a class="headerlink" href="#outsiders_update" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>OUTSIDERS_UPDATE</strong>: <code>"ou"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L42">session-server/session-common.ts:42</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L42">session-server/session-common.ts:42</a></p>
 <hr />
 <h3 id="register_session">REGISTER_SESSION<a class="headerlink" href="#register_session" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>REGISTER_SESSION</strong>: <code>"register-session"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L32">session-server/session-common.ts:32</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L32">session-server/session-common.ts:32</a></p>
 <hr />
 <h3 id="register_sync_provider">REGISTER_SYNC_PROVIDER<a class="headerlink" href="#register_sync_provider" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>REGISTER_SYNC_PROVIDER</strong>: <code>"register-sync-provider"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L33">session-server/session-common.ts:33</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L33">session-server/session-common.ts:33</a></p>
 <hr />
 <h3 id="rooms_update">ROOMS_UPDATE<a class="headerlink" href="#rooms_update" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>ROOMS_UPDATE</strong>: <code>"ru"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L41">session-server/session-common.ts:41</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L41">session-server/session-common.ts:41</a></p>
 <hr />
 <h3 id="settings_update">SETTINGS_UPDATE<a class="headerlink" href="#settings_update" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>SETTINGS_UPDATE</strong>: <code>"su"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L39">session-server/session-common.ts:39</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L39">session-server/session-common.ts:39</a></p>
 <hr />
 <h3 id="student_refresh">STUDENT_REFRESH<a class="headerlink" href="#student_refresh" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>STUDENT_REFRESH</strong>: <code>"srf"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L63">session-server/session-common.ts:63</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L63">session-server/session-common.ts:63</a></p>
 <p>Content-free "something changed, refetch" ping for student sockets
 (#656). Carries no data by construction — see <code>STUDENT_SYNC_ID</code>.</p>
 <hr />
@@ -884,7 +965,7 @@ iteration that just stopped being current.</p>
 <blockquote>
 <p><strong>SYNC_OBJECT_UPDATE</strong>: <code>"sync-object-update"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/session-server/session-common.ts#L34">session-server/session-common.ts:34</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/session-server/session-common.ts#L34">session-server/session-common.ts:34</a></p>
 
 
 

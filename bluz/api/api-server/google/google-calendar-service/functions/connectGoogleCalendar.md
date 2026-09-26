@@ -8,12 +8,13 @@
 
 > **connectGoogleCalendar**(`userId`, `code`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:160](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/google/google-calendar-service.ts#L160)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:442](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/google/google-calendar-service.ts#L442)
 
-Exchanges the GIS popup authorization `code` for tokens, creates (or finds)
-the dedicated "Bluz" calendar in the user's account, and persists the link.
-The popup code model requires the reserved `"postmessage"` redirect_uri
-during token exchange — passing the page origin fails with invalid_request.
+Exchanges the GIS popup authorization `code` for tokens, finds (or creates)
+the calendar for the current iteration in the user's account, and persists
+the link. The popup code model requires the reserved `"postmessage"`
+redirect_uri during token exchange — passing the page origin fails with
+invalid_request.
 
 ## Parameters
 

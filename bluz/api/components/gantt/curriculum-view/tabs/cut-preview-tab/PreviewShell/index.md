@@ -9,6 +9,7 @@
 ## Variables
 
 - [PREVIEW\_BUTTON\_GROUP\_SX](variables/PREVIEW_BUTTON_GROUP_SX.md)
+- [PREVIEW\_STATUS\_ALERT\_SX](variables/PREVIEW_STATUS_ALERT_SX.md)
 
 ## Functions
 

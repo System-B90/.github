@@ -8,7 +8,7 @@
 
 > **IterationFormCardProps** = `Omit`\<[`FormCardBaseProps`](../../../common/FormCard/type-aliases/FormCardBaseProps.md)\<[`Iteration`](../../../../../../../api-shared/types/iteration/type-aliases/Iteration.md)\>, `"selectedEntity"`\> & `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/IterationFormCard.tsx:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/iteration-settings/IterationFormCard.tsx#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/IterationFormCard.tsx:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/iteration-settings/IterationFormCard.tsx#L15)
 
 ## Type Declaration
 

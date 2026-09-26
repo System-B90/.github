@@ -6,7 +6,7 @@
 
 # Enumeration: RoomRequirement
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L11)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:14](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L14)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:11](https://github.co
 
 > **Classified**: `"בחדר מסווג"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L12)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L15)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:12](https://github.co
 
 > **MultipleClassrooms**: `"כמה כיתות"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L14)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L17)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:14](https://github.co
 
 > **OffBase**: `"מחוץ לבסיס"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L15)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:18](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L18)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:15](https://github.co
 
 > **Online**: `"באופן מקוון"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L16)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:19](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L19)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:16](https://github.co
 
 > **Outside**: `"בחוץ"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L13)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L16)

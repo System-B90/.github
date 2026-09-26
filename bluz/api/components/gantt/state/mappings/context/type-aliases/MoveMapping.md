@@ -13,7 +13,7 @@
     to,
 }`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/mappings/context.ts#L21)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:21](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/mappings/context.ts#L21)
 
 ## Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:21](https://githu
 
 #### eventId
 
-[`GanttEventId`](../../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEventId.md) \| `null`
+[`GanttEventId`](../../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttEventId.md) \| `null`
 
 #### from
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:21](https://githu
 
 #### moduleId
 
-[`GanttModuleId`](../../../../../../api-shared/types/gantt/models/module/type-aliases/GanttModuleId.md)
+[`GanttModuleId`](../../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttModuleId.md)
 
 #### to
 

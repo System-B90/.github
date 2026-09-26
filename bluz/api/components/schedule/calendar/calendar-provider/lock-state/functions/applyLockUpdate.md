@@ -6,9 +6,9 @@
 
 # Function: applyLockUpdate()
 
-> **applyLockUpdate**(`state`, `eventId`, `lock`, `options`): [`LockState`](../type-aliases/LockState.md)
+> **applyLockUpdate**(`state`, `eventId`, `lock`, `options`, `unlockedById?`): [`LockState`](../type-aliases/LockState.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:66](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L66)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:70](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L70)
 
 Apply a single lock or unlock update to the lock state.
 
@@ -37,6 +37,15 @@ The incoming lock, or `null` to release the lock.
 `ApplyLockOptions`
 
 Self id (for echo filtering), current time, and TTL.
+
+### unlockedById?
+
+`string`
+
+When `lock` is `null`, the id of the client that sent
+  the unlock. A stale or superseding unlock — one whose sender does not
+  match who the tracked lock says currently holds it — is ignored instead
+  of clearing a lock some other, later holder is still holding (#689).
 
 ## Returns
 

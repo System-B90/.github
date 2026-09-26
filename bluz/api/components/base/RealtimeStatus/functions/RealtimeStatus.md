@@ -6,9 +6,9 @@
 
 # Function: RealtimeStatus()
 
-> **RealtimeStatus**(): `Element`
+> **RealtimeStatus**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/RealtimeStatus.tsx:58](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/base/RealtimeStatus.tsx#L58)
+Defined in: [ui/src/components/base/RealtimeStatus.tsx:67](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/RealtimeStatus.tsx#L67)
 
 Publishes the browser's WebSocket connection state into the DOM.
 
@@ -30,6 +30,12 @@ entirely. Comparing this against the page's own origin is what catches that.
 The state is sampled rather than subscribed to because the package exposes
 the socket as a ref, which gives no notification when it is replaced on a
 reconnect.
+
+## Parameters
+
+### \_\_namedParameters
+
+[`RealtimeStatusProps`](../type-aliases/RealtimeStatusProps.md)
 
 ## Returns
 

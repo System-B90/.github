@@ -8,7 +8,7 @@
 
 > **GanttCurriculumTemplate** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:6](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/templates.ts#L6)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:6](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/templates.ts#L6)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/templates.ts:6](https://github.com/Sy
 
 > **defaultDayMinutes**: [`TemplateDayConfig`](TemplateDayConfig.md)
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/templates.ts#L17)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/templates.ts#L17)
 
 Default working-minutes per day (applied uniformly to every week).
 Each week can still be overridden individually after applying.
@@ -27,7 +27,7 @@ Each week can still be overridden individually after applying.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:8](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/templates.ts#L8)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:8](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/templates.ts#L8)
 
 Unique key used in code / localStorage
 
@@ -37,7 +37,7 @@ Unique key used in code / localStorage
 
 > **label**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:10](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/templates.ts#L10)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:10](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/templates.ts#L10)
 
 Hebrew display label
 
@@ -47,7 +47,7 @@ Hebrew display label
 
 > **weekCount**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/templates.ts#L12)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:12](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/templates.ts#L12)
 
 Number of weeks the template prescribes
 
@@ -57,6 +57,6 @@ Number of weeks the template prescribes
 
 > `optional` **weekOverrides?**: `Record`\<`number`, [`TemplateDayConfig`](TemplateDayConfig.md)\>
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:19](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/templates.ts#L19)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:19](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/templates.ts#L19)
 
 Optional per-week overrides: index → day-minutes. Sparse — unset weeks get defaultDayMinutes.

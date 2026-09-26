@@ -8,7 +8,7 @@
 
 > **DaysTableProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L12)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:12](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L12)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **canEdit**: `boolean`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L14)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:14](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L14)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **days**: [`GanttDay`](../../../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L13)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L13)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **onDayCommentChange**: (`weekIndex`, `dayIndex`, `nextComment`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L27)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:27](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L27)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **onDayCommentKeyDown**: (`event`, `weekIndex`, `dayIndex`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:33](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L33)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:33](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L33)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **onDayCommentSave**: (`weekIndex`, `dayIndex`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:32](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L32)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:32](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L32)
 
 #### Parameters
 
@@ -106,7 +106,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **onHoursChange**: (`weekIndex`, `dayIndex`, `nextValueRaw`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L16)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L16)
 
 #### Parameters
 
@@ -132,7 +132,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **onHoursKeyDown**: (`event`, `weekIndex`, `dayIndex`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L22)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:22](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L22)
 
 #### Parameters
 
@@ -158,7 +158,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **onHoursSave**: (`weekIndex`, `dayIndex`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L21)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:21](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L21)
 
 #### Parameters
 
@@ -180,4 +180,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/Da
 
 > **weekIndex**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L15)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/DaysTable.tsx#L15)

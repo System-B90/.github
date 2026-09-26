@@ -8,7 +8,7 @@
 
 > **EventDetailsForm**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/event-dialog/DetailsForm.tsx:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/event-dialog/DetailsForm.tsx#L27)
+Defined in: [ui/src/components/gantt/event-dialog/DetailsForm.tsx:26](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/event-dialog/DetailsForm.tsx#L26)
 
 The always-visible core of the event dialog: identity (name / type /
 duration) on the first row, assignment (orchestrator / shuffles / flags)
@@ -26,6 +26,10 @@ on the second. Everything optional lives in collapsible sections below.
 
 [`GanttEvent`](../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)
 
+#### leadInstructorIds
+
+`number`[]
+
 #### localTitle
 
 `string`
@@ -33,10 +37,6 @@ on the second. Everything optional lives in collapsible sections below.
 #### setLocalTitle
 
 (`v`) => `void`
-
-#### shuffleOptions
-
-`string`[]
 
 ## Returns
 

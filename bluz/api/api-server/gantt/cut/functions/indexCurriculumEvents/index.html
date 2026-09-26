@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -670,6 +751,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#shufflesbyevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shufflesByEvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syllabuscourseidsbyevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        syllabusCourseIdsByEvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#syllabusidbyevent" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -723,7 +826,7 @@
 <blockquote>
 <p><strong>indexCurriculumEvents</strong>(<code>curriculum</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/cut.ts#L203">ui/src/api-server/gantt/cut.ts:203</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/cut.ts#L208">ui/src/api-server/gantt/cut.ts:208</a></p>
 <p>Walk the full curriculum tree once, indexing every event by id and recording
 the title of the syllabus each event lives under (used as course provenance).</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
@@ -753,6 +856,17 @@ the title of the syllabus each event lives under (used as course provenance).</p
 <p><strong>moduleTitleById</strong>: <code>Map</code>\&lt;<code>string</code>, <code>string</code>&gt;</p>
 </blockquote>
 <p>Module titles, used in constraint-violation messages.</p>
+<h3 id="shufflesbyevent">shufflesByEvent<a class="headerlink" href="#shufflesbyevent" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>shufflesByEvent</strong>: <code>Map</code>\&lt;<code>string</code>, <code>string</code>[]&gt;</p>
+</blockquote>
+<p>Shuffles each event runs for: its own, else its module's, else its
+syllabus's. Empty when none is set anywhere up the chain.</p>
+<h3 id="syllabuscourseidsbyevent">syllabusCourseIdsByEvent<a class="headerlink" href="#syllabuscourseidsbyevent" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>syllabusCourseIdsByEvent</strong>: <code>Map</code>\&lt;<code>string</code>, <code>string</code>[]&gt;</p>
+</blockquote>
+<p>Courses (מסלולים) the owning syllabus is assigned to, per event.</p>
 <h3 id="syllabusidbyevent">syllabusIdByEvent<a class="headerlink" href="#syllabusidbyevent" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>syllabusIdByEvent</strong>: <code>Map</code>\&lt;<code>string</code>, <code>string</code>&gt;</p>

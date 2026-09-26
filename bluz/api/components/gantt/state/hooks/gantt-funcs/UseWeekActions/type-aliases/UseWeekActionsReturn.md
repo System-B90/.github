@@ -8,7 +8,7 @@
 
 > **UseWeekActionsReturn** = `object`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:25](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L25)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:25](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L25)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:
 
 > **createDay**: (`payload`) => `Promise`\<[`GanttDay`](../../../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md)\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L35)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:35](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L35)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:
 
 > **createWeek**: (`payload`) => `Promise`\<[`GanttWeek`](../../../../../../../api-shared/types/gantt/models/week/type-aliases/GanttWeek.md)\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L26)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:26](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L26)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:
 
 > **deleteDay**: (`dayId`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L40)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:40](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L40)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:
 
 > **deleteWeek**: (`weekId`, `curriculumId`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:31](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L31)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:31](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L31)
 
 #### Parameters
 
@@ -92,7 +92,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:
 
 > **updateDay**: (`dayId`, `updates`) => `Promise`\<[`GanttDay`](../../../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md)\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:36](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L36)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:36](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L36)
 
 #### Parameters
 
@@ -114,7 +114,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:
 
 > **updateWeek**: (`weekId`, `updates`) => `Promise`\<[`GanttWeek`](../../../../../../../api-shared/types/gantt/models/week/type-aliases/GanttWeek.md)\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L27)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:27](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L27)
 
 #### Parameters
 

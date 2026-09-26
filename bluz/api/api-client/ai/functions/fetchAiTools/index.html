@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -610,15 +691,15 @@
 <p><a href="../../../../">TypeDoc API</a> / <a href="../../">api-client/ai</a> / fetchAiTools</p>
 <h1 id="function-fetchaitools">Function: fetchAiTools()<a class="headerlink" href="#function-fetchaitools" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>fetchAiTools</strong>(): <code>Promise</code>\&lt;{ <code>enabled</code>: <code>boolean</code>; <code>tools</code>: <code>object</code>[]; }&gt;</p>
+<p><strong>fetchAiTools</strong>(): <code>Promise</code>\&lt;{ <code>enabled</code>: <code>boolean</code>; <code>model</code>: <code>string</code> | <code>null</code>; <code>tools</code>: <a href="../../../../api-shared/types/ai/type-aliases/AiToolSummary/"><code>AiToolSummary</code></a>[]; }&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/ai.ts#L69">ui/src/api-client/ai.ts:69</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/ai.ts#L73">ui/src/api-client/ai.ts:73</a></p>
 <p>Whether this deployment has AI wired up, plus what the assistant can do.</p>
 <p>Only a genuine "not configured" answer resolves to <code>enabled: false</code> — a
 transient fault (5xx, network drop) throws instead, so a caller can retry
 rather than have the assistant look permanently unavailable for a blip.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
-<p><code>Promise</code>\&lt;{ <code>enabled</code>: <code>boolean</code>; <code>tools</code>: <code>object</code>[]; }&gt;</p>
+<p><code>Promise</code>\&lt;{ <code>enabled</code>: <code>boolean</code>; <code>model</code>: <code>string</code> | <code>null</code>; <code>tools</code>: <a href="../../../../api-shared/types/ai/type-aliases/AiToolSummary/"><code>AiToolSummary</code></a>[]; }&gt;</p>
 
 
 

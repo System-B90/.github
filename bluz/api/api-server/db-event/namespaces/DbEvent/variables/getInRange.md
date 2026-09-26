@@ -8,7 +8,7 @@
 
 > `const` **getInRange**: (`startDate`, `endDate`, `options?`, `filter?`, `controller`) => `Promise`\<[`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md)[]\> = `getDbEventsInRange`
 
-Defined in: [ui/src/api-server/db-event.ts:313](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/db-event.ts#L313)
+Defined in: [ui/src/api-server/db-event.ts:313](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/db-event.ts#L313)
 
 ## Parameters
 

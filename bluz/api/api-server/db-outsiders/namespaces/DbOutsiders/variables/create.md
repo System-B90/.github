@@ -8,7 +8,7 @@
 
 > `const` **create**: (`outsider`, `controller`) => `Promise`\<[`Outsider`](../../../../../api-shared/types/outsider/type-aliases/Outsider.md)\> = `createDbOutsider`
 
-Defined in: [ui/src/api-server/db-outsiders.ts:84](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/db-outsiders.ts#L84)
+Defined in: [ui/src/api-server/db-outsiders.ts:86](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/db-outsiders.ts#L86)
 
 ## Parameters
 

@@ -8,7 +8,7 @@
 
 > **AiChatResult** = `object`
 
-Defined in: [ui/src/api-shared/types/ai.ts:94](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L94)
+Defined in: [ui/src/api-shared/types/ai.ts:127](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L127)
 
 Non-streaming result. The streaming route is the default path, but the
 provider interface also answers in one shot for server-side callers (jobs,
@@ -20,7 +20,7 @@ CLI) that have nothing to stream to.
 
 > **content**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:95](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L95)
+Defined in: [ui/src/api-shared/types/ai.ts:128](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L128)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:95](https://github.com/System-B90/Blu
 
 > `optional` **finishReason?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:100](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L100)
+Defined in: [ui/src/api-shared/types/ai.ts:133](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L133)
 
 Why generation ended — e.g. `stop`, `tool_calls`, `length`.
 
@@ -38,7 +38,7 @@ Why generation ended — e.g. `stop`, `tool_calls`, `length`.
 
 > **model**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:97](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L97)
+Defined in: [ui/src/api-shared/types/ai.ts:130](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L130)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:97](https://github.com/System-B90/Blu
 
 > `optional` **toolCalls?**: [`AiToolCall`](AiToolCall.md)[]
 
-Defined in: [ui/src/api-shared/types/ai.ts:96](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L96)
+Defined in: [ui/src/api-shared/types/ai.ts:129](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L129)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [ui/src/api-shared/types/ai.ts:96](https://github.com/System-B90/Blu
 
 > `optional` **usage?**: [`AiUsage`](AiUsage.md)
 
-Defined in: [ui/src/api-shared/types/ai.ts:98](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/ai.ts#L98)
+Defined in: [ui/src/api-shared/types/ai.ts:131](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai.ts#L131)

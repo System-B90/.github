@@ -8,7 +8,7 @@
 
 > **AiAgentRunOptions** = `object`
 
-Defined in: [ui/src/api-server/ai/agent.ts:34](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L34)
+Defined in: [ui/src/api-server/ai/agent.ts:54](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L54)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/agent.ts:34](https://github.com/System-B90/Blu
 
 > **approvedToolCallIds**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/api-server/ai/agent.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L40)
+Defined in: [ui/src/api-server/ai/agent.ts:60](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L60)
 
 Tool call ids the human approved for this turn.
 
@@ -26,7 +26,7 @@ Tool call ids the human approved for this turn.
 
 > **context**: [`AiToolContext`](../../tools/types/type-aliases/AiToolContext.md)
 
-Defined in: [ui/src/api-server/ai/agent.ts:38](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L38)
+Defined in: [ui/src/api-server/ai/agent.ts:58](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L58)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-server/ai/agent.ts:38](https://github.com/System-B90/Blu
 
 > **messages**: [`AiMessage`](../../../../api-shared/types/ai/type-aliases/AiMessage.md)[]
 
-Defined in: [ui/src/api-server/ai/agent.ts:37](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L37)
+Defined in: [ui/src/api-server/ai/agent.ts:57](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L57)
 
 Transcript so far, excluding the system prompt.
 
@@ -44,7 +44,7 @@ Transcript so far, excluding the system prompt.
 
 > `optional` **model?**: `string`
 
-Defined in: [ui/src/api-server/ai/agent.ts:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L41)
+Defined in: [ui/src/api-server/ai/agent.ts:63](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L63)
 
 ***
 
@@ -52,7 +52,17 @@ Defined in: [ui/src/api-server/ai/agent.ts:41](https://github.com/System-B90/Blu
 
 > **provider**: [`AiProvider`](../../provider/type-aliases/AiProvider.md)
 
-Defined in: [ui/src/api-server/ai/agent.ts:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L35)
+Defined in: [ui/src/api-server/ai/agent.ts:55](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L55)
+
+***
+
+### registry?
+
+> `optional` **registry?**: [`AiToolRegistry`](../../tools/type-aliases/AiToolRegistry.md)
+
+Defined in: [ui/src/api-server/ai/agent.ts:62](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L62)
+
+Defaults to the live registry; the self-test passes fixture tools.
 
 ***
 
@@ -60,4 +70,4 @@ Defined in: [ui/src/api-server/ai/agent.ts:35](https://github.com/System-B90/Blu
 
 > `optional` **signal?**: `AbortSignal`
 
-Defined in: [ui/src/api-server/ai/agent.ts:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/agent.ts#L42)
+Defined in: [ui/src/api-server/ai/agent.ts:64](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/agent.ts#L64)

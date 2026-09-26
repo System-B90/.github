@@ -13,3 +13,4 @@
 ## Functions
 
 - [fetchCurriculumExecution](functions/fetchCurriculumExecution.md)
+- [recreateExecutionOccurrence](functions/recreateExecutionOccurrence.md)

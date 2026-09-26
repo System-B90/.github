@@ -6,11 +6,12 @@
 
 # Class: HiveClient
 
-Defined in: [ui/src/api-server/hive/client.ts:39](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L39)
+Defined in: [ui/src/api-server/hive/client.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/hive/client.ts#L17)
 
 Bluz's Hive client: the request core (token refresh, 401 retry, 500
-backoff, cookie-auth fetch, users/classes) lives in
-`@system-b90/hive-core`; this subclass adds the scheduling endpoints.
+backoff, network-error classification, users/classes, lessons and lesson
+rules, subjects, modules) lives in `@system-b90/hive-core`; this subclass
+adds rooms and the student-group/module-queue shortcuts.
 
 ## Extends
 
@@ -22,7 +23,7 @@ backoff, cookie-auth fetch, users/classes) lives in
 
 > **new HiveClient**(`accessToken`, `refreshToken?`, `hiveBaseUrl?`): `HiveClient`
 
-Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:15
+Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:173
 
 #### Parameters
 
@@ -48,91 +49,11 @@ Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:15
 
 ## Methods
 
-### createLesson()
-
-> **createLesson**(`data`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-Defined in: [ui/src/api-server/hive/client.ts:89](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L89)
-
-#### Parameters
-
-##### data
-
-`LessonRequest`
-
-#### Returns
-
-`Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-***
-
-### createLessonRule()
-
-> **createLessonRule**(`parentId`, `data`): `Promise`\<`LessonRule`\>
-
-Defined in: [ui/src/api-server/hive/client.ts:145](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L145)
-
-#### Parameters
-
-##### parentId
-
-`number`
-
-##### data
-
-`LessonRuleRequest`
-
-#### Returns
-
-`Promise`\<`LessonRule`\>
-
-***
-
-### deleteLesson()
-
-> **deleteLesson**(`id`): `Promise`\<`void`\>
-
-Defined in: [ui/src/api-server/hive/client.ts:116](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L116)
-
-#### Parameters
-
-##### id
-
-`number`
-
-#### Returns
-
-`Promise`\<`void`\>
-
-***
-
-### deleteLessonRule()
-
-> **deleteLessonRule**(`parentId`, `id`): `Promise`\<`void`\>
-
-Defined in: [ui/src/api-server/hive/client.ts:177](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L177)
-
-#### Parameters
-
-##### parentId
-
-`number`
-
-##### id
-
-`number`
-
-#### Returns
-
-`Promise`\<`void`\>
-
-***
-
 ### getClasses()
 
 > **getClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L40)
+Defined in: [ui/src/api-server/hive/client.ts:18](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/hive/client.ts#L18)
 
 All Hive classes; pass a `type` to filter (e.g. Student Group / Room).
 
@@ -146,87 +67,11 @@ All Hive classes; pass a `type` to filter (e.g. Student Group / Room).
 
 ***
 
-### getLesson()
-
-> **getLesson**(`id`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-Defined in: [ui/src/api-server/hive/client.ts:82](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L82)
-
-#### Parameters
-
-##### id
-
-`number`
-
-#### Returns
-
-`Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-***
-
-### getLessonRule()
-
-> **getLessonRule**(`parentId`, `id`): `Promise`\<`LessonRule`\>
-
-Defined in: [ui/src/api-server/hive/client.ts:138](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L138)
-
-#### Parameters
-
-##### parentId
-
-`number`
-
-##### id
-
-`number`
-
-#### Returns
-
-`Promise`\<`LessonRule`\>
-
-***
-
-### getLessonRules()
-
-> **getLessonRules**(`parentId`): `Promise`\<`LessonRule`[]\>
-
-Defined in: [ui/src/api-server/hive/client.ts:131](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L131)
-
-#### Parameters
-
-##### parentId
-
-`number`
-
-#### Returns
-
-`Promise`\<`LessonRule`[]\>
-
-***
-
-### getLessons()
-
-> **getLessons**(`params?`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)[]\>
-
-Defined in: [ui/src/api-server/hive/client.ts:74](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L74)
-
-#### Parameters
-
-##### params?
-
-`Record`\<`string`, `any`\>
-
-#### Returns
-
-`Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)[]\>
-
-***
-
 ### getModuleQueues()
 
 > **getModuleQueues**(`moduleId`): `Promise`\<`Queue`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:68](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L68)
+Defined in: [ui/src/api-server/hive/client.ts:34](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/hive/client.ts#L34)
 
 The queues of one Hive module — the only queues a lesson rule may point
 at (Hive rejects user queues on a rule).
@@ -243,154 +88,12 @@ at (Hive rejects user queues on a rule).
 
 ***
 
-### getModules()
-
-> **getModules**(): `Promise`\<[`Module`](../../../../api-shared/types/module/type-aliases/Module.md)[]\>
-
-Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L58)
-
-#### Returns
-
-`Promise`\<[`Module`](../../../../api-shared/types/module/type-aliases/Module.md)[]\>
-
-***
-
 ### getRooms()
 
 > **getRooms**(): `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L44)
+Defined in: [ui/src/api-server/hive/client.ts:22](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/hive/client.ts#L22)
 
 #### Returns
 
 `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
-
-***
-
-### getSubjects()
-
-> **getSubjects**(): `Promise`\<[`Subject`](../../../../api-shared/types/subject/type-aliases/Subject.md)[]\>
-
-Defined in: [ui/src/api-server/hive/client.ts:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L52)
-
-#### Returns
-
-`Promise`\<[`Subject`](../../../../api-shared/types/subject/type-aliases/Subject.md)[]\>
-
-***
-
-### patchLesson()
-
-> **patchLesson**(`id`, `data`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-Defined in: [ui/src/api-server/hive/client.ts:105](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L105)
-
-#### Parameters
-
-##### id
-
-`number`
-
-##### data
-
-`Partial`\<`LessonRequest`\>
-
-#### Returns
-
-`Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-***
-
-### patchLessonRule()
-
-> **patchLessonRule**(`parentId`, `id`, `data`): `Promise`\<`LessonRule`\>
-
-Defined in: [ui/src/api-server/hive/client.ts:165](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L165)
-
-#### Parameters
-
-##### parentId
-
-`number`
-
-##### id
-
-`number`
-
-##### data
-
-`Partial`\<`LessonRuleRequest`\>
-
-#### Returns
-
-`Promise`\<`LessonRule`\>
-
-***
-
-### setLessonForClass()
-
-> **setLessonForClass**(`classId`, `lessonId`): `Promise`\<`void`\>
-
-Defined in: [ui/src/api-server/hive/client.ts:123](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L123)
-
-#### Parameters
-
-##### classId
-
-`number`
-
-##### lessonId
-
-`number` \| `null`
-
-#### Returns
-
-`Promise`\<`void`\>
-
-***
-
-### updateLesson()
-
-> **updateLesson**(`id`, `data`): `Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-Defined in: [ui/src/api-server/hive/client.ts:97](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L97)
-
-#### Parameters
-
-##### id
-
-`number`
-
-##### data
-
-`LessonRequest`
-
-#### Returns
-
-`Promise`\<[`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)\>
-
-***
-
-### updateLessonRule()
-
-> **updateLessonRule**(`parentId`, `id`, `data`): `Promise`\<`LessonRule`\>
-
-Defined in: [ui/src/api-server/hive/client.ts:153](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/hive/client.ts#L153)
-
-#### Parameters
-
-##### parentId
-
-`number`
-
-##### id
-
-`number`
-
-##### data
-
-`LessonRuleRequest`
-
-#### Returns
-
-`Promise`\<`LessonRule`\>

@@ -8,16 +8,17 @@
 
 > `const` **ganttApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/index.ts:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/index.ts#L18)
+Defined in: [ui/src/api-client/gantt/index.ts:18](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/index.ts#L18)
 
 ## Type Declaration
 
 ### applyShuffles
 
-> `readonly` **applyShuffles**: (`syllabusId`, `shuffles`) => `Promise`\<[`ShuffleUsages`](../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\> = `apiApplyShuffles`
+> `readonly` **applyShuffles**: (`syllabusId`, `shuffles`, `descriptions?`) => `Promise`\<[`ShuffleUsages`](../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\> = `apiApplyShuffles`
 
 Replaces the syllabus' shuffle list, stripping every removed name off the
-modules and events that carry it. Returns what was stripped.
+modules and events that carry it. Returns what was stripped. Omitting
+`descriptions` keeps the surviving names' current descriptions.
 
 #### Parameters
 
@@ -28,6 +29,10 @@ modules and events that carry it. Returns what was stripped.
 ##### shuffles
 
 `string`[]
+
+##### descriptions?
+
+[`ShuffleDescriptions`](../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions.md)
 
 #### Returns
 
@@ -553,6 +558,32 @@ live cut events, used to toggle between the "cut" and "pull back" actions.
 
 > `readonly` **event**: `object` = `moduleEventApi`
 
+#### event.apiApplyShuffleGroup
+
+> **apiApplyShuffleGroup**: (`eventId`, `moduleId`, `shuffles`) => `Promise`\<\{ `members`: [`ModuleEventDocument`](../module-event/type-aliases/ModuleEventDocument.md)[]; `removedIds`: `string`[]; \}\>
+
+Reconciles the event's shuffle group so it covers exactly `shuffles`, one
+sibling event per name (#699). Returns the surviving members and the ids of
+members dropped because their shuffle is no longer part of the group.
+
+##### Parameters
+
+###### eventId
+
+`string`
+
+###### moduleId
+
+`string`
+
+###### shuffles
+
+`string`[]
+
+##### Returns
+
+`Promise`\<\{ `members`: [`ModuleEventDocument`](../module-event/type-aliases/ModuleEventDocument.md)[]; `removedIds`: `string`[]; \}\>
+
 #### event.apiCreate
 
 > `readonly` **apiCreate**: (`payload`, `options?`) => `Promise`\<`object` & [`BaseGantItem`](../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../base/type-aliases/BaseDocument.md)\>
@@ -805,6 +836,31 @@ cut into a schedule yet.
 ##### Returns
 
 `Promise`\<[`ApiCurriculumExecutionResponse`](../../../api-shared/types/gantt/execution/type-aliases/ApiCurriculumExecutionResponse.md)\>
+
+#### execution.recreateOccurrence
+
+> `readonly` **recreateOccurrence**: (`curriculumId`, `ganttEventId`, `occurrenceDate`) => `Promise`\<\{ `createdEvents`: `number`; \}\> = `recreateExecutionOccurrence`
+
+POST /api/gantt/curriculums/[id]/execution/recreate — re-create the schedule
+event for one deleted cut occurrence (#682).
+
+##### Parameters
+
+###### curriculumId
+
+`string`
+
+###### ganttEventId
+
+`string`
+
+###### occurrenceDate
+
+`string`
+
+##### Returns
+
+`Promise`\<\{ `createdEvents`: `number`; \}\>
 
 ### getShuffleUsages
 

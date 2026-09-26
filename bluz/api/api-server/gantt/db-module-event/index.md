@@ -9,3 +9,7 @@
 ## Variables
 
 - [DbModuleEvent](variables/DbModuleEvent.md)
+
+## Functions
+
+- [assignShuffleGroupMembers](functions/assignShuffleGroupMembers.md)

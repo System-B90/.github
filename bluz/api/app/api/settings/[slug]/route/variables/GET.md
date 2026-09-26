@@ -8,4 +8,4 @@
 
 > `const` **GET**: `ServerApiSettingGet`
 
-Defined in: [ui/src/app/api/settings/\[slug\]/route.ts:37](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/app/api/settings/[slug]/route.ts#L37)
+Defined in: [ui/src/app/api/settings/\[slug\]/route.ts:57](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/app/api/settings/[slug]/route.ts#L57)

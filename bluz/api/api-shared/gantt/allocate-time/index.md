@@ -11,7 +11,9 @@
 - [AllocateTimeToEventCallback](type-aliases/AllocateTimeToEventCallback.md)
 - [AllocateTimeToModuleCallbackModuleEvents](type-aliases/AllocateTimeToModuleCallbackModuleEvents.md)
 - [AllocateTimeToModuleProps](type-aliases/AllocateTimeToModuleProps.md)
+- [ModuleAllocation](type-aliases/ModuleAllocation.md)
 
 ## Functions
 
 - [allocateTimeToModule](functions/allocateTimeToModule.md)
+- [planModuleAllocation](functions/planModuleAllocation.md)

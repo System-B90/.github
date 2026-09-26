@@ -8,7 +8,7 @@
 
 > **getGoogleScopes**(): `string`[]
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:146](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/google/google-calendar-service.ts#L146)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:208](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/google/google-calendar-service.ts#L208)
 
 Scopes the browser-side GIS popup must request.
 

@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -673,7 +754,7 @@
 <blockquote>
 <p><strong>ApiCurriculumCutPayload</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L17">ui/src/api-shared/types/gantt/cut.ts:17</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/cut.ts#L17">ui/src/api-shared/types/gantt/cut.ts:17</a></p>
 <p>API contract for the curriculum → schedule cut ("גזירה ללו"ז", #118).
 The endpoint materializes a published curriculum's gantt data into schedule
 events in the linked iteration's MongoDB. All inputs are derived server-side
@@ -683,7 +764,7 @@ from the curriculum id, so the request carries no payload.</p>
 <blockquote>
 <p><code>optional</code> <strong>acceptedConstraintMoves?</strong>: <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L38">ui/src/api-shared/types/gantt/cut.ts:38</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/cut.ts#L38">ui/src/api-shared/types/gantt/cut.ts:38</a></p>
 <p>Event ids whose constraint-solver moves the user accepted in the dialog.
 Anything not listed is reported but never moved.</p>
 <hr />
@@ -691,7 +772,7 @@ Anything not listed is reported but never moved.</p>
 <blockquote>
 <p><code>optional</code> <strong>autoSpillover?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L28">ui/src/api-shared/types/gantt/cut.ts:28</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/cut.ts#L28">ui/src/api-shared/types/gantt/cut.ts:28</a></p>
 <p>Rebalance each week so no day exceeds its working window, cascading work
 forward within the week. Defaults to on.</p>
 <hr />
@@ -699,7 +780,7 @@ forward within the week. Defaults to on.</p>
 <blockquote>
 <p><code>optional</code> <strong>force?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L23">ui/src/api-shared/types/gantt/cut.ts:23</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/cut.ts#L23">ui/src/api-shared/types/gantt/cut.ts:23</a></p>
 <p>Cut anyway despite unmapped events / unsatisfied recurrences (an
 unfinished gantt). The user explicitly acknowledges the gap; those
 events are dropped from the cut instead of blocking it.</p>
@@ -708,7 +789,7 @@ events are dropped from the cut instead of blocking it.</p>
 <blockquote>
 <p><code>optional</code> <strong>insertBreaks?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L33">ui/src/api-shared/types/gantt/cut.ts:33</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/cut.ts#L33">ui/src/api-shared/types/gantt/cut.ts:33</a></p>
 <p>Spread each day's leftover slack through the day as real הפסקה events
 instead of leaving it as an empty tail. Defaults to on.</p>
 <hr />
@@ -716,7 +797,7 @@ instead of leaving it as an empty tail. Defaults to on.</p>
 <blockquote>
 <p><code>optional</code> <strong>weekOverflowResolutions?</strong>: <code>Record</code>\&lt;<code>string</code>, <a href="../../../../../gantt/cut-rules/type-aliases/WeekOverflowResolution/"><code>WeekOverflowResolution</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/cut.ts#L43">ui/src/api-shared/types/gantt/cut.ts:43</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/cut.ts#L43">ui/src/api-shared/types/gantt/cut.ts:43</a></p>
 <p>The user's answer to each <code>week-overflow</code> decision, keyed by week id.
 Weeks left out fall back to <code>OVERFLOW_RULES.defaultResolution</code>.</p>
 

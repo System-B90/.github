@@ -6,6 +6,10 @@
 
 # api-server/ai/tools/types
 
+## Enumerations
+
+- [AiToolErrorKind](enumerations/AiToolErrorKind.md)
+
 ## Type Aliases
 
 - [AiTool](type-aliases/AiTool.md)

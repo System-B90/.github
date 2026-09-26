@@ -9,4 +9,9 @@
 ## Type Aliases
 
 - [GanttModule](type-aliases/GanttModule.md)
-- [GanttModuleId](type-aliases/GanttModuleId.md)
+
+## References
+
+### GanttModuleId
+
+Re-exports [GanttModuleId](../shared/type-aliases/GanttModuleId.md)

@@ -8,7 +8,7 @@
 
 > **useCalendarHandlers**(`events`, `handleSaveEvent`, `handleDeleteEvent`, `setSelectedEvent`, `setOpenEventDialog`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:69](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L69)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:39](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L39)
 
 Custom React hook to manage calendar event logic, user interactions (e.g. drag & drop, select, click),
 and keyboard shortcuts (copy, paste, delete).
@@ -23,7 +23,7 @@ The current list of calendar events.
 
 ### handleSaveEvent
 
-(`event`, `initiator?`) => `void`
+(`event`, `initiator?`) => `void` \| [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md) \| `undefined`
 
 Callback when saving an event.
 

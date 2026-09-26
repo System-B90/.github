@@ -8,10 +8,15 @@
 
 > **GoogleCalendarLink** = `object`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:5](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L5)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:12](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L12)
 
 Per-user OAuth link to Google Calendar. Stored server-side only — never sent
 to the client as-is (see [GoogleCalendarStatus](GoogleCalendarStatus.md)).
+
+Several users may point their links at the *same* Google calendar (one
+shared by its owner with the rest of the staff). The sync fan-out groups
+links by `calendarId` so a shared calendar receives each event once, and
+the link's `iterationId` pins which Bluz iteration that calendar mirrors.
 
 ## Properties
 
@@ -19,9 +24,19 @@ to the client as-is (see [GoogleCalendarStatus](GoogleCalendarStatus.md)).
 
 > **accessToken**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:8](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L8)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L15)
 
 AES-GCM sealed (see api-server/secret-box.ts) — never stored in plaintext.
+
+***
+
+### calendarAccessRole?
+
+> `optional` **calendarAccessRole?**: [`GoogleCalendarAccessRole`](GoogleCalendarAccessRole.md)
+
+Defined in: [ui/src/api-shared/types/google-calendar.ts:25](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L25)
+
+The user's Calendar API access role on it (`owner` / `writer`).
 
 ***
 
@@ -29,9 +44,19 @@ AES-GCM sealed (see api-server/secret-box.ts) — never stored in plaintext.
 
 > **calendarId**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L14)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:21](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L21)
 
-Dedicated calendar Bluz created in the user's Google account to mirror their events.
+Google calendar this link mirrors into — Bluz-created, or one shared with the user.
+
+***
+
+### calendarSummary?
+
+> `optional` **calendarSummary?**: `string`
+
+Defined in: [ui/src/api-shared/types/google-calendar.ts:23](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L23)
+
+Display name of that calendar at link time (cosmetic; Google is the source of truth).
 
 ***
 
@@ -39,7 +64,7 @@ Dedicated calendar Bluz created in the user's Google account to mirror their eve
 
 > **connectedAt**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L17)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:35](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L35)
 
 ***
 
@@ -47,9 +72,22 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:17](https://github.com/S
 
 > **expiryDate**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L12)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:19](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L19)
 
 Epoch ms when `accessToken` expires.
+
+***
+
+### iterationId?
+
+> `optional` **iterationId?**: [`IterationId`](../../iteration/type-aliases/IterationId.md)
+
+Defined in: [ui/src/api-shared/types/google-calendar.ts:32](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L32)
+
+Bluz iteration this calendar mirrors. Events of any other iteration are
+never pushed here, and a pulled-back edit resolves against this one.
+Links made before this field existed have none and fall back to the
+current iteration.
 
 ***
 
@@ -57,7 +95,7 @@ Epoch ms when `accessToken` expires.
 
 > **refreshToken**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:10](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L10)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L17)
 
 AES-GCM sealed (see api-server/secret-box.ts) — never stored in plaintext.
 
@@ -67,7 +105,7 @@ AES-GCM sealed (see api-server/secret-box.ts) — never stored in plaintext.
 
 > `optional` **syncToken?**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L16)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:34](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L34)
 
 Incremental sync cursor for pulling changes back from Google (nextSyncToken).
 
@@ -77,4 +115,4 @@ Incremental sync cursor for pulling changes back from Google (nextSyncToken).
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:6](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/google-calendar.ts#L6)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L13)

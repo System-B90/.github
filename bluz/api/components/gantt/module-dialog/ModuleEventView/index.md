@@ -9,3 +9,4 @@
 ## Functions
 
 - [ModuleEventView](functions/ModuleEventView.md)
+- [ShuffleChips](functions/ShuffleChips.md)

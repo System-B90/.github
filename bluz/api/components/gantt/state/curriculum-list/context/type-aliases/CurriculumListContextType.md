@@ -8,7 +8,7 @@
 
 > **CurriculumListContextType** = `object`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L11)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:11](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L11)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:11](https:
 
 > **currentCurriculum**: [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:18](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L18)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:18](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L18)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:18](https:
 
 > **curriculums**: `Record`\<[`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md), [`GanttCurriculumDocument`](../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md)\>
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:13](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L13)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L13)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:13](https:
 
 > **dispatch**: `Dispatch`\<[`CurriculumListAction`](../../types/type-aliases/CurriculumListAction.md)\>
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:27](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L27)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:27](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L27)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:27](https:
 
 > **error**: `null` \| `string`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L15)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L15)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:15](https:
 
 > **groups**: [`CurriculumGroups`](../../types/type-aliases/CurriculumGroups.md)
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L16)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L16)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:16](https:
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:14](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L14)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:14](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L14)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:14](https:
 
 > **onCreate**: (`newCurriculum`) => `void`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:20](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L20)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:20](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L20)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:20](https:
 
 > **onDelete**: (`deletedCurriculumId`) => `void`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:21](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L21)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:21](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L21)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:21](https:
 
 > **refreshCurriculums**: () => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:26](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L26)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:26](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L26)
 
 #### Returns
 
@@ -112,7 +112,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:26](https:
 
 > **setCurrentCurriculum**: `Dispatch`\<`SetStateAction`\<[`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`\>\>
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:19](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L19)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:19](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L19)
 
 ***
 
@@ -120,7 +120,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:19](https:
 
 > **sortedIds**: [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)[]
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L17)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L17)
 
 ***
 
@@ -128,7 +128,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:17](https:
 
 > **state**: [`CurriculumListState`](../../types/type-aliases/CurriculumListState.md)
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:12](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L12)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:12](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L12)
 
 ***
 
@@ -136,7 +136,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:12](https:
 
 > **updateCurriculum**: (`id`, `updates`) => `void`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:22](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/gantt/state/curriculum-list/context.ts#L22)
+Defined in: [ui/src/components/gantt/state/curriculum-list/context.ts:22](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/state/curriculum-list/context.ts#L22)
 
 #### Parameters
 

@@ -40,7 +40,7 @@ Re-exports [iconBadgeSx](styles/functions/iconBadgeSx.md)
 
 ### settingsCardSx
 
-Re-exports [settingsCardSx](styles/variables/settingsCardSx.md)
+Re-exports [settingsCardSx](styles/functions/settingsCardSx.md)
 
 ***
 

@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -587,6 +668,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#courseids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        courseIds?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#hiveids" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -598,10 +701,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#leadinstructorids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        leadInstructorIds?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#modules" class="md-nav__link">
     <span class="md-ellipsis">
       
         modules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuffledescriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shuffleDescriptions?
       
     </span>
   </a>
@@ -662,16 +787,37 @@
 <blockquote>
 <p><strong>GanttSyllabus</strong> = <code>object</code> &amp; <a href="../../../shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/syllabus.ts#L4">ui/src/api-shared/types/gantt/models/syllabus.ts:4</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/syllabus.ts#L6">ui/src/api-shared/types/gantt/models/syllabus.ts:6</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
+<h3 id="courseids">courseIds?<a class="headerlink" href="#courseids" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>courseIds?</strong>: <a href="../../../../../course/type-aliases/CourseId/"><code>CourseId</code></a>[]</p>
+</blockquote>
+<p>Courses (מסלולים) this syllabus belongs to.</p>
+<h3 id="description">description?<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>description?</strong>: <code>string</code></p>
+</blockquote>
+<p>Free text describing the syllabus, edited in the syllabus dialog.</p>
 <h3 id="hiveids">hiveIds<a class="headerlink" href="#hiveids" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>hiveIds</strong>: <code>number</code>[]</p>
 </blockquote>
+<h3 id="leadinstructorids">leadInstructorIds?<a class="headerlink" href="#leadinstructorids" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>leadInstructorIds?</strong>: <code>number</code>[]</p>
+</blockquote>
+<p>Hive ids of the אחראי מקצוע instructors.</p>
 <h3 id="modules">modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>modules</strong>: <a href="../../../module/type-aliases/GanttModuleId/"><code>GanttModuleId</code></a>[]</p>
+<p><strong>modules</strong>: <a href="../../../shared/type-aliases/GanttModuleId/"><code>GanttModuleId</code></a>[]</p>
 </blockquote>
+<h3 id="shuffledescriptions">shuffleDescriptions?<a class="headerlink" href="#shuffledescriptions" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shuffleDescriptions?</strong>: <a href="../../../../../../gantt/shuffle-names/type-aliases/ShuffleDescriptions/"><code>ShuffleDescriptions</code></a></p>
+</blockquote>
+<p>Shuffle name → description. A shuffle is a Hive student group, and this
+mirrors that group's staff-only description (max 100 chars).</p>
 <h3 id="shuffles">shuffles?<a class="headerlink" href="#shuffles" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>shuffles?</strong>: <code>string</code>[]</p>

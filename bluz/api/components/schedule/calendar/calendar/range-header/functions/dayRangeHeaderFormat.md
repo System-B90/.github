@@ -8,7 +8,7 @@
 
 > **dayRangeHeaderFormat**(`__namedParameters`): `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/range-header.ts:11](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/schedule/calendar/calendar/range-header.ts#L11)
+Defined in: [ui/src/components/schedule/calendar/calendar/range-header.ts:11](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/calendar/range-header.ts#L11)
 
 The calendar's week/day range header, e.g. `05 - 11 בספטמבר 2026`.
 

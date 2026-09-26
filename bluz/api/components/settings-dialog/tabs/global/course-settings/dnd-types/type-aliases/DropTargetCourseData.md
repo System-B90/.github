@@ -8,7 +8,7 @@
 
 > **DropTargetCourseData** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:15](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L15)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-t
 
 > **targetCourseId**: [`CourseId`](../../../../../../../api-shared/types/course/type-aliases/CourseId.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:17](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L17)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L17)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-t
 
 > **type**: `"COURSE_DROP"`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:16](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L16)

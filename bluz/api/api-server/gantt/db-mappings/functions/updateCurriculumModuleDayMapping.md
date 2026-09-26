@@ -8,7 +8,7 @@
 
 > **updateCurriculumModuleDayMapping**(`curriculumId`, `moduleId`, `eventId`, `oldMapping`, `newValues`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-mappings.ts:109](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/db-mappings.ts#L109)
+Defined in: [ui/src/api-server/gantt/db-mappings.ts:109](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/db-mappings.ts#L109)
 
 Updates an existing mapping (e.g., moving a module to a different day/week).
 Uses the composite primary key fields for identification.

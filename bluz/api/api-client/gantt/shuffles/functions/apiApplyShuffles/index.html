@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -608,6 +689,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        descriptions?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -649,16 +741,19 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-client/gantt/shuffles</a> / apiApplyShuffles</p>
 <h1 id="function-apiapplyshuffles">Function: apiApplyShuffles()<a class="headerlink" href="#function-apiapplyshuffles" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>apiApplyShuffles</strong>(<code>syllabusId</code>, <code>shuffles</code>): <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
+<p><strong>apiApplyShuffles</strong>(<code>syllabusId</code>, <code>shuffles</code>, <code>descriptions?</code>): <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-client/gantt/shuffles.ts#L25">ui/src/api-client/gantt/shuffles.ts:25</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/shuffles.ts#L27">ui/src/api-client/gantt/shuffles.ts:27</a></p>
 <p>Replaces the syllabus' shuffle list, stripping every removed name off the
-modules and events that carry it. Returns what was stripped.</p>
+modules and events that carry it. Returns what was stripped. Omitting
+<code>descriptions</code> keeps the surviving names' current descriptions.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="syllabusid">syllabusId<a class="headerlink" href="#syllabusid" title="Permanent link">&para;</a></h3>
 <p><code>string</code></p>
 <h3 id="shuffles">shuffles<a class="headerlink" href="#shuffles" title="Permanent link">&para;</a></h3>
 <p><code>string</code>[]</p>
+<h3 id="descriptions">descriptions?<a class="headerlink" href="#descriptions" title="Permanent link">&para;</a></h3>
+<p><a href="../../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions/"><code>ShuffleDescriptions</code></a></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<a href="../../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
 

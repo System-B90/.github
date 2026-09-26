@@ -8,9 +8,13 @@
 
 > **outsiderValuesToPayload**(`values`): `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L52)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:58](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L58)
 
-Maps the form values onto the API payload, trimming and dropping blanks.
+Maps the form values onto the API payload, trimming blanks to `null`.
+
+`null` rather than `undefined` on purpose: the server applies the payload
+as a plain `$set`, and `JSON.stringify` drops `undefined` keys entirely, so
+a field the user cleared would silently keep its old value on the server.
 
 ## Parameters
 
@@ -24,11 +28,11 @@ Maps the form values onto the API payload, trimming and dropping blanks.
 
 ### comment
 
-> **comment**: `string` \| `undefined`
+> **comment**: `string` \| `null`
 
 ### idNumber
 
-> **idNumber**: `string` \| `undefined`
+> **idNumber**: `string` \| `null`
 
 ### name
 
@@ -36,7 +40,7 @@ Maps the form values onto the API payload, trimming and dropping blanks.
 
 ### personalNumber
 
-> **personalNumber**: `string` \| `undefined`
+> **personalNumber**: `string` \| `null`
 
 ### phone
 
@@ -44,4 +48,4 @@ Maps the form values onto the API payload, trimming and dropping blanks.
 
 ### releaseDate
 
-> **releaseDate**: `string` \| `undefined`
+> **releaseDate**: `string` \| `null`

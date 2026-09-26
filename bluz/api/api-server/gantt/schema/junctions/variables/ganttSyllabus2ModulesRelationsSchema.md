@@ -8,6 +8,6 @@
 
 > `const` **ganttSyllabus2ModulesRelationsSchema**: `Relations`\<`"s2m"`, \{ `module`: `One`\<`"m"`, `true`\>; `syllabus`: `One`\<`"s"`, `true`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/junctions.ts:74](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/gantt/schema/junctions.ts#L74)
+Defined in: [ui/src/api-server/gantt/schema/junctions.ts:74](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/schema/junctions.ts#L74)
 
 Relations definition for the Syllabus to Modules junction schema.

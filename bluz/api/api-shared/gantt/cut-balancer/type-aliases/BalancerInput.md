@@ -8,7 +8,7 @@
 
 > **BalancerInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:51](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-balancer.ts#L51)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:51](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-balancer.ts#L51)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:51](https://github.com/Syst
 
 > **days**: `Record`\<`string`, [`BalancerDay`](BalancerDay.md)\>
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:53](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-balancer.ts#L53)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:53](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-balancer.ts#L53)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:53](https://github.com/Syst
 
 > **slotsByDay**: `Map`\<`string`, [`BalancerSlot`](BalancerSlot.md)[]\>
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:55](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-balancer.ts#L55)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:55](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-balancer.ts#L55)
 
 Slots keyed by the day they are currently mapped to.
 
@@ -34,4 +34,4 @@ Slots keyed by the day they are currently mapped to.
 
 > **weeks**: [`BalancerWeek`](BalancerWeek.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:52](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/gantt/cut-balancer.ts#L52)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:52](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/cut-balancer.ts#L52)

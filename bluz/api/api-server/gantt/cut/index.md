@@ -14,6 +14,7 @@
 - [CutOutcome](type-aliases/CutOutcome.md)
 - [MaterializationOutcome](type-aliases/MaterializationOutcome.md)
 - [PullBackOutcome](type-aliases/PullBackOutcome.md)
+- [RecreateOccurrenceOutcome](type-aliases/RecreateOccurrenceOutcome.md)
 
 ## Functions
 
@@ -31,5 +32,6 @@
 - [prayerWindowsFromSettings](functions/prayerWindowsFromSettings.md)
 - [previewCurriculumCut](functions/previewCurriculumCut.md)
 - [pullBackCutSchedule](functions/pullBackCutSchedule.md)
+- [recreateExecutionOccurrence](functions/recreateExecutionOccurrence.md)
 - [scheduleEventTypeFor](functions/scheduleEventTypeFor.md)
 - [toGanttConstraints](functions/toGanttConstraints.md)

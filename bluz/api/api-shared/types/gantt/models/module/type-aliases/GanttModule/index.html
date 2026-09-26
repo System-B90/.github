@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -598,6 +679,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#defaultorchestratorid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        defaultOrchestratorId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -684,19 +776,26 @@
 <blockquote>
 <p><strong>GanttModule</strong> = <code>object</code> &amp; <a href="../../../shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/module.ts#L5">ui/src/api-shared/types/gantt/models/module.ts:5</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/module.ts#L9">ui/src/api-shared/types/gantt/models/module.ts:9</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="constraints">constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>constraints</strong>: <a href="../../../constraint/type-aliases/GanttConstraint/"><code>GanttConstraint</code></a>[]</p>
 </blockquote>
+<h3 id="defaultorchestratorid">defaultOrchestratorId<a class="headerlink" href="#defaultorchestratorid" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>defaultOrchestratorId</strong>: <code>null</code> | <code>number</code></p>
+</blockquote>
+<p>Hive id of the instructor new events in this module are pre-filled
+with as their orchestrator; null for no default. Existing events are
+left untouched when this changes.</p>
 <h3 id="description">description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>description</strong>: <code>string</code></p>
 </blockquote>
 <h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>events</strong>: <a href="../../../event/type-aliases/GanttEventId/"><code>GanttEventId</code></a>[]</p>
+<p><strong>events</strong>: <a href="../../../shared/type-aliases/GanttEventId/"><code>GanttEventId</code></a>[]</p>
 </blockquote>
 <h3 id="hiveids">hiveIds<a class="headerlink" href="#hiveids" title="Permanent link">&para;</a></h3>
 <blockquote>

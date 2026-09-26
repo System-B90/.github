@@ -8,12 +8,14 @@
 
 ## Enumerations
 
+- [AiApprovalState](enumerations/AiApprovalState.md)
 - [AiTimelineKind](enumerations/AiTimelineKind.md)
+- [AiToolState](enumerations/AiToolState.md)
 
 ## Type Aliases
 
 - [AiChatScope](type-aliases/AiChatScope.md)
-- [AiPendingApproval](type-aliases/AiPendingApproval.md)
+- [AiChatStats](type-aliases/AiChatStats.md)
 - [AiTimelineItem](type-aliases/AiTimelineItem.md)
 
 ## Functions

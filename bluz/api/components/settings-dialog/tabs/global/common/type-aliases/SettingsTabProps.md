@@ -8,7 +8,7 @@
 
 > **SettingsTabProps**\<`TEntity`, `FormCardProps`, `ListCardProps`\> = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:35](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L35)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:35](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L35)
 
 ## Type Parameters
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:35](
 
 > **FormCard**: [`FormCard`](FormCard.md)\<`TEntity`, `FormCardProps`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:41](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L41)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:41](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L41)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:41](
 
 > **formCardProps**: `FormCardProps`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:44](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L44)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:44](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L44)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:44](
 
 > **ListCard**: [`ListCard`](ListCard.md)\<`TEntity`, `ListCardProps`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:40](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L40)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:40](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L40)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:40](
 
 > **listCardProps**: `ListCardProps`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:43](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L43)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:43](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L43)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:43](
 
 > **selectedEntity**: `null` \| `TEntity`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:42](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L42)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/index.tsx:42](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/settings-dialog/tabs/global/common/index.tsx#L42)

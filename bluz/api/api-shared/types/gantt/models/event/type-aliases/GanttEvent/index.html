@@ -339,6 +339,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../performance-and-scaling/" class="md-nav__link">
         
   
@@ -428,6 +482,33 @@
     
   
     Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../bug-hunt-2026-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Hunt 2026-09
   
 
     
@@ -613,6 +694,17 @@
     <span class="md-ellipsis">
       
         constraints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groupId
       
     </span>
   </a>
@@ -838,7 +930,7 @@
 <blockquote>
 <p><strong>GanttEvent</strong> = <code>object</code> &amp; <a href="../../../shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-shared/types/gantt/models/event.ts#L25">ui/src/api-shared/types/gantt/models/event.ts:25</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/gantt/models/event.ts#L28">ui/src/api-shared/types/gantt/models/event.ts:28</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="allocatedduration">allocatedDuration<a class="headerlink" href="#allocatedduration" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -852,9 +944,19 @@
 <blockquote>
 <p><strong>constraints</strong>: <a href="../../../constraint/type-aliases/GanttConstraint/"><code>GanttConstraint</code></a>[]</p>
 </blockquote>
+<h3 id="groupid">groupId<a class="headerlink" href="#groupid" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>groupId</strong>: <code>null</code> | <code>string</code></p>
+</blockquote>
+<p>Shuffle group this event belongs to, or null when it stands alone.</p>
+<p>The same lesson given to different shuffles at different times is stored
+as one event per shuffle - separate rows, so each can be placed, cut and
+linked to Hive independently - tied together by a shared <code>groupId</code>. The
+group is what lets the UI show them as one row and lets time totals count
+the longest member once instead of summing every member (#699).</p>
 <h3 id="hivelessonid">hiveLessonId<a class="headerlink" href="#hivelessonid" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>hiveLessonId</strong>: <code>null</code> | <code>number</code></p>
+<p><strong>hiveLessonId</strong>: <a href="../../../../../hive/type-aliases/HiveLessonId/"><code>HiveLessonId</code></a> | <code>null</code></p>
 </blockquote>
 <p>Hive lesson id; null when unlinked.</p>
 <h3 id="hivemoduleid">hiveModuleId<a class="headerlink" href="#hivemoduleid" title="Permanent link">&para;</a></h3>

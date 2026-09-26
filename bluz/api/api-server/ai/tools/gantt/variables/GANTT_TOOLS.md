@@ -8,4 +8,4 @@
 
 > `const` **GANTT\_TOOLS**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`any`\>[]
 
-Defined in: [ui/src/api-server/ai/tools/gantt.ts:163](https://github.com/System-B90/Bluz/blob/f13390751945b58bf7813b0aca9fcb12d9e18cf5/ui/src/api-server/ai/tools/gantt.ts#L163)
+Defined in: [ui/src/api-server/ai/tools/gantt.ts:189](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/gantt.ts#L189)
