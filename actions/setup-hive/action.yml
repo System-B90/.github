@@ -151,6 +151,17 @@ outputs:
 runs:
   using: composite
   steps:
+    # The shared-hive runners talk to the host's Docker daemon, where the
+    # persistent Hive lives under the same hive-* container names. The cleanup
+    # below would delete it. Jobs there use actions/shared-hive-acquire instead.
+    - name: Refuse to run beside the persistent shared Hive
+      shell: bash
+      run: |
+        if [ -f "$HOME/hive-shared/state/dbname" ]; then
+          echo "::error::${RUNNER_NAME} hosts the persistent shared Hive; setup-hive would destroy it. Use actions/shared-hive-acquire/-release here, or target runs-on: [self-hosted, dind]."
+          exit 1
+        fi
+
     # A self-hosted runner is a persistent box that other repos' jobs share.
     # A crashed or cancelled run leaves its Hive stack (and the consumer app's
     # containers) running, which then fights the next run for ports 80/443 and

@@ -125,7 +125,7 @@ Judge by cost and frequency, not by rule. If a job is minutes long, runs on
 every push, or fans out into a matrix of heavy legs, it goes self-hosted.
 
 The runner is **not** a single serialized agent. It's an autoscaled pool of
-ephemeral docker-in-docker runners (`mks-srvu-dind-<random>`, one per job, each
+ephemeral docker-in-docker runners (label `dind`; `mks-srvu-dind-<random>`, one per job, each
 with its own Docker daemon) sharing one 8-vCPU / 23 GB physical box. Observed
 directly on 2026-07-24: runner ids 141 and 143 executing two pyhive jobs while
 peek-a-boo's E2E ran alongside them.
@@ -172,6 +172,27 @@ downstream of the real constraint.
 `runner.environment`, so their GitHub-hosted-only behaviour (toolchain disk
 purge, `playwright install --with-deps`) switches off automatically on
 self-hosted. Override with their `free-disk-space` / `with-deps` inputs.
+
+### Shared persistent Hive (`shared-hive` runners)
+
+`mks90-laptop-wsl`, `-02` and `-03` (label `shared-hive`) run as the dedicated
+`hive-ci` user (systemd services) on one WSL host and share its Docker daemon.
+A persistent Hive lives there under `/home/hive-ci/hive-shared` (compose
+project `hive`, network `hive_hive-net`, `https://hive.org`, `admin`/`api` with
+password `Password1`). It is for **small, non-destructive** e2e verifications:
+
+- `actions/shared-hive-acquire` — waits on a host `flock` (one job at a time
+  across all three runners), resets Hive to its baseline, and cancels the run if
+  it still holds the instance after `max-minutes` (default **25**). Needs
+  `permissions: actions: write`. Do builds/installs *before* it.
+- `actions/shared-hive-release` — `if: always()` last step: resets and unlocks.
+- Reset = Postgres `CREATE DATABASE ... TEMPLATE hive_ci_baseline` + Redis
+  flush (~20s). Media/course files are **not** reset.
+- New Hive images / broken baseline: run acquire with `rebuild: true` and a
+  `stack-token`, or on the host `hive-shared.sh bootstrap <hive-stack-dir>`.
+  Root host setup is `actions/shared-hive/host-setup.sh`.
+- These runners are **not** `dind`: `setup-hive` refuses to run there because
+  its cleanup would delete the shared instance.
 
 Bluz's `e2e.yml` keeps a `workflow_dispatch` escape hatch
 (`target: github-hosted`) that runs the classic 3-shard matrix. Use it only if

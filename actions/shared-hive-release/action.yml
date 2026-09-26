@@ -1,0 +1,35 @@
+name: Release shared Hive
+description: >-
+  Resets the persistent Hive instance to its baseline and gives up the lock
+  taken by actions/shared-hive-acquire. Call it with `if: always()` as the last
+  step of the job.
+
+  Composite actions cannot register post-job steps, which is why this is a
+  separate action. If it never runs (runner crash), nothing is wedged: the
+  runner kills the lock-holder at job end, and the next acquirer resets the
+  instance before using it.
+
+  Never fails the job — cleanup must not turn a green run red.
+
+runs:
+  using: composite
+  steps:
+    - name: Reset the shared Hive and release it
+      if: always()
+      shell: bash
+      env:
+        HIVE_SHARED: ${{ github.action_path }}/../shared-hive/hive-shared.sh
+      run: |
+        set +e
+        state="$HOME/hive-shared/state"
+        if [ -z "${SHARED_HIVE_HOLDER:-}" ] || [ "$(cat "$state/holder" 2>/dev/null)" != "$SHARED_HIVE_HOLDER" ]; then
+          echo "This job does not hold the shared Hive — nothing to release."
+          exit 0
+        fi
+        bash "$HIVE_SHARED" reset || echo "::warning::Resetting the shared Hive failed; the next job resets it again before use."
+        rm -f "$state/holder" "$state/holder_since"
+        # The holder leads its own process group (setsid); killing the group
+        # ends flock, which is what releases the lock.
+        kill -TERM -- "-${SHARED_HIVE_PGID}" 2>/dev/null
+        echo "Released the shared Hive."
+        exit 0
