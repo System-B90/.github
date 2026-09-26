@@ -20,6 +20,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 | **session-ws** | Shared WebSocket session server — `@system-b90/session-ws`. |
 | **hive-nextauth** | Shared NextAuth.js + Hive SSO helpers — `@system-b90/hive-nextauth`. |
 | **devops-py** | Shared dev-ops helpers behind each repo's `tools.py` — `sb90-devops`, published to the org pip index. Extracted from Bluz/madash copies (Bluz#226). |
+| **deploy-py** | Shared deployment flows behind every app's release bundle — `sb90-deploy`, published to the org pip index. Release bundling (`actions/craft-release`), the bundle bootstrap (host Python 3.6+ → 3.10+ `.venv`), install, in-place upgrade, `link-hive`, and the `setup.py` wizard toolkit (TLS, Hive SSO via pyhive). Each app keeps only `deploy/app.json` + its own `setup.py`. Ported from Bluz's scripts. |
 | **.github** | Org-wide CI reusable workflows and composite actions (this repo). |
 
 Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Directories suffixed `-wt-*` (e.g. `bluz-wt-shared-pkgs`) are `git worktree` checkouts of the main repo on a different branch, not independent repos.
@@ -52,7 +53,7 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
   `pyhive`'s `publish.yml` copies each tagged release's wheels into `pypi/pyhivelms/` (the PEP 503-normalized project name — **not** `pyhive`, the import name) and regenerates `pypi/generate_index.py`'s output here on every `v*` tag push. For an unreleased ref, `git+https://...` still works (that one does need SSH/HTTPS git creds, since `pyhive` itself is private).
   GitHub Pages is CDN-cached (roughly a few minutes TTL) — a just-published release may not show up in the index immediately.
   **Note:** `raw.githubusercontent.com` does NOT work for this — it maps URLs 1:1 to repo file paths with no directory-index fallback, so pip's request for the bare package directory (`pypi/<pkg>/`) 404s even though `generate_index.py` writes a valid `index.html` there. GitHub Pages serves that `index.html` for directory requests, which is why the index has to be hosted there instead.
-- `sb90-devops` (from `devops-py`) and `bluz-cli` (from the private `bluz` repo) follow the identical pattern: `pip install bluz-cli --index-url https://system-b90.github.io/.github/pypi/`. `bluz`'s `release-pipeline.yml` `publish-cli-index` job copies each tagged release's wheel into `pypi/bluz-cli/` and regenerates the index on every `v*` tag push, using `CLASSIC_ACCESS_TOKEN` (bluz has no `ACCESS_TOKEN` secret — see Secrets available in CI below).
+- `sb90-devops` (from `devops-py`), `sb90-deploy` (from `deploy-py`) and `bluz-cli` (from the private `bluz` repo) follow the identical pattern: `pip install bluz-cli --index-url https://system-b90.github.io/.github/pypi/`. `bluz`'s `release-pipeline.yml` `publish-cli-index` job copies each tagged release's wheel into `pypi/bluz-cli/` and regenerates the index on every `v*` tag push, using `CLASSIC_ACCESS_TOKEN` (bluz has no `ACCESS_TOKEN` secret — see Secrets available in CI below).
 - App repos (`bluz`, `madash`, `peek-a-boo`) are unscoped, private, and don't publish — no `@system-b90/` prefix on their own `package.json` name.
 
 ## Claude Code plugins hosted here

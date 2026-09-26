@@ -1,0 +1,76 @@
+name: Craft release bundles
+description: >-
+  Builds an app's online and offline release bundles with sb90-deploy
+  (System-B90/deploy-py): the app's deploy/app.json says which files ship; the
+  images are read from its release compose file; the offline bundle vendors
+  every wheel the bundle's bootstrap needs, for Linux and Windows. Replaces the
+  hand-written "Prepare Workspace / Export Offline Images / Vendor wheels /
+  Compress" steps each app's craft-release job used to carry.
+
+inputs:
+  tag:
+    description: Release tag the bundles are for (normally github.ref_name).
+    required: true
+  app:
+    description: Path to the app's deployment description.
+    required: false
+    default: deploy/app.json
+  out:
+    description: Directory the two archives are written to.
+    required: false
+    default: dist
+  images:
+    description: >-
+      pull (default) pulls and saves every image the release compose file
+      names; local saves already-present images without pulling; skip leaves
+      the offline bundle without images (not installable - for dry runs).
+    required: false
+    default: pull
+  wheels:
+    description: Vendor Python wheels into the offline bundle ("false" for dry runs).
+    required: false
+    default: "true"
+  sb90-deploy-version:
+    description: sb90-deploy version to install from the org pip index.
+    required: false
+    default: "0.1.0"
+  python-version:
+    description: Python used to run the bundler (not the target hosts' Python).
+    required: false
+    default: "3.13"
+
+outputs:
+  online:
+    description: Path of <app>-online-<tag>.tar.gz
+    value: ${{ steps.craft.outputs.online }}
+  offline:
+    description: Path of <app>-offline-<tag>.tar.gz
+    value: ${{ steps.craft.outputs.offline }}
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Python
+      uses: actions/setup-python@v7
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    # deploy-py is private; the org index (GitHub Pages on this public repo)
+    # needs no auth to install from.
+    - name: Install sb90-deploy
+      shell: bash
+      run: >-
+        python -m pip install --quiet --upgrade pip
+        "sb90-deploy[bundle]==${{ inputs.sb90-deploy-version }}"
+        --extra-index-url https://system-b90.github.io/.github/pypi/
+
+    - name: Craft bundles
+      id: craft
+      shell: bash
+      run: >-
+        python -m sb90_deploy bundle
+        --app "${{ inputs.app }}"
+        --tag "${{ inputs.tag }}"
+        --out "${{ inputs.out }}"
+        --images "${{ inputs.images }}"
+        ${{ inputs.wheels != 'true' && '--no-wheels' || '' }}
