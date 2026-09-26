@@ -1,0 +1,43 @@
+name: Issue dev TLS cert
+
+# Signs a dev leaf cert with the System-B90 Dev Root CA. The CA key lives only in
+# the SB90_DEV_ROOT_CA_KEY secret. Output is a workflow artifact holding the leaf
+# key — dev-only material, never use it for anything reachable from outside.
+on:
+    workflow_dispatch:
+        inputs:
+            name:
+                description: File name stem (e.g. madash)
+                required: true
+            common_name:
+                description: Subject CN (e.g. madash.localhost)
+                required: true
+            san:
+                description: SAN list (e.g. DNS:madash.localhost,DNS:localhost,IP:127.0.0.1,IP:::1)
+                required: true
+
+permissions:
+    contents: read
+
+jobs:
+    issue:
+        runs-on: [self-hosted, light]
+        steps:
+            - uses: actions/checkout@v7
+            - name: Sign leaf cert
+              env:
+                  CA_KEY: ${{ secrets.SB90_DEV_ROOT_CA_KEY }}
+                  NAME: ${{ inputs.name }}
+                  CN: ${{ inputs.common_name }}
+                  SAN: ${{ inputs.san }}
+              run: |
+                  umask 077
+                  key=$(mktemp)
+                  trap 'rm -f "$key"' EXIT
+                  printf '%s\n' "$CA_KEY" > "$key"
+                  bash dev-ca/issue-cert.sh "$NAME" "$CN" "$SAN" "$key" out
+            - uses: actions/upload-artifact@v4
+              with:
+                  name: dev-cert-${{ inputs.name }}
+                  path: out/
+                  retention-days: 1
