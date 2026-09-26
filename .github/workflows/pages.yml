@@ -31,7 +31,7 @@ permissions:
 
 jobs:
     deploy:
-        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux", "light"]') }}
+        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux"]') }}
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
