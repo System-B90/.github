@@ -1,15 +1,20 @@
 # System-B90 Dev Root CA
 
 Root CA for **development only**. Every System-B90 project's nginx ships a default cert signed
-by it. Trust this root once and `https://bluz.dev`, `https://samkasotron.localhost`, etc. load
-without warnings.
+by it. Trust this root once and `https://bluz.dev`, `https://madash.dev`,
+`https://peekaboo.dev`, `https://samkasotron.localhost`, etc. load without warnings.
 
 | Field | Value |
 |---|---|
 | Subject | `CN=System-B90 Dev Root CA, OU=Development, O=System-B90` |
 | Key | ECDSA P-384, SHA-384 |
-| Valid until | 2036-09-23 |
-| SHA-256 fingerprint | `E3:AE:39:EC:FA:6C:84:03:77:37:48:1A:6F:13:B6:A9:E8:F6:13:91:04:68:72:F5:7A:36:FF:9C:9C:3F:0E:B0` |
+| Valid until | 2036-09-24 |
+| SHA-256 fingerprint | `E1:FC:FC:02:58:B1:04:6D:37:56:B0:3B:04:76:B1:36:2A:39:16:12:FD:36:B7:92:36:DA:C1:1A:6D:DF:65:4D` |
+
+> **2026-09-28: root re-issued** to permit `*.dev` (was `bluz.dev` only). Same key and subject,
+> so already-issued leaf certs keep verifying. If you trusted the previous root
+> (fingerprint `E3:AE:39:EC:…:0E:B0`), remove it and trust this one, or the madash and
+> peek-a-boo certs are rejected.
 
 ## Quick Start
 
@@ -44,14 +49,17 @@ Remove it:
 certutil -user -delstore Root "System-B90 Dev Root CA"
 ```
 
-## Why trusting it is low-risk
+## What trusting it allows
 
 The CA carries a critical **name constraint**. Clients reject any cert it signs outside:
 
-- DNS: `localhost`, `*.localhost`, `*.test`, `*.internal`, `*.local`, `bluz.dev`, `*.bluz.dev`
+- DNS: `localhost`, `*.localhost`, `*.test`, `*.internal`, `*.local`, `*.dev`
 - IP: `127.0.0.0/8`, `::1`, `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`
 
-Even a leaked CA key cannot impersonate a public site. `pathlen:0` blocks intermediate CAs.
+`pathlen:0` blocks intermediate CAs. **`.dev` is a public TLD**: whoever holds the CA key, or
+can run the *Issue dev TLS cert* workflow, can mint certs that machines trusting this root
+accept for *any* `*.dev` site (e.g. `web.dev`). Keep the key and the workflow's write access
+tight. The other names are reserved or private and cannot be public sites.
 
 The default leaf keys committed to project repos are **public**. They are dev-only. Never put
 them in front of real traffic; production deploys supply their own certs.
@@ -83,16 +91,24 @@ Output: `<name>.key`, `<name>.crt`, `<name>.fullchain.crt` (leaf + root). Point 
 |---|---|---|---|
 | Bluz | `bluz.dev` | `bluz.dev`, `*.bluz.dev`, `bluz.localhost`, `localhost`, `127.0.0.1`, `127.0.0.3`, `::1` | `nginx/ssl-default/` |
 | Samkasotron | `samkasotron.localhost` | `samkasotron.localhost`, `localhost`, `127.0.0.1`, `::1` | `certs-default/` |
+| madash | `madash.dev` | `madash.dev`, `*.madash.dev`, `madash.localhost`, `localhost`, `127.0.0.1`, `127.0.0.8`, `::1` | `nginx/ssl-default/` |
+| peek-a-boo | `peekaboo.dev` | `peekaboo.dev`, `*.peekaboo.dev`, `peekaboo.test`, `peekaboo.localhost`, `localhost`, `127.0.0.1`, `127.0.0.4`, `127.0.0.5`, `::1` | `nginx/ssl-default/` |
 
-Hive (`pyhive/hive-stack`) keeps its own self-signed cert. madash and peek-a-boo: tracked in
-their repos' issues.
+Hive (`pyhive/hive-stack`) keeps its own self-signed cert.
 
 ## Where the CA key lives
 
 - `SB90_DEV_ROOT_CA_KEY` Actions secret on `System-B90/.github` (used by the workflow).
 - Offline backup with the maintainer (`~/.sb90/dev-ca/`).
 
-It is never committed. `ca.cnf` here is the config it was generated with — reuse it to rotate:
+It is never committed. To change the constraints only, re-sign with the **existing** key (the
+secret stays valid and issued leaves keep verifying):
+
+```bash
+openssl req -x509 -new -key ~/.sb90/dev-ca/sb90-dev-root-ca.key -sha384 -days 3650 -config dev-ca/ca.cnf -out dev-ca/sb90-dev-root-ca.crt
+```
+
+`ca.cnf` here is the config it was generated with — reuse it to rotate the key:
 
 ```bash
 openssl ecparam -name secp384r1 -genkey -noout -out sb90-dev-root-ca.key
