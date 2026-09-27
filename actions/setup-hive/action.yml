@@ -158,7 +158,7 @@ runs:
       shell: bash
       run: |
         if [ -f "$HOME/hive-shared/state/dbname" ]; then
-          echo "::error::${RUNNER_NAME} hosts the persistent shared Hive; setup-hive would destroy it. Use actions/shared-hive-acquire/-release here, or target runs-on: [self-hosted, dind]."
+          echo "::error::${RUNNER_NAME} hosts the persistent shared Hive; setup-hive would destroy it. Use actions/shared-hive-acquire/-release instead (the dind runners are retired)."
           exit 1
         fi
 
