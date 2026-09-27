@@ -1,0 +1,21 @@
+{
+  "name": "madash-cli",
+  "description": "Skill + auto-setup for the madash CLI (Madash dashboard (madrat message, call-to-Hadas board, journal, status board)) — installs the CLI if missing and teaches an agent to drive it without reading source.",
+  "author": {
+    "name": "Michael K. Steinberg"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ensure-madash-cli.js\"",
+            "timeout": 30,
+            "statusMessage": "Checking madash CLI install..."
+          }
+        ]
+      }
+    ]
+  }
+}

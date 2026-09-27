@@ -11,6 +11,18 @@
       "description": "Auto-installs the bluz CLI on session start and teaches the agent every command, payload shape, and known server quirk — no source reading required.",
       "source": "./plugins/bluz-cli",
       "category": "productivity"
+    },
+    {
+      "name": "peekaboo-cli",
+      "description": "Auto-installs the peekaboo CLI on session start and teaches the agent every command — students/mentees, VNC screens and install commands, tweet bot, settings — no source reading required.",
+      "source": "./plugins/peekaboo-cli",
+      "category": "productivity"
+    },
+    {
+      "name": "madash-cli",
+      "description": "Auto-installs the madash CLI on session start and teaches the agent every command — madrat message (incl. live watch), call-to-Hadas board, journal, status board — no source reading required.",
+      "source": "./plugins/madash-cli",
+      "category": "productivity"
     }
   ]
 }
