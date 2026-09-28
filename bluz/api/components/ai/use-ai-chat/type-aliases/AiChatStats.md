@@ -8,7 +8,7 @@
 
 > **AiChatStats** = `object`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:103](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/ai/use-ai-chat.ts#L103)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:117](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L117)
 
 Cumulative cost of the conversation, for the panel's footer.
 
@@ -18,7 +18,7 @@ Cumulative cost of the conversation, for the panel's footer.
 
 > `optional` **model?**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:104](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/ai/use-ai-chat.ts#L104)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:118](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L118)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:104](https://github.com/System-
 
 > **turns**: `number`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:106](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/ai/use-ai-chat.ts#L106)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:120](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L120)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:106](https://github.com/System-
 
 > `optional` **usage?**: [`AiUsage`](../../../../api-shared/types/ai/type-aliases/AiUsage.md)
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:105](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/ai/use-ai-chat.ts#L105)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:119](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L119)

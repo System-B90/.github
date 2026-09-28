@@ -851,14 +851,9 @@ instead — see <a href="#co-located-hive">Co-located Hive</a> below.</p>
 <td><code>docker compose version</code></td>
 </tr>
 <tr>
-<td>Python 3.11+</td>
-<td>Runs the configuration wizard</td>
+<td>Python 3.10+</td>
+<td>Runs the installer, wizard and upgrades in a local <code>.venv</code> (Ubuntu 22.04's stock <code>python3</code> is enough; <code>python3-venv</code> is <strong>not</strong> needed)</td>
 <td><code>python3 --version</code></td>
-</tr>
-<tr>
-<td><code>openssl</code></td>
-<td>Generates self-signed certificates</td>
-<td><code>openssl version</code></td>
 </tr>
 <tr>
 <td>A Hive server you can reach</td>
@@ -874,8 +869,12 @@ instead — see <a href="#co-located-hive">Co-located Hive</a> below.</p>
 </table>
 <p>The online bundle also needs outbound access to <code>ghcr.io</code>. The offline bundle
 ships every image as a <code>.tar</code> under <code>images/</code> and every Python package the
-wizard needs as a wheel under <code>wheels/</code>, so it needs neither registry nor PyPI
-access.</p>
+installer needs (for Linux and Windows, Python 3.10-3.13) as a wheel under
+<code>wheels/</code>, so it needs neither registry nor PyPI access.</p>
+<p>The <code>.sh</code>/<code>.ps1</code> scripts are thin launchers: they find any Python 3.6+, and
+<code>bootstrap.py</code> builds <code>.venv</code> from a Python 3.10+ and runs the shared
+<a href="https://github.com/System-B90/deploy-py">sb90-deploy</a> tooling inside it. If
+the host has no Python 3.10+, it says so before touching anything.</p>
 <h2 id="what-the-installer-asks-you">What the installer asks you<a class="headerlink" href="#what-the-installer-asks-you" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -888,10 +887,6 @@ access.</p>
 <tr>
 <td>Domain name</td>
 <td>The hostname users will type, e.g. <code>bluz.school.example</code>. Becomes <code>NEXTAUTH_URL</code> and the certificate CN.</td>
-</tr>
-<tr>
-<td>Generate self-signed certificates?</td>
-<td><code>yes</code> unless you are dropping your own <code>cert.pem</code>/<code>key.pem</code> into <code>nginx/ssl/</code>.</td>
 </tr>
 <tr>
 <td>Hive URL</td>
@@ -913,20 +908,30 @@ access.</p>
 </table>
 <p>Everything else — database credentials, JWT and encryption keys — is generated
 for you and written to <code>.env</code>.</p>
+<p>TLS: unless <code>nginx/ssl/cert.pem</code> already covers your domain (drop your own
+certificate there first to use it), the wizard issues one signed by a local
+"System-B90 Local Dev CA" (<code>nginx/ssl/ca.crt</code>). Trust that CA once on client
+machines to silence browser warnings; it is reused across re-issues.</p>
+<p>Re-run the wizard at any time with <code>python3 bootstrap.py setup</code> — existing
+secrets are kept, not rotated.</p>
 <h2 id="layout-of-an-installed-bundle">Layout of an installed bundle<a class="headerlink" href="#layout-of-an-installed-bundle" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>bluz/
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── docker-compose.yml              # the stack
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── docker-compose.hive-local.yml   # overlay, co-located Hive only
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── .env                            # written by the wizard — contains secrets
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── install.sh / install.ps1
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── update.sh                       # in-place upgrade to a newer release (online or --package)
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── install.sh / install.ps1        # launchers: find Python, run bootstrap.py
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── update.sh / update.ps1          # in-place upgrade to a newer release (online or --package)
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>├── link-hive.sh / link-hive.ps1
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>├── setup.py, requirements.txt      # the configuration wizard
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>├── nginx/ssl/                      # cert.pem + key.pem
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>├── VERSION                         # which release this is
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>├── images/                         # offline bundle only — image .tar archives
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>├── wheels/                         # offline bundle only — vendored Python wheels
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>└── TROUBLESHOOTING.md
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>├── bootstrap.py, requirements.txt  # builds .venv with the deployment tools
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>├── app.json                        # describes Bluz to the shared tooling
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>├── setup.py                        # the configuration wizard
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>├── .venv/                          # created on first run
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>├── backup/                         # bluz-backup / bluz-restore (.sh and .ps1)
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>├── nginx/ssl/                      # cert.pem + key.pem
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>├── VERSION                         # which release this is
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>├── images/                         # offline bundle only — image .tar archives
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>├── wheels/                         # offline bundle only — vendored Python wheels
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>└── TROUBLESHOOTING.md
 </code></pre></div>
 <p><strong><code>.env</code> must stay next to <code>docker-compose.yml</code>.</strong> Compose has two separate
 <code>.env</code> mechanisms — <code>env_file:</code> for container environments, and its own <code>${VAR}</code>
@@ -980,7 +985,7 @@ complete. <code>TROUBLESHOOTING.md</code> has the manual path.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>bluz-online-v1.1.0.tar.gz<span class="w">   </span><span class="c1"># extracts into bluz/, keeps your .env and nginx/ssl/</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">cd</span><span class="w"> </span>bluz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./update.sh
 </code></pre></div>
-<p><code>update.sh</code> upgrades in place with near-zero downtime: it backs up both engines
+<p><code>update.sh</code> (<code>update.ps1</code> on Windows) upgrades in place with near-zero downtime: it backs up both engines
 first, pulls the new images while the old containers keep serving, then rolls
 <code>ui</code> → <code>sessions</code> → <code>proxy</code> one at a time, waiting for each to pass its
 healthcheck. Postgres migrations run inside the new <code>ui</code> image's entrypoint, so
@@ -1002,9 +1007,8 @@ in; the package is only read from.</p>
 <p>What it does differently: the version comes from the package's <code>VERSION</code> file
 (never from GitHub), every <code>images/*.tar</code> in it is <code>docker load</code>ed — the database
 images included, since a release may move those pins — and the deployment's own
-bundle files (<code>docker-compose.yml</code>, the overlay, <code>install.sh</code>, <code>update.sh</code>,
-<code>link-hive.sh</code>, <code>setup.py</code>, <code>requirements.txt</code>, <code>backup/*.sh</code>, <code>VERSION</code>) are
-replaced with the package's, with the previous copies kept in
+bundle files (everything in the bundle except your <code>.env</code>, <code>nginx/ssl/</code>, <code>images/</code> and
+<code>.venv/</code>; <code>wheels/</code> is swapped whole) are replaced with the package's, with the previous copies kept in
 <code>.bundle-bak-&lt;old-version&gt;/</code>. Your <code>.env</code>, <code>nginx/ssl/</code> and every data volume are
 untouched. Everything else — backup first, roll <code>ui</code> → <code>sessions</code> → <code>proxy</code>,
 verify, rollback hint on failure — is identical.</p>

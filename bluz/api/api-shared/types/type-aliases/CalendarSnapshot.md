@@ -8,7 +8,7 @@
 
 > **CalendarSnapshot** = `object`
 
-Defined in: [ui/src/api-shared/types.ts:56](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L56)
+Defined in: [ui/src/api-shared/types.ts:56](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types.ts#L56)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types.ts:56](https://github.com/System-B90/Bluz/b
 
 > **createdAt**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:59](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L59)
+Defined in: [ui/src/api-shared/types.ts:59](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types.ts#L59)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types.ts:59](https://github.com/System-B90/Bluz/b
 
 > **events**: [`DbEventDocument`](../event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/types.ts:63](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L63)
+Defined in: [ui/src/api-shared/types.ts:63](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types.ts#L63)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/types.ts:63](https://github.com/System-B90/Bluz/b
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:57](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L57)
+Defined in: [ui/src/api-shared/types.ts:57](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types.ts#L57)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/api-shared/types.ts:57](https://github.com/System-B90/Bluz/b
 
 > `optional` **iterationId?**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:61](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L61)
+Defined in: [ui/src/api-shared/types.ts:61](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types.ts#L61)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [ui/src/api-shared/types.ts:61](https://github.com/System-B90/Bluz/b
 
 > **label**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:58](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types.ts#L58)
+Defined in: [ui/src/api-shared/types.ts:58](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types.ts#L58)

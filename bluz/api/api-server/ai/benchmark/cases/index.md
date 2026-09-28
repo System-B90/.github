@@ -14,7 +14,3 @@
 ## Variables
 
 - [AI\_BENCHMARK\_CASES](variables/AI_BENCHMARK_CASES.md)
-
-## Functions
-
-- [isWriteToolName](functions/isWriteToolName.md)

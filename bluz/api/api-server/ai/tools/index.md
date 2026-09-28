@@ -16,6 +16,7 @@
 
 ## Functions
 
+- [allTools](functions/allTools.md)
 - [createToolRegistry](functions/createToolRegistry.md)
 - [findTool](functions/findTool.md)
 - [isPromptTool](functions/isPromptTool.md)

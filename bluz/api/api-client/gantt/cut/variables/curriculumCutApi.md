@@ -8,7 +8,7 @@
 
 > `const` **curriculumCutApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/cut.ts:143](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/cut.ts#L143)
+Defined in: [ui/src/api-client/gantt/cut.ts:130](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-client/gantt/cut.ts#L130)
 
 ## Type Declaration
 
@@ -55,23 +55,6 @@ returns what it would do plus the open decisions the dialog must ask about.
 #### Returns
 
 `Promise`\<[`ApiCurriculumCutPlanResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPlanResponse.md)\>
-
-### preview
-
-> `readonly` **preview**: (`curriculumId`) => `Promise`\<[`ApiCurriculumCutPreviewResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPreviewResponse.md)\> = `previewCurriculumCut`
-
-GET /api/gantt/curriculums/[id]/cut/preview — dry-run of the cut planner:
-dated, timed occurrences (or the planner's validation errors), no writes.
-
-#### Parameters
-
-##### curriculumId
-
-`string`
-
-#### Returns
-
-`Promise`\<[`ApiCurriculumCutPreviewResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPreviewResponse.md)\>
 
 ### pullBack
 

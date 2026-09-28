@@ -13,6 +13,7 @@
 ## Type Aliases
 
 - [BaseConstraint](type-aliases/BaseConstraint.md)
+- [ConstraintDisplayState](type-aliases/ConstraintDisplayState.md)
 - [EntityType](type-aliases/EntityType.md)
 - [GanttConstraint](type-aliases/GanttConstraint.md)
 - [RelationalConstraint](type-aliases/RelationalConstraint.md)
@@ -23,3 +24,4 @@
 - [constraintToHumanReadableString](functions/constraintToHumanReadableString.md)
 - [getAllowedDayIndices](functions/getAllowedDayIndices.md)
 - [hasConflictingTemporalConstraints](functions/hasConflictingTemporalConstraints.md)
+- [qualifiedEntityName](functions/qualifiedEntityName.md)

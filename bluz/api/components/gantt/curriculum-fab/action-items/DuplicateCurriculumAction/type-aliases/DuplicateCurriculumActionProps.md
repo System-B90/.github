@@ -8,7 +8,7 @@
 
 > **DuplicateCurriculumActionProps** = `object` & [`CurriculumAwareActionItemProps`](../../ActionItemProps/type-aliases/CurriculumAwareActionItemProps.md)
 
-Defined in: [ui/src/components/gantt/curriculum-fab/action-items/DuplicateCurriculumAction.tsx:10](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-fab/action-items/DuplicateCurriculumAction.tsx#L10)
+Defined in: [ui/src/components/gantt/curriculum-fab/action-items/DuplicateCurriculumAction.tsx:10](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-fab/action-items/DuplicateCurriculumAction.tsx#L10)
 
 ## Type Declaration
 

@@ -8,11 +8,14 @@
 
 > `const` **FIXTURE\_EVENTS**: [`AiEventSummary`](../../../tools/calendar/type-aliases/AiEventSummary.md)[]
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:74](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/fixture.ts#L74)
-
-Two events share a name on purpose: a model asked to change "the מתמטיקה
-lesson" has to notice the ambiguity and ask rather than pick one.
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:113](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/fixture.ts#L113)
 
 Typed as the production projection so the fixture cannot answer with a shape
-the real `list_events` would never produce — which is how the `type` field
-here was caught carrying "lesson", a value `EventType` does not contain.
+the real `list_events` would never produce.
+
+- fx-1 / fx-2 share a name: a model asked to move "the מתמטיקה lesson" has
+  to notice the ambiguity and ask.
+- fx-h1 / fx-h2 are Tuesday's hidden events; fx-h3 is hidden too but sits
+  under the visible workshop fx-3, so it must be skipped; fx-h4 is a hidden
+  decoy on Wednesday.
+- fx-f1 / fx-f2 are existing placeholders, for the undo case.

@@ -8,7 +8,7 @@
 
 > **roomLikeToResourceKey**(`room`): `string`
 
-Defined in: [ui/src/api-shared/types/room.ts:86](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/room.ts#L86)
+Defined in: [ui/src/api-shared/types/room.ts:86](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/room.ts#L86)
 
 Stable composite key for matching a room across the calendar resource layer
 (react-big-calendar `resourceIdAccessor` / `resourceAccessor`). Uses a `:`

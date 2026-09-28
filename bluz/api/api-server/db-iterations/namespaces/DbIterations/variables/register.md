@@ -8,7 +8,7 @@
 
 > `const` **register**: (`payload`) => `Promise`\<[`Iteration`](../../../../../api-shared/types/iteration/type-aliases/Iteration.md)\> = `registerIteration`
 
-Defined in: [ui/src/api-server/db-iterations.ts:381](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/db-iterations.ts#L381)
+Defined in: [ui/src/api-server/db-iterations.ts:381](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/db-iterations.ts#L381)
 
 Register a new iteration and lazily provision its database. Mongo creates the
 database on first write, so no explicit creation is needed here.

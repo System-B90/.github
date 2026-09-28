@@ -8,7 +8,7 @@
 
 > **useAiChat**(`scope`): `object`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:120](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/ai/use-ai-chat.ts#L120)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:134](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L134)
 
 ## Parameters
 
@@ -48,11 +48,56 @@ the turn resumes with it in place.
 
 > **busy**: `boolean`
 
+### exportChat
+
+> **exportChat**: (`format`) => `void`
+
+Downloads the conversation, tool calls, results, and CoT included.
+
+#### Parameters
+
+##### format
+
+[`ChatExportFormat`](../../chat-export/enumerations/ChatExportFormat.md)
+
+#### Returns
+
+`void`
+
 ### pendingApproval
 
-> **pendingApproval**: \{ `arguments`: `unknown`; `danger`: [`AiToolDanger`](../../../../api-shared/types/ai/enumerations/AiToolDanger.md); `id`: `string`; `impact`: `string`[]; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `name`: `string`; `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); `summary`: `string`; `title`: `string`; `toolCallId`: `string`; \} \| `undefined`
+> **pendingApproval**: \{ `calls`: [`AiApprovalCall`](../type-aliases/AiApprovalCall.md)[]; `id`: `string`; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); \} \| `undefined`
 
 The write currently awaiting a decision, if any.
+
+#### Union Members
+
+##### Type Literal
+
+\{ `calls`: [`AiApprovalCall`](../type-aliases/AiApprovalCall.md)[]; `id`: `string`; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); \}
+
+##### calls
+
+> **calls**: [`AiApprovalCall`](../type-aliases/AiApprovalCall.md)[]
+
+Every write the model proposed in one turn. A batch is approved or
+declined as a unit — "fill five days" is one decision, not five.
+
+##### id
+
+> **id**: `string`
+
+##### kind
+
+> **kind**: [`Approval`](../enumerations/AiTimelineKind.md#approval)
+
+##### state
+
+> **state**: [`AiApprovalState`](../enumerations/AiApprovalState.md)
+
+***
+
+`undefined`
 
 ### pendingChoice
 

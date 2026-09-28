@@ -14,6 +14,7 @@
 
 ## Type Aliases
 
+- [AiApprovalCall](type-aliases/AiApprovalCall.md)
 - [AiChatScope](type-aliases/AiChatScope.md)
 - [AiChatStats](type-aliases/AiChatStats.md)
 - [AiTimelineItem](type-aliases/AiTimelineItem.md)

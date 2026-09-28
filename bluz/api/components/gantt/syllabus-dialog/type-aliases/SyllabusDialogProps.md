@@ -8,7 +8,7 @@
 
 > **SyllabusDialogProps** = `object`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:29](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/syllabus-dialog/index.tsx#L29)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:29](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/syllabus-dialog/index.tsx#L29)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:29](https://githu
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:32](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/syllabus-dialog/index.tsx#L32)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:32](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/syllabus-dialog/index.tsx#L32)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:32](https://githu
 
 > **open**: `boolean`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:30](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/syllabus-dialog/index.tsx#L30)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:30](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/syllabus-dialog/index.tsx#L30)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:30](https://githu
 
 > **setOpen**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:31](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/syllabus-dialog/index.tsx#L31)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:31](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/syllabus-dialog/index.tsx#L31)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:31](https://githu
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:33](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/syllabus-dialog/index.tsx#L33)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:33](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/syllabus-dialog/index.tsx#L33)

@@ -8,7 +8,7 @@
 
 > **AiEventSummary** = `ReturnType`\<*typeof* `summarizeEvent`\>
 
-Defined in: [ui/src/api-server/ai/tools/calendar.ts:85](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/calendar.ts#L85)
+Defined in: [ui/src/api-server/ai/tools/calendar.ts:50](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/tools/calendar.ts#L50)
 
 Trimmed view of an event — the full document is far too large to re-send,
 and a narrow projection means a schema change on the document cannot

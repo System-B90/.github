@@ -8,7 +8,7 @@
 
 > **ApiGoogleCalendarListResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:92](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L92)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:92](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/google-calendar.ts#L92)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:92](https://github.com/S
 
 > **calendars**: [`GoogleCalendarOption`](GoogleCalendarOption.md)[]
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:93](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L93)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:93](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/google-calendar.ts#L93)
 
 ***
 
@@ -24,6 +24,6 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:93](https://github.com/S
 
 > **selectedId**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:95](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L95)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:95](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/google-calendar.ts#L95)
 
 Currently linked calendar id.

@@ -8,7 +8,7 @@
 
 > **isAiConfigured**(`apiKeyOverride?`): `boolean`
 
-Defined in: [ui/src/api-server/ai/index.ts:101](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/index.ts#L101)
+Defined in: [ui/src/api-server/ai/index.ts:101](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/index.ts#L101)
 
 Whether the deployment can serve AI requests at all.
 

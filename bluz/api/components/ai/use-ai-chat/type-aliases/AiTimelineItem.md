@@ -6,15 +6,34 @@
 
 # Type Alias: AiTimelineItem
 
-> **AiTimelineItem** = \{ `arguments`: `unknown`; `danger`: [`AiToolDanger`](../../../../api-shared/types/ai/enumerations/AiToolDanger.md); `id`: `string`; `impact`: `string`[]; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `name`: `string`; `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); `summary`: `string`; `title`: `string`; `toolCallId`: `string`; \} \| \{ `id`: `string`; `kind`: [`Assistant`](../enumerations/AiTimelineKind.md#assistant); `text`: `string`; \} \| \{ `allowFreeText`: `boolean`; `answer?`: `string`; `id`: `string`; `kind`: [`Choice`](../enumerations/AiTimelineKind.md#choice); `options`: [`AiChoiceOption`](../../../../api-shared/types/ai/type-aliases/AiChoiceOption.md)[]; `question`: `string`; `toolCallId`: `string`; \} \| \{ `id`: `string`; `kind`: [`Failure`](../enumerations/AiTimelineKind.md#failure); `message`: `string`; \} \| \{ `id`: `string`; `kind`: [`Thinking`](../enumerations/AiTimelineKind.md#thinking); `text`: `string`; \} \| \{ `detail?`: `unknown`; `durationMs?`: `number`; `id`: `string`; `kind`: [`Tool`](../enumerations/AiTimelineKind.md#tool); `name`: `string`; `state`: [`AiToolState`](../enumerations/AiToolState.md); `summary`: `string`; `title`: `string`; \} \| \{ `id`: `string`; `kind`: [`User`](../enumerations/AiTimelineKind.md#user); `text`: `string`; \}
+> **AiTimelineItem** = \{ `calls`: [`AiApprovalCall`](AiApprovalCall.md)[]; `id`: `string`; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); \} \| \{ `id`: `string`; `kind`: [`Assistant`](../enumerations/AiTimelineKind.md#assistant); `text`: `string`; \} \| \{ `allowFreeText`: `boolean`; `answer?`: `string`; `id`: `string`; `kind`: [`Choice`](../enumerations/AiTimelineKind.md#choice); `options`: [`AiChoiceOption`](../../../../api-shared/types/ai/type-aliases/AiChoiceOption.md)[]; `question`: `string`; `toolCallId`: `string`; \} \| \{ `id`: `string`; `kind`: [`Failure`](../enumerations/AiTimelineKind.md#failure); `message`: `string`; \} \| \{ `id`: `string`; `kind`: [`Thinking`](../enumerations/AiTimelineKind.md#thinking); `text`: `string`; \} \| \{ `detail?`: `unknown`; `durationMs?`: `number`; `id`: `string`; `kind`: [`Tool`](../enumerations/AiTimelineKind.md#tool); `name`: `string`; `state`: [`AiToolState`](../enumerations/AiToolState.md); `summary`: `string`; `title`: `string`; \} \| \{ `id`: `string`; `kind`: [`User`](../enumerations/AiTimelineKind.md#user); `text`: `string`; \}
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:58](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/ai/use-ai-chat.ts#L58)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:74](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L74)
 
 ## Union Members
 
 ### Type Literal
 
-\{ `arguments`: `unknown`; `danger`: [`AiToolDanger`](../../../../api-shared/types/ai/enumerations/AiToolDanger.md); `id`: `string`; `impact`: `string`[]; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `name`: `string`; `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); `summary`: `string`; `title`: `string`; `toolCallId`: `string`; \}
+\{ `calls`: [`AiApprovalCall`](AiApprovalCall.md)[]; `id`: `string`; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); \}
+
+#### calls
+
+> **calls**: [`AiApprovalCall`](AiApprovalCall.md)[]
+
+Every write the model proposed in one turn. A batch is approved or
+declined as a unit — "fill five days" is one decision, not five.
+
+#### id
+
+> **id**: `string`
+
+#### kind
+
+> **kind**: [`Approval`](../enumerations/AiTimelineKind.md#approval)
+
+#### state
+
+> **state**: [`AiApprovalState`](../enumerations/AiApprovalState.md)
 
 ***
 

@@ -10,6 +10,7 @@
 
 - [GanttCurriculumTemplate](type-aliases/GanttCurriculumTemplate.md)
 - [TemplateDayConfig](type-aliases/TemplateDayConfig.md)
+- [TemplateSeedOps](type-aliases/TemplateSeedOps.md)
 
 ## Variables
 
@@ -19,3 +20,4 @@
 ## Functions
 
 - [resolveWeekDayMinutes](functions/resolveWeekDayMinutes.md)
+- [seedCurriculumFromTemplateWith](functions/seedCurriculumFromTemplateWith.md)

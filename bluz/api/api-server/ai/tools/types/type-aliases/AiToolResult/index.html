@@ -679,6 +679,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hints?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -721,20 +732,29 @@
 <blockquote>
 <p><strong>AiToolResult</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L46">ui/src/api-server/ai/tools/types.ts:46</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/tools/types.ts#L51">ui/src/api-server/ai/tools/types.ts:51</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="data">data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>data</strong>: <code>unknown</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L48">ui/src/api-server/ai/tools/types.ts:48</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/tools/types.ts#L53">ui/src/api-server/ai/tools/types.ts:53</a></p>
 <p>Returned to the model. Keep it compact — it is re-sent every turn.</p>
+<hr />
+<h3 id="hints">hints?<a class="headerlink" href="#hints" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>hints?</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/tools/types.ts#L61">ui/src/api-server/ai/tools/types.ts:61</a></p>
+<p>Guidance that depends on what this call returned, e.g. a rule that only
+matters when the payload holds people. Keeps the system prompt short:
+the model learns a rule at the moment it needs it.</p>
 <hr />
 <h3 id="summary">summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>summary</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/types.ts#L50">ui/src/api-server/ai/tools/types.ts:50</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/tools/types.ts#L55">ui/src/api-server/ai/tools/types.ts:55</a></p>
 <p>One Hebrew line shown in the chat transcript.</p>
 
 

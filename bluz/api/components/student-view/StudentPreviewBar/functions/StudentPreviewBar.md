@@ -8,7 +8,7 @@
 
 > **StudentPreviewBar**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/student-view/StudentPreviewBar.tsx:24](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/student-view/StudentPreviewBar.tsx#L24)
+Defined in: [ui/src/components/student-view/StudentPreviewBar.tsx:24](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/student-view/StudentPreviewBar.tsx#L24)
 
 Staff-only banner over the student view: says plainly that this is a
 preview, offers a way back, and lets staff step to another day.

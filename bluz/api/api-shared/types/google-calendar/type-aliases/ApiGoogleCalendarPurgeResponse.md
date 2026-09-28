@@ -8,7 +8,7 @@
 
 > **ApiGoogleCalendarPurgeResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:117](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L117)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:117](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/google-calendar.ts#L117)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:117](https://github.com/
 
 > **failed**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:122](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L122)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:122](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/google-calendar.ts#L122)
 
 Deletes Google rejected (after retries).
 
@@ -26,7 +26,7 @@ Deletes Google rejected (after retries).
 
 > **removed**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:120](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L120)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:120](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/google-calendar.ts#L120)
 
 ***
 
@@ -34,6 +34,6 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:120](https://github.com/
 
 > **scanned**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:119](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/google-calendar.ts#L119)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:119](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/google-calendar.ts#L119)
 
 Bluz-tagged Google events inspected.

@@ -8,7 +8,7 @@
 
 > **stopLessonActivationLoop**(): `void`
 
-Defined in: [ui/src/api-server/hive/lesson-activation.ts:276](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/hive/lesson-activation.ts#L276)
+Defined in: [ui/src/api-server/hive/lesson-activation.ts:287](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/lesson-activation.ts#L287)
 
 Stops the timer (tests, graceful shutdown).
 

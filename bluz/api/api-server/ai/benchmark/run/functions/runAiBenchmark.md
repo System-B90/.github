@@ -8,14 +8,17 @@
 
 > **runAiBenchmark**(`options`): `Promise`\<[`AiBenchmarkResult`](../../../../../api-shared/types/ai-benchmark/type-aliases/AiBenchmarkResult.md)\>
 
-Defined in: [ui/src/api-server/ai/benchmark/run.ts:164](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/run.ts#L164)
+Defined in: [ui/src/api-server/ai/benchmark/run.ts:220](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/run.ts#L220)
 
 Runs the whole suite.
 
 Cases run in sequence, not in parallel: a self-hosted gateway with one
-worker — the deployment this feature exists for — answers four concurrent
-turns by timing three of them out, which would report a perfectly good model
-as broken.
+worker — the deployment this feature exists for — answers concurrent turns
+by timing most of them out, which would report a perfectly good model as
+broken.
+
+`onProgress` gets a fresh snapshot after every state change, for the live
+view.
 
 ## Parameters
 
@@ -32,6 +35,10 @@ as broken.
 #### actor.id
 
 `string`
+
+#### onProgress?
+
+(`cases`) => `void`
 
 #### provider
 

@@ -8,4 +8,5 @@
 
 ## Functions
 
+- [DialogCrumb](functions/DialogCrumb.md)
 - [EventDialogHeader](functions/EventDialogHeader.md)

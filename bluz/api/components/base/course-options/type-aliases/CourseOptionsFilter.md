@@ -8,7 +8,7 @@
 
 > **CourseOptionsFilter** = `object`
 
-Defined in: [ui/src/components/base/course-options.ts:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/course-options.ts#L13)
+Defined in: [ui/src/components/base/course-options.ts:13](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/course-options.ts#L13)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/course-options.ts:13](https://github.com/Sys
 
 > `optional` **rootId?**: [`CourseId`](../../../../api-shared/types/course/type-aliases/CourseId.md) \| `null`
 
-Defined in: [ui/src/components/base/course-options.ts:15](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/course-options.ts#L15)
+Defined in: [ui/src/components/base/course-options.ts:15](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/course-options.ts#L15)
 
 List only courses nested (at any depth) under this course.
 
@@ -26,7 +26,7 @@ List only courses nested (at any depth) under this course.
 
 > `optional` **searchQuery?**: `string`
 
-Defined in: [ui/src/components/base/course-options.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/course-options.ts#L17)
+Defined in: [ui/src/components/base/course-options.ts:17](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/course-options.ts#L17)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/components/base/course-options.ts:17](https://github.com/Sys
 
 > `optional` **showShuffles?**: `boolean`
 
-Defined in: [ui/src/components/base/course-options.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/course-options.ts#L16)
+Defined in: [ui/src/components/base/course-options.ts:16](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/course-options.ts#L16)

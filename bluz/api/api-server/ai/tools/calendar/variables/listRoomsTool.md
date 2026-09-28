@@ -6,6 +6,6 @@
 
 # Variable: listRoomsTool
 
-> `const` **listRoomsTool**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`Record`\<`string`, `never`\>\>
+> `const` **listRoomsTool**: [`AiTool`](../../types/type-aliases/AiTool.md)\<[`PageArgs`](../../page/type-aliases/PageArgs.md)\>
 
-Defined in: [ui/src/api-server/ai/tools/calendar.ts:147](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/tools/calendar.ts#L147)
+Defined in: [ui/src/api-server/ai/tools/calendar.ts:129](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/tools/calendar.ts#L129)

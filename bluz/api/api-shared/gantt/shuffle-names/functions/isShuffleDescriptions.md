@@ -8,7 +8,7 @@
 
 > **isShuffleDescriptions**(`descriptions`): `descriptions is ShuffleDescriptions`
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:64](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/gantt/shuffle-names.ts#L64)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:64](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/shuffle-names.ts#L64)
 
 True when `descriptions` is a plain string→string record.
 

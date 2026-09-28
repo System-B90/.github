@@ -8,7 +8,7 @@
 
 > **fetchAiTools**(): `Promise`\<\{ `enabled`: `boolean`; `model`: `string` \| `null`; `tools`: [`AiToolSummary`](../../../api-shared/types/ai/type-aliases/AiToolSummary.md)[]; \}\>
 
-Defined in: [ui/src/api-client/ai.ts:73](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/ai.ts#L73)
+Defined in: [ui/src/api-client/ai.ts:73](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-client/ai.ts#L73)
 
 Whether this deployment has AI wired up, plus what the assistant can do.
 

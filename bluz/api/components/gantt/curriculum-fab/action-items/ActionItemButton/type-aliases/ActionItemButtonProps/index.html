@@ -668,6 +668,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        command?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loading" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -675,6 +686,62 @@
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        onClick?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="onClick?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        event?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Returns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -730,14 +797,29 @@
 <p><a href="../../../../../../../">TypeDoc API</a> / <a href="../../">components/gantt/curriculum-fab/action-items/ActionItemButton</a> / ActionItemButtonProps</p>
 <h1 id="type-alias-actionitembuttonprops">Type Alias: ActionItemButtonProps<a class="headerlink" href="#type-alias-actionitembuttonprops" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>ActionItemButtonProps</strong> = <code>object</code> &amp; <code>Omit</code>\&lt;<code>IconButtonProps</code>, <code>"size"</code> | <code>"sx"</code>&gt;</p>
+<p><strong>ActionItemButtonProps</strong> = <code>object</code> &amp; <code>Omit</code>\&lt;<code>IconButtonProps</code>, <code>"onClick"</code> | <code>"size"</code> | <code>"sx"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/gantt/curriculum-fab/action-items/ActionItemButton.tsx#L5">ui/src/components/gantt/curriculum-fab/action-items/ActionItemButton.tsx:5</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-fab/action-items/ActionItemButton.tsx#L10">ui/src/components/gantt/curriculum-fab/action-items/ActionItemButton.tsx:10</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
+<h3 id="command">command?<a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>command?</strong>: <code>Pick</code>\&lt;<code>Command</code>, <code>"id"</code> | <code>"keywords"</code> | <code>"subtitle"</code>&gt;</p>
+</blockquote>
+<p>Mirror this button in the command palette. Title, icon, enabled state
+and handler all come from the button itself.</p>
 <h3 id="loading">loading?<a class="headerlink" href="#loading" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>loading?</strong>: <code>boolean</code></p>
 </blockquote>
+<h3 id="onclick">onClick?<a class="headerlink" href="#onclick" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>onClick?</strong>: (<code>event?</code>) =&gt; <code>void</code></p>
+</blockquote>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
+<h5 id="event">event?<a class="headerlink" href="#event" title="Permanent link">&para;</a></h5>
+<p><code>MouseEvent</code>\&lt;<code>HTMLButtonElement</code>&gt;</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
+<p><code>void</code></p>
 <h3 id="starticon">startIcon?<a class="headerlink" href="#starticon" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>startIcon?</strong>: <code>React.ReactNode</code></p>

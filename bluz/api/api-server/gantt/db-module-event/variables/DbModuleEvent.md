@@ -8,7 +8,7 @@
 
 > `const` **DbModuleEvent**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-module-event.ts:375](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/db-module-event.ts#L375)
+Defined in: [ui/src/api-server/gantt/db-module-event.ts:375](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/db-module-event.ts#L375)
 
 ## Type Declaration
 

@@ -8,7 +8,7 @@
 
 > **NumberSpinner**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/NumberSpinner.tsx:59](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/NumberSpinner.tsx#L59)
+Defined in: [ui/src/components/base/NumberSpinner.tsx:59](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/NumberSpinner.tsx#L59)
 
 Duration spinner — for durations only, not general numbers.
 

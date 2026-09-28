@@ -6,10 +6,6 @@
 
 # components/schedule/event-component/base
 
-## Type Aliases
-
-- [ContainerSize](type-aliases/ContainerSize.md)
-
 ## Functions
 
 - [BluzEventComponent](functions/BluzEventComponent.md)

@@ -15,6 +15,5 @@
 - [cutCurriculumToSchedule](functions/cutCurriculumToSchedule.md)
 - [getCurriculumCutStatus](functions/getCurriculumCutStatus.md)
 - [planCurriculumCut](functions/planCurriculumCut.md)
-- [previewCurriculumCut](functions/previewCurriculumCut.md)
 - [pullBackCurriculumSchedule](functions/pullBackCurriculumSchedule.md)
 - [reloadCurriculumSchedule](functions/reloadCurriculumSchedule.md)

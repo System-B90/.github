@@ -8,7 +8,7 @@
 
 > **useElementSize**\<`T`\>(): `object`
 
-Defined in: [ui/src/components/schedule/event-component/utils.tsx:3](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/event-component/utils.tsx#L3)
+Defined in: [ui/src/components/schedule/event-component/utils.tsx:8](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/event-component/utils.tsx#L8)
 
 ## Type Parameters
 
@@ -26,12 +26,4 @@ Defined in: [ui/src/components/schedule/event-component/utils.tsx:3](https://git
 
 ### size
 
-> **size**: `object`
-
-#### size.height
-
-> **height**: `number` = `0`
-
-#### size.width
-
-> **width**: `number` = `0`
+> **size**: [`ContainerSize`](../type-aliases/ContainerSize.md)

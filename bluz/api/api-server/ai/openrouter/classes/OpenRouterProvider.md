@@ -6,7 +6,7 @@
 
 # Class: OpenRouterProvider
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:16](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openrouter.ts#L16)
+Defined in: [ui/src/api-server/ai/openrouter.ts:16](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/openrouter.ts#L16)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/openrouter.ts:16](https://github.com/System-B9
 
 > **new OpenRouterProvider**(`options`): `OpenRouterProvider`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:17](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openrouter.ts#L17)
+Defined in: [ui/src/api-server/ai/openrouter.ts:17](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/openrouter.ts#L17)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Attribution headers; OpenRouter uses them for rate-limit tiers.
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:161](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L161)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:161](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/openai-compatible.ts#L161)
 
 Model used when a request does not name one.
 
@@ -74,7 +74,7 @@ Model used when a request does not name one.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:160](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L160)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:160](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/openai-compatible.ts#L160)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -88,7 +88,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:192](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L192)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:192](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/openai-compatible.ts#L192)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -112,7 +112,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:215](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/openai-compatible.ts#L215)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:215](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/openai-compatible.ts#L215)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

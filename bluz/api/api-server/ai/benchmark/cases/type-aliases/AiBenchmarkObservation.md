@@ -8,7 +8,7 @@
 
 > **AiBenchmarkObservation** = `object`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:18](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/cases.ts#L18)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:34](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L34)
 
 What one case observed about a run, for its checks to grade.
 
@@ -18,7 +18,7 @@ What one case observed about a run, for its checks to grade.
 
 > **answer**: `string`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:27](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/cases.ts#L27)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:43](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L43)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-server/ai/benchmark/cases.ts:27](https://github.com/Syst
 
 > **askedUser**: `boolean`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:26](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/cases.ts#L26)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:42](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L42)
 
 Whether the model asked the human a question.
 
@@ -36,9 +36,19 @@ Whether the model asked the human a question.
 
 > **executedWrites**: `string`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:24](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/cases.ts#L24)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:40](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L40)
 
 Write tools that actually executed. Must always be empty.
+
+***
+
+### proposals
+
+> **proposals**: `ObservedCall`[]
+
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:47](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L47)
+
+Every write proposed for approval, with its arguments.
 
 ***
 
@@ -46,9 +56,19 @@ Write tools that actually executed. Must always be empty.
 
 > **proposedWrites**: `string`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:22](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/cases.ts#L22)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:38](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L38)
 
 Write tools the model proposed (and which the gate stopped).
+
+***
+
+### reads
+
+> **reads**: `ObservedCall`[]
+
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:45](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L45)
+
+Every read that ran, with its arguments.
 
 ***
 
@@ -56,6 +76,6 @@ Write tools the model proposed (and which the gate stopped).
 
 > **toolCalls**: `string`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:20](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/ai/benchmark/cases.ts#L20)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:36](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/benchmark/cases.ts#L36)
 
 Tool names called, in order. Includes calls that only got proposed.

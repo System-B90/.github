@@ -8,7 +8,7 @@
 
 > **AiBenchmarkResult** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:41](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L41)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:77](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L77)
 
 ## Properties
 
@@ -16,7 +16,23 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:41](https://github.com/Syst
 
 > **cases**: [`AiBenchmarkCase`](AiBenchmarkCase.md)[]
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:43](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L43)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:81](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L81)
+
+***
+
+### checksPassed
+
+> **checksPassed**: `number`
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:86](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L86)
+
+***
+
+### checksTotal
+
+> **checksTotal**: `number`
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:87](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L87)
 
 ***
 
@@ -24,7 +40,17 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:43](https://github.com/Syst
 
 > **durationMs**: `number`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:48](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L48)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:92](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L92)
+
+***
+
+### gateHeld
+
+> **gateHeld**: `boolean`
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:89](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L89)
+
+The approval gate held in every case.
 
 ***
 
@@ -32,7 +58,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:48](https://github.com/Syst
 
 > **model**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:42](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L42)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:78](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L78)
 
 ***
 
@@ -40,7 +66,19 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:42](https://github.com/Syst
 
 > **passed**: `number`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:44](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L44)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:83](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L83)
+
+Cases whose every check passed.
+
+***
+
+### systemPrompt
+
+> **systemPrompt**: `string`
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:80](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L80)
+
+The system prompt every case ran under.
 
 ***
 
@@ -48,7 +86,9 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:44](https://github.com/Syst
 
 > **total**: `number`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:45](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L45)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:85](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L85)
+
+Cases run.
 
 ***
 
@@ -56,6 +96,6 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:45](https://github.com/Syst
 
 > `optional` **totalTokens?**: `number`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:47](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L47)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:91](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L91)
 
 Total tokens the run spent, so the cost of testing is visible.

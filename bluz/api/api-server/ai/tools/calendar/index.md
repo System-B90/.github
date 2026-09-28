@@ -13,8 +13,11 @@
 ## Variables
 
 - [CALENDAR\_TOOLS](variables/CALENDAR_TOOLS.md)
+- [compareEventsTool](variables/compareEventsTool.md)
 - [createEventTool](variables/createEventTool.md)
 - [deleteEventTool](variables/deleteEventTool.md)
+- [getEventHistoryTool](variables/getEventHistoryTool.md)
+- [getEventTool](variables/getEventTool.md)
 - [listEventsTool](variables/listEventsTool.md)
 - [listIterationsTool](variables/listIterationsTool.md)
 - [listRoomsTool](variables/listRoomsTool.md)

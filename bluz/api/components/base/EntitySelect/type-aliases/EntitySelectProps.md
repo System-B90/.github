@@ -8,7 +8,7 @@
 
 > **EntitySelectProps**\<`TId`\> = `object` & `Omit`\<`FormControlProps`, `"onChange"`\>
 
-Defined in: [ui/src/components/base/EntitySelect.tsx:13](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/base/EntitySelect.tsx#L13)
+Defined in: [ui/src/components/base/EntitySelect.tsx:18](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/EntitySelect.tsx#L18)
 
 ## Type Declaration
 
@@ -73,6 +73,18 @@ Coerce the raw `<select>` value back to the id type.
 #### Returns
 
 `TId`
+
+### searchable?
+
+> `optional` **searchable?**: `boolean`
+
+Top the menu with a type-to-filter search box.
+
+### searchPlaceholder?
+
+> `optional` **searchPlaceholder?**: `string`
+
+Placeholder for the search box.
 
 ### value
 

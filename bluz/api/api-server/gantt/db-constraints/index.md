@@ -12,6 +12,7 @@
 
 ## Functions
 
+- [constraintInsertFromPayload](functions/constraintInsertFromPayload.md)
 - [createConstraint](functions/createConstraint.md)
 - [deleteConstraint](functions/deleteConstraint.md)
 - [getConstraintsForCurriculum](functions/getConstraintsForCurriculum.md)

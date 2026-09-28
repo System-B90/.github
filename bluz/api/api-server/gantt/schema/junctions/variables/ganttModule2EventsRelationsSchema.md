@@ -8,6 +8,6 @@
 
 > `const` **ganttModule2EventsRelationsSchema**: `Relations`\<`"m2e"`, \{ `event`: `One`\<`"e"`, `true`\>; `module`: `One`\<`"m"`, `true`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/junctions.ts:110](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-server/gantt/schema/junctions.ts#L110)
+Defined in: [ui/src/api-server/gantt/schema/junctions.ts:110](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/schema/junctions.ts#L110)
 
 Relations definition for the Module to Events junction schema.

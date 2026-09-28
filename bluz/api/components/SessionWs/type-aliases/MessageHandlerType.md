@@ -8,7 +8,7 @@
 
 > **MessageHandlerType** = `SharedMessageHandlerType`\<[`MessageTypes`](../../../settings/enumerations/MessageTypes.md)\>
 
-Defined in: [ui/src/components/SessionWs.tsx:28](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/SessionWs.tsx#L28)
+Defined in: [ui/src/components/SessionWs.tsx:28](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/SessionWs.tsx#L28)
 
 Handler callback for processing incoming WebSocket messages on the client.
 

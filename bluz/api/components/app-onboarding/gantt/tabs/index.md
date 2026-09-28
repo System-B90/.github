@@ -8,6 +8,7 @@
 
 ## Variables
 
+- [GANTT\_TAB\_COUNT](variables/GANTT_TAB_COUNT.md)
 - [GANTT\_TAB\_INDEX](variables/GANTT_TAB_INDEX.md)
 
 ## Functions

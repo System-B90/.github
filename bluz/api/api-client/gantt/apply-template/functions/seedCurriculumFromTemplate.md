@@ -8,12 +8,9 @@
 
 > **seedCurriculumFromTemplate**(`curriculumId`, `template`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-client/gantt/apply-template.ts:19](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-client/gantt/apply-template.ts#L19)
+Defined in: [ui/src/api-client/gantt/apply-template.ts:16](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-client/gantt/apply-template.ts#L16)
 
-Seeds a (blank) curriculum's weeks and per-day working minutes from a
-template. Creates exactly `template.weekCount` weeks; each newly created week
-comes back with its linked days, whose `totalWorkingMinutes` we set from the
-template's resolved day-config.
+Seeds a (blank) curriculum from a template through the Gantt API.
 
 Used by the "create curriculum from template" flow. It talks to the Gantt API
 directly (not the in-memory reducer), so it works before the new curriculum's

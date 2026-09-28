@@ -8,7 +8,7 @@
 
 > **findPersonConflicts**(`events`, `personId`, `target`, `excludeEventIds?`): [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)[]
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:137](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L137)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:137](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L137)
 
 Finds events that already book a person during the target event's slot —
 the same overlap report the curriculum cut pipeline surfaces.

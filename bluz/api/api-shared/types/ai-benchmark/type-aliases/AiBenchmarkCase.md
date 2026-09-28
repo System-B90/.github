@@ -8,7 +8,7 @@
 
 > **AiBenchmarkCase** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:24](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L24)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:26](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L26)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:24](https://github.com/Syst
 
 > **answer**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:34](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L34)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:36](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L36)
 
 The model's final prose answer.
 
@@ -26,7 +26,7 @@ The model's final prose answer.
 
 > **checks**: [`AiBenchmarkCheck`](AiBenchmarkCheck.md)[]
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:30](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L30)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:32](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L32)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:30](https://github.com/Syst
 
 > **durationMs**: `number`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:36](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L36)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:47](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L47)
 
 Wall-clock time for the case.
 
@@ -44,9 +44,20 @@ Wall-clock time for the case.
 
 > `optional` **error?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:38](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L38)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:49](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L49)
 
 Set when the case could not run at all (upstream failure).
+
+***
+
+### gateHeld
+
+> **gateHeld**: `boolean`
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:56](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L56)
+
+No write ran without approval. Structural, not a model skill, so it is
+reported beside the score rather than padding it.
 
 ***
 
@@ -54,7 +65,17 @@ Set when the case could not run at all (upstream failure).
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:25](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L25)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:27](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L27)
+
+***
+
+### passed
+
+> **passed**: `boolean`
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:51](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L51)
+
+Every check passed: the unit the headline score counts.
 
 ***
 
@@ -62,9 +83,37 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:25](https://github.com/Syst
 
 > **prompt**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:29](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L29)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:31](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L31)
 
 The prompt the model was given.
+
+***
+
+### proposals
+
+> **proposals**: `object`[]
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:43](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L43)
+
+Write proposals the gate stopped, with their parsed arguments.
+
+#### args
+
+> **args**: `Record`\<`string`, `unknown`\>
+
+#### name
+
+> **name**: `string`
+
+***
+
+### reasoning?
+
+> `optional` **reasoning?**: `string`
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:45](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L45)
+
+Reasoning/chain-of-thought text, when the model streamed any.
 
 ***
 
@@ -72,7 +121,7 @@ The prompt the model was given.
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:27](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L27)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:29](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L29)
 
 Hebrew title of what this case probes.
 
@@ -82,6 +131,17 @@ Hebrew title of what this case probes.
 
 > **toolCalls**: `string`[]
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:32](https://github.com/System-B90/Bluz/blob/59b35ec547ab85fc4cb04fc9443883a2e8840381/ui/src/api-shared/types/ai-benchmark.ts#L32)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:34](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L34)
 
 Tool names the model called, in order, for the transcript view.
+
+***
+
+### transcript
+
+> **transcript**: [`AiMessage`](../../ai/type-aliases/AiMessage.md)[]
+
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:41](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/ai-benchmark.ts#L41)
+
+Every message the agent loop produced — assistant turns, tool calls and
+the raw tool results — for the JSON export used to debug tools/prompts.
