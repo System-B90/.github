@@ -133,7 +133,10 @@ runs:
       env:
         REBUILD: ${{ inputs.rebuild }}
       run: |
-        if [ "$REBUILD" = "true" ] || [ ! -s "$HOME/hive-shared/state/dbname" ]; then
+        # No pin file = bootstrapped before images were pinned (hive-shared.sh
+        # pin_images); its hive/* tags can't be trusted, so rebuild it.
+        if [ "$REBUILD" = "true" ] || [ ! -s "$HOME/hive-shared/state/dbname" ] ||
+          [ ! -f "$HOME/hive-shared/stack/docker-compose.pin.yaml" ]; then
           echo "needed=true" >> "$GITHUB_OUTPUT"
         else
           echo "needed=false" >> "$GITHUB_OUTPUT"
