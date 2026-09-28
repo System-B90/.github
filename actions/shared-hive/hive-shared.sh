@@ -26,7 +26,16 @@ STATE="$HIVE_SHARED_HOME/state"
 PROJECT=hive
 BASELINE_DB=hive_ci_baseline
 
-compose() { docker compose -p "$PROJECT" --project-directory "$STACK" -f "$STACK/docker-compose.yaml" "$@"; }
+# Private image tags the instance runs from (see pin_images). The stack's own
+# hive/*:latest tags are shared with setup-hive on the same Docker daemon, which
+# re-points them whenever pyhive's hive-stack moves to a newer Hive.
+PIN_FILE=docker-compose.pin.yaml
+
+compose() {
+  local -a files=(-f "$STACK/docker-compose.yaml")
+  [ -f "$STACK/$PIN_FILE" ] && files+=(-f "$STACK/$PIN_FILE")
+  docker compose -p "$PROJECT" --project-directory "$STACK" "${files[@]}" "$@"
+}
 psql_admin() { compose exec -T database psql -v ON_ERROR_STOP=1 -U root -d postgres -Atc "$1"; }
 # Root inside a throwaway container, for files owned by container uids (the
 # runner user has no passwordless sudo). Uses a Hive image so nothing extra is
@@ -58,6 +67,26 @@ cmd_wait() {
     sleep 5
   done
   log "Hive did not answer at https://hive.org"; return 1
+}
+
+# Copy every hive/* image the stack uses to hive-shared/<name>:<sha> and point
+# the services at those copies, so a later `docker tag ... hive/core` by
+# setup-hive (or a bootstrap for another Hive) can't swap images under a
+# baseline taken with a different schema and config.
+pin_images() {
+  local sha svc img pinned
+  sha=$(cat "$STACK/HIVE_SHA" 2>/dev/null || echo baseline)
+  rm -f "$STACK/$PIN_FILE"
+  echo "services:" >"$STACK/$PIN_FILE.tmp"
+  while read -r svc img; do
+    case "$img" in hive/*) ;; *) continue ;; esac
+    pinned="hive-shared/${img#hive/}"; pinned="${pinned%%:*}:$sha"
+    docker tag "$img" "$pinned"
+    printf '  %s:\n    image: %s\n' "$svc" "$pinned" >>"$STACK/$PIN_FILE.tmp"
+  done < <(compose config --format json | python3 -c \
+    'import json,sys; [print(k, v["image"]) for k, v in json.load(sys.stdin)["services"].items() if v.get("image")]')
+  mv "$STACK/$PIN_FILE.tmp" "$STACK/$PIN_FILE"
+  log "Pinned images to hive-shared/*:$sha"
 }
 
 app_services() {
@@ -92,6 +121,7 @@ EOF
   printf 'HIVE_OIDC_RSA_PRIVATE_KEY="%s"\n' \
     "$(openssl genrsa 2048 2>/dev/null | awk '{printf "%s\\n", $0}')" >>"$STACK/.env.override"
   mkdir -p "$STACK/db" "$STACK/media"
+  pin_images
   as_root "$STACK/db:/d" "chown 999:999 /d"
 
   log "Starting datastores"
@@ -137,6 +167,11 @@ EOF
 cmd_ensure() {
   if [ ! -f "$STATE/dbname" ] || [ ! -f "$STACK/docker-compose.yaml" ]; then
     log "No bootstrapped instance under $HIVE_SHARED_HOME"; exit 3
+  fi
+  if [ ! -f "$STACK/$PIN_FILE" ]; then
+    # Bootstrapped before pinning existed: its hive/* tags may already point at
+    # another Hive. Rebuild rather than guess.
+    log "Instance has no pinned images; it needs a rebuild"; exit 3
   fi
   compose up -d database redis
   wait_db
