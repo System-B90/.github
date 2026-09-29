@@ -71,7 +71,10 @@ runs:
     - name: Check this runner hosts the shared Hive
       shell: bash
       run: |
-        if ! getent hosts hive.org | grep -q '^127\.0\.0\.6 '; then
+        # ahosts goes through getaddrinfo, like curl and Node. `getent hosts`
+        # asks for IPv6 first, and public DNS answers hive.org's real AAAA
+        # record before /etc/hosts' IPv4 line is consulted.
+        if [ "$(getent ahosts hive.org | awk 'NR == 1 { print $1 }')" != 127.0.0.6 ]; then
           echo "::error::hive.org does not resolve to 127.0.0.6 on ${RUNNER_NAME}. shared-hive-acquire only works on the runners labelled 'shared-hive' (mks90-laptop-wsl*). Check runs-on, or add '127.0.0.6 hive.org' to /etc/hosts on the host."
           exit 1
         fi
