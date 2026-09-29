@@ -85,6 +85,12 @@ HIVE_CORE_WORKERS=2
 HIVE_CORE_THREADS=2
 HIVE_NGINX_WORKERS=1
 EOF
+  # Hive's .env leaves the OIDC signing key empty on purpose (a shared default
+  # would let anyone forge tokens); manage_hive.py init generates one per
+  # deployment. Without it /api/core/sso/token/ 500s and every consumer's SSO
+  # login fails at the callback with OAuthCallback.
+  printf 'HIVE_OIDC_RSA_PRIVATE_KEY="%s"\n' \
+    "$(openssl genrsa 2048 2>/dev/null | awk '{printf "%s\\n", $0}')" >>"$STACK/.env.override"
   mkdir -p "$STACK/db" "$STACK/media"
   as_root "$STACK/db:/d" "chown 999:999 /d"
 
