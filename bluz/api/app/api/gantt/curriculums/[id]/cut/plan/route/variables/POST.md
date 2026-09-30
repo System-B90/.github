@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/plan/route.ts:33](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/app/api/gantt/curriculums/[id]/cut/plan/route.ts#L33)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/plan/route.ts:33](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/app/api/gantt/curriculums/[id]/cut/plan/route.ts#L33)
 
 POST: the "plan" half of the plan-then-confirm cut flow. Runs the full
 pipeline (balance → constraints → breaks) and reports what the commit would

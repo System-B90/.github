@@ -19,6 +19,7 @@
 - [computeEventDaySpans](functions/computeEventDaySpans.md)
 - [formatHours](functions/formatHours.md)
 - [formatHoursLabel](functions/formatHoursLabel.md)
+- [formatMinutesAsDuration](functions/formatMinutesAsDuration.md)
 - [formatMinutesAsTimeInput](functions/formatMinutesAsTimeInput.md)
 - [formatShortDate](functions/formatShortDate.md)
 - [formatWeekDateRange](functions/formatWeekDateRange.md)

@@ -8,7 +8,7 @@
 
 > **CalendarStoreMenu**\<`TEntry`\>(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:67](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L67)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:67](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L67)
 
 Toolbar popover shared by the shared-drafts and snapshots menus: a named
 create field over a list of stored calendar states, each row exposing the

@@ -8,7 +8,7 @@
 
 > **getModuleShuffleTotals**(`module`, `fieldName`, `state`, `occurrenceCtx?`): `Record`\<`string`, `number`\> \| `null`
 
-Defined in: [ui/src/components/gantt/utils.tsx:161](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/utils.tsx#L161)
+Defined in: [ui/src/components/gantt/utils.tsx:161](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/utils.tsx#L161)
 
 Per-shuffle sums of an event field for a module, or null when none of the
 module's events are shuffle-tagged (⇒ all shuffles are identical).

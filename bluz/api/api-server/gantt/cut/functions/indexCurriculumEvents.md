@@ -8,7 +8,7 @@
 
 > **indexCurriculumEvents**(`curriculum`): `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:208](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/cut.ts#L208)
+Defined in: [ui/src/api-server/gantt/cut.ts:210](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/cut.ts#L210)
 
 Walk the full curriculum tree once, indexing every event by id and recording
 the title of the syllabus each event lives under (used as course provenance).
@@ -30,6 +30,12 @@ Module id → its event ids, for fanning out module-level constraints.
 ### eventsById
 
 > **eventsById**: `Map`\<`string`, [`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md)\>
+
+### hiveGroupByShuffle
+
+> **hiveGroupByShuffle**: `Map`\<`string`, `number`\>
+
+Shuffle name → the Hive student group its syllabus links it to (#774).
 
 ### moduleHiveIdsByEvent
 

@@ -8,7 +8,7 @@
 
 > **reconcileEventLesson**(`client`, `event`, `action`, `controller?`): `Promise`\<`LessonId` \| `null`\>
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:139](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/lesson-sync.ts#L139)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:140](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/lesson-sync.ts#L140)
 
 Brings the Hive lesson of a single event in line with the event: creates it
 when the event first gets a queue mapping, re-points its rules when the

@@ -6,9 +6,9 @@
 
 # Function: materializeRecurrenceOccurrence()
 
-> **materializeRecurrenceOccurrence**(`data`): `Promise`\<\{ `event`: [`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md) \| [`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md); `mapping`: \{ `createdAt`: `Date`; `curriculumId`: `string`; `dayId`: `string`; `eventId`: `string` \| `null`; `id`: `string`; `moduleId`: `string`; `sortOrder`: `number`; `updatedAt`: `Date`; \}; \}\>
+> **materializeRecurrenceOccurrence**(`data`): `Promise`\<\{ `event`: [`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md) \| [`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md); `mapping`: \{ `createdAt`: `Date`; `curriculumId`: `string`; `dayId`: `string`; `eventId`: `string` \| `null`; `id`: `string`; `moduleId`: `string`; `sortOrder`: `number`; `updatedAt`: `Date`; `weekSplitMinutes`: `number`[]; \}; \}\>
 
-Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:57](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L57)
+Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:57](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L57)
 
 Materializes a recurring occurrence into its own standalone event: copies
 the source event's fields (recurrence reset to "none"), links the copy to
@@ -37,4 +37,4 @@ event from echoing onto that day going forward.
 
 ## Returns
 
-`Promise`\<\{ `event`: [`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md) \| [`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md); `mapping`: \{ `createdAt`: `Date`; `curriculumId`: `string`; `dayId`: `string`; `eventId`: `string` \| `null`; `id`: `string`; `moduleId`: `string`; `sortOrder`: `number`; `updatedAt`: `Date`; \}; \}\>
+`Promise`\<\{ `event`: [`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md) \| [`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md); `mapping`: \{ `createdAt`: `Date`; `curriculumId`: `string`; `dayId`: `string`; `eventId`: `string` \| `null`; `id`: `string`; `moduleId`: `string`; `sortOrder`: `number`; `updatedAt`: `Date`; `weekSplitMinutes`: `number`[]; \}; \}\>

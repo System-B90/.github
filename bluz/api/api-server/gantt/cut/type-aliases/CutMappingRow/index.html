@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../" class="md-nav__link">
         
   
@@ -700,6 +727,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weeksplitminutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weekSplitMinutes?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -732,26 +770,33 @@
 <blockquote>
 <p><strong>CutMappingRow</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/cut.ts#L95">ui/src/api-server/gantt/cut.ts:95</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/cut.ts#L95">ui/src/api-server/gantt/cut.ts:95</a></p>
 <p>Plain-data mapping row (subset of the Drizzle <code>cMDA</code> row).</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="dayid">dayId<a class="headerlink" href="#dayid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>dayId</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/cut.ts#L97">ui/src/api-server/gantt/cut.ts:97</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/cut.ts#L97">ui/src/api-server/gantt/cut.ts:97</a></p>
 <hr />
 <h3 id="eventid">eventId<a class="headerlink" href="#eventid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>eventId</strong>: <code>null</code> | <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/cut.ts#L96">ui/src/api-server/gantt/cut.ts:96</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/cut.ts#L96">ui/src/api-server/gantt/cut.ts:96</a></p>
 <hr />
 <h3 id="sortorder">sortOrder?<a class="headerlink" href="#sortorder" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>sortOrder?</strong>: <code>null</code> | <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/cut.ts#L98">ui/src/api-server/gantt/cut.ts:98</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/cut.ts#L98">ui/src/api-server/gantt/cut.ts:98</a></p>
+<hr />
+<h3 id="weeksplitminutes">weekSplitMinutes?<a class="headerlink" href="#weeksplitminutes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>weekSplitMinutes?</strong>: <code>number</code>[] | <code>null</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/cut.ts#L100">ui/src/api-server/gantt/cut.ts:100</a></p>
+<p>Minutes per consecutive week for a split-across-weeks event (#768).</p>
 
 
 

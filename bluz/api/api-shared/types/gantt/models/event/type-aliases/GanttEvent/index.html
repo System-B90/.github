@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../" class="md-nav__link">
         
   
@@ -866,6 +893,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#splitacrossweeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        splitAcrossWeeks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#systemrequirements" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -930,7 +968,7 @@
 <blockquote>
 <p><strong>GanttEvent</strong> = <code>object</code> &amp; <a href="../../../shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/event.ts#L28">ui/src/api-shared/types/gantt/models/event.ts:28</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/event.ts#L28">ui/src/api-shared/types/gantt/models/event.ts:28</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="allocatedduration">allocatedDuration<a class="headerlink" href="#allocatedduration" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -1027,6 +1065,12 @@ Empty/undefined ⇒ applies to all shuffles.</p>
 <p>When true and this event overlaps a meal/break window during cutting,
 it's split around the break instead of bumped past it: runs up to the
 break's start, then resumes after it ends.</p>
+<h3 id="splitacrossweeks">splitAcrossWeeks<a class="headerlink" href="#splitacrossweeks" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>splitAcrossWeeks</strong>: <code>boolean</code></p>
+</blockquote>
+<p>When true the event's hours may be split over consecutive weeks, as
+defined per curriculum on its mapping in the timeline view (#768).</p>
 <h3 id="systemrequirements">systemRequirements<a class="headerlink" href="#systemrequirements" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>systemRequirements</strong>: <code>string</code>[]</p>

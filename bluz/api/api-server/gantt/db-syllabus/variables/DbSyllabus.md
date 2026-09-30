@@ -8,22 +8,24 @@
 
 > `const` **DbSyllabus**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-syllabus.ts:391](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/db-syllabus.ts#L391)
+Defined in: [ui/src/api-server/gantt/db-syllabus.ts:447](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-syllabus.ts#L447)
 
 ## Type Declaration
 
 ### applyShuffles
 
-> **applyShuffles**: (`id`, `requested`, `requestedDescriptions?`) => `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
+> **applyShuffles**: (`id`, `requested`, `requestedDescriptions?`, `requestedRenames?`) => `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
 
 Replaces the syllabus' shuffle list, cascading every removed name off the
-modules and events that carry it (#485).
+modules and events that carry it (#485), and every renamed one onto them
+(#774).
 
 Without the cascade the child keeps a dangling name and the UI only offers
 to clear it once the user retypes the deleted shuffle on the syllabus — so
 the caller confirms first (see `ShufflesSection`) and this applies both
-sides in one transaction. Descriptions of removed names go with them;
-`requestedDescriptions`, when given, replaces the rest.
+sides in one transaction. Descriptions of removed names go with them and
+renamed ones follow their shuffle; `requestedDescriptions`, when given,
+replaces the rest.
 
 #### Parameters
 
@@ -39,9 +41,15 @@ sides in one transaction. Descriptions of removed names go with them;
 
 [`ShuffleDescriptions`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions.md)
 
+##### requestedRenames?
+
+[`ShuffleRenames`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleRenames.md)
+
 #### Returns
 
 `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
+
+Every module and event whose tags were rewritten, as they were.
 
 ### attachParentIds
 

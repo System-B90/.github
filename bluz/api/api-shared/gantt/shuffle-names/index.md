@@ -9,6 +9,8 @@
 ## Type Aliases
 
 - [ShuffleDescriptions](type-aliases/ShuffleDescriptions.md)
+- [ShuffleHiveGroups](type-aliases/ShuffleHiveGroups.md)
+- [ShuffleRenames](type-aliases/ShuffleRenames.md)
 
 ## Variables
 
@@ -17,7 +19,12 @@
 ## Functions
 
 - [isShuffleDescriptions](functions/isShuffleDescriptions.md)
+- [isShuffleHiveGroups](functions/isShuffleHiveGroups.md)
 - [isShuffleNameList](functions/isShuffleNameList.md)
 - [normalizeShuffleDescriptions](functions/normalizeShuffleDescriptions.md)
+- [normalizeShuffleHiveGroups](functions/normalizeShuffleHiveGroups.md)
 - [normalizeShuffleName](functions/normalizeShuffleName.md)
 - [normalizeShuffleNames](functions/normalizeShuffleNames.md)
+- [normalizeShuffleRenames](functions/normalizeShuffleRenames.md)
+- [renameShuffleKeys](functions/renameShuffleKeys.md)
+- [retagShuffles](functions/retagShuffles.md)

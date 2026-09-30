@@ -8,7 +8,7 @@
 
 > **GanttEvent** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:28](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/event.ts#L28)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:28](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/event.ts#L28)
 
 ## Type Declaration
 
@@ -119,6 +119,13 @@ Empty/undefined ⇒ applies to all shuffles.
 When true and this event overlaps a meal/break window during cutting,
 it's split around the break instead of bumped past it: runs up to the
 break's start, then resumes after it ends.
+
+### splitAcrossWeeks
+
+> **splitAcrossWeeks**: `boolean`
+
+When true the event's hours may be split over consecutive weeks, as
+defined per curriculum on its mapping in the timeline view (#768).
 
 ### systemRequirements
 

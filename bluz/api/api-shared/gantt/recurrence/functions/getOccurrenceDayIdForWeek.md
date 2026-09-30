@@ -8,7 +8,7 @@
 
 > **getOccurrenceDayIdForWeek**(`weekDayIds`, `startDow`, `dayIndexOf`): `string` \| `null`
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:121](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/recurrence.ts#L121)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:121](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/recurrence.ts#L121)
 
 The actual occurrence day within a given week's days for a weekly-recurring
 event — the day matching the start day's weekday. The weekly timeline view

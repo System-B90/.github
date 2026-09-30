@@ -8,7 +8,7 @@
 
 > **computeEventDaySpans**(`__namedParameters`): `Record`\<`string`, [`EventDaySpan`](../type-aliases/EventDaySpan.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:250](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L250)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:288](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L288)
 
 Computes, per mapped event, the days it actually occupies. An event whose
 required minutes exceed its start day's working capacity dynamically

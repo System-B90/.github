@@ -19,6 +19,7 @@
 ## Functions
 
 - [defaultModuleEventSplitAcrossBreaks](functions/defaultModuleEventSplitAcrossBreaks.md)
+- [defaultModuleEventSplitAcrossWeeks](functions/defaultModuleEventSplitAcrossWeeks.md)
 
 ## References
 

@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../" class="md-nav__link">
         
   
@@ -718,6 +745,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#hivegroupbyshuffle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hiveGroupByShuffle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#modulehiveidsbyevent" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -826,7 +864,7 @@
 <blockquote>
 <p><strong>indexCurriculumEvents</strong>(<code>curriculum</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/cut.ts#L208">ui/src/api-server/gantt/cut.ts:208</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/cut.ts#L210">ui/src/api-server/gantt/cut.ts:210</a></p>
 <p>Walk the full curriculum tree once, indexing every event by id and recording
 the title of the syllabus each event lives under (used as course provenance).</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
@@ -842,6 +880,11 @@ the title of the syllabus each event lives under (used as course provenance).</p
 <blockquote>
 <p><strong>eventsById</strong>: <code>Map</code>\&lt;<code>string</code>, <a href="../../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent/"><code>ApiModuleEvent</code></a>&gt;</p>
 </blockquote>
+<h3 id="hivegroupbyshuffle">hiveGroupByShuffle<a class="headerlink" href="#hivegroupbyshuffle" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>hiveGroupByShuffle</strong>: <code>Map</code>\&lt;<code>string</code>, <code>number</code>&gt;</p>
+</blockquote>
+<p>Shuffle name → the Hive student group its syllabus links it to (#774).</p>
 <h3 id="modulehiveidsbyevent">moduleHiveIdsByEvent<a class="headerlink" href="#modulehiveidsbyevent" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>moduleHiveIdsByEvent</strong>: <code>Map</code>\&lt;<code>string</code>, <code>number</code>[]&gt;</p>

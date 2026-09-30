@@ -8,7 +8,7 @@
 
 > `const` **del**: (`snapshotId`, `controller`) => `Promise`\<`void`\> = `deleteSnapshot`
 
-Defined in: [ui/src/api-server/db-calendar-snapshot.ts:283](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/db-calendar-snapshot.ts#L283)
+Defined in: [ui/src/api-server/db-calendar-snapshot.ts:283](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/db-calendar-snapshot.ts#L283)
 
 Permanently removes a snapshot.
 

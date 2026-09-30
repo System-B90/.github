@@ -8,7 +8,7 @@
 
 > `const` **COMMAND\_GROUPS**: `object`
 
-Defined in: [ui/src/components/app-commands/labels.ts:29](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/app-commands/labels.ts#L29)
+Defined in: [ui/src/components/app-commands/labels.ts:29](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/app-commands/labels.ts#L29)
 
 Section headings. Centralised so two contributors never disagree on the
 spelling of a group and split it into two sections in the result list.

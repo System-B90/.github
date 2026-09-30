@@ -8,7 +8,7 @@
 
 > **GanttSyllabus** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/syllabus.ts:6](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/syllabus.ts#L6)
+Defined in: [ui/src/api-shared/types/gantt/models/syllabus.ts:9](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/syllabus.ts#L9)
 
 ## Type Declaration
 
@@ -44,6 +44,13 @@ Hive ids of the אחראי מקצוע instructors.
 
 Shuffle name → description. A shuffle is a Hive student group, and this
 mirrors that group's staff-only description (max 100 chars).
+
+### shuffleHiveGroups?
+
+> `optional` **shuffleHiveGroups?**: [`ShuffleHiveGroups`](../../../../../gantt/shuffle-names/type-aliases/ShuffleHiveGroups.md)
+
+Shuffle name → explicitly linked Hive student-group id (#774). A shuffle
+without an entry matches the Hive group with its exact name.
 
 ### shuffles?
 

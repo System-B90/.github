@@ -8,9 +8,10 @@
 
 > **ShuffleChip**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/ShuffleChip.tsx:27](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/ShuffleChip.tsx#L27)
+Defined in: [ui/src/components/gantt/ShuffleChip.tsx:30](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/ShuffleChip.tsx#L30)
 
-A shuffle tag. Links to the same-named Hive student group when one exists;
+A shuffle tag. Links to its Hive student group (the explicitly linked one,
+else the same-named one, #774) when one exists;
 the tooltip always carries the shuffle's description and says so when the
 group is missing from Hive.
 
@@ -21,6 +22,12 @@ group is missing from Hive.
 #### description?
 
 `string`
+
+#### hiveGroupId?
+
+`number`
+
+The syllabus' explicit Hive link for this shuffle, if any.
 
 #### name
 

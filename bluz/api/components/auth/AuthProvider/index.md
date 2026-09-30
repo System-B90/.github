@@ -15,3 +15,4 @@
 
 - [AuthProvider](functions/AuthProvider.md)
 - [useAuth](functions/useAuth.md)
+- [useOptionalAuth](functions/useOptionalAuth.md)

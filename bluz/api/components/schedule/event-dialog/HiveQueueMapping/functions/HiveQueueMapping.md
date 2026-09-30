@@ -8,7 +8,7 @@
 
 > **HiveQueueMapping**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/event-dialog/HiveQueueMapping.tsx:40](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/event-dialog/HiveQueueMapping.tsx#L40)
+Defined in: [ui/src/components/schedule/event-dialog/HiveQueueMapping.tsx:41](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-dialog/HiveQueueMapping.tsx#L41)
 
 The Hive side of an event, stated outright rather than left to be inferred:
 which lesson backs it, and which queue each shuffle's students will be put

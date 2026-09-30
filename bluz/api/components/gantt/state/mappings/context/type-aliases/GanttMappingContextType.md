@@ -8,7 +8,7 @@
 
 > **GanttMappingContextType** = `object`
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:42](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/mappings/context.ts#L42)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:55](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/mappings/context.ts#L55)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:42](https://githu
 
 > **createMapping**: [`CreateMapping`](CreateMapping.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:45](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/mappings/context.ts#L45)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:58](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/mappings/context.ts#L58)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:45](https://githu
 
 > **moveMapping**: [`MoveMapping`](MoveMapping.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:46](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/mappings/context.ts#L46)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:59](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/mappings/context.ts#L59)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:46](https://githu
 
 > **refreshMappings**: [`RefreshMappings`](RefreshMappings.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:44](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/mappings/context.ts#L44)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:57](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/mappings/context.ts#L57)
 
 ***
 
@@ -40,7 +40,15 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:44](https://githu
 
 > **removeMapping**: [`RemoveMapping`](RemoveMapping.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:47](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/mappings/context.ts#L47)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:60](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/mappings/context.ts#L60)
+
+***
+
+### setWeekSplit
+
+> **setWeekSplit**: [`SetWeekSplit`](SetWeekSplit.md)
+
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:61](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/mappings/context.ts#L61)
 
 ***
 
@@ -48,4 +56,4 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:47](https://githu
 
 > **state**: [`GanttMappingState`](../../types/type-aliases/GanttMappingState.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:43](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/mappings/context.ts#L43)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:56](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/mappings/context.ts#L56)

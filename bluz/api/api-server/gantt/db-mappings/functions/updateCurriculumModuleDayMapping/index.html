@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../" class="md-nav__link">
         
   
@@ -762,6 +789,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weeksplitminutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weekSplitMinutes?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -810,7 +848,7 @@
 <blockquote>
 <p><strong>updateCurriculumModuleDayMapping</strong>(<code>curriculumId</code>, <code>moduleId</code>, <code>eventId</code>, <code>oldMapping</code>, <code>newValues</code>): <code>Promise</code>\&lt;<code>object</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/db-mappings.ts#L109">ui/src/api-server/gantt/db-mappings.ts:109</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-mappings.ts#L109">ui/src/api-server/gantt/db-mappings.ts:109</a></p>
 <p>Updates an existing mapping (e.g., moving a module to a different day/week).
 Uses the composite primary key fields for identification.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
@@ -833,6 +871,8 @@ Uses the composite primary key fields for identification.</p>
 <p><code>string</code></p>
 <h4 id="sortorder">sortOrder?<a class="headerlink" href="#sortorder" title="Permanent link">&para;</a></h4>
 <p><code>number</code></p>
+<h4 id="weeksplitminutes">weekSplitMinutes?<a class="headerlink" href="#weeksplitminutes" title="Permanent link">&para;</a></h4>
+<p><code>number</code>[]</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<code>object</code>[]&gt;</p>
 <p>The updated mapping record.</p>

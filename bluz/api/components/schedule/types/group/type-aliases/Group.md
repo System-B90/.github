@@ -8,7 +8,7 @@
 
 > **Group** = `object`
 
-Defined in: [ui/src/components/schedule/types/group.ts:5](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/types/group.ts#L5)
+Defined in: [ui/src/components/schedule/types/group.ts:5](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/types/group.ts#L5)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/types/group.ts:5](https://github.com/Sys
 
 > **displayName**: `string`
 
-Defined in: [ui/src/components/schedule/types/group.ts:8](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/types/group.ts#L8)
+Defined in: [ui/src/components/schedule/types/group.ts:8](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/types/group.ts#L8)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/types/group.ts:8](https://github.com/Sys
 
 > **groupType**: [`GroupType`](GroupType.md)
 
-Defined in: [ui/src/components/schedule/types/group.ts:9](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/types/group.ts#L9)
+Defined in: [ui/src/components/schedule/types/group.ts:9](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/types/group.ts#L9)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/schedule/types/group.ts:9](https://github.com/Sys
 
 > **id**: `string`
 
-Defined in: [ui/src/components/schedule/types/group.ts:6](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/types/group.ts#L6)
+Defined in: [ui/src/components/schedule/types/group.ts:6](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/types/group.ts#L6)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/schedule/types/group.ts:6](https://github.com/Sys
 
 > `optional` **members?**: [`User`](../../user/type-aliases/User.md)[]
 
-Defined in: [ui/src/components/schedule/types/group.ts:10](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/types/group.ts#L10)
+Defined in: [ui/src/components/schedule/types/group.ts:10](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/types/group.ts#L10)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/schedule/types/group.ts:10](https://github.com/Sy
 
 > **name**: `string`
 
-Defined in: [ui/src/components/schedule/types/group.ts:7](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/types/group.ts#L7)
+Defined in: [ui/src/components/schedule/types/group.ts:7](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/types/group.ts#L7)
 
 ***
 
@@ -56,4 +56,4 @@ Defined in: [ui/src/components/schedule/types/group.ts:7](https://github.com/Sys
 
 > `optional` **subGroups?**: `Group`[]
 
-Defined in: [ui/src/components/schedule/types/group.ts:11](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/types/group.ts#L11)
+Defined in: [ui/src/components/schedule/types/group.ts:11](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/types/group.ts#L11)

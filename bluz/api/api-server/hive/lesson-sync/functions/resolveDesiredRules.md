@@ -6,15 +6,14 @@
 
 # Function: resolveDesiredRules()
 
-> **resolveDesiredRules**(`event`, `courseNameById`, `hiveClasses`): `Map`\<`number`, `number`\>
+> **resolveDesiredRules**(`event`, `courseById`, `hiveClasses`): `Map`\<`number`, `number`\>
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:107](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/lesson-sync.ts#L107)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:107](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/lesson-sync.ts#L107)
 
 Resolves an event's shuffle→queue mapping into Hive ids.
 
 A Bluz course *is* a shuffle and a shuffle is 1:1 with a Hive student group,
-matched by name — the same rule the curriculum cut uses when it creates
-courses for shuffles. A course with no matching Hive group contributes
+its explicitly linked group, else the same-named one (#774). A course with no matching Hive group contributes
 nothing rather than failing the whole sync.
 
 ## Parameters
@@ -25,11 +24,11 @@ nothing rather than failing the whole sync.
 
 The event carrying `hiveQueues`.
 
-### courseNameById
+### courseById
 
-`Map`\<`string`, `string`\>
+`Map`\<`string`, `Pick`\<[`Course`](../../../../api-shared/types/course/type-aliases/Course.md), `"name"` \| `"hiveClassId"`\>\>
 
-Bluz course id → course (shuffle) name.
+Bluz course id → course (shuffle).
 
 ### hiveClasses
 

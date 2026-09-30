@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../" class="md-nav__link">
         
   
@@ -718,6 +745,17 @@
     <span class="md-ellipsis">
       
         requestedDescriptions?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestedrenames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        requestedRenames?
       
     </span>
   </a>
@@ -1498,19 +1536,21 @@
 <blockquote>
 <p><code>const</code> <strong>DbSyllabus</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/db-syllabus.ts#L391">ui/src/api-server/gantt/db-syllabus.ts:391</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-syllabus.ts#L447">ui/src/api-server/gantt/db-syllabus.ts:447</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="applyshuffles">applyShuffles<a class="headerlink" href="#applyshuffles" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>applyShuffles</strong>: (<code>id</code>, <code>requested</code>, <code>requestedDescriptions?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
+<p><strong>applyShuffles</strong>: (<code>id</code>, <code>requested</code>, <code>requestedDescriptions?</code>, <code>requestedRenames?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
 </blockquote>
 <p>Replaces the syllabus' shuffle list, cascading every removed name off the
-modules and events that carry it (#485).</p>
+modules and events that carry it (#485), and every renamed one onto them
+(#774).</p>
 <p>Without the cascade the child keeps a dangling name and the UI only offers
 to clear it once the user retypes the deleted shuffle on the syllabus — so
 the caller confirms first (see <code>ShufflesSection</code>) and this applies both
-sides in one transaction. Descriptions of removed names go with them;
-<code>requestedDescriptions</code>, when given, replaces the rest.</p>
+sides in one transaction. Descriptions of removed names go with them and
+renamed ones follow their shuffle; <code>requestedDescriptions</code>, when given,
+replaces the rest.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="id">id<a class="headerlink" href="#id" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
@@ -1518,8 +1558,11 @@ sides in one transaction. Descriptions of removed names go with them;
 <p><code>string</code>[]</p>
 <h5 id="requesteddescriptions">requestedDescriptions?<a class="headerlink" href="#requesteddescriptions" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions/"><code>ShuffleDescriptions</code></a></p>
+<h5 id="requestedrenames">requestedRenames?<a class="headerlink" href="#requestedrenames" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleRenames/"><code>ShuffleRenames</code></a></p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
+<p>Every module and event whose tags were rewritten, as they were.</p>
 <h3 id="attachparentids">attachParentIds<a class="headerlink" href="#attachparentids" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>readonly</code> <strong>attachParentIds</strong>: \&lt;<code>TItem</code>&gt;(<code>items</code>) =&gt; <code>Promise</code>\&lt;<code>TItem</code>[]&gt;</p>

@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../" class="md-nav__link">
         
   
@@ -769,9 +796,9 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/gantt/db-recurrence-exceptions</a> / materializeRecurrenceOccurrence</p>
 <h1 id="function-materializerecurrenceoccurrence">Function: materializeRecurrenceOccurrence()<a class="headerlink" href="#function-materializerecurrenceoccurrence" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>materializeRecurrenceOccurrence</strong>(<code>data</code>): <code>Promise</code>\&lt;{ <code>event</code>: <a href="../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent/"><code>GanttEvent</code></a> | <a href="../../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent/"><code>ApiModuleEvent</code></a>; <code>mapping</code>: { <code>createdAt</code>: <code>Date</code>; <code>curriculumId</code>: <code>string</code>; <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code> | <code>null</code>; <code>id</code>: <code>string</code>; <code>moduleId</code>: <code>string</code>; <code>sortOrder</code>: <code>number</code>; <code>updatedAt</code>: <code>Date</code>; }; }&gt;</p>
+<p><strong>materializeRecurrenceOccurrence</strong>(<code>data</code>): <code>Promise</code>\&lt;{ <code>event</code>: <a href="../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent/"><code>GanttEvent</code></a> | <a href="../../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent/"><code>ApiModuleEvent</code></a>; <code>mapping</code>: { <code>createdAt</code>: <code>Date</code>; <code>curriculumId</code>: <code>string</code>; <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code> | <code>null</code>; <code>id</code>: <code>string</code>; <code>moduleId</code>: <code>string</code>; <code>sortOrder</code>: <code>number</code>; <code>updatedAt</code>: <code>Date</code>; <code>weekSplitMinutes</code>: <code>number</code>[]; }; }&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L57">ui/src/api-server/gantt/db-recurrence-exceptions.ts:57</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L57">ui/src/api-server/gantt/db-recurrence-exceptions.ts:57</a></p>
 <p>Materializes a recurring occurrence into its own standalone event: copies
 the source event's fields (recurrence reset to "none"), links the copy to
 the same module, maps it onto the occurrence day, and excepts the source
@@ -787,7 +814,7 @@ event from echoing onto that day going forward.</p>
 <h4 id="moduleid">moduleId<a class="headerlink" href="#moduleid" title="Permanent link">&para;</a></h4>
 <p><code>string</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
-<p><code>Promise</code>\&lt;{ <code>event</code>: <a href="../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent/"><code>GanttEvent</code></a> | <a href="../../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent/"><code>ApiModuleEvent</code></a>; <code>mapping</code>: { <code>createdAt</code>: <code>Date</code>; <code>curriculumId</code>: <code>string</code>; <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code> | <code>null</code>; <code>id</code>: <code>string</code>; <code>moduleId</code>: <code>string</code>; <code>sortOrder</code>: <code>number</code>; <code>updatedAt</code>: <code>Date</code>; }; }&gt;</p>
+<p><code>Promise</code>\&lt;{ <code>event</code>: <a href="../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent/"><code>GanttEvent</code></a> | <a href="../../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent/"><code>ApiModuleEvent</code></a>; <code>mapping</code>: { <code>createdAt</code>: <code>Date</code>; <code>curriculumId</code>: <code>string</code>; <code>dayId</code>: <code>string</code>; <code>eventId</code>: <code>string</code> | <code>null</code>; <code>id</code>: <code>string</code>; <code>moduleId</code>: <code>string</code>; <code>sortOrder</code>: <code>number</code>; <code>updatedAt</code>: <code>Date</code>; <code>weekSplitMinutes</code>: <code>number</code>[]; }; }&gt;</p>
 
 
 

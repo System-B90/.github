@@ -6,7 +6,7 @@
 
 # Enumeration: RoomSource
 
-Defined in: [ui/src/api-shared/types/room.ts:6](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/room.ts#L6)
+Defined in: [ui/src/api-shared/types/room.ts:6](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/room.ts#L6)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types/room.ts:6](https://github.com/System-B90/Bl
 
 > **Custom**: `0`
 
-Defined in: [ui/src/api-shared/types/room.ts:7](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/room.ts#L7)
+Defined in: [ui/src/api-shared/types/room.ts:7](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/room.ts#L7)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [ui/src/api-shared/types/room.ts:7](https://github.com/System-B90/Bl
 
 > **Hive**: `1`
 
-Defined in: [ui/src/api-shared/types/room.ts:8](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/room.ts#L8)
+Defined in: [ui/src/api-shared/types/room.ts:8](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/room.ts#L8)

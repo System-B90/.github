@@ -8,7 +8,7 @@
 
 > **ListEntryWithParent**\<`TEntity`\> = `object` & `Record`\<`string`, `null` \| `string`\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:62](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-client/gantt/base.ts#L62)
+Defined in: [ui/src/api-client/gantt/base.ts:62](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-client/gantt/base.ts#L62)
 
 One entry of `apiListWithParents`: the label plus the entity's parent key
 (`syllabusId` on modules, `moduleId` on events, `curriculumId` on

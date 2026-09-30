@@ -8,7 +8,7 @@
 
 > **AiApprovalCall** = `object`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:64](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L64)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:64](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L64)
 
 One write call inside an approval card.
 
@@ -18,7 +18,7 @@ One write call inside an approval card.
 
 > **arguments**: `unknown`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:71](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L71)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:71](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L71)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:71](https://github.com/System-B
 
 > **danger**: [`AiToolDanger`](../../../../api-shared/types/ai/enumerations/AiToolDanger.md)
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:68](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L68)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:68](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L68)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:68](https://github.com/System-B
 
 > **impact**: `string`[]
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:70](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L70)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:70](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L70)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:70](https://github.com/System-B
 
 > **name**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:66](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L66)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:66](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L66)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:66](https://github.com/System-B
 
 > **summary**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:69](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L69)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:69](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L69)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:69](https://github.com/System-B
 
 > **title**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:67](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L67)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:67](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L67)
 
 ***
 
@@ -66,4 +66,4 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:67](https://github.com/System-B
 
 > **toolCallId**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:65](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/ai/use-ai-chat.ts#L65)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:65](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/ai/use-ai-chat.ts#L65)

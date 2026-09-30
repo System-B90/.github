@@ -19,3 +19,8 @@
 - [apiListSyllabuses](variables/apiListSyllabuses.md)
 - [apiUpdateSyllabus](variables/apiUpdateSyllabus.md)
 - [syllabusApi](variables/syllabusApi.md)
+
+## Functions
+
+- [apiExportSyllabus](functions/apiExportSyllabus.md)
+- [apiImportSyllabus](functions/apiImportSyllabus.md)

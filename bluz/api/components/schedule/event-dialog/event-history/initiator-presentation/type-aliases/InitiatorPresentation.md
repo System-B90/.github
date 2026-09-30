@@ -8,7 +8,7 @@
 
 > **InitiatorPresentation** = `object`
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:32](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L32)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:32](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L32)
 
 Visual vocabulary for the event change log: every initiator gets its own
 icon and palette slot so a row is recognizable before it is read. Machine
@@ -21,7 +21,7 @@ anything unattributed is greyed out.
 
 > **color**: `"info"` \| `"primary"` \| `"secondary"` \| `"success"` \| `"warning"`
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:35](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L35)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:35](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L35)
 
 Theme palette key used for the timeline marker.
 
@@ -31,4 +31,4 @@ Theme palette key used for the timeline marker.
 
 > **icon**: `ReactElement`
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:33](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L33)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:33](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L33)

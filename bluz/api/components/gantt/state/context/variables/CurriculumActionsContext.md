@@ -8,4 +8,4 @@
 
 > `const` **CurriculumActionsContext**: `Context`\<\{ `closeEventDialog`: [`CloseEventDialog`](../type-aliases/CloseEventDialog.md); `closeModuleDialog`: [`CloseModuleDialog`](../type-aliases/CloseModuleDialog.md); `closeSyllabusDialog`: [`CloseSyllabusDialog`](../type-aliases/CloseSyllabusDialog.md); `dispatch`: `Dispatch`\<[`Action`](../../reducers/actions/type-aliases/Action.md)\>; `openEventDialog`: [`OpenEventDialog`](../type-aliases/OpenEventDialog.md); `openModuleDialog`: [`OpenModuleDialog`](../type-aliases/OpenModuleDialog.md); `openSyllabusDialog`: [`OpenSyllabusDialog`](../type-aliases/OpenSyllabusDialog.md); `registerRevealHandler`: (`handler`) => () => `void`; `requestReveal`: [`RevealGanttItem`](../type-aliases/RevealGanttItem.md); \} \| `null`\>
 
-Defined in: [ui/src/components/gantt/state/context.ts:57](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/context.ts#L57)
+Defined in: [ui/src/components/gantt/state/context.ts:57](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/context.ts#L57)

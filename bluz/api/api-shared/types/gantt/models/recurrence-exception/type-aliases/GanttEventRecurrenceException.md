@@ -8,7 +8,7 @@
 
 > **GanttEventRecurrenceException** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:11](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L11)
+Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:11](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L11)
 
 Marks a single occurrence day of a recurring event as excepted within a
 curriculum: the event no longer echoes onto that day, either because the
@@ -21,7 +21,7 @@ event.
 
 > **curriculumId**: [`GanttCurriculumId`](../../curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:13](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L13)
+Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:13](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L13)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:13](ht
 
 > **dayId**: [`GanttDayId`](../../day/type-aliases/GanttDayId.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:15](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L15)
+Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:15](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L15)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:15](ht
 
 > **eventId**: [`GanttEventId`](../../shared/type-aliases/GanttEventId.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:14](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L14)
+Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:14](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L14)
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:14](ht
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:12](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L12)
+Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:12](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L12)
 
 ***
 
@@ -53,7 +53,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:12](ht
 
 > `optional` **materializedEventId?**: [`GanttEventId`](../../shared/type-aliases/GanttEventId.md) \| `null`
 
-Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:20](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L20)
+Defined in: [ui/src/api-shared/types/gantt/models/recurrence-exception.ts:20](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/recurrence-exception.ts#L20)
 
 Event the occurrence was materialized into, or null when it was merely
 skipped. Only skipped occurrences can be restored (#469).

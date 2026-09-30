@@ -8,7 +8,7 @@
 
 > **OutsidersContextState** = `object`
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:14](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L14)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:14](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L14)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:14](https://github.com
 
 > **addOutsider**: (`outsiderData`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:19](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L19)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:19](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L19)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:19](https://github.com
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:15](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L15)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:15](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L15)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:15](https://github.com
 
 > **deleteOutsider**: (`outsiderId`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:21](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L21)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:21](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L21)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:21](https://github.com
 
 > **getOutsider**: (`id`) => `null` \| [`Outsider`](../../../../api-shared/types/outsider/type-aliases/Outsider.md)
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:18](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L18)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:18](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L18)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:18](https://github.com
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:17](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L17)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:17](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L17)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:17](https://github.com
 
 > **outsiders**: [`Outsider`](../../../../api-shared/types/outsider/type-aliases/Outsider.md)[]
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:16](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L16)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:16](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L16)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:16](https://github.com
 
 > **updateOutsider**: (`outsider`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:20](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/base/OutsidersProvider.tsx#L20)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:20](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/OutsidersProvider.tsx#L20)
 
 #### Parameters
 

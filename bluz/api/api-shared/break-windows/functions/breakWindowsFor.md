@@ -8,7 +8,7 @@
 
 > **breakWindowsFor**(`event`, `windows`): [`Interval`](../../interval-layout/type-aliases/Interval.md)[]
 
-Defined in: [ui/src/api-shared/break-windows.ts:94](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/break-windows.ts#L94)
+Defined in: [ui/src/api-shared/break-windows.ts:94](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/break-windows.ts#L94)
 
 The windows that actually interrupt `event`: scoped to its audience, and
 empty whenever the event doesn't split at all (flag off, or a break event

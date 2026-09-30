@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/integrations/google-calendar/calendars/route.ts:36](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/app/api/integrations/google-calendar/calendars/route.ts#L36)
+Defined in: [ui/src/app/api/integrations/google-calendar/calendars/route.ts:36](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/app/api/integrations/google-calendar/calendars/route.ts#L36)
 
 GET /api/integrations/google-calendar/calendars — the calendars the
 signed-in user can mirror into: their own, plus any a colleague shared

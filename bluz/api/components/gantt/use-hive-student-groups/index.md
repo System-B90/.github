@@ -8,4 +8,5 @@
 
 ## Functions
 
+- [findShuffleHiveGroup](functions/findShuffleHiveGroup.md)
 - [useHiveStudentGroups](functions/useHiveStudentGroups.md)

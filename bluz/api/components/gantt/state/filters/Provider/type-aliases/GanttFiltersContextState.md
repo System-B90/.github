@@ -8,7 +8,7 @@
 
 > **GanttFiltersContextState** = `object`
 
-Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:21](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/filters/Provider.tsx#L21)
+Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:21](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/filters/Provider.tsx#L21)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:21](https://gith
 
 > **clearFilters**: () => `void`
 
-Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:24](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/filters/Provider.tsx#L24)
+Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:24](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/filters/Provider.tsx#L24)
 
 #### Returns
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:24](https://gith
 
 > **description**: `string`
 
-Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:29](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/filters/Provider.tsx#L29)
+Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:29](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/filters/Provider.tsx#L29)
 
 Human-readable summary of the active filters, empty when none.
 
@@ -38,7 +38,7 @@ Human-readable summary of the active filters, empty when none.
 
 > **hasActiveFilters**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:25](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/filters/Provider.tsx#L25)
+Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:25](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/filters/Provider.tsx#L25)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:25](https://gith
 
 > **setFilter**: \<`K`\>(`key`, `value`) => `void`
 
-Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:23](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/filters/Provider.tsx#L23)
+Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:23](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/filters/Provider.tsx#L23)
 
 #### Type Parameters
 
@@ -74,7 +74,7 @@ Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:23](https://gith
 
 > **syllabusMatches**: (`syllabus`) => `boolean`
 
-Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:27](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/filters/Provider.tsx#L27)
+Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:27](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/filters/Provider.tsx#L27)
 
 Passes when every active filter matches (AND).
 
@@ -94,4 +94,4 @@ Passes when every active filter matches (AND).
 
 > **values**: [`GanttFilterValues`](../../definitions/type-aliases/GanttFilterValues.md)
 
-Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:22](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/state/filters/Provider.tsx#L22)
+Defined in: [ui/src/components/gantt/state/filters/Provider.tsx:22](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/filters/Provider.tsx#L22)

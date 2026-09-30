@@ -8,7 +8,7 @@
 
 > **PersonMovePlan** = \{ `allowed`: `false`; `reason`: `"locked-source"` \| `"target-cannot-hold"`; \} \| \{ `allowed`: `true`; `field`: [`PersonField`](../../types/type-aliases/PersonField.md); \}
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:45](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L45)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:45](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L45)
 
 Why a chip dragged from one event to another cannot make the trip, or the
 field it lands in when it can.

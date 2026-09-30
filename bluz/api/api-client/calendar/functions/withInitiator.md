@@ -8,7 +8,7 @@
 
 > **withInitiator**(`props`, `initiator?`): [`ClientApiProps`](../../common/type-aliases/ClientApiProps.md)
 
-Defined in: [ui/src/api-client/calendar.ts:86](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-client/calendar.ts#L86)
+Defined in: [ui/src/api-client/calendar.ts:86](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-client/calendar.ts#L86)
 
 Declares which user action produced a write, so the server can log it in the
 event change log (`api-server/db-event-history.ts`). Sent as a header rather

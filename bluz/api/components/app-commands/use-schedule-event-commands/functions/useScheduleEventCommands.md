@@ -8,7 +8,7 @@
 
 > **useScheduleEventCommands**(`__namedParameters`): `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:24](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/app-commands/use-schedule-event-commands.tsx#L24)
+Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:24](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/app-commands/use-schedule-event-commands.tsx#L24)
 
 Entity lane over the events currently loaded on the schedule page — the
 palette equivalent of scrolling the calendar to find one. Scoped to

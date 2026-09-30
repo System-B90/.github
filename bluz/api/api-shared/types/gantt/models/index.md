@@ -44,6 +44,12 @@ Re-exports [defaultModuleEventSplitAcrossBreaks](event/functions/defaultModuleEv
 
 ***
 
+### defaultModuleEventSplitAcrossWeeks
+
+Re-exports [defaultModuleEventSplitAcrossWeeks](event/functions/defaultModuleEventSplitAcrossWeeks.md)
+
+***
+
 ### EventRecurrence
 
 Re-exports [EventRecurrence](event/enumerations/EventRecurrence.md)

@@ -8,7 +8,7 @@
 
 > **resolveColorById**(`colorId`, `lookups`): \{ `hex`: `string`; `label`: `string`; \} \| `undefined`
 
-Defined in: [ui/src/components/schedule/event-component/event-colors.ts:56](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/event-component/event-colors.ts#L56)
+Defined in: [ui/src/components/schedule/event-component/event-colors.ts:56](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-component/event-colors.ts#L56)
 
 Resolves a color ID (a custom color ID or a Hive subject ID) to its hex value
 and display label. Resolution order: custom color → Hive subject.

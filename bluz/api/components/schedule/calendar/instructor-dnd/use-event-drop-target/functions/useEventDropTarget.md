@@ -8,7 +8,7 @@
 
 > **useEventDropTarget**(`event`, `enabled`, `dropKey?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts:21](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts#L21)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts:21](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts#L21)
 
 Registers a calendar event as a drop target for instructor drags.
 Registration is skipped for locked events, which cannot take assignments

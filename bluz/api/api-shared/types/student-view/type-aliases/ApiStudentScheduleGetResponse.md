@@ -8,7 +8,7 @@
 
 > **ApiStudentScheduleGetResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:66](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L66)
+Defined in: [ui/src/api-shared/types/student-view.ts:66](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L66)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:66](https://github.com/Syst
 
 > **calendarDayEndTime**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:82](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L82)
+Defined in: [ui/src/api-shared/types/student-view.ts:82](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L82)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:82](https://github.com/Syst
 
 > **calendarDayStartTime**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:81](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L81)
+Defined in: [ui/src/api-shared/types/student-view.ts:81](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L81)
 
 The staff calendar's own grid bounds (`HH:mm`), so the student board
 shows the same window instead of a bare 00:00-24:00 day. Carried on the
@@ -36,7 +36,7 @@ response because the student bundle mounts no settings provider.
 
 > **courseGroups**: `number`[][]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:73](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L73)
+Defined in: [ui/src/api-shared/types/student-view.ts:73](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L73)
 
 Distinct course-name index sets referenced by events.
 
@@ -46,7 +46,7 @@ Distinct course-name index sets referenced by events.
 
 > **courseNames**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:71](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L71)
+Defined in: [ui/src/api-shared/types/student-view.ts:71](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L71)
 
 Course / shuffle display names referenced by `courseGroups`.
 
@@ -56,7 +56,7 @@ Course / shuffle display names referenced by `courseGroups`.
 
 > **date**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:68](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L68)
+Defined in: [ui/src/api-shared/types/student-view.ts:68](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L68)
 
 The day the events belong to, `yyyy-MM-dd` in the app timezone.
 
@@ -66,7 +66,7 @@ The day the events belong to, `yyyy-MM-dd` in the app timezone.
 
 > **events**: [`StudentEventWire`](StudentEventWire.md)[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:69](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L69)
+Defined in: [ui/src/api-shared/types/student-view.ts:69](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L69)
 
 ***
 
@@ -74,6 +74,6 @@ Defined in: [ui/src/api-shared/types/student-view.ts:69](https://github.com/Syst
 
 > **roomNames**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:75](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/student-view.ts#L75)
+Defined in: [ui/src/api-shared/types/student-view.ts:75](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/student-view.ts#L75)
 
 Room display names referenced by `events[].rooms`.

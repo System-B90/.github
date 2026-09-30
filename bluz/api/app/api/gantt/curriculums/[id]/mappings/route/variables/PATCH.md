@@ -8,7 +8,7 @@
 
 > `const` **PATCH**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:88](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L88)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:89](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L89)
 
 PATCH: Updates or reorders an existing mapping.
 

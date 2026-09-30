@@ -6,7 +6,7 @@
 
 # Class: HiveClient
 
-Defined in: [ui/src/api-server/hive/client.ts:17](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/client.ts#L17)
+Defined in: [ui/src/api-server/hive/client.ts:17](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/client.ts#L17)
 
 Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
@@ -53,7 +53,7 @@ Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:173
 
 > **getClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:18](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/client.ts#L18)
+Defined in: [ui/src/api-server/hive/client.ts:18](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/client.ts#L18)
 
 All Hive classes; pass a `type` to filter (e.g. Student Group / Room).
 
@@ -71,7 +71,7 @@ All Hive classes; pass a `type` to filter (e.g. Student Group / Room).
 
 > **getModuleQueues**(`moduleId`): `Promise`\<`Queue`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:34](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/client.ts#L34)
+Defined in: [ui/src/api-server/hive/client.ts:34](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/client.ts#L34)
 
 The queues of one Hive module — the only queues a lesson rule may point
 at (Hive rejects user queues on a rule).
@@ -92,7 +92,7 @@ at (Hive rejects user queues on a rule).
 
 > **getRooms**(): `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:22](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/client.ts#L22)
+Defined in: [ui/src/api-server/hive/client.ts:22](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/client.ts#L22)
 
 #### Returns
 

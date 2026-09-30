@@ -8,7 +8,7 @@
 
 > **ApiCurriculumCutStatus** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:150](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/cut.ts#L150)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:150](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/cut.ts#L150)
 
 Cut status for a curriculum, driving the UI toggle between the "cut" and
 "pull back" actions. `cut` is true when the linked iteration holds any live
@@ -20,7 +20,7 @@ Cut status for a curriculum, driving the UI toggle between the "cut" and
 
 > **count**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:153](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/cut.ts#L153)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:153](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/cut.ts#L153)
 
 Number of live cut events in the linked iteration.
 
@@ -30,4 +30,4 @@ Number of live cut events in the linked iteration.
 
 > **cut**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:151](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/cut.ts#L151)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:151](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/cut.ts#L151)

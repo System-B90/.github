@@ -8,7 +8,7 @@
 
 > **AllocateTimeToModuleProps**\<`T`\> = `object`
 
-Defined in: [ui/src/api-shared/gantt/allocate-time.ts:27](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/allocate-time.ts#L27)
+Defined in: [ui/src/api-shared/gantt/allocate-time.ts:27](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/allocate-time.ts#L27)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/gantt/allocate-time.ts:27](https://github.com/Sys
 
 > **allocateToEventCallback**: `T`
 
-Defined in: [ui/src/api-shared/gantt/allocate-time.ts:32](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/allocate-time.ts#L32)
+Defined in: [ui/src/api-shared/gantt/allocate-time.ts:32](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/allocate-time.ts#L32)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/api-shared/gantt/allocate-time.ts:32](https://github.com/Sys
 
 > **curriculumId**: [`GanttCurriculumId`](../../../types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/api-shared/gantt/allocate-time.ts:31](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/allocate-time.ts#L31)
+Defined in: [ui/src/api-shared/gantt/allocate-time.ts:31](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/allocate-time.ts#L31)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/api-shared/gantt/allocate-time.ts:31](https://github.com/Sys
 
 > **module**: `Pick`\<[`GanttModule`](../../../types/gantt/models/module/type-aliases/GanttModule.md), `"events"` \| `"id"`\>
 
-Defined in: [ui/src/api-shared/gantt/allocate-time.ts:28](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/allocate-time.ts#L28)
+Defined in: [ui/src/api-shared/gantt/allocate-time.ts:28](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/allocate-time.ts#L28)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/api-shared/gantt/allocate-time.ts:28](https://github.com/Sys
 
 > **moduleEvents**: [`AllocateTimeToModuleCallbackModuleEvents`](AllocateTimeToModuleCallbackModuleEvents.md)
 
-Defined in: [ui/src/api-shared/gantt/allocate-time.ts:30](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/allocate-time.ts#L30)
+Defined in: [ui/src/api-shared/gantt/allocate-time.ts:30](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/allocate-time.ts#L30)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [ui/src/api-shared/gantt/allocate-time.ts:30](https://github.com/Sys
 
 > **totalDuration**: `number`
 
-Defined in: [ui/src/api-shared/gantt/allocate-time.ts:29](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/gantt/allocate-time.ts#L29)
+Defined in: [ui/src/api-shared/gantt/allocate-time.ts:29](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/allocate-time.ts#L29)

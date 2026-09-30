@@ -6,13 +6,14 @@
 
 # Function: apiApplyShuffles()
 
-> **apiApplyShuffles**(`syllabusId`, `shuffles`, `descriptions?`): `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
+> **apiApplyShuffles**(`syllabusId`, `shuffles`, `descriptions?`, `renames?`): `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
 
-Defined in: [ui/src/api-client/gantt/shuffles.ts:27](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-client/gantt/shuffles.ts#L27)
+Defined in: [ui/src/api-client/gantt/shuffles.ts:28](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-client/gantt/shuffles.ts#L28)
 
 Replaces the syllabus' shuffle list, stripping every removed name off the
-modules and events that carry it. Returns what was stripped. Omitting
-`descriptions` keeps the surviving names' current descriptions.
+modules and events that carry it and rewriting renamed ones (#774).
+Returns what was retagged. Omitting `descriptions` keeps the surviving
+names' current descriptions.
 
 ## Parameters
 
@@ -27,6 +28,10 @@ modules and events that carry it. Returns what was stripped. Omitting
 ### descriptions?
 
 [`ShuffleDescriptions`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions.md)
+
+### renames?
+
+[`ShuffleRenames`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleRenames.md)
 
 ## Returns
 

@@ -8,7 +8,7 @@
 
 > **useShuffleGroupMembers**(`event`, `moduleId`): `object` & [`BaseGantItem`](../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & `object`[]
 
-Defined in: [ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx:29](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx#L29)
+Defined in: [ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx:29](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx#L29)
 
 The events sharing `groupId`, in the module's own order.
 

@@ -8,7 +8,7 @@
 
 > **syncEventLessonToHive**(`event`, `action`, `controller?`): `void`
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:203](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/hive/lesson-sync.ts#L203)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:204](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/lesson-sync.ts#L204)
 
 Fire-and-forget wrapper hung off the event write routes, mirroring how
 Google Calendar sync is attached: it runs with the editing Segel's Hive

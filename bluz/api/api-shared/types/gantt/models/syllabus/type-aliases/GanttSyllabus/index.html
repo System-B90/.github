@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../" class="md-nav__link">
         
   
@@ -734,6 +761,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#shufflehivegroups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shuffleHiveGroups?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#shuffles" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -787,7 +825,7 @@
 <blockquote>
 <p><strong>GanttSyllabus</strong> = <code>object</code> &amp; <a href="../../../shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/models/syllabus.ts#L6">ui/src/api-shared/types/gantt/models/syllabus.ts:6</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/syllabus.ts#L9">ui/src/api-shared/types/gantt/models/syllabus.ts:9</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="courseids">courseIds?<a class="headerlink" href="#courseids" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -818,6 +856,12 @@
 </blockquote>
 <p>Shuffle name → description. A shuffle is a Hive student group, and this
 mirrors that group's staff-only description (max 100 chars).</p>
+<h3 id="shufflehivegroups">shuffleHiveGroups?<a class="headerlink" href="#shufflehivegroups" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shuffleHiveGroups?</strong>: <a href="../../../../../../gantt/shuffle-names/type-aliases/ShuffleHiveGroups/"><code>ShuffleHiveGroups</code></a></p>
+</blockquote>
+<p>Shuffle name → explicitly linked Hive student-group id (#774). A shuffle
+without an entry matches the Hive group with its exact name.</p>
 <h3 id="shuffles">shuffles?<a class="headerlink" href="#shuffles" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>shuffles?</strong>: <code>string</code>[]</p>

@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../" class="md-nav__link">
         
   
@@ -833,13 +860,13 @@
 <blockquote>
 <p><strong>AiProvider</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/provider.ts#L56">ui/src/api-server/ai/provider.ts:56</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/provider.ts#L56">ui/src/api-server/ai/provider.ts:56</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="chat">chat<a class="headerlink" href="#chat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>chat</strong>: (<code>request</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/ai/type-aliases/AiChatResult/"><code>AiChatResult</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/provider.ts#L63">ui/src/api-server/ai/provider.ts:63</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/provider.ts#L63">ui/src/api-server/ai/provider.ts:63</a></p>
 <p>One-shot completion, for callers with nothing to stream to.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="request">request<a class="headerlink" href="#request" title="Permanent link">&para;</a></h5>
@@ -851,21 +878,21 @@
 <blockquote>
 <p><code>readonly</code> <strong>defaultModel</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/provider.ts#L60">ui/src/api-server/ai/provider.ts:60</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/provider.ts#L60">ui/src/api-server/ai/provider.ts:60</a></p>
 <p>Model used when a request does not name one.</p>
 <hr />
 <h3 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>readonly</code> <strong>name</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/provider.ts#L58">ui/src/api-server/ai/provider.ts:58</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/provider.ts#L58">ui/src/api-server/ai/provider.ts:58</a></p>
 <p>Stable identifier, used in logs and in <code>AI_PROVIDER</code>.</p>
 <hr />
 <h3 id="streamchat">streamChat<a class="headerlink" href="#streamchat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>streamChat</strong>: (<code>request</code>) =&gt; <code>AsyncIterable</code>\&lt;<a href="../AiProviderEvent/"><code>AiProviderEvent</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-server/ai/provider.ts#L69">ui/src/api-server/ai/provider.ts:69</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/provider.ts#L69">ui/src/api-server/ai/provider.ts:69</a></p>
 <p>Incremental completion. Yields text as it arrives and terminates with a
 single <code>final</code> frame carrying tool calls and usage.</p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>

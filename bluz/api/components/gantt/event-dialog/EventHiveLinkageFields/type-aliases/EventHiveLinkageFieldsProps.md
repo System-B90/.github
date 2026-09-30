@@ -8,7 +8,7 @@
 
 > **EventHiveLinkageFieldsProps** = `object`
 
-Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:8](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx#L8)
+Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:8](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx#L8)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:8](
 
 > **commit**: (`updates`) => `void`
 
-Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:10](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx#L10)
+Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:10](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx#L10)
 
 #### Parameters
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:10]
 
 > **event**: [`GanttEvent`](../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)
 
-Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:9](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx#L9)
+Defined in: [ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx:9](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/EventHiveLinkageFields.tsx#L9)

@@ -8,6 +8,6 @@
 
 > `const` **HIGHLIGHT\_DURATION\_MS**: `2600` = `2600`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx:21](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx#L21)
+Defined in: [ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx:22](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx#L22)
 
 How long a navigated-to item stays visually highlighted.

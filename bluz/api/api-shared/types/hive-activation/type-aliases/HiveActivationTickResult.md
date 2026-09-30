@@ -8,7 +8,7 @@
 
 > **HiveActivationTickResult** = `object`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:31](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/hive-activation.ts#L31)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:31](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/hive-activation.ts#L31)
 
 Outcome of one activator pass, surfaced by the status endpoint and tests.
 
@@ -18,7 +18,7 @@ Outcome of one activator pass, surfaced by the status endpoint and tests.
 
 > **activated**: `number`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:35](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/hive-activation.ts#L35)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:35](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/hive-activation.ts#L35)
 
 (event, group) pairs newly pushed to Hive in this pass.
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/api-shared/types/hive-activation.ts:35](https://github.com/S
 
 > **alreadyActive**: `number`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:37](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/hive-activation.ts#L37)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:37](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/hive-activation.ts#L37)
 
 Pairs skipped because an earlier pass already handled them.
 
@@ -38,7 +38,7 @@ Pairs skipped because an earlier pass already handled them.
 
 > **consideredEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:33](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/hive-activation.ts#L33)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:33](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/hive-activation.ts#L33)
 
 Live events that carry a queue mapping.
 
@@ -48,7 +48,7 @@ Live events that carry a queue mapping.
 
 > **errors**: `string`[]
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:41](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/hive-activation.ts#L41)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:41](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/hive-activation.ts#L41)
 
 Human-readable reasons for the failures, for logs and diagnostics.
 
@@ -58,6 +58,6 @@ Human-readable reasons for the failures, for logs and diagnostics.
 
 > **failed**: `number`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:39](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/hive-activation.ts#L39)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:39](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/hive-activation.ts#L39)
 
 Pairs that could not be pushed (unresolved group, Hive error, …).

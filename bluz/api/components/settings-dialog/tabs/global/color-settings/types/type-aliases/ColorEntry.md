@@ -8,7 +8,7 @@
 
 > **ColorEntry** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:1](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L1)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:1](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L1)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.
 
 > **hex**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:4](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L4)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:4](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L4)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.
 
 > **id**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:2](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L2)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:2](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L2)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.
 
 > **isReadonly**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:5](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L5)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:5](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L5)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.
 
 > **name**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:3](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L3)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/types.ts:3](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/color-settings/types.ts#L3)

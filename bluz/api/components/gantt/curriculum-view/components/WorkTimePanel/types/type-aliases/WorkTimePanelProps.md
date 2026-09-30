@@ -8,7 +8,7 @@
 
 > **WorkTimePanelProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts:4](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts#L4)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts:4](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/ty
 
 > **curriculum**: [`GanttCurriculumDocument`](../../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts:6](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts#L6)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts:6](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts#L6)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/ty
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts:5](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts#L5)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts:5](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/types.ts#L5)

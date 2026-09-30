@@ -8,7 +8,7 @@
 
 > **RouteContext** = `object`
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:30](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L30)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:31](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L31)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:30](https
 
 > **params**: `Promise`\<\{ `id`: `string`; \}\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:31](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L31)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:32](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L32)

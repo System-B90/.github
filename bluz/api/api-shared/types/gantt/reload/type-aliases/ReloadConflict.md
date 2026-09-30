@@ -8,7 +8,7 @@
 
 > **ReloadConflict** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:57](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L57)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:57](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L57)
 
 A gantt change blocked by a manual edit. `kind` mirrors what the reload would
 have done: rewrite the event's fields, or archive it entirely.
@@ -19,7 +19,7 @@ have done: rewrite the event's fields, or archive it entirely.
 
 > **changes**: [`EventFieldChange`](../../../event-history/type-aliases/EventFieldChange.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:64](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L64)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:64](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L64)
 
 Empty for `removal`.
 
@@ -29,7 +29,7 @@ Empty for `removal`.
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:58](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L58)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:58](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L58)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:58](https://github.com/Syst
 
 > **ganttEventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:59](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L59)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:59](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L59)
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:59](https://github.com/Syst
 
 > **kind**: `"removal"` \| `"update"`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:62](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L62)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:62](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L62)
 
 ***
 
@@ -53,7 +53,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:62](https://github.com/Syst
 
 > **lastManualEdit**: `null` \| [`ReloadConflictReason`](ReloadConflictReason.md)
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:66](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L66)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:66](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L66)
 
 Null when history exists but carries no attributable manual row.
 
@@ -63,7 +63,7 @@ Null when history exists but carries no attributable manual row.
 
 > **occurrenceDate**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:60](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L60)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:60](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L60)
 
 ***
 
@@ -71,4 +71,4 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:60](https://github.com/Syst
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:61](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-shared/types/gantt/reload.ts#L61)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:61](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/reload.ts#L61)

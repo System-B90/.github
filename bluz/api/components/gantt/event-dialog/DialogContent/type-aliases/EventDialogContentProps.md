@@ -8,7 +8,7 @@
 
 > **EventDialogContentProps** = `object`
 
-Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:32](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/DialogContent.tsx#L32)
+Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:32](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/DialogContent.tsx#L32)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:32](https://
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:36](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/DialogContent.tsx#L36)
+Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:36](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/DialogContent.tsx#L36)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:36](https://
 
 > **event**: [`GanttEvent`](../../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:33](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/DialogContent.tsx#L33)
+Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:33](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/DialogContent.tsx#L33)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:33](https://
 
 > **eventId**: [`GanttEventId`](../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttEventId.md)
 
-Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:34](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/DialogContent.tsx#L34)
+Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:34](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/DialogContent.tsx#L34)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:34](https://
 
 > **isContentReady**: `boolean`
 
-Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:38](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/DialogContent.tsx#L38)
+Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:38](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/DialogContent.tsx#L38)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:38](https://
 
 > **moduleId**: [`GanttModuleId`](../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttModuleId.md)
 
-Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:35](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/DialogContent.tsx#L35)
+Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:35](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/DialogContent.tsx#L35)
 
 ***
 
@@ -56,4 +56,4 @@ Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:35](https://
 
 > **syllabus**: [`GanttSyllabus`](../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabus.md) \| `null` \| `undefined`
 
-Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:37](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/event-dialog/DialogContent.tsx#L37)
+Defined in: [ui/src/components/gantt/event-dialog/DialogContent.tsx:37](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/event-dialog/DialogContent.tsx#L37)

@@ -8,7 +8,7 @@
 
 > **buildGantLinkRoutes**\<`TEntity`\>(`__namedParameters`): `object`
 
-Defined in: [ui/src/app/api/gantt/base-link.ts:49](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/app/api/gantt/base-link.ts#L49)
+Defined in: [ui/src/app/api/gantt/base-link.ts:49](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/app/api/gantt/base-link.ts#L49)
 
 ## Type Parameters
 

@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../" class="md-nav__link">
         
   
@@ -718,6 +745,17 @@
     <span class="md-ellipsis">
       
         descriptions?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        renames?
       
     </span>
   </a>
@@ -1301,15 +1339,16 @@
 <blockquote>
 <p><code>const</code> <strong>ganttApi</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/api-client/gantt/index.ts#L18">ui/src/api-client/gantt/index.ts:18</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-client/gantt/index.ts#L18">ui/src/api-client/gantt/index.ts:18</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="applyshuffles">applyShuffles<a class="headerlink" href="#applyshuffles" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><code>readonly</code> <strong>applyShuffles</strong>: (<code>syllabusId</code>, <code>shuffles</code>, <code>descriptions?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt; = <code>apiApplyShuffles</code></p>
+<p><code>readonly</code> <strong>applyShuffles</strong>: (<code>syllabusId</code>, <code>shuffles</code>, <code>descriptions?</code>, <code>renames?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt; = <code>apiApplyShuffles</code></p>
 </blockquote>
 <p>Replaces the syllabus' shuffle list, stripping every removed name off the
-modules and events that carry it. Returns what was stripped. Omitting
-<code>descriptions</code> keeps the surviving names' current descriptions.</p>
+modules and events that carry it and rewriting renamed ones (#774).
+Returns what was retagged. Omitting <code>descriptions</code> keeps the surviving
+names' current descriptions.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="syllabusid">syllabusId<a class="headerlink" href="#syllabusid" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
@@ -1317,6 +1356,8 @@ modules and events that carry it. Returns what was stripped. Omitting
 <p><code>string</code>[]</p>
 <h5 id="descriptions">descriptions?<a class="headerlink" href="#descriptions" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions/"><code>ShuffleDescriptions</code></a></p>
+<h5 id="renames">renames?<a class="headerlink" href="#renames" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleRenames/"><code>ShuffleRenames</code></a></p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages/"><code>ShuffleUsages</code></a>&gt;</p>
 <h3 id="constraints">constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h3>
@@ -1901,6 +1942,8 @@ event for one deleted cut occurrence (#682).</p>
 <p><code>string</code></p>
 <h6 id="sortorder">sortOrder?<a class="headerlink" href="#sortorder" title="Permanent link">&para;</a></h6>
 <p><code>number</code></p>
+<h6 id="weeksplitminutes">weekSplitMinutes?<a class="headerlink" href="#weeksplitminutes" title="Permanent link">&para;</a></h6>
+<p><code>number</code>[]</p>
 <h6 id="options_35">options?<a class="headerlink" href="#options_35" title="Permanent link">&para;</a></h6>
 <p><a href="../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
 <h5 id="returns_43">Returns<a class="headerlink" href="#returns_43" title="Permanent link">&para;</a></h5>

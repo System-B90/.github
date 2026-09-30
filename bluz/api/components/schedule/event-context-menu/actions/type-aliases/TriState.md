@@ -8,7 +8,7 @@
 
 > **TriState** = `"all"` \| `"none"` \| `"some"`
 
-Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:17](https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/schedule/event-context-menu/actions.ts#L17)
+Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:17](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/actions.ts#L17)
 
 Whether a marker is on for none, some or all of the targets. A bulk toggle
 is only "on" when every target carries it, so one click over a mixed

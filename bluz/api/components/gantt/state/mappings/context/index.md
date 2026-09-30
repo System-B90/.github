@@ -13,6 +13,7 @@
 - [MoveMapping](type-aliases/MoveMapping.md)
 - [RefreshMappings](type-aliases/RefreshMappings.md)
 - [RemoveMapping](type-aliases/RemoveMapping.md)
+- [SetWeekSplit](type-aliases/SetWeekSplit.md)
 
 ## Variables
 

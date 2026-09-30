@@ -582,6 +582,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../" class="md-nav__link">
         
   
@@ -700,6 +727,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weeksplit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weekSplit?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -732,28 +770,36 @@
 <blockquote>
 <p><strong>EventDaySpan</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L235">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:235</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L248">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:248</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="dayids">dayIds<a class="headerlink" href="#dayids" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>dayIds</strong>: <a href="../../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDayId/"><code>GanttDayId</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L237">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:237</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L250">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:250</a></p>
 <p>Day ids the event occupies, starting at its mapped day.</p>
 <hr />
 <h3 id="minutesperday">minutesPerDay<a class="headerlink" href="#minutesperday" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>minutesPerDay</strong>: <code>number</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L239">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:239</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L252">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:252</a></p>
 <p>Minutes consumed on each spanned day (parallel to <code>dayIds</code>).</p>
 <hr />
 <h3 id="spillover">spillover<a class="headerlink" href="#spillover" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>spillover</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/23625511d59d71bc9679adc341fb0bcb28897208/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L241">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:241</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L254">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:254</a></p>
 <p>True when the event overflows its start day onto subsequent day(s).</p>
+<hr />
+<h3 id="weeksplit">weekSplit?<a class="headerlink" href="#weeksplit" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>weekSplit?</strong>: <code>boolean</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L259">ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:259</a></p>
+<p>True when the event's hours are split over consecutive weeks (#768):
+<code>dayIds</code> are then one day per week, not a contiguous run.</p>
 
 
 
