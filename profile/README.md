@@ -31,7 +31,7 @@ over GitHub Pages. It needs no authentication.
 
 ### Use a shared npm package
 
-The `@system-b90/*` packages publish to GitHub Packages. Point the scope at
+The `@system-b90/*` packages publish to GitHub Packages (`command-palette` is the exception: it is on the official npm registry, so a plain `npm install @system-b90/command-palette` works). Point the scope at
 that registry once:
 
 ```bash
