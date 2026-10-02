@@ -45,7 +45,7 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 
 ## Package conventions
 
-- All shared npm packages are scoped `@system-b90/*`, published to GitHub Packages.
+- All shared npm packages are scoped `@system-b90/*`, published to GitHub Packages — except `command-palette`, which is public on the official npm registry (no `.npmrc` needed).
 - To install: add an `.npmrc` with `@system-b90:registry=https://npm.pkg.github.com`.
 - Auth requires `NPM_TOKEN` or `GITHUB_TOKEN` with `read:packages` scope.
 - pyhive is **not** on the official PyPI. It's published to a PEP 503 index hosted as static files in this repo (`pypi/`), served over **GitHub Pages** (`https://system-b90.github.io/.github/`). No auth is required to install — `.github` is public (see Org overview above):
