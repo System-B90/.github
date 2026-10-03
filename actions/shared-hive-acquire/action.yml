@@ -36,10 +36,11 @@ inputs:
     default: ${{ github.token }}
   stack-token:
     description: >-
-      Token able to read pyhive-repo. Only used when the instance is missing
-      (first run on a host, or after `rebuild: true`) to fetch pyhive's
-      hive-stack config and bootstrap it. Without it a missing instance fails
-      the step.
+      Token able to read pyhive-repo and the org's GHCR packages. Used when the
+      instance is missing (first run on a host, or after `rebuild: true`) to
+      fetch pyhive's hive-stack config and bootstrap it, and to re-fetch a
+      pinned hive-shared/* image that was pruned from the daemon. Without it
+      either case fails the step.
     required: false
     default: ""
   pyhive-repo:
@@ -181,6 +182,7 @@ runs:
       shell: bash
       env:
         HIVE_SHARED: ${{ github.action_path }}/../shared-hive/hive-shared.sh
+        GHCR_TOKEN: ${{ inputs.stack-token }}
       run: |
         bash "$HIVE_SHARED" ensure
         bash "$HIVE_SHARED" reset

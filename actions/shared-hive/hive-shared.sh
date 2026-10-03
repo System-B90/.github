@@ -5,6 +5,7 @@
 #
 #   hive-shared.sh bootstrap <hive-stack-dir>   (re)create the instance + baseline
 #   hive-shared.sh ensure                       start it if stopped, fail if absent
+#                                               (GHCR_TOKEN: re-fetch lost image pins)
 #   hive-shared.sh reset                        restore the baseline (clean state)
 #   hive-shared.sh wait [attempts]              wait for https://hive.org to answer
 #   hive-shared.sh status
@@ -87,6 +88,47 @@ pin_images() {
     'import json,sys; [print(k, v["image"]) for k, v in json.load(sys.stdin)["services"].items() if v.get("image")]')
   mv "$STACK/$PIN_FILE.tmp" "$STACK/$PIN_FILE"
   log "Pinned images to hive-shared/*:$sha"
+}
+
+# A pinned tag can vanish from under the instance. Nothing references it while
+# the hive-* containers are stopped or were recreated from another stack, so any
+# `docker image prune -a` on this daemon reaps it (System-B90/.github#45).
+# Compose then tries hive-shared/* on Docker Hub and falls back to building
+# images/<svc>, which the published hive-stack doesn't ship. The pins are copies
+# of ghcr.io/system-b90/hive/<name>:<sha>, so fetch that exact image back.
+# GHCR_TOKEN (read:packages) logs in through a throwaway docker config.
+restore_pins() {
+  local pinned name tag src cfg="" rc=0
+  local -a missing=()
+  while read -r pinned; do
+    docker image inspect "$pinned" >/dev/null 2>&1 || missing+=("$pinned")
+  done < <(awk '$1 == "image:" { print $2 }' "$STACK/$PIN_FILE")
+  [ ${#missing[@]} -eq 0 ] && return 0
+
+  log "Pinned images missing: ${missing[*]}"
+  local -a docker_cfg=()
+  if [ -n "${GHCR_TOKEN:-}" ]; then
+    cfg=$(mktemp -d)
+    docker_cfg=(--config "$cfg")
+    printf '%s\n' "$GHCR_TOKEN" |
+      docker "${docker_cfg[@]}" login ghcr.io -u "${GITHUB_ACTOR:-hive-shared}" --password-stdin >/dev/null || rc=$?
+  fi
+  if [ "$rc" -eq 0 ]; then
+    for pinned in "${missing[@]}"; do
+      name="${pinned#hive-shared/}"; tag="${name##*:}"; name="${name%%:*}"
+      src="ghcr.io/system-b90/hive/${name}:${tag}"
+      if docker "${docker_cfg[@]}" pull -q "$src" >/dev/null && docker tag "$src" "$pinned"; then
+        log "Restored $pinned from $src"
+      else
+        rc=1
+      fi
+    done
+  fi
+  if [ -n "$cfg" ]; then rm -rf "$cfg"; fi
+  if [ "$rc" -ne 0 ]; then
+    log "Could not restore the pinned images from GHCR. Pass stack-token (read:packages), or rebuild the instance (rebuild: true)."
+    exit 3
+  fi
 }
 
 app_services() {
@@ -173,6 +215,7 @@ cmd_ensure() {
     # another Hive. Rebuild rather than guess.
     log "Instance has no pinned images; it needs a rebuild"; exit 3
   fi
+  restore_pins
   compose up -d database redis
   wait_db
   if [ -z "$(psql_admin "SELECT 1 FROM pg_database WHERE datname='$BASELINE_DB'")" ]; then
