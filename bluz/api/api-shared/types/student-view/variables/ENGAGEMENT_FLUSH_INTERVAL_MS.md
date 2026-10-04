@@ -8,6 +8,6 @@
 
 > `const` **ENGAGEMENT\_FLUSH\_INTERVAL\_MS**: `30000` = `30_000`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:108](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/student-view.ts#L108)
+Defined in: [ui/src/api-shared/types/student-view.ts:108](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L108)
 
 How often the board reports accumulated focused time, in milliseconds.

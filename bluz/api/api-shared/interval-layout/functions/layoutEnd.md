@@ -8,7 +8,7 @@
 
 > **layoutEnd**(`segments`): `number`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:114](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/interval-layout.ts#L114)
+Defined in: [ui/src/api-shared/interval-layout.ts:114](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/interval-layout.ts#L114)
 
 End of the last segment — i.e. the wall-clock instant the run finishes,
 including every window it stepped over.

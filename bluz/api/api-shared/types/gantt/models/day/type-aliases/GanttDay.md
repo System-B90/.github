@@ -8,7 +8,7 @@
 
 > **GanttDay** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:74](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L74)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:74](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/day.ts#L74)
 
 ## Type Declaration
 

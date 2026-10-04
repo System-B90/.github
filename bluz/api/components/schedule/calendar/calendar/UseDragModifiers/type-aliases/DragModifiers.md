@@ -8,7 +8,7 @@
 
 > **DragModifiers** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:6](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L6)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:6](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L6)
 
 The modifier-driven modes a grid drag can be in. Independent of each other.
 
@@ -18,7 +18,7 @@ The modifier-driven modes a grid drag can be in. Independent of each other.
 
 > **duplicate**: `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L8)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:8](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L8)
 
 Ctrl/Cmd: the drag places a copy and leaves the original alone (#575).
 
@@ -28,6 +28,6 @@ Ctrl/Cmd: the drag places a copy and leaves the original alone (#575).
 
 > **precise**: `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:10](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L10)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:10](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L10)
 
 Alt: quarter-speed, minute-snapped movement (#475, moved to Alt by #608).

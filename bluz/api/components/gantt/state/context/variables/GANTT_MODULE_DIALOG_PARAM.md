@@ -8,6 +8,6 @@
 
 > `const` **GANTT\_MODULE\_DIALOG\_PARAM**: `"gm"` = `"gm"`
 
-Defined in: [ui/src/components/gantt/state/context.ts:40](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/context.ts#L40)
+Defined in: [ui/src/components/gantt/state/context.ts:40](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/context.ts#L40)
 
 Query param persisting the open module dialog's module id across refresh.

@@ -8,7 +8,7 @@
 
 > `const` **ACTION\_ICONS**: `object`
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:125](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L125)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx:125](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-dialog/event-history/initiator-presentation.tsx#L125)
 
 Icon marking what kind of write a row describes.
 

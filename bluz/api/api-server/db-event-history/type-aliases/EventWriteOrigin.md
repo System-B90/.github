@@ -8,7 +8,7 @@
 
 > **EventWriteOrigin** = `object`
 
-Defined in: [ui/src/api-server/db-event-history.ts:29](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/db-event-history.ts#L29)
+Defined in: [ui/src/api-server/db-event-history.ts:29](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/db-event-history.ts#L29)
 
 Who/what is performing a write. Actor identity is always resolved
 server-side from the session; only the initiator is declared by the caller.
@@ -19,7 +19,7 @@ server-side from the session; only the initiator is declared by the caller.
 
 > `optional` **actor?**: \{ `displayName`: `string`; `id`: `string`; \} \| `null`
 
-Defined in: [ui/src/api-server/db-event-history.ts:36](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/db-event-history.ts#L36)
+Defined in: [ui/src/api-server/db-event-history.ts:36](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/db-event-history.ts#L36)
 
 Pre-resolved actor, for bulk writes that would otherwise resolve the
 session once per event (cut, reload, snapshot restore).
@@ -30,7 +30,7 @@ session once per event (cut, reload, snapshot restore).
 
 > `optional` **context?**: [`EventChangeContext`](../../../api-shared/types/event-history/type-aliases/EventChangeContext.md)
 
-Defined in: [ui/src/api-server/db-event-history.ts:31](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/db-event-history.ts#L31)
+Defined in: [ui/src/api-server/db-event-history.ts:31](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/db-event-history.ts#L31)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [ui/src/api-server/db-event-history.ts:31](https://github.com/System
 
 > **initiator**: [`EventChangeInitiator`](../../../api-shared/types/event-history/enumerations/EventChangeInitiator.md)
 
-Defined in: [ui/src/api-server/db-event-history.ts:30](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/db-event-history.ts#L30)
+Defined in: [ui/src/api-server/db-event-history.ts:30](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/db-event-history.ts#L30)

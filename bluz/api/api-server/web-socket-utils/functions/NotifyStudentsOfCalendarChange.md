@@ -8,7 +8,7 @@
 
 > **NotifyStudentsOfCalendarChange**(`iterationId?`): `void`
 
-Defined in: [ui/src/api-server/web-socket-utils.ts:190](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/web-socket-utils.ts#L190)
+Defined in: [ui/src/api-server/web-socket-utils.ts:190](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/web-socket-utils.ts#L190)
 
 Tells student boards that the current iteration's calendar changed, so they
 refetch (#656).

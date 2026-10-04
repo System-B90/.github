@@ -8,7 +8,7 @@
 
 > **withInstructorMembership**(`event`, `instructorId`, `member`): [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:115](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/actions.ts#L115)
+Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:115](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-context-menu/actions.ts#L115)
 
 Adds or removes one instructor (מבזר) from an event, leaving the rest of
 its roster alone. `lecturers` is filtered down to whoever is still on the

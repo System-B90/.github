@@ -8,4 +8,4 @@
 
 > `const` **askUserTool**: [`AiTool`](../../types/type-aliases/AiTool.md)\<[`AskUserArgs`](../type-aliases/AskUserArgs.md)\>
 
-Defined in: [ui/src/api-server/ai/tools/ask-user.ts:56](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/tools/ask-user.ts#L56)
+Defined in: [ui/src/api-server/ai/tools/ask-user.ts:56](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/ask-user.ts#L56)

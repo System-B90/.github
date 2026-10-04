@@ -8,7 +8,7 @@
 
 > **buildGanttEventLink**(`event`, `iterationId?`): `string` \| `undefined`
 
-Defined in: [ui/src/components/schedule/event-dialog/utils.ts:18](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-dialog/utils.ts#L18)
+Defined in: [ui/src/components/schedule/event-dialog/utils.ts:18](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-dialog/utils.ts#L18)
 
 Builds the "go to gantt event" link. `gc` and `it` must both ride along
 or the gantt page has no curriculum/iteration to load and `ge` is a

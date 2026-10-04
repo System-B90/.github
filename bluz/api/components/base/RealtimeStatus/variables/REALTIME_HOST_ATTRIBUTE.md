@@ -8,4 +8,4 @@
 
 > `const` **REALTIME\_HOST\_ATTRIBUTE**: `"data-realtime-host"` = `"data-realtime-host"`
 
-Defined in: [ui/src/components/base/RealtimeStatus.tsx:25](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/base/RealtimeStatus.tsx#L25)
+Defined in: [ui/src/components/base/RealtimeStatus.tsx:25](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/RealtimeStatus.tsx#L25)

@@ -8,7 +8,7 @@
 
 > **isOrchestratedBy**(`syllabusId`, `userId`, `state`): `boolean`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts#L8)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts:8](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts#L8)
 
 True when `userId` orchestrates any module (by default) or event of the syllabus.
 

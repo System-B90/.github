@@ -8,7 +8,7 @@
 
 > `const` **PATCH**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/route.ts:108](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/app/api/gantt/curriculums/[id]/cut/route.ts#L108)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/route.ts:108](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/app/api/gantt/curriculums/[id]/cut/route.ts#L108)
 
 PATCH: reload an already-cut schedule from the current gantt — add new
 occurrences, retime changed ones, archive dropped ones. Manually edited

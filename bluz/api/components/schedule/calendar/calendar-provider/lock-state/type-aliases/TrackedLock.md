@@ -8,7 +8,7 @@
 
 > **TrackedLock** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:40](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L40)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:40](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L40)
 
 A received lock paired with the local clock time at which it expires.
 
@@ -18,7 +18,7 @@ A received lock paired with the local clock time at which it expires.
 
 > **expiresAt**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:42](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L42)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:42](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L42)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts
 
 > **lock**: [`EventLockMessage`](../../../../../../api-shared/types/type-aliases/EventLockMessage.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:41](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L41)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:41](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L41)

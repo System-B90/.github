@@ -8,7 +8,7 @@
 
 > **GanttModuleId** = [`BaseGantItem`](BaseGantItem.md)\[`"id"`\]
 
-Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:17](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/shared.ts#L17)
+Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:17](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/shared.ts#L17)
 
 Split out of `module.ts` for the same reason as [GanttEventId](GanttEventId.md):
 `constraint.ts` needs the id type and `module.ts` needs `GanttConstraint`.

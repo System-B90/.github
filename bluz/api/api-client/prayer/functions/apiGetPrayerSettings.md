@@ -8,7 +8,7 @@
 
 > **apiGetPrayerSettings**(`iterationId?`): `Promise`\<[`PrayerSettings`](../../../api-shared/types/settings/prayer/type-aliases/PrayerSettings.md)\>
 
-Defined in: [ui/src/api-client/prayer.ts:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-client/prayer.ts#L8)
+Defined in: [ui/src/api-client/prayer.ts:8](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-client/prayer.ts#L8)
 
 ## Parameters
 

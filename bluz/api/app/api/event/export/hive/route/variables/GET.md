@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/event/export/hive/route.ts:32](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/app/api/event/export/hive/route.ts#L32)
+Defined in: [ui/src/app/api/event/export/hive/route.ts:32](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/app/api/event/export/hive/route.ts#L32)
 
 GET /api/event/export/hive — the current schedule as an ICS feed in the
 shape Hive's external schedule mode loads (see `api-server/hive/schedule-feed`).

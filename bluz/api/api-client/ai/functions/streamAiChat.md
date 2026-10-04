@@ -8,7 +8,7 @@
 
 > **streamAiChat**(`payload`, `signal?`): `AsyncGenerator`\<[`AiStreamEvent`](../../../api-shared/types/ai/type-aliases/AiStreamEvent.md)\>
 
-Defined in: [ui/src/api-client/ai.ts:39](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-client/ai.ts#L39)
+Defined in: [ui/src/api-client/ai.ts:39](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-client/ai.ts#L39)
 
 Opens a turn and yields its events as they arrive.
 

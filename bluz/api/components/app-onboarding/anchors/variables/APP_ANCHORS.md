@@ -8,7 +8,7 @@
 
 > `const` **APP\_ANCHORS**: `object`
 
-Defined in: [ui/src/components/app-onboarding/anchors.ts:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/app-onboarding/anchors.ts#L8)
+Defined in: [ui/src/components/app-onboarding/anchors.ts:8](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/app-onboarding/anchors.ts#L8)
 
 Every anchor id Bluz spotlights, in one place.
 

@@ -8,7 +8,7 @@
 
 > **doShuffleTotalsDiffer**(`totals`): `boolean`
 
-Defined in: [ui/src/components/gantt/utils.tsx:203](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/utils.tsx#L203)
+Defined in: [ui/src/components/gantt/utils.tsx:203](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/utils.tsx#L203)
 
 True when per-shuffle totals are unequal (⇒ shuffles get different time).
 

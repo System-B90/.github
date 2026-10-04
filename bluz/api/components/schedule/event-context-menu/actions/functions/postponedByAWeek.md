@@ -8,7 +8,7 @@
 
 > **postponedByAWeek**(`event`): [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:41](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/actions.ts#L41)
+Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:41](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-context-menu/actions.ts#L41)
 
 The same event a week later. Only the times move — duration, rooms and
 every marker are preserved, so a postponed event is the event it was.

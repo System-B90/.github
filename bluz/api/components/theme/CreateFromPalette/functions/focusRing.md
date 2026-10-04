@@ -8,7 +8,7 @@
 
 > **focusRing**(`theme`): `object`
 
-Defined in: [ui/src/components/theme/CreateFromPalette.ts:77](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/theme/CreateFromPalette.ts#L77)
+Defined in: [ui/src/components/theme/CreateFromPalette.ts:77](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/theme/CreateFromPalette.ts#L77)
 
 The focus ring every focusable control shows on keyboard focus (#824).
 

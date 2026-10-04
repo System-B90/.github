@@ -8,7 +8,7 @@
 
 > `const` **DbCurriculum**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-curriculum.ts:345](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/gantt/db-curriculum.ts#L345)
+Defined in: [ui/src/api-server/gantt/db-curriculum.ts:345](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-curriculum.ts#L345)
 
 ## Type Declaration
 

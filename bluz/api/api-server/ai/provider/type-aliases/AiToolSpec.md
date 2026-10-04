@@ -8,7 +8,7 @@
 
 > **AiToolSpec** = `object`
 
-Defined in: [ui/src/api-server/ai/provider.ts:16](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L16)
+Defined in: [ui/src/api-server/ai/provider.ts:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L16)
 
 A tool offered to the model. `parameters` is a JSON Schema object; every
 current backend accepts that shape, so it needs no per-provider translation.
@@ -19,7 +19,7 @@ current backend accepts that shape, so it needs no per-provider translation.
 
 > **description**: `string`
 
-Defined in: [ui/src/api-server/ai/provider.ts:18](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L18)
+Defined in: [ui/src/api-server/ai/provider.ts:18](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L18)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [ui/src/api-server/ai/provider.ts:18](https://github.com/System-B90/
 
 > **name**: `string`
 
-Defined in: [ui/src/api-server/ai/provider.ts:17](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L17)
+Defined in: [ui/src/api-server/ai/provider.ts:17](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L17)
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: [ui/src/api-server/ai/provider.ts:17](https://github.com/System-B90/
 
 > **parameters**: `Record`\<`string`, `unknown`\>
 
-Defined in: [ui/src/api-server/ai/provider.ts:19](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L19)
+Defined in: [ui/src/api-server/ai/provider.ts:19](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L19)

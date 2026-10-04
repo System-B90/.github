@@ -8,7 +8,7 @@
 
 > **renameShuffleKeys**\<`T`\>(`record`, `renames`): `Record`\<`string`, `T`\>
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:111](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/shuffle-names.ts#L111)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:111](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/gantt/shuffle-names.ts#L111)
 
 Moves each renamed shuffle's entry in a name-keyed record to its new name.
 

@@ -8,7 +8,7 @@
 
 > **partitionInsights**(`insights`, `__namedParameters`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:61](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L61)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:61](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L61)
 
 Splits the deck for the card (#851): warnings are actionable, so they are
 pinned rather than rotated away; trivia is opt-in on a work screen.

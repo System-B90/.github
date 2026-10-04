@@ -8,7 +8,7 @@
 
 > **UserAi** = `object`
 
-Defined in: [ui/src/api-server/ai/user-ai.ts:11](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/user-ai.ts#L11)
+Defined in: [ui/src/api-server/ai/user-ai.ts:11](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/user-ai.ts#L11)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/user-ai.ts:11](https://github.com/System-B90/B
 
 > **chatModel**: (`provider`) => `Promise`\<`string` \| `undefined`\>
 
-Defined in: [ui/src/api-server/ai/user-ai.ts:22](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/user-ai.ts#L22)
+Defined in: [ui/src/api-server/ai/user-ai.ts:22](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/user-ai.ts#L22)
 
 The model to send, or undefined for the provider's default.
 
@@ -36,7 +36,7 @@ The model to send, or undefined for the provider's default.
 
 > **configured**: `boolean`
 
-Defined in: [ui/src/api-server/ai/user-ai.ts:15](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/user-ai.ts#L15)
+Defined in: [ui/src/api-server/ai/user-ai.ts:15](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/user-ai.ts#L15)
 
 AI is usable for this user: the server's key or their own.
 
@@ -46,7 +46,7 @@ AI is usable for this user: the server's key or their own.
 
 > **provider**: () => [`AiProvider`](../../provider/type-aliases/AiProvider.md)
 
-Defined in: [ui/src/api-server/ai/user-ai.ts:20](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/user-ai.ts#L20)
+Defined in: [ui/src/api-server/ai/user-ai.ts:20](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/user-ai.ts#L20)
 
 The provider chat would use.
 
@@ -64,6 +64,6 @@ AiNotConfiguredError when neither key is set.
 
 > **userKey**: `string` \| `undefined`
 
-Defined in: [ui/src/api-server/ai/user-ai.ts:13](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/user-ai.ts#L13)
+Defined in: [ui/src/api-server/ai/user-ai.ts:13](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/user-ai.ts#L13)
 
 The user's own API key, when set.

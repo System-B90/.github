@@ -8,7 +8,7 @@
 
 > **calculateStudentMinutesByPath**(`__namedParameters`): `object`[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:525](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/student-load.ts#L525)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:525](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/student-load.ts#L525)
 
 The time each kind of student spends in the given syllabuses' events: per
 path, each syllabus at its longest shuffle plus the course-limited events

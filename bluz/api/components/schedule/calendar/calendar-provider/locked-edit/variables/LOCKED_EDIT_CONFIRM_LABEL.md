@@ -8,4 +8,4 @@
 
 > `const` **LOCKED\_EDIT\_CONFIRM\_LABEL**: `"לערוך בכל זאת"` = `"לערוך בכל זאת"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts:29](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts#L29)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts:29](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts#L29)

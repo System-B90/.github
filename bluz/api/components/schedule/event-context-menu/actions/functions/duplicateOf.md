@@ -8,7 +8,7 @@
 
 > **duplicateOf**(`event`): [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:57](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/actions.ts#L57)
+Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:57](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-context-menu/actions.ts#L57)
 
 A brand-new event seeded from an existing one, in the same slot. The grid
 lays the two side by side, which is what makes the copy visible without

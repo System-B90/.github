@@ -6,7 +6,7 @@
 
 # Class: OpenAiCompatibleProvider
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:161](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/openai-compatible.ts#L161)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:161](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L161)
 
 ## Extended by
 
@@ -23,7 +23,7 @@ Defined in: [ui/src/api-server/ai/openai-compatible.ts:161](https://github.com/S
 
 > **new OpenAiCompatibleProvider**(`options`): `OpenAiCompatibleProvider`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:169](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/openai-compatible.ts#L169)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:169](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L169)
 
 #### Parameters
 
@@ -69,7 +69,7 @@ Identifier reported in logs/`AI_PROVIDER` (e.g. "openrouter", "openai").
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:163](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/openai-compatible.ts#L163)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:163](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L163)
 
 Model used when a request does not name one.
 
@@ -83,7 +83,7 @@ Model used when a request does not name one.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:162](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/openai-compatible.ts#L162)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:162](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L162)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -97,7 +97,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:194](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/openai-compatible.ts#L194)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:194](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L194)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -121,7 +121,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **listModels**(`signal?`): `Promise`\<[`AiModelInfo`](../../../../api-shared/types/ai-models/type-aliases/AiModelInfo.md)[]\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:283](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/openai-compatible.ts#L283)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:283](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L283)
 
 `GET {baseUrl}/models`. With Open WebUI the base URL is `…/api`, so this
 is its `/api/models`; OpenAI, OpenRouter and vLLM answer the same path.
@@ -146,7 +146,7 @@ is its `/api/models`; OpenAI, OpenRouter and vLLM answer the same path.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:217](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/openai-compatible.ts#L217)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:217](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L217)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

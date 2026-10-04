@@ -8,7 +8,7 @@
 
 > **apiGetEventHistory**(`eventId`, `iterationId?`): `Promise`\<[`ApiEventHistoryResponse`](../../../api-shared/types/event-history/type-aliases/ApiEventHistoryResponse.md)\>
 
-Defined in: [ui/src/api-client/calendar.ts:174](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-client/calendar.ts#L174)
+Defined in: [ui/src/api-client/calendar.ts:174](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-client/calendar.ts#L174)
 
 Fetch one event's change log ("היסטוריית שינויים"), newest first.
 

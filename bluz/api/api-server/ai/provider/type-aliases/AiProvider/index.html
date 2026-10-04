@@ -1147,13 +1147,13 @@
 <blockquote>
 <p><strong>AiProvider</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L57">ui/src/api-server/ai/provider.ts:57</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L57">ui/src/api-server/ai/provider.ts:57</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="chat">chat<a class="headerlink" href="#chat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>chat</strong>: (<code>request</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/ai/type-aliases/AiChatResult/"><code>AiChatResult</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L64">ui/src/api-server/ai/provider.ts:64</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L64">ui/src/api-server/ai/provider.ts:64</a></p>
 <p>One-shot completion, for callers with nothing to stream to.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="request">request<a class="headerlink" href="#request" title="Permanent link">&para;</a></h5>
@@ -1165,14 +1165,14 @@
 <blockquote>
 <p><code>readonly</code> <strong>defaultModel</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L61">ui/src/api-server/ai/provider.ts:61</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L61">ui/src/api-server/ai/provider.ts:61</a></p>
 <p>Model used when a request does not name one.</p>
 <hr />
 <h3 id="listmodels">listModels?<a class="headerlink" href="#listmodels" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>listModels?</strong>: (<code>signal?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/ai-models/type-aliases/AiModelInfo/"><code>AiModelInfo</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L76">ui/src/api-server/ai/provider.ts:76</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L76">ui/src/api-server/ai/provider.ts:76</a></p>
 <p>Models the backend offers (#779). Optional: a backend that cannot list
 them simply leaves the settings field free-text.</p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
@@ -1185,14 +1185,14 @@ them simply leaves the settings field free-text.</p>
 <blockquote>
 <p><code>readonly</code> <strong>name</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L59">ui/src/api-server/ai/provider.ts:59</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L59">ui/src/api-server/ai/provider.ts:59</a></p>
 <p>Stable identifier, used in logs and in <code>AI_PROVIDER</code>.</p>
 <hr />
 <h3 id="streamchat">streamChat<a class="headerlink" href="#streamchat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>streamChat</strong>: (<code>request</code>) =&gt; <code>AsyncIterable</code>\&lt;<a href="../AiProviderEvent/"><code>AiProviderEvent</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/provider.ts#L70">ui/src/api-server/ai/provider.ts:70</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/provider.ts#L70">ui/src/api-server/ai/provider.ts:70</a></p>
 <p>Incremental completion. Yields text as it arrives and terminates with a
 single <code>final</code> frame carrying tool calls and usage.</p>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>

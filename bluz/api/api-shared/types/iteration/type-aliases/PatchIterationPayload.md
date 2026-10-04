@@ -8,7 +8,7 @@
 
 > **PatchIterationPayload** = `object`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:109](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L109)
+Defined in: [ui/src/api-shared/types/iteration.ts:109](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L109)
 
 Mutable fields of an iteration via PATCH.
 
@@ -18,7 +18,7 @@ Mutable fields of an iteration via PATCH.
 
 > `optional` **endDate?**: `Date` \| `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:113](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L113)
+Defined in: [ui/src/api-shared/types/iteration.ts:113](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L113)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/iteration.ts:113](https://github.com/System
 
 > `optional` **ganttCurriculumId?**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:116](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L116)
+Defined in: [ui/src/api-shared/types/iteration.ts:116](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L116)
 
 Pass null to unlink the curriculum.
 
@@ -36,7 +36,7 @@ Pass null to unlink the curriculum.
 
 > `optional` **hiveUrl?**: `string`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:111](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L111)
+Defined in: [ui/src/api-shared/types/iteration.ts:111](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L111)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-shared/types/iteration.ts:111](https://github.com/System
 
 > `optional` **isCurrent?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:114](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L114)
+Defined in: [ui/src/api-shared/types/iteration.ts:114](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L114)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-shared/types/iteration.ts:114](https://github.com/System
 
 > `optional` **label?**: `string`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:110](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L110)
+Defined in: [ui/src/api-shared/types/iteration.ts:110](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L110)
 
 ***
 
@@ -60,4 +60,4 @@ Defined in: [ui/src/api-shared/types/iteration.ts:110](https://github.com/System
 
 > `optional` **startDate?**: `Date` \| `string`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:112](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L112)
+Defined in: [ui/src/api-shared/types/iteration.ts:112](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L112)

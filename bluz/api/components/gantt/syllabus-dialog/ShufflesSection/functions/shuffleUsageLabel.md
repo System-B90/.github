@@ -8,7 +8,7 @@
 
 > **shuffleUsageLabel**(`count`): `string`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:67](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L67)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:67](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L67)
 
 The usage chip's label: how many modules and events carry the shuffle.
 

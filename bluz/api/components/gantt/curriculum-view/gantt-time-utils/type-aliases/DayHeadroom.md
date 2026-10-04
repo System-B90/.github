@@ -8,7 +8,7 @@
 
 > **DayHeadroom** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:228](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L228)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:228](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L228)
 
 Per-day load tracker fed by each event placement.
 
@@ -18,7 +18,7 @@ Per-day load tracker fed by each event placement.
 
 > **consume**: (`dayId`, `eventId`, `minutes`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:230](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L230)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:230](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L230)
 
 Records that `eventId` uses `minutes` of `dayId`.
 

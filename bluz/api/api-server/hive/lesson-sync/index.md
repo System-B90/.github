@@ -13,6 +13,7 @@
 ## Functions
 
 - [buildLessonDescription](functions/buildLessonDescription.md)
+- [describeUnresolvedShuffles](functions/describeUnresolvedShuffles.md)
 - [isLessonOwnedByEvent](functions/isLessonOwnedByEvent.md)
 - [planLessonRules](functions/planLessonRules.md)
 - [reconcileEventLesson](functions/reconcileEventLesson.md)

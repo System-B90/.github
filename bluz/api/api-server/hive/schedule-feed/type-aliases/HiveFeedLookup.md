@@ -8,7 +8,7 @@
 
 > **HiveFeedLookup** = `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:55](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/schedule-feed.ts#L55)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:55](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L55)
 
 Hive names the feed resolves Bluz ids against.
 
@@ -18,7 +18,7 @@ Hive names the feed resolves Bluz ids against.
 
 > **groupEmail**: (`courseId`) => `string` \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:61](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/schedule-feed.ts#L61)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:61](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L61)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:61](https://github.com/Syst
 
 > **lesson**: (`lessonId`) => \{ `name`: `string`; `subjectName`: `string`; \} \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:57](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/schedule-feed.ts#L57)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:57](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L57)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:57](https://github.com/Syst
 
 > **roomName**: (`roomId`) => `string` \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:60](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/schedule-feed.ts#L60)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:60](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L60)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:60](https://github.com/Syst
 
 > **subjectName**: (`subjectId`) => `string` \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:56](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/schedule-feed.ts#L56)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:56](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L56)
 
 #### Parameters
 

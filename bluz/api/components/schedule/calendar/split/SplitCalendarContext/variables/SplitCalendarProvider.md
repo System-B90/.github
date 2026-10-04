@@ -8,4 +8,4 @@
 
 > `const` **SplitCalendarProvider**: `Provider`\<[`SplitCalendarContextValue`](../type-aliases/SplitCalendarContextValue.md)\> = `SplitCalendarContext.Provider`
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:66](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L66)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:66](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L66)

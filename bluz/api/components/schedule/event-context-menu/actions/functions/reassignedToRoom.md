@@ -8,7 +8,7 @@
 
 > **reassignedToRoom**(`event`, `room`): [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:94](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/actions.ts#L94)
+Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:94](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-context-menu/actions.ts#L94)
 
 Reassigns the event to exactly one room, or clears its rooms entirely.
 "Reassign" replaces rather than adds: an event dragged between room columns

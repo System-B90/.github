@@ -8,7 +8,7 @@
 
 > **HiveCacheChanges** = `object`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:39](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L39)
+Defined in: [ui/src/api-shared/types/iteration.ts:39](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L39)
 
 How a manual "sync Hive info" (#379) changed the cached names. Counts are
 summed across modules, subjects and rooms.
@@ -19,7 +19,7 @@ summed across modules, subjects and rooms.
 
 > **added**: `number`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:41](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L41)
+Defined in: [ui/src/api-shared/types/iteration.ts:41](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L41)
 
 Ids present in Hive that the cache did not have.
 
@@ -29,7 +29,7 @@ Ids present in Hive that the cache did not have.
 
 > **removed**: `number`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:45](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L45)
+Defined in: [ui/src/api-shared/types/iteration.ts:45](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L45)
 
 Cached ids that Hive no longer returns.
 
@@ -39,7 +39,7 @@ Cached ids that Hive no longer returns.
 
 > **unchanged**: `number`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:47](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L47)
+Defined in: [ui/src/api-shared/types/iteration.ts:47](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L47)
 
 Ids whose cached name already matched.
 
@@ -49,6 +49,6 @@ Ids whose cached name already matched.
 
 > **updated**: `number`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:43](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/iteration.ts#L43)
+Defined in: [ui/src/api-shared/types/iteration.ts:43](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/iteration.ts#L43)
 
 Ids whose cached name differs from Hive's.
