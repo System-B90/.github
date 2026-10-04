@@ -8,7 +8,7 @@
 
 > **EventContextMenu**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:104](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L104)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:104](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L104)
 
 Right-click menu for calendar tiles (#706). Every entry acts on *all* the
 targeted events, so the single-event and multi-select cases are one code

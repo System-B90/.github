@@ -8,7 +8,7 @@
 
 > **planLessonRules**(`desired`, `existing`): [`LessonRulePlan`](../type-aliases/LessonRulePlan.md)
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:58](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/hive/lesson-sync.ts#L58)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:58](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/lesson-sync.ts#L58)
 
 Diffs the shuffle→queue mapping an event wants against the rules a Hive
 lesson already has.

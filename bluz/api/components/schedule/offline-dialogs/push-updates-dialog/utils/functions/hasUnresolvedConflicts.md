@@ -8,7 +8,7 @@
 
 > **hasUnresolvedConflicts**(`collisionStates`, `selectedIds`): `boolean`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:145](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L145)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:145](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L145)
 
 True when the collision set has at least one real conflict (both captured
 and server versions exist and differ) but none of those conflicting events

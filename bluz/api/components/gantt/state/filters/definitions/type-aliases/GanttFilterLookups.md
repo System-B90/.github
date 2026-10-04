@@ -8,7 +8,7 @@
 
 > **GanttFilterLookups** = `object`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:13](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/filters/definitions.ts#L13)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:13](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/filters/definitions.ts#L13)
 
 Lookups the filter descriptions need to turn ids into names.
 
@@ -18,7 +18,7 @@ Lookups the filter descriptions need to turn ids into names.
 
 > **getCourse**: (`id`) => [`Course`](../../../../../../api-shared/types/course/type-aliases/Course.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:14](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/filters/definitions.ts#L14)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:14](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/filters/definitions.ts#L14)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/components/gantt/state/filters/definitions.ts:14](https://gi
 
 > **getInstructor**: (`id`) => `CourseUser` \| `undefined`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:15](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/filters/definitions.ts#L15)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:15](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/filters/definitions.ts#L15)
 
 #### Parameters
 

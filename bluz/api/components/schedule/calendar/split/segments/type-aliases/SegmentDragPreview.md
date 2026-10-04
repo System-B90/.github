@@ -8,7 +8,7 @@
 
 > **SegmentDragPreview** = [`EventSegment`](EventSegment.md) & `object`
 
-Defined in: [ui/src/components/schedule/calendar/split/segments.ts:54](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/split/segments.ts#L54)
+Defined in: [ui/src/components/schedule/calendar/split/segments.ts:54](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/split/segments.ts#L54)
 
 react-big-calendar's drag layer clones the dragged item and stamps the
 proposed `start`/`end` onto the clone (see `EventContainerWrapper.update`).

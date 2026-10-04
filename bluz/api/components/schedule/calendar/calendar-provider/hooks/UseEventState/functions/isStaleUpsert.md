@@ -8,7 +8,7 @@
 
 > **isStaleUpsert**(`existing`, `incoming`): `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:30](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L30)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:30](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L30)
 
 Optimistic-concurrency guard (#156). Returns true when `incoming` must NOT
 replace `existing` because it is not strictly newer. When both carry a

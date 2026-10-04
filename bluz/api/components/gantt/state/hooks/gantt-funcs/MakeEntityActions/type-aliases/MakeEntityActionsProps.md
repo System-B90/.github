@@ -8,7 +8,7 @@
 
 > **MakeEntityActionsProps**\<`TEntity`, `TContainerId`, `TCreatePayload`\> = `object`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:29](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L29)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:29](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L29)
 
 ## Type Parameters
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.t
 
 > **api**: [`BasicGantApi`](../../../../../../../api-client/gantt/base/type-aliases/BasicGantApi.md)\<`TEntity`, `TCreatePayload`\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:34](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L34)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:34](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L34)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.t
 
 > **builders**: [`EntityActionBuilders`](EntityActionBuilders.md)\<`TEntity`, `TContainerId`\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:40](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L40)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:40](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L40)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.t
 
 > **containerLabel**: `string`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:39](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L39)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:39](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L39)
 
 Container name used in link/unlink error messages, e.g. "syllabus".
 
@@ -56,7 +56,7 @@ Container name used in link/unlink error messages, e.g. "syllabus".
 
 > **dispatch**: `Dispatch`\<[`Action`](../../../../reducers/actions/type-aliases/Action.md)\>
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:35](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L35)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:35](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L35)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.t
 
 > `optional` **getEntity?**: (`id`) => `TEntity` \| `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:47](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L47)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:47](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L47)
 
 Reads the current entity from the store. When provided, `update` becomes
 optimistic: it snapshots these values, dispatches immediately, and rolls
@@ -87,6 +87,6 @@ ref-backed useCallback) so the returned actions stay memoized.
 
 > **label**: `string`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:37](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L37)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:37](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L37)
 
 Entity name used in error messages, e.g. "module".

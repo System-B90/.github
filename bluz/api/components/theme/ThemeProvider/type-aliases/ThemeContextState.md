@@ -8,7 +8,7 @@
 
 > **ThemeContextState** = `object`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:34](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/theme/ThemeProvider.tsx#L34)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:34](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/theme/ThemeProvider.tsx#L34)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/theme/ThemeProvider.tsx:34](https://github.com/Sy
 
 > **resolvedTheme**: `"dark"` \| `"light"`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:36](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/theme/ThemeProvider.tsx#L36)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:36](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/theme/ThemeProvider.tsx#L36)
 
 Brightness only: pink is a light theme.
 
@@ -26,7 +26,7 @@ Brightness only: pink is a light theme.
 
 > **setTheme**: (`theme`) => `void`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:38](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/theme/ThemeProvider.tsx#L38)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:38](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/theme/ThemeProvider.tsx#L38)
 
 #### Parameters
 
@@ -44,4 +44,4 @@ Defined in: [ui/src/components/theme/ThemeProvider.tsx:38](https://github.com/Sy
 
 > **theme**: [`ThemeMode`](ThemeMode.md)
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:37](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/theme/ThemeProvider.tsx#L37)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:37](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/theme/ThemeProvider.tsx#L37)

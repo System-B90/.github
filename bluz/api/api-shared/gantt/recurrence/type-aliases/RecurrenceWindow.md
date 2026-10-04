@@ -8,7 +8,7 @@
 
 > **RecurrenceWindow** = `object`
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:14](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/recurrence.ts#L14)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:14](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/recurrence.ts#L14)
 
 Pure recurrence helpers for the Gantt timeline (#111).
 
@@ -25,7 +25,7 @@ Until then an "unallocated" marker is shown in the first column.
 
 > `optional` **dateOf?**: (`dayId`) => `string` \| `undefined`
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:20](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/recurrence.ts#L20)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:20](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/recurrence.ts#L20)
 
 Date of a timeline day ("YYYY-MM-DD"), or undefined when unknown.
 
@@ -45,7 +45,7 @@ Date of a timeline day ("YYYY-MM-DD"), or undefined when unknown.
 
 > `optional` **recurrenceEndDate?**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:18](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/recurrence.ts#L18)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:18](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/recurrence.ts#L18)
 
 Last date the recurrence may echo onto ("YYYY-MM-DD"), or null.
 
@@ -55,6 +55,6 @@ Last date the recurrence may echo onto ("YYYY-MM-DD"), or null.
 
 > `optional` **recurrenceStartDate?**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:16](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/recurrence.ts#L16)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:16](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/recurrence.ts#L16)
 
 First date the recurrence may echo onto ("YYYY-MM-DD"), or null.

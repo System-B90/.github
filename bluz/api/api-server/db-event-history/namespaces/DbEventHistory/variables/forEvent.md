@@ -8,7 +8,7 @@
 
 > `const` **forEvent**: (`eventId`, `controller`) => `Promise`\<[`EventHistoryEntry`](../../../../../api-shared/types/event-history/type-aliases/EventHistoryEntry.md)[]\> = `listForEvent`
 
-Defined in: [ui/src/api-server/db-event-history.ts:229](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/db-event-history.ts#L229)
+Defined in: [ui/src/api-server/db-event-history.ts:229](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/db-event-history.ts#L229)
 
 Full log of one event, newest first.
 

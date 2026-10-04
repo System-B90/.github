@@ -8,6 +8,6 @@
 
 > `const` **ganttCurriculum2SyllabusesRelationsSchema**: `Relations`\<`"c2s"`, \{ `curriculum`: `One`\<`"c"`, `true`\>; `syllabus`: `One`\<`"s"`, `true`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/junctions.ts:36](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/schema/junctions.ts#L36)
+Defined in: [ui/src/api-server/gantt/schema/junctions.ts:36](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/gantt/schema/junctions.ts#L36)
 
 Relations definition for the Curriculum to Syllabuses junction schema.

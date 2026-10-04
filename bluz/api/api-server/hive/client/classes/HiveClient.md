@@ -6,7 +6,7 @@
 
 # Class: HiveClient
 
-Defined in: [ui/src/api-server/hive/client.ts:24](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/hive/client.ts#L24)
+Defined in: [ui/src/api-server/hive/client.ts:24](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/client.ts#L24)
 
 Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
@@ -53,7 +53,7 @@ Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:173
 
 > **getClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:31](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/hive/client.ts#L31)
+Defined in: [ui/src/api-server/hive/client.ts:31](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/client.ts#L31)
 
 Student groups change rarely and Bluz never writes them, yet every cut,
 lesson sync and feed fetches them: share one request per Hive instance
@@ -74,7 +74,7 @@ the in-flight request; a failure is dropped so the next call retries.
 
 > **getModuleQueues**(`moduleId`): `Promise`\<`Queue`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:60](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/hive/client.ts#L60)
+Defined in: [ui/src/api-server/hive/client.ts:60](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/client.ts#L60)
 
 The queues of one Hive module — the only queues a lesson rule may point
 at (Hive rejects user queues on a rule).
@@ -95,7 +95,7 @@ at (Hive rejects user queues on a rule).
 
 > **getRooms**(): `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:48](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/hive/client.ts#L48)
+Defined in: [ui/src/api-server/hive/client.ts:48](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/hive/client.ts#L48)
 
 #### Returns
 

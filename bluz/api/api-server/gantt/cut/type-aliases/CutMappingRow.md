@@ -8,7 +8,7 @@
 
 > **CutMappingRow** = `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:95](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/cut.ts#L95)
+Defined in: [ui/src/api-server/gantt/cut.ts:95](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/gantt/cut.ts#L95)
 
 Plain-data mapping row (subset of the Drizzle `cMDA` row).
 
@@ -18,7 +18,7 @@ Plain-data mapping row (subset of the Drizzle `cMDA` row).
 
 > `optional` **allottedMinutes?**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:100](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/cut.ts#L100)
+Defined in: [ui/src/api-server/gantt/cut.ts:100](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/gantt/cut.ts#L100)
 
 Minutes the event takes on this day.
 
@@ -28,7 +28,7 @@ Minutes the event takes on this day.
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:97](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/cut.ts#L97)
+Defined in: [ui/src/api-server/gantt/cut.ts:97](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/gantt/cut.ts#L97)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:97](https://github.com/System-B90/Bl
 
 > **eventId**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:96](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/cut.ts#L96)
+Defined in: [ui/src/api-server/gantt/cut.ts:96](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/gantt/cut.ts#L96)
 
 ***
 
@@ -44,4 +44,4 @@ Defined in: [ui/src/api-server/gantt/cut.ts:96](https://github.com/System-B90/Bl
 
 > `optional` **sortOrder?**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:98](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/cut.ts#L98)
+Defined in: [ui/src/api-server/gantt/cut.ts:98](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/gantt/cut.ts#L98)

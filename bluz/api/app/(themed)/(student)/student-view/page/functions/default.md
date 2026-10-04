@@ -8,7 +8,7 @@
 
 > **default**(`__namedParameters`): `Promise`\<`Element`\>
 
-Defined in: [ui/src/app/(themed)/(student)/student-view/page.tsx:23](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/app/(themed)/(student)/student-view/page.tsx#L23)
+Defined in: [ui/src/app/(themed)/(student)/student-view/page.tsx:23](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/app/(themed)/(student)/student-view/page.tsx#L23)
 
 `/student-view` — what a student ("חניך") sees, and the staff preview of it
 (#656).

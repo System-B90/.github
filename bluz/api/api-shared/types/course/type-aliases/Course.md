@@ -8,7 +8,7 @@
 
 > **Course** = `object`
 
-Defined in: [ui/src/api-shared/types/course.ts:4](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L4)
+Defined in: [ui/src/api-shared/types/course.ts:4](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/course.ts:4](https://github.com/System-B90/
 
 > **color**: [`Color`](../../../common/type-aliases/Color.md) \| `null`
 
-Defined in: [ui/src/api-shared/types/course.ts:7](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L7)
+Defined in: [ui/src/api-shared/types/course.ts:7](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L7)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/course.ts:7](https://github.com/System-B90/
 
 > `optional` **description?**: `string`
 
-Defined in: [ui/src/api-shared/types/course.ts:11](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L11)
+Defined in: [ui/src/api-shared/types/course.ts:11](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L11)
 
 Optional free-text description (e.g. provenance of auto-created courses).
 
@@ -34,7 +34,7 @@ Optional free-text description (e.g. provenance of auto-created courses).
 
 > `optional` **hiveClassId?**: `null` \| `number`
 
-Defined in: [ui/src/api-shared/types/course.ts:16](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L16)
+Defined in: [ui/src/api-shared/types/course.ts:16](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L16)
 
 Hive student group this course (a shuffle) is explicitly linked to
 (#774). Unset ⇒ matched to the Hive group with the same name.
@@ -45,7 +45,7 @@ Hive student group this course (a shuffle) is explicitly linked to
 
 > **id**: [`CourseId`](CourseId.md)
 
-Defined in: [ui/src/api-shared/types/course.ts:5](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L5)
+Defined in: [ui/src/api-shared/types/course.ts:5](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L5)
 
 ***
 
@@ -53,7 +53,7 @@ Defined in: [ui/src/api-shared/types/course.ts:5](https://github.com/System-B90/
 
 > `optional` **instructorIds?**: `number`[]
 
-Defined in: [ui/src/api-shared/types/course.ts:9](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L9)
+Defined in: [ui/src/api-shared/types/course.ts:9](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L9)
 
 ***
 
@@ -61,7 +61,7 @@ Defined in: [ui/src/api-shared/types/course.ts:9](https://github.com/System-B90/
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/course.ts:6](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L6)
+Defined in: [ui/src/api-shared/types/course.ts:6](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L6)
 
 ***
 
@@ -69,4 +69,4 @@ Defined in: [ui/src/api-shared/types/course.ts:6](https://github.com/System-B90/
 
 > `optional` **parentId?**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/course.ts:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/course.ts#L8)
+Defined in: [ui/src/api-shared/types/course.ts:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/course.ts#L8)

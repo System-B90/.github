@@ -6,7 +6,7 @@
 
 # Enumeration: GanttDayIndex
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:4](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L4)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:4](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L4)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:4](https://github.com/S
 
 > **Friday**: `5`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:10](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L10)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:10](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L10)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:10](https://github.com/
 
 > **Monday**: `1`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:6](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L6)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:6](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L6)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:6](https://github.com/S
 
 > **Saturday**: `6`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:11](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L11)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:11](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L11)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:11](https://github.com/
 
 > **Sunday**: `0`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:5](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L5)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:5](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L5)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:5](https://github.com/S
 
 > **Thursday**: `4`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:9](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L9)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:9](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L9)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:9](https://github.com/S
 
 > **Tuesday**: `2`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:7](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L7)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:7](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L7)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:7](https://github.com/S
 
 > **Wednesday**: `3`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/day.ts#L8)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/gantt/models/day.ts#L8)

@@ -8,7 +8,7 @@
 
 > **EventContextMenuProps** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:81](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L81)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:81](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L81)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:81](https:/
 
 > **clipboard**: [`ContextMenuClipboard`](ContextMenuClipboard.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:95](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L95)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:95](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L95)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:95](https:/
 
 > **events**: [`Event`](../../../../api-shared/types/event/type-aliases/Event.md)[]
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:85](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L85)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:85](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L85)
 
 The live event list — the target ids are resolved against it.
 
@@ -34,7 +34,7 @@ The live event list — the target ids are resolved against it.
 
 > **guards**: [`ContextMenuGuards`](ContextMenuGuards.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:96](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L96)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:96](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L96)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:96](https:/
 
 > **onClose**: () => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:83](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L83)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:83](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L83)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:83](https:/
 
 > **onDeleteEvent**: (`eventId`, `initiator?`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:91](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L91)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:91](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L91)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:91](https:/
 
 > **onSaveEvent**: (`event`, `initiator?`) => [`Event`](../../../../api-shared/types/event/type-aliases/Event.md) \| `undefined` \| `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:87](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L87)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:87](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L87)
 
 #### Parameters
 
@@ -98,7 +98,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:87](https:/
 
 > **rooms**: [`Room`](../../../../api-shared/types/room/type-aliases/Room.md)[]
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:86](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L86)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:86](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L86)
 
 ***
 
@@ -106,4 +106,4 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:86](https:/
 
 > **target**: [`ContextMenuTarget`](../use-event-context-menu/type-aliases/ContextMenuTarget.md) \| `null`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:82](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/index.tsx#L82)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:82](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-context-menu/index.tsx#L82)

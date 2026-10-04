@@ -8,7 +8,7 @@
 
 > **CutPlanOptions** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:300](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L300)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:300](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/cut-planner.ts#L300)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:300](https://github.com/Syst
 
 > `optional` **acceptedConstraintMoves?**: `string`[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:324](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L324)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:324](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/cut-planner.ts#L324)
 
 Constraint-solver moves the user accepted, by event id. Proposals not
 listed here are reported but not applied — the cut never silently moves
@@ -28,7 +28,7 @@ an event the user mapped deliberately.
 
 > `optional` **autoSpillover?**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:313](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L313)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:313](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/cut-planner.ts#L313)
 
 Auto-spillover: rebalance each week so no day carries more than its
 working window, cascading work forward within the week. Defaults to on —
@@ -40,7 +40,7 @@ pass `false` for the pre-#… raw stacking behaviour.
 
 > `optional` **force?**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:307](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L307)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:307](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/cut-planner.ts#L307)
 
 When true, an unmapped event or an unsatisfied recurrence no longer
 fails the whole plan — the offending event is dropped and planning
@@ -53,7 +53,7 @@ start date is still fatal (nothing is datable without it).
 
 > `optional` **insertBreaks?**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:318](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L318)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:318](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/cut-planner.ts#L318)
 
 Break post-pass: spread a day's leftover slack through the day as real
 הפסקה events instead of leaving it as an empty tail. Defaults to on.
@@ -64,7 +64,7 @@ Break post-pass: spread a day's leftover slack through the day as real
 
 > `optional` **weekOverflowResolutions?**: `Record`\<`string`, [`WeekOverflowResolution`](../../cut-rules/type-aliases/WeekOverflowResolution.md)\>
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:329](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L329)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:329](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/gantt/cut-planner.ts#L329)
 
 Per-week answer to a `week-overflow` decision. Absent weeks use
 `OVERFLOW_RULES.defaultResolution` (`overlap-source`).

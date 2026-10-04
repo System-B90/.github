@@ -8,7 +8,7 @@
 
 > **createNoOverlapLayout**(`minTileMs?`): \<`TEvent`\>(`__namedParameters`) => `object`[]
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:38](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/student-view/no-overlap-layout.ts#L38)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:38](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/student-view/no-overlap-layout.ts#L38)
 
 Side-by-side day layout that never draws one tile over another.
 

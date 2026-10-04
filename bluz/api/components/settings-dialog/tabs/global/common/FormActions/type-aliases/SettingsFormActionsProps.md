@@ -8,7 +8,7 @@
 
 > **SettingsFormActionsProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:7](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L7)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:7](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L7)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.ts
 
 > `optional` **extraActions?**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:18](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L18)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:18](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L18)
 
 Tab-specific extras (the iteration Hive sync, for one). Rendered as
 low-emphasis buttons after submit/cancel so the two standard buttons
@@ -28,7 +28,7 @@ always sit in the same place, whatever a tab adds.
 
 > `optional` **isSubmitting?**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:12](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:12](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L12)
 
 Disables submit and swaps its icon for a spinner.
 
@@ -38,7 +38,7 @@ Disables submit and swaps its icon for a spinner.
 
 > **onCancel**: () => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:10](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:10](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L10)
 
 #### Returns
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.ts
 
 > `optional` **submitColor?**: `"primary"` \| `"secondary"`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:9](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:9](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L9)
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.ts
 
 > **submitLabel**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L8)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L8)

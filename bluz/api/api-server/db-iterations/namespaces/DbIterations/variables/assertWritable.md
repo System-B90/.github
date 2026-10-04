@@ -8,7 +8,7 @@
 
 > `const` **assertWritable**: (`id?`) => `Promise`\<`void`\> = `assertWritableIteration`
 
-Defined in: [ui/src/api-server/db-iterations.ts:385](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/db-iterations.ts#L385)
+Defined in: [ui/src/api-server/db-iterations.ts:385](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/db-iterations.ts#L385)
 
 Guard for write paths: past iterations are reference-only. Throws unless the
 resolved iteration is the current one. Omitted id ⇒ current ⇒ writable.

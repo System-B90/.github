@@ -8,7 +8,7 @@
 
 > **getPresentInstructors**(`event`): `number`[]
 
-Defined in: [ui/src/api-shared/types/event.ts:291](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/event.ts#L291)
+Defined in: [ui/src/api-shared/types/event.ts:291](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/event.ts#L291)
 
 Compiles a unique list of instructor and lecturer IDs present at an event.
 

@@ -6,7 +6,7 @@
 
 # Enumeration: AiRole
 
-Defined in: [ui/src/api-shared/types/ai.ts:11](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/ai.ts#L11)
+Defined in: [ui/src/api-shared/types/ai.ts:11](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/ai.ts#L11)
 
 Who produced a message in a conversation.
 
@@ -16,7 +16,7 @@ Who produced a message in a conversation.
 
 > **Assistant**: `"assistant"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:17](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/ai.ts#L17)
+Defined in: [ui/src/api-shared/types/ai.ts:17](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/ai.ts#L17)
 
 Written by the model — may carry tool calls instead of text.
 
@@ -26,7 +26,7 @@ Written by the model — may carry tool calls instead of text.
 
 > **System**: `"system"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:13](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/ai.ts#L13)
+Defined in: [ui/src/api-shared/types/ai.ts:13](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/ai.ts#L13)
 
 Standing instructions. At most one, first in the list.
 
@@ -36,7 +36,7 @@ Standing instructions. At most one, first in the list.
 
 > **Tool**: `"tool"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:19](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/ai.ts#L19)
+Defined in: [ui/src/api-shared/types/ai.ts:19](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/ai.ts#L19)
 
 The result of running one tool the assistant asked for.
 
@@ -46,6 +46,6 @@ The result of running one tool the assistant asked for.
 
 > **User**: `"user"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:15](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/ai.ts#L15)
+Defined in: [ui/src/api-shared/types/ai.ts:15](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-shared/types/ai.ts#L15)
 
 Written by the human.

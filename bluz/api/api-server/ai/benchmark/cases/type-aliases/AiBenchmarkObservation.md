@@ -8,7 +8,7 @@
 
 > **AiBenchmarkObservation** = `object`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:34](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L34)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:34](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L34)
 
 What one case observed about a run, for its checks to grade.
 
@@ -18,7 +18,7 @@ What one case observed about a run, for its checks to grade.
 
 > **answer**: `string`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:43](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L43)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:43](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L43)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-server/ai/benchmark/cases.ts:43](https://github.com/Syst
 
 > **askedUser**: `boolean`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:42](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L42)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:42](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L42)
 
 Whether the model asked the human a question.
 
@@ -36,7 +36,7 @@ Whether the model asked the human a question.
 
 > **executedWrites**: `string`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:40](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L40)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:40](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L40)
 
 Write tools that actually executed. Must always be empty.
 
@@ -46,7 +46,7 @@ Write tools that actually executed. Must always be empty.
 
 > **proposals**: `ObservedCall`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:47](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L47)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:47](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L47)
 
 Every write proposed for approval, with its arguments.
 
@@ -56,7 +56,7 @@ Every write proposed for approval, with its arguments.
 
 > **proposedWrites**: `string`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:38](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L38)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:38](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L38)
 
 Write tools the model proposed (and which the gate stopped).
 
@@ -66,7 +66,7 @@ Write tools the model proposed (and which the gate stopped).
 
 > **reads**: `ObservedCall`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:45](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L45)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:45](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L45)
 
 Every read that ran, with its arguments.
 
@@ -76,6 +76,6 @@ Every read that ran, with its arguments.
 
 > **toolCalls**: `string`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:36](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/benchmark/cases.ts#L36)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:36](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/benchmark/cases.ts#L36)
 
 Tool names called, in order. Includes calls that only got proposed.

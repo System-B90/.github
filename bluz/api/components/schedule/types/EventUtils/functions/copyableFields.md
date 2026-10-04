@@ -8,7 +8,7 @@
 
 > **copyableFields**(`event`): `Omit`\<[`Event`](../../../../../api-shared/types/event/type-aliases/Event.md), `"ganttCurriculumId"` \| `"ganttEventId"` \| `"ganttOccurrenceDate"` \| `"hiveLesson"` \| `"hiveQueues"` \| `"id"`\>
 
-Defined in: [ui/src/components/schedule/types/EventUtils.ts:118](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/types/EventUtils.ts#L118)
+Defined in: [ui/src/components/schedule/types/EventUtils.ts:118](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/types/EventUtils.ts#L118)
 
 Everything of an event that a *copy* of it may carry. Strips the id, the
 gantt-cut provenance (ganttEventId/ganttOccurrenceDate/ganttCurriculumId,

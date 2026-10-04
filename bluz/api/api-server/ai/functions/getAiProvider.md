@@ -8,7 +8,7 @@
 
 > **getAiProvider**(`apiKeyOverride?`): [`AiProvider`](../provider/type-aliases/AiProvider.md)
 
-Defined in: [ui/src/api-server/ai/index.ts:80](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/index.ts#L80)
+Defined in: [ui/src/api-server/ai/index.ts:80](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/index.ts#L80)
 
 ## Parameters
 

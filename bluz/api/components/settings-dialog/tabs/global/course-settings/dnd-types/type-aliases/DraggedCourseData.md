@@ -8,7 +8,7 @@
 
 > **DraggedCourseData** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L8)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:8](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L8)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-t
 
 > **courseId**: [`CourseId`](../../../../../../../api-shared/types/course/type-aliases/CourseId.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:10](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:10](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L10)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-t
 
 > **type**: `"COURSE"`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:9](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:9](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L9)

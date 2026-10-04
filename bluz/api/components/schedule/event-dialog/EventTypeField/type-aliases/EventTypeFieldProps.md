@@ -8,4 +8,4 @@
 
 > **EventTypeFieldProps** = `object` & [`EventFieldProps`](../../utils/type-aliases/EventFieldProps.md)
 
-Defined in: [ui/src/components/schedule/event-dialog/EventTypeField.tsx:46](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-dialog/EventTypeField.tsx#L46)
+Defined in: [ui/src/components/schedule/event-dialog/EventTypeField.tsx:46](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/event-dialog/EventTypeField.tsx#L46)

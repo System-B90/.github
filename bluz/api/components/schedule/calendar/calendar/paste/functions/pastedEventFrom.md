@@ -8,7 +8,7 @@
 
 > **pastedEventFrom**(`copied`, `slot`): [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:24](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/paste.ts#L24)
+Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:24](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/paste.ts#L24)
 
 The new event a paste creates (shared by Ctrl+V and the right-click menus,
 #859). It keeps the copied event's duration; with a slot it starts there and

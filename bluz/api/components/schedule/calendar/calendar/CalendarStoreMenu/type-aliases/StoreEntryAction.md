@@ -8,7 +8,7 @@
 
 > **StoreEntryAction**\<`TEntry`\> = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:17](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L17)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:17](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L17)
 
 One icon action rendered on the trailing edge of a stored-entry row.
 
@@ -24,7 +24,7 @@ One icon action rendered on the trailing edge of a stored-entry row.
 
 > `optional` **color?**: `"error"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:20](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L20)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:20](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L20)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **icon**: `ReactNode`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:19](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L19)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:19](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L19)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **onClick**: (`entry`, `close`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:22](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L22)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:22](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L22)
 
 `close` dismisses the popover — call it after a state-replacing action.
 
@@ -64,4 +64,4 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **tooltip**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:18](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L18)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:18](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L18)

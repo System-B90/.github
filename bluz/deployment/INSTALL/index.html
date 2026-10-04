@@ -1137,8 +1137,8 @@ instead — see <a href="#co-located-hive">Co-located Hive</a> below.</p>
 <td><code>docker compose version</code></td>
 </tr>
 <tr>
-<td>Python 3.10+</td>
-<td>Runs the installer, wizard and upgrades in a local <code>.venv</code> (Ubuntu 22.04's stock <code>python3</code> is enough; <code>python3-venv</code> is <strong>not</strong> needed)</td>
+<td>Python 3.11+</td>
+<td>Runs the installer, wizard, upgrades and the <code>bluz</code> CLI in a local <code>.venv</code> (Ubuntu 24.04's stock <code>python3</code> is enough; on 22.04 install <code>python3.11</code>; <code>python3-venv</code> is <strong>not</strong> needed)</td>
 <td><code>python3 --version</code></td>
 </tr>
 <tr>
@@ -1155,12 +1155,13 @@ instead — see <a href="#co-located-hive">Co-located Hive</a> below.</p>
 </table>
 <p>The online bundle also needs outbound access to <code>ghcr.io</code>. The offline bundle
 ships every image as a <code>.tar</code> under <code>images/</code> and every Python package the
-installer needs (for Linux and Windows, Python 3.10-3.13) as a wheel under
+installer needs (for Linux and Windows, Python 3.11-3.13) as a wheel under
 <code>wheels/</code>, so it needs neither registry nor PyPI access.</p>
 <p>The <code>.sh</code>/<code>.ps1</code> scripts are thin launchers: they find any Python 3.6+, and
 <code>bootstrap.py</code> builds <code>.venv</code> from a Python 3.10+ and runs the shared
-<a href="https://github.com/System-B90/deploy-py">sb90-deploy</a> tooling inside it. If
-the host has no Python 3.10+, it says so before touching anything.</p>
+<a href="https://github.com/System-B90/deploy-py">sb90-deploy</a> tooling inside it. Bluz's
+CLI needs 3.11+, so on a host whose newest Python is 3.10 the install stops
+when it installs the <code>bluz</code> package; install <code>python3.11</code> first.</p>
 <h2 id="what-the-installer-asks-you">What the installer asks you<a class="headerlink" href="#what-the-installer-asks-you" title="Permanent link">&para;</a></h2>
 <table>
 <thead>

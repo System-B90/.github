@@ -8,7 +8,7 @@
 
 > **useGroupedInstructors**(`options?`): [`GroupedInstructors`](../type-aliases/GroupedInstructors.md)
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:37](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/base/use-grouped-instructors.ts#L37)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:37](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/base/use-grouped-instructors.ts#L37)
 
 Groups instructors under the course (מסלול) tree they belong to, walking
 parents before children so nested programs read in hierarchy order. Shared by

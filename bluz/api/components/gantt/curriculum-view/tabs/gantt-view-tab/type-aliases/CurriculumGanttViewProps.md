@@ -8,7 +8,7 @@
 
 > **CurriculumGanttViewProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:15](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L15)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:15](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L15)
 
 Properties for the [CurriculumGanttView](../functions/CurriculumGanttView.md) component.
 
@@ -18,7 +18,7 @@ Properties for the [CurriculumGanttView](../functions/CurriculumGanttView.md) co
 
 > `readonly` **curriculumId**: [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:17](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L17)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:17](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L17)
 
 The unique identifier of the Gantt curriculum.
 
@@ -28,6 +28,6 @@ The unique identifier of the Gantt curriculum.
 
 > `readonly` `optional` **View?**: `React.FC`\<[`GanttViewProps`](../gantt-view/types/type-aliases/GanttViewProps.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:19](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L19)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:19](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L19)
 
 The view rendered inside the providers; the timeline by default.

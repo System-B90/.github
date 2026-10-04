@@ -8,7 +8,7 @@
 
 > **generateInsights**(`ctx`): [`Insight`](../../types/type-aliases/Insight.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:35](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L35)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:35](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L35)
 
 Runs every generator, then orders the deck: warnings first (they are the
 point), then the rest with a fun card sprinkled in every few slots so the

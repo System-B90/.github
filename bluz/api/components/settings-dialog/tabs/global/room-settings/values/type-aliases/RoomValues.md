@@ -8,7 +8,7 @@
 
 > **RoomValues** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:11](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:11](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L11)
 
 The room form's fields as one value bag, replacing the twelve value/setter
 props that used to be drilled into `RoomFormCard`. See #191.
@@ -22,7 +22,7 @@ The two counts stay strings while editing so the inputs can be cleared —
 
 > **description**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:13](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:13](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L13)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.
 
 > **lectureComfortable**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:16](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:16](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L16)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.
 
 > **lectureSeatCount**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:15](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:15](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L15)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.
 
 > **name**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:12](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:12](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L12)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.
 
 > **peAyin**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:17](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L17)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:17](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L17)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.
 
 > **workstationCount**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:14](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L14)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:14](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L14)

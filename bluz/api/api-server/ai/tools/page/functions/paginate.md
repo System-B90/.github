@@ -8,7 +8,7 @@
 
 > **paginate**\<`T`\>(`items`, `args`): [`Page`](../type-aliases/Page.md)\<`T`\>
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:40](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/tools/page.ts#L40)
+Defined in: [ui/src/api-server/ai/tools/page.ts:40](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/api-server/ai/tools/page.ts#L40)
 
 Slices a list to one page, and says so: a model shown 50 of 400 rooms must
 know there are 400, or it reports the wrong count with confidence.

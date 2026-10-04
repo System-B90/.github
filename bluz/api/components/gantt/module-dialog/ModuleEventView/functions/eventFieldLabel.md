@@ -8,7 +8,7 @@
 
 > **eventFieldLabel**(`field`, `title`): `string`
 
-Defined in: [ui/src/components/gantt/module-dialog/ModuleEventView.tsx:64](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/module-dialog/ModuleEventView.tsx#L64)
+Defined in: [ui/src/components/gantt/module-dialog/ModuleEventView.tsx:64](https://github.com/System-B90/Bluz/blob/709d9b9fea27e88c533344b0ed282111c960722f/ui/src/components/gantt/module-dialog/ModuleEventView.tsx#L64)
 
 "<field> — <event title>", so a screen reader can tell rows apart (#835).
 
