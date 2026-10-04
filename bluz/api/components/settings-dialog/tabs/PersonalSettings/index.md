@@ -8,4 +8,5 @@
 
 ## Functions
 
+- [aiModelHelper](functions/aiModelHelper.md)
 - [PersonalSettings](functions/PersonalSettings.md)

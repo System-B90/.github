@@ -8,7 +8,7 @@
 
 > `const` **GANTT\_TAB\_INDEX**: `object`
 
-Defined in: [ui/src/components/app-onboarding/gantt/tabs.ts:8](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/app-onboarding/gantt/tabs.ts#L8)
+Defined in: [ui/src/components/app-onboarding/gantt/tabs.ts:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/app-onboarding/gantt/tabs.ts#L8)
 
 The gantt view tabs, by index, as `CurriculumViewTabs` renders them.
 
@@ -17,6 +17,10 @@ while the syllabuses tab is showing — so it needs the same indices the tab
 strip uses.
 
 ## Type Declaration
+
+### grid
+
+> `readonly` **grid**: `3` = `3`
 
 ### syllabuses
 

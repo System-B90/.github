@@ -8,9 +8,15 @@
 
 > **GanttSyllabus** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/syllabus.ts:9](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/syllabus.ts#L9)
+Defined in: [ui/src/api-shared/types/gantt/models/syllabus.ts:9](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/syllabus.ts#L9)
 
 ## Type Declaration
+
+### color?
+
+> `optional` **color?**: `null` \| `string`
+
+Default colour id (custom colour or Hive subject); unset ⇒ none.
 
 ### courseIds?
 

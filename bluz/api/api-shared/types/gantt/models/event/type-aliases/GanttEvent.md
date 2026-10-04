@@ -8,13 +8,9 @@
 
 > **GanttEvent** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:28](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/event.ts#L28)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:29](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/event.ts#L29)
 
 ## Type Declaration
-
-### allocatedDuration
-
-> **allocatedDuration**: `number`
 
 ### comment
 
@@ -24,13 +20,23 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:28](https://github.co
 
 > **constraints**: [`GanttConstraint`](../../constraint/type-aliases/GanttConstraint.md)[]
 
+### courseIds?
+
+> `optional` **courseIds?**: [`CourseId`](../../../../course/type-aliases/CourseId.md)[]
+
+Courses (a subset of the syllabus' courses and their sub-courses) this
+event is limited to. Non-empty ⇒ only students of those courses attend,
+and shuffles are irrelevant: `shuffles` is empty and `groupId` null.
+Empty/undefined ⇒ the event is for the whole syllabus.
+
 ### groupId
 
 > **groupId**: `null` \| `string`
 
 Shuffle group this event belongs to, or null when it stands alone.
 
-The same lesson given to different shuffles at different times is stored
+The same lesson given to different shuffles, in parallel inside the
+syllabus' shared block (same start and end for every shuffle), is stored
 as one event per shuffle - separate rows, so each can be placed, cut and
 linked to Hive independently - tied together by a shared `groupId`. The
 group is what lets the UI show them as one row and lets time totals count

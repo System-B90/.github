@@ -8,7 +8,7 @@
 
 > `const` **DbCurriculum**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-curriculum.ts:378](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-curriculum.ts#L378)
+Defined in: [ui/src/api-server/gantt/db-curriculum.ts:345](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/db-curriculum.ts#L345)
 
 ## Type Declaration
 
@@ -67,9 +67,8 @@ Defined in: [ui/src/api-server/gantt/db-curriculum.ts:378](https://github.com/Sy
 Clones a curriculum into a brand-new copy (#319, #322). Syllabuses (and
 their modules/events) are shared, not cloned — the copy is linked to the
 same syllabus rows as the source. Weeks → days are deep-cloned with fresh
-ids, and the per-curriculum event configurations (cEC) plus module/event →
-day mappings (cMDA) are cloned and repointed at the copy's own curriculum
-id / day ids. Constraints and recurrence exceptions are intentionally out
+ids, and the module/event → day mappings (cMDA) are cloned and repointed
+at the copy's own curriculum id / day ids. Constraints and recurrence exceptions are intentionally out
 of scope.
 
 #### Parameters

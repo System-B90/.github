@@ -8,7 +8,7 @@
 
 > **BuildInsightContextInput** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:32](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L32)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:24](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L24)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **curriculum**: [`GanttCurriculumDocument`](../../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:33](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L33)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:25](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L25)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **exceptions**: `Record`\<`string`, [`GanttEventRecurrenceException`](../../../../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:36](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L36)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:28](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L28)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **execution**: [`InsightContext`](../../types/type-aliases/InsightContext.md)\[`"execution"`\]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:40](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L40)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:32](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L32)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **instructorName**: [`InsightContext`](../../types/type-aliases/InsightContext.md)\[`"instructorName"`\]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:38](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L38)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:30](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L30)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **mappings**: `Record`\<`string`, [`GanttCurriculumEventDayMapping`](../../../../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:35](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L35)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:27](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L27)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **now**: `Dayjs`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:37](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L37)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:29](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L29)
 
 ***
 
@@ -64,7 +64,17 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **outsiderName**: [`InsightContext`](../../types/type-aliases/InsightContext.md)\[`"outsiderName"`\]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:39](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L39)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:31](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L31)
+
+***
+
+### schedule
+
+> **schedule**: `Pick`\<[`CurriculumStudentSchedule`](../../../../use-student-schedule/type-aliases/CurriculumStudentSchedule.md), `"byDay"` \| `"requiredMinutes"` \| `"spans"`\>
+
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:34](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L34)
+
+One student's schedule — see `useCurriculumStudentSchedule`.
 
 ***
 
@@ -72,4 +82,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **state**: [`NormalizedStore`](../../../../../../../api-client/gantt/drizzle-normalize/type-aliases/NormalizedStore.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:34](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L34)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:26](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L26)

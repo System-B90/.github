@@ -8,7 +8,7 @@
 
 > **SettingsSectionHeaderProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:6](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L6)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:6](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L6)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > `optional` **action?**: `React.ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:11](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:11](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L11)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > `optional` **color?**: `"primary"` \| `"secondary"`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:10](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:10](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L10)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > **icon**: `React.ElementType`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:7](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L7)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:7](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L7)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > **subtitle**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:9](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:9](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L9)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > **title**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:8](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L8)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L8)

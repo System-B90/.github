@@ -8,7 +8,7 @@
 
 > **DraftAuthor** = `object`
 
-Defined in: [ui/src/api-server/db-calendar-draft.ts:15](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/db-calendar-draft.ts#L15)
+Defined in: [ui/src/api-server/db-calendar-draft.ts:15](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/db-calendar-draft.ts#L15)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/db-calendar-draft.ts:15](https://github.com/Syste
 
 > **displayName**: `string`
 
-Defined in: [ui/src/api-server/db-calendar-draft.ts:17](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/db-calendar-draft.ts#L17)
+Defined in: [ui/src/api-server/db-calendar-draft.ts:17](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/db-calendar-draft.ts#L17)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-server/db-calendar-draft.ts:17](https://github.com/Syste
 
 > `optional` **id?**: `string`
 
-Defined in: [ui/src/api-server/db-calendar-draft.ts:16](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/db-calendar-draft.ts#L16)
+Defined in: [ui/src/api-server/db-calendar-draft.ts:16](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/db-calendar-draft.ts#L16)

@@ -8,7 +8,7 @@
 
 > **makeEntityActions**\<`TEntity`, `TContainerId`, `TCreatePayload`\>(`__namedParameters`): `object`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:76](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L76)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:56](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L56)
 
 Factors the "call gantt API → dispatch reducer action" pattern shared by the
 module/syllabus/event action hooks (#190) so behavior fixes land in one
@@ -36,28 +36,6 @@ create-payload defaults) stay in their hooks.
 [`MakeEntityActionsProps`](../type-aliases/MakeEntityActionsProps.md)\<`TEntity`, `TContainerId`, `TCreatePayload`\>
 
 ## Returns
-
-### allocateTime
-
-> **allocateTime**: (`id`, `curriculumId`, `allocatedDuration`) => `Promise`\<`void`\>
-
-#### Parameters
-
-##### id
-
-`TEntity`\[`"id"`\]
-
-##### curriculumId
-
-`string`
-
-##### allocatedDuration
-
-`number`
-
-#### Returns
-
-`Promise`\<`void`\>
 
 ### create
 

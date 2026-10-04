@@ -6,6 +6,6 @@
 
 # Variable: ganttEventsRelationsSchema
 
-> `const` **ganttEventsRelationsSchema**: `Relations`\<`"e"`, \{ `cEC`: `Many`\<`"cEC"`\>; `constraints`: `Many`\<`"cntrs"`\>; `eRE`: `Many`\<`"eRE"`\>; `m2e`: `Many`\<`"m2e"`\>; `targetedByConstraints`: `Many`\<`"cntrs"`\>; \}\>
+> `const` **ganttEventsRelationsSchema**: `Relations`\<`"e"`, \{ `constraints`: `Many`\<`"cntrs"`\>; `eRE`: `Many`\<`"eRE"`\>; `m2e`: `Many`\<`"m2e"`\>; `targetedByConstraints`: `Many`\<`"cntrs"`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/events.ts:71](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/schema/events.ts#L71)
+Defined in: [ui/src/api-server/gantt/schema/events.ts:73](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/schema/events.ts#L73)

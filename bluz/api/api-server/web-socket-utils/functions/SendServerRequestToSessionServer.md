@@ -8,7 +8,7 @@
 
 > **SendServerRequestToSessionServer**(`type`, `data?`, `targets?`): `void`
 
-Defined in: [ui/src/api-server/web-socket-utils.ts:129](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/web-socket-utils.ts#L129)
+Defined in: [ui/src/api-server/web-socket-utils.ts:129](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/web-socket-utils.ts#L129)
 
 Dispatch an asynchronous server-to-server request over WebSocket to the Session Server.
 This runs within Next.js server-side API routes to broadcast event changes, additions,

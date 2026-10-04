@@ -8,7 +8,7 @@
 
 > **ShuffleDeleteDialogProps** = `object`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:22](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L22)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:22](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L22)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:22]
 
 > **onCancel**: () => `void`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:28](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L28)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:28](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L28)
 
 #### Returns
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:28]
 
 > **onConfirm**: () => `void`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:29](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L29)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:29](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L29)
 
 #### Returns
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:29]
 
 > **open**: `boolean`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:23](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L23)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:23](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L23)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:23]
 
 > **removed**: `string`[]
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:25](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L25)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:25](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L25)
 
 Shuffle names about to be deleted from the syllabus.
 
@@ -58,6 +58,6 @@ Shuffle names about to be deleted from the syllabus.
 
 > **usages**: [`ShuffleUsages`](../../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:27](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L27)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:27](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L27)
 
 Modules and events currently tagged with those names.

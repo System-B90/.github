@@ -8,17 +8,7 @@
 
 > **NumberSpinner**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/NumberSpinner.tsx:59](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/NumberSpinner.tsx#L59)
-
-Duration spinner — for durations only, not general numbers.
-
-`value` / `onValueChange` are always minutes. The דק׳/שעות toggle inside
-the field only changes what the user sees and types; the chosen unit is
-shared by every spinner and kept in sessionStorage. `step` / `largeStep`
-default per unit and, when passed, apply in the shown unit.
-`unitToggle={false}` hides the toggle and pins the spinner to minutes.
-`label` sits in the top border, like an outlined TextField.
-`min` defaults to 0: durations are never negative.
+Defined in: [ui/src/components/base/NumberSpinner.tsx:64](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/base/NumberSpinner.tsx#L64)
 
 ## Parameters
 

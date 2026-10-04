@@ -8,7 +8,7 @@
 
 > **DraftsMenu**(): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/DraftsMenu.tsx:27](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/calendar/calendar/DraftsMenu.tsx#L27)
+Defined in: [ui/src/components/schedule/calendar/calendar/DraftsMenu.tsx:27](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/DraftsMenu.tsx#L27)
 
 Toolbar control for server-synced, shared (multi-user) drafts: save the
 current calendar as a named draft, list everyone's drafts, load one (via a

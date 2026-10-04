@@ -8,7 +8,7 @@
 
 > **useGanttDrag**(`__namedParameters`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-drag.ts:24](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-drag.ts#L24)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-drag.ts:40](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-drag.ts#L40)
 
 ## Parameters
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 ### handleMapModule
 
-> **handleMapModule**: (`moduleId`, `dayId`) => `Promise`\<`void`\>
+> **handleMapModule**: (`moduleId`, `dayId`) => `Promise`\<(`string` \| `null`)[]\>
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<(`string` \| `null`)[]\>
 
 ### handleMoveEvent
 
@@ -124,7 +124,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 ### handleShiftModule
 
-> **handleShiftModule**: (`moduleId`, `deltaDays`) => `Promise`\<`void`\>
+> **handleShiftModule**: (`moduleId`, `deltaDays`) => `Promise`\<`boolean`\>
 
 #### Parameters
 
@@ -138,4 +138,22 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
+
+### planShift
+
+> **planShift**: (`moduleId`, `deltaDays`) => [`MappingMove`](../../module-drag/type-aliases/MappingMove.md)[] \| `null`
+
+#### Parameters
+
+##### moduleId
+
+`string`
+
+##### deltaDays
+
+`number`
+
+#### Returns
+
+[`MappingMove`](../../module-drag/type-aliases/MappingMove.md)[] \| `null`

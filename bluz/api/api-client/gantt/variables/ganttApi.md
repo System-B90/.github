@@ -8,7 +8,7 @@
 
 > `const` **ganttApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/index.ts:18](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-client/gantt/index.ts#L18)
+Defined in: [ui/src/api-client/gantt/index.ts:18](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-client/gantt/index.ts#L18)
 
 ## Type Declaration
 
@@ -255,28 +255,6 @@ Server-side deep clone of a curriculum into a fully independent copy (#319,
 
 `Promise`\<[`ApiCurriculum`](../../../api-shared/types/gantt/api-layer/type-aliases/ApiCurriculum.md)\>
 
-#### curriculum.apiGetAllocatedTime
-
-> `readonly` **apiGetAllocatedTime**: (`itemId`, `containerId`, `options?`) => `Promise`\<`number`\>
-
-##### Parameters
-
-###### itemId
-
-`string`
-
-###### containerId
-
-`string`
-
-###### options?
-
-[`ClientApiProps`](../../common/type-aliases/ClientApiProps.md)
-
-##### Returns
-
-`Promise`\<`number`\>
-
 #### curriculum.apiGetMany
 
 > `readonly` **apiGetMany**: (`ids`, `options?`) => `Promise`\<`Record`\<`string`, `object` & [`BaseGantItem`](../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../base/type-aliases/BaseDocument.md)\>\>
@@ -365,32 +343,6 @@ when you need child → parent without fetching each item. See #310.
 ##### Returns
 
 `Promise`\<`Record`\<`string`, [`ListEntryWithParent`](../base/type-aliases/ListEntryWithParent.md)\<[`GanttCurriculum`](../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculum.md)\>\>\>
-
-#### curriculum.apiSetAllocatedTime
-
-> `readonly` **apiSetAllocatedTime**: (`itemId`, `containerId`, `allocatedTime`, `options?`) => `Promise`\<`void`\>
-
-##### Parameters
-
-###### itemId
-
-`string`
-
-###### containerId
-
-`string`
-
-###### allocatedTime
-
-`number`
-
-###### options?
-
-[`ClientApiProps`](../../common/type-aliases/ClientApiProps.md)
-
-##### Returns
-
-`Promise`\<`void`\>
 
 #### curriculum.apiUnlink
 
@@ -644,28 +596,6 @@ members dropped because their shuffle is no longer part of the group.
 
 `Promise`\<[`ApiModuleEvent`](../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md)\>
 
-#### event.apiGetAllocatedTime
-
-> `readonly` **apiGetAllocatedTime**: (`itemId`, `containerId`, `options?`) => `Promise`\<`number`\>
-
-##### Parameters
-
-###### itemId
-
-`string`
-
-###### containerId
-
-`string`
-
-###### options?
-
-[`ClientApiProps`](../../common/type-aliases/ClientApiProps.md)
-
-##### Returns
-
-`Promise`\<`number`\>
-
 #### event.apiGetMany
 
 > `readonly` **apiGetMany**: (`ids`, `options?`) => `Promise`\<`Record`\<`string`, `object` & [`BaseGantItem`](../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../base/type-aliases/BaseDocument.md)\>\>
@@ -736,32 +666,6 @@ when you need child → parent without fetching each item. See #310.
 ##### Returns
 
 `Promise`\<`Record`\<`string`, [`ListEntryWithParent`](../base/type-aliases/ListEntryWithParent.md)\<[`GanttEvent`](../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)\>\>\>
-
-#### event.apiSetAllocatedTime
-
-> `readonly` **apiSetAllocatedTime**: (`itemId`, `containerId`, `allocatedTime`, `options?`) => `Promise`\<`void`\>
-
-##### Parameters
-
-###### itemId
-
-`string`
-
-###### containerId
-
-`string`
-
-###### allocatedTime
-
-`number`
-
-###### options?
-
-[`ClientApiProps`](../../common/type-aliases/ClientApiProps.md)
-
-##### Returns
-
-`Promise`\<`void`\>
 
 #### event.apiUnlink
 
@@ -982,6 +886,10 @@ PATCH: Updates an existing mapping or reorders it.
 
 ###### newValues
 
+###### allottedMinutes?
+
+`number`
+
 ###### dayId?
 
 `string`
@@ -989,10 +897,6 @@ PATCH: Updates an existing mapping or reorders it.
 ###### sortOrder?
 
 `number`
-
-###### weekSplitMinutes?
-
-`number`[]
 
 ###### options?
 

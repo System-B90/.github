@@ -8,7 +8,5 @@
 
 ## Variables
 
-- [ganttCurriculumEventConfigurationsRelationsSchema](variables/ganttCurriculumEventConfigurationsRelationsSchema.md)
-- [ganttCurriculumEventConfigurationsSchema](variables/ganttCurriculumEventConfigurationsSchema.md)
 - [ganttCurriculumEventDayMappingsRelationsSchema](variables/ganttCurriculumEventDayMappingsRelationsSchema.md)
 - [ganttCurriculumEventDayMappingsSchema](variables/ganttCurriculumEventDayMappingsSchema.md)

@@ -8,11 +8,12 @@
 
 > **countEventOccurrences**(`event`, `eventId`, `state`, `ctx?`): `number`
 
-Defined in: [ui/src/components/gantt/utils.tsx:51](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/utils.tsx#L51)
+Defined in: [ui/src/components/gantt/utils.tsx:55](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/utils.tsx#L55)
 
-Number of times an event occurs on the timeline: 1 for a non-recurring or
-unplaced event, otherwise 1 (its mapped start day) plus every surviving
-echoed occurrence — skipping days recorded as recurrence exceptions (#111).
+Number of times an event occurs. Without `onlyDayIds` this is its required
+count ([countRequiredOccurrences](countRequiredOccurrences.md)). With it, the placed occurrences on
+those days: its mapped start day plus every surviving echo inside the
+recurrence window, skipping recurrence exceptions (#111, #468).
 
 ## Parameters
 

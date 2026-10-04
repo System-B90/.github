@@ -6,9 +6,9 @@
 
 # Function: useGanttExpansion()
 
-> **useGanttExpansion**(`syllabusIds`, `searchActive`): `object`
+> **useGanttExpansion**(`syllabusIds`, `searchActive`, `defaultExpanded?`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-expansion.ts:20](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-expansion.ts#L20)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-expansion.ts:22](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-gantt-expansion.ts#L22)
 
 ## Parameters
 
@@ -19,6 +19,10 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 ### searchActive
 
 `boolean`
+
+### defaultExpanded?
+
+`string`[]
 
 ## Returns
 
@@ -99,6 +103,28 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 #### Returns
 
 `boolean`
+
+### setAllRows
+
+> **setAllRows**: (`open`, `syllabusKeys`, `moduleKeys`) => `void`
+
+#### Parameters
+
+##### open
+
+`boolean`
+
+##### syllabusKeys
+
+`string`[]
+
+##### moduleKeys
+
+`string`[]
+
+#### Returns
+
+`void`
 
 ### toggleModule
 

@@ -10,6 +10,10 @@
 
 - [CurriculumViewTabsProps](type-aliases/CurriculumViewTabsProps.md)
 
+## Variables
+
+- [GRID\_TAB\_INDEX](variables/GRID_TAB_INDEX.md)
+
 ## Functions
 
 - [CurriculumViewTabs](functions/CurriculumViewTabs.md)

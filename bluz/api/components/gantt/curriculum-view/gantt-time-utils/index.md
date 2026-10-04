@@ -9,7 +9,13 @@
 ## Type Aliases
 
 - [CapacityStatus](type-aliases/CapacityStatus.md)
+- [DayHeadroom](type-aliases/DayHeadroom.md)
 - [EventDaySpan](type-aliases/EventDaySpan.md)
+- [HoursFormat](type-aliases/HoursFormat.md)
+
+## Variables
+
+- [SHORT\_DATE\_FORMAT](variables/SHORT_DATE_FORMAT.md)
 
 ## Functions
 
@@ -19,22 +25,19 @@
 - [computeEventDaySpans](functions/computeEventDaySpans.md)
 - [formatHours](functions/formatHours.md)
 - [formatHoursLabel](functions/formatHoursLabel.md)
-- [formatMinutesAsDuration](functions/formatMinutesAsDuration.md)
 - [formatMinutesAsTimeInput](functions/formatMinutesAsTimeInput.md)
 - [formatShortDate](functions/formatShortDate.md)
 - [formatWeekDateRange](functions/formatWeekDateRange.md)
 - [getCapacityStatus](functions/getCapacityStatus.md)
 - [getCourseEndDate](functions/getCourseEndDate.md)
 - [getCourseStartDay](functions/getCourseStartDay.md)
-- [getCurriculumScheduledMinutes](functions/getCurriculumScheduledMinutes.md)
 - [getCurriculumTotalWorkingMinutes](functions/getCurriculumTotalWorkingMinutes.md)
 - [getDayDate](functions/getDayDate.md)
+- [getHoursFormat](functions/getHoursFormat.md)
 - [getSaturdayForWeek](functions/getSaturdayForWeek.md)
-- [getScheduledMinutesForDay](functions/getScheduledMinutesForDay.md)
-- [getSpilloverMinutesByDay](functions/getSpilloverMinutesByDay.md)
-- [getTentativeMinutesForModuleIds](functions/getTentativeMinutesForModuleIds.md)
 - [getWeekDateRange](functions/getWeekDateRange.md)
 - [getWeekOverAllocationSeverity](functions/getWeekOverAllocationSeverity.md)
-- [getWeekScheduledMinutes](functions/getWeekScheduledMinutes.md)
 - [getWeekTotalMinutes](functions/getWeekTotalMinutes.md)
 - [parseTimeInputToMinutes](functions/parseTimeInputToMinutes.md)
+- [setHoursFormat](functions/setHoursFormat.md)
+- [subscribeHoursFormat](functions/subscribeHoursFormat.md)

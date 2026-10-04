@@ -8,12 +8,12 @@
 
 > **computeEventDaySpans**(`__namedParameters`): `Record`\<`string`, [`EventDaySpan`](../type-aliases/EventDaySpan.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:288](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L288)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:239](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L239)
 
-Computes, per mapped event, the days it actually occupies. An event whose
-required minutes exceed its start day's working capacity dynamically
-overflows the excess onto subsequent days. The database still stores only
-the start-day mapping — this is a pure frontend layout computation.
+Computes, per mapped event, the days it occupies: one per mapping, in
+timeline order, each taking that mapping's allotted minutes. Events never
+overflow onto later days here — an over-full day shows as over capacity;
+spreading hours is the cut's job. With `load`, each placement is recorded.
 
 ## Parameters
 
@@ -22,6 +22,10 @@ the start-day mapping — this is a pure frontend layout computation.
 #### linearDays
 
 `string`[]
+
+#### load?
+
+[`DayHeadroom`](../type-aliases/DayHeadroom.md)
 
 #### mappings
 

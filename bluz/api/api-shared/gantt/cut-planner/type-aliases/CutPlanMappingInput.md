@@ -8,15 +8,25 @@
 
 > **CutPlanMappingInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:107](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-planner.ts#L107)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:104](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L104)
 
 ## Properties
+
+### allottedMinutes
+
+> **allottedMinutes**: `number`
+
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:109](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L109)
+
+Minutes the event takes on this day; 0 leaves it out of the cut.
+
+***
 
 ### dayId
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:109](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-planner.ts#L109)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:106](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L106)
 
 ***
 
@@ -24,7 +34,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:109](https://github.com/Syst
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:108](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-planner.ts#L108)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:105](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L105)
 
 ***
 
@@ -32,14 +42,4 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:108](https://github.com/Syst
 
 > **sortOrder**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:110](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-planner.ts#L110)
-
-***
-
-### weekSplitMinutes?
-
-> `optional` **weekSplitMinutes?**: `number`[]
-
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:112](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-planner.ts#L112)
-
-Minutes per consecutive week for a split-across-weeks event (#768).
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:107](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-planner.ts#L107)

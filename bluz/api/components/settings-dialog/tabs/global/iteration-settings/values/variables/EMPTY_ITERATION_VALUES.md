@@ -8,4 +8,4 @@
 
 > `const` **EMPTY\_ITERATION\_VALUES**: [`IterationValues`](../type-aliases/IterationValues.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:31](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L31)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:31](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L31)

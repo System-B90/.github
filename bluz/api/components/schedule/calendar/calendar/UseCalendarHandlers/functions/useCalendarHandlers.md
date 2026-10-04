@@ -6,9 +6,9 @@
 
 # Function: useCalendarHandlers()
 
-> **useCalendarHandlers**(`events`, `handleSaveEvent`, `handleDeleteEvent`, `setSelectedEvent`, `setOpenEventDialog`): `object`
+> **useCalendarHandlers**(`events`, `handleSaveEvent`, `handleDeleteEvent`, `setSelectedEvent`, `setOpenEventDialog`, `confirmLockedEdit?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:39](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L39)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:41](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L41)
 
 Custom React hook to manage calendar event logic, user interactions (e.g. drag & drop, select, click),
 and keyboard shortcuts (copy, paste, delete).
@@ -45,6 +45,13 @@ State setter to select an event.
 
 State setter to open/close the event dialog.
 
+### confirmLockedEdit?
+
+(`eventIds`) => `Promise`\<`boolean`\>
+
+Asks before a keyboard Delete/Ctrl+X touches an
+event another user has open (#775). Omitted → no check.
+
 ## Returns
 
 State and event handlers for the calendar.
@@ -52,6 +59,38 @@ State and event handlers for the calendar.
 ### activeEvent
 
 > **activeEvent**: [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md) \| `null`
+
+### copiedEvent
+
+> **copiedEvent**: [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md) \| `null`
+
+### copyEvent
+
+> **copyEvent**: (`event`) => `void`
+
+#### Parameters
+
+##### event
+
+[`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
+
+#### Returns
+
+`void`
+
+### cutEvent
+
+> **cutEvent**: (`event`) => `void`
+
+#### Parameters
+
+##### event
+
+[`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
+
+#### Returns
+
+`void`
 
 ### handleEventDrag
 
@@ -103,6 +142,22 @@ an event that jumps over a break keeps the same total after the cut.
 ##### atMs
 
 `number`
+
+#### Returns
+
+`void`
+
+### pasteAt
+
+> **pasteAt**: (`slot`) => `void`
+
+Pastes the clipboard at `slot` (or beside the original); no-op when empty.
+
+#### Parameters
+
+##### slot
+
+[`PasteSlot`](../../paste/type-aliases/PasteSlot.md) \| `null`
 
 #### Returns
 

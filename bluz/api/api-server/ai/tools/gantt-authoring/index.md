@@ -27,5 +27,4 @@
 - [listWeeksTool](variables/listWeeksTool.md)
 - [MODULE\_WRITE\_TOOLS](variables/MODULE_WRITE_TOOLS.md)
 - [reorderChildrenTool](variables/reorderChildrenTool.md)
-- [setGanttEventTimeTool](variables/setGanttEventTimeTool.md)
 - [SYLLABUS\_WRITE\_TOOLS](variables/SYLLABUS_WRITE_TOOLS.md)

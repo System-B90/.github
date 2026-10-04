@@ -8,7 +8,7 @@
 
 > `const` **DbModuleEvent**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-module-event.ts:390](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-module-event.ts#L390)
+Defined in: [ui/src/api-server/gantt/db-module-event.ts:328](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/db-module-event.ts#L328)
 
 ## Type Declaration
 
@@ -122,26 +122,6 @@ Every event sharing `groupId`, oldest first.
 
 `Promise`\<[`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)[]\>
 
-### getAllocatedTime
-
-> **getAllocatedTime**: (`eventId`, `curriculumId`) => `Promise`\<`number`\>
-
-Retrieves the specific allocated duration for an event within a curriculum context.
-
-#### Parameters
-
-##### eventId
-
-`string`
-
-##### curriculumId
-
-`string`
-
-#### Returns
-
-`Promise`\<`number`\>
-
 ### getItem
 
 > `readonly` **getItem**: (`id`) => `Promise`\<[`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md)\> = `getFullModuleEvent`
@@ -203,31 +183,6 @@ Associates a specific event with a module in the junction table.
 #### Returns
 
 `Promise`\<`Record`\<`string`, `string`\> \| `Record`\<`string`, \{ `title`: `string`; \}\>\>
-
-### setAllocatedTime
-
-> **setAllocatedTime**: (`eventId`, `curriculumId`, `duration`) => `Promise`\<`void`\>
-
-Sets or updates the allocated duration for a specific event in a curriculum.
-Uses an upsert strategy to maintain data integrity.
-
-#### Parameters
-
-##### eventId
-
-`string`
-
-##### curriculumId
-
-`string`
-
-##### duration
-
-`number`
-
-#### Returns
-
-`Promise`\<`void`\>
 
 ### unlinkItem
 

@@ -8,7 +8,7 @@
 
 > **HiveModuleLinker**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/module-dialog/utils.tsx:67](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/module-dialog/utils.tsx#L67)
+Defined in: [ui/src/components/gantt/module-dialog/utils.tsx:72](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/module-dialog/utils.tsx#L72)
 
 Subject → Module picker that links a Hive module to the Gantt module.
 Selecting a module appends its id to hiveModules (deduplicated).

@@ -8,7 +8,11 @@
 
 > **CreateSyllabusButton**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:13](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L13)
+Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:26](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L26)
+
+"סילבוס חדש" asks for a name first and creates nothing until one is
+confirmed (#845). It used to save a placeholder "סילבוס חדש" record on every
+click, so double clicks and exploration left junk syllabuses behind.
 
 ## Parameters
 

@@ -8,7 +8,7 @@
 
 > **SettingsSearchFieldProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:5](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L5)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:5](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L5)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.ts
 
 > **onChange**: (`value`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:7](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L7)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:7](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L7)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.ts
 
 > **placeholder**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:8](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L8)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L8)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.ts
 
 > **value**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:6](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L6)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx:6](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/SearchField.tsx#L6)

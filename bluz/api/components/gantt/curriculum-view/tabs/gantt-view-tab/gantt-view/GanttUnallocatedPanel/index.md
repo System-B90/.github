@@ -14,3 +14,8 @@
 ## Variables
 
 - [GanttUnallocatedPanel](variables/GanttUnallocatedPanel.md)
+- [UNALLOCATED\_PANEL\_MAX\_HEIGHT](variables/UNALLOCATED_PANEL_MAX_HEIGHT.md)
+
+## Functions
+
+- [countHiddenBelow](functions/countHiddenBelow.md)

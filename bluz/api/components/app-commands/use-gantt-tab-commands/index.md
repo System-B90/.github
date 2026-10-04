@@ -10,6 +10,10 @@
 
 - [GanttTabCommandActions](type-aliases/GanttTabCommandActions.md)
 
+## Variables
+
+- [TIMELINE\_VIEW\_KEYWORDS](variables/TIMELINE_VIEW_KEYWORDS.md)
+
 ## Functions
 
 - [useGanttTabCommands](functions/useGanttTabCommands.md)

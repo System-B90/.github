@@ -10,6 +10,10 @@
 
 - [SyllabusDialogProps](type-aliases/SyllabusDialogProps.md)
 
+## Variables
+
+- [UNLINK\_HINT](variables/UNLINK_HINT.md)
+
 ## Functions
 
 - [SyllabusDialog](functions/SyllabusDialog.md)

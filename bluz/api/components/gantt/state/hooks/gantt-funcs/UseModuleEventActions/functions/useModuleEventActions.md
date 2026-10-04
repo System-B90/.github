@@ -8,31 +8,9 @@
 
 > **useModuleEventActions**(): `object`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx:23](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx#L23)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx:23](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/state/hooks/gantt-funcs/UseModuleEventActions.tsx#L23)
 
 ## Returns
-
-### allocateTimeToModuleEvent
-
-> `readonly` **allocateTimeToModuleEvent**: (`id`, `curriculumId`, `allocatedDuration`) => `Promise`\<`void`\> = `actions.allocateTime`
-
-#### Parameters
-
-##### id
-
-`string`
-
-##### curriculumId
-
-`string`
-
-##### allocatedDuration
-
-`number`
-
-#### Returns
-
-`Promise`\<`void`\>
 
 ### applyEventShuffleGroup
 
@@ -62,7 +40,7 @@ each of them (#699). Fewer than two shuffles ungroups the event.
 
 ### createEvent
 
-> **createEvent**: (`title`, `moduleId`, `type`, `minimumDuration`, `allocatedDuration`, `hiveSubjectId`, `hiveModuleId`, `hiveLessonId`, `orchestratorId`) => `Promise`\<`object` & [`BaseGantItem`](../../../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../../../../../../../api-client/gantt/base/type-aliases/BaseDocument.md)\>
+> **createEvent**: (`title`, `moduleId`, `type`, `minimumDuration`, `hiveSubjectId`, `hiveModuleId`, `hiveLessonId`, `orchestratorId`) => `Promise`\<`object` & [`BaseGantItem`](../../../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../../../../../../../api-client/gantt/base/type-aliases/BaseDocument.md)\>
 
 #### Parameters
 
@@ -79,10 +57,6 @@ each of them (#699). Fewer than two shuffles ungroups the event.
 [`ModuleEventType`](../../../../../../../api-shared/types/gantt/models/event/enumerations/ModuleEventType.md) = `ModuleEventType.Lecture`
 
 ##### minimumDuration?
-
-`number` = `0`
-
-##### allocatedDuration?
 
 `number` = `0`
 

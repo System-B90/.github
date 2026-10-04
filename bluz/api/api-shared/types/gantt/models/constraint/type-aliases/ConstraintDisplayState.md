@@ -8,7 +8,7 @@
 
 > **ConstraintDisplayState** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:127](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/constraint.ts#L127)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:127](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/constraint.ts#L127)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:127](https://git
 
 > **events**: `Record`\<[`GanttEventId`](../../shared/type-aliases/GanttEventId.md), \{ `moduleId`: [`GanttModuleId`](../../shared/type-aliases/GanttModuleId.md); `title`: `string`; \}\>
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:130](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/constraint.ts#L130)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:130](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/constraint.ts#L130)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:130](https://git
 
 > **modules**: `Record`\<[`GanttModuleId`](../../shared/type-aliases/GanttModuleId.md), \{ `syllabusId`: `string`; `title`: `string`; \}\>
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:129](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/constraint.ts#L129)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:129](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/constraint.ts#L129)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:129](https://git
 
 > **syllabuses**: `Record`\<`string`, \{ `title`: `string`; \}\>
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:128](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/gantt/models/constraint.ts#L128)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:128](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/gantt/models/constraint.ts#L128)

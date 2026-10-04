@@ -8,7 +8,7 @@
 
 > **aiBenchmarkCooldownMs**(`userId`): `number`
 
-Defined in: [ui/src/api-server/ai/rate-limit.ts:69](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/rate-limit.ts#L69)
+Defined in: [ui/src/api-server/ai/rate-limit.ts:69](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/rate-limit.ts#L69)
 
 How long until this user may run the self-test again, in ms.
 

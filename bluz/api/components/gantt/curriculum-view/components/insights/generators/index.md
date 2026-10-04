@@ -13,3 +13,4 @@
 ## Functions
 
 - [generateInsights](functions/generateInsights.md)
+- [partitionInsights](functions/partitionInsights.md)

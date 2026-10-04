@@ -8,7 +8,7 @@
 
 > **enqueueSnackbarWithSubtext**(`enqueueSnackbar`, `mainText`, `subText`, `options?`): `void`
 
-Defined in: [ui/src/components/base/ApiErrorSnackbar.tsx:21](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/base/ApiErrorSnackbar.tsx#L21)
+Defined in: [ui/src/components/base/ApiErrorSnackbar.tsx:21](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/base/ApiErrorSnackbar.tsx#L21)
 
 ## Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/base/ApiErrorSnackbar.tsx:21](https://github.com/
 
 ### options?
 
-`OptionsObject`\<`"info"` \| `"error"` \| `"default"` \| `"success"` \| `"warning"`\>
+`OptionsObject`\<`"error"` \| `"info"` \| `"default"` \| `"success"` \| `"warning"`\>
 
 ## Returns
 

@@ -8,7 +8,7 @@
 
 > **normalizeShuffleNames**(`names`): `string`[]
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:14](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/shuffle-names.ts#L14)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:14](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/shuffle-names.ts#L14)
 
 Normalizes a whole shuffle list, dropping blanks and repeats while keeping
 the first-seen order the user arranged them in.

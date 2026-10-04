@@ -8,7 +8,7 @@
 
 > **HiveIterationCache** = `object`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:24](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/iteration.ts#L24)
+Defined in: [ui/src/api-shared/types/iteration.ts:24](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/iteration.ts#L24)
 
 Snapshot of Hive names taken when an iteration is created. The Hive instance
 changes every iteration, so numeric Hive ids are not stable across runs — we
@@ -21,7 +21,7 @@ its Hive instance is gone or its ids have been reused.
 
 > **cachedAt**: `string`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:32](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/iteration.ts#L32)
+Defined in: [ui/src/api-shared/types/iteration.ts:32](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/iteration.ts#L32)
 
 When this snapshot was taken (ISO string).
 
@@ -31,7 +31,7 @@ When this snapshot was taken (ISO string).
 
 > **modules**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-shared/types/iteration.ts:26](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/iteration.ts#L26)
+Defined in: [ui/src/api-shared/types/iteration.ts:26](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/iteration.ts#L26)
 
 Hive module id → module name.
 
@@ -41,7 +41,7 @@ Hive module id → module name.
 
 > **rooms**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-shared/types/iteration.ts:30](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/iteration.ts#L30)
+Defined in: [ui/src/api-shared/types/iteration.ts:30](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/iteration.ts#L30)
 
 Hive room id → room name.
 
@@ -51,6 +51,6 @@ Hive room id → room name.
 
 > **subjects**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-shared/types/iteration.ts:28](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/iteration.ts#L28)
+Defined in: [ui/src/api-shared/types/iteration.ts:28](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/iteration.ts#L28)
 
 Hive subject id → subject display name.

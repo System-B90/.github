@@ -8,4 +8,5 @@
 
 ## Functions
 
+- [temporalViolationsAt](functions/temporalViolationsAt.md)
 - [useGanttViolations](functions/useGanttViolations.md)

@@ -8,4 +8,4 @@
 
 > `const` **CalendarContext**: `Context`\<[`CalendarContextState`](../type-aliases/CalendarContextState.md) \| `undefined`\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:52](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L52)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:52](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L52)

@@ -8,7 +8,7 @@
 
 > `const` **moduleEventApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/module-event.ts:62](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-client/gantt/module-event.ts#L62)
+Defined in: [ui/src/api-client/gantt/module-event.ts:62](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-client/gantt/module-event.ts#L62)
 
 ## Type Declaration
 
@@ -110,28 +110,6 @@ members dropped because their shuffle is no longer part of the group.
 
 `Promise`\<[`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md)\>
 
-### apiGetAllocatedTime
-
-> `readonly` **apiGetAllocatedTime**: (`itemId`, `containerId`, `options?`) => `Promise`\<`number`\>
-
-#### Parameters
-
-##### itemId
-
-`string`
-
-##### containerId
-
-`string`
-
-##### options?
-
-[`ClientApiProps`](../../../common/type-aliases/ClientApiProps.md)
-
-#### Returns
-
-`Promise`\<`number`\>
-
 ### apiGetMany
 
 > `readonly` **apiGetMany**: (`ids`, `options?`) => `Promise`\<`Record`\<`string`, `object` & [`BaseGantItem`](../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../../base/type-aliases/BaseDocument.md)\>\>
@@ -202,32 +180,6 @@ when you need child → parent without fetching each item. See #310.
 #### Returns
 
 `Promise`\<`Record`\<`string`, [`ListEntryWithParent`](../../base/type-aliases/ListEntryWithParent.md)\<[`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)\>\>\>
-
-### apiSetAllocatedTime
-
-> `readonly` **apiSetAllocatedTime**: (`itemId`, `containerId`, `allocatedTime`, `options?`) => `Promise`\<`void`\>
-
-#### Parameters
-
-##### itemId
-
-`string`
-
-##### containerId
-
-`string`
-
-##### allocatedTime
-
-`number`
-
-##### options?
-
-[`ClientApiProps`](../../../common/type-aliases/ClientApiProps.md)
-
-#### Returns
-
-`Promise`\<`void`\>
 
 ### apiUnlink
 

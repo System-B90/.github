@@ -8,7 +8,7 @@
 
 > **sanitizeCreatePayload**(`table`, `data`, `typeName`): `Record`\<`string`, `unknown`\>
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:60](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-base.ts#L60)
+Defined in: [ui/src/api-server/gantt/db-base.ts:58](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/db-base.ts#L58)
 
 Check a create payload against the target table *before* it reaches the
 insert, and return only the fields the table actually has.
@@ -18,9 +18,7 @@ all reach the driver and come back as an opaque HTTP 500 (#432, #434).
 
 Unknown fields are dropped rather than rejected: several create payloads
 legitimately carry values that live in a junction table instead of on the
-entity — `allocatedDuration` on an event is written through
-`DbModuleEvent.setAllocatedTime`, not the events table — and the app itself
-sends them. A missing required field or a bad enum value, by contrast, is
+entity — and the app itself sends them. A missing required field or a bad enum value, by contrast, is
 always a caller mistake, so those become a 400 naming the offending field.
 
 Parent foreign keys (`curriculumId`, `moduleId`, …) live in junction tables

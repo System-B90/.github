@@ -8,7 +8,7 @@
 
 > **ServerApiRequest**\<`T`\> = `Omit`\<`NextRequest`, `"json"`\> & `object`
 
-Defined in: [ui/src/api-server/common.ts:299](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/common.ts#L299)
+Defined in: [ui/src/api-server/common.ts:307](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/common.ts#L307)
 
 ## Type Declaration
 

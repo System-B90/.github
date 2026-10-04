@@ -19,3 +19,7 @@
 - [MEAL\_EVENT\_DURATIONS\_MINUTES](variables/MEAL_EVENT_DURATIONS_MINUTES.md)
 - [MEAL\_EVENT\_TITLES](variables/MEAL_EVENT_TITLES.md)
 - [MEAL\_TIMES\_SETTING\_KEY](variables/MEAL_TIMES_SETTING_KEY.md)
+
+## Functions
+
+- [isBreakEvent](functions/isBreakEvent.md)

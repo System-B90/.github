@@ -8,4 +8,4 @@
 
 > `const` **applyCurriculumTemplateTool**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`ApplyTemplateArgs`\>
 
-Defined in: [ui/src/api-server/ai/tools/gantt-authoring.ts:730](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/tools/gantt-authoring.ts#L730)
+Defined in: [ui/src/api-server/ai/tools/gantt-authoring.ts:682](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/tools/gantt-authoring.ts#L682)

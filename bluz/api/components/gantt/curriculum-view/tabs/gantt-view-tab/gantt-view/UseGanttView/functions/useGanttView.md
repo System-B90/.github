@@ -8,7 +8,7 @@
 
 > **useGanttView**(`curriculumId`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts:24](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts#L24)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts:37](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts#L37)
 
 ## Parameters
 
@@ -44,6 +44,10 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **contextValue**: `object`
 
+#### contextValue.allLinearDays
+
+> **allLinearDays**: `string`[]
+
 #### contextValue.curriculumMappings
 
 > **curriculumMappings**: `Record`\<`string`, [`GanttCurriculumEventDayMapping`](../../../../../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md)\>
@@ -72,11 +76,37 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 #### contextValue.eventMappings
 
-> **eventMappings**: `Record`\<`string`, `string`\>
+> **eventMappings**: `object`
+
+##### Index Signature
+
+\[`key`: `string`\]: `string`
 
 #### contextValue.eventSpans
 
 > **eventSpans**: `Record`\<`string`, [`EventDaySpan`](../../../../../gantt-time-utils/type-aliases/EventDaySpan.md)\>
+
+#### contextValue.getDropWarning
+
+> **getDropWarning**: (`payload`, `target`) => `string` \| `null`
+
+##### Parameters
+
+###### payload
+
+`Record`\<`string`, `unknown`\> \| `undefined`
+
+###### target
+
+`Record`\<`string`, `unknown`\> \| `undefined`
+
+##### Returns
+
+`string` \| `null`
+
+#### contextValue.ignoreBreaks
+
+> **ignoreBreaks**: `boolean`
 
 #### contextValue.isEventVisible
 
@@ -180,7 +210,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 #### contextValue.onMapModule
 
-> **onMapModule**: (`moduleId`, `dayId`) => `Promise`\<`void`\> = `handleMapModule`
+> **onMapModule**: (`moduleId`, `dayId`) => `Promise`\<(`string` \| `null`)[]\> = `handleMapModule`
 
 ##### Parameters
 
@@ -194,7 +224,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 ##### Returns
 
-`Promise`\<`void`\>
+`Promise`\<(`string` \| `null`)[]\>
 
 #### contextValue.onMoveEvent
 
@@ -246,7 +276,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 #### contextValue.onShiftModule
 
-> **onShiftModule**: (`moduleId`, `deltaDays`) => `Promise`\<`void`\> = `handleShiftModule`
+> **onShiftModule**: (`moduleId`, `deltaDays`) => `Promise`\<`boolean`\> = `handleShiftModule`
 
 ##### Parameters
 
@@ -260,7 +290,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 ##### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 #### contextValue.relativeDaySizing
 
@@ -274,9 +304,41 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **searchActive**: `boolean`
 
+#### contextValue.setAllRows
+
+> **setAllRows**: (`open`, `syllabusKeys`, `moduleKeys`) => `void`
+
+##### Parameters
+
+###### open
+
+`boolean`
+
+###### syllabusKeys
+
+`string`[]
+
+###### moduleKeys
+
+`string`[]
+
+##### Returns
+
+`void`
+
 #### contextValue.setWeeklyView
 
-> **setWeeklyView**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
+> **setWeeklyView**: (`next`) => `void`
+
+##### Parameters
+
+###### next
+
+`boolean`
+
+##### Returns
+
+`void`
 
 #### contextValue.setZoomedWeekId
 
@@ -289,6 +351,14 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 #### contextValue.startDate
 
 > **startDate**: `string` \| `null`
+
+#### contextValue.studentLoadByDay
+
+> **studentLoadByDay**: `Record`\<`string`, [`DayStudentLoad`](../../../../../student-load/type-aliases/DayStudentLoad.md)\>
+
+#### contextValue.studentPaths
+
+> **studentPaths**: [`StudentPath`](../../../../../student-load/type-aliases/StudentPath.md)[]
 
 #### contextValue.timelineWeeks
 
@@ -346,6 +416,10 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **curriculum**: [`GanttCurriculumDocument`](../../../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md)
 
+### dragLabels
+
+> **dragLabels**: [`DragLabels`](../../drag-labels/type-aliases/DragLabels.md)
+
 ### expandAllSyllabuses
 
 > **expandAllSyllabuses**: () => `void`
@@ -382,6 +456,10 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 `void`
 
+### ignoreBreaks
+
+> **ignoreBreaks**: `boolean`
+
 ### relativeDaySizing
 
 > **relativeDaySizing**: `boolean`
@@ -412,9 +490,33 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **searchQuery**: `string`
 
+### setIgnoreBreaks
+
+> **setIgnoreBreaks**: (`next`) => `void`
+
+#### Parameters
+
+##### next
+
+`boolean`
+
+#### Returns
+
+`void`
+
 ### setRelativeDaySizing
 
-> **setRelativeDaySizing**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
+> **setRelativeDaySizing**: (`next`) => `void`
+
+#### Parameters
+
+##### next
+
+`boolean`
+
+#### Returns
+
+`void`
 
 ### setSearchQuery
 
@@ -422,11 +524,31 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 ### setShowConstraints
 
-> **setShowConstraints**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
+> **setShowConstraints**: (`next`) => `void`
+
+#### Parameters
+
+##### next
+
+`boolean`
+
+#### Returns
+
+`void`
 
 ### setShowUnallocated
 
-> **setShowUnallocated**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
+> **setShowUnallocated**: (`next`) => `void`
+
+#### Parameters
+
+##### next
+
+`boolean`
+
+#### Returns
+
+`void`
 
 ### setZoomedWeekId
 

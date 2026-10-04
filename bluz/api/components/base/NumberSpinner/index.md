@@ -9,3 +9,4 @@
 ## Functions
 
 - [NumberSpinner](functions/NumberSpinner.md)
+- [stepLabel](functions/stepLabel.md)

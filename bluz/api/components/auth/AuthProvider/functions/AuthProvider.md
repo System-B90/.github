@@ -8,7 +8,7 @@
 
 > **AuthProvider**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:44](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/auth/AuthProvider.tsx#L44)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:45](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/auth/AuthProvider.tsx#L45)
 
 ## Parameters
 

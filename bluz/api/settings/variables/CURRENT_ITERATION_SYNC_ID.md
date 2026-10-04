@@ -8,7 +8,7 @@
 
 > `const` **CURRENT\_ITERATION\_SYNC\_ID**: `"iteration:current"` = `"iteration:current"`
 
-Defined in: [session-server/session-common.ts:92](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/session-server/session-common.ts#L92)
+Defined in: [session-server/session-common.ts:92](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/session-server/session-common.ts#L92)
 
 Sync-object id for iteration-scoped calendar broadcasts (#525). Event
 payloads carry a full `DbEventDocument`, not an id — fanning them out to

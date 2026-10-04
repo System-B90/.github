@@ -8,7 +8,7 @@
 
 > **EventSelection** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:6](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L6)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:6](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L6)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.t
 
 > **clear**: () => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:14](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L14)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:14](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L14)
 
 #### Returns
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.t
 
 > **isSelected**: (`eventId`) => `boolean`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:9](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L9)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:9](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L9)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.t
 
 > **selectedEventIds**: `ReadonlySet`\<[`EventId`](../../../../../api-shared/types/event/type-aliases/EventId.md)\>
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:8](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L8)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:8](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L8)
 
 Ids the user has explicitly multi-selected (Ctrl/Cmd+click).
 
@@ -56,7 +56,7 @@ Ids the user has explicitly multi-selected (Ctrl/Cmd+click).
 
 > **selectedEvents**: [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)[]
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:20](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L20)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:20](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L20)
 
 The selected events, in calendar order, resolved against the live event
 list. Ids whose event is gone (deleted here or by another user) drop out
@@ -68,7 +68,7 @@ rather than being handed to an action that would then fail server-side.
 
 > **selectOnly**: (`eventId`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:11](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L11)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:11](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L11)
 
 Collapses the selection down to this one event.
 
@@ -88,7 +88,7 @@ Collapses the selection down to this one event.
 
 > **toggle**: (`eventId`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:13](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L13)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:13](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L13)
 
 Ctrl/Cmd+click: adds or removes one event without disturbing the rest.
 

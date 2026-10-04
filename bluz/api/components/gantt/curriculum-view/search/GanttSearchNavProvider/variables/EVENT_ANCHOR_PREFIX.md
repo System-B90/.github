@@ -8,6 +8,6 @@
 
 > `const` **EVENT\_ANCHOR\_PREFIX**: `"gantt-event-"` = `"gantt-event-"`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx:18](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx#L18)
+Defined in: [ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx:18](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx#L18)
 
 DOM id prefix used to anchor an event row inside the module dialog.

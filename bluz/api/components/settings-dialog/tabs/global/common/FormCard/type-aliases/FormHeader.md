@@ -8,6 +8,6 @@
 
 > **FormHeader** = `Omit`\<[`SettingsFormHeaderProps`](../../FormHeader/type-aliases/SettingsFormHeaderProps.md), `"isCreating"` \| `"isEditing"`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:31](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L31)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:31](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L31)
 
 Header text, minus the two flags the panel already knows.

@@ -16,6 +16,8 @@
         <link rel="prev" href="../api/">
       
       
+        <link rel="next" href="../python/">
+      
       
         
       
@@ -50,6 +52,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -771,6 +775,235 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python SDK
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python SDK
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/namespaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API namespaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -890,6 +1123,8 @@ and <a href="https://github.com/Textualize/rich">Rich</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>./cli
 </code></pre></div>
+<p>The same <code>bluz</code> package is also a typed Python SDK — see
+<a href="../python/">Python SDK</a> for scripting the server from Python.</p>
 <h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bluz<span class="w"> </span>login<span class="w">           </span><span class="c1"># Interactive — prompts for URL and session token</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>bluz<span class="w"> </span>auth<span class="w"> </span>config<span class="w">     </span><span class="c1"># Show current config file location and values</span>
@@ -949,6 +1184,7 @@ the command you want directly instead.</p>
 are equivalent.</p>
 <h2 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h2>
 <p>The following reference is auto-generated from the CLI source code.</p>
+<!-- prettier-ignore-start -->
 <div class="typer-docs">
 <h1 id="bluz">bluz<a class="headerlink" href="#bluz" title="Permanent link">&para;</a></h1>
 <p>Bluz CLI — drive the Bluz scheduling &amp; curriculum API from your terminal.</p>
@@ -1401,13 +1637,40 @@ BLUZ_TOKEN or the handoff flow above are the safe channels.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="bluz-auth-hive-status"><code>bluz auth hive-status</code><a class="headerlink" href="#bluz-auth-hive-status" title="Permanent link">&para;</a></h5>
-<p>Check whether the server can reach Hive (drives the SSO outage banner).</p>
+<h5 id="bluz-auth-whoami"><code>bluz auth whoami</code><a class="headerlink" href="#bluz-auth-whoami" title="Permanent link">&para;</a></h5>
+<p>Show who the stored token signs in as, and when the session expires.</p>
+<p>Exits non-zero when the token is missing or expired, so it doubles as a
+shell check: <code>bluz auth whoami -q || bluz login</code>.</p>
 <h6 id="usage_10">Usage<a class="headerlink" href="#usage_10" title="Permanent link">&para;</a></h6>
-<p><code>bluz auth hive-status [OPTIONS]</code></p>
+<p><code>bluz auth whoami [OPTIONS]</code></p>
 <h6 id="arguments_10">Arguments<a class="headerlink" href="#arguments_10" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
 <h6 id="options_10">Options<a class="headerlink" href="#options_10" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h5 id="bluz-auth-hive-status"><code>bluz auth hive-status</code><a class="headerlink" href="#bluz-auth-hive-status" title="Permanent link">&para;</a></h5>
+<p>Check whether the server can reach Hive (drives the SSO outage banner).</p>
+<h6 id="usage_11">Usage<a class="headerlink" href="#usage_11" title="Permanent link">&para;</a></h6>
+<p><code>bluz auth hive-status [OPTIONS]</code></p>
+<h6 id="arguments_11">Arguments<a class="headerlink" href="#arguments_11" title="Permanent link">&para;</a></h6>
+<p><em>No arguments available</em></p>
+<h6 id="options_11">Options<a class="headerlink" href="#options_11" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1432,11 +1695,11 @@ BLUZ_TOKEN or the handoff flow above are the safe channels.</p>
 <code>hanich</code> for a student), which is what the session server gates on — a
 client cannot widen its own scope. Useful for driving or debugging the
 real-time sync channel outside a browser.</p>
-<h6 id="usage_11">Usage<a class="headerlink" href="#usage_11" title="Permanent link">&para;</a></h6>
+<h6 id="usage_12">Usage<a class="headerlink" href="#usage_12" title="Permanent link">&para;</a></h6>
 <p><code>bluz auth ws-ticket [OPTIONS]</code></p>
-<h6 id="arguments_11">Arguments<a class="headerlink" href="#arguments_11" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_12">Arguments<a class="headerlink" href="#arguments_12" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_11">Options<a class="headerlink" href="#options_11" title="Permanent link">&para;</a></h6>
+<h6 id="options_12">Options<a class="headerlink" href="#options_12" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1457,11 +1720,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h3 id="bluz-iterations"><code>bluz iterations</code><a class="headerlink" href="#bluz-iterations" title="Permanent link">&para;</a></h3>
 <p>Course iterations (bi-annual runs).</p>
-<h4 id="usage_12">Usage<a class="headerlink" href="#usage_12" title="Permanent link">&para;</a></h4>
+<h4 id="usage_13">Usage<a class="headerlink" href="#usage_13" title="Permanent link">&para;</a></h4>
 <p><code>bluz iterations [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_12">Arguments<a class="headerlink" href="#arguments_12" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_13">Arguments<a class="headerlink" href="#arguments_13" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_12">Options<a class="headerlink" href="#options_12" title="Permanent link">&para;</a></h4>
+<h4 id="options_13">Options<a class="headerlink" href="#options_13" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1483,11 +1746,11 @@ real-time sync channel outside a browser.</p>
 <h4 id="subcommands_2">Subcommands<a class="headerlink" href="#subcommands_2" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-iterations-list"><code>bluz iterations list</code><a class="headerlink" href="#bluz-iterations-list" title="Permanent link">&para;</a></h5>
 <p>List all registered iterations.</p>
-<h6 id="usage_13">Usage<a class="headerlink" href="#usage_13" title="Permanent link">&para;</a></h6>
+<h6 id="usage_14">Usage<a class="headerlink" href="#usage_14" title="Permanent link">&para;</a></h6>
 <p><code>bluz iterations list [OPTIONS]</code></p>
-<h6 id="arguments_13">Arguments<a class="headerlink" href="#arguments_13" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_14">Arguments<a class="headerlink" href="#arguments_14" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_13">Options<a class="headerlink" href="#options_13" title="Permanent link">&para;</a></h6>
+<h6 id="options_14">Options<a class="headerlink" href="#options_14" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1520,11 +1783,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-iterations-current"><code>bluz iterations current</code><a class="headerlink" href="#bluz-iterations-current" title="Permanent link">&para;</a></h5>
 <p>Show the current (active, writable) iteration.</p>
-<h6 id="usage_14">Usage<a class="headerlink" href="#usage_14" title="Permanent link">&para;</a></h6>
+<h6 id="usage_15">Usage<a class="headerlink" href="#usage_15" title="Permanent link">&para;</a></h6>
 <p><code>bluz iterations current [OPTIONS]</code></p>
-<h6 id="arguments_14">Arguments<a class="headerlink" href="#arguments_14" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_15">Arguments<a class="headerlink" href="#arguments_15" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_14">Options<a class="headerlink" href="#options_14" title="Permanent link">&para;</a></h6>
+<h6 id="options_15">Options<a class="headerlink" href="#options_15" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1545,9 +1808,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-iterations-get"><code>bluz iterations get</code><a class="headerlink" href="#bluz-iterations-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single iteration by id.</p>
-<h6 id="usage_15">Usage<a class="headerlink" href="#usage_15" title="Permanent link">&para;</a></h6>
+<h6 id="usage_16">Usage<a class="headerlink" href="#usage_16" title="Permanent link">&para;</a></h6>
 <p><code>bluz iterations get [OPTIONS] ITERATION_ID</code></p>
-<h6 id="arguments_15">Arguments<a class="headerlink" href="#arguments_15" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_16">Arguments<a class="headerlink" href="#arguments_16" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1564,7 +1827,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_15">Options<a class="headerlink" href="#options_15" title="Permanent link">&para;</a></h6>
+<h6 id="options_16">Options<a class="headerlink" href="#options_16" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1585,9 +1848,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-iterations-register"><code>bluz iterations register</code><a class="headerlink" href="#bluz-iterations-register" title="Permanent link">&para;</a></h5>
 <p>Register a new iteration.</p>
-<h6 id="usage_16">Usage<a class="headerlink" href="#usage_16" title="Permanent link">&para;</a></h6>
+<h6 id="usage_17">Usage<a class="headerlink" href="#usage_17" title="Permanent link">&para;</a></h6>
 <p><code>bluz iterations register [OPTIONS] ITERATION_ID</code></p>
-<h6 id="arguments_16">Arguments<a class="headerlink" href="#arguments_16" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_17">Arguments<a class="headerlink" href="#arguments_17" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1604,7 +1867,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_16">Options<a class="headerlink" href="#options_16" title="Permanent link">&para;</a></h6>
+<h6 id="options_17">Options<a class="headerlink" href="#options_17" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1661,9 +1924,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-iterations-patch"><code>bluz iterations patch</code><a class="headerlink" href="#bluz-iterations-patch" title="Permanent link">&para;</a></h5>
 <p>Patch mutable fields of an iteration.</p>
-<h6 id="usage_17">Usage<a class="headerlink" href="#usage_17" title="Permanent link">&para;</a></h6>
+<h6 id="usage_18">Usage<a class="headerlink" href="#usage_18" title="Permanent link">&para;</a></h6>
 <p><code>bluz iterations patch [OPTIONS] ITERATION_ID</code></p>
-<h6 id="arguments_17">Arguments<a class="headerlink" href="#arguments_17" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_18">Arguments<a class="headerlink" href="#arguments_18" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1680,7 +1943,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_17">Options<a class="headerlink" href="#options_17" title="Permanent link">&para;</a></h6>
+<h6 id="options_18">Options<a class="headerlink" href="#options_18" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1737,48 +2000,8 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-iterations-set-current"><code>bluz iterations set-current</code><a class="headerlink" href="#bluz-iterations-set-current" title="Permanent link">&para;</a></h5>
 <p>Make an iteration the current (writable) one.</p>
-<h6 id="usage_18">Usage<a class="headerlink" href="#usage_18" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations set-current [OPTIONS] ITERATION_ID</code></p>
-<h6 id="arguments_18">Arguments<a class="headerlink" href="#arguments_18" title="Permanent link">&para;</a></h6>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-<h6 id="options_18">Options<a class="headerlink" href="#options_18" title="Permanent link">&para;</a></h6>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<h5 id="bluz-iterations-delete"><code>bluz iterations delete</code><a class="headerlink" href="#bluz-iterations-delete" title="Permanent link">&para;</a></h5>
-<p>Delete an iteration.</p>
 <h6 id="usage_19">Usage<a class="headerlink" href="#usage_19" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations delete [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations set-current [OPTIONS] ITERATION_ID</code></p>
 <h6 id="arguments_19">Arguments<a class="headerlink" href="#arguments_19" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -1808,12 +2031,6 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>-y, --yes</code></td>
-<td>Skip confirmation.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
 <td><code>--help</code></td>
 <td>Show this message and exit.</td>
 <td>No</td>
@@ -1821,10 +2038,10 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="bluz-iterations-sync-hive"><code>bluz iterations sync-hive</code><a class="headerlink" href="#bluz-iterations-sync-hive" title="Permanent link">&para;</a></h5>
-<p>Re-snapshot the iteration's Hive module/subject/room names.</p>
+<h5 id="bluz-iterations-delete"><code>bluz iterations delete</code><a class="headerlink" href="#bluz-iterations-delete" title="Permanent link">&para;</a></h5>
+<p>Delete an iteration.</p>
 <h6 id="usage_20">Usage<a class="headerlink" href="#usage_20" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations sync-hive [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations delete [OPTIONS] ITERATION_ID</code></p>
 <h6 id="arguments_20">Arguments<a class="headerlink" href="#arguments_20" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -1854,6 +2071,52 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
+<td><code>-y, --yes</code></td>
+<td>Skip confirmation.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h5 id="bluz-iterations-sync-hive"><code>bluz iterations sync-hive</code><a class="headerlink" href="#bluz-iterations-sync-hive" title="Permanent link">&para;</a></h5>
+<p>Re-snapshot the iteration's Hive module/subject/room names.</p>
+<h6 id="usage_21">Usage<a class="headerlink" href="#usage_21" title="Permanent link">&para;</a></h6>
+<p><code>bluz iterations sync-hive [OPTIONS] ITERATION_ID</code></p>
+<h6 id="arguments_21">Arguments<a class="headerlink" href="#arguments_21" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ITERATION_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h6 id="options_21">Options<a class="headerlink" href="#options_21" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td><code>--help</code></td>
 <td>Show this message and exit.</td>
 <td>No</td>
@@ -1863,11 +2126,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-iterations-usage"><code>bluz iterations usage</code><a class="headerlink" href="#bluz-iterations-usage" title="Permanent link">&para;</a></h5>
 <p>What still hangs off an iteration — what a delete would take with it.</p>
-<h6 id="usage_21">Usage<a class="headerlink" href="#usage_21" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations usage [OPTIONS] [ITERATION_ID]</code></p>
-<h6 id="arguments_21">Arguments<a class="headerlink" href="#arguments_21" title="Permanent link">&para;</a></h6>
+<h6 id="usage_22">Usage<a class="headerlink" href="#usage_22" title="Permanent link">&para;</a></h6>
+<p><code>bluz iterations usage [OPTIONS][ITERATION_ID]</code></p>
+<h6 id="arguments_22">Arguments<a class="headerlink" href="#arguments_22" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_21">Options<a class="headerlink" href="#options_21" title="Permanent link">&para;</a></h6>
+<h6 id="options_22">Options<a class="headerlink" href="#options_22" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1888,11 +2151,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h3 id="bluz-rooms"><code>bluz rooms</code><a class="headerlink" href="#bluz-rooms" title="Permanent link">&para;</a></h3>
 <p>Rooms (custom + Hive).</p>
-<h4 id="usage_22">Usage<a class="headerlink" href="#usage_22" title="Permanent link">&para;</a></h4>
+<h4 id="usage_23">Usage<a class="headerlink" href="#usage_23" title="Permanent link">&para;</a></h4>
 <p><code>bluz rooms [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_22">Arguments<a class="headerlink" href="#arguments_22" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_23">Arguments<a class="headerlink" href="#arguments_23" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_22">Options<a class="headerlink" href="#options_22" title="Permanent link">&para;</a></h4>
+<h4 id="options_23">Options<a class="headerlink" href="#options_23" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1914,11 +2177,11 @@ real-time sync channel outside a browser.</p>
 <h4 id="subcommands_3">Subcommands<a class="headerlink" href="#subcommands_3" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-rooms-list"><code>bluz rooms list</code><a class="headerlink" href="#bluz-rooms-list" title="Permanent link">&para;</a></h5>
 <p>List all rooms (custom and Hive-backed).</p>
-<h6 id="usage_23">Usage<a class="headerlink" href="#usage_23" title="Permanent link">&para;</a></h6>
+<h6 id="usage_24">Usage<a class="headerlink" href="#usage_24" title="Permanent link">&para;</a></h6>
 <p><code>bluz rooms list [OPTIONS]</code></p>
-<h6 id="arguments_23">Arguments<a class="headerlink" href="#arguments_23" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_24">Arguments<a class="headerlink" href="#arguments_24" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_23">Options<a class="headerlink" href="#options_23" title="Permanent link">&para;</a></h6>
+<h6 id="options_24">Options<a class="headerlink" href="#options_24" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1951,9 +2214,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-rooms-get"><code>bluz rooms get</code><a class="headerlink" href="#bluz-rooms-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single room by id (filtered client-side — no per-id route).</p>
-<h6 id="usage_24">Usage<a class="headerlink" href="#usage_24" title="Permanent link">&para;</a></h6>
+<h6 id="usage_25">Usage<a class="headerlink" href="#usage_25" title="Permanent link">&para;</a></h6>
 <p><code>bluz rooms get [OPTIONS] ROOM_ID</code></p>
-<h6 id="arguments_24">Arguments<a class="headerlink" href="#arguments_24" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_25">Arguments<a class="headerlink" href="#arguments_25" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1970,7 +2233,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_24">Options<a class="headerlink" href="#options_24" title="Permanent link">&para;</a></h6>
+<h6 id="options_25">Options<a class="headerlink" href="#options_25" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -1991,11 +2254,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-rooms-create"><code>bluz rooms create</code><a class="headerlink" href="#bluz-rooms-create" title="Permanent link">&para;</a></h5>
 <p>Create a custom room.</p>
-<h6 id="usage_25">Usage<a class="headerlink" href="#usage_25" title="Permanent link">&para;</a></h6>
+<h6 id="usage_26">Usage<a class="headerlink" href="#usage_26" title="Permanent link">&para;</a></h6>
 <p><code>bluz rooms create [OPTIONS]</code></p>
-<h6 id="arguments_25">Arguments<a class="headerlink" href="#arguments_25" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_26">Arguments<a class="headerlink" href="#arguments_26" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_25">Options<a class="headerlink" href="#options_25" title="Permanent link">&para;</a></h6>
+<h6 id="options_26">Options<a class="headerlink" href="#options_26" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2034,9 +2297,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-rooms-update"><code>bluz rooms update</code><a class="headerlink" href="#bluz-rooms-update" title="Permanent link">&para;</a></h5>
 <p>Update a custom room.</p>
-<h6 id="usage_26">Usage<a class="headerlink" href="#usage_26" title="Permanent link">&para;</a></h6>
+<h6 id="usage_27">Usage<a class="headerlink" href="#usage_27" title="Permanent link">&para;</a></h6>
 <p><code>bluz rooms update [OPTIONS] ROOM_ID</code></p>
-<h6 id="arguments_26">Arguments<a class="headerlink" href="#arguments_26" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_27">Arguments<a class="headerlink" href="#arguments_27" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2053,7 +2316,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_26">Options<a class="headerlink" href="#options_26" title="Permanent link">&para;</a></h6>
+<h6 id="options_27">Options<a class="headerlink" href="#options_27" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2086,9 +2349,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-rooms-delete"><code>bluz rooms delete</code><a class="headerlink" href="#bluz-rooms-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a custom room.</p>
-<h6 id="usage_27">Usage<a class="headerlink" href="#usage_27" title="Permanent link">&para;</a></h6>
+<h6 id="usage_28">Usage<a class="headerlink" href="#usage_28" title="Permanent link">&para;</a></h6>
 <p><code>bluz rooms delete [OPTIONS] ROOM_ID</code></p>
-<h6 id="arguments_27">Arguments<a class="headerlink" href="#arguments_27" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_28">Arguments<a class="headerlink" href="#arguments_28" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2105,7 +2368,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_27">Options<a class="headerlink" href="#options_27" title="Permanent link">&para;</a></h6>
+<h6 id="options_28">Options<a class="headerlink" href="#options_28" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2132,9 +2395,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-rooms-set-info"><code>bluz rooms set-info</code><a class="headerlink" href="#bluz-rooms-set-info" title="Permanent link">&para;</a></h5>
 <p>Patch a room's extended info (seats, workstations, comfort flags).</p>
-<h6 id="usage_28">Usage<a class="headerlink" href="#usage_28" title="Permanent link">&para;</a></h6>
+<h6 id="usage_29">Usage<a class="headerlink" href="#usage_29" title="Permanent link">&para;</a></h6>
 <p><code>bluz rooms set-info [OPTIONS] ROOM_ID</code></p>
-<h6 id="arguments_28">Arguments<a class="headerlink" href="#arguments_28" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_29">Arguments<a class="headerlink" href="#arguments_29" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2151,7 +2414,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_28">Options<a class="headerlink" href="#options_28" title="Permanent link">&para;</a></h6>
+<h6 id="options_29">Options<a class="headerlink" href="#options_29" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2184,11 +2447,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h3 id="bluz-courses"><code>bluz courses</code><a class="headerlink" href="#bluz-courses" title="Permanent link">&para;</a></h3>
 <p>Courses.</p>
-<h4 id="usage_29">Usage<a class="headerlink" href="#usage_29" title="Permanent link">&para;</a></h4>
+<h4 id="usage_30">Usage<a class="headerlink" href="#usage_30" title="Permanent link">&para;</a></h4>
 <p><code>bluz courses [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_29">Arguments<a class="headerlink" href="#arguments_29" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_30">Arguments<a class="headerlink" href="#arguments_30" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_29">Options<a class="headerlink" href="#options_29" title="Permanent link">&para;</a></h4>
+<h4 id="options_30">Options<a class="headerlink" href="#options_30" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -2210,11 +2473,11 @@ real-time sync channel outside a browser.</p>
 <h4 id="subcommands_4">Subcommands<a class="headerlink" href="#subcommands_4" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-courses-list"><code>bluz courses list</code><a class="headerlink" href="#bluz-courses-list" title="Permanent link">&para;</a></h5>
 <p>List all courses.</p>
-<h6 id="usage_30">Usage<a class="headerlink" href="#usage_30" title="Permanent link">&para;</a></h6>
+<h6 id="usage_31">Usage<a class="headerlink" href="#usage_31" title="Permanent link">&para;</a></h6>
 <p><code>bluz courses list [OPTIONS]</code></p>
-<h6 id="arguments_30">Arguments<a class="headerlink" href="#arguments_30" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_31">Arguments<a class="headerlink" href="#arguments_31" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_30">Options<a class="headerlink" href="#options_30" title="Permanent link">&para;</a></h6>
+<h6 id="options_31">Options<a class="headerlink" href="#options_31" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2253,9 +2516,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-courses-get"><code>bluz courses get</code><a class="headerlink" href="#bluz-courses-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single course by id (filtered client-side — no per-id route).</p>
-<h6 id="usage_31">Usage<a class="headerlink" href="#usage_31" title="Permanent link">&para;</a></h6>
+<h6 id="usage_32">Usage<a class="headerlink" href="#usage_32" title="Permanent link">&para;</a></h6>
 <p><code>bluz courses get [OPTIONS] COURSE_ID</code></p>
-<h6 id="arguments_31">Arguments<a class="headerlink" href="#arguments_31" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_32">Arguments<a class="headerlink" href="#arguments_32" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2272,7 +2535,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_31">Options<a class="headerlink" href="#options_31" title="Permanent link">&para;</a></h6>
+<h6 id="options_32">Options<a class="headerlink" href="#options_32" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2299,11 +2562,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-courses-create"><code>bluz courses create</code><a class="headerlink" href="#bluz-courses-create" title="Permanent link">&para;</a></h5>
 <p>Create a course.</p>
-<h6 id="usage_32">Usage<a class="headerlink" href="#usage_32" title="Permanent link">&para;</a></h6>
+<h6 id="usage_33">Usage<a class="headerlink" href="#usage_33" title="Permanent link">&para;</a></h6>
 <p><code>bluz courses create [OPTIONS]</code></p>
-<h6 id="arguments_32">Arguments<a class="headerlink" href="#arguments_32" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_33">Arguments<a class="headerlink" href="#arguments_33" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_32">Options<a class="headerlink" href="#options_32" title="Permanent link">&para;</a></h6>
+<h6 id="options_33">Options<a class="headerlink" href="#options_33" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2360,9 +2623,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-courses-update"><code>bluz courses update</code><a class="headerlink" href="#bluz-courses-update" title="Permanent link">&para;</a></h5>
 <p>Update a course.</p>
-<h6 id="usage_33">Usage<a class="headerlink" href="#usage_33" title="Permanent link">&para;</a></h6>
+<h6 id="usage_34">Usage<a class="headerlink" href="#usage_34" title="Permanent link">&para;</a></h6>
 <p><code>bluz courses update [OPTIONS] COURSE_ID</code></p>
-<h6 id="arguments_33">Arguments<a class="headerlink" href="#arguments_33" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_34">Arguments<a class="headerlink" href="#arguments_34" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2379,7 +2642,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_33">Options<a class="headerlink" href="#options_33" title="Permanent link">&para;</a></h6>
+<h6 id="options_34">Options<a class="headerlink" href="#options_34" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2430,9 +2693,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-courses-delete"><code>bluz courses delete</code><a class="headerlink" href="#bluz-courses-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a course.</p>
-<h6 id="usage_34">Usage<a class="headerlink" href="#usage_34" title="Permanent link">&para;</a></h6>
+<h6 id="usage_35">Usage<a class="headerlink" href="#usage_35" title="Permanent link">&para;</a></h6>
 <p><code>bluz courses delete [OPTIONS] COURSE_ID</code></p>
-<h6 id="arguments_34">Arguments<a class="headerlink" href="#arguments_34" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_35">Arguments<a class="headerlink" href="#arguments_35" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2449,7 +2712,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_34">Options<a class="headerlink" href="#options_34" title="Permanent link">&para;</a></h6>
+<h6 id="options_35">Options<a class="headerlink" href="#options_35" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2482,11 +2745,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h3 id="bluz-reservations"><code>bluz reservations</code><a class="headerlink" href="#bluz-reservations" title="Permanent link">&para;</a></h3>
 <p>Room reservations.</p>
-<h4 id="usage_35">Usage<a class="headerlink" href="#usage_35" title="Permanent link">&para;</a></h4>
+<h4 id="usage_36">Usage<a class="headerlink" href="#usage_36" title="Permanent link">&para;</a></h4>
 <p><code>bluz reservations [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_35">Arguments<a class="headerlink" href="#arguments_35" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_36">Arguments<a class="headerlink" href="#arguments_36" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_35">Options<a class="headerlink" href="#options_35" title="Permanent link">&para;</a></h4>
+<h4 id="options_36">Options<a class="headerlink" href="#options_36" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -2508,11 +2771,11 @@ real-time sync channel outside a browser.</p>
 <h4 id="subcommands_5">Subcommands<a class="headerlink" href="#subcommands_5" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-reservations-list"><code>bluz reservations list</code><a class="headerlink" href="#bluz-reservations-list" title="Permanent link">&para;</a></h5>
 <p>List reservations, optionally filtered by room and date range.</p>
-<h6 id="usage_36">Usage<a class="headerlink" href="#usage_36" title="Permanent link">&para;</a></h6>
+<h6 id="usage_37">Usage<a class="headerlink" href="#usage_37" title="Permanent link">&para;</a></h6>
 <p><code>bluz reservations list [OPTIONS]</code></p>
-<h6 id="arguments_36">Arguments<a class="headerlink" href="#arguments_36" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_37">Arguments<a class="headerlink" href="#arguments_37" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_36">Options<a class="headerlink" href="#options_36" title="Permanent link">&para;</a></h6>
+<h6 id="options_37">Options<a class="headerlink" href="#options_37" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2575,9 +2838,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-reservations-get"><code>bluz reservations get</code><a class="headerlink" href="#bluz-reservations-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single reservation by id (filtered client-side — no per-id route).</p>
-<h6 id="usage_37">Usage<a class="headerlink" href="#usage_37" title="Permanent link">&para;</a></h6>
+<h6 id="usage_38">Usage<a class="headerlink" href="#usage_38" title="Permanent link">&para;</a></h6>
 <p><code>bluz reservations get [OPTIONS] RESERVATION_ID</code></p>
-<h6 id="arguments_37">Arguments<a class="headerlink" href="#arguments_37" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_38">Arguments<a class="headerlink" href="#arguments_38" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2594,7 +2857,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_37">Options<a class="headerlink" href="#options_37" title="Permanent link">&para;</a></h6>
+<h6 id="options_38">Options<a class="headerlink" href="#options_38" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2615,11 +2878,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-reservations-create"><code>bluz reservations create</code><a class="headerlink" href="#bluz-reservations-create" title="Permanent link">&para;</a></h5>
 <p>Create a reservation.</p>
-<h6 id="usage_38">Usage<a class="headerlink" href="#usage_38" title="Permanent link">&para;</a></h6>
+<h6 id="usage_39">Usage<a class="headerlink" href="#usage_39" title="Permanent link">&para;</a></h6>
 <p><code>bluz reservations create [OPTIONS]</code></p>
-<h6 id="arguments_38">Arguments<a class="headerlink" href="#arguments_38" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_39">Arguments<a class="headerlink" href="#arguments_39" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_38">Options<a class="headerlink" href="#options_38" title="Permanent link">&para;</a></h6>
+<h6 id="options_39">Options<a class="headerlink" href="#options_39" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2688,9 +2951,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-reservations-cancel"><code>bluz reservations cancel</code><a class="headerlink" href="#bluz-reservations-cancel" title="Permanent link">&para;</a></h5>
 <p>Cancel (delete) a reservation.</p>
-<h6 id="usage_39">Usage<a class="headerlink" href="#usage_39" title="Permanent link">&para;</a></h6>
+<h6 id="usage_40">Usage<a class="headerlink" href="#usage_40" title="Permanent link">&para;</a></h6>
 <p><code>bluz reservations cancel [OPTIONS] RESERVATION_ID</code></p>
-<h6 id="arguments_39">Arguments<a class="headerlink" href="#arguments_39" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_40">Arguments<a class="headerlink" href="#arguments_40" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2707,7 +2970,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_39">Options<a class="headerlink" href="#options_39" title="Permanent link">&para;</a></h6>
+<h6 id="options_40">Options<a class="headerlink" href="#options_40" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2740,11 +3003,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h3 id="bluz-outsiders"><code>bluz outsiders</code><a class="headerlink" href="#bluz-outsiders" title="Permanent link">&para;</a></h3>
 <p>Outsiders (external visitors).</p>
-<h4 id="usage_40">Usage<a class="headerlink" href="#usage_40" title="Permanent link">&para;</a></h4>
+<h4 id="usage_41">Usage<a class="headerlink" href="#usage_41" title="Permanent link">&para;</a></h4>
 <p><code>bluz outsiders [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_40">Arguments<a class="headerlink" href="#arguments_40" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_41">Arguments<a class="headerlink" href="#arguments_41" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_40">Options<a class="headerlink" href="#options_40" title="Permanent link">&para;</a></h4>
+<h4 id="options_41">Options<a class="headerlink" href="#options_41" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -2766,11 +3029,11 @@ real-time sync channel outside a browser.</p>
 <h4 id="subcommands_6">Subcommands<a class="headerlink" href="#subcommands_6" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-outsiders-list"><code>bluz outsiders list</code><a class="headerlink" href="#bluz-outsiders-list" title="Permanent link">&para;</a></h5>
 <p>List all outsiders.</p>
-<h6 id="usage_41">Usage<a class="headerlink" href="#usage_41" title="Permanent link">&para;</a></h6>
+<h6 id="usage_42">Usage<a class="headerlink" href="#usage_42" title="Permanent link">&para;</a></h6>
 <p><code>bluz outsiders list [OPTIONS]</code></p>
-<h6 id="arguments_41">Arguments<a class="headerlink" href="#arguments_41" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_42">Arguments<a class="headerlink" href="#arguments_42" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_41">Options<a class="headerlink" href="#options_41" title="Permanent link">&para;</a></h6>
+<h6 id="options_42">Options<a class="headerlink" href="#options_42" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2803,9 +3066,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-outsiders-get"><code>bluz outsiders get</code><a class="headerlink" href="#bluz-outsiders-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single outsider by id (filtered client-side — no per-id route).</p>
-<h6 id="usage_42">Usage<a class="headerlink" href="#usage_42" title="Permanent link">&para;</a></h6>
+<h6 id="usage_43">Usage<a class="headerlink" href="#usage_43" title="Permanent link">&para;</a></h6>
 <p><code>bluz outsiders get [OPTIONS] OUTSIDER_ID</code></p>
-<h6 id="arguments_42">Arguments<a class="headerlink" href="#arguments_42" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_43">Arguments<a class="headerlink" href="#arguments_43" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2822,7 +3085,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_42">Options<a class="headerlink" href="#options_42" title="Permanent link">&para;</a></h6>
+<h6 id="options_43">Options<a class="headerlink" href="#options_43" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2843,11 +3106,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-outsiders-create"><code>bluz outsiders create</code><a class="headerlink" href="#bluz-outsiders-create" title="Permanent link">&para;</a></h5>
 <p>Create an outsider.</p>
-<h6 id="usage_43">Usage<a class="headerlink" href="#usage_43" title="Permanent link">&para;</a></h6>
+<h6 id="usage_44">Usage<a class="headerlink" href="#usage_44" title="Permanent link">&para;</a></h6>
 <p><code>bluz outsiders create [OPTIONS]</code></p>
-<h6 id="arguments_43">Arguments<a class="headerlink" href="#arguments_43" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_44">Arguments<a class="headerlink" href="#arguments_44" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_43">Options<a class="headerlink" href="#options_43" title="Permanent link">&para;</a></h6>
+<h6 id="options_44">Options<a class="headerlink" href="#options_44" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2910,9 +3173,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-outsiders-update"><code>bluz outsiders update</code><a class="headerlink" href="#bluz-outsiders-update" title="Permanent link">&para;</a></h5>
 <p>Update an outsider.</p>
-<h6 id="usage_44">Usage<a class="headerlink" href="#usage_44" title="Permanent link">&para;</a></h6>
+<h6 id="usage_45">Usage<a class="headerlink" href="#usage_45" title="Permanent link">&para;</a></h6>
 <p><code>bluz outsiders update [OPTIONS] OUTSIDER_ID</code></p>
-<h6 id="arguments_44">Arguments<a class="headerlink" href="#arguments_44" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_45">Arguments<a class="headerlink" href="#arguments_45" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2929,7 +3192,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_44">Options<a class="headerlink" href="#options_44" title="Permanent link">&para;</a></h6>
+<h6 id="options_45">Options<a class="headerlink" href="#options_45" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -2986,9 +3249,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-outsiders-delete"><code>bluz outsiders delete</code><a class="headerlink" href="#bluz-outsiders-delete" title="Permanent link">&para;</a></h5>
 <p>Delete an outsider.</p>
-<h6 id="usage_45">Usage<a class="headerlink" href="#usage_45" title="Permanent link">&para;</a></h6>
+<h6 id="usage_46">Usage<a class="headerlink" href="#usage_46" title="Permanent link">&para;</a></h6>
 <p><code>bluz outsiders delete [OPTIONS] OUTSIDER_ID</code></p>
-<h6 id="arguments_45">Arguments<a class="headerlink" href="#arguments_45" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_46">Arguments<a class="headerlink" href="#arguments_46" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3005,7 +3268,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_45">Options<a class="headerlink" href="#options_45" title="Permanent link">&para;</a></h6>
+<h6 id="options_46">Options<a class="headerlink" href="#options_46" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3032,11 +3295,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h3 id="bluz-events"><code>bluz events</code><a class="headerlink" href="#bluz-events" title="Permanent link">&para;</a></h3>
 <p>Calendar events.</p>
-<h4 id="usage_46">Usage<a class="headerlink" href="#usage_46" title="Permanent link">&para;</a></h4>
+<h4 id="usage_47">Usage<a class="headerlink" href="#usage_47" title="Permanent link">&para;</a></h4>
 <p><code>bluz events [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_46">Arguments<a class="headerlink" href="#arguments_46" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_47">Arguments<a class="headerlink" href="#arguments_47" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_46">Options<a class="headerlink" href="#options_46" title="Permanent link">&para;</a></h4>
+<h4 id="options_47">Options<a class="headerlink" href="#options_47" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -3058,11 +3321,11 @@ real-time sync channel outside a browser.</p>
 <h4 id="subcommands_7">Subcommands<a class="headerlink" href="#subcommands_7" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-events-list"><code>bluz events list</code><a class="headerlink" href="#bluz-events-list" title="Permanent link">&para;</a></h5>
 <p>List events in a date range (optionally for a specific iteration).</p>
-<h6 id="usage_47">Usage<a class="headerlink" href="#usage_47" title="Permanent link">&para;</a></h6>
+<h6 id="usage_48">Usage<a class="headerlink" href="#usage_48" title="Permanent link">&para;</a></h6>
 <p><code>bluz events list [OPTIONS]</code></p>
-<h6 id="arguments_47">Arguments<a class="headerlink" href="#arguments_47" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_48">Arguments<a class="headerlink" href="#arguments_48" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_47">Options<a class="headerlink" href="#options_47" title="Permanent link">&para;</a></h6>
+<h6 id="options_48">Options<a class="headerlink" href="#options_48" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3113,9 +3376,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-events-get"><code>bluz events get</code><a class="headerlink" href="#bluz-events-get" title="Permanent link">&para;</a></h5>
 <p>Fetch multiple events by id.</p>
-<h6 id="usage_48">Usage<a class="headerlink" href="#usage_48" title="Permanent link">&para;</a></h6>
+<h6 id="usage_49">Usage<a class="headerlink" href="#usage_49" title="Permanent link">&para;</a></h6>
 <p><code>bluz events get [OPTIONS] IDS</code></p>
-<h6 id="arguments_48">Arguments<a class="headerlink" href="#arguments_48" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_49">Arguments<a class="headerlink" href="#arguments_49" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3132,7 +3395,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_48">Options<a class="headerlink" href="#options_48" title="Permanent link">&para;</a></h6>
+<h6 id="options_49">Options<a class="headerlink" href="#options_49" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3159,11 +3422,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-events-create"><code>bluz events create</code><a class="headerlink" href="#bluz-events-create" title="Permanent link">&para;</a></h5>
 <p>Create a calendar event from a JSON payload.</p>
-<h6 id="usage_49">Usage<a class="headerlink" href="#usage_49" title="Permanent link">&para;</a></h6>
+<h6 id="usage_50">Usage<a class="headerlink" href="#usage_50" title="Permanent link">&para;</a></h6>
 <p><code>bluz events create [OPTIONS]</code></p>
-<h6 id="arguments_49">Arguments<a class="headerlink" href="#arguments_49" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_50">Arguments<a class="headerlink" href="#arguments_50" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_49">Options<a class="headerlink" href="#options_49" title="Permanent link">&para;</a></h6>
+<h6 id="options_50">Options<a class="headerlink" href="#options_50" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3190,11 +3453,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-events-update"><code>bluz events update</code><a class="headerlink" href="#bluz-events-update" title="Permanent link">&para;</a></h5>
 <p>Update a calendar event from a JSON payload.</p>
-<h6 id="usage_50">Usage<a class="headerlink" href="#usage_50" title="Permanent link">&para;</a></h6>
+<h6 id="usage_51">Usage<a class="headerlink" href="#usage_51" title="Permanent link">&para;</a></h6>
 <p><code>bluz events update [OPTIONS]</code></p>
-<h6 id="arguments_50">Arguments<a class="headerlink" href="#arguments_50" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_51">Arguments<a class="headerlink" href="#arguments_51" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_50">Options<a class="headerlink" href="#options_50" title="Permanent link">&para;</a></h6>
+<h6 id="options_51">Options<a class="headerlink" href="#options_51" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3221,9 +3484,9 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-events-delete"><code>bluz events delete</code><a class="headerlink" href="#bluz-events-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a calendar event.</p>
-<h6 id="usage_51">Usage<a class="headerlink" href="#usage_51" title="Permanent link">&para;</a></h6>
+<h6 id="usage_52">Usage<a class="headerlink" href="#usage_52" title="Permanent link">&para;</a></h6>
 <p><code>bluz events delete [OPTIONS] EVENT_ID</code></p>
-<h6 id="arguments_51">Arguments<a class="headerlink" href="#arguments_51" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_52">Arguments<a class="headerlink" href="#arguments_52" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3240,7 +3503,7 @@ real-time sync channel outside a browser.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_51">Options<a class="headerlink" href="#options_51" title="Permanent link">&para;</a></h6>
+<h6 id="options_52">Options<a class="headerlink" href="#options_52" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3267,11 +3530,11 @@ real-time sync channel outside a browser.</p>
 </table>
 <h5 id="bluz-events-compare"><code>bluz events compare</code><a class="headerlink" href="#bluz-events-compare" title="Permanent link">&para;</a></h5>
 <p>Compare events of two iterations over the same range.</p>
-<h6 id="usage_52">Usage<a class="headerlink" href="#usage_52" title="Permanent link">&para;</a></h6>
+<h6 id="usage_53">Usage<a class="headerlink" href="#usage_53" title="Permanent link">&para;</a></h6>
 <p><code>bluz events compare [OPTIONS]</code></p>
-<h6 id="arguments_52">Arguments<a class="headerlink" href="#arguments_52" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_53">Arguments<a class="headerlink" href="#arguments_53" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_52">Options<a class="headerlink" href="#options_52" title="Permanent link">&para;</a></h6>
+<h6 id="options_53">Options<a class="headerlink" href="#options_53" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3318,9 +3581,9 @@ real-time sync channel outside a browser.</p>
 <p>Change log for one event ("היסטוריית שינויים"), newest first.</p>
 <p>Read-only: rows are written by the write paths themselves. The log names
 who changed what, so it is never served anonymously.</p>
-<h6 id="usage_53">Usage<a class="headerlink" href="#usage_53" title="Permanent link">&para;</a></h6>
+<h6 id="usage_54">Usage<a class="headerlink" href="#usage_54" title="Permanent link">&para;</a></h6>
 <p><code>bluz events history [OPTIONS] EVENT_ID</code></p>
-<h6 id="arguments_53">Arguments<a class="headerlink" href="#arguments_53" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_54">Arguments<a class="headerlink" href="#arguments_54" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3337,7 +3600,7 @@ who changed what, so it is never served anonymously.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_53">Options<a class="headerlink" href="#options_53" title="Permanent link">&para;</a></h6>
+<h6 id="options_54">Options<a class="headerlink" href="#options_54" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3370,11 +3633,11 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h3 id="bluz-calendar"><code>bluz calendar</code><a class="headerlink" href="#bluz-calendar" title="Permanent link">&para;</a></h3>
 <p>Shared calendar drafts, snapshots and ICS export.</p>
-<h4 id="usage_54">Usage<a class="headerlink" href="#usage_54" title="Permanent link">&para;</a></h4>
+<h4 id="usage_55">Usage<a class="headerlink" href="#usage_55" title="Permanent link">&para;</a></h4>
 <p><code>bluz calendar [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_54">Arguments<a class="headerlink" href="#arguments_54" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_55">Arguments<a class="headerlink" href="#arguments_55" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_54">Options<a class="headerlink" href="#options_54" title="Permanent link">&para;</a></h4>
+<h4 id="options_55">Options<a class="headerlink" href="#options_55" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -3396,11 +3659,11 @@ who changed what, so it is never served anonymously.</p>
 <h4 id="subcommands_8">Subcommands<a class="headerlink" href="#subcommands_8" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-calendar-export-ics"><code>bluz calendar export-ics</code><a class="headerlink" href="#bluz-calendar-export-ics" title="Permanent link">&para;</a></h5>
 <p>Export the schedule in a date range as an ICS calendar (max 366 days).</p>
-<h6 id="usage_55">Usage<a class="headerlink" href="#usage_55" title="Permanent link">&para;</a></h6>
+<h6 id="usage_56">Usage<a class="headerlink" href="#usage_56" title="Permanent link">&para;</a></h6>
 <p><code>bluz calendar export-ics [OPTIONS]</code></p>
-<h6 id="arguments_55">Arguments<a class="headerlink" href="#arguments_55" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_56">Arguments<a class="headerlink" href="#arguments_56" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_55">Options<a class="headerlink" href="#options_55" title="Permanent link">&para;</a></h6>
+<h6 id="options_56">Options<a class="headerlink" href="#options_56" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3445,9 +3708,9 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h5 id="bluz-calendar-drafts"><code>bluz calendar drafts</code><a class="headerlink" href="#bluz-calendar-drafts" title="Permanent link">&para;</a></h5>
 <p>Shared calendar drafts.</p>
-<h6 id="usage_56">Usage<a class="headerlink" href="#usage_56" title="Permanent link">&para;</a></h6>
+<h6 id="usage_57">Usage<a class="headerlink" href="#usage_57" title="Permanent link">&para;</a></h6>
 <p><code>bluz calendar drafts delete [OPTIONS] DRAFT_ID</code></p>
-<h6 id="arguments_56">Arguments<a class="headerlink" href="#arguments_56" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_57">Arguments<a class="headerlink" href="#arguments_57" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3474,7 +3737,7 @@ who changed what, so it is never served anonymously.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_56">Options<a class="headerlink" href="#options_56" title="Permanent link">&para;</a></h6>
+<h6 id="options_57">Options<a class="headerlink" href="#options_57" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3609,9 +3872,9 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h5 id="bluz-calendar-snapshots"><code>bluz calendar snapshots</code><a class="headerlink" href="#bluz-calendar-snapshots" title="Permanent link">&para;</a></h5>
 <p>Calendar snapshots.</p>
-<h6 id="usage_57">Usage<a class="headerlink" href="#usage_57" title="Permanent link">&para;</a></h6>
+<h6 id="usage_58">Usage<a class="headerlink" href="#usage_58" title="Permanent link">&para;</a></h6>
 <p><code>bluz calendar snapshots restore [OPTIONS] SNAPSHOT_ID</code></p>
-<h6 id="arguments_57">Arguments<a class="headerlink" href="#arguments_57" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_58">Arguments<a class="headerlink" href="#arguments_58" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3638,7 +3901,7 @@ who changed what, so it is never served anonymously.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_57">Options<a class="headerlink" href="#options_57" title="Permanent link">&para;</a></h6>
+<h6 id="options_58">Options<a class="headerlink" href="#options_58" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3761,11 +4024,11 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h3 id="bluz-settings"><code>bluz settings</code><a class="headerlink" href="#bluz-settings" title="Permanent link">&para;</a></h3>
 <p>Application settings.</p>
-<h4 id="usage_58">Usage<a class="headerlink" href="#usage_58" title="Permanent link">&para;</a></h4>
+<h4 id="usage_59">Usage<a class="headerlink" href="#usage_59" title="Permanent link">&para;</a></h4>
 <p><code>bluz settings [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_58">Arguments<a class="headerlink" href="#arguments_58" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_59">Arguments<a class="headerlink" href="#arguments_59" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_58">Options<a class="headerlink" href="#options_58" title="Permanent link">&para;</a></h4>
+<h4 id="options_59">Options<a class="headerlink" href="#options_59" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -3787,11 +4050,11 @@ who changed what, so it is never served anonymously.</p>
 <h4 id="subcommands_9">Subcommands<a class="headerlink" href="#subcommands_9" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-settings-list"><code>bluz settings list</code><a class="headerlink" href="#bluz-settings-list" title="Permanent link">&para;</a></h5>
 <p>List known setting keys (server has no enumeration route — this is a static list).</p>
-<h6 id="usage_59">Usage<a class="headerlink" href="#usage_59" title="Permanent link">&para;</a></h6>
+<h6 id="usage_60">Usage<a class="headerlink" href="#usage_60" title="Permanent link">&para;</a></h6>
 <p><code>bluz settings list [OPTIONS]</code></p>
-<h6 id="arguments_59">Arguments<a class="headerlink" href="#arguments_59" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_60">Arguments<a class="headerlink" href="#arguments_60" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_59">Options<a class="headerlink" href="#options_59" title="Permanent link">&para;</a></h6>
+<h6 id="options_60">Options<a class="headerlink" href="#options_60" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3812,48 +4075,8 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h5 id="bluz-settings-get"><code>bluz settings get</code><a class="headerlink" href="#bluz-settings-get" title="Permanent link">&para;</a></h5>
 <p>Read a setting by key.</p>
-<h6 id="usage_60">Usage<a class="headerlink" href="#usage_60" title="Permanent link">&para;</a></h6>
-<p><code>bluz settings get [OPTIONS] NAME</code></p>
-<h6 id="arguments_60">Arguments<a class="headerlink" href="#arguments_60" title="Permanent link">&para;</a></h6>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>NAME</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-<h6 id="options_60">Options<a class="headerlink" href="#options_60" title="Permanent link">&para;</a></h6>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<h5 id="bluz-settings-set"><code>bluz settings set</code><a class="headerlink" href="#bluz-settings-set" title="Permanent link">&para;</a></h5>
-<p>Write a setting value (JSON).</p>
 <h6 id="usage_61">Usage<a class="headerlink" href="#usage_61" title="Permanent link">&para;</a></h6>
-<p><code>bluz settings set [OPTIONS] NAME</code></p>
+<p><code>bluz settings get [OPTIONS] NAME</code></p>
 <h6 id="arguments_61">Arguments<a class="headerlink" href="#arguments_61" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3883,6 +4106,46 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h5 id="bluz-settings-set"><code>bluz settings set</code><a class="headerlink" href="#bluz-settings-set" title="Permanent link">&para;</a></h5>
+<p>Write a setting value (JSON).</p>
+<h6 id="usage_62">Usage<a class="headerlink" href="#usage_62" title="Permanent link">&para;</a></h6>
+<p><code>bluz settings set [OPTIONS] NAME</code></p>
+<h6 id="arguments_62">Arguments<a class="headerlink" href="#arguments_62" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NAME</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h6 id="options_62">Options<a class="headerlink" href="#options_62" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td><code>--value TEXT</code></td>
 <td>Setting value as JSON.</td>
 <td>Yes</td>
@@ -3898,11 +4161,11 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h5 id="bluz-settings-get-prayer"><code>bluz settings get-prayer</code><a class="headerlink" href="#bluz-settings-get-prayer" title="Permanent link">&para;</a></h5>
 <p>Read the prayerTimes setting.</p>
-<h6 id="usage_62">Usage<a class="headerlink" href="#usage_62" title="Permanent link">&para;</a></h6>
+<h6 id="usage_63">Usage<a class="headerlink" href="#usage_63" title="Permanent link">&para;</a></h6>
 <p><code>bluz settings get-prayer [OPTIONS]</code></p>
-<h6 id="arguments_62">Arguments<a class="headerlink" href="#arguments_62" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_63">Arguments<a class="headerlink" href="#arguments_63" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_62">Options<a class="headerlink" href="#options_62" title="Permanent link">&para;</a></h6>
+<h6 id="options_63">Options<a class="headerlink" href="#options_63" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3923,11 +4186,11 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h5 id="bluz-settings-set-prayer"><code>bluz settings set-prayer</code><a class="headerlink" href="#bluz-settings-set-prayer" title="Permanent link">&para;</a></h5>
 <p>Write the prayerTimes setting.</p>
-<h6 id="usage_63">Usage<a class="headerlink" href="#usage_63" title="Permanent link">&para;</a></h6>
+<h6 id="usage_64">Usage<a class="headerlink" href="#usage_64" title="Permanent link">&para;</a></h6>
 <p><code>bluz settings set-prayer [OPTIONS]</code></p>
-<h6 id="arguments_63">Arguments<a class="headerlink" href="#arguments_63" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_64">Arguments<a class="headerlink" href="#arguments_64" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_63">Options<a class="headerlink" href="#options_63" title="Permanent link">&para;</a></h6>
+<h6 id="options_64">Options<a class="headerlink" href="#options_64" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3954,11 +4217,11 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h5 id="bluz-settings-get-schedule"><code>bluz settings get-schedule</code><a class="headerlink" href="#bluz-settings-get-schedule" title="Permanent link">&para;</a></h5>
 <p>Read the schedule settings (day bounds, slot sizes, working days).</p>
-<h6 id="usage_64">Usage<a class="headerlink" href="#usage_64" title="Permanent link">&para;</a></h6>
+<h6 id="usage_65">Usage<a class="headerlink" href="#usage_65" title="Permanent link">&para;</a></h6>
 <p><code>bluz settings get-schedule [OPTIONS]</code></p>
-<h6 id="arguments_64">Arguments<a class="headerlink" href="#arguments_64" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_65">Arguments<a class="headerlink" href="#arguments_65" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_64">Options<a class="headerlink" href="#options_64" title="Permanent link">&para;</a></h6>
+<h6 id="options_65">Options<a class="headerlink" href="#options_65" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -3979,11 +4242,11 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h5 id="bluz-settings-set-schedule"><code>bluz settings set-schedule</code><a class="headerlink" href="#bluz-settings-set-schedule" title="Permanent link">&para;</a></h5>
 <p>Write the schedule settings.</p>
-<h6 id="usage_65">Usage<a class="headerlink" href="#usage_65" title="Permanent link">&para;</a></h6>
+<h6 id="usage_66">Usage<a class="headerlink" href="#usage_66" title="Permanent link">&para;</a></h6>
 <p><code>bluz settings set-schedule [OPTIONS]</code></p>
-<h6 id="arguments_65">Arguments<a class="headerlink" href="#arguments_65" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_66">Arguments<a class="headerlink" href="#arguments_66" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_65">Options<a class="headerlink" href="#options_65" title="Permanent link">&para;</a></h6>
+<h6 id="options_66">Options<a class="headerlink" href="#options_66" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4010,11 +4273,11 @@ who changed what, so it is never served anonymously.</p>
 </table>
 <h3 id="bluz-personal"><code>bluz personal</code><a class="headerlink" href="#bluz-personal" title="Permanent link">&para;</a></h3>
 <p>Personal (per-user) settings.</p>
-<h4 id="usage_66">Usage<a class="headerlink" href="#usage_66" title="Permanent link">&para;</a></h4>
+<h4 id="usage_67">Usage<a class="headerlink" href="#usage_67" title="Permanent link">&para;</a></h4>
 <p><code>bluz personal [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_66">Arguments<a class="headerlink" href="#arguments_66" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_67">Arguments<a class="headerlink" href="#arguments_67" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_66">Options<a class="headerlink" href="#options_66" title="Permanent link">&para;</a></h4>
+<h4 id="options_67">Options<a class="headerlink" href="#options_67" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -4036,11 +4299,11 @@ who changed what, so it is never served anonymously.</p>
 <h4 id="subcommands_10">Subcommands<a class="headerlink" href="#subcommands_10" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-personal-get"><code>bluz personal get</code><a class="headerlink" href="#bluz-personal-get" title="Permanent link">&para;</a></h5>
 <p>Read the signed-in user's personal settings.</p>
-<h6 id="usage_67">Usage<a class="headerlink" href="#usage_67" title="Permanent link">&para;</a></h6>
+<h6 id="usage_68">Usage<a class="headerlink" href="#usage_68" title="Permanent link">&para;</a></h6>
 <p><code>bluz personal get [OPTIONS]</code></p>
-<h6 id="arguments_67">Arguments<a class="headerlink" href="#arguments_67" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_68">Arguments<a class="headerlink" href="#arguments_68" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_67">Options<a class="headerlink" href="#options_67" title="Permanent link">&para;</a></h6>
+<h6 id="options_68">Options<a class="headerlink" href="#options_68" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4063,11 +4326,11 @@ who changed what, so it is never served anonymously.</p>
 <p>Update personal settings.</p>
 <p>The endpoint replaces the whole document, so field flags are merged onto the
 current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
-<h6 id="usage_68">Usage<a class="headerlink" href="#usage_68" title="Permanent link">&para;</a></h6>
+<h6 id="usage_69">Usage<a class="headerlink" href="#usage_69" title="Permanent link">&para;</a></h6>
 <p><code>bluz personal set [OPTIONS]</code></p>
-<h6 id="arguments_68">Arguments<a class="headerlink" href="#arguments_68" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_69">Arguments<a class="headerlink" href="#arguments_69" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_68">Options<a class="headerlink" href="#options_68" title="Permanent link">&para;</a></h6>
+<h6 id="options_69">Options<a class="headerlink" href="#options_69" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4124,11 +4387,11 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </table>
 <h3 id="bluz-colors"><code>bluz colors</code><a class="headerlink" href="#bluz-colors" title="Permanent link">&para;</a></h3>
 <p>Custom event colours.</p>
-<h4 id="usage_69">Usage<a class="headerlink" href="#usage_69" title="Permanent link">&para;</a></h4>
+<h4 id="usage_70">Usage<a class="headerlink" href="#usage_70" title="Permanent link">&para;</a></h4>
 <p><code>bluz colors [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_69">Arguments<a class="headerlink" href="#arguments_69" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_70">Arguments<a class="headerlink" href="#arguments_70" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_69">Options<a class="headerlink" href="#options_69" title="Permanent link">&para;</a></h4>
+<h4 id="options_70">Options<a class="headerlink" href="#options_70" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -4150,11 +4413,11 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 <h4 id="subcommands_11">Subcommands<a class="headerlink" href="#subcommands_11" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-colors-list"><code>bluz colors list</code><a class="headerlink" href="#bluz-colors-list" title="Permanent link">&para;</a></h5>
 <p>List every custom colour.</p>
-<h6 id="usage_70">Usage<a class="headerlink" href="#usage_70" title="Permanent link">&para;</a></h6>
+<h6 id="usage_71">Usage<a class="headerlink" href="#usage_71" title="Permanent link">&para;</a></h6>
 <p><code>bluz colors list [OPTIONS]</code></p>
-<h6 id="arguments_70">Arguments<a class="headerlink" href="#arguments_70" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_71">Arguments<a class="headerlink" href="#arguments_71" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_70">Options<a class="headerlink" href="#options_70" title="Permanent link">&para;</a></h6>
+<h6 id="options_71">Options<a class="headerlink" href="#options_71" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4187,9 +4450,9 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </table>
 <h5 id="bluz-colors-get"><code>bluz colors get</code><a class="headerlink" href="#bluz-colors-get" title="Permanent link">&para;</a></h5>
 <p>Fetch one colour (filtered client-side — the server has no per-id route).</p>
-<h6 id="usage_71">Usage<a class="headerlink" href="#usage_71" title="Permanent link">&para;</a></h6>
+<h6 id="usage_72">Usage<a class="headerlink" href="#usage_72" title="Permanent link">&para;</a></h6>
 <p><code>bluz colors get [OPTIONS] COLOR_ID</code></p>
-<h6 id="arguments_71">Arguments<a class="headerlink" href="#arguments_71" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_72">Arguments<a class="headerlink" href="#arguments_72" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4206,7 +4469,7 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_71">Options<a class="headerlink" href="#options_71" title="Permanent link">&para;</a></h6>
+<h6 id="options_72">Options<a class="headerlink" href="#options_72" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4227,11 +4490,11 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </table>
 <h5 id="bluz-colors-create"><code>bluz colors create</code><a class="headerlink" href="#bluz-colors-create" title="Permanent link">&para;</a></h5>
 <p>Create a custom colour. Ids are client-generated — one is minted if omitted.</p>
-<h6 id="usage_72">Usage<a class="headerlink" href="#usage_72" title="Permanent link">&para;</a></h6>
+<h6 id="usage_73">Usage<a class="headerlink" href="#usage_73" title="Permanent link">&para;</a></h6>
 <p><code>bluz colors create [OPTIONS]</code></p>
-<h6 id="arguments_72">Arguments<a class="headerlink" href="#arguments_72" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_73">Arguments<a class="headerlink" href="#arguments_73" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_72">Options<a class="headerlink" href="#options_72" title="Permanent link">&para;</a></h6>
+<h6 id="options_73">Options<a class="headerlink" href="#options_73" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4271,9 +4534,9 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 <h5 id="bluz-colors-update"><code>bluz colors update</code><a class="headerlink" href="#bluz-colors-update" title="Permanent link">&para;</a></h5>
 <p>Update a colour. The server replaces the whole record, so unset fields are
 carried over from the current value.</p>
-<h6 id="usage_73">Usage<a class="headerlink" href="#usage_73" title="Permanent link">&para;</a></h6>
+<h6 id="usage_74">Usage<a class="headerlink" href="#usage_74" title="Permanent link">&para;</a></h6>
 <p><code>bluz colors update [OPTIONS] COLOR_ID</code></p>
-<h6 id="arguments_73">Arguments<a class="headerlink" href="#arguments_73" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_74">Arguments<a class="headerlink" href="#arguments_74" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4290,7 +4553,7 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_73">Options<a class="headerlink" href="#options_73" title="Permanent link">&para;</a></h6>
+<h6 id="options_74">Options<a class="headerlink" href="#options_74" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4323,9 +4586,9 @@ carried over from the current value.</p>
 </table>
 <h5 id="bluz-colors-delete"><code>bluz colors delete</code><a class="headerlink" href="#bluz-colors-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a custom colour.</p>
-<h6 id="usage_74">Usage<a class="headerlink" href="#usage_74" title="Permanent link">&para;</a></h6>
+<h6 id="usage_75">Usage<a class="headerlink" href="#usage_75" title="Permanent link">&para;</a></h6>
 <p><code>bluz colors delete [OPTIONS] COLOR_ID</code></p>
-<h6 id="arguments_74">Arguments<a class="headerlink" href="#arguments_74" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_75">Arguments<a class="headerlink" href="#arguments_75" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4342,7 +4605,7 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_74">Options<a class="headerlink" href="#options_74" title="Permanent link">&para;</a></h6>
+<h6 id="options_75">Options<a class="headerlink" href="#options_75" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4369,11 +4632,11 @@ carried over from the current value.</p>
 </table>
 <h3 id="bluz-gantt"><code>bluz gantt</code><a class="headerlink" href="#bluz-gantt" title="Permanent link">&para;</a></h3>
 <p>Gantt / curriculum engine.</p>
-<h4 id="usage_75">Usage<a class="headerlink" href="#usage_75" title="Permanent link">&para;</a></h4>
+<h4 id="usage_76">Usage<a class="headerlink" href="#usage_76" title="Permanent link">&para;</a></h4>
 <p><code>bluz gantt [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_75">Arguments<a class="headerlink" href="#arguments_75" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_76">Arguments<a class="headerlink" href="#arguments_76" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_75">Options<a class="headerlink" href="#options_75" title="Permanent link">&para;</a></h4>
+<h4 id="options_76">Options<a class="headerlink" href="#options_76" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -4395,9 +4658,9 @@ carried over from the current value.</p>
 <h4 id="subcommands_12">Subcommands<a class="headerlink" href="#subcommands_12" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-gantt-curriculums"><code>bluz gantt curriculums</code><a class="headerlink" href="#bluz-gantt-curriculums" title="Permanent link">&para;</a></h5>
 <p>Curriculums.</p>
-<h6 id="usage_76">Usage<a class="headerlink" href="#usage_76" title="Permanent link">&para;</a></h6>
+<h6 id="usage_77">Usage<a class="headerlink" href="#usage_77" title="Permanent link">&para;</a></h6>
 <p><code>bluz gantt curriculums cut-plan [OPTIONS] CURRICULUM_ID</code></p>
-<h6 id="arguments_76">Arguments<a class="headerlink" href="#arguments_76" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_77">Arguments<a class="headerlink" href="#arguments_77" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4514,7 +4777,7 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_76">Options<a class="headerlink" href="#options_76" title="Permanent link">&para;</a></h6>
+<h6 id="options_77">Options<a class="headerlink" href="#options_77" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4907,9 +5170,9 @@ carried over from the current value.</p>
 </table>
 <h5 id="bluz-gantt-syllabuses"><code>bluz gantt syllabuses</code><a class="headerlink" href="#bluz-gantt-syllabuses" title="Permanent link">&para;</a></h5>
 <p>Syllabuses.</p>
-<h6 id="usage_77">Usage<a class="headerlink" href="#usage_77" title="Permanent link">&para;</a></h6>
+<h6 id="usage_78">Usage<a class="headerlink" href="#usage_78" title="Permanent link">&para;</a></h6>
 <p><code>bluz gantt syllabuses set-shuffles [OPTIONS] SYLLABUS_ID</code></p>
-<h6 id="arguments_77">Arguments<a class="headerlink" href="#arguments_77" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_78">Arguments<a class="headerlink" href="#arguments_78" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -4986,7 +5249,7 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_77">Options<a class="headerlink" href="#options_77" title="Permanent link">&para;</a></h6>
+<h6 id="options_78">Options<a class="headerlink" href="#options_78" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -5151,220 +5414,8 @@ carried over from the current value.</p>
 </table>
 <h5 id="bluz-gantt-modules"><code>bluz gantt modules</code><a class="headerlink" href="#bluz-gantt-modules" title="Permanent link">&para;</a></h5>
 <p>Modules.</p>
-<h6 id="usage_78">Usage<a class="headerlink" href="#usage_78" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt modules reorder-events [OPTIONS] ITEM_ID IDS</code></p>
-<h6 id="arguments_78">Arguments<a class="headerlink" href="#arguments_78" title="Permanent link">&para;</a></h6>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>NEW_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>OLD_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>CONTAINER_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>CONTAINER_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>DURATION</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-<h6 id="options_78">Options<a class="headerlink" href="#options_78" title="Permanent link">&para;</a></h6>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--with-parents</code></td>
-<td>Include each item's parent id (weeks/days label by number/index).</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--limit INTEGER</code></td>
-<td>Cap the number of rows shown.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--offset INTEGER</code></td>
-<td>Skip this many rows before showing.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--data TEXT</code></td>
-<td>JSON payload.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--data TEXT</code></td>
-<td>JSON patch payload.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>-y, --yes</code></td>
-<td>Skip confirmation.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<h5 id="bluz-gantt-events"><code>bluz gantt events</code><a class="headerlink" href="#bluz-gantt-events" title="Permanent link">&para;</a></h5>
-<p>Gantt events.</p>
 <h6 id="usage_79">Usage<a class="headerlink" href="#usage_79" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt events shuffle-group [OPTIONS] EVENT_ID</code></p>
+<p><code>bluz gantt modules reorder-events [OPTIONS] ITEM_ID IDS</code></p>
 <h6 id="arguments_79">Arguments<a class="headerlink" href="#arguments_79" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5421,42 +5472,7 @@ carried over from the current value.</p>
 <td>No</td>
 </tr>
 <tr>
-<td><code>CONTAINER_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>CONTAINER_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>DURATION</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
-</tr>
-<tr>
-<td><code>EVENT_ID</code></td>
+<td><code>IDS</code></td>
 <td>[required]</td>
 <td>No</td>
 </tr>
@@ -5569,90 +5585,12 @@ carried over from the current value.</p>
 <td>No</td>
 <td>-</td>
 </tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--module-id TEXT</code></td>
-<td>Module the copy is created under.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--curriculum-id TEXT</code></td>
-<td>Curriculum id.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--day-id TEXT</code></td>
-<td>Day the occurrence falls on.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--curriculum-id TEXT</code></td>
-<td>Curriculum id.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--module-id TEXT</code></td>
-<td>Module id.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--day-id TEXT</code></td>
-<td>Day the occurrence falls on.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--module-id TEXT</code></td>
-<td>Module the group lives in.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--shuffles TEXT</code></td>
-<td>Comma-separated shuffle names — one sibling event per name. Fewer than two ungroups.</td>
-<td>Yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
 </tbody>
 </table>
-<h5 id="bluz-gantt-days"><code>bluz gantt days</code><a class="headerlink" href="#bluz-gantt-days" title="Permanent link">&para;</a></h5>
-<p>Curriculum days.</p>
+<h5 id="bluz-gantt-events"><code>bluz gantt events</code><a class="headerlink" href="#bluz-gantt-events" title="Permanent link">&para;</a></h5>
+<p>Gantt events.</p>
 <h6 id="usage_80">Usage<a class="headerlink" href="#usage_80" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt days delete [OPTIONS] ITEM_ID</code></p>
+<p><code>bluz gantt events shuffle-group [OPTIONS] EVENT_ID</code></p>
 <h6 id="arguments_80">Arguments<a class="headerlink" href="#arguments_80" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5680,6 +5618,46 @@ carried over from the current value.</p>
 </tr>
 <tr>
 <td><code>ITEM_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ITEM_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>NEW_PARENT_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ITEM_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>OLD_PARENT_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>EVENT_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>EVENT_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>EVENT_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>EVENT_ID</code></td>
 <td>[required]</td>
 <td>No</td>
 </tr>
@@ -5774,12 +5752,96 @@ carried over from the current value.</p>
 <td>No</td>
 <td>-</td>
 </tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--module-id TEXT</code></td>
+<td>Module the copy is created under.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--curriculum-id TEXT</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--day-id TEXT</code></td>
+<td>Day the occurrence falls on.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--curriculum-id TEXT</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--module-id TEXT</code></td>
+<td>Module id.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--day-id TEXT</code></td>
+<td>Day the occurrence falls on.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--module-id TEXT</code></td>
+<td>Module the group lives in.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--shuffles TEXT</code></td>
+<td>Comma-separated shuffle names — one sibling event per name. Fewer than two ungroups.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
 </tbody>
 </table>
-<h5 id="bluz-gantt-weeks"><code>bluz gantt weeks</code><a class="headerlink" href="#bluz-gantt-weeks" title="Permanent link">&para;</a></h5>
-<p>Curriculum weeks.</p>
+<h5 id="bluz-gantt-days"><code>bluz gantt days</code><a class="headerlink" href="#bluz-gantt-days" title="Permanent link">&para;</a></h5>
+<p>Curriculum days.</p>
 <h6 id="usage_81">Usage<a class="headerlink" href="#usage_81" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt weeks delete [OPTIONS] ITEM_ID</code></p>
+<p><code>bluz gantt days delete [OPTIONS] ITEM_ID</code></p>
 <h6 id="arguments_81">Arguments<a class="headerlink" href="#arguments_81" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5903,13 +5965,140 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
+<h5 id="bluz-gantt-weeks"><code>bluz gantt weeks</code><a class="headerlink" href="#bluz-gantt-weeks" title="Permanent link">&para;</a></h5>
+<p>Curriculum weeks.</p>
+<h6 id="usage_82">Usage<a class="headerlink" href="#usage_82" title="Permanent link">&para;</a></h6>
+<p><code>bluz gantt weeks delete [OPTIONS] ITEM_ID</code></p>
+<h6 id="arguments_82">Arguments<a class="headerlink" href="#arguments_82" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ITEM_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>IDS</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ITEM_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ITEM_ID</code></td>
+<td>[required]</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h6 id="options_82">Options<a class="headerlink" href="#options_82" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--with-parents</code></td>
+<td>Include each item's parent id (weeks/days label by number/index).</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--limit INTEGER</code></td>
+<td>Cap the number of rows shown.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--offset INTEGER</code></td>
+<td>Skip this many rows before showing.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--data TEXT</code></td>
+<td>JSON payload.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--data TEXT</code></td>
+<td>JSON patch payload.</td>
+<td>Yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>-y, --yes</code></td>
+<td>Skip confirmation.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 <h3 id="bluz-hive"><code>bluz hive</code><a class="headerlink" href="#bluz-hive" title="Permanent link">&para;</a></h3>
 <p>Hive LMS reference data (read-only).</p>
-<h4 id="usage_82">Usage<a class="headerlink" href="#usage_82" title="Permanent link">&para;</a></h4>
+<h4 id="usage_83">Usage<a class="headerlink" href="#usage_83" title="Permanent link">&para;</a></h4>
 <p><code>bluz hive [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_82">Arguments<a class="headerlink" href="#arguments_82" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_83">Arguments<a class="headerlink" href="#arguments_83" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_82">Options<a class="headerlink" href="#options_82" title="Permanent link">&para;</a></h4>
+<h4 id="options_83">Options<a class="headerlink" href="#options_83" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -5931,45 +6120,8 @@ carried over from the current value.</p>
 <h4 id="subcommands_13">Subcommands<a class="headerlink" href="#subcommands_13" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-hive-users"><code>bluz hive users</code><a class="headerlink" href="#bluz-hive-users" title="Permanent link">&para;</a></h5>
 <p>Hive users (staff).</p>
-<h6 id="usage_83">Usage<a class="headerlink" href="#usage_83" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive users [OPTIONS]</code></p>
-<h6 id="arguments_83">Arguments<a class="headerlink" href="#arguments_83" title="Permanent link">&para;</a></h6>
-<p><em>No arguments available</em></p>
-<h6 id="options_83">Options<a class="headerlink" href="#options_83" title="Permanent link">&para;</a></h6>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Required</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--limit INTEGER</code></td>
-<td>Cap the number of rows shown.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--offset INTEGER</code></td>
-<td>Skip this many rows before showing.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>--help</code></td>
-<td>Show this message and exit.</td>
-<td>No</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<h5 id="bluz-hive-students"><code>bluz hive students</code><a class="headerlink" href="#bluz-hive-students" title="Permanent link">&para;</a></h5>
-<p>Hive students.</p>
 <h6 id="usage_84">Usage<a class="headerlink" href="#usage_84" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive students [OPTIONS]</code></p>
+<p><code>bluz hive users [OPTIONS]</code></p>
 <h6 id="arguments_84">Arguments<a class="headerlink" href="#arguments_84" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
 <h6 id="options_84">Options<a class="headerlink" href="#options_84" title="Permanent link">&para;</a></h6>
@@ -6003,10 +6155,10 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="bluz-hive-classes"><code>bluz hive classes</code><a class="headerlink" href="#bluz-hive-classes" title="Permanent link">&para;</a></h5>
-<p>Hive classes.</p>
+<h5 id="bluz-hive-students"><code>bluz hive students</code><a class="headerlink" href="#bluz-hive-students" title="Permanent link">&para;</a></h5>
+<p>Hive students.</p>
 <h6 id="usage_85">Usage<a class="headerlink" href="#usage_85" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive classes [OPTIONS]</code></p>
+<p><code>bluz hive students [OPTIONS]</code></p>
 <h6 id="arguments_85">Arguments<a class="headerlink" href="#arguments_85" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
 <h6 id="options_85">Options<a class="headerlink" href="#options_85" title="Permanent link">&para;</a></h6>
@@ -6040,10 +6192,10 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="bluz-hive-subjects"><code>bluz hive subjects</code><a class="headerlink" href="#bluz-hive-subjects" title="Permanent link">&para;</a></h5>
-<p>Hive subjects.</p>
+<h5 id="bluz-hive-classes"><code>bluz hive classes</code><a class="headerlink" href="#bluz-hive-classes" title="Permanent link">&para;</a></h5>
+<p>Hive classes.</p>
 <h6 id="usage_86">Usage<a class="headerlink" href="#usage_86" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive subjects [OPTIONS]</code></p>
+<p><code>bluz hive classes [OPTIONS]</code></p>
 <h6 id="arguments_86">Arguments<a class="headerlink" href="#arguments_86" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
 <h6 id="options_86">Options<a class="headerlink" href="#options_86" title="Permanent link">&para;</a></h6>
@@ -6077,10 +6229,10 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="bluz-hive-modules"><code>bluz hive modules</code><a class="headerlink" href="#bluz-hive-modules" title="Permanent link">&para;</a></h5>
-<p>Hive modules.</p>
+<h5 id="bluz-hive-subjects"><code>bluz hive subjects</code><a class="headerlink" href="#bluz-hive-subjects" title="Permanent link">&para;</a></h5>
+<p>Hive subjects.</p>
 <h6 id="usage_87">Usage<a class="headerlink" href="#usage_87" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive modules [OPTIONS]</code></p>
+<p><code>bluz hive subjects [OPTIONS]</code></p>
 <h6 id="arguments_87">Arguments<a class="headerlink" href="#arguments_87" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
 <h6 id="options_87">Options<a class="headerlink" href="#options_87" title="Permanent link">&para;</a></h6>
@@ -6114,10 +6266,10 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="bluz-hive-rooms"><code>bluz hive rooms</code><a class="headerlink" href="#bluz-hive-rooms" title="Permanent link">&para;</a></h5>
-<p>Hive rooms.</p>
+<h5 id="bluz-hive-modules"><code>bluz hive modules</code><a class="headerlink" href="#bluz-hive-modules" title="Permanent link">&para;</a></h5>
+<p>Hive modules.</p>
 <h6 id="usage_88">Usage<a class="headerlink" href="#usage_88" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive rooms [OPTIONS]</code></p>
+<p><code>bluz hive modules [OPTIONS]</code></p>
 <h6 id="arguments_88">Arguments<a class="headerlink" href="#arguments_88" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
 <h6 id="options_88">Options<a class="headerlink" href="#options_88" title="Permanent link">&para;</a></h6>
@@ -6151,13 +6303,50 @@ carried over from the current value.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="bluz-hive-lessons"><code>bluz hive lessons</code><a class="headerlink" href="#bluz-hive-lessons" title="Permanent link">&para;</a></h5>
-<p>Hive lessons, optionally filtered by module or parent program.</p>
+<h5 id="bluz-hive-rooms"><code>bluz hive rooms</code><a class="headerlink" href="#bluz-hive-rooms" title="Permanent link">&para;</a></h5>
+<p>Hive rooms.</p>
 <h6 id="usage_89">Usage<a class="headerlink" href="#usage_89" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive lessons [OPTIONS]</code></p>
+<p><code>bluz hive rooms [OPTIONS]</code></p>
 <h6 id="arguments_89">Arguments<a class="headerlink" href="#arguments_89" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
 <h6 id="options_89">Options<a class="headerlink" href="#options_89" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--limit INTEGER</code></td>
+<td>Cap the number of rows shown.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--offset INTEGER</code></td>
+<td>Skip this many rows before showing.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h5 id="bluz-hive-lessons"><code>bluz hive lessons</code><a class="headerlink" href="#bluz-hive-lessons" title="Permanent link">&para;</a></h5>
+<p>Hive lessons, optionally filtered by module or parent program.</p>
+<h6 id="usage_90">Usage<a class="headerlink" href="#usage_90" title="Permanent link">&para;</a></h6>
+<p><code>bluz hive lessons [OPTIONS]</code></p>
+<h6 id="arguments_90">Arguments<a class="headerlink" href="#arguments_90" title="Permanent link">&para;</a></h6>
+<p><em>No arguments available</em></p>
+<h6 id="options_90">Options<a class="headerlink" href="#options_90" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6204,11 +6393,11 @@ carried over from the current value.</p>
 <p>Queues of one Hive module — the event dialog's per-shuffle queue picker.</p>
 <p>Module-scoped by design: Hive rejects user queues on a lesson rule, so an
 unscoped list would offer choices that cannot be saved.</p>
-<h6 id="usage_90">Usage<a class="headerlink" href="#usage_90" title="Permanent link">&para;</a></h6>
+<h6 id="usage_91">Usage<a class="headerlink" href="#usage_91" title="Permanent link">&para;</a></h6>
 <p><code>bluz hive queues [OPTIONS]</code></p>
-<h6 id="arguments_90">Arguments<a class="headerlink" href="#arguments_90" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_91">Arguments<a class="headerlink" href="#arguments_91" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_90">Options<a class="headerlink" href="#options_90" title="Permanent link">&para;</a></h6>
+<h6 id="options_91">Options<a class="headerlink" href="#options_91" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6251,11 +6440,11 @@ unscoped list would offer choices that cannot be saved.</p>
 is idempotent — triggering it by hand can only bring queues forward to
 where they should already be. Writes, so it needs the writable (current)
 iteration.</p>
-<h6 id="usage_91">Usage<a class="headerlink" href="#usage_91" title="Permanent link">&para;</a></h6>
+<h6 id="usage_92">Usage<a class="headerlink" href="#usage_92" title="Permanent link">&para;</a></h6>
 <p><code>bluz hive activate-lessons [OPTIONS]</code></p>
-<h6 id="arguments_91">Arguments<a class="headerlink" href="#arguments_91" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_92">Arguments<a class="headerlink" href="#arguments_92" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_91">Options<a class="headerlink" href="#options_91" title="Permanent link">&para;</a></h6>
+<h6 id="options_92">Options<a class="headerlink" href="#options_92" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6278,9 +6467,9 @@ iteration.</p>
 <p>Download one Hive user's avatar image through the Bluz proxy.</p>
 <p>Users without an uploaded avatar answer 404 — that is a miss, not a
 failure, and it is reported as one.</p>
-<h6 id="usage_92">Usage<a class="headerlink" href="#usage_92" title="Permanent link">&para;</a></h6>
+<h6 id="usage_93">Usage<a class="headerlink" href="#usage_93" title="Permanent link">&para;</a></h6>
 <p><code>bluz hive avatar [OPTIONS] SLUG</code></p>
-<h6 id="arguments_92">Arguments<a class="headerlink" href="#arguments_92" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_93">Arguments<a class="headerlink" href="#arguments_93" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6297,7 +6486,7 @@ failure, and it is reported as one.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_92">Options<a class="headerlink" href="#options_92" title="Permanent link">&para;</a></h6>
+<h6 id="options_93">Options<a class="headerlink" href="#options_93" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6324,11 +6513,11 @@ failure, and it is reported as one.</p>
 </table>
 <h3 id="bluz-integrations"><code>bluz integrations</code><a class="headerlink" href="#bluz-integrations" title="Permanent link">&para;</a></h3>
 <p>Third-party integrations.</p>
-<h4 id="usage_93">Usage<a class="headerlink" href="#usage_93" title="Permanent link">&para;</a></h4>
+<h4 id="usage_94">Usage<a class="headerlink" href="#usage_94" title="Permanent link">&para;</a></h4>
 <p><code>bluz integrations [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_93">Arguments<a class="headerlink" href="#arguments_93" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_94">Arguments<a class="headerlink" href="#arguments_94" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_93">Options<a class="headerlink" href="#options_93" title="Permanent link">&para;</a></h4>
+<h4 id="options_94">Options<a class="headerlink" href="#options_94" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -6350,11 +6539,11 @@ failure, and it is reported as one.</p>
 <h4 id="subcommands_14">Subcommands<a class="headerlink" href="#subcommands_14" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-integrations-google"><code>bluz integrations google</code><a class="headerlink" href="#bluz-integrations-google" title="Permanent link">&para;</a></h5>
 <p>Google Calendar integration.</p>
-<h6 id="usage_94">Usage<a class="headerlink" href="#usage_94" title="Permanent link">&para;</a></h6>
+<h6 id="usage_95">Usage<a class="headerlink" href="#usage_95" title="Permanent link">&para;</a></h6>
 <p><code>bluz integrations google purge [OPTIONS]</code></p>
-<h6 id="arguments_94">Arguments<a class="headerlink" href="#arguments_94" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_95">Arguments<a class="headerlink" href="#arguments_95" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_94">Options<a class="headerlink" href="#options_94" title="Permanent link">&para;</a></h6>
+<h6 id="options_95">Options<a class="headerlink" href="#options_95" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6453,11 +6642,11 @@ failure, and it is reported as one.</p>
 </table>
 <h3 id="bluz-student-view"><code>bluz student-view</code><a class="headerlink" href="#bluz-student-view" title="Permanent link">&para;</a></h3>
 <p>The student board (read-only projection).</p>
-<h4 id="usage_95">Usage<a class="headerlink" href="#usage_95" title="Permanent link">&para;</a></h4>
+<h4 id="usage_96">Usage<a class="headerlink" href="#usage_96" title="Permanent link">&para;</a></h4>
 <p><code>bluz student-view [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_95">Arguments<a class="headerlink" href="#arguments_95" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_96">Arguments<a class="headerlink" href="#arguments_96" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_95">Options<a class="headerlink" href="#options_95" title="Permanent link">&para;</a></h4>
+<h4 id="options_96">Options<a class="headerlink" href="#options_96" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -6479,11 +6668,11 @@ failure, and it is reported as one.</p>
 <h4 id="subcommands_15">Subcommands<a class="headerlink" href="#subcommands_15" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-student-view-schedule"><code>bluz student-view schedule</code><a class="headerlink" href="#bluz-student-view-schedule" title="Permanent link">&para;</a></h5>
 <p>One day of the student board — the <code>StudentEvent</code> projection, never raw events.</p>
-<h6 id="usage_96">Usage<a class="headerlink" href="#usage_96" title="Permanent link">&para;</a></h6>
+<h6 id="usage_97">Usage<a class="headerlink" href="#usage_97" title="Permanent link">&para;</a></h6>
 <p><code>bluz student-view schedule [OPTIONS]</code></p>
-<h6 id="arguments_96">Arguments<a class="headerlink" href="#arguments_96" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_97">Arguments<a class="headerlink" href="#arguments_97" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_96">Options<a class="headerlink" href="#options_96" title="Permanent link">&para;</a></h6>
+<h6 id="options_97">Options<a class="headerlink" href="#options_97" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6531,9 +6720,9 @@ failure, and it is reported as one.</p>
 <p>The user and the date come from the session and the server clock, so this
 can only ever add to the reporter's own number, for today; the increment
 is clamped and the daily total capped server-side.</p>
-<h6 id="usage_97">Usage<a class="headerlink" href="#usage_97" title="Permanent link">&para;</a></h6>
+<h6 id="usage_98">Usage<a class="headerlink" href="#usage_98" title="Permanent link">&para;</a></h6>
 <p><code>bluz student-view report-engagement [OPTIONS] SECONDS</code></p>
-<h6 id="arguments_97">Arguments<a class="headerlink" href="#arguments_97" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_98">Arguments<a class="headerlink" href="#arguments_98" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6550,7 +6739,7 @@ is clamped and the daily total capped server-side.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_97">Options<a class="headerlink" href="#options_97" title="Permanent link">&para;</a></h6>
+<h6 id="options_98">Options<a class="headerlink" href="#options_98" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6571,11 +6760,11 @@ is clamped and the daily total capped server-side.</p>
 </table>
 <h3 id="bluz-ai"><code>bluz ai</code><a class="headerlink" href="#bluz-ai" title="Permanent link">&para;</a></h3>
 <p>The Bluz AI assistant.</p>
-<h4 id="usage_98">Usage<a class="headerlink" href="#usage_98" title="Permanent link">&para;</a></h4>
+<h4 id="usage_99">Usage<a class="headerlink" href="#usage_99" title="Permanent link">&para;</a></h4>
 <p><code>bluz ai [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_98">Arguments<a class="headerlink" href="#arguments_98" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_99">Arguments<a class="headerlink" href="#arguments_99" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_98">Options<a class="headerlink" href="#options_98" title="Permanent link">&para;</a></h4>
+<h4 id="options_99">Options<a class="headerlink" href="#options_99" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -6599,11 +6788,38 @@ is clamped and the daily total capped server-side.</p>
 <p>What the assistant can do, and whether AI is configured at all.</p>
 <p>Reports <code>enabled: false</code> on a deployment with no model key rather than
 failing — the same signal the UI uses to hide the launcher.</p>
-<h6 id="usage_99">Usage<a class="headerlink" href="#usage_99" title="Permanent link">&para;</a></h6>
+<h6 id="usage_100">Usage<a class="headerlink" href="#usage_100" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai tools [OPTIONS]</code></p>
-<h6 id="arguments_99">Arguments<a class="headerlink" href="#arguments_99" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_100">Arguments<a class="headerlink" href="#arguments_100" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_99">Options<a class="headerlink" href="#options_99" title="Permanent link">&para;</a></h6>
+<h6 id="options_100">Options<a class="headerlink" href="#options_100" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h5 id="bluz-ai-models"><code>bluz ai models</code><a class="headerlink" href="#bluz-ai-models" title="Permanent link">&para;</a></h5>
+<p>List the models the configured AI backend offers.</p>
+<p>Use it to pick a valid <code>AI_MODEL</code>; an empty list comes with the reason
+(e.g. an untrusted certificate or a backend without <code>/models</code>).</p>
+<h6 id="usage_101">Usage<a class="headerlink" href="#usage_101" title="Permanent link">&para;</a></h6>
+<p><code>bluz ai models [OPTIONS]</code></p>
+<h6 id="arguments_101">Arguments<a class="headerlink" href="#arguments_101" title="Permanent link">&para;</a></h6>
+<p><em>No arguments available</em></p>
+<h6 id="options_101">Options<a class="headerlink" href="#options_101" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6626,11 +6842,11 @@ failing — the same signal the UI uses to hide the launcher.</p>
 <p>Run the assistant self-test against a fabricated fixture.</p>
 <p>Throttled server-side to once an hour per user (a run costs real tokens),
 which comes back as an <code>AiRateLimitError</code>.</p>
-<h6 id="usage_100">Usage<a class="headerlink" href="#usage_100" title="Permanent link">&para;</a></h6>
+<h6 id="usage_102">Usage<a class="headerlink" href="#usage_102" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai benchmark [OPTIONS]</code></p>
-<h6 id="arguments_100">Arguments<a class="headerlink" href="#arguments_100" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_102">Arguments<a class="headerlink" href="#arguments_102" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_100">Options<a class="headerlink" href="#options_100" title="Permanent link">&para;</a></h6>
+<h6 id="options_102">Options<a class="headerlink" href="#options_102" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6655,9 +6871,9 @@ which comes back as an <code>AiRateLimitError</code>.</p>
 Re-run with <code>--approve &lt;toolCallId&gt;</code> (plus <code>--messages</code> carrying the
 transcript the <code>done</code> frame returned) to let one through, or pass <code>--yes</code>
 to approve and resume in a single invocation.</p>
-<h6 id="usage_101">Usage<a class="headerlink" href="#usage_101" title="Permanent link">&para;</a></h6>
+<h6 id="usage_103">Usage<a class="headerlink" href="#usage_103" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai chat [OPTIONS] PROMPT</code></p>
-<h6 id="arguments_101">Arguments<a class="headerlink" href="#arguments_101" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_103">Arguments<a class="headerlink" href="#arguments_103" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6674,7 +6890,7 @@ to approve and resume in a single invocation.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_101">Options<a class="headerlink" href="#options_101" title="Permanent link">&para;</a></h6>
+<h6 id="options_103">Options<a class="headerlink" href="#options_103" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -6730,6 +6946,7 @@ to approve and resume in a single invocation.</p>
 </tbody>
 </table>
 </div>
+<!-- prettier-ignore-end -->
 
 
 

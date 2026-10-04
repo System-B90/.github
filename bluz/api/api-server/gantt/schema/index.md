@@ -62,18 +62,6 @@ Re-exports [ganttCurriculum2WeeksSchema](junctions/variables/ganttCurriculum2Wee
 
 ***
 
-### ganttCurriculumEventConfigurationsRelationsSchema
-
-Re-exports [ganttCurriculumEventConfigurationsRelationsSchema](mappings/variables/ganttCurriculumEventConfigurationsRelationsSchema.md)
-
-***
-
-### ganttCurriculumEventConfigurationsSchema
-
-Re-exports [ganttCurriculumEventConfigurationsSchema](mappings/variables/ganttCurriculumEventConfigurationsSchema.md)
-
-***
-
 ### ganttCurriculumEventDayMappingsRelationsSchema
 
 Re-exports [ganttCurriculumEventDayMappingsRelationsSchema](mappings/variables/ganttCurriculumEventDayMappingsRelationsSchema.md)

@@ -8,7 +8,7 @@
 
 > `const` **DbModule**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-module.ts:262](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/db-module.ts#L262)
+Defined in: [ui/src/api-server/gantt/db-module.ts:150](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/db-module.ts#L150)
 
 ## Type Declaration
 
@@ -68,24 +68,6 @@ layer, which has no database handle to pass.
 #### Returns
 
 `Promise`\<`void`\>
-
-### getAllocatedTime
-
-> **getAllocatedTime**: (`moduleId`, `curriculumId`) => `Promise`\<`number`\>
-
-#### Parameters
-
-##### moduleId
-
-`string`
-
-##### curriculumId
-
-`string`
-
-#### Returns
-
-`Promise`\<`number`\>
 
 ### getItem
 
@@ -160,28 +142,6 @@ layer, which has no database handle to pass.
 ##### eventIds
 
 `string`[]
-
-#### Returns
-
-`Promise`\<`void`\>
-
-### setAllocatedTime
-
-> **setAllocatedTime**: (`moduleId`, `curriculumId`, `duration`) => `Promise`\<`void`\>
-
-#### Parameters
-
-##### moduleId
-
-`string`
-
-##### curriculumId
-
-`string`
-
-##### duration
-
-`number`
 
 #### Returns
 

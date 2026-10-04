@@ -6,8 +6,8 @@
 
 # Variable: ganttCurriculumsRelationsSchema
 
-> `const` **ganttCurriculumsRelationsSchema**: `Relations`\<`"c"`, \{ `c2s`: `Many`\<`"c2s"`\>; `c2w`: `Many`\<`"c2w"`\>; `cEC`: `Many`\<`"cEC"`\>; `cMDA`: `Many`\<`"cMDA"`\>; `eRE`: `Many`\<`"eRE"`\>; \}\>
+> `const` **ganttCurriculumsRelationsSchema**: `Relations`\<`"c"`, \{ `c2s`: `Many`\<`"c2s"`\>; `c2w`: `Many`\<`"c2w"`\>; `cMDA`: `Many`\<`"cMDA"`\>; `eRE`: `Many`\<`"eRE"`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/curriculums.ts:31](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/gantt/schema/curriculums.ts#L31)
+Defined in: [ui/src/api-server/gantt/schema/curriculums.ts:28](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/gantt/schema/curriculums.ts#L28)
 
 Relations definition for the Gantt Curriculums schema.

@@ -8,7 +8,7 @@
 
 > **HiveFeedOptions** = `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:64](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/schedule-feed.ts#L64)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:64](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/hive/schedule-feed.ts#L64)
 
 ## Properties
 
@@ -16,6 +16,6 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:64](https://github.com/Syst
 
 > **lessonCategory**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:66](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/hive/schedule-feed.ts#L66)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:66](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/hive/schedule-feed.ts#L66)
 
 Hive category for events bound to a subject.

@@ -8,4 +8,4 @@
 
 > `const` **EXECUTION\_INSIGHTS**: [`InsightGenerator`](../../../types/type-aliases/InsightGenerator.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/execution.ts:200](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/insights/generators/execution.ts#L200)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/execution.ts:201](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/insights/generators/execution.ts#L201)

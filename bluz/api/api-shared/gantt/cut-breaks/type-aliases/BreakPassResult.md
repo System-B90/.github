@@ -8,7 +8,7 @@
 
 > **BreakPassResult** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:73](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-breaks.ts#L73)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:73](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-breaks.ts#L73)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:73](https://github.com/System
 
 > **breaks**: [`GeneratedBreak`](GeneratedBreak.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:76](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-breaks.ts#L76)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:76](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-breaks.ts#L76)
 
 ***
 
@@ -24,6 +24,6 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:76](https://github.com/System
 
 > **items**: [`PlacedItem`](PlacedItem.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:75](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/gantt/cut-breaks.ts#L75)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:75](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/gantt/cut-breaks.ts#L75)
 
 Items with their post-pass times — unpinned ones may have shifted later.

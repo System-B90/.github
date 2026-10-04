@@ -8,6 +8,6 @@
 
 > `const` **PRAYER\_DEFAULT\_COLOR**: `"#e0f9fe"` = `"#e0f9fe"`
 
-Defined in: [ui/src/components/schedule/event-component/event-colors.ts:6](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-component/event-colors.ts#L6)
+Defined in: [ui/src/components/schedule/event-component/event-colors.ts:6](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-component/event-colors.ts#L6)
 
 Default background color for Prayer-type events.

@@ -8,7 +8,7 @@
 
 > `const` **curriculumModuleDayMappingApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/mappings.ts:116](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-client/gantt/mappings.ts#L116)
+Defined in: [ui/src/api-client/gantt/mappings.ts:116](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-client/gantt/mappings.ts#L116)
 
 Client-side API client wrapper for managing curriculum module and event day mappings.
 Provides endpoints for retrieving, creating, updating, and deleting mappings.
@@ -123,6 +123,10 @@ PATCH: Updates an existing mapping or reorders it.
 
 ##### newValues
 
+###### allottedMinutes?
+
+`number`
+
 ###### dayId?
 
 `string`
@@ -130,10 +134,6 @@ PATCH: Updates an existing mapping or reorders it.
 ###### sortOrder?
 
 `number`
-
-###### weekSplitMinutes?
-
-`number`[]
 
 ##### options?
 

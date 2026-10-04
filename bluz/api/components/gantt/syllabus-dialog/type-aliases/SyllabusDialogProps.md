@@ -8,15 +8,25 @@
 
 > **SyllabusDialogProps** = `object`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:30](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/index.tsx#L30)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:34](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/index.tsx#L34)
 
 ## Properties
+
+### covered?
+
+> `optional` **covered?**: `boolean`
+
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:40](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/index.tsx#L40)
+
+A module/event dialog is open on top; hide this layer's destructive action (#834).
+
+***
 
 ### curriculumId
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:33](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/index.tsx#L33)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:37](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/index.tsx#L37)
 
 ***
 
@@ -24,7 +34,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:33](https://githu
 
 > **open**: `boolean`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:31](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/index.tsx#L31)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:35](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/index.tsx#L35)
 
 ***
 
@@ -32,7 +42,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:31](https://githu
 
 > **setOpen**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:32](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/index.tsx#L32)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:36](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/index.tsx#L36)
 
 ***
 
@@ -40,4 +50,4 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:32](https://githu
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:34](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/syllabus-dialog/index.tsx#L34)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:38](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/syllabus-dialog/index.tsx#L38)

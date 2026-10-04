@@ -8,7 +8,7 @@
 
 > **CalendarToolbar**(`props`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarToolbar.tsx:44](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/calendar/calendar/CalendarToolbar.tsx#L44)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarToolbar.tsx:44](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/calendar/calendar/CalendarToolbar.tsx#L44)
 
 Custom header toolbar for the calendar containing navigation controls, a date picker, and view selectors.
 

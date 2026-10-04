@@ -8,7 +8,7 @@
 
 > **pickDefined**\<`T`, `K`\>(`args`, `keys`): `Partial`\<`Pick`\<`T`, `K`\>\>
 
-Defined in: [ui/src/api-server/ai/tools/common.ts:127](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-server/ai/tools/common.ts#L127)
+Defined in: [ui/src/api-server/ai/tools/common.ts:127](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-server/ai/tools/common.ts#L127)
 
 Copies only the keys present in `args` — a partial patch, never a reset.
 

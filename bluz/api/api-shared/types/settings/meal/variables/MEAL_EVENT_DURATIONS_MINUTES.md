@@ -8,6 +8,6 @@
 
 > `const` **MEAL\_EVENT\_DURATIONS\_MINUTES**: `Record`\<keyof [`MealSettings`](../type-aliases/MealSettings.md), `number`\>
 
-Defined in: [ui/src/api-shared/types/settings/meal.ts:27](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/api-shared/types/settings/meal.ts#L27)
+Defined in: [ui/src/api-shared/types/settings/meal.ts:34](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/api-shared/types/settings/meal.ts#L34)
 
 Duration (minutes) of each auto-seeded meal event.

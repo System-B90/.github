@@ -8,7 +8,7 @@
 
 > `const` **GET**: `ServerApiCurrentIterationUsage`
 
-Defined in: [ui/src/app/api/iterations/current/usage/route.ts:14](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/app/api/iterations/current/usage/route.ts#L14)
+Defined in: [ui/src/app/api/iterations/current/usage/route.ts:14](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/app/api/iterations/current/usage/route.ts#L14)
 
 The static "current" segment shadows `[id]/usage` for a migrated iteration
 whose literal id is "current" (see ../route.ts), so that id is served here.

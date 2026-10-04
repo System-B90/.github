@@ -9,3 +9,7 @@
 ## Variables
 
 - [GanttHeader](variables/GanttHeader.md)
+
+## Functions
+
+- [hoursPairDescription](functions/hoursPairDescription.md)

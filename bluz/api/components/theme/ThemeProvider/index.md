@@ -11,6 +11,10 @@
 - [ThemeContextState](type-aliases/ThemeContextState.md)
 - [ThemeMode](type-aliases/ThemeMode.md)
 
+## Variables
+
+- [THEMES](variables/THEMES.md)
+
 ## Functions
 
 - [BluzThemeProvider](functions/BluzThemeProvider.md)

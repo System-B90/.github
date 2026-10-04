@@ -13,3 +13,4 @@
 ## Functions
 
 - [DayCapacityCell](functions/DayCapacityCell.md)
+- [mutedDayCellBackground](functions/mutedDayCellBackground.md)

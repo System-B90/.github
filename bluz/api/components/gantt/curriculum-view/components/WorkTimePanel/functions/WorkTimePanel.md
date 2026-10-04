@@ -8,7 +8,7 @@
 
 > **WorkTimePanel**(`props`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/index.tsx:26](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/index.tsx#L26)
+Defined in: [ui/src/components/gantt/curriculum-view/components/WorkTimePanel/index.tsx:26](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/curriculum-view/components/WorkTimePanel/index.tsx#L26)
 
 Management interface panel for curriculum work weeks and daily hour allocations.
 Allows viewing weekly capacities and adding new weeks to the curriculum.

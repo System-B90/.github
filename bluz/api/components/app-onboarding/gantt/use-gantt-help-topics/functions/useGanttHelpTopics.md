@@ -8,7 +8,7 @@
 
 > **useGanttHelpTopics**(): `void`
 
-Defined in: [ui/src/components/app-onboarding/gantt/use-gantt-help-topics.tsx:24](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/app-onboarding/gantt/use-gantt-help-topics.tsx#L24)
+Defined in: [ui/src/components/app-onboarding/gantt/use-gantt-help-topics.tsx:25](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/app-onboarding/gantt/use-gantt-help-topics.tsx#L25)
 
 The returning-user half of #659: the same concepts as the tour, readable at
 any time from the "?" panel, without a spotlight chasing the screen.

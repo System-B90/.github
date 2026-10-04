@@ -8,7 +8,7 @@
 
 > **CutToScheduleDialogProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:35](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/cut-dialog/index.tsx#L35)
+Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:43](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/cut-dialog/index.tsx#L43)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:35](https://github.com
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:37](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/cut-dialog/index.tsx#L37)
+Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:45](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/cut-dialog/index.tsx#L45)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:37](https://github.com
 
 > `optional` **curriculumTitle?**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:38](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/cut-dialog/index.tsx#L38)
+Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:46](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/cut-dialog/index.tsx#L46)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:38](https://github.com
 
 > **onClose**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:39](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/cut-dialog/index.tsx#L39)
+Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:47](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/cut-dialog/index.tsx#L47)
 
 #### Returns
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:39](https://github.com
 
 > `optional` **onSuccess?**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:41](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/cut-dialog/index.tsx#L41)
+Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:49](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/cut-dialog/index.tsx#L49)
 
 Fired after a successful cut so the caller can flip its cut state.
 
@@ -58,4 +58,4 @@ Fired after a successful cut so the caller can flip its cut state.
 
 > **open**: `boolean`
 
-Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:36](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/gantt/cut-dialog/index.tsx#L36)
+Defined in: [ui/src/components/gantt/cut-dialog/index.tsx:44](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/gantt/cut-dialog/index.tsx#L44)

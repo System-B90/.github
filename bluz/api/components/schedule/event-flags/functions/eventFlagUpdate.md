@@ -8,7 +8,7 @@
 
 > **eventFlagUpdate**(`key`, `value`): `Partial`\<[`Event`](../../../../api-shared/types/event/type-aliases/Event.md)\>
 
-Defined in: [ui/src/components/schedule/event-flags.ts:61](https://github.com/System-B90/Bluz/blob/56c5d2ae92c3656a1c138795785f74f52c53a737/ui/src/components/schedule/event-flags.ts#L61)
+Defined in: [ui/src/components/schedule/event-flags.ts:61](https://github.com/System-B90/Bluz/blob/29b32f987e27f991aca78ed635c3b34fa6d4c458/ui/src/components/schedule/event-flags.ts#L61)
 
 The patch that setting `key` to `value` implies. Turning "פיקטיבי" on also
 detaches the event from Hive (#102): a fake event carries no subject,
