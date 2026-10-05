@@ -8,7 +8,7 @@
 
 > **AiTool**\<`TArgs`\> = `object`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:64](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L64)
+Defined in: [ui/src/api-server/ai/tools/types.ts:64](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L64)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-server/ai/tools/types.ts:64](https://github.com/System-B
 
 > `readonly` **danger**: [`AiToolDanger`](../../../../../api-shared/types/ai/enumerations/AiToolDanger.md)
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:80](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L80)
+Defined in: [ui/src/api-server/ai/tools/types.ts:80](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L80)
 
 How much damage the call can do. Drives the approval card's severity and
 whether a second confirmation is required.
@@ -33,7 +33,7 @@ whether a second confirmation is required.
 
 > `optional` **describe?**: (`args`, `context`) => `string`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:97](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L97)
+Defined in: [ui/src/api-server/ai/tools/types.ts:97](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L97)
 
 Describes what running this call would do, for the approval prompt.
 Only meaningful for [AiToolKind.Write](../../../../../api-shared/types/ai/enumerations/AiToolKind.md#write).
@@ -58,7 +58,7 @@ Only meaningful for [AiToolKind.Write](../../../../../api-shared/types/ai/enumer
 
 > `readonly` **description**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:73](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L73)
+Defined in: [ui/src/api-server/ai/tools/types.ts:73](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L73)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [ui/src/api-server/ai/tools/types.ts:73](https://github.com/System-B
 
 > **execute**: (`args`, `context`) => `Promise`\<[`AiToolResult`](AiToolResult.md)\>
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:106](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L106)
+Defined in: [ui/src/api-server/ai/tools/types.ts:106](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L106)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [ui/src/api-server/ai/tools/types.ts:106](https://github.com/System-
 
 > `optional` **impact?**: (`args`, `context`) => `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:104](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L104)
+Defined in: [ui/src/api-server/ai/tools/types.ts:104](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L104)
 
 The concrete consequences of approving, one Hebrew bullet each. The
 human reads these, not the JSON arguments, so they must name real
@@ -114,7 +114,7 @@ effects ("מוחק 12 אירועים") rather than restate the call.
 
 > `readonly` **kind**: [`AiToolKind`](../../../../../api-shared/types/ai/enumerations/AiToolKind.md)
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:75](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L75)
+Defined in: [ui/src/api-server/ai/tools/types.ts:75](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L75)
 
 Read tools run unattended; write tools need per-call human approval.
 
@@ -124,7 +124,7 @@ Read tools run unattended; write tools need per-call human approval.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:66](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L66)
+Defined in: [ui/src/api-server/ai/tools/types.ts:66](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L66)
 
 Wire name. Shown to the model, never to a human.
 
@@ -134,7 +134,7 @@ Wire name. Shown to the model, never to a human.
 
 > `readonly` `optional` **nextSteps?**: `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:89](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L89)
+Defined in: [ui/src/api-server/ai/tools/types.ts:89](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L89)
 
 Instructions appended to a *successful* envelope, telling the model what
 to do with the payload it just got. Tool-specific; the generic advice
@@ -146,7 +146,7 @@ to do with the payload it just got. Tool-specific; the generic advice
 
 > `readonly` **parameters**: `Record`\<`string`, `unknown`\>
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:82](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L82)
+Defined in: [ui/src/api-server/ai/tools/types.ts:82](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L82)
 
 JSON Schema for [execute](#execute)'s argument object.
 
@@ -156,7 +156,7 @@ JSON Schema for [execute](#execute)'s argument object.
 
 > `readonly` `optional` **recovery?**: `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:91](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L91)
+Defined in: [ui/src/api-server/ai/tools/types.ts:91](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L91)
 
 Recovery instructions prepended when this tool fails.
 
@@ -166,7 +166,7 @@ Recovery instructions prepended when this tool fails.
 
 > `readonly` **title**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:72](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L72)
+Defined in: [ui/src/api-server/ai/tools/types.ts:72](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L72)
 
 Friendly Hebrew label, shown wherever a human sees this tool — the
 timeline chip, the approval card, the capability list. Every tool has

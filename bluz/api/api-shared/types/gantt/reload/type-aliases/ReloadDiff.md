@@ -8,7 +8,7 @@
 
 > **ReloadDiff** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:70](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L70)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:70](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L70)
 
 Everything the reload intends to do, before anything is written.
 
@@ -18,7 +18,7 @@ Everything the reload intends to do, before anything is written.
 
 > **additions**: [`ReloadAddition`](ReloadAddition.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:71](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L71)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:71](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L71)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:71](https://github.com/Syst
 
 > **conflicts**: [`ReloadConflict`](ReloadConflict.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:74](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L74)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:74](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L74)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:74](https://github.com/Syst
 
 > **removals**: [`ReloadRemoval`](ReloadRemoval.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:73](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L73)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:73](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L73)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:73](https://github.com/Syst
 
 > **unchanged**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:76](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L76)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:76](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L76)
 
 Occurrences already matching the plan.
 
@@ -52,4 +52,4 @@ Occurrences already matching the plan.
 
 > **updates**: [`ReloadUpdate`](ReloadUpdate.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:72](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L72)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:72](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L72)

@@ -8,7 +8,7 @@
 
 > **withPersonAdded**(`event`, `personId`, `field`): [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md) \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:84](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L84)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:84](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L84)
 
 Adds a person to one of an event's person fields.
 

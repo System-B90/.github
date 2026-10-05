@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/execution/recreate/route.ts:23](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/app/api/gantt/curriculums/[id]/execution/recreate/route.ts#L23)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/execution/recreate/route.ts:23](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/gantt/curriculums/[id]/execution/recreate/route.ts#L23)
 
 POST: re-create the schedule event for one deleted cut occurrence (#682),
 from the "תכנון מול ביצוע" section of the gantt event dialog.

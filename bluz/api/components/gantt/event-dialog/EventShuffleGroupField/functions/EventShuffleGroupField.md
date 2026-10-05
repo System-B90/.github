@@ -8,7 +8,7 @@
 
 > **EventShuffleGroupField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx:94](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx#L94)
+Defined in: [ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx:94](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx#L94)
 
 Splits one event into a shuffle group: one event per selected shuffle, all
 carrying the same name, so each shuffle can hold the lesson at its own time

@@ -8,7 +8,7 @@
 
 > **InstructorCourseGroup** = `object`
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:11](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/use-grouped-instructors.ts#L11)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:11](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/use-grouped-instructors.ts#L11)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/use-grouped-instructors.ts:11](https://githu
 
 > **course**: [`Course`](../../../../api-shared/types/course/type-aliases/Course.md)
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:12](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/use-grouped-instructors.ts#L12)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:12](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/use-grouped-instructors.ts#L12)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/base/use-grouped-instructors.ts:12](https://githu
 
 > **instructors**: `CourseUser`[]
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:13](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/use-grouped-instructors.ts#L13)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:13](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/use-grouped-instructors.ts#L13)

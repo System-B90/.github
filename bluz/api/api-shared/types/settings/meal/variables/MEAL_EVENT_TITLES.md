@@ -8,6 +8,6 @@
 
 > `const` **MEAL\_EVENT\_TITLES**: `Record`\<keyof [`MealSettings`](../type-aliases/MealSettings.md), `string`\>
 
-Defined in: [ui/src/api-shared/types/settings/meal.ts:20](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/settings/meal.ts#L20)
+Defined in: [ui/src/api-shared/types/settings/meal.ts:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/settings/meal.ts#L20)
 
 Titles of the 3 auto-seeded meal events, keyed by the settings field that pins their time.

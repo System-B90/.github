@@ -8,7 +8,7 @@
 
 > **GanttCurriculumEventDayMapping** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:12](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L12)
+Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:12](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L12)
 
 The date mapping of a module.
 This interface represents an instance of a module or a specific event of a module in a curriculum, set to be at a specific day in a specific week.
@@ -22,7 +22,7 @@ This is used when zooming in and out of views.
 
 > `optional` **allottedMinutes?**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:22](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L22)
+Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:22](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L22)
 
 Minutes this event takes on this day: the single source of its
 scheduled time. 0 keeps it documented but out of the cut.
@@ -33,7 +33,7 @@ scheduled time. 0 keeps it documented but out of the cut.
 
 > **curriculumId**: [`GanttCurriculumId`](../../curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L16)
+Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L16)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.
 
 > **dayId**: [`GanttDayId`](../../day/type-aliases/GanttDayId.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:15](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L15)
+Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:15](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L15)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.
 
 > `optional` **eventId?**: [`GanttEventId`](../../shared/type-aliases/GanttEventId.md) \| `null`
 
-Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:14](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L14)
+Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:14](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L14)
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.
 
 > **moduleId**: [`GanttModuleId`](../../shared/type-aliases/GanttModuleId.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:13](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L13)
+Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:13](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L13)
 
 ***
 
@@ -65,4 +65,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.
 
 > **sortOrder**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:17](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L17)
+Defined in: [ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts:17](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/curriculum-day-module-mapping.ts#L17)

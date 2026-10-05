@@ -8,7 +8,7 @@
 
 > **buildCutPlanInput**(`args`): [`CutPlanInput`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanInput.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:340](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/cut.ts#L340)
+Defined in: [ui/src/api-server/gantt/cut.ts:340](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/cut.ts#L340)
 
 Adapt the loaded Postgres rows into the pure planner's plain-data input.
 Weeks are ordered by `number` and days within a week by `dayIndex`, matching

@@ -8,7 +8,7 @@
 
 > **HiveScheduleFeed** = `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L221)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/schedule-feed.ts#L221)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/Sys
 
 > **body**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L221)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/schedule-feed.ts#L221)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/Sys
 
 > **etag**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/schedule-feed.ts#L221)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:221](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/schedule-feed.ts#L221)

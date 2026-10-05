@@ -8,7 +8,7 @@
 
 > **BulkDayHoursBar**(): `Element` \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/BulkDayHoursBar.tsx:30](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/BulkDayHoursBar.tsx#L30)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/BulkDayHoursBar.tsx:30](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/BulkDayHoursBar.tsx#L30)
 
 Sets the working hours of every shift-selected day at once (#476). This
 replaced the per-column override inputs in the header row, which could only

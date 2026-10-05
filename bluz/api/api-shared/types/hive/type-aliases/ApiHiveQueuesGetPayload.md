@@ -8,7 +8,7 @@
 
 > **ApiHiveQueuesGetPayload** = `object`
 
-Defined in: [ui/src/api-shared/types/hive.ts:52](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive.ts#L52)
+Defined in: [ui/src/api-shared/types/hive.ts:52](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive.ts#L52)
 
 Queues of a single Hive module — the queues a lesson rule may point at.
 
@@ -18,4 +18,4 @@ Queues of a single Hive module — the queues a lesson rule may point at.
 
 > **module**: `number`
 
-Defined in: [ui/src/api-shared/types/hive.ts:52](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive.ts#L52)
+Defined in: [ui/src/api-shared/types/hive.ts:52](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive.ts#L52)

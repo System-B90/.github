@@ -8,7 +8,7 @@
 
 > **AiBenchmarkJob** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:108](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L108)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:108](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L108)
 
 Server-side state of a user's background self-test run.
 
@@ -18,7 +18,7 @@ Server-side state of a user's background self-test run.
 
 > `optional` **cases?**: [`AiBenchmarkLiveCase`](AiBenchmarkLiveCase.md)[]
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:114](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L114)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:114](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L114)
 
 Per-case progress; present from the moment a run starts.
 
@@ -28,7 +28,7 @@ Per-case progress; present from the moment a run starts.
 
 > `optional` **error?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:116](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L116)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:116](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L116)
 
 Readable failure, when status is Failed.
 
@@ -38,7 +38,7 @@ Readable failure, when status is Failed.
 
 > `optional` **result?**: [`AiBenchmarkResult`](AiBenchmarkResult.md)
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:112](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L112)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:112](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L112)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:112](https://github.com/Sys
 
 > `optional` **startedAt?**: `number`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:111](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L111)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:111](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L111)
 
 Epoch ms the run began; absent while idle.
 
@@ -56,4 +56,4 @@ Epoch ms the run began; absent while idle.
 
 > **status**: [`AiBenchmarkJobStatus`](../enumerations/AiBenchmarkJobStatus.md)
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:109](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L109)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:109](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L109)

@@ -8,7 +8,7 @@
 
 > `const` **AI\_MAX\_TOOL\_ITERATIONS**: `8` = `8`
 
-Defined in: [ui/src/api-shared/types/ai.ts:251](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai.ts#L251)
+Defined in: [ui/src/api-shared/types/ai.ts:251](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai.ts#L251)
 
 Ceiling on tool round-trips inside one turn. A model that loops on a failing
 tool would otherwise bill indefinitely.

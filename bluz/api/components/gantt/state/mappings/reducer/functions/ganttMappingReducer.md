@@ -8,7 +8,7 @@
 
 > **ganttMappingReducer**(`state`, `action`): [`GanttMappingState`](../../types/type-aliases/GanttMappingState.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/reducer.ts:11](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/mappings/reducer.ts#L11)
+Defined in: [ui/src/components/gantt/state/mappings/reducer.ts:11](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/mappings/reducer.ts#L11)
 
 High-Performance Reducer
 

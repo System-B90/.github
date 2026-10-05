@@ -8,7 +8,7 @@
 
 > **resolveIterationDb**(`iterationId?`): `Promise`\<[`DatabaseController`](../classes/DatabaseController.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:533](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/mongo-db-controller.ts#L533)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:533](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/mongo-db-controller.ts#L533)
 
 Resolve the controller for a given iteration. When `iterationId` is omitted the
 current iteration is used (backward compatible with single-iteration callers).

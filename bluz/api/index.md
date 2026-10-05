@@ -497,6 +497,7 @@
 - [components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-rows](components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-rows/index.md)
 - [components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-selection](components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-selection/index.md)
 - [components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GridContextMenu](components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GridContextMenu/index.md)
+- [components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/HoursCourseSelect](components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/HoursCourseSelect/index.md)
 - [components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/keyboard-drag](components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/keyboard-drag/index.md)
 - [components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/module-drag](components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/module-drag/index.md)
 - [components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/module-span](components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/module-span/index.md)

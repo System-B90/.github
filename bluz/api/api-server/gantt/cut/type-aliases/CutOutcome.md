@@ -8,7 +8,7 @@
 
 > **CutOutcome** = \{ `error`: [`ApiCurriculumCutError`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutError.md); `ok`: `false`; \} \| \{ `ok`: `true`; `result`: [`ApiCurriculumCutResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutResponse.md); \}
 
-Defined in: [ui/src/api-server/gantt/cut.ts:86](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/cut.ts#L86)
+Defined in: [ui/src/api-server/gantt/cut.ts:86](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/cut.ts#L86)
 
 Server orchestration for the curriculum → schedule cut ("גזירה ללו"ז", #118).
 Consumes the pure planner (#117) and writes the resulting occurrences into the

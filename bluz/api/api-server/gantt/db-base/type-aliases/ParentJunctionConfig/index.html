@@ -1068,13 +1068,13 @@
 <blockquote>
 <p><strong>ParentJunctionConfig</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-base.ts#L168">ui/src/api-server/gantt/db-base.ts:168</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-base.ts#L168">ui/src/api-server/gantt/db-base.ts:168</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="cardinality">cardinality<a class="headerlink" href="#cardinality" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>cardinality</strong>: <code>"many"</code> | <code>"one"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-base.ts#L195">ui/src/api-server/gantt/db-base.ts:195</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-base.ts#L195">ui/src/api-server/gantt/db-base.ts:195</a></p>
 <p>How many parents a child may have. Every junction table has a composite
 <code>(parent, child)</code> primary key, so the schema permits many everywhere;
 this records the <em>domain</em> rule the schema doesn't express.</p>
@@ -1088,7 +1088,7 @@ this records the <em>domain</em> rule the schema doesn't express.</p>
 <blockquote>
 <p><code>optional</code> <strong>nextSortOrder?</strong>: (<code>parentId</code>) =&gt; <code>SQL</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-base.ts#L201">ui/src/api-server/gantt/db-base.ts:201</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-base.ts#L201">ui/src/api-server/gantt/db-base.ts:201</a></p>
 <p><code>sort_order</code> expression for a child appended under <code>parentId</code>. Set on
 ordered junctions so a new child lands last instead of on the column
 default (0), which put it first after a reload (#761).</p>
@@ -1102,7 +1102,7 @@ default (0), which put it first after a reload (#761).</p>
 <blockquote>
 <p><code>optional</code> <strong>outputKey?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-base.ts#L183">ui/src/api-server/gantt/db-base.ts:183</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-base.ts#L183">ui/src/api-server/gantt/db-base.ts:183</a></p>
 <p>Field name the parent is surfaced under on read. Defaults to
 <code>parentKey</code>; set it when the read shape differs, e.g. a <code>"many"</code>
 junction that wants a plural name for its array.</p>
@@ -1111,7 +1111,7 @@ junction that wants a plural name for its array.</p>
 <blockquote>
 <p><strong>parentKey</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-base.ts#L176">ui/src/api-server/gantt/db-base.ts:176</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-base.ts#L176">ui/src/api-server/gantt/db-base.ts:176</a></p>
 <p>Column on the junction table holding the parent id. Doubles as the key
 <code>createNewItem</code> reads the parent out of the create payload, so it must
 keep matching the payload field — use <code>outputKey</code> to surface it under a
@@ -1121,13 +1121,13 @@ different name.</p>
 <blockquote>
 <p><strong>selfKey</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-base.ts#L177">ui/src/api-server/gantt/db-base.ts:177</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-base.ts#L177">ui/src/api-server/gantt/db-base.ts:177</a></p>
 <hr />
 <h3 id="table">table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>table</strong>: <code>PgTableWithColumns</code>\&lt;<code>any</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/db-base.ts#L169">ui/src/api-server/gantt/db-base.ts:169</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-base.ts#L169">ui/src/api-server/gantt/db-base.ts:169</a></p>
 
 
 

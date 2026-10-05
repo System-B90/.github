@@ -8,7 +8,7 @@
 
 > `const` **get**: (`name`, `options?`, `controller`) => `Promise`\<[`Setting`](../../../../../api-shared/types/settings/settings/type-aliases/Setting.md) \| `null`\> = `getDbSetting`
 
-Defined in: [ui/src/api-server/db-settings.ts:154](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/db-settings.ts#L154)
+Defined in: [ui/src/api-server/db-settings.ts:154](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/db-settings.ts#L154)
 
 ## Parameters
 

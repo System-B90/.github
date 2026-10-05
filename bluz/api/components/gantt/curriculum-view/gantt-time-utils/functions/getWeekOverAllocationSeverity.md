@@ -8,7 +8,7 @@
 
 > **getWeekOverAllocationSeverity**(`days`): `"error"` \| `"warning"` \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:291](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L291)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:291](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L291)
 
 Severity of a week's over-allocation, for the weeks-view week header (#467).
 

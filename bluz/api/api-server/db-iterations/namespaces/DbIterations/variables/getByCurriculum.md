@@ -8,7 +8,7 @@
 
 > `const` **getByCurriculum**: (`curriculumId`) => `Promise`\<[`Iteration`](../../../../../api-shared/types/iteration/type-aliases/Iteration.md) \| `null`\> = `getIterationByCurriculum`
 
-Defined in: [ui/src/api-server/db-iterations.ts:380](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/db-iterations.ts#L380)
+Defined in: [ui/src/api-server/db-iterations.ts:380](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/db-iterations.ts#L380)
 
 Find the iteration linked to a given Postgres curriculum, i.e. the iteration
 whose `ganttCurriculumId` equals `curriculumId`. Used by the curriculum cut

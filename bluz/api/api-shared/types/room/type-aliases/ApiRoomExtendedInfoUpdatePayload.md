@@ -8,7 +8,7 @@
 
 > **ApiRoomExtendedInfoUpdatePayload** = `object`
 
-Defined in: [ui/src/api-shared/types/room.ts:119](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/room.ts#L119)
+Defined in: [ui/src/api-shared/types/room.ts:119](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/room.ts#L119)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/room.ts:119](https://github.com/System-B90/
 
 > **extendedInfo**: [`RoomExtendedInfo`](RoomExtendedInfo.md)
 
-Defined in: [ui/src/api-shared/types/room.ts:122](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/room.ts#L122)
+Defined in: [ui/src/api-shared/types/room.ts:122](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/room.ts#L122)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/room.ts:122](https://github.com/System-B90/
 
 > **roomId**: [`RoomId`](RoomId.md)
 
-Defined in: [ui/src/api-shared/types/room.ts:120](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/room.ts#L120)
+Defined in: [ui/src/api-shared/types/room.ts:120](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/room.ts#L120)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/room.ts:120](https://github.com/System-B90/
 
 > **roomSource**: [`RoomSource`](../enumerations/RoomSource.md)
 
-Defined in: [ui/src/api-shared/types/room.ts:121](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/room.ts#L121)
+Defined in: [ui/src/api-shared/types/room.ts:121](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/room.ts#L121)

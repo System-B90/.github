@@ -6,12 +6,13 @@
 
 # Function: sumStudentMinutes()
 
-> **sumStudentMinutes**(`byDay`, `dayIds`): `number`
+> **sumStudentMinutes**(`byDay`, `dayIds`, `pathId?`): `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:480](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/student-load.ts#L480)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:481](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/student-load.ts#L481)
 
 Scheduled minutes over a set of days: each path's total, and the busiest
 path's. A student's week is the sum of their days, not of the busiest days.
+With `pathId`, that one path's total instead of the busiest (#899).
 
 ## Parameters
 
@@ -22,6 +23,10 @@ path's. A student's week is the sum of their days, not of the busiest days.
 ### dayIds
 
 `Iterable`\<`string`\>
+
+### pathId?
+
+`string` \| `null`
 
 ## Returns
 

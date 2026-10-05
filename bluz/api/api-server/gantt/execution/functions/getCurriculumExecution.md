@@ -8,7 +8,7 @@
 
 > **getCurriculumExecution**(`curriculumId`): `Promise`\<[`ApiCurriculumExecutionResponse`](../../../../api-shared/types/gantt/execution/type-aliases/ApiCurriculumExecutionResponse.md)\>
 
-Defined in: [ui/src/api-server/gantt/execution.ts:48](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/execution.ts#L48)
+Defined in: [ui/src/api-server/gantt/execution.ts:48](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/execution.ts#L48)
 
 Compute the plan-vs-execution comparison for a curriculum. Returns
 `{ events: {} }` when there is no linked iteration or the curriculum was

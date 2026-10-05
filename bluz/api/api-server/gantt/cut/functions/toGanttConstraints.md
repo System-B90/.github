@@ -8,7 +8,7 @@
 
 > **toGanttConstraints**(`rows`): [`GanttConstraint`](../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md)[]
 
-Defined in: [ui/src/api-server/gantt/cut.ts:128](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/cut.ts#L128)
+Defined in: [ui/src/api-server/gantt/cut.ts:128](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/cut.ts#L128)
 
 Adapt stored constraint rows into the domain `GanttConstraint` union the
 solver consumes. The table is a single flat shape covering both variants, so

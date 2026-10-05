@@ -6,7 +6,7 @@
 
 # Class: HiveClient
 
-Defined in: [ui/src/api-server/hive/client.ts:24](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L24)
+Defined in: [ui/src/api-server/hive/client.ts:24](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L24)
 
 Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
@@ -53,7 +53,7 @@ Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:173
 
 > **getClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:31](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L31)
+Defined in: [ui/src/api-server/hive/client.ts:31](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L31)
 
 Student groups change rarely and Bluz never writes them, yet every cut,
 lesson sync and feed fetches them: share one request per Hive instance
@@ -74,7 +74,7 @@ the in-flight request; a failure is dropped so the next call retries.
 
 > **getModuleQueues**(`moduleId`): `Promise`\<`Queue`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:70](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L70)
+Defined in: [ui/src/api-server/hive/client.ts:70](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L70)
 
 The queues of one Hive module — the only queues a lesson rule may point
 at (Hive rejects user queues on a rule).
@@ -95,7 +95,7 @@ at (Hive rejects user queues on a rule).
 
 > **getRooms**(): `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L58)
+Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L58)
 
 #### Returns
 
@@ -107,7 +107,7 @@ Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/
 
 > **refreshClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:53](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L53)
+Defined in: [ui/src/api-server/hive/client.ts:53](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L53)
 
 Drops this Hive's cached student groups and fetches them again, for a
 caller that just missed a group that may have been created since the

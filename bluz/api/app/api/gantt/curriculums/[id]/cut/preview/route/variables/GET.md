@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/preview/route.ts:20](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/app/api/gantt/curriculums/[id]/cut/preview/route.ts#L20)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/preview/route.ts:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/gantt/curriculums/[id]/cut/preview/route.ts#L20)
 
 GET: dry-run cut preview — the planner's dated, timed occurrences for this
 curriculum, with no gating and no writes. Used by the bluz CLI

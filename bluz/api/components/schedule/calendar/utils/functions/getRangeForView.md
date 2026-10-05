@@ -8,7 +8,7 @@
 
 > **getRangeForView**(`newDate`, `view`): `DateRange`
 
-Defined in: [ui/src/components/schedule/calendar/utils.ts:28](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/utils.ts#L28)
+Defined in: [ui/src/components/schedule/calendar/utils.ts:28](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/utils.ts#L28)
 
 The instants a view spans, for range-scoped fetches and the ICS export.
 

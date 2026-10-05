@@ -8,7 +8,7 @@
 
 > `const` **get**: (`roomId?`, `roomSource?`, `from?`, `to?`, `controller`) => `Promise`\<[`DbReservation`](../../../../../api-shared/types/reservation/type-aliases/DbReservation.md)[]\> = `getReservations`
 
-Defined in: [ui/src/api-server/db-reservations.ts:90](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/db-reservations.ts#L90)
+Defined in: [ui/src/api-server/db-reservations.ts:90](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/db-reservations.ts#L90)
 
 ## Parameters
 

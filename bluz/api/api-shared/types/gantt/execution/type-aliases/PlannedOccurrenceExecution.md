@@ -8,7 +8,7 @@
 
 > **PlannedOccurrenceExecution** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:12](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/execution.ts#L12)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:12](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/execution.ts#L12)
 
 Planned side of an occurrence: what the gantt says should happen.
 
@@ -18,7 +18,7 @@ Planned side of an occurrence: what the gantt says should happen.
 
 > **durationMinutes**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:17](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/execution.ts#L17)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:17](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/execution.ts#L17)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/gantt/execution.ts:17](https://github.com/S
 
 > **endTime**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/execution.ts#L16)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/execution.ts#L16)
 
 ISO datetime of the planned end.
 
@@ -36,7 +36,7 @@ ISO datetime of the planned end.
 
 > **instructorIds**: `number`[]
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:18](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/execution.ts#L18)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:18](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/execution.ts#L18)
 
 ***
 
@@ -44,6 +44,6 @@ Defined in: [ui/src/api-shared/types/gantt/execution.ts:18](https://github.com/S
 
 > **startTime**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:14](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/execution.ts#L14)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:14](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/execution.ts#L14)
 
 ISO datetime of the planned start.

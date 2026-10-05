@@ -8,7 +8,7 @@
 
 > **ApiAiModelsResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-models.ts#L16)
+Defined in: [ui/src/api-shared/types/ai-models.ts:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-models.ts#L16)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/ai-models.ts:16](https://github.com/System-
 
 > **defaultModel**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:20](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-models.ts#L20)
+Defined in: [ui/src/api-shared/types/ai-models.ts:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-models.ts#L20)
 
 The server's configured `AI_MODEL`.
 
@@ -26,7 +26,7 @@ The server's configured `AI_MODEL`.
 
 > `optional` **error?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:22](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-models.ts#L22)
+Defined in: [ui/src/api-shared/types/ai-models.ts:22](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-models.ts#L22)
 
 Why the list is empty, when listing failed.
 
@@ -36,6 +36,6 @@ Why the list is empty, when listing failed.
 
 > **models**: [`AiModelInfo`](AiModelInfo.md)[]
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:18](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-models.ts#L18)
+Defined in: [ui/src/api-shared/types/ai-models.ts:18](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-models.ts#L18)
 
 Empty when the backend cannot list models; the UI falls back to free text.

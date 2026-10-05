@@ -20,3 +20,4 @@
 ## Functions
 
 - [createViewerFlag](functions/createViewerFlag.md)
+- [createViewerSetting](functions/createViewerSetting.md)

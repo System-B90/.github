@@ -8,7 +8,7 @@
 
 > **hasPeople**(`event`): `boolean`
 
-Defined in: [ui/src/api-server/ai/tools/list-row.ts:38](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/list-row.ts#L38)
+Defined in: [ui/src/api-server/ai/tools/list-row.ts:38](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/list-row.ts#L38)
 
 Drops events without an instructor or lecturer, for `withPeople`.
 

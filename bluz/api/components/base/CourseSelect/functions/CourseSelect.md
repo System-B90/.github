@@ -8,7 +8,7 @@
 
 > **CourseSelect**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/CourseSelect.tsx:47](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/CourseSelect.tsx#L47)
+Defined in: [ui/src/components/base/CourseSelect.tsx:47](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/CourseSelect.tsx#L47)
 
 Course picker listing the course tree nested, with a search box and
 arrow-key navigation. Single or multiple selection.

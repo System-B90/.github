@@ -8,7 +8,7 @@
 
 > **GET**(`req`, `context`): `Promise`\<`any`\>
 
-Defined in: [ui/src/app/api/auth/\[...nextauth\]/route.ts:8](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/app/api/auth/[...nextauth]/route.ts#L8)
+Defined in: [ui/src/app/api/auth/\[...nextauth\]/route.ts:8](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/auth/[...nextauth]/route.ts#L8)
 
 ## Parameters
 

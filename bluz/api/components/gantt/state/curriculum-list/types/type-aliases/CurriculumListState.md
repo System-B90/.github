@@ -8,7 +8,7 @@
 
 > **CurriculumListState** = `object`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:10](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/curriculum-list/types.ts#L10)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:10](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/curriculum-list/types.ts#L10)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:10](https://
 
 > **curriculums**: `Record`\<[`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md), [`GanttCurriculumDocument`](../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md)\>
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:11](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/curriculum-list/types.ts#L11)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:11](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/curriculum-list/types.ts#L11)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:11](https://
 
 > **error**: `null` \| `string`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:13](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/curriculum-list/types.ts#L13)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:13](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/curriculum-list/types.ts#L13)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:13](https://
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:12](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/curriculum-list/types.ts#L12)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:12](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/curriculum-list/types.ts#L12)

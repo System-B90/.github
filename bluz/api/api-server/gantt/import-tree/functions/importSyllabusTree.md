@@ -8,7 +8,7 @@
 
 > **importSyllabusTree**(`tx`, `source`, `options`): `Promise`\<`string`\>
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:88](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/import-tree.ts#L88)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:88](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/import-tree.ts#L88)
 
 Copies `source` (an exported syllabus tree) under `curriculumId` with fresh
 ids. Returns the new syllabus id.

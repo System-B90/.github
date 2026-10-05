@@ -8,7 +8,7 @@
 
 > **ContextMenuTarget** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:7](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L7)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:7](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L7)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-men
 
 > **eventIds**: [`EventId`](../../../../../api-shared/types/event/type-aliases/EventId.md)[]
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:15](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L15)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:15](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L15)
 
 Ids only, never the events themselves: the menu re-resolves them against
 live state on every render, so toggling a marker with the menu still open
@@ -28,7 +28,7 @@ redraws its own checkmark instead of showing a snapshot taken at open.
 
 > **position**: `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:9](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L9)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:9](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L9)
 
 Viewport coordinates of the click that opened the menu.
 

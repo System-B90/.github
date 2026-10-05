@@ -8,7 +8,7 @@
 
 > **qualifiedEntityName**(`type`, `id`, `state`): `string`
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:141](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/models/constraint.ts#L141)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:141](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/models/constraint.ts#L141)
 
 Fully qualified name of a constraint endpoint: "syllabus › module" for a
 module, "syllabus › module › event" for an event. Missing ancestors are

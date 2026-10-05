@@ -8,7 +8,7 @@
 
 > **ReloadUpdate** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:28](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L28)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:28](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L28)
 
 An existing cut event whose gantt-owned fields drifted from the new plan.
 
@@ -18,7 +18,7 @@ An existing cut event whose gantt-owned fields drifted from the new plan.
 
 > **changes**: [`EventFieldChange`](../../../event-history/type-aliases/EventFieldChange.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:33](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L33)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:33](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L33)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:33](https://github.com/Syst
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:29](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L29)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:29](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L29)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:29](https://github.com/Syst
 
 > **ganttEventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:30](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L30)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:30](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L30)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:30](https://github.com/Syst
 
 > **occurrenceDate**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:31](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L31)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:31](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L31)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:31](https://github.com/Syst
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:32](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/gantt/reload.ts#L32)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:32](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/reload.ts#L32)

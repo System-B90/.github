@@ -8,7 +8,7 @@
 
 > **DropWarningSources** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:18](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L18)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:18](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L18)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **constraints**: `Readonly`\<`Record`\<`string`, [`GanttConstraint`](../../../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md) \| `undefined`\>\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:19](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L19)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:19](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L19)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **days**: `Readonly`\<`Record`\<`string`, \{ `dayIndex`: [`GanttDayIndex`](../../../../../../../../api-shared/types/gantt/models/day/enumerations/GanttDayIndex.md); \} \| `undefined`\>\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:22](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L22)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:22](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L22)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **eventMappings**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:23](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L23)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:23](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L23)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **events**: `Readonly`\<`Record`\<`string`, `Constrained`\>\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:21](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L21)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:21](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L21)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **linearDays**: `ReadonlyArray`\<`string`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:24](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L24)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:24](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L24)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **modules**: `Readonly`\<`Record`\<`string`, `Constrained` & `object` \| `undefined`\>\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:20](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L20)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L20)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **planShift**: (`moduleId`, `deltaDays`) => `object`[] \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:26](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L26)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:26](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L26)
 
 Null when the shift would push an event off the timeline.
 

@@ -8,6 +8,6 @@
 
 > `const` **AI\_MAX\_MESSAGES**: `60` = `60`
 
-Defined in: [ui/src/api-shared/types/ai.ts:242](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai.ts#L242)
+Defined in: [ui/src/api-shared/types/ai.ts:242](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai.ts#L242)
 
 Message cap per request — a guard against an unbounded prompt bill.

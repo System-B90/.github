@@ -8,7 +8,7 @@
 
 > **ApiGoogleCalendarSyncResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:84](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/google-calendar.ts#L84)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:84](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L84)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:84](https://github.com/S
 
 > **pulled**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:87](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/google-calendar.ts#L87)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:87](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L87)
 
 Google free/busy blocks found.
 
@@ -26,7 +26,7 @@ Google free/busy blocks found.
 
 > **pushed**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:85](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/google-calendar.ts#L85)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:85](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L85)
 
 ***
 
@@ -34,6 +34,6 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:85](https://github.com/S
 
 > **updated**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:89](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/google-calendar.ts#L89)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:89](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L89)
 
 Bluz events updated from Google-side edits.

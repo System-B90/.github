@@ -8,4 +8,4 @@
 
 > `const` **getEventHistoryTool**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`object` & [`PageArgs`](../../page/type-aliases/PageArgs.md)\>
 
-Defined in: [ui/src/api-server/ai/tools/calendar.ts:268](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/calendar.ts#L268)
+Defined in: [ui/src/api-server/ai/tools/calendar.ts:268](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/calendar.ts#L268)

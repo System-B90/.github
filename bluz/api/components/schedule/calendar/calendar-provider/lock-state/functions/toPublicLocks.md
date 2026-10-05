@@ -8,7 +8,7 @@
 
 > **toPublicLocks**(`state`): `Record`\<[`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md), [`EventLockMessage`](../../../../../../api-shared/types/type-aliases/EventLockMessage.md)\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:130](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L130)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:130](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L130)
 
 Project the internal lock state down to the public map consumers read,
 dropping the bookkeeping expiry timestamps.

@@ -8,7 +8,7 @@
 
 > **EmptyValuePlaceholder**(): `Element`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/DeletedItemPlaceholder.tsx:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/offline-dialogs/push-updates-dialog/DeletedItemPlaceholder.tsx#L16)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/DeletedItemPlaceholder.tsx:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/offline-dialogs/push-updates-dialog/DeletedItemPlaceholder.tsx#L16)
 
 The version exists but simply carries no value for this field — an optional
 field like notes or lecturers that one side never set. Distinct from

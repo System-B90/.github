@@ -8,7 +8,7 @@
 
 > **getStaffSession**(): `Promise`\<`AuthSessionUser` & `object` \| `null`\>
 
-Defined in: [ui/src/api-server/session-user.ts:38](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/session-user.ts#L38)
+Defined in: [ui/src/api-server/session-user.ts:38](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/session-user.ts#L38)
 
 Non-throwing clearance check for *page* (RSC) code, where a throw becomes a
 500 rather than a 403. Callers redirect on `false`. Route handlers must use

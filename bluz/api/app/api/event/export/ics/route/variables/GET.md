@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/event/export/ics/route.ts:12](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/app/api/event/export/ics/route.ts#L12)
+Defined in: [ui/src/app/api/event/export/ics/route.ts:12](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/event/export/ics/route.ts#L12)
 
 GET /api/event/export/ics?sd=<ISO>&ed=<ISO> — exports the events in range as an ICS calendar.
 

@@ -8,7 +8,7 @@
 
 > **buildScheduleEvent**(`occurrence`, `ganttEvent`, `courseIds`, `moduleHiveIds`, `hiveModuleSubjectById`, `curriculumId`): [`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:522](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/cut.ts#L522)
+Defined in: [ui/src/api-server/gantt/cut.ts:522](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/cut.ts#L522)
 
 Build a single schedule-event document from a planned occurrence and its
 source gantt event. Hive linkage is copied when present on the event

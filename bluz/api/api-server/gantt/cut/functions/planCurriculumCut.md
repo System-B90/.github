@@ -8,7 +8,7 @@
 
 > **planCurriculumCut**(`curriculumId`, `options?`): `Promise`\<\{ `error`: [`ApiCurriculumCutError`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutError.md); `ok`: `false`; \} \| \{ `ok`: `true`; `result`: [`ApiCurriculumCutPlanResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPlanResponse.md); \}\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1107](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/cut.ts#L1107)
+Defined in: [ui/src/api-server/gantt/cut.ts:1107](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/cut.ts#L1107)
 
 The "plan" half of the plan-then-confirm cut flow.
 

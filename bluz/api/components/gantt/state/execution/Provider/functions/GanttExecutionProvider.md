@@ -8,7 +8,7 @@
 
 > **GanttExecutionProvider**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/state/execution/Provider.tsx:43](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/execution/Provider.tsx#L43)
+Defined in: [ui/src/components/gantt/state/execution/Provider.tsx:43](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/execution/Provider.tsx#L43)
 
 Read-only תכנון מול ביצוע state (#121): loads the plan-vs-actual comparison
 for the curriculum once and exposes a manual refresh (the event dialog

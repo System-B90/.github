@@ -8,7 +8,7 @@
 
 > **StudentViewSettings** = `object`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:17](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/settings/student-view.ts#L17)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:17](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/settings/student-view.ts#L17)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/settings/student-view.ts:17](https://github
 
 > **eventNameMode**: [`StudentEventNameMode`](../enumerations/StudentEventNameMode.md)
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:18](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/settings/student-view.ts#L18)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:18](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/settings/student-view.ts#L18)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/settings/student-view.ts:18](https://github
 
 > **typeLabels**: `Partial`\<`Record`\<[`EventType`](../../../event/enumerations/EventType.md), `string`\>\>
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:23](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/settings/student-view.ts#L23)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:23](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/settings/student-view.ts#L23)
 
 Per-type label placed before the subject symbol. Missing types fall back
 to `DEFAULT_STUDENT_TYPE_LABELS`.

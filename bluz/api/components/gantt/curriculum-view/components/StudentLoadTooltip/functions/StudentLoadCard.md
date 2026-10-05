@@ -8,7 +8,7 @@
 
 > **StudentLoadCard**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/StudentLoadTooltip.tsx:172](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/components/StudentLoadTooltip.tsx#L172)
+Defined in: [ui/src/components/gantt/curriculum-view/components/StudentLoadTooltip.tsx:172](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/components/StudentLoadTooltip.tsx#L172)
 
 The card: the day's time, then each student path's, then what is wrong.
 

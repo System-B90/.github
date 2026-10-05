@@ -947,6 +947,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pathid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pathId?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -988,16 +999,19 @@
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../">components/gantt/curriculum-view/student-load</a> / sumStudentMinutes</p>
 <h1 id="function-sumstudentminutes">Function: sumStudentMinutes()<a class="headerlink" href="#function-sumstudentminutes" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>sumStudentMinutes</strong>(<code>byDay</code>, <code>dayIds</code>): <code>number</code></p>
+<p><strong>sumStudentMinutes</strong>(<code>byDay</code>, <code>dayIds</code>, <code>pathId?</code>): <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/student-load.ts#L480">ui/src/components/gantt/curriculum-view/student-load.ts:480</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/student-load.ts#L481">ui/src/components/gantt/curriculum-view/student-load.ts:481</a></p>
 <p>Scheduled minutes over a set of days: each path's total, and the busiest
-path's. A student's week is the sum of their days, not of the busiest days.</p>
+path's. A student's week is the sum of their days, not of the busiest days.
+With <code>pathId</code>, that one path's total instead of the busiest (#899).</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="byday">byDay<a class="headerlink" href="#byday" title="Permanent link">&para;</a></h3>
 <p><code>Record</code>\&lt;<a href="../../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDayId/"><code>GanttDayId</code></a>, <a href="../../type-aliases/DayStudentLoad/"><code>DayStudentLoad</code></a>&gt;</p>
 <h3 id="dayids">dayIds<a class="headerlink" href="#dayids" title="Permanent link">&para;</a></h3>
 <p><code>Iterable</code>\&lt;<code>string</code>&gt;</p>
+<h3 id="pathid">pathId?<a class="headerlink" href="#pathid" title="Permanent link">&para;</a></h3>
+<p><code>string</code> | <code>null</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>number</code></p>
 

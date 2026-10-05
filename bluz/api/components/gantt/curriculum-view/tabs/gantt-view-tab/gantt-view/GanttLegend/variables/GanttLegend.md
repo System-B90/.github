@@ -8,7 +8,7 @@
 
 > `const` **GanttLegend**: `React.FC`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttLegend.tsx:32](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttLegend.tsx#L32)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttLegend.tsx:32](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttLegend.tsx#L32)
 
 What the timeline's marks mean (#812, #822): the week ⚠, the amber dot, the
 tinted day column and the unlabelled `X / Y` hours pair.

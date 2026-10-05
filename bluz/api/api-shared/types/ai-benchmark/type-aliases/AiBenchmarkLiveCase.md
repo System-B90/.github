@@ -8,7 +8,7 @@
 
 > **AiBenchmarkLiveCase** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:66](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L66)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:66](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L66)
 
 One case as the run progresses, for the live view.
 
@@ -18,7 +18,7 @@ One case as the run progresses, for the live view.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:67](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L67)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:67](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L67)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:67](https://github.com/Syst
 
 > **prompt**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:69](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L69)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:69](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L69)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:69](https://github.com/Syst
 
 > `optional` **result?**: [`AiBenchmarkCase`](AiBenchmarkCase.md)
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:74](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L74)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:74](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L74)
 
 Set once the case is done.
 
@@ -44,7 +44,7 @@ Set once the case is done.
 
 > **state**: [`AiBenchmarkCaseState`](../enumerations/AiBenchmarkCaseState.md)
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:70](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L70)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:70](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L70)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:70](https://github.com/Syst
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:68](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L68)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:68](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L68)
 
 ***
 
@@ -60,6 +60,6 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:68](https://github.com/Syst
 
 > **toolCalls**: `string`[]
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:72](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/ai-benchmark.ts#L72)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:72](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/ai-benchmark.ts#L72)
 
 Tools called so far; grows while the case runs.

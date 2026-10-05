@@ -8,7 +8,7 @@
 
 > **HiveLessonActivation** = `object`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:20](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive-activation.ts#L20)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive-activation.ts#L20)
 
 One recorded queue opening: the activator pushed `lessonId` onto Hive class
 `hiveClassId` because event `eventId` started at `occurrenceStart`.
@@ -24,7 +24,7 @@ tick later — loses the insert and does nothing. Moving an event changes
 
 > **activatedAt**: `Date`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:27](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive-activation.ts#L27)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:27](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive-activation.ts#L27)
 
 When Hive accepted the assignment.
 
@@ -34,7 +34,7 @@ When Hive accepted the assignment.
 
 > **eventId**: [`EventId`](../../event/type-aliases/EventId.md)
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:21](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive-activation.ts#L21)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:21](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive-activation.ts#L21)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/types/hive-activation.ts:21](https://github.com/S
 
 > **hiveClassId**: `number`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:22](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive-activation.ts#L22)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:22](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive-activation.ts#L22)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-shared/types/hive-activation.ts:22](https://github.com/S
 
 > **lessonId**: [`HiveLessonId`](../../hive/type-aliases/HiveLessonId.md)
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:25](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive-activation.ts#L25)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:25](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive-activation.ts#L25)
 
 ***
 
@@ -58,6 +58,6 @@ Defined in: [ui/src/api-shared/types/hive-activation.ts:25](https://github.com/S
 
 > **occurrenceStart**: `string`
 
-Defined in: [ui/src/api-shared/types/hive-activation.ts:24](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/hive-activation.ts#L24)
+Defined in: [ui/src/api-shared/types/hive-activation.ts:24](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/hive-activation.ts#L24)
 
 ISO timestamp of the event start this activation belongs to.

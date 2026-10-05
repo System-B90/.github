@@ -1085,14 +1085,14 @@
 <blockquote>
 <p><strong>AiToolContext</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L33">ui/src/api-server/ai/tools/types.ts:33</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L33">ui/src/api-server/ai/tools/types.ts:33</a></p>
 <p>Everything a tool may know about the session it runs in.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="actor">actor<a class="headerlink" href="#actor" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>actor</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L44">ui/src/api-server/ai/tools/types.ts:44</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L44">ui/src/api-server/ai/tools/types.ts:44</a></p>
 <p>The signed-in staff member, for write attribution.</p>
 <h4 id="displayname">displayName<a class="headerlink" href="#displayname" title="Permanent link">&para;</a></h4>
 <blockquote>
@@ -1107,21 +1107,21 @@
 <blockquote>
 <p><code>optional</code> <strong>curriculumId?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L37">ui/src/api-server/ai/tools/types.ts:37</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L37">ui/src/api-server/ai/tools/types.ts:37</a></p>
 <p>Curriculum the user is looking at, when on a Gantt screen.</p>
 <hr />
 <h3 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>iterationId?</strong>: <a href="../../../../../../api-shared/types/iteration/type-aliases/IterationId/"><code>IterationId</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L35">ui/src/api-server/ai/tools/types.ts:35</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L35">ui/src/api-server/ai/tools/types.ts:35</a></p>
 <p>Target iteration; undefined means the current one.</p>
 <hr />
 <h3 id="now">now?<a class="headerlink" href="#now" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>now?</strong>: <code>Date</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L42">ui/src/api-server/ai/tools/types.ts:42</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L42">ui/src/api-server/ai/tools/types.ts:42</a></p>
 <p>The moment the turn treats as "now". Defaults to the wall clock; the
 self-test pins it so "Tuesday" resolves to the same date every run.</p>
 <hr />
@@ -1129,7 +1129,7 @@ self-test pins it so "Tuesday" resolves to the same date every run.</p>
 <blockquote>
 <p><strong>readController</strong>: () =&gt; <code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L46">ui/src/api-server/ai/tools/types.ts:46</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L46">ui/src/api-server/ai/tools/types.ts:46</a></p>
 <p>Calendar store scoped to <a href="#iterationid">iterationId</a>, resolved lazily.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>
@@ -1138,7 +1138,7 @@ self-test pins it so "Tuesday" resolves to the same date every run.</p>
 <blockquote>
 <p><strong>writeController</strong>: () =&gt; <code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/types.ts#L48">ui/src/api-server/ai/tools/types.ts:48</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/types.ts#L48">ui/src/api-server/ai/tools/types.ts:48</a></p>
 <p>Same, but refuses a past iteration. Write tools use this one.</p>
 <h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a>&gt;</p>

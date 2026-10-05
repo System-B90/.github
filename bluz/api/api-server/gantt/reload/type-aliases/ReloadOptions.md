@@ -8,7 +8,7 @@
 
 > **ReloadOptions** = `object`
 
-Defined in: [ui/src/api-server/gantt/reload.ts:50](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/reload.ts#L50)
+Defined in: [ui/src/api-server/gantt/reload.ts:50](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/reload.ts#L50)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/gantt/reload.ts:50](https://github.com/System-B90
 
 > `optional` **dryRun?**: `boolean`
 
-Defined in: [ui/src/api-server/gantt/reload.ts:51](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/reload.ts#L51)
+Defined in: [ui/src/api-server/gantt/reload.ts:51](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/reload.ts#L51)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/gantt/reload.ts:51](https://github.com/System-B90
 
 > `optional` **force?**: `boolean`
 
-Defined in: [ui/src/api-server/gantt/reload.ts:52](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/reload.ts#L52)
+Defined in: [ui/src/api-server/gantt/reload.ts:52](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/reload.ts#L52)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-server/gantt/reload.ts:52](https://github.com/System-B90
 
 > `optional` **overrideEventIds?**: `string`[]
 
-Defined in: [ui/src/api-server/gantt/reload.ts:53](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/reload.ts#L53)
+Defined in: [ui/src/api-server/gantt/reload.ts:53](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/reload.ts#L53)

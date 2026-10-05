@@ -8,7 +8,7 @@
 
 > **useStudentLiveRefresh**(`onChange`): `void`
 
-Defined in: [ui/src/components/student-view/use-student-live-refresh.ts:26](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/student-view/use-student-live-refresh.ts#L26)
+Defined in: [ui/src/components/student-view/use-student-live-refresh.ts:26](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/student-view/use-student-live-refresh.ts#L26)
 
 Keeps the student board live (#656).
 

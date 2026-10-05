@@ -8,7 +8,7 @@
 
 > **GanttUnallocatedPanelProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx:22](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx#L22)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx:22](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx#L22)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **onReveal**: (`syllabusId`, `moduleId`, `eventId?`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx:24](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx#L24)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx:24](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx#L24)
 
 #### Parameters
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > **unallocatedBySyllabus**: [`GanttUnallocatedGroup`](GanttUnallocatedGroup.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx:23](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx#L23)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx:23](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttUnallocatedPanel.tsx#L23)

@@ -8,7 +8,7 @@
 
 > **EmptyStateProps** = `object`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:15](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/EmptyState.tsx#L15)
+Defined in: [ui/src/components/base/EmptyState.tsx:15](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/EmptyState.tsx#L15)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/EmptyState.tsx:15](https://github.com/System
 
 > `optional` **actionLabel?**: `string`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:20](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/EmptyState.tsx#L20)
+Defined in: [ui/src/components/base/EmptyState.tsx:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/EmptyState.tsx#L20)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/base/EmptyState.tsx:20](https://github.com/System
 
 > `optional` **hint?**: `string`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:19](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/EmptyState.tsx#L19)
+Defined in: [ui/src/components/base/EmptyState.tsx:19](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/EmptyState.tsx#L19)
 
 Secondary line, e.g. what the call to action will do.
 
@@ -34,7 +34,7 @@ Secondary line, e.g. what the call to action will do.
 
 > **message**: `string`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:17](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/EmptyState.tsx#L17)
+Defined in: [ui/src/components/base/EmptyState.tsx:17](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/EmptyState.tsx#L17)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/base/EmptyState.tsx:17](https://github.com/System
 
 > `optional` **onAction?**: () => `void`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:21](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/EmptyState.tsx#L21)
+Defined in: [ui/src/components/base/EmptyState.tsx:21](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/EmptyState.tsx#L21)
 
 #### Returns
 
@@ -54,4 +54,4 @@ Defined in: [ui/src/components/base/EmptyState.tsx:21](https://github.com/System
 
 > `optional` **variant?**: [`EmptyStateVariant`](EmptyStateVariant.md)
 
-Defined in: [ui/src/components/base/EmptyState.tsx:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/base/EmptyState.tsx#L16)
+Defined in: [ui/src/components/base/EmptyState.tsx:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/EmptyState.tsx#L16)

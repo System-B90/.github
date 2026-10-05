@@ -8,7 +8,7 @@
 
 > **ConstraintRowsProps** = `object`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:13](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L13)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:13](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L13)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.ts
 
 > **editor**: [`ConstraintEditor`](../../use-constraint-editor/type-aliases/ConstraintEditor.md)
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:14](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L14)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:14](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L14)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.ts
 
 > **emptyText**: `string`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L16)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L16)
 
 Shown when there are no saved constraints and no open draft.
 
@@ -34,6 +34,6 @@ Shown when there are no saved constraints and no open draft.
 
 > `optional` **prefix?**: `ReactNode`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:18](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L18)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:18](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L18)
 
 Read-only rows rendered above the editable ones (e.g. virtual ones).

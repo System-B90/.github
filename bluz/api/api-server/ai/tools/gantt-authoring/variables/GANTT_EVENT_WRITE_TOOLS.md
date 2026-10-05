@@ -8,4 +8,4 @@
 
 > `const` **GANTT\_EVENT\_WRITE\_TOOLS**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`any`\>[]
 
-Defined in: [ui/src/api-server/ai/tools/gantt-authoring.ts:491](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/tools/gantt-authoring.ts#L491)
+Defined in: [ui/src/api-server/ai/tools/gantt-authoring.ts:491](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/gantt-authoring.ts#L491)

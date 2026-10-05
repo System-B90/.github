@@ -8,7 +8,7 @@
 
 > **computeStudentSchedule**(`__namedParameters`): [`StudentSchedule`](../type-aliases/StudentSchedule.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:445](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/student-load.ts#L445)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:445](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/student-load.ts#L445)
 
 Lays out every mapped event (spillover by what its own students have left
 on a day) and totals each day per student path. Recurring events count as

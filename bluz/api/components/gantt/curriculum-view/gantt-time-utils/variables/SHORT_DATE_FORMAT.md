@@ -8,7 +8,7 @@
 
 > `const` **SHORT\_DATE\_FORMAT**: `"DD/MM"` = `"DD/MM"`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:161](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L161)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:161](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L161)
 
 The app-wide short date: `DD/MM`, as the calendar writes it (#814). The old
 `D.M` read like a decimal (`3.10`).

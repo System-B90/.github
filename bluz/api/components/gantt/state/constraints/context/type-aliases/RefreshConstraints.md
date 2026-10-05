@@ -8,7 +8,7 @@
 
 > **RefreshConstraints** = () => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/constraints/context.ts:10](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/constraints/context.ts#L10)
+Defined in: [ui/src/components/gantt/state/constraints/context.ts:10](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/constraints/context.ts#L10)
 
 Type signature for the function that refreshes the loaded constraints from the API.
 

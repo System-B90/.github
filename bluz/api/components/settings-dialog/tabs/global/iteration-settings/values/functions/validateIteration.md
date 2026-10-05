@@ -8,7 +8,7 @@
 
 > **validateIteration**(`values`): [`ValidationResult`](../../../common/UseEntityForm/type-aliases/ValidationResult.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:69](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L69)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:69](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L69)
 
 Both fields are always required. The id is only *typed* when creating — on
 an existing iteration it is populated and read-only — so there is no need

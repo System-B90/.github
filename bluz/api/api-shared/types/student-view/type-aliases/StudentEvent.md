@@ -8,7 +8,7 @@
 
 > **StudentEvent** = `object`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:25](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L25)
+Defined in: [ui/src/api-shared/types/student-view.ts:25](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L25)
 
 The *only* shape of a calendar event a student ("חניך") may ever receive
 (#656). This is a security boundary, not a display preference: a student
@@ -37,7 +37,7 @@ ids or Bluz course ids.
 
 > **color**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:33](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L33)
+Defined in: [ui/src/api-shared/types/student-view.ts:33](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L33)
 
 Fully resolved hex colour (e.g. `#3f51b5`), never a colour/subject id.
 
@@ -47,7 +47,7 @@ Fully resolved hex colour (e.g. `#3f51b5`), never a colour/subject id.
 
 > **courses**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:37](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L37)
+Defined in: [ui/src/api-shared/types/student-view.ts:37](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L37)
 
 Course / shuffle display names.
 
@@ -57,7 +57,7 @@ Course / shuffle display names.
 
 > **endTime**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:31](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L31)
+Defined in: [ui/src/api-shared/types/student-view.ts:31](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L31)
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:31](https://github.com/Syst
 
 > **id**: [`EventId`](../../event/type-aliases/EventId.md)
 
-Defined in: [ui/src/api-shared/types/student-view.ts:27](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L27)
+Defined in: [ui/src/api-shared/types/student-view.ts:27](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L27)
 
 The event's own UUID. Opaque; used as a render key.
 
@@ -75,7 +75,7 @@ The event's own UUID. Opaque; used as a render key.
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:28](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L28)
+Defined in: [ui/src/api-shared/types/student-view.ts:28](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L28)
 
 ***
 
@@ -83,7 +83,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:28](https://github.com/Syst
 
 > **relatedCourses**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:43](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L43)
+Defined in: [ui/src/api-shared/types/student-view.ts:43](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L43)
 
 `courses` plus every ancestor and descendant shuffle, as display names.
 Filtering by a shuffle matches on this, so a child shuffle sees its
@@ -95,7 +95,7 @@ parents' events and a parent sees its children's.
 
 > **rooms**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:35](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L35)
+Defined in: [ui/src/api-shared/types/student-view.ts:35](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L35)
 
 Room display names.
 
@@ -105,6 +105,6 @@ Room display names.
 
 > **startTime**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:30](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/student-view.ts#L30)
+Defined in: [ui/src/api-shared/types/student-view.ts:30](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/student-view.ts#L30)
 
 ISO 8601 timestamps.

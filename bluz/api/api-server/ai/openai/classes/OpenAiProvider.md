@@ -6,7 +6,7 @@
 
 # Class: OpenAiProvider
 
-Defined in: [ui/src/api-server/ai/openai.ts:16](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai.ts#L16)
+Defined in: [ui/src/api-server/ai/openai.ts:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/openai.ts#L16)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/openai.ts:16](https://github.com/System-B90/Bl
 
 > **new OpenAiProvider**(`options`): `OpenAiProvider`
 
-Defined in: [ui/src/api-server/ai/openai.ts:17](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai.ts#L17)
+Defined in: [ui/src/api-server/ai/openai.ts:17](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/openai.ts#L17)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-server/ai/openai.ts:17](https://github.com/System-B90/Bl
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:163](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L163)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:163](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/openai-compatible.ts#L163)
 
 Model used when a request does not name one.
 
@@ -64,7 +64,7 @@ Model used when a request does not name one.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:162](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L162)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:162](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/openai-compatible.ts#L162)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -78,7 +78,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:194](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L194)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:194](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/openai-compatible.ts#L194)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -102,7 +102,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **listModels**(`signal?`): `Promise`\<[`AiModelInfo`](../../../../api-shared/types/ai-models/type-aliases/AiModelInfo.md)[]\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:283](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L283)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:283](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/openai-compatible.ts#L283)
 
 `GET {baseUrl}/models`. With Open WebUI the base URL is `…/api`, so this
 is its `/api/models`; OpenAI, OpenRouter and vLLM answer the same path.
@@ -127,7 +127,7 @@ is its `/api/models`; OpenAI, OpenRouter and vLLM answer the same path.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:217](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/ai/openai-compatible.ts#L217)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:217](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/openai-compatible.ts#L217)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

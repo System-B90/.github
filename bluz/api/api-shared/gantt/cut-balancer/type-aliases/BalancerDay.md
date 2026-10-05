@@ -8,7 +8,7 @@
 
 > **BalancerDay** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:38](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/gantt/cut-balancer.ts#L38)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:38](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/gantt/cut-balancer.ts#L38)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:38](https://github.com/Syst
 
 > **capacityMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:42](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/gantt/cut-balancer.ts#L42)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:42](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/gantt/cut-balancer.ts#L42)
 
 Minutes between the day's start time and its end time.
 
@@ -26,7 +26,7 @@ Minutes between the day's start time and its end time.
 
 > **dayIndex**: [`GanttDayIndex`](../../../types/gantt/models/day/enumerations/GanttDayIndex.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:40](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/gantt/cut-balancer.ts#L40)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:40](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/gantt/cut-balancer.ts#L40)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:40](https://github.com/Syst
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:39](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/gantt/cut-balancer.ts#L39)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:39](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/gantt/cut-balancer.ts#L39)

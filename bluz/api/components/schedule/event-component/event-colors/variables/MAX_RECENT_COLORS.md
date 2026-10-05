@@ -8,4 +8,4 @@
 
 > `const` **MAX\_RECENT\_COLORS**: `3` = `3`
 
-Defined in: [ui/src/components/schedule/event-component/event-colors.ts:76](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/schedule/event-component/event-colors.ts#L76)
+Defined in: [ui/src/components/schedule/event-component/event-colors.ts:76](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-component/event-colors.ts#L76)

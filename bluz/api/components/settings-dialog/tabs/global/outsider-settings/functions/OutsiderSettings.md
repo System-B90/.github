@@ -8,7 +8,7 @@
 
 > **OutsiderSettings**(): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/index.tsx:19](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/settings-dialog/tabs/global/outsider-settings/index.tsx#L19)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/index.tsx:19](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/settings-dialog/tabs/global/outsider-settings/index.tsx#L19)
 
 ## Returns
 

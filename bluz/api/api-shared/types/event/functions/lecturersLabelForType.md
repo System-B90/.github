@@ -8,7 +8,7 @@
 
 > **lecturersLabelForType**(`type`): `string`
 
-Defined in: [ui/src/api-shared/types/event.ts:203](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-shared/types/event.ts#L203)
+Defined in: [ui/src/api-shared/types/event.ts:203](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/event.ts#L203)
 
 The display label for the `lecturers` field of a given event type:
 workshops (סדנה) have "מנהלים" while lectures have "מרצים". The selection

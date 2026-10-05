@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/route.ts:59](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/app/api/gantt/curriculums/[id]/cut/route.ts#L59)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/route.ts:59](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/gantt/curriculums/[id]/cut/route.ts#L59)
 
 POST: materialize a published, linked curriculum into schedule events in the
 linked iteration's database. All inputs are derived server-side from the id.

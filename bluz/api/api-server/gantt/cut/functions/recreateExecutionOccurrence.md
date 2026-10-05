@@ -8,7 +8,7 @@
 
 > **recreateExecutionOccurrence**(`curriculumId`, `ganttEventId`, `occurrenceDate`): `Promise`\<[`RecreateOccurrenceOutcome`](../type-aliases/RecreateOccurrenceOutcome.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1340](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/gantt/cut.ts#L1340)
+Defined in: [ui/src/api-server/gantt/cut.ts:1340](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/cut.ts#L1340)
 
 Re-create the schedule event(s) for one gantt-event occurrence that was cut
 and later deleted from the schedule (#682). Re-runs the full materialization

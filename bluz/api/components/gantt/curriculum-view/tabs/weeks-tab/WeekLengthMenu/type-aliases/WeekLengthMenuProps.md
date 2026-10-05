@@ -8,7 +8,7 @@
 
 > **WeekLengthMenuProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx:26](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx#L26)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx:26](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx#L26)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMe
 
 > **curriculum**: [`GanttCurriculum`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculum.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx:27](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx#L27)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx:27](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx#L27)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMe
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx:28](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx#L28)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx:28](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeekLengthMenu.tsx#L28)

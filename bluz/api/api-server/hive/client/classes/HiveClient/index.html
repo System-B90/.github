@@ -1222,7 +1222,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/hive/client</a> / HiveClient</p>
 <h1 id="class-hiveclient">Class: HiveClient<a class="headerlink" href="#class-hiveclient" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L24">ui/src/api-server/hive/client.ts:24</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L24">ui/src/api-server/hive/client.ts:24</a></p>
 <p>Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
 rules, subjects, modules) lives in <code>@system-b90/hive-core</code>; this subclass
@@ -1253,7 +1253,7 @@ adds rooms and the student-group/module-queue shortcuts.</p>
 <blockquote>
 <p><strong>getClasses</strong>(): <code>Promise</code>\&lt;<code>Class</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L31">ui/src/api-server/hive/client.ts:31</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L31">ui/src/api-server/hive/client.ts:31</a></p>
 <p>Student groups change rarely and Bluz never writes them, yet every cut,
 lesson sync and feed fetches them: share one request per Hive instance
 for <code>CLASSES_TTL_MS</code>. The promise is cached, so concurrent callers share
@@ -1267,7 +1267,7 @@ the in-flight request; a failure is dropped so the next call retries.</p>
 <blockquote>
 <p><strong>getModuleQueues</strong>(<code>moduleId</code>): <code>Promise</code>\&lt;<code>Queue</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L70">ui/src/api-server/hive/client.ts:70</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L70">ui/src/api-server/hive/client.ts:70</a></p>
 <p>The queues of one Hive module — the only queues a lesson rule may point
 at (Hive rejects user queues on a rule).</p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
@@ -1280,7 +1280,7 @@ at (Hive rejects user queues on a rule).</p>
 <blockquote>
 <p><strong>getRooms</strong>(): <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/room/type-aliases/HiveRoom/"><code>HiveRoom</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L58">ui/src/api-server/hive/client.ts:58</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L58">ui/src/api-server/hive/client.ts:58</a></p>
 <h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../api-shared/types/room/type-aliases/HiveRoom/"><code>HiveRoom</code></a>[]&gt;</p>
 <hr />
@@ -1288,7 +1288,7 @@ at (Hive rejects user queues on a rule).</p>
 <blockquote>
 <p><strong>refreshClasses</strong>(): <code>Promise</code>\&lt;<code>Class</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/api-server/hive/client.ts#L53">ui/src/api-server/hive/client.ts:53</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/hive/client.ts#L53">ui/src/api-server/hive/client.ts:53</a></p>
 <p>Drops this Hive's cached student groups and fetches them again, for a
 caller that just missed a group that may have been created since the
 cache filled (the lesson sync, when a shuffle matches no group).</p>

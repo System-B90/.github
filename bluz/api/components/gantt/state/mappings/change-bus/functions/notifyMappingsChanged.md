@@ -8,7 +8,7 @@
 
 > **notifyMappingsChanged**(`curriculumId`): `void`
 
-Defined in: [ui/src/components/gantt/state/mappings/change-bus.ts:15](https://github.com/System-B90/Bluz/blob/dc14d71ac6f49f030d3e8da9b6d9365589260844/ui/src/components/gantt/state/mappings/change-bus.ts#L15)
+Defined in: [ui/src/components/gantt/state/mappings/change-bus.ts:15](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/mappings/change-bus.ts#L15)
 
 Lets a mapping write made *outside* `GanttMappingProvider` (the event
 dialog's שבוע/יום picker, which mounts at the curriculum root) tell a
