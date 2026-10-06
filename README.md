@@ -104,6 +104,24 @@ turning a green run red would be a worse bug than the one it fixes.
 
 Inputs: `hive-path`, `prune` (`safe` | `aggressive` | `none`), `report-disk`.
 
+### `actions/teardown-test-stack`
+
+The app-side counterpart of `teardown-hive`. Removes every compose project
+whose containers are named `<prefix>*` (containers, anonymous and named
+volumes, networks), including a project whose compose file is gone. Run it
+before a job to reclaim a stack a dead run leaked, and with `if: always()`
+after it. Refuses a `hive` prefix and never fails the job.
+
+```yaml
+- uses: System-B90/.github/actions/teardown-test-stack@main
+  with:
+    prefix: bluz-test-
+```
+
+Inputs: `prefix` (required), `compose-files` (extra `-f` files for
+`compose down`), `prune` (`"true"` also prunes all unused volumes, images and
+build cache; throwaway VMs only, never on the shared-hive box).
+
 ### `actions/ci-lock` and `actions/ci-unlock`
 
 A mutex **across repositories**. GitHub's `concurrency:` key only serialises
