@@ -1,5 +1,5 @@
 ---
-name: madash-cli
+name: madash
 description: How to drive the madash dashboard via the `madash` CLI — auth, every command, output parsing, quirks. Use for any user request to read or change madash state: the madrat message (including watching it live in the terminal), the call-to-Hadas board (calling students, marking told, removing calls), the daily journal, the system status board (services, Hive Prometheus, toilet queue, open helps), and Hive students/classes/avatars — without touching app or CLI source.
 tags: [madash, cli, madrat, hadas, dashboard]
 ---
@@ -8,13 +8,13 @@ tags: [madash, cli, madrat, hadas, dashboard]
 
 `madash` is a Python/Typer CLI that talks to the same `/api/*` routes as the
 madash web UI. Everything the UI can do has a command. This skill covers
-everything you need, so you don't have to read `cli/madash_cli/*` or `src/app/api/*`.
+everything you need, so you don't have to read `cli/madash/*` or `src/app/api/*`.
 
 ## Setup / auth
 
 ```bash
 # The plugin's SessionStart hook installs it; manually:
-pip install madash-cli --extra-index-url https://system-b90.github.io/.github/pypi/
+pip install madash --extra-index-url https://system-b90.github.io/.github/pypi/
 # or, from a madash checkout:
 pip install ./cli
 

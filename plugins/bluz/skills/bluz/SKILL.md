@@ -1,5 +1,5 @@
 ---
-name: bluz-cli
+name: bluz
 description: How to drive the Bluz scheduling/curriculum app via the `bluz` CLI — auth, every command group, payload shapes, output parsing, known server bugs. Use for any user request to read/write Bluz data (rooms, courses, outsiders, reservations, iterations, calendar events, drafts/snapshots, gantt curriculum tree, the cut pipeline, settings, custom colours, Hive reference data, Google Calendar) without touching app or CLI source.
 tags: [bluz, cli, api, gantt, scheduling]
 ---
@@ -7,7 +7,7 @@ tags: [bluz, cli, api, gantt, scheduling]
 # Bluz CLI
 
 `bluz` is a Python/Typer CLI that talks to the same `/api/*` surface as the Bluz
-web UI. This skill is self-sufficient — do not read `cli/bluz_cli/*` or
+web UI. This skill is self-sufficient — do not read `cli/bluz/*` or
 `ui/src/api-*` source to use the tool; everything needed is below.
 
 ## Setup / auth
@@ -15,7 +15,7 @@ web UI. This skill is self-sufficient — do not read `cli/bluz_cli/*` or
 ```bash
 # No Bluz checkout? Install from the org's public pip index (the plugin's
 # SessionStart hook already does this for you):
-pip install bluz-cli --index-url https://system-b90.github.io/.github/pypi/
+pip install bluz --index-url https://system-b90.github.io/.github/pypi/
 
 # From a Bluz checkout instead:
 pip install ./cli          # once, from repo root

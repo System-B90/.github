@@ -12,11 +12,11 @@ one is, and how to get it running.
 
 ### Install a CLI
 
-`bluz-cli` drives the Bluz scheduling and curriculum API from a terminal. No
+`bluz` drives the Bluz scheduling and curriculum API from a terminal. No
 checkout needed:
 
 ```bash
-pip install bluz-cli --index-url https://system-b90.github.io/.github/pypi/
+pip install bluz --index-url https://system-b90.github.io/.github/pypi/
 bluz login
 ```
 
@@ -58,10 +58,10 @@ the E2E suite against a real Hive stack.
 
 ```
 /plugin marketplace add System-B90/.github
-/plugin install bluz-cli@system-b90-marketplace
+/plugin install bluz@system-b90-marketplace
 ```
 
-Its `SessionStart` hook installs `bluz-cli` from the index above if it is
+Its `SessionStart` hook installs `bluz` from the index above if it is
 missing, so no Bluz checkout is required.
 
 ---
@@ -72,7 +72,7 @@ missing, so no Bluz checkout is required.
 
 | Repo | What it is |
 | --- | --- |
-| [Bluz](https://github.com/System-B90/Bluz) | The primary product — scheduling and curriculum (Gantt) management. Ships the `bluz-cli` companion CLI. |
+| [Bluz](https://github.com/System-B90/Bluz) | The primary product — scheduling and curriculum (Gantt) management. Ships the `bluz` companion CLI. |
 | [madash](https://github.com/System-B90/madash) | Status dashboard — journal, board, system health. |
 | [peek-a-boo](https://github.com/System-B90/peek-a-boo) | Student monitoring. |
 

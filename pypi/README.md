@@ -1,7 +1,7 @@
 # Private package index
 
 A PEP 503 "simple" index for org packages that are not on PyPI
-(`PyHiveLMS`, `bluz-cli`).
+(`PyHiveLMS`, `bluz`).
 
 ## Quick Start
 

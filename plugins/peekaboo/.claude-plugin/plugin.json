@@ -1,5 +1,5 @@
 {
-  "name": "peekaboo-cli",
+  "name": "peekaboo",
   "description": "Skill + auto-setup for the peekaboo CLI (Peek-a-boo student monitoring (VNC screens, roster, tweet bot, settings)) — installs the CLI if missing and teaches an agent to drive it without reading source.",
   "author": {
     "name": "Michael K. Steinberg"
@@ -10,7 +10,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ensure-peekaboo-cli.js\"",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ensure-peekaboo.js\"",
             "timeout": 30,
             "statusMessage": "Checking peekaboo CLI install..."
           }
