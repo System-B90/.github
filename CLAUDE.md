@@ -12,7 +12,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 
 | Repo | Purpose |
 | --- | --- |
-| **bluz** | Main frontend/backend app. Scheduling + curriculum (Gantt) management. Next.js 14, TypeScript. The primary product. Ships a companion `bluz-cli` Python CLI, published to the org's pip index (see Package conventions) — its Claude Code plugin lives here in `.github` under `plugins/bluz-cli/` since bluz itself is private. |
+| **bluz** | Main frontend/backend app. Scheduling + curriculum (Gantt) management. Next.js 14, TypeScript. The primary product. Ships a companion `bluz` Python CLI, published to the org's pip index (see Package conventions) — its Claude Code plugin lives here in `.github` under `plugins/bluz/` since bluz itself is private. |
 | **madash** | Secondary app — status/dashboard (journal, call-to-Hadas board, system health). Next.js, TypeScript. Stateless, no DB. |
 | **peek-a-boo** | Third app — student monitoring. Next.js, TypeScript. |
 | **pyhive** | Python client library for the Hive LMS API. Install via the org's pip index (see Package conventions below), or `pip install git+https://github.com/System-B90/pyhive.git@master` for an unreleased ref. |
@@ -53,7 +53,7 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
   `pyhive`'s `publish.yml` copies each tagged release's wheels into `pypi/pyhivelms/` (the PEP 503-normalized project name — **not** `pyhive`, the import name) and regenerates `pypi/generate_index.py`'s output here on every `v*` tag push. For an unreleased ref, `git+https://...` still works (that one does need SSH/HTTPS git creds, since `pyhive` itself is private).
   GitHub Pages is CDN-cached (roughly a few minutes TTL) — a just-published release may not show up in the index immediately.
   **Note:** `raw.githubusercontent.com` does NOT work for this — it maps URLs 1:1 to repo file paths with no directory-index fallback, so pip's request for the bare package directory (`pypi/<pkg>/`) 404s even though `generate_index.py` writes a valid `index.html` there. GitHub Pages serves that `index.html` for directory requests, which is why the index has to be hosted there instead.
-- `sb90-devops` (from `devops-py`), `sb90-deploy` (from `deploy-py`) and `bluz-cli` (from the private `bluz` repo) follow the identical pattern: `pip install bluz-cli --index-url https://system-b90.github.io/.github/pypi/`. `bluz`'s `release-pipeline.yml` `publish-cli-index` job copies each tagged release's wheel into `pypi/bluz-cli/` and regenerates the index on every `v*` tag push, using `CLASSIC_ACCESS_TOKEN` (bluz has no `ACCESS_TOKEN` secret — see Secrets available in CI below).
+- `sb90-devops` (from `devops-py`), `sb90-deploy` (from `deploy-py`) and `bluz` (from the private `bluz` repo) follow the identical pattern: `pip install bluz --index-url https://system-b90.github.io/.github/pypi/`. `bluz`'s `release-pipeline.yml` `publish-cli-index` job copies each tagged release's wheel into `pypi/bluz/` and regenerates the index on every `v*` tag push, using `CLASSIC_ACCESS_TOKEN` (bluz has no `ACCESS_TOKEN` secret — see Secrets available in CI below).
 - App repos (`bluz`, `madash`, `peek-a-boo`) are unscoped, private, and don't publish — no `@system-b90/` prefix on their own `package.json` name.
 
 ## Claude Code plugins hosted here
@@ -70,7 +70,7 @@ Currently hosted:
 
 | Plugin | Source repo | What it does |
 | --- | --- | --- |
-| `bluz-cli` | `bluz` (private) | Skill + auto-install for the `bluz` CLI. `SessionStart` hook `pip install`s `bluz-cli` from this repo's pip index (see Package conventions) if missing — no Bluz checkout needed. |
+| `bluz` | `bluz` (private) | Skill + auto-install for the `bluz` CLI. `SessionStart` hook `pip install`s `bluz` from this repo's pip index (see Package conventions) if missing — no Bluz checkout needed. |
 
 Install any hosted plugin:
 
@@ -81,9 +81,9 @@ Install any hosted plugin:
 /reload-plugins
 ```
 
-e.g. `/plugin install bluz-cli@system-b90-marketplace`.
+e.g. `/plugin install bluz@system-b90-marketplace`.
 
-Adding a new plugin here: create `plugins/<name>/` following the `bluz-cli`
+Adding a new plugin here: create `plugins/<name>/` following the `bluz`
 layout, then add an entry to the root `.claude-plugin/marketplace.json` with
 `"source": "./plugins/<name>"` and a row to the table above.
 

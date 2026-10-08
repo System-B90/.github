@@ -1,5 +1,5 @@
 ---
-name: peekaboo-cli
+name: peekaboo
 description: How to drive the Peek-a-boo student-monitoring app via the `peekaboo` CLI — auth, every command, output parsing, quirks. Use for any user request to read or change Peek-a-boo data or act on it (student roster / mentees, classes, opening a student's VNC screen, native-VNC connection details, TightVNC client install commands, posting to the tweet channel with a screenshot or recording, server settings) without touching app or CLI source.
 tags: [peekaboo, peek-a-boo, cli, vnc, students, monitoring]
 ---
@@ -8,13 +8,13 @@ tags: [peekaboo, peek-a-boo, cli, vnc, students, monitoring]
 
 `peekaboo` is a Python/Typer CLI that talks to the same `/api/*` routes as the
 Peek-a-boo web UI. Everything the UI can do has a command. This skill covers
-everything you need, so you don't have to read `cli/peekaboo_cli/*` or `src/app/api/*`.
+everything you need, so you don't have to read `cli/peekaboo/*` or `src/app/api/*`.
 
 ## Setup / auth
 
 ```bash
 # The plugin's SessionStart hook installs it; manually:
-pip install peekaboo-cli --extra-index-url https://system-b90.github.io/.github/pypi/
+pip install peekaboo --extra-index-url https://system-b90.github.io/.github/pypi/
 # or, from a peek-a-boo checkout:
 pip install ./cli
 
