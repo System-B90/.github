@@ -8,7 +8,7 @@
 
 > **ApiGoogleCalendarSelectPayload** = \{ `calendarId`: `string`; \} \| \{ `createNew`: `true`; \}
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:103](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L103)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:111](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L111)
 
 Re-point the link at another calendar. Exactly one of the two: an existing
 (possibly shared) calendar by id, or a fresh Bluz-created one named after

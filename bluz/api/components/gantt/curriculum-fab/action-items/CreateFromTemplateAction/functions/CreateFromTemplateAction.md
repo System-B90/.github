@@ -8,7 +8,7 @@
 
 > **CreateFromTemplateAction**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/action-items/CreateFromTemplateAction.tsx:34](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-fab/action-items/CreateFromTemplateAction.tsx#L34)
+Defined in: [ui/src/components/gantt/curriculum-fab/action-items/CreateFromTemplateAction.tsx:34](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-fab/action-items/CreateFromTemplateAction.tsx#L34)
 
 FAB action that creates a brand-new curriculum pre-seeded from a named
 template (e.g. the הכנ"ס preset): the curriculum is created, its weeks and

@@ -13,12 +13,17 @@
 
 ## Type Aliases
 
+- [ApiEventCreateManyPayload](type-aliases/ApiEventCreateManyPayload.md)
+- [ApiEventCreateManyResponse](type-aliases/ApiEventCreateManyResponse.md)
 - [ApiEventCreatePayload](type-aliases/ApiEventCreatePayload.md)
 - [ApiEventCreateResponse](type-aliases/ApiEventCreateResponse.md)
+- [ApiEventDeleteManyPayload](type-aliases/ApiEventDeleteManyPayload.md)
 - [ApiEventDeletePayload](type-aliases/ApiEventDeletePayload.md)
 - [ApiEventDeleteResponse](type-aliases/ApiEventDeleteResponse.md)
 - [ApiEventGetPayload](type-aliases/ApiEventGetPayload.md)
 - [ApiEventGetResponse](type-aliases/ApiEventGetResponse.md)
+- [ApiEventUpdateManyPayload](type-aliases/ApiEventUpdateManyPayload.md)
+- [ApiEventUpdateManyResponse](type-aliases/ApiEventUpdateManyResponse.md)
 - [ApiEventUpdatePayload](type-aliases/ApiEventUpdatePayload.md)
 - [ApiEventUpdateResponse](type-aliases/ApiEventUpdateResponse.md)
 - [DbEventDocument](type-aliases/DbEventDocument.md)

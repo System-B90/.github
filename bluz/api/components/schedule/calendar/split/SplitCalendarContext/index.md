@@ -9,7 +9,10 @@
 ## Type Aliases
 
 - [ActiveDrag](type-aliases/ActiveDrag.md)
+- [DragStore](type-aliases/DragStore.md)
+- [HoverStore](type-aliases/HoverStore.md)
 - [OpenEventContextMenu](type-aliases/OpenEventContextMenu.md)
+- [SelectionStore](type-aliases/SelectionStore.md)
 - [SplitCalendarContextValue](type-aliases/SplitCalendarContextValue.md)
 
 ## Variables
@@ -18,4 +21,11 @@
 
 ## Functions
 
+- [createDragStore](functions/createDragStore.md)
+- [createHoverStore](functions/createHoverStore.md)
+- [createSelectionStore](functions/createSelectionStore.md)
+- [useActiveDrag](functions/useActiveDrag.md)
+- [useDragOf](functions/useDragOf.md)
+- [useIsHovered](functions/useIsHovered.md)
+- [useIsSingleSelected](functions/useIsSingleSelected.md)
 - [useSplitCalendar](functions/useSplitCalendar.md)

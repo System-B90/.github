@@ -8,7 +8,7 @@
 
 > **eventDisplayOrder**(`eventIds`, `events`): `string`[]
 
-Defined in: [ui/src/components/gantt/event-display-order.ts:47](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/event-display-order.ts#L47)
+Defined in: [ui/src/components/gantt/event-display-order.ts:47](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/event-display-order.ts#L47)
 
 The module's events, flattened in the order the dialog lists them.
 

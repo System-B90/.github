@@ -14,6 +14,7 @@
 - [OpenEventDialog](type-aliases/OpenEventDialog.md)
 - [OpenModuleDialog](type-aliases/OpenModuleDialog.md)
 - [OpenSyllabusDialog](type-aliases/OpenSyllabusDialog.md)
+- [OpenSyllabusDraft](type-aliases/OpenSyllabusDraft.md)
 - [RevealGanttItem](type-aliases/RevealGanttItem.md)
 
 ## Variables

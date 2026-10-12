@@ -8,11 +8,14 @@
 
 ## Type Aliases
 
+- [Accent](type-aliases/Accent.md)
+- [Brightness](type-aliases/Brightness.md)
 - [ThemeContextState](type-aliases/ThemeContextState.md)
 - [ThemeMode](type-aliases/ThemeMode.md)
 
 ## Variables
 
+- [muiTheme](variables/muiTheme.md)
 - [THEMES](variables/THEMES.md)
 
 ## Functions

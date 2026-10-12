@@ -503,33 +503,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bug-hunt-2026-09/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Bug Hunt 2026-09
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../gantt-cut-rules/" class="md-nav__link">
         
   
@@ -680,10 +653,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
         
           
-          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
             
   
   
@@ -701,8 +674,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_16">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -958,6 +931,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#502-bad-gateway-on-a-co-located-host-bluz-proxy-could-not-be-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        502 Bad Gateway on a co-located host, bluz-proxy could not be resolved
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sso-registration-fails-env-contains-manual_entry_required" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1147,6 +1131,21 @@ network and brings Bluz up joined to that network. Manually:</p>
 is the host's gateway address, which does not reach a Hive nginx bound to a
 specific loopback IP.</p>
 <hr />
+<h2 id="502-bad-gateway-on-a-co-located-host-bluz-proxy-could-not-be-resolved">502 Bad Gateway on a co-located host, <code>bluz-proxy could not be resolved</code><a class="headerlink" href="#502-bad-gateway-on-a-co-located-host-bluz-proxy-could-not-be-resolved" title="Permanent link">&para;</a></h2>
+<p><strong>Symptom:</strong> Hive and Bluz share one machine and Hive's nginx fronts Bluz's
+hostname. Every request returns 502, and <code>docker logs hive-nginx</code> shows
+<code>bluz-proxy could not be resolved (2: Server failure)</code>.</p>
+<p><strong>Cause (fixed in current bundles):</strong> <code>docker-compose.hive-local.yml</code> attached
+only <code>ui</code> and <code>sessions</code> to Hive's network, so <code>hive-nginx</code> could not resolve
+<code>bluz-proxy</code> by name.</p>
+<p><strong>Diagnose:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>inspect<span class="w"> </span>bluz-proxy<span class="w"> </span>--format<span class="w"> </span><span class="s1">'{{range $n, $_ := .NetworkSettings.Networks}}{{println $n}}{{end}}'</span>
+</code></pre></div>
+<p><strong>Fix:</strong> upgrade, then run <code>./link-hive.sh</code> (or <code>.\link-hive.ps1</code>). On an older
+bundle, connect it by hand. This lasts until the container is next recreated:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span>network<span class="w"> </span>connect<span class="w"> </span>hive_hive-net<span class="w"> </span>bluz-proxy
+</code></pre></div>
+<hr />
 <h2 id="sso-registration-fails-env-contains-manual_entry_required">SSO registration fails / <code>.env</code> contains <code>MANUAL_ENTRY_REQUIRED</code><a class="headerlink" href="#sso-registration-fails-env-contains-manual_entry_required" title="Permanent link">&para;</a></h2>
 <p><strong>Cause (fixed in current bundles):</strong> the wizard's non-browser fallback posted an
 OAuth2 resource-owner-password grant to <code>/api/core/sso/token/</code>. Hive's default
@@ -1158,14 +1157,14 @@ pyhive's CLI uses — try the browser and password flows in turn, and offer a
 retry before writing placeholders.</p>
 <p><strong>Fix if you are stuck with placeholders:</strong> re-run the wizard (<code>python3
 setup.py</code>), or register by hand:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>PyHiveLMS<span class="w"> </span>--index-url<span class="w"> </span>https://system-b90.github.io/.github/pypi/
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>pyhive<span class="w"> </span>-u<span class="w"> </span>&lt;admin-user&gt;<span class="w"> </span>-p<span class="w"> </span>&lt;password&gt;<span class="w"> </span>register<span class="w"> </span>Bluz<span class="w"> </span>--hive-url<span class="w"> </span>https://hive.example
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pip<span class="w"> </span>install<span class="w"> </span>PyHiveLMS<span class="w"> </span>--index-url<span class="w"> </span>https://system-b90.github.io/.github/pypi/
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>pyhive<span class="w"> </span>-u<span class="w"> </span>&lt;admin-user&gt;<span class="w"> </span>-p<span class="w"> </span>&lt;password&gt;<span class="w"> </span>register<span class="w"> </span>Bluz<span class="w"> </span>--hive-url<span class="w"> </span>https://hive.example
 </code></pre></div>
 <p>Copy the returned values into <code>.env</code> and restart:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="na">HIVE_CLIENT_ID</span><span class="o">=</span><span class="s">&lt;client_id&gt;</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="na">HIVE_CLIENT_SECRET</span><span class="o">=</span><span class="s">&lt;client_secret&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="na">HIVE_CLIENT_ID</span><span class="o">=</span><span class="s">&lt;client_id&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="na">HIVE_CLIENT_SECRET</span><span class="o">=</span><span class="s">&lt;client_secret&gt;</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>--force-recreate<span class="w"> </span>ui
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>--force-recreate<span class="w"> </span>ui
 </code></pre></div>
 <p>The redirect URI Bluz registers is <code>${NEXTAUTH_URL}/api/auth/callback/hive</code>. If
 you registered by hand, make sure it matches exactly — a trailing-slash mismatch
@@ -1174,9 +1173,9 @@ fails the same opaque way.</p>
 <h2 id="ui-never-becomes-healthy"><code>ui</code> never becomes healthy<a class="headerlink" href="#ui-never-becomes-healthy" title="Permanent link">&para;</a></h2>
 <p>Its healthcheck probes <code>/api/health</code>, which returns 503 while a dependency is
 down — so an unhealthy <code>ui</code> usually means a database problem, not a UI problem.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>curriculum-db<span class="w"> </span>mongodb
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>ui<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-50
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>curriculum-db<span class="w"> </span>mongodb
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>ui<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-50
 </code></pre></div>
 <p>Common causes:</p>
 <ul>
@@ -1193,38 +1192,38 @@ down — so an unhealthy <code>ui</code> usually means a database problem, not a
 <p><strong>Cause:</strong> you are using the co-located overlay without a running Hive stack, or
 Hive's network is named something else — Compose names networks after the
 directory the stack was brought up in.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>network<span class="w"> </span>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>hive
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>network<span class="w"> </span>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>hive
 </code></pre></div>
 <p><strong>Fix:</strong> pass the real name, or drop the overlay entirely if Hive is on another
 machine (the base <code>docker-compose.yml</code> does not reference Hive's network at all):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">HIVE_NETWORK_NAME</span><span class="o">=</span>hive_hive-net<span class="w"> </span>./link-hive.sh
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">HIVE_NETWORK_NAME</span><span class="o">=</span>hive_hive-net<span class="w"> </span>./link-hive.sh
 </code></pre></div>
 <hr />
 <h2 id="browser-warns-the-certificate-is-untrusted">Browser warns the certificate is untrusted<a class="headerlink" href="#browser-warns-the-certificate-is-untrusted" title="Permanent link">&para;</a></h2>
 <p>Expected: the wizard generates a self-signed certificate. Either accept it, or
 drop a real <code>cert.pem</code> and <code>key.pem</code> into <code>nginx/ssl/</code> and restart the proxy:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>restart<span class="w"> </span>proxy
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>restart<span class="w"> </span>proxy
 </code></pre></div>
 <p>The certificate CN must match your domain. Check with:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>openssl<span class="w"> </span>x509<span class="w"> </span>-noout<span class="w"> </span>-subject<span class="w"> </span>-in<span class="w"> </span>nginx/ssl/cert.pem
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>openssl<span class="w"> </span>x509<span class="w"> </span>-noout<span class="w"> </span>-subject<span class="w"> </span>-in<span class="w"> </span>nginx/ssl/cert.pem
 </code></pre></div>
 <hr />
 <h2 id="collecting-diagnostics">Collecting diagnostics<a class="headerlink" href="#collecting-diagnostics" title="Permanent link">&para;</a></h2>
 <p>If you need to open an issue, this captures the useful state — review it for
 secrets before sharing, as <code>docker compose config</code> prints resolved values:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps<span class="w"> </span>&gt;<span class="w"> </span>diag.txt
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>config<span class="w"> </span>&gt;&gt;<span class="w"> </span>diag.txt
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>--tail<span class="o">=</span><span class="m">200</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>diag.txt
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>docker<span class="w"> </span>version<span class="w"> </span>&gt;&gt;<span class="w"> </span>diag.txt
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps<span class="w"> </span>&gt;<span class="w"> </span>diag.txt
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>config<span class="w"> </span>&gt;&gt;<span class="w"> </span>diag.txt
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>--tail<span class="o">=</span><span class="m">200</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>diag.txt
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>docker<span class="w"> </span>version<span class="w"> </span>&gt;&gt;<span class="w"> </span>diag.txt
 </code></pre></div>
 <h2 id="ai-assistant-tls-ai">AI assistant: <code>תעודת ה-TLS של שירות ה-AI אינה מהימנה</code><a class="headerlink" href="#ai-assistant-tls-ai" title="Permanent link">&para;</a></h2>
 <p><strong>Cause.</strong> The AI gateway (e.g. Open WebUI on an internal network) presents a
 certificate signed by a private CA that the Bluz container does not trust.
 Disabling validation is not supported.</p>
 <p><strong>Fix.</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>ai-ca<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>/path/to/internal-ca.pem<span class="w"> </span>ai-ca/ca.pem
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'AI_CA_CERT_PATH=/etc/bluz/ai-ca/ca.pem'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.env
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>ui
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>ai-ca<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>/path/to/internal-ca.pem<span class="w"> </span>ai-ca/ca.pem
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'AI_CA_CERT_PATH=/etc/bluz/ai-ca/ca.pem'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.env
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>ui
 </code></pre></div>
 <p><code>AI_CA_CERT_PATH</code> is trusted by the AI client only. Use
 <code>NODE_EXTRA_CA_CERTS=/etc/bluz/ai-ca/ca.pem</code> instead to trust it process-wide.</p>

@@ -8,7 +8,7 @@
 
 > `const` **DbModuleEvent**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-module-event.ts:328](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-module-event.ts#L328)
+Defined in: [ui/src/api-server/gantt/db-module-event.ts:355](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/db-module-event.ts#L355)
 
 ## Type Declaration
 
@@ -87,6 +87,26 @@ layer, which has no database handle to pass.
 #### Returns
 
 `Promise`\<[`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md) \| [`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md)\>
+
+### createNewItems
+
+> `readonly` **createNewItems**: (`payloads`, `executor?`) => `Promise`\<[`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)[]\>
+
+Bulk `createNewItem`; returns the items in payload order.
+
+#### Parameters
+
+##### payloads
+
+[`CreateGanttEventPayload`](../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttEventPayload.md)[]
+
+##### executor?
+
+[`GanttDbExecutor`](../../type-aliases/GanttDbExecutor.md)
+
+#### Returns
+
+`Promise`\<[`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md)[]\>
 
 ### deleteItem
 

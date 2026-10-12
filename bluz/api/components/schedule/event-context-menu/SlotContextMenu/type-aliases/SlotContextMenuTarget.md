@@ -8,7 +8,7 @@
 
 > **SlotContextMenuTarget** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:13](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L13)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:13](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L13)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:1
 
 > **position**: `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:14](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L14)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L14)
 
 #### left
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:1
 
 > **slot**: [`PasteSlot`](../../../calendar/calendar/paste/type-aliases/PasteSlot.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:15](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L15)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:15](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L15)

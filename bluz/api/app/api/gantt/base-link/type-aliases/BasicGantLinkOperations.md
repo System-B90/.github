@@ -8,7 +8,7 @@
 
 > **BasicGantLinkOperations**\<`TEntity`\> = `object`
 
-Defined in: [ui/src/app/api/gantt/base-link.ts:9](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/gantt/base-link.ts#L9)
+Defined in: [ui/src/app/api/gantt/base-link.ts:9](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/app/api/gantt/base-link.ts#L9)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/app/api/gantt/base-link.ts:9](https://github.com/System-B90/
 
 > **linkItem**: (`newParentId`, `id`) => `Promise`\<[`ApiT`](../../../../../api-shared/types/gantt/api-layer/type-aliases/ApiT.md)\<`TEntity`\>\>
 
-Defined in: [ui/src/app/api/gantt/base-link.ts:10](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/gantt/base-link.ts#L10)
+Defined in: [ui/src/app/api/gantt/base-link.ts:10](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/app/api/gantt/base-link.ts#L10)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/app/api/gantt/base-link.ts:10](https://github.com/System-B90
 
 > **unlinkItem**: (`oldParentId`, `id`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/app/api/gantt/base-link.ts:14](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/api/gantt/base-link.ts#L14)
+Defined in: [ui/src/app/api/gantt/base-link.ts:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/app/api/gantt/base-link.ts#L14)
 
 #### Parameters
 

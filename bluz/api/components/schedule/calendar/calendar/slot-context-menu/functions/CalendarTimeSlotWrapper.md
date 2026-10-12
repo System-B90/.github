@@ -8,7 +8,7 @@
 
 > **CalendarTimeSlotWrapper**(`__namedParameters`): `ReactNode`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L20)
+Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:20](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L20)
 
 react-big-calendar `timeSlotWrapper`: stamps each slot with its start time
 and room column so a right-click can be resolved to a paste target. Events

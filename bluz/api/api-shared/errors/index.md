@@ -6,6 +6,10 @@
 
 # api-shared/errors
 
+## Classes
+
+- [GoogleReauthRequiredError](classes/GoogleReauthRequiredError.md)
+
 ## Functions
 
 - [constructErrorFromNetworkMessage](functions/constructErrorFromNetworkMessage.md)

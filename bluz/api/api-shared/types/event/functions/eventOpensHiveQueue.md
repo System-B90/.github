@@ -8,7 +8,7 @@
 
 > **eventOpensHiveQueue**(`event`): `boolean`
 
-Defined in: [ui/src/api-shared/types/event.ts:135](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/event.ts#L135)
+Defined in: [ui/src/api-shared/types/event.ts:135](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/event.ts#L135)
 
 True when an event opens a Hive queue for at least one shuffle — the gate
 for both the lesson sync and the go-live activator.

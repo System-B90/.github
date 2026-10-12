@@ -6,24 +6,18 @@
 
 # Function: partitionInsights()
 
-> **partitionInsights**(`insights`, `__namedParameters`): `object`
+> **partitionInsights**(`insights`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:61](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L61)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:61](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L61)
 
 Splits the deck for the card (#851): warnings are actionable, so they are
-pinned rather than rotated away; trivia is opt-in on a work screen.
+pinned rather than rotated away; trivia always joins the deck.
 
 ## Parameters
 
 ### insights
 
 readonly [`Insight`](../../types/type-aliases/Insight.md)[]
-
-### \_\_namedParameters
-
-#### includeFun
-
-`boolean`
 
 ## Returns
 

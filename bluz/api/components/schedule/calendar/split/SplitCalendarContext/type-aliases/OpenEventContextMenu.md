@@ -8,7 +8,7 @@
 
 > **OpenEventContextMenu** = (`event`, `clientX`, `clientY`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L16)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:50](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L50)
 
 Right-click on a tile, in viewport coordinates (#706).
 

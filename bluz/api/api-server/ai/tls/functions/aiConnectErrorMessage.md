@@ -8,7 +8,7 @@
 
 > **aiConnectErrorMessage**(`error`): `string`
 
-Defined in: [ui/src/api-server/ai/tls.ts:58](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tls.ts#L58)
+Defined in: [ui/src/api-server/ai/tls.ts:58](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tls.ts#L58)
 
 The connect-failure message for the AI client: TLS-specific when the cause
 is an untrusted certificate, the generic one otherwise.

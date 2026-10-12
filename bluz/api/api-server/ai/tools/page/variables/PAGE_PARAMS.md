@@ -8,11 +8,23 @@
 
 > `const` **PAGE\_PARAMS**: `object`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:12](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/tools/page.ts#L12)
+Defined in: [ui/src/api-server/ai/tools/page.ts:12](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tools/page.ts#L12)
 
 Schema fragment every paginated list tool spreads into its properties.
 
 ## Type Declaration
+
+### countOnly
+
+> **countOnly**: `object`
+
+#### countOnly.description
+
+> **description**: `string` = "true — מחזיר רק את total, בלי פריטים. לשאלות \"כמה\"."
+
+#### countOnly.type
+
+> **type**: `string` = `"boolean"`
 
 ### limit
 

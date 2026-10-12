@@ -8,4 +8,5 @@
 
 ## Functions
 
-- [ThemeSelectorIcon](functions/ThemeSelectorIcon.md)
+- [PinkModeToggle](functions/PinkModeToggle.md)
+- [ThemeControls](functions/ThemeControls.md)

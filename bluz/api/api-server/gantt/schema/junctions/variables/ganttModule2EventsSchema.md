@@ -8,6 +8,6 @@
 
 > `const` **ganttModule2EventsSchema**: `PgTableWithColumns`\<\{ \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/junctions.ts:91](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/schema/junctions.ts#L91)
+Defined in: [ui/src/api-server/gantt/schema/junctions.ts:91](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/schema/junctions.ts#L91)
 
 Drizzle database schema definition for the Module to Events junction table (`m2e`).

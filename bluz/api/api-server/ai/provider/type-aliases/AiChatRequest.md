@@ -8,7 +8,7 @@
 
 > **AiChatRequest** = `object`
 
-Defined in: [ui/src/api-server/ai/provider.ts:23](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/provider.ts#L23)
+Defined in: [ui/src/api-server/ai/provider.ts:23](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L23)
 
 Normalised request handed to a provider.
 
@@ -18,7 +18,7 @@ Normalised request handed to a provider.
 
 > `optional` **maxTokens?**: `number`
 
-Defined in: [ui/src/api-server/ai/provider.ts:28](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/provider.ts#L28)
+Defined in: [ui/src/api-server/ai/provider.ts:30](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L30)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-server/ai/provider.ts:28](https://github.com/System-B90/
 
 > **messages**: [`AiMessage`](../../../../api-shared/types/ai/type-aliases/AiMessage.md)[]
 
-Defined in: [ui/src/api-server/ai/provider.ts:24](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/provider.ts#L24)
+Defined in: [ui/src/api-server/ai/provider.ts:24](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L24)
 
 ***
 
@@ -34,7 +34,17 @@ Defined in: [ui/src/api-server/ai/provider.ts:24](https://github.com/System-B90/
 
 > `optional` **model?**: `string`
 
-Defined in: [ui/src/api-server/ai/provider.ts:26](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/provider.ts#L26)
+Defined in: [ui/src/api-server/ai/provider.ts:26](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L26)
+
+***
+
+### seed?
+
+> `optional` **seed?**: `number`
+
+Defined in: [ui/src/api-server/ai/provider.ts:29](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L29)
+
+Best-effort determinism; providers that don't support it ignore it.
 
 ***
 
@@ -42,7 +52,7 @@ Defined in: [ui/src/api-server/ai/provider.ts:26](https://github.com/System-B90/
 
 > `optional` **signal?**: `AbortSignal`
 
-Defined in: [ui/src/api-server/ai/provider.ts:30](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/provider.ts#L30)
+Defined in: [ui/src/api-server/ai/provider.ts:32](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L32)
 
 Aborts the upstream call when the browser disconnects.
 
@@ -52,7 +62,7 @@ Aborts the upstream call when the browser disconnects.
 
 > `optional` **temperature?**: `number`
 
-Defined in: [ui/src/api-server/ai/provider.ts:27](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/provider.ts#L27)
+Defined in: [ui/src/api-server/ai/provider.ts:27](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L27)
 
 ***
 
@@ -60,4 +70,4 @@ Defined in: [ui/src/api-server/ai/provider.ts:27](https://github.com/System-B90/
 
 > `optional` **tools?**: [`AiToolSpec`](AiToolSpec.md)[]
 
-Defined in: [ui/src/api-server/ai/provider.ts:25](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/provider.ts#L25)
+Defined in: [ui/src/api-server/ai/provider.ts:25](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/provider.ts#L25)

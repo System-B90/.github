@@ -8,7 +8,7 @@
 
 > **useEventActions**(`events`, `offlineMode`, `captureEventBeforeEdit`, `dispatch`, `remoteDispatch`, `markEventCreatedLocally`, `isEventCreatedLocally`, `iterationScope?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts:21](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts#L21)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts:24](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts#L24)
 
 ## Parameters
 
@@ -52,8 +52,6 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEven
 
 ## Returns
 
-`object`
-
 ### deleteEvent
 
 > **deleteEvent**: (`eventId`, `initiator`) => `void`
@@ -63,6 +61,26 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEven
 ##### eventId
 
 `string`
+
+##### initiator?
+
+[`EventChangeInitiator`](../../../../../../../api-shared/types/event-history/enumerations/EventChangeInitiator.md) = `EventChangeInitiator.EventDialog`
+
+#### Returns
+
+`void`
+
+### deleteEvents
+
+> **deleteEvents**: (`eventIds`, `initiator`) => `void`
+
+Bulk [deleteEvent](#useeventactions) (#932): one dispatch, one request, one snackbar.
+
+#### Parameters
+
+##### eventIds
+
+`string`[]
 
 ##### initiator?
 
@@ -89,6 +107,30 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEven
 #### Returns
 
 [`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md) \| `undefined`
+
+### saveEvents
+
+> **saveEvents**: (`eventPartials`, `initiator`) => [`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md)[]
+
+Bulk [saveEvent](#useeventactions) (#932): one state dispatch (so one undo step), at
+most one create and one update request, and one summary snackbar. The
+id→event lookup is built once rather than a `find` per event.
+
+#### Parameters
+
+##### eventPartials
+
+`Partial`\<[`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md)\>[]
+
+##### initiator?
+
+[`EventChangeInitiator`](../../../../../../../api-shared/types/event-history/enumerations/EventChangeInitiator.md) = `EventChangeInitiator.EventDialog`
+
+#### Returns
+
+[`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md)[]
+
+The events as applied locally; empty when refused.
 
 ### syncHistoryTravel
 

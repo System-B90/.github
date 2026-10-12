@@ -6,8 +6,8 @@
 
 # Variable: THEMES
 
-> `const` **THEMES**: readonly \[`"light"`, `"dark"`, `"pink"`\]
+> `const` **THEMES**: readonly \[`"light"`, `"dark"`, `"pink"`, `"pink-dark"`\]
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:32](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/theme/ThemeProvider.tsx#L32)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:44](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L44)
 
 Every theme next-themes may set as the `<html>` class (#765).

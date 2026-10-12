@@ -8,14 +8,13 @@
 
 > `const` **CONTRAST\_COLORS**: `object`
 
-Defined in: [ui/src/components/theme/CreateFromPalette.ts:69](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/theme/CreateFromPalette.ts#L69)
+Defined in: [ui/src/components/theme/CreateFromPalette.ts:43](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/CreateFromPalette.ts#L43)
 
-WCAG AA text colours, checked by `tests/backend/theme-contrast.test.ts`.
+Text colours, checked by `tests/backend/theme-contrast.test.ts`.
 
-- The brand turquoise `#67C8DD` is 1.93:1 on white, so it stays a *fill*; in
-  light mode text that would have been turquoise uses a darker teal (#807).
-- Orange `#ED6C02` is 3.11:1 against white either way round (#827).
-- Red `#F44336` is 4.39:1 on the dark paper (#826).
+- Light mode keeps the brand turquoise `#67C8DD` and orange `#ED6C02` as
+  text and icon colours; darkening them made the app look worse (#938).
+- Red `#F44336` is 4.39:1 on the dark paper, so dark mode lightens it (#826).
 
 ## Type Declaration
 
@@ -29,8 +28,8 @@ WCAG AA text colours, checked by `tests/backend/theme-contrast.test.ts`.
 
 ### lightPrimaryText
 
-> `readonly` **lightPrimaryText**: `"#1B6F80"` = `"#1B6F80"`
+> `readonly` **lightPrimaryText**: `"#67C8DD"` = `"#67C8DD"`
 
 ### lightWarning
 
-> `readonly` **lightWarning**: `"#B85300"` = `"#B85300"`
+> `readonly` **lightWarning**: `"#ED6C02"` = `"#ED6C02"`

@@ -8,17 +8,65 @@
 
 > **ThemeContextState** = `object`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:34](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/theme/ThemeProvider.tsx#L34)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:53](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L53)
 
 ## Properties
 
+### accent
+
+> **accent**: [`Accent`](Accent.md)
+
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:56](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L56)
+
+***
+
 ### resolvedTheme
 
-> **resolvedTheme**: `"dark"` \| `"light"`
+> **resolvedTheme**: [`Brightness`](Brightness.md)
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:36](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/theme/ThemeProvider.tsx#L36)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:55](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L55)
 
-Brightness only: pink is a light theme.
+Brightness only: pink is light, pink-dark is dark.
+
+***
+
+### setAccent
+
+> **setAccent**: (`accent`) => `void`
+
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:62](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L62)
+
+Switches brand/pink and keeps the current brightness.
+
+#### Parameters
+
+##### accent
+
+[`Accent`](Accent.md)
+
+#### Returns
+
+`void`
+
+***
+
+### setBrightness
+
+> **setBrightness**: (`brightness`) => `void`
+
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:60](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L60)
+
+Switches light/dark and keeps the current accent.
+
+#### Parameters
+
+##### brightness
+
+[`Brightness`](Brightness.md)
+
+#### Returns
+
+`void`
 
 ***
 
@@ -26,7 +74,7 @@ Brightness only: pink is a light theme.
 
 > **setTheme**: (`theme`) => `void`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:38](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/theme/ThemeProvider.tsx#L38)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:58](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L58)
 
 #### Parameters
 
@@ -44,4 +92,4 @@ Defined in: [ui/src/components/theme/ThemeProvider.tsx:38](https://github.com/Sy
 
 > **theme**: [`ThemeMode`](ThemeMode.md)
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:37](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/theme/ThemeProvider.tsx#L37)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:57](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/ThemeProvider.tsx#L57)

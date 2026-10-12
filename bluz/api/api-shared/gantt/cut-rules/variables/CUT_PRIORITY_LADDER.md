@@ -8,7 +8,7 @@
 
 > `const` **CUT\_PRIORITY\_LADDER**: `ReadonlyArray`\<\{ `description`: `string`; `rule`: `string`; \}\>
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:420](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/gantt/cut-rules.ts#L420)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:420](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/gantt/cut-rules.ts#L420)
 
 When two rules disagree, the earlier entry wins. This is the tie-breaker of
 record for the whole cut — the balancer, the break pass and the constraint

@@ -8,7 +8,7 @@
 
 > **breakAppliesTo**(`window`, `event`): `boolean`
 
-Defined in: [ui/src/api-shared/break-windows.ts:75](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/break-windows.ts#L75)
+Defined in: [ui/src/api-shared/break-windows.ts:80](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/break-windows.ts#L80)
 
 Whether a break interrupts a given event. A break with no rooms and no
 courses is base-wide and interrupts everyone; a scoped break only reaches

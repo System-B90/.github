@@ -8,7 +8,7 @@
 
 > **ModuleDialogProps** = `object` & `DialogProps`
 
-Defined in: [ui/src/components/gantt/module-dialog/index.tsx:56](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/module-dialog/index.tsx#L56)
+Defined in: [ui/src/components/gantt/module-dialog/index.tsx:56](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/module-dialog/index.tsx#L56)
 
 ## Type Declaration
 
@@ -16,8 +16,9 @@ Defined in: [ui/src/components/gantt/module-dialog/index.tsx:56](https://github.
 
 > `optional` **covered?**: `boolean`
 
-Another gantt dialog (the event dialog) is open on top. Its delete is
-hidden so only the top layer's delete is ever on screen (#834).
+Another gantt dialog (the event dialog) is open on top. This dialog
+then hides entirely and stays mounted (#884), which also keeps its
+delete off screen (#834).
 
 ### curriculumId
 

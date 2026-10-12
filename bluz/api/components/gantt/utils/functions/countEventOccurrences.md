@@ -8,7 +8,7 @@
 
 > **countEventOccurrences**(`event`, `eventId`, `state`, `ctx?`): `number`
 
-Defined in: [ui/src/components/gantt/utils.tsx:55](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/utils.tsx#L55)
+Defined in: [ui/src/components/gantt/utils.tsx:55](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/utils.tsx#L55)
 
 Number of times an event occurs. Without `onlyDayIds` this is its required
 count ([countRequiredOccurrences](countRequiredOccurrences.md)). With it, the placed occurrences on

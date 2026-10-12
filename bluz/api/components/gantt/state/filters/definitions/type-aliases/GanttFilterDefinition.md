@@ -8,7 +8,7 @@
 
 > **GanttFilterDefinition**\<`K`\> = `object`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:23](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/filters/definitions.ts#L23)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:25](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L25)
 
 One gantt filter: how to tell it is set, whether a syllabus passes it, and
 how to phrase it. Adding a filter is a new entry here plus a control in the
@@ -26,7 +26,7 @@ popover; the provider ANDs every active definition (#702).
 
 > **describe**: (`value`, `lookups`) => `string`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:27](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/filters/definitions.ts#L27)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:29](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L29)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/state/filters/definitions.ts:27](https://gi
 
 > **isActive**: (`value`) => `boolean`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:25](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/filters/definitions.ts#L25)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:27](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L27)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [ui/src/components/gantt/state/filters/definitions.ts:25](https://gi
 
 > **key**: `K`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:24](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/filters/definitions.ts#L24)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:26](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L26)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [ui/src/components/gantt/state/filters/definitions.ts:24](https://gi
 
 > **matches**: (`syllabus`, `value`) => `boolean`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:26](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/filters/definitions.ts#L26)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:28](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L28)
 
 #### Parameters
 

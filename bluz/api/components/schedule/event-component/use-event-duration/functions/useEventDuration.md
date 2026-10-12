@@ -8,7 +8,7 @@
 
 > **useEventDuration**(`event`): `object`
 
-Defined in: [ui/src/components/schedule/event-component/use-event-duration.ts:20](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-component/use-event-duration.ts#L20)
+Defined in: [ui/src/components/schedule/event-component/use-event-duration.ts:20](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-component/use-event-duration.ts#L20)
 
 Start/end moments of an event plus its length split into whole hours and
 remaining minutes. Callers format the parts to taste.

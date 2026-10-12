@@ -503,33 +503,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../bug-hunt-2026-09/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Bug Hunt 2026-09
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../../../../gantt-cut-rules/" class="md-nav__link">
         
   
@@ -680,10 +653,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
         
           
-          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
             
   
   
@@ -701,8 +674,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_16">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1003,6 +976,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#needsreauth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        needsReauth?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#refreshtoken" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1067,7 +1051,7 @@
 <blockquote>
 <p><strong>GoogleCalendarLink</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L12">ui/src/api-shared/types/google-calendar.ts:12</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L12">ui/src/api-shared/types/google-calendar.ts:12</a></p>
 <p>Per-user OAuth link to Google Calendar. Stored server-side only — never sent
 to the client as-is (see <a href="../GoogleCalendarStatus/">GoogleCalendarStatus</a>).</p>
 <p>Several users may point their links at the <em>same</em> Google calendar (one
@@ -1079,72 +1063,81 @@ the link's <code>iterationId</code> pins which Bluz iteration that calendar mirr
 <blockquote>
 <p><strong>accessToken</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L15">ui/src/api-shared/types/google-calendar.ts:15</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L15">ui/src/api-shared/types/google-calendar.ts:15</a></p>
 <p>AES-GCM sealed (see api-server/secret-box.ts) — never stored in plaintext.</p>
 <hr />
 <h3 id="calendaraccessrole">calendarAccessRole?<a class="headerlink" href="#calendaraccessrole" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>calendarAccessRole?</strong>: <a href="../GoogleCalendarAccessRole/"><code>GoogleCalendarAccessRole</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L25">ui/src/api-shared/types/google-calendar.ts:25</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L25">ui/src/api-shared/types/google-calendar.ts:25</a></p>
 <p>The user's Calendar API access role on it (<code>owner</code> / <code>writer</code>).</p>
 <hr />
 <h3 id="calendarid">calendarId<a class="headerlink" href="#calendarid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>calendarId</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L21">ui/src/api-shared/types/google-calendar.ts:21</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L21">ui/src/api-shared/types/google-calendar.ts:21</a></p>
 <p>Google calendar this link mirrors into — Bluz-created, or one shared with the user.</p>
 <hr />
 <h3 id="calendarsummary">calendarSummary?<a class="headerlink" href="#calendarsummary" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>calendarSummary?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L23">ui/src/api-shared/types/google-calendar.ts:23</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L23">ui/src/api-shared/types/google-calendar.ts:23</a></p>
 <p>Display name of that calendar at link time (cosmetic; Google is the source of truth).</p>
 <hr />
 <h3 id="connectedat">connectedAt<a class="headerlink" href="#connectedat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>connectedAt</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L35">ui/src/api-shared/types/google-calendar.ts:35</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L41">ui/src/api-shared/types/google-calendar.ts:41</a></p>
 <hr />
 <h3 id="expirydate">expiryDate<a class="headerlink" href="#expirydate" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>expiryDate</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L19">ui/src/api-shared/types/google-calendar.ts:19</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L19">ui/src/api-shared/types/google-calendar.ts:19</a></p>
 <p>Epoch ms when <code>accessToken</code> expires.</p>
 <hr />
 <h3 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>iterationId?</strong>: <a href="../../../iteration/type-aliases/IterationId/"><code>IterationId</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L32">ui/src/api-shared/types/google-calendar.ts:32</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L32">ui/src/api-shared/types/google-calendar.ts:32</a></p>
 <p>Bluz iteration this calendar mirrors. Events of any other iteration are
 never pushed here, and a pulled-back edit resolves against this one.
 Links made before this field existed have none and fall back to the
 current iteration.</p>
 <hr />
+<h3 id="needsreauth">needsReauth?<a class="headerlink" href="#needsreauth" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>needsReauth?</strong>: <code>boolean</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L38">ui/src/api-shared/types/google-calendar.ts:38</a></p>
+<p>Google rejected the refresh token (<code>invalid_grant</code>: expired or
+revoked). The link is kept so a reconnect reuses its calendar, but no
+sync runs until then (#914).</p>
+<hr />
 <h3 id="refreshtoken">refreshToken<a class="headerlink" href="#refreshtoken" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>refreshToken</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L17">ui/src/api-shared/types/google-calendar.ts:17</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L17">ui/src/api-shared/types/google-calendar.ts:17</a></p>
 <p>AES-GCM sealed (see api-server/secret-box.ts) — never stored in plaintext.</p>
 <hr />
 <h3 id="synctoken">syncToken?<a class="headerlink" href="#synctoken" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>syncToken?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L34">ui/src/api-shared/types/google-calendar.ts:34</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L40">ui/src/api-shared/types/google-calendar.ts:40</a></p>
 <p>Incremental sync cursor for pulling changes back from Google (nextSyncToken).</p>
 <hr />
 <h3 id="userid">userId<a class="headerlink" href="#userid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>userId</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/google-calendar.ts#L13">ui/src/api-shared/types/google-calendar.ts:13</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/google-calendar.ts#L13">ui/src/api-shared/types/google-calendar.ts:13</a></p>
 
 
 

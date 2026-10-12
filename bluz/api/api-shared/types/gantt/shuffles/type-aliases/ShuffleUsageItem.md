@@ -8,7 +8,7 @@
 
 > **ShuffleUsageItem** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:5](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/shuffles.ts#L5)
+Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:5](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/shuffles.ts#L5)
 
 Modules and events that carry a given set of shuffle names — the payload the
 shuffle-deletion dialog lists before the user confirms the cascade (#485).
@@ -19,7 +19,7 @@ shuffle-deletion dialog lists before the user confirms the cascade (#485).
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:6](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/shuffles.ts#L6)
+Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:6](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/shuffles.ts#L6)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:6](https://github.com/Sys
 
 > **shuffles**: `string`[]
 
-Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:7](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/shuffles.ts#L7)
+Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:7](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/shuffles.ts#L7)
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:7](https://github.com/Sys
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:8](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/gantt/shuffles.ts#L8)
+Defined in: [ui/src/api-shared/types/gantt/shuffles.ts:8](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/shuffles.ts#L8)

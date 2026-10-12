@@ -8,7 +8,7 @@
 
 > **outsiderToValues**(`outsider`): [`OutsiderValues`](../type-aliases/OutsiderValues.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:33](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L33)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:33](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L33)
 
 ## Parameters
 

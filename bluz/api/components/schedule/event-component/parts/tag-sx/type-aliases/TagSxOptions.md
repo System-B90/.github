@@ -8,7 +8,7 @@
 
 > **TagSxOptions** = `object`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:1](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-component/parts/tag-sx.ts#L1)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:1](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-component/parts/tag-sx.ts#L1)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:1](https
 
 > `optional` **customColor?**: `string`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:4](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-component/parts/tag-sx.ts#L4)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:4](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-component/parts/tag-sx.ts#L4)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:4](https
 
 > `optional` **isLecturer?**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:2](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-component/parts/tag-sx.ts#L2)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:2](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-component/parts/tag-sx.ts#L2)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:2](https
 
 > `optional` **overcrowded?**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:3](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/event-component/parts/tag-sx.ts#L3)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:3](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-component/parts/tag-sx.ts#L3)

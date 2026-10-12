@@ -9,6 +9,7 @@
 ## Variables
 
 - [CONTRAST\_COLORS](variables/CONTRAST_COLORS.md)
+- [PINK\_DARK\_PALETTE](variables/PINK_DARK_PALETTE.md)
 - [PINK\_PALETTE](variables/PINK_PALETTE.md)
 
 ## Functions

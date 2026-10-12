@@ -8,7 +8,7 @@
 
 > **InstructorDndProvider**(`props`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/InstructorDndProvider.tsx:83](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/instructor-dnd/InstructorDndProvider.tsx#L83)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/InstructorDndProvider.tsx:92](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/instructor-dnd/InstructorDndProvider.tsx#L92)
 
 Layers a
 
@@ -18,7 +18,7 @@ Layers a
 
 `InstructorDndProviderProps`
 
-Events in state plus the shared save callback.
+Events in state plus the shared batched save callback.
 
 ## Returns
 

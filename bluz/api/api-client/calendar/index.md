@@ -15,7 +15,10 @@
 ## Functions
 
 - [apiCompareEvents](functions/apiCompareEvents.md)
+- [apiCreateEvents](functions/apiCreateEvents.md)
+- [apiDeleteEvents](functions/apiDeleteEvents.md)
 - [apiGetEventHistory](functions/apiGetEventHistory.md)
 - [apiGetEvents](functions/apiGetEvents.md)
 - [apiGetMultipleEvents](functions/apiGetMultipleEvents.md)
+- [apiUpdateEvents](functions/apiUpdateEvents.md)
 - [withInitiator](functions/withInitiator.md)

@@ -8,9 +8,9 @@
 
 > `const` **PINK\_PALETTE**: `object`
 
-Defined in: [ui/src/components/theme/CreateFromPalette.ts:12](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/theme/CreateFromPalette.ts#L12)
+Defined in: [ui/src/components/theme/CreateFromPalette.ts:51](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/CreateFromPalette.ts#L51)
 
-Soft "princess" pink (#765): a light scheme, so `mode` stays light.
+Princess Aurora pink (#765): a light scheme, so `mode` stays light.
 
 ## Type Declaration
 
@@ -20,15 +20,35 @@ Soft "princess" pink (#765): a light scheme, so `mode` stays light.
 
 #### background.default
 
-> `readonly` **default**: `"#FFF3F8"` = `"#FFF3F8"`
+> `readonly` **default**: `"#F7C6DB"` = `"#F7C6DB"`
 
 #### background.paper
 
-> `readonly` **paper**: `"#FFFBFD"` = `"#FFFBFD"`
+> `readonly` **paper**: `"#FCE1EC"` = `"#FCE1EC"`
 
 ### divider
 
-> `readonly` **divider**: `"rgba(184, 96, 127, 0.2)"` = `"rgba(184, 96, 127, 0.2)"`
+> `readonly` **divider**: `"rgba(142, 47, 98, 0.22)"` = `"rgba(142, 47, 98, 0.22)"`
+
+### error
+
+> `readonly` **error**: `object`
+
+#### error.main
+
+> `readonly` **main**: `"#A31515"` = `"#A31515"`
+
+### info
+
+> `readonly` **info**: `object`
+
+#### info.contrastText
+
+> `readonly` **contrastText**: `"#FFFFFF"` = `"#FFFFFF"`
+
+#### info.main
+
+> `readonly` **main**: `"#8E2F62"` = `"#8E2F62"`
 
 ### mode
 
@@ -44,15 +64,23 @@ Soft "princess" pink (#765): a light scheme, so `mode` stays light.
 
 #### primary.dark
 
-> `readonly` **dark**: `"#B8607F"` = `"#B8607F"`
+> `readonly` **dark**: `"#B03F73"` = `"#B03F73"`
 
 #### primary.light
 
-> `readonly` **light**: `"#F6C4D9"` = `"#F6C4D9"`
+> `readonly` **light**: `"#F49AC1"` = `"#F49AC1"`
 
 #### primary.main
 
-> `readonly` **main**: `"#E48AB0"` = `"#E48AB0"`
+> `readonly` **main**: `"#E0629A"` = `"#E0629A"`
+
+### primaryText
+
+> `readonly` **primaryText**: `object`
+
+#### primaryText.main
+
+> `readonly` **main**: `"#8E2F62"` = `"#8E2F62"`
 
 ### secondary
 
@@ -64,15 +92,23 @@ Soft "princess" pink (#765): a light scheme, so `mode` stays light.
 
 #### secondary.dark
 
-> `readonly` **dark**: `"#6E2E52"` = `"#6E2E52"`
+> `readonly` **dark**: `"#5E1A40"` = `"#5E1A40"`
 
 #### secondary.light
 
-> `readonly` **light**: `"#C47FA4"` = `"#C47FA4"`
+> `readonly` **light**: `"#B85D8C"` = `"#B85D8C"`
 
 #### secondary.main
 
-> `readonly` **main**: `"#9C4F79"` = `"#9C4F79"`
+> `readonly` **main**: `"#8E2F62"` = `"#8E2F62"`
+
+### success
+
+> `readonly` **success**: `object`
+
+#### success.main
+
+> `readonly` **main**: `"#1B5E20"` = `"#1B5E20"`
 
 ### text
 
@@ -80,8 +116,20 @@ Soft "princess" pink (#765): a light scheme, so `mode` stays light.
 
 #### text.primary
 
-> `readonly` **primary**: `"#3D1A2C"` = `"#3D1A2C"`
+> `readonly` **primary**: `"#3A0F22"` = `"#3A0F22"`
 
 #### text.secondary
 
-> `readonly` **secondary**: `"#7E5168"` = `"#7E5168"`
+> `readonly` **secondary**: `"#6B2E4C"` = `"#6B2E4C"`
+
+### warning
+
+> `readonly` **warning**: `object`
+
+#### warning.contrastText
+
+> `readonly` **contrastText**: `"#ffffff"` = `"#ffffff"`
+
+#### warning.main
+
+> `readonly` **main**: `"#8A3E00"` = `"#8A3E00"`

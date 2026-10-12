@@ -8,7 +8,7 @@
 
 > **computeEventDaySpans**(`__namedParameters`): `Record`\<`string`, [`EventDaySpan`](../type-aliases/EventDaySpan.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:239](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L239)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:242](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L242)
 
 Computes, per mapped event, the days it occupies: one per mapping, in
 timeline order, each taking that mapping's allotted minutes. Events never

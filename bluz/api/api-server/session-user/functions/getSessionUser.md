@@ -8,7 +8,7 @@
 
 > **getSessionUser**(): `Promise`\<[`SessionUser`](../type-aliases/SessionUser.md) \| `null`\>
 
-Defined in: [ui/src/api-server/session-user.ts:18](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/session-user.ts#L18)
+Defined in: [ui/src/api-server/session-user.ts:18](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/session-user.ts#L18)
 
 Resolves the currently authenticated user from the NextAuth session, or
 `null` when there is no active session. Use for attributing server-side

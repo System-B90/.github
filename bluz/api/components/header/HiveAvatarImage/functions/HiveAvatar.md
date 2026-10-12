@@ -8,7 +8,7 @@
 
 > **HiveAvatar**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/header/HiveAvatarImage.tsx:3](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/header/HiveAvatarImage.tsx#L3)
+Defined in: [ui/src/components/header/HiveAvatarImage.tsx:3](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/header/HiveAvatarImage.tsx#L3)
 
 ## Parameters
 

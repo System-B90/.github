@@ -11,6 +11,7 @@
 - [CapacityStatus](type-aliases/CapacityStatus.md)
 - [DayHeadroom](type-aliases/DayHeadroom.md)
 - [EventDaySpan](type-aliases/EventDaySpan.md)
+- [FormatHoursOptions](type-aliases/FormatHoursOptions.md)
 - [HoursFormat](type-aliases/HoursFormat.md)
 
 ## Variables
@@ -24,7 +25,6 @@
 - [clampWorkingMinutes](functions/clampWorkingMinutes.md)
 - [computeEventDaySpans](functions/computeEventDaySpans.md)
 - [formatHours](functions/formatHours.md)
-- [formatHoursLabel](functions/formatHoursLabel.md)
 - [formatMinutesAsTimeInput](functions/formatMinutesAsTimeInput.md)
 - [formatShortDate](functions/formatShortDate.md)
 - [formatWeekDateRange](functions/formatWeekDateRange.md)

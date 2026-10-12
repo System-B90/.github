@@ -8,7 +8,7 @@
 
 > **cutCurriculumToSchedule**(`curriculumId`, `options?`): `Promise`\<[`ApiCurriculumCutResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutResponse.md)\>
 
-Defined in: [ui/src/api-client/gantt/cut.ts:27](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-client/gantt/cut.ts#L27)
+Defined in: [ui/src/api-client/gantt/cut.ts:27](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-client/gantt/cut.ts#L27)
 
 POST /api/gantt/curriculums/[id]/cut — materialize a published, linked
 curriculum into schedule events. Resolves to the cut summary, or throws a

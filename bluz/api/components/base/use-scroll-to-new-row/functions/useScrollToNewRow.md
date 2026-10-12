@@ -8,7 +8,7 @@
 
 > **useScrollToNewRow**\<`T`\>(`ids`, `containerRef`, `anchorId`): `void`
 
-Defined in: [ui/src/components/base/use-scroll-to-new-row.ts:8](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/use-scroll-to-new-row.ts#L8)
+Defined in: [ui/src/components/base/use-scroll-to-new-row.ts:8](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/base/use-scroll-to-new-row.ts#L8)
 
 Scroll the container to a row whose id newly joined `ids` (a created or
 duplicated entry). Rows are found by their DOM `id`, built by `anchorId`.

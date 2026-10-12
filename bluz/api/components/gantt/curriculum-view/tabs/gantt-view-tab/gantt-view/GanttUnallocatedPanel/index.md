@@ -14,7 +14,9 @@
 ## Variables
 
 - [GanttUnallocatedPanel](variables/GanttUnallocatedPanel.md)
-- [UNALLOCATED\_PANEL\_MAX\_HEIGHT](variables/UNALLOCATED_PANEL_MAX_HEIGHT.md)
+- [UNALLOCATED\_PANEL\_MAX\_WIDTH](variables/UNALLOCATED_PANEL_MAX_WIDTH.md)
+- [UNALLOCATED\_PANEL\_MIN\_WIDTH](variables/UNALLOCATED_PANEL_MIN_WIDTH.md)
+- [UNALLOCATED\_PANEL\_WIDTH](variables/UNALLOCATED_PANEL_WIDTH.md)
 
 ## Functions
 

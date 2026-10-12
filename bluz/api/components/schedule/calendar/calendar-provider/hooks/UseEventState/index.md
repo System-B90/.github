@@ -9,9 +9,12 @@
 ## Type Aliases
 
 - [CalendarAction](type-aliases/CalendarAction.md)
+- [HistoryState](type-aliases/HistoryState.md)
 
 ## Functions
 
 - [calendarReducer](functions/calendarReducer.md)
+- [diffEvents](functions/diffEvents.md)
+- [historyReducer](functions/historyReducer.md)
 - [isStaleUpsert](functions/isStaleUpsert.md)
 - [useEventState](functions/useEventState.md)

@@ -8,6 +8,6 @@
 
 > `const` **FIXTURE\_TUESDAY\_HIDDEN\_IDS**: `string`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:281](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/ai/benchmark/fixture.ts#L281)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:281](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/benchmark/fixture.ts#L281)
 
 The hidden Tuesday events a correct "match the hidden events" run covers.

@@ -8,7 +8,7 @@
 
 > **ActiveDrag** = [`DragModifiers`](../../../calendar/UseDragModifiers/type-aliases/DragModifiers.md) & `object`
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:9](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L9)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L14)
 
 The interaction react-big-calendar currently has in flight, if any.
 

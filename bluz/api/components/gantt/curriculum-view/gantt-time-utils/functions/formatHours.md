@@ -6,9 +6,11 @@
 
 # Function: formatHours()
 
-> **formatHours**(`minutes`, `maximumFractionDigits?`): `string`
+> **formatHours**(`minutes`, `__namedParameters?`): `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:87](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L87)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:95](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L95)
+
+A duration in the viewer's decimal or clock hours, optionally with its unit.
 
 ## Parameters
 
@@ -16,9 +18,9 @@ Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:87](htt
 
 `number`
 
-### maximumFractionDigits?
+### \_\_namedParameters?
 
-`number` = `1`
+[`FormatHoursOptions`](../type-aliases/FormatHoursOptions.md) = `{}`
 
 ## Returns
 

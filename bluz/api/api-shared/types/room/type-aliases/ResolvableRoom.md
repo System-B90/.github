@@ -8,4 +8,4 @@
 
 > **ResolvableRoom** = \{ `id`: `number`; `source`: [`Hive`](../enumerations/RoomSource.md#hive); \} \| \{ `id`: `string`; `source`: [`Custom`](../enumerations/RoomSource.md#custom); \}
 
-Defined in: [ui/src/api-shared/types/room.ts:45](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/room.ts#L45)
+Defined in: [ui/src/api-shared/types/room.ts:45](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/room.ts#L45)

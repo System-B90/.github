@@ -8,7 +8,7 @@
 
 > `const` **DbWeek**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-week.ts:263](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-week.ts#L263)
+Defined in: [ui/src/api-server/gantt/db-week.ts:263](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/db-week.ts#L263)
 
 ## Type Declaration
 
@@ -45,6 +45,26 @@ Defined in: [ui/src/api-server/gantt/db-week.ts:263](https://github.com/System-B
 #### Returns
 
 `Promise`\<[`ApiCurriculumWeek`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiCurriculumWeek.md)\>
+
+### createNewItems
+
+> `readonly` **createNewItems**: (`payloads`, `executor?`) => `Promise`\<[`GanttWeek`](../../../../api-shared/types/gantt/models/week/type-aliases/GanttWeek.md)[]\>
+
+Bulk `createNewItem`; returns the items in payload order.
+
+#### Parameters
+
+##### payloads
+
+[`CreateGanttWeekPayload`](../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttWeekPayload.md)[]
+
+##### executor?
+
+[`GanttDbExecutor`](../../type-aliases/GanttDbExecutor.md)
+
+#### Returns
+
+`Promise`\<[`GanttWeek`](../../../../api-shared/types/gantt/models/week/type-aliases/GanttWeek.md)[]\>
 
 ### deleteItem
 

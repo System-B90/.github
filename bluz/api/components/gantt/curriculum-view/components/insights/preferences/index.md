@@ -9,4 +9,3 @@
 ## Variables
 
 - [insightsAutoRotate](variables/insightsAutoRotate.md)
-- [insightsShowFun](variables/insightsShowFun.md)

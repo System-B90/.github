@@ -8,7 +8,7 @@
 
 > `const` **EVENT\_FIELD\_LABELS**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-shared/event-history.ts:121](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/event-history.ts#L121)
+Defined in: [ui/src/api-shared/event-history.ts:121](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/event-history.ts#L121)
 
 Hebrew labels for the event fields a change row can name. Shared by the
 history panel and the reload-conflicts dialog so a field is never called

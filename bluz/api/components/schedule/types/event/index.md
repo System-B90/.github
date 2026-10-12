@@ -8,6 +8,18 @@
 
 ## References
 
+### ApiEventCreateManyPayload
+
+Re-exports [ApiEventCreateManyPayload](../../../../api-shared/types/event/type-aliases/ApiEventCreateManyPayload.md)
+
+***
+
+### ApiEventCreateManyResponse
+
+Re-exports [ApiEventCreateManyResponse](../../../../api-shared/types/event/type-aliases/ApiEventCreateManyResponse.md)
+
+***
+
 ### ApiEventCreatePayload
 
 Re-exports [ApiEventCreatePayload](../../../../api-shared/types/event/type-aliases/ApiEventCreatePayload.md)
@@ -17,6 +29,12 @@ Re-exports [ApiEventCreatePayload](../../../../api-shared/types/event/type-alias
 ### ApiEventCreateResponse
 
 Re-exports [ApiEventCreateResponse](../../../../api-shared/types/event/type-aliases/ApiEventCreateResponse.md)
+
+***
+
+### ApiEventDeleteManyPayload
+
+Re-exports [ApiEventDeleteManyPayload](../../../../api-shared/types/event/type-aliases/ApiEventDeleteManyPayload.md)
 
 ***
 
@@ -41,6 +59,18 @@ Re-exports [ApiEventGetPayload](../../../../api-shared/types/event/type-aliases/
 ### ApiEventGetResponse
 
 Re-exports [ApiEventGetResponse](../../../../api-shared/types/event/type-aliases/ApiEventGetResponse.md)
+
+***
+
+### ApiEventUpdateManyPayload
+
+Re-exports [ApiEventUpdateManyPayload](../../../../api-shared/types/event/type-aliases/ApiEventUpdateManyPayload.md)
+
+***
+
+### ApiEventUpdateManyResponse
+
+Re-exports [ApiEventUpdateManyResponse](../../../../api-shared/types/event/type-aliases/ApiEventUpdateManyResponse.md)
 
 ***
 

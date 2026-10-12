@@ -8,7 +8,7 @@
 
 > `const` **DbDay**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-day.ts:43](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-day.ts#L43)
+Defined in: [ui/src/api-server/gantt/db-day.ts:43](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/db-day.ts#L43)
 
 ## Type Declaration
 
@@ -54,6 +54,26 @@ layer, which has no database handle to pass.
 #### Returns
 
 `Promise`\<[`GanttDay`](../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md) \| `Omit`\<`object` & [`BaseGantItem`](../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`RawBaseDocument`](../../../../api-shared/types/gantt/api-layer/type-aliases/RawBaseDocument.md), `"title"`\>\>
+
+### createNewItems
+
+> `readonly` **createNewItems**: (`payloads`, `executor?`) => `Promise`\<[`GanttDay`](../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md)[]\>
+
+Bulk `createNewItem`; returns the items in payload order.
+
+#### Parameters
+
+##### payloads
+
+[`CreateGanttDayPayload`](../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttDayPayload.md)[]
+
+##### executor?
+
+[`GanttDbExecutor`](../../type-aliases/GanttDbExecutor.md)
+
+#### Returns
+
+`Promise`\<[`GanttDay`](../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md)[]\>
 
 ### deleteItem
 

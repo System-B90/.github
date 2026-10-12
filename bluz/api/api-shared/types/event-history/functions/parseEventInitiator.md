@@ -8,7 +8,7 @@
 
 > **parseEventInitiator**(`value`): [`EventChangeInitiator`](../enumerations/EventChangeInitiator.md)
 
-Defined in: [ui/src/api-shared/types/event-history.ts:72](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/types/event-history.ts#L72)
+Defined in: [ui/src/api-shared/types/event-history.ts:76](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/event-history.ts#L76)
 
 Narrow an untrusted header value to a known initiator.
 

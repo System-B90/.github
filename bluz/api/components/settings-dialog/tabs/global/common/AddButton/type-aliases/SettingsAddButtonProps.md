@@ -8,7 +8,7 @@
 
 > **SettingsAddButtonProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:4](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx#L4)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:4](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:
 
 > **label**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:5](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx#L5)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:5](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx#L5)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:
 
 > **onClick**: () => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:6](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx#L6)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx:6](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/AddButton.tsx#L6)
 
 #### Returns
 

@@ -15,6 +15,7 @@
 
 - [breakAppliesTo](functions/breakAppliesTo.md)
 - [breakWindowsFor](functions/breakWindowsFor.md)
+- [breakWindowsReaching](functions/breakWindowsReaching.md)
 - [collectBreakWindows](functions/collectBreakWindows.md)
 - [isBreakEvent](functions/isBreakEvent.md)
 - [splitEventAcrossBreaks](functions/splitEventAcrossBreaks.md)

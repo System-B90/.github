@@ -8,7 +8,7 @@
 
 > `const` **get**: (`eventId`, `options?`, `controller`) => `Promise`\<[`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md) \| `null`\> = `getDbEvent`
 
-Defined in: [ui/src/api-server/db-event.ts:311](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/db-event.ts#L311)
+Defined in: [ui/src/api-server/db-event.ts:584](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/db-event.ts#L584)
 
 ## Parameters
 

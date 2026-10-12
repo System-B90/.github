@@ -10,6 +10,10 @@
 
 - [DbEvent](namespaces/DbEvent/index.md)
 
+## Variables
+
+- [EVENT\_RANGE\_LIMIT](variables/EVENT_RANGE_LIMIT.md)
+
 ## References
 
 ### DbEventDocument

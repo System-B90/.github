@@ -8,7 +8,7 @@
 
 > **useWeekActions**(): [`UseWeekActionsReturn`](../type-aliases/UseWeekActionsReturn.md)
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:56](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L56)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx:56](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/hooks/gantt-funcs/UseWeekActions.tsx#L56)
 
 ## Returns
 

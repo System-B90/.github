@@ -507,33 +507,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bug-hunt-2026-09/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Bug Hunt 2026-09
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../gantt-cut-rules/" class="md-nav__link">
         
   
@@ -684,10 +657,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" checked>
         
           
-          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
             
   
   
@@ -705,8 +678,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_16">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1419,6 +1392,28 @@
     <span class="md-ellipsis">
       
         delete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bluz.api.calendar.EventsAPI.create_many" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        create_many
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bluz.api.calendar.EventsAPI.delete_many" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        delete_many
       
     </span>
   </a>
@@ -3354,6 +3349,28 @@
     <span class="md-ellipsis">
       
         delete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bluz.api.calendar.EventsAPI.create_many" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        create_many
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bluz.api.calendar.EventsAPI.delete_many" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        delete_many
       
     </span>
   </a>
@@ -5901,6 +5918,54 @@ fields are carried over from the current value.</p>
     <div class="doc doc-contents ">
 
         <p>Delete (archive) an event by id or object.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="bluz.api.calendar.EventsAPI.create_many" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">create_many</span>
+
+
+<a href="#bluz.api.calendar.EventsAPI.create_many" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">create_many</span><span class="p">(</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">events</span><span class="p">:</span> <span class="n"><span title="collections.abc.Iterable">Iterable</span></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="Event (bluz.models.calendar.Event)" href="../models/#bluz.models.calendar.Event">Event</a></span> <span class="o">|</span> <span class="n"><span title="collections.abc.Mapping">Mapping</span></span><span class="p">[</span><span class="n"><span title="str">str</span></span><span class="p">,</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">]],</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">iteration</span><span class="p">:</span> <span class="n"><span title="str">str</span></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-internal" title="Iteration (bluz.models.iterations.Iteration)" href="../models/#bluz.models.iterations.Iteration">Iteration</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="Collection (bluz.models._base.Collection)" href="../models/#bluz.models._base.Collection">Collection</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="Event (bluz.models.calendar.Event)" href="../models/#bluz.models.calendar.Event">Event</a></span><span class="p">]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Create many events in one request (one insertMany, one undo step).</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="bluz.api.calendar.EventsAPI.delete_many" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">delete_many</span>
+
+
+<a href="#bluz.api.calendar.EventsAPI.delete_many" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">delete_many</span><span class="p">(</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">events</span><span class="p">:</span> <span class="n"><span title="collections.abc.Iterable">Iterable</span></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="Event (bluz.models.calendar.Event)" href="../models/#bluz.models.calendar.Event">Event</a></span> <span class="o">|</span> <span class="n"><span title="str">str</span></span><span class="p">],</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">iteration</span><span class="p">:</span> <span class="n"><span title="str">str</span></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-internal" title="Iteration (bluz.models.iterations.Iteration)" href="../models/#bluz.models.iterations.Iteration">Iteration</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Delete (archive) many events by id or object in one request.</p>
 
 
     </div>

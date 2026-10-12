@@ -8,7 +8,7 @@
 
 > **CalendarContextState** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:11](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L11)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:16](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L16)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **deleteEvent**: (`eventId`, `initiator?`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:42](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L42)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:47](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L47)
 
 #### Parameters
 
@@ -34,11 +34,33 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 ***
 
+### deleteEvents
+
+> **deleteEvents**: (`eventIds`, `initiator?`) => `void`
+
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:50](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L50)
+
+#### Parameters
+
+##### eventIds
+
+[`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md)[]
+
+##### initiator?
+
+[`EventChangeInitiator`](../../../../../../api-shared/types/event-history/enumerations/EventChangeInitiator.md)
+
+#### Returns
+
+`void`
+
+***
+
 ### dispatch
 
 > **dispatch**: (`action`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:45](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L45)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:53](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L53)
 
 #### Parameters
 
@@ -56,7 +78,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **endDate**: `Date` \| `undefined`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:15](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L15)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:20](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L20)
 
 ***
 
@@ -64,7 +86,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **eventLocks**: `Record`\<[`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md), [`EventLockMessage`](../../../../../../api-shared/types/type-aliases/EventLockMessage.md)\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:28](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L28)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:33](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L33)
 
 ***
 
@@ -72,7 +94,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **events**: [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:13](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L13)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:18](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L18)
 
 ***
 
@@ -80,7 +102,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **isLoadingEvents**: `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:25](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:30](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L30)
 
 ***
 
@@ -88,7 +110,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **isReadOnlyIteration**: `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:21](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L21)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:26](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L26)
 
 ***
 
@@ -96,7 +118,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **iterationId**: [`IterationId`](../../../../../../api-shared/types/iteration/type-aliases/IterationId.md) \| `undefined`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:19](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L19)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:24](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L24)
 
 ***
 
@@ -104,7 +126,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **lockEvent**: (`eventId`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:48](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L48)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:56](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L56)
 
 #### Parameters
 
@@ -122,7 +144,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **redo**: () => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:44](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L44)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:52](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L52)
 
 #### Returns
 
@@ -134,7 +156,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **saveEvent**: (`event`, `initiator?`) => [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md) \| `undefined`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:41](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L41)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:46](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L46)
 
 Persists an event. `initiator` names the user action behind the write so
 the server can log it (see api-shared/types/event-history.ts); it
@@ -156,11 +178,35 @@ defaults to an event-dialog edit.
 
 ***
 
+### saveEvents
+
+> **saveEvents**: (`events`, `initiator?`) => [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)[]
+
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:49](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L49)
+
+Bulk forms of the above: one dispatch, one undo step, one request (#932).
+
+#### Parameters
+
+##### events
+
+`Partial`\<[`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)\>[]
+
+##### initiator?
+
+[`EventChangeInitiator`](../../../../../../api-shared/types/event-history/enumerations/EventChangeInitiator.md)
+
+#### Returns
+
+[`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)[]
+
+***
+
 ### setEndDate
 
 > **setEndDate**: `Dispatch`\<`SetStateAction`\<`Date` \| `undefined`\>\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:32](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L32)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:37](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L37)
 
 ***
 
@@ -168,7 +214,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **setIterationId**: `Dispatch`\<`SetStateAction`\<[`IterationId`](../../../../../../api-shared/types/iteration/type-aliases/IterationId.md) \| `undefined`\>\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:33](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L33)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:38](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L38)
 
 ***
 
@@ -176,7 +222,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **setStartDate**: `Dispatch`\<`SetStateAction`\<`Date` \| `undefined`\>\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:31](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L31)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:36](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L36)
 
 ***
 
@@ -184,7 +230,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **startDate**: `Date` \| `undefined`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:14](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L14)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:19](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L19)
 
 ***
 
@@ -192,7 +238,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **undo**: () => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:43](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L43)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:51](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L51)
 
 #### Returns
 
@@ -204,7 +250,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarConte
 
 > **unlockEvent**: (`eventId`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:49](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L49)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:57](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L57)
 
 #### Parameters
 

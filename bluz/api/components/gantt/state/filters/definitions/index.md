@@ -17,3 +17,7 @@
 
 - [EMPTY\_GANTT\_FILTERS](variables/EMPTY_GANTT_FILTERS.md)
 - [GANTT\_FILTER\_DEFINITIONS](variables/GANTT_FILTER_DEFINITIONS.md)
+
+## Functions
+
+- [shuffleFilterOptions](functions/shuffleFilterOptions.md)

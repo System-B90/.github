@@ -8,7 +8,7 @@
 
 > **resolveStudentSchedule**(`__namedParameters`): [`StudentSchedule`](../../types/student-view/type-aliases/StudentSchedule.md)
 
-Defined in: [ui/src/api-shared/student-schedule.ts:10](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/student-schedule.ts#L10)
+Defined in: [ui/src/api-shared/student-schedule.ts:10](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/student-schedule.ts#L10)
 
 Expands the normalized schedule response back into per-event names.
 Groups resolve once, so events sharing a course set share one array.

@@ -8,7 +8,7 @@
 
 > **isInstructorBusy**(`instructor`, `event`): `boolean`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:63](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/base/CalendarFilterProvider.tsx#L63)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:63](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/base/CalendarFilterProvider.tsx#L63)
 
 ## Parameters
 

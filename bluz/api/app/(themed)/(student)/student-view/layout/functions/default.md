@@ -8,7 +8,7 @@
 
 > **default**(`__namedParameters`): `Promise`\<`Element`\>
 
-Defined in: [ui/src/app/(themed)/(student)/student-view/layout.tsx:16](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/app/(themed)/(student)/student-view/layout.tsx#L16)
+Defined in: [ui/src/app/(themed)/(student)/student-view/layout.tsx:19](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/app/(themed)/(student)/student-view/layout.tsx#L19)
 
 The student view sits *outside* the `(post-auth)` group on purpose: that
 group's layout mounts the staff shell (app bar, command palette, Hive
@@ -17,6 +17,7 @@ This layout mounts none of that — a student session has no staff React tree
 to inspect, and nothing on the page suggests one exists (#656).
 
 Both staff and students may render this route: staff use it as the preview.
+Students only get the pink toggle when the deployment enables it (#765).
 
 ## Parameters
 

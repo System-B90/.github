@@ -8,7 +8,7 @@
 
 > **layoutAroundWindows**(`start`, `workingMs`, `windows`, `options?`): [`Interval`](../type-aliases/Interval.md)[]
 
-Defined in: [ui/src/api-shared/interval-layout.ts:72](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/interval-layout.ts#L72)
+Defined in: [ui/src/api-shared/interval-layout.ts:72](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/interval-layout.ts#L72)
 
 Lays `workingMs` of continuous work starting at `start`, stepping over every
 window in its path.

@@ -6,21 +6,14 @@
 
 # Function: CreateSyllabusButton()
 
-> **CreateSyllabusButton**(`__namedParameters`): `Element`
+> **CreateSyllabusButton**(): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:26](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L26)
+Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L14)
 
-"סילבוס חדש" asks for a name first and creates nothing until one is
-confirmed (#845). It used to save a placeholder "סילבוס חדש" record on every
-click, so double clicks and exploration left junk syllabuses behind.
-
-## Parameters
-
-### \_\_namedParameters
-
-#### curriculumId
-
-`string`
+"סילבוס חדש" opens the syllabus dialog as a draft (#881): the user names the
+syllabus and fills in its fields in one place, and nothing is saved until
+the name is committed. It used to save a placeholder "סילבוס חדש" record on
+every click (#845), then asked for the name in a separate prompt.
 
 ## Returns
 

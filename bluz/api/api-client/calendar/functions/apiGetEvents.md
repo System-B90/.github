@@ -8,7 +8,7 @@
 
 > **apiGetEvents**(`__namedParameters`): `Promise`\<[`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]\>
 
-Defined in: [ui/src/api-client/calendar.ts:27](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-client/calendar.ts#L27)
+Defined in: [ui/src/api-client/calendar.ts:29](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-client/calendar.ts#L29)
 
 ## Parameters
 

@@ -8,7 +8,7 @@
 
 > `const` **hiveLessonDriver**: (`controller`) => `Promise`\<[`HiveLessonDriver`](../../../../../api-shared/types/settings/hive-integration/enumerations/HiveLessonDriver.md)\> = `getHiveLessonDriver`
 
-Defined in: [ui/src/api-server/db-settings.ts:153](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/db-settings.ts#L153)
+Defined in: [ui/src/api-server/db-settings.ts:153](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/db-settings.ts#L153)
 
 Which path opens Hive lessons for this iteration. A missing or corrupt
 setting falls back to the activator, i.e. behaviour before the setting.

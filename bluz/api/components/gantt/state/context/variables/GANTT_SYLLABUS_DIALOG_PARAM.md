@@ -8,6 +8,6 @@
 
 > `const` **GANTT\_SYLLABUS\_DIALOG\_PARAM**: `"gs"` = `"gs"`
 
-Defined in: [ui/src/components/gantt/state/context.ts:42](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/components/gantt/state/context.ts#L42)
+Defined in: [ui/src/components/gantt/state/context.ts:44](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/context.ts#L44)
 
 Query param persisting the open syllabus dialog's syllabus id across refresh.

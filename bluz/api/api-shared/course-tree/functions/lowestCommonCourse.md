@@ -8,7 +8,7 @@
 
 > **lowestCommonCourse**(`courseIds`, `courses`): `string` \| `null`
 
-Defined in: [ui/src/api-shared/course-tree.ts:10](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-shared/course-tree.ts#L10)
+Defined in: [ui/src/api-shared/course-tree.ts:10](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/course-tree.ts#L10)
 
 The deepest existing course that is (or contains) every course in
 `courseIds` — the parent a shuffle's new course belongs under. A shuffle

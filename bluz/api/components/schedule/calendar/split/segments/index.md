@@ -15,6 +15,7 @@
 
 - [asDragPreview](functions/asDragPreview.md)
 - [buildEventSegments](functions/buildEventSegments.md)
+- [createSegmentCache](functions/createSegmentCache.md)
 - [isFirstSegment](functions/isFirstSegment.md)
 - [isLastSegment](functions/isLastSegment.md)
 - [isSplitSegment](functions/isSplitSegment.md)

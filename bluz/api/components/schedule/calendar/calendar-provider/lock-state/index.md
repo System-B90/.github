@@ -22,3 +22,4 @@
 - [applyLockUpdate](functions/applyLockUpdate.md)
 - [pruneExpiredLocks](functions/pruneExpiredLocks.md)
 - [toPublicLocks](functions/toPublicLocks.md)
+- [toStablePublicLocks](functions/toStablePublicLocks.md)

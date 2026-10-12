@@ -8,7 +8,7 @@
 
 > `const` **DbSyllabus**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-syllabus.ts:443](https://github.com/System-B90/Bluz/blob/d3e66c57dbea172998b0f35d995d47c87fad995d/ui/src/api-server/gantt/db-syllabus.ts#L443)
+Defined in: [ui/src/api-server/gantt/db-syllabus.ts:443](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/db-syllabus.ts#L443)
 
 ## Type Declaration
 
@@ -93,6 +93,26 @@ layer, which has no database handle to pass.
 #### Returns
 
 `Promise`\<[`GanttSyllabus`](../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabus.md) \| [`ApiSyllabus`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiSyllabus.md)\>
+
+### createNewItems
+
+> `readonly` **createNewItems**: (`payloads`, `executor?`) => `Promise`\<[`GanttSyllabus`](../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabus.md)[]\>
+
+Bulk `createNewItem`; returns the items in payload order.
+
+#### Parameters
+
+##### payloads
+
+[`CreateGanttSyllabusPayload`](../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttSyllabusPayload.md)[]
+
+##### executor?
+
+[`GanttDbExecutor`](../../type-aliases/GanttDbExecutor.md)
+
+#### Returns
+
+`Promise`\<[`GanttSyllabus`](../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabus.md)[]\>
 
 ### deleteItem
 
