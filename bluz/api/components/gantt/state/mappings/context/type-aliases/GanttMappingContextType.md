@@ -8,7 +8,7 @@
 
 > **GanttMappingContextType** = `object`
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:59](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L59)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:63](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L63)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:59](https://githu
 
 > **createMapping**: [`CreateMapping`](CreateMapping.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:62](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L62)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:66](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L66)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:62](https://githu
 
 > **moveMapping**: [`MoveMapping`](MoveMapping.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:63](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L63)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:67](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L67)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:63](https://githu
 
 > **refreshMappings**: [`RefreshMappings`](RefreshMappings.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:61](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L61)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:65](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L65)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:61](https://githu
 
 > **removeMapping**: [`RemoveMapping`](RemoveMapping.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:64](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L64)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:68](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L68)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:64](https://githu
 
 > **setAllottedMinutes**: [`SetAllottedMinutes`](SetAllottedMinutes.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:65](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L65)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:69](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L69)
 
 ***
 
@@ -56,4 +56,4 @@ Defined in: [ui/src/components/gantt/state/mappings/context.ts:65](https://githu
 
 > **state**: [`GanttMappingState`](../../types/type-aliases/GanttMappingState.md)
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:60](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L60)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:64](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L64)

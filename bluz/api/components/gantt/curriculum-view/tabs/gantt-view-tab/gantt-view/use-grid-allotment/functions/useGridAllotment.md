@@ -8,12 +8,15 @@
 
 > **useGridAllotment**(`ctx`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx:58](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx#L58)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx:61](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx#L61)
 
 Commits a grid week-cell edit to the event's mappings' allotted minutes,
 asking first whenever the edit means more than changing a number: removing
 a mapping, moving or splitting the event, or detaching a recurrence
 occurrence. Never touches the event's minimumDuration.
+
+Mappings a week cell creates or moves are week-only (#964): the cell names a
+week, not a day, so the cut may place them on the weekend.
 
 ## Parameters
 

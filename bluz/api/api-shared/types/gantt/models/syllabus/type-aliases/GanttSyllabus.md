@@ -8,7 +8,7 @@
 
 > **GanttSyllabus** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/syllabus.ts:9](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/models/syllabus.ts#L9)
+Defined in: [ui/src/api-shared/types/gantt/models/syllabus.ts:9](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/models/syllabus.ts#L9)
 
 ## Type Declaration
 
@@ -43,6 +43,13 @@ Hive ids of the אחראי מקצוע instructors.
 ### modules
 
 > **modules**: [`GanttModuleId`](../../shared/type-aliases/GanttModuleId.md)[]
+
+### shortName?
+
+> `optional` **shortName?**: `null` \| `string`
+
+Short name / symbol prefixed to events cut from this syllabus (#973).
+Unset ⇒ the linked Hive subject's symbol, else the title.
 
 ### shuffleDescriptions?
 

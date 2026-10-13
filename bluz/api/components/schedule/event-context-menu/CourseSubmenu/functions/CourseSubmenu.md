@@ -8,7 +8,7 @@
 
 > **CourseSubmenu**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:30](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L30)
+Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:30](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L30)
 
 The context menu's course assignment: the course tree nested like
 `CourseSelect`, with its search box and arrow-key hand-off, but tri-state

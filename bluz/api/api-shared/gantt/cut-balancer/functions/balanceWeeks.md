@@ -8,7 +8,7 @@
 
 > **balanceWeeks**(`input`): [`BalancerResult`](../type-aliases/BalancerResult.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:153](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/gantt/cut-balancer.ts#L153)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:153](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-balancer.ts#L153)
 
 Rebalance every week so no day carries more than its working window, moving
 work only forward and only within its own week.

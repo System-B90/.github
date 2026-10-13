@@ -8,7 +8,7 @@
 
 > **useDirectoryCommands**(): `void`
 
-Defined in: [ui/src/components/app-commands/use-directory-commands.tsx:17](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/app-commands/use-directory-commands.tsx#L17)
+Defined in: [ui/src/components/app-commands/use-directory-commands.tsx:17](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/app-commands/use-directory-commands.tsx#L17)
 
 Entity lane (`@`) over the org directory that both product surfaces share:
 rooms and outsiders. Selecting one deep-links into its settings tab with the

@@ -1013,7 +1013,7 @@
 <blockquote>
 <p><strong>materializeCurriculumEvents</strong>(<code>curriculum</code>, <code>iteration</code>, <code>controller</code>, <code>options?</code>): <code>Promise</code>\&lt;<a href="../../type-aliases/MaterializationOutcome/"><code>MaterializationOutcome</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/cut.ts#L907">ui/src/api-server/gantt/cut.ts:907</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L1015">ui/src/api-server/gantt/cut.ts:1015</a></p>
 <p>Plan a curriculum and turn the planned occurrences into schedule-event
 documents. Shared by the one-shot cut and the reload (#…): both need exactly
 the same "what should the schedule look like" computation, and only differ in
@@ -1032,7 +1032,7 @@ what they do with the result.</p>
 <p><a href="../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a></p>
 <p>Controller for the iteration database.</p>
 <h3 id="options">options?<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
-<p><a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions/"><code>CutPlanOptions</code></a> &amp; <code>object</code> = <code>{}</code></p>
+<p><a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions/"><code>CutPlanOptions</code></a> &amp; <code>object</code> &amp; <code>object</code> = <code>{}</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<a href="../../type-aliases/MaterializationOutcome/"><code>MaterializationOutcome</code></a>&gt;</p>
 <p>The intended documents, or the planner's validation errors.</p>

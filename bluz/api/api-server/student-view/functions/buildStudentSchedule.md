@@ -8,7 +8,7 @@
 
 > **buildStudentSchedule**(`date`, `controller`): `Promise`\<[`ApiStudentScheduleGetResponse`](../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse.md)\>
 
-Defined in: [ui/src/api-server/student-view.ts:185](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/student-view.ts#L185)
+Defined in: [ui/src/api-server/student-view.ts:185](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/student-view.ts#L185)
 
 Builds the student projection of a single day's schedule.
 

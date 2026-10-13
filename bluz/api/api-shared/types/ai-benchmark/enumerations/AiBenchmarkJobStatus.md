@@ -6,7 +6,7 @@
 
 # Enumeration: AiBenchmarkJobStatus
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:110](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai-benchmark.ts#L110)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:110](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-benchmark.ts#L110)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:110](https://github.com/Sys
 
 > **Done**: `"done"`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:113](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai-benchmark.ts#L113)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:113](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-benchmark.ts#L113)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:113](https://github.com/Sys
 
 > **Failed**: `"failed"`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:114](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai-benchmark.ts#L114)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:114](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-benchmark.ts#L114)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:114](https://github.com/Sys
 
 > **Idle**: `"idle"`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:111](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai-benchmark.ts#L111)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:111](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-benchmark.ts#L111)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:111](https://github.com/Sys
 
 > **Running**: `"running"`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:112](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai-benchmark.ts#L112)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:112](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-benchmark.ts#L112)

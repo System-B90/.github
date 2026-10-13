@@ -22,6 +22,7 @@
 - [ApiCurriculumPullBackError](type-aliases/ApiCurriculumPullBackError.md)
 - [ApiCurriculumPullBackResponse](type-aliases/ApiCurriculumPullBackResponse.md)
 - [ApiCutPreviewOccurrence](type-aliases/ApiCutPreviewOccurrence.md)
+- [ApiCutWeek](type-aliases/ApiCutWeek.md)
 - [CurriculumCutErrorCode](type-aliases/CurriculumCutErrorCode.md)
 - [CurriculumPullBackErrorCode](type-aliases/CurriculumPullBackErrorCode.md)
 
@@ -29,3 +30,4 @@
 
 - [isCurriculumCutErrorPayload](functions/isCurriculumCutErrorPayload.md)
 - [isCurriculumPullBackErrorPayload](functions/isCurriculumPullBackErrorPayload.md)
+- [parseWeekId](functions/parseWeekId.md)

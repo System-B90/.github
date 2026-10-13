@@ -8,7 +8,7 @@
 
 > `const` **create**: (`customColor`) => `Promise`\<[`CustomColor`](../../../../../api-shared/types/custom-color/type-aliases/CustomColor.md)\> = `createDbCustomColor`
 
-Defined in: [ui/src/api-server/db-custom-colors.ts:50](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/db-custom-colors.ts#L50)
+Defined in: [ui/src/api-server/db-custom-colors.ts:50](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/db-custom-colors.ts#L50)
 
 ## Parameters
 

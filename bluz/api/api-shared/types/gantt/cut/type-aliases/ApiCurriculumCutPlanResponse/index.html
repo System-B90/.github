@@ -965,6 +965,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weeks
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1000,9 +1011,9 @@
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/gantt/cut</a> / ApiCurriculumCutPlanResponse</p>
 <h1 id="type-alias-apicurriculumcutplanresponse">Type Alias: ApiCurriculumCutPlanResponse<a class="headerlink" href="#type-alias-apicurriculumcutplanresponse" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>ApiCurriculumCutPlanResponse</strong> = { <code>errors</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; } | { <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>plannedEvents</code>: <code>number</code>; <code>report</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
+<p><strong>ApiCurriculumCutPlanResponse</strong> = { <code>errors</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; } | { <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>plannedEvents</code>: <code>number</code>; <code>report</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weeks</code>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L52">ui/src/api-shared/types/gantt/cut.ts:52</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L73">ui/src/api-shared/types/gantt/cut.ts:73</a></p>
 <p>Response of POST .../cut/plan — the "plan" half of the plan-then-confirm
 flow. Runs the whole pipeline without writing and reports what the cut would
 do plus every open question, so the dialog can ask them one at a time before
@@ -1012,7 +1023,7 @@ committing. Never writes.</p>
 <p>{ <code>errors</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; }</p>
 <hr />
 <h3 id="type-literal_1">Type Literal<a class="headerlink" href="#type-literal_1" title="Permanent link">&para;</a></h3>
-<p>{ <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>plannedEvents</code>: <code>number</code>; <code>report</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
+<p>{ <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>plannedEvents</code>: <code>number</code>; <code>report</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weeks</code>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
 <h4 id="ok">ok<a class="headerlink" href="#ok" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>ok</strong>: <code>true</code></p>
@@ -1031,6 +1042,11 @@ committing. Never writes.</p>
 <p><strong>report</strong>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a></p>
 </blockquote>
 <p>What the balancer, break pass and constraint solver did.</p>
+<h4 id="weeks">weeks<a class="headerlink" href="#weeks" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>weeks</strong>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]</p>
+</blockquote>
+<p>The timeline's weeks, for a single-week cut (#970).</p>
 
 
 

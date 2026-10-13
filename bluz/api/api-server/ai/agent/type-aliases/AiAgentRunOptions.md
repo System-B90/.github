@@ -8,7 +8,7 @@
 
 > **AiAgentRunOptions** = `object`
 
-Defined in: [ui/src/api-server/ai/agent.ts:54](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L54)
+Defined in: [ui/src/api-server/ai/agent.ts:54](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L54)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/agent.ts:54](https://github.com/System-B90/Blu
 
 > **approvedToolCallIds**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/api-server/ai/agent.ts:60](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L60)
+Defined in: [ui/src/api-server/ai/agent.ts:60](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L60)
 
 Tool call ids the human approved for this turn.
 
@@ -26,7 +26,7 @@ Tool call ids the human approved for this turn.
 
 > **context**: [`AiToolContext`](../../tools/types/type-aliases/AiToolContext.md)
 
-Defined in: [ui/src/api-server/ai/agent.ts:58](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L58)
+Defined in: [ui/src/api-server/ai/agent.ts:58](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L58)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-server/ai/agent.ts:58](https://github.com/System-B90/Blu
 
 > **messages**: [`AiMessage`](../../../../api-shared/types/ai/type-aliases/AiMessage.md)[]
 
-Defined in: [ui/src/api-server/ai/agent.ts:57](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L57)
+Defined in: [ui/src/api-server/ai/agent.ts:57](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L57)
 
 Transcript so far, excluding the system prompt.
 
@@ -44,7 +44,7 @@ Transcript so far, excluding the system prompt.
 
 > `optional` **model?**: `string`
 
-Defined in: [ui/src/api-server/ai/agent.ts:63](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L63)
+Defined in: [ui/src/api-server/ai/agent.ts:63](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L63)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-server/ai/agent.ts:63](https://github.com/System-B90/Blu
 
 > **provider**: [`AiProvider`](../../provider/type-aliases/AiProvider.md)
 
-Defined in: [ui/src/api-server/ai/agent.ts:55](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L55)
+Defined in: [ui/src/api-server/ai/agent.ts:55](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L55)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/api-server/ai/agent.ts:55](https://github.com/System-B90/Blu
 
 > `optional` **registry?**: [`AiToolRegistry`](../../tools/type-aliases/AiToolRegistry.md)
 
-Defined in: [ui/src/api-server/ai/agent.ts:62](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L62)
+Defined in: [ui/src/api-server/ai/agent.ts:62](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L62)
 
 Defaults to the live registry; the self-test passes fixture tools.
 
@@ -70,7 +70,7 @@ Defaults to the live registry; the self-test passes fixture tools.
 
 > `optional` **seed?**: `number`
 
-Defined in: [ui/src/api-server/ai/agent.ts:66](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L66)
+Defined in: [ui/src/api-server/ai/agent.ts:66](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L66)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [ui/src/api-server/ai/agent.ts:66](https://github.com/System-B90/Blu
 
 > `optional` **signal?**: `AbortSignal`
 
-Defined in: [ui/src/api-server/ai/agent.ts:67](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L67)
+Defined in: [ui/src/api-server/ai/agent.ts:67](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L67)
 
 ***
 
@@ -86,6 +86,6 @@ Defined in: [ui/src/api-server/ai/agent.ts:67](https://github.com/System-B90/Blu
 
 > `optional` **temperature?**: `number`
 
-Defined in: [ui/src/api-server/ai/agent.ts:65](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/agent.ts#L65)
+Defined in: [ui/src/api-server/ai/agent.ts:65](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/agent.ts#L65)
 
 Sampling overrides; the self-test pins them so runs are comparable (#948).

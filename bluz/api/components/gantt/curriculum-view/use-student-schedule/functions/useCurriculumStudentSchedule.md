@@ -8,7 +8,7 @@
 
 > **useCurriculumStudentSchedule**(`curriculum`, `state`): [`CurriculumStudentSchedule`](../type-aliases/CurriculumStudentSchedule.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/use-student-schedule.ts:36](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/use-student-schedule.ts#L36)
+Defined in: [ui/src/components/gantt/curriculum-view/use-student-schedule.ts:36](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/use-student-schedule.ts#L36)
 
 The curriculum's schedule as a single student lives it, over the whole
 timeline: every view that shows scheduled time reads it from here, so the

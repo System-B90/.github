@@ -8,7 +8,7 @@
 
 > **BlockTooltipParts** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:11](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L11)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:11](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L11)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > `optional` **hoursLabel?**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:16](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L16)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:16](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L16)
 
 Formatted hours, e.g. "1.5 ש׳".
 
@@ -26,7 +26,7 @@ Formatted hours, e.g. "1.5 ש׳".
 
 > `optional` **notes?**: `string`[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:17](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L17)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:17](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L17)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 
 > `optional` **path?**: (`string` \| `undefined`)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L14)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:14](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L14)
 
 Ancestors, outermost first (syllabus, then module).
 
@@ -44,4 +44,4 @@ Ancestors, outermost first (syllabus, then module).
 
 > `optional` **title?**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:12](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L12)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts:12](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/block-tooltip.ts#L12)

@@ -964,6 +964,45 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        naming?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="naming?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syllabus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        syllabus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symbolbysubjectid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        symbolBySubjectId
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1005,9 +1044,9 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/gantt/cut</a> / buildScheduleEvent</p>
 <h1 id="function-buildscheduleevent">Function: buildScheduleEvent()<a class="headerlink" href="#function-buildscheduleevent" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>buildScheduleEvent</strong>(<code>occurrence</code>, <code>ganttEvent</code>, <code>courseIds</code>, <code>moduleHiveIds</code>, <code>hiveModuleSubjectById</code>, <code>curriculumId</code>): <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a></p>
+<p><strong>buildScheduleEvent</strong>(<code>occurrence</code>, <code>ganttEvent</code>, <code>courseIds</code>, <code>moduleHiveIds</code>, <code>hiveModuleSubjectById</code>, <code>curriculumId</code>, <code>naming?</code>): <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/cut.ts#L522">ui/src/api-server/gantt/cut.ts:522</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L563">ui/src/api-server/gantt/cut.ts:563</a></p>
 <p>Build a single schedule-event document from a planned occurrence and its
 source gantt event. Hive linkage is copied when present on the event
 itself; when the event has no linkage of its own, it falls back to the
@@ -1029,6 +1068,11 @@ lesson null), matching how "fake" events represent "no Hive linkage".</p>
 <p><code>Map</code>\&lt;<code>number</code>, <code>number</code>&gt;</p>
 <h3 id="curriculumid">curriculumId<a class="headerlink" href="#curriculumid" title="Permanent link">&para;</a></h3>
 <p><code>string</code></p>
+<h3 id="naming">naming?<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h3>
+<h4 id="syllabus">syllabus<a class="headerlink" href="#syllabus" title="Permanent link">&para;</a></h4>
+<p><a href="../../type-aliases/SyllabusNaming/"><code>SyllabusNaming</code></a> | <code>undefined</code></p>
+<h4 id="symbolbysubjectid">symbolBySubjectId<a class="headerlink" href="#symbolbysubjectid" title="Permanent link">&para;</a></h4>
+<p><code>Map</code>\&lt;<code>number</code>, <code>string</code>&gt;</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a></p>
 

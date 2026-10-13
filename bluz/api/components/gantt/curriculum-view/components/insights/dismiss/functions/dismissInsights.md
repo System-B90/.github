@@ -8,7 +8,7 @@
 
 > **dismissInsights**(`now?`): `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts:31](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts#L31)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts:31](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts#L31)
 
 Hides the card for [INSIGHTS\_DISMISS\_MS](../variables/INSIGHTS_DISMISS_MS.md); returns the expiry.
 

@@ -8,4 +8,4 @@
 
 > `const` **GET**: `ServerApiHiveLessonsGet`
 
-Defined in: [ui/src/app/api/hive/lessons/route.ts:16](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/app/api/hive/lessons/route.ts#L16)
+Defined in: [ui/src/app/api/hive/lessons/route.ts:16](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/hive/lessons/route.ts#L16)

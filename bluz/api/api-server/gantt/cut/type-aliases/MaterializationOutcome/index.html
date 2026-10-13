@@ -987,6 +987,28 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weekrange" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weekRange
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weeks
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1022,16 +1044,16 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/gantt/cut</a> / MaterializationOutcome</p>
 <h1 id="type-alias-materializationoutcome">Type Alias: MaterializationOutcome<a class="headerlink" href="#type-alias-materializationoutcome" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>MaterializationOutcome</strong> = { <code>errors</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; } | { <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>hiveSubjectsUnavailable</code>: <code>boolean</code>; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
+<p><strong>MaterializationOutcome</strong> = { <code>errors</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; } | { <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>hiveSubjectsUnavailable</code>: <code>boolean</code>; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weekRange</code>: <code>DateRange</code> | <code>null</code>; <code>weeks</code>: <a href="../../../../../api-shared/types/gantt/cut/type-aliases/ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/cut.ts#L875">ui/src/api-server/gantt/cut.ts:875</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L979">ui/src/api-server/gantt/cut.ts:979</a></p>
 <p>The documents a plan materializes into, plus what producing them created.</p>
 <h2 id="union-members">Union Members<a class="headerlink" href="#union-members" title="Permanent link">&para;</a></h2>
 <h3 id="type-literal">Type Literal<a class="headerlink" href="#type-literal" title="Permanent link">&para;</a></h3>
 <p>{ <code>errors</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; }</p>
 <hr />
 <h3 id="type-literal_1">Type Literal<a class="headerlink" href="#type-literal_1" title="Permanent link">&para;</a></h3>
-<p>{ <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>hiveSubjectsUnavailable</code>: <code>boolean</code>; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; }</p>
+<p>{ <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>hiveSubjectsUnavailable</code>: <code>boolean</code>; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weekRange</code>: <code>DateRange</code> | <code>null</code>; <code>weeks</code>: <a href="../../../../../api-shared/types/gantt/cut/type-aliases/ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
 <h4 id="createdcourses">createdCourses<a class="headerlink" href="#createdcourses" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>createdCourses</strong>: <code>object</code>[]</p>
@@ -1061,6 +1083,16 @@ a reload will fix their colours.</p>
 <p><strong>report</strong>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a></p>
 </blockquote>
 <p>What the balancer, break pass and constraint solver did.</p>
+<h4 id="weekrange">weekRange<a class="headerlink" href="#weekrange" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>weekRange</strong>: <code>DateRange</code> | <code>null</code></p>
+</blockquote>
+<p>The cut week's dates, when only one week was asked for (#970).</p>
+<h4 id="weeks">weeks<a class="headerlink" href="#weeks" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>weeks</strong>: <a href="../../../../../api-shared/types/gantt/cut/type-aliases/ApiCutWeek/"><code>ApiCutWeek</code></a>[]</p>
+</blockquote>
+<p>The timeline's weeks, for picking one to cut.</p>
 
 
 

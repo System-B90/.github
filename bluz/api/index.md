@@ -719,6 +719,7 @@
 - [components/schedule/calendar/split/segment-layout](components/schedule/calendar/split/segment-layout/index.md)
 - [components/schedule/calendar/split/segments](components/schedule/calendar/split/segments/index.md)
 - [components/schedule/calendar/split/SplitCalendarContext](components/schedule/calendar/split/SplitCalendarContext/index.md)
+- [components/schedule/calendar/split/use-break-course-expander](components/schedule/calendar/split/use-break-course-expander/index.md)
 - [components/schedule/calendar/utils](components/schedule/calendar/utils/index.md)
 - [components/schedule/event-component/base](components/schedule/event-component/base/index.md)
 - [components/schedule/event-component/event-colors](components/schedule/event-component/event-colors/index.md)

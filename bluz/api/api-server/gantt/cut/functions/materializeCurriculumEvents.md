@@ -8,7 +8,7 @@
 
 > **materializeCurriculumEvents**(`curriculum`, `iteration`, `controller`, `options?`): `Promise`\<[`MaterializationOutcome`](../type-aliases/MaterializationOutcome.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:907](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/cut.ts#L907)
+Defined in: [ui/src/api-server/gantt/cut.ts:1015](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L1015)
 
 Plan a curriculum and turn the planned occurrences into schedule-event
 documents. Shared by the one-shot cut and the reload (#…): both need exactly
@@ -43,7 +43,7 @@ Controller for the iteration database.
 
 ### options?
 
-[`CutPlanOptions`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions.md) & `object` = `{}`
+[`CutPlanOptions`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions.md) & `object` & `object` = `{}`
 
 ## Returns
 

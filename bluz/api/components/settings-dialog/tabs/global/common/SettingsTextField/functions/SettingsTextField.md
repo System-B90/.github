@@ -8,7 +8,7 @@
 
 > **SettingsTextField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx:9](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx:9](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx#L9)
 
 `TextField` with the settings-form look: small, full width, and the 10px
 input radius that every settings field repeated inline. Anything can still

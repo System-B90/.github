@@ -6,7 +6,7 @@
 
 # Enumeration: AiApprovalState
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:57](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/ai/use-ai-chat.ts#L57)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:57](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/ai/use-ai-chat.ts#L57)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:57](https://github.com/System-B
 
 > **Approved**: `"approved"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:59](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/ai/use-ai-chat.ts#L59)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:59](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/ai/use-ai-chat.ts#L59)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:59](https://github.com/System-B
 
 > **Pending**: `"pending"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:58](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/ai/use-ai-chat.ts#L58)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:58](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/ai/use-ai-chat.ts#L58)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:58](https://github.com/System-B
 
 > **Rejected**: `"rejected"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:60](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/ai/use-ai-chat.ts#L60)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:60](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/ai/use-ai-chat.ts#L60)

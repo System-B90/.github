@@ -8,7 +8,7 @@
 
 > **FormActions** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:24](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L24)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:24](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L24)
 
 What a tab may vary about its action row: the submit wording, a pending
 flag, and extra buttons. The layout itself is not negotiable — that is the
@@ -21,7 +21,7 @@ up with different button order, colours and cancel wording.
 
 > `optional` **extraActions?**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:27](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L27)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:27](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L27)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:2
 
 > `optional` **isSubmitting?**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:26](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L26)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:26](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L26)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:2
 
 > **label**: `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:25](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L25)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:25](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L25)
 
 #### creating
 

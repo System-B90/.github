@@ -8,7 +8,7 @@
 
 > **SplitCalendarContextValue** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:66](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L66)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:66](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L66)
 
 Shared state that makes the separate grid boxes of one split event behave as
 a single object: hovering, selecting or dragging any piece lights up all of
@@ -25,7 +25,7 @@ value; tiles read it through the per-event hooks below.
 
 > **breakWindows**: `ReadonlyArray`\<[`BreakWindow`](../../../../../../api-shared/break-windows/type-aliases/BreakWindow.md)\>
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:67](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L67)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:67](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L67)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:
 
 > **drag**: [`DragStore`](DragStore.md)
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:68](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L68)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:68](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L68)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:
 
 > **hover**: [`HoverStore`](HoverStore.md)
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:69](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L69)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:69](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L69)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:
 
 > **openContextMenu**: `null` \| [`OpenEventContextMenu`](OpenEventContextMenu.md)
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:82](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L82)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:82](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L82)
 
 `null` leaves the browser's own menu alone. The calendar always supplies
 one: on a past iteration its write entries are disabled but Copy still
@@ -61,7 +61,7 @@ works, to carry an event into a writable iteration (#859).
 
 > **selectedEventIds**: `ReadonlySet`\<[`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md)\>
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:76](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L76)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:76](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L76)
 
 Events the user has Ctrl/Cmd+clicked into a multi-selection (#706). The
 tiles draw a selection ring for these exactly as for the single
@@ -73,7 +73,7 @@ selection, so a selection of many reads like a selection of one.
 
 > **selection**: [`SelectionStore`](SelectionStore.md)
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:70](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L70)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:70](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L70)
 
 ***
 
@@ -81,7 +81,7 @@ Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:
 
 > **slotContextMenuEnabled**: `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:86](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L86)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:86](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L86)
 
 Right-click on empty grid opens the paste menu (#859).
 
@@ -91,7 +91,7 @@ Right-click on empty grid opens the paste menu (#859).
 
 > **splitEventAt**: (`event`, `atMs`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:84](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L84)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:84](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L84)
 
 Middle-click / Shift+click on a tile: cut the event in two at `atMs` (#657).
 

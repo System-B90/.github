@@ -8,6 +8,6 @@
 
 > **CurriculumCutErrorCode** = `"already-cut"` \| `"draft"` \| `"foreign-cut"` \| `"invalid-plan"` \| `"no-iteration"`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:166](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L166)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:191](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L191)
 
 Structured error codes returned when a cut is rejected without writing.

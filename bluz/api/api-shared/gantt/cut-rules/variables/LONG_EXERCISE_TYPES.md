@@ -8,6 +8,6 @@
 
 > `const` **LONG\_EXERCISE\_TYPES**: `ReadonlyArray`\<[`ModuleEventType`](../../../types/gantt/models/event/enumerations/ModuleEventType.md)\>
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:278](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/gantt/cut-rules.ts#L278)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:278](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-rules.ts#L278)
 
 Event types that count toward a "continuous ע\"ע" run.

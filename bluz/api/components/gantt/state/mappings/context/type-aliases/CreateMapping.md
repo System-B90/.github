@@ -12,7 +12,7 @@
     dayId,
 }`) => `Promise`\<[`GanttCurriculumEventDayMapping`](../../../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md) \| `undefined`\>
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:12](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L12)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:12](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L12)
 
 ## Parameters
 
@@ -39,6 +39,12 @@ Omitted ⇒ the event's whole minimumDuration.
 #### moduleId
 
 [`GanttModuleId`](../../../../../../api-shared/types/gantt/models/shared/type-aliases/GanttModuleId.md)
+
+#### weekOnly?
+
+`boolean`
+
+Placed for the week, not this exact day (#964).
 
 ## Returns
 

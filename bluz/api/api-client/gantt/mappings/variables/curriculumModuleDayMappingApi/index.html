@@ -1284,6 +1284,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weekonly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weekOnly?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1353,7 +1364,7 @@
 <blockquote>
 <p><code>const</code> <strong>curriculumModuleDayMappingApi</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-client/gantt/mappings.ts#L116">ui/src/api-client/gantt/mappings.ts:116</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/mappings.ts#L118">ui/src/api-client/gantt/mappings.ts:118</a></p>
 <p>Client-side API client wrapper for managing curriculum module and event day mappings.
 Provides endpoints for retrieving, creating, updating, and deleting mappings.</p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
@@ -1425,6 +1436,9 @@ Provides endpoints for retrieving, creating, updating, and deleting mappings.</p
 <p><code>string</code></p>
 <h6 id="sortorder">sortOrder?<a class="headerlink" href="#sortorder" title="Permanent link">&para;</a></h6>
 <p><code>number</code></p>
+<h6 id="weekonly">weekOnly?<a class="headerlink" href="#weekonly" title="Permanent link">&para;</a></h6>
+<p><code>boolean</code></p>
+<p>Omitted with a <code>dayId</code> ⇒ the server pins it to that day (#964).</p>
 <h5 id="options_3">options?<a class="headerlink" href="#options_3" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../common/type-aliases/ClientApiProps/"><code>ClientApiProps</code></a></p>
 <h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">&para;</a></h4>

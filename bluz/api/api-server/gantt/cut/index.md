@@ -12,9 +12,11 @@
 - [CutExceptionRow](type-aliases/CutExceptionRow.md)
 - [CutMappingRow](type-aliases/CutMappingRow.md)
 - [CutOutcome](type-aliases/CutOutcome.md)
+- [CutWeekOptions](type-aliases/CutWeekOptions.md)
 - [MaterializationOutcome](type-aliases/MaterializationOutcome.md)
 - [PullBackOutcome](type-aliases/PullBackOutcome.md)
 - [RecreateOccurrenceOutcome](type-aliases/RecreateOccurrenceOutcome.md)
+- [SyllabusNaming](type-aliases/SyllabusNaming.md)
 
 ## Functions
 
@@ -24,6 +26,7 @@
 - [countOverlappingOccurrences](functions/countOverlappingOccurrences.md)
 - [cutCurriculumToSchedule](functions/cutCurriculumToSchedule.md)
 - [cutEventFilter](functions/cutEventFilter.md)
+- [cutEventName](functions/cutEventName.md)
 - [getCutStatus](functions/getCutStatus.md)
 - [indexCurriculumEvents](functions/indexCurriculumEvents.md)
 - [materializeCurriculumEvents](functions/materializeCurriculumEvents.md)

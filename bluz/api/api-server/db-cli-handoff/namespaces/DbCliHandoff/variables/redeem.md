@@ -8,7 +8,7 @@
 
 > `const` **redeem**: (`code`) => `Promise`\<`string`\> = `redeemHandoffCode`
 
-Defined in: [ui/src/api-server/db-cli-handoff.ts:78](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/db-cli-handoff.ts#L78)
+Defined in: [ui/src/api-server/db-cli-handoff.ts:78](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/db-cli-handoff.ts#L78)
 
 Redeem a handoff code for its session token exactly once.
 

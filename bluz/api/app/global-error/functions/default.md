@@ -8,7 +8,7 @@
 
 > **default**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/app/global-error.tsx:8](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/app/global-error.tsx#L8)
+Defined in: [ui/src/app/global-error.tsx:8](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/global-error.tsx#L8)
 
 Last line of defence: a throw in the root layout takes the theme providers
 down with it, so this page renders its own `<html>`/`<body>` and uses inline

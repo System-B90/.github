@@ -13,7 +13,7 @@
     to,
 }`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:23](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/mappings/context.ts#L23)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:25](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/mappings/context.ts#L25)
 
 ## Parameters
 
@@ -53,6 +53,12 @@ Also re-allots the moved mapping.
 #### to.d
 
 [`GanttDayId`](../../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDayId.md)
+
+#### weekOnly?
+
+`boolean`
+
+Landing for the week, not this exact day (#964).
 
 ## Returns
 

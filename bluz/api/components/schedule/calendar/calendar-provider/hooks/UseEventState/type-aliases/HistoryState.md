@@ -8,7 +8,7 @@
 
 > **HistoryState** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:24](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L24)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:24](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L24)
 
 Undo history as per-event inverse operations, not whole-array snapshots
 (#935). A snapshot also captured every *other* user's state at that moment,
@@ -20,7 +20,7 @@ so undo reverted their live edits too - and pushed that to the server.
 
 > **future**: `HistoryEntry`[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:27](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L27)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:27](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L27)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEven
 
 > **past**: `HistoryEntry`[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:25](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:25](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L25)
 
 ***
 
@@ -36,4 +36,4 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEven
 
 > **present**: [`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md)[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:26](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L26)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:26](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L26)

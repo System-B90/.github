@@ -8,7 +8,7 @@
 
 > `const` **ganttConstraintsApi**: `object`
 
-Defined in: [ui/src/api-client/gantt/constraints.ts:198](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-client/gantt/constraints.ts#L198)
+Defined in: [ui/src/api-client/gantt/constraints.ts:198](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/constraints.ts#L198)
 
 Client-side API client wrapper for managing Gantt constraints.
 Provides endpoints for retrieving, creating, updating, and deleting constraints.

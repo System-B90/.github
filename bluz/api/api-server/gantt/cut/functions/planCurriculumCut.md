@@ -8,7 +8,7 @@
 
 > **planCurriculumCut**(`curriculumId`, `options?`): `Promise`\<\{ `error`: [`ApiCurriculumCutError`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutError.md); `ok`: `false`; \} \| \{ `ok`: `true`; `result`: [`ApiCurriculumCutPlanResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPlanResponse.md); \}\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1107](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/cut.ts#L1107)
+Defined in: [ui/src/api-server/gantt/cut.ts:1243](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L1243)
 
 The "plan" half of the plan-then-confirm cut flow.
 
@@ -29,7 +29,7 @@ would be refused anyway.
 
 ### options?
 
-[`CutPlanOptions`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions.md) = `{}`
+[`CutWeekOptions`](../type-aliases/CutWeekOptions.md) = `{}`
 
 ## Returns
 

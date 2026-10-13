@@ -6,25 +6,9 @@
 
 # Function: createNoOverlapLayout()
 
-> **createNoOverlapLayout**(`minTileMs?`): \<`TEvent`\>(`__namedParameters`) => `object`[]
+> **createNoOverlapLayout**(`minTileMs?`): \<`TEvent`\>(`input`) => `object`[]
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:38](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/student-view/no-overlap-layout.ts#L38)
-
-Side-by-side day layout that never draws one tile over another.
-
-Replaces react-big-calendar's `"no-overlap"`, which decides overlap from
-the tiles' floating-point percentage `top`/`height`: an event ending at
-11:15 and one starting at 11:15 can land a rounding error apart and get
-split into half-width columns. Overlap here is decided on timestamps, so
-back-to-back events stack vertically at full width.
-
-`minTileMs` is how much time the grid's minimum tile height covers. A short
-event is drawn taller than its duration, so it claims that much time; zero
-or unknown still claims 1ms, since a zero-length event draws a tile too.
-
-Events are grouped into clusters of transitively overlapping tiles; each
-cluster is split into as many columns as it needs, and a tile stretches
-over neighbouring columns it has to itself.
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:117](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/student-view/no-overlap-layout.ts#L117)
 
 ## Parameters
 
@@ -34,4 +18,4 @@ over neighbouring columns it has to itself.
 
 ## Returns
 
-\<`TEvent`\>(`__namedParameters`) => `object`[]
+\<`TEvent`\>(`input`) => `object`[]

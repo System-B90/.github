@@ -8,7 +8,7 @@
 
 > **ApiCutPreviewOccurrence** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:93](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L93)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:118](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L118)
 
 A single dated, timed occurrence in a cut preview — the pure planner's
 output enriched with display metadata. Dates are ISO strings so the payload
@@ -20,7 +20,7 @@ survives JSON transport; the client re-hydrates with dayjs.
 
 > **breakKind**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:117](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L117)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:142](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L142)
 
 Which break rule produced it (`BreakKind`), or null for a real event.
 
@@ -30,7 +30,7 @@ Which break rule produced it (`BreakKind`), or null for a real event.
 
 > **endTime**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:111](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L111)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:136](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L136)
 
 ISO datetime.
 
@@ -40,7 +40,7 @@ ISO datetime.
 
 > **eventType**: [`ModuleEventType`](../../models/event/enumerations/ModuleEventType.md)
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:97](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L97)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:122](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L122)
 
 ModuleEventType of the source gantt event.
 
@@ -50,7 +50,7 @@ ModuleEventType of the source gantt event.
 
 > **ganttEventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:94](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L94)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:119](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L119)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:94](https://github.com/System-
 
 > **hiveSubjectId**: `null` \| `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:103](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L103)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:128](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L128)
 
 Hive subject id the source gantt event is linked to, or null when the
 event is a non-Hive placeholder. Lets the preview color occurrences by
@@ -70,7 +70,7 @@ their real subject color, matching the actual schedule (#331).
 
 > **isGeneratedBreak**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:115](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L115)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:140](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L140)
 
 True for a break the post-pass invented rather than a gantt event.
 
@@ -80,7 +80,7 @@ True for a break the post-pass invented rather than a gantt event.
 
 > **isRecurrenceEcho**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:113](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L113)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:138](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L138)
 
 True when this is a recurrence echo rather than the mapped start day.
 
@@ -90,7 +90,7 @@ True when this is a recurrence echo rather than the mapped start day.
 
 > **moduleTitle**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:105](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L105)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:130](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L130)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:105](https://github.com/System
 
 > **occurrenceDate**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:107](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L107)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:132](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L132)
 
 ISO date (yyyy-MM-dd) of the occurrence.
 
@@ -108,7 +108,7 @@ ISO date (yyyy-MM-dd) of the occurrence.
 
 > **spilled**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:122](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L122)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:147](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L147)
 
 True when the balancer relocated this occurrence off the day it was
 mapped to. Drives the preview's moved/unmoved highlight.
@@ -119,7 +119,7 @@ mapped to. Drives the preview's moved/unmoved highlight.
 
 > **startTime**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:109](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L109)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:134](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L134)
 
 ISO datetime.
 
@@ -129,7 +129,7 @@ ISO datetime.
 
 > **syllabusTitle**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:104](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L104)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:129](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L129)
 
 ***
 
@@ -137,4 +137,4 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:104](https://github.com/System
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:95](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L95)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:120](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L120)

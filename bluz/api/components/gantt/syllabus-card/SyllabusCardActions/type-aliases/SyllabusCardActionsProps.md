@@ -8,7 +8,7 @@
 
 > **SyllabusCardActionsProps** = `object` & `CardActionsProps`
 
-Defined in: [ui/src/components/gantt/syllabus-card/SyllabusCardActions.tsx:23](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/syllabus-card/SyllabusCardActions.tsx#L23)
+Defined in: [ui/src/components/gantt/syllabus-card/SyllabusCardActions.tsx:23](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/syllabus-card/SyllabusCardActions.tsx#L23)
 
 ## Type Declaration
 

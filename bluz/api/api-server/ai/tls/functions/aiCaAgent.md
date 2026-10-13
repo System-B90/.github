@@ -8,7 +8,7 @@
 
 > **aiCaAgent**(`path?`): `Agent` \| `null`
 
-Defined in: [ui/src/api-server/ai/tls.ts:72](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tls.ts#L72)
+Defined in: [ui/src/api-server/ai/tls.ts:72](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tls.ts#L72)
 
 An undici agent trusting the system roots plus `AI_CA_CERT_PATH`, or null
 when the variable is unset. Built once per path.

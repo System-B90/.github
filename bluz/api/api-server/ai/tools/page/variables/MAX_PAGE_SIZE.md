@@ -8,6 +8,6 @@
 
 > `const` **MAX\_PAGE\_SIZE**: `100` = `100`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:9](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tools/page.ts#L9)
+Defined in: [ui/src/api-server/ai/tools/page.ts:9](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/page.ts#L9)
 
 Hard ceiling, whatever the model asks for.

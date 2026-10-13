@@ -8,7 +8,7 @@
 
 > **apiGetSnapshot**(`snapshotId`, `iterationId?`): `Promise`\<\{ `events`: [`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]; `snapshot`: [`CalendarSnapshot`](../../../api-shared/types/type-aliases/CalendarSnapshot.md); \}\>
 
-Defined in: [ui/src/api-client/calendar-snapshots.ts:48](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-client/calendar-snapshots.ts#L48)
+Defined in: [ui/src/api-client/calendar-snapshots.ts:48](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/calendar-snapshots.ts#L48)
 
 Fetches a single snapshot including its captured events, mapped back into the
 client `Event` shape (Dayjs timestamps) ready for a SET_EVENTS restore.

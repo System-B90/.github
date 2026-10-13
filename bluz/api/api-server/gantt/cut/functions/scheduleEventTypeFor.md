@@ -8,7 +8,7 @@
 
 > **scheduleEventTypeFor**(`ganttEvent`): [`EventType`](../../../../api-shared/types/event/enumerations/EventType.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:197](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/cut.ts#L197)
+Defined in: [ui/src/api-server/gantt/cut.ts:201](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L201)
 
 Calendar type of a cut occurrence. The auto-seeded meal events become real
 break (הפסקה) events rather than generic "אחר" ones: the planner already

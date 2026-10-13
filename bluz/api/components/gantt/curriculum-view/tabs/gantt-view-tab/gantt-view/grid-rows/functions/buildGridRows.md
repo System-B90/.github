@@ -8,7 +8,7 @@
 
 > **buildGridRows**(`syllabusIds`, `placement`, `isSyllabusExpanded`, `isModuleExpanded`, `paths?`): [`GridRow`](../type-aliases/GridRow.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-rows.ts:112](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-rows.ts#L112)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-rows.ts:112](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-rows.ts#L112)
 
 The grid's visible rows in display order. A summary row sums all of its
 children, collapsed or not. An event's required time is its duration times

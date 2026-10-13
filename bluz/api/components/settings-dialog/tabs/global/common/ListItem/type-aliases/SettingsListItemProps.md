@@ -8,7 +8,7 @@
 
 > **SettingsListItemProps**\<`TEntity`\> = `object` & `Pick`\<`ListItemProps`, `"children"` \| `"onClick"`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListItem.tsx:10](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/settings-dialog/tabs/global/common/ListItem.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/ListItem.tsx:10](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/common/ListItem.tsx#L10)
 
 ## Type Declaration
 

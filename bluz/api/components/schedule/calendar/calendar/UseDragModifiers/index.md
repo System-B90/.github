@@ -18,3 +18,4 @@
 
 - [readDragModifiers](functions/readDragModifiers.md)
 - [useDragModifiers](functions/useDragModifiers.md)
+- [useResizeKeyHeld](functions/useResizeKeyHeld.md)

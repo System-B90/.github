@@ -8,7 +8,7 @@
 
 > **shuffleMinutesOnDay**(`syllabusId`, `dayId`, `mappings`, `sources`): `Map`\<`string`, `number`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts:79](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts#L79)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts:79](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts#L79)
 
 Minutes each shuffle of `syllabusId` has on `dayId`, under `mappings`.
 

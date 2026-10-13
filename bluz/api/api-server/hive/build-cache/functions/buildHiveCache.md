@@ -8,7 +8,7 @@
 
 > **buildHiveCache**(`hiveUrl?`): `Promise`\<[`HiveIterationCache`](../../../../api-shared/types/iteration/type-aliases/HiveIterationCache.md) \| `undefined`\>
 
-Defined in: [ui/src/api-server/hive/build-cache.ts:15](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/hive/build-cache.ts#L15)
+Defined in: [ui/src/api-server/hive/build-cache.ts:15](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/hive/build-cache.ts#L15)
 
 Snapshot the Hive module / subject / room names for a Hive instance. Hive
 ids are not stable across iterations, so we freeze the names by id.

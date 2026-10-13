@@ -8,7 +8,7 @@
 
 > **buildWeekIndexByDayId**(`timelineWeeks`): `Map`\<`string`, `number`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:202](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L202)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:202](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L202)
 
 Maps each dayId to the index of the week (within timelineWeeks) that owns it.
 

@@ -8,7 +8,7 @@
 
 > **EventMappingField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/event-dialog/EventMappingField.tsx:30](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/event-dialog/EventMappingField.tsx#L30)
+Defined in: [ui/src/components/gantt/event-dialog/EventMappingField.tsx:30](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/event-dialog/EventMappingField.tsx#L30)
 
 Lets the user allocate this event to a week/day directly from the event
 dialog, instead of exiting to the רצף זמן tab and dragging it there (#447).

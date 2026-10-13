@@ -6,9 +6,9 @@
 
 # Function: buildScheduleEvent()
 
-> **buildScheduleEvent**(`occurrence`, `ganttEvent`, `courseIds`, `moduleHiveIds`, `hiveModuleSubjectById`, `curriculumId`): [`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)
+> **buildScheduleEvent**(`occurrence`, `ganttEvent`, `courseIds`, `moduleHiveIds`, `hiveModuleSubjectById`, `curriculumId`, `naming?`): [`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:522](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/cut.ts#L522)
+Defined in: [ui/src/api-server/gantt/cut.ts:563](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L563)
 
 Build a single schedule-event document from a planned occurrence and its
 source gantt event. Hive linkage is copied when present on the event
@@ -44,6 +44,16 @@ lesson null), matching how "fake" events represent "no Hive linkage".
 ### curriculumId
 
 `string`
+
+### naming?
+
+#### syllabus
+
+[`SyllabusNaming`](../type-aliases/SyllabusNaming.md) \| `undefined`
+
+#### symbolBySubjectId
+
+`Map`\<`number`, `string`\>
 
 ## Returns
 

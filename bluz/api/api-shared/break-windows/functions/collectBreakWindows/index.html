@@ -909,6 +909,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#expandcourses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        expandCourses?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -950,15 +961,19 @@
 <p><a href="../../../../">TypeDoc API</a> / <a href="../../">api-shared/break-windows</a> / collectBreakWindows</p>
 <h1 id="function-collectbreakwindows">Function: collectBreakWindows()<a class="headerlink" href="#function-collectbreakwindows" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>collectBreakWindows</strong>(<code>events</code>): <a href="../../type-aliases/BreakWindow/"><code>BreakWindow</code></a>[]</p>
+<p><strong>collectBreakWindows</strong>(<code>events</code>, <code>expandCourses?</code>): <a href="../../type-aliases/BreakWindow/"><code>BreakWindow</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/break-windows.ts#L59">ui/src/api-shared/break-windows.ts:59</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/break-windows.ts#L62">ui/src/api-shared/break-windows.ts:62</a></p>
 <p>Extracts every break event in <code>events</code> as a scoped window. Pass the complete
 event set, not a filtered/visible subset — a break hidden by a filter still
 interrupts the day.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <p><code>Iterable</code>\&lt;<a href="../../type-aliases/SplittableEvent/"><code>SplittableEvent</code></a>&gt;</p>
+<h3 id="expandcourses">expandCourses?<a class="headerlink" href="#expandcourses" title="Permanent link">&para;</a></h3>
+<p>(<code>courseIds</code>) =&gt; <code>Iterable</code>\&lt;<code>string</code>&gt;</p>
+<p>Widens a break's courses to their descendants, so a
+       Bis90 break also interrupts Apollo events (#974).</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><a href="../../type-aliases/BreakWindow/"><code>BreakWindow</code></a>[]</p>
 

@@ -8,7 +8,7 @@
 
 > **createCurriculumModuleDayMapping**(`data`, `executor?`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-mappings.ts:74](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/db-mappings.ts#L74)
+Defined in: [ui/src/api-server/gantt/db-mappings.ts:74](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/db-mappings.ts#L74)
 
 Creates a new module or event day mapping.
 
@@ -43,6 +43,12 @@ Defaults to the event's whole duration: placing an event allots it in full.
 #### sortOrder?
 
 `number`
+
+#### weekOnly?
+
+`boolean`
+
+Placed for the week rather than this exact day (#964).
 
 ### executor?
 

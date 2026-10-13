@@ -8,7 +8,7 @@
 
 > **ConstraintListItem**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintListItem.tsx:10](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/module-dialog/constraints/ConstraintListItem.tsx#L10)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintListItem.tsx:10](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/module-dialog/constraints/ConstraintListItem.tsx#L10)
 
 ## Parameters
 

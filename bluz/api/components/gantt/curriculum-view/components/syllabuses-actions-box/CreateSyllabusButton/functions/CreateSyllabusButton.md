@@ -8,7 +8,7 @@
 
 > **CreateSyllabusButton**(): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L14)
+Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:14](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L14)
 
 "סילבוס חדש" opens the syllabus dialog as a draft (#881): the user names the
 syllabus and fills in its fields in one place, and nothing is saved until

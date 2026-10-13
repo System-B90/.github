@@ -8,7 +8,7 @@
 
 > **GanttFilterValues** = `object`
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:5](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L5)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:5](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/filters/definitions.ts#L5)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/filters/definitions.ts:5](https://git
 
 > **courseIds**: [`CourseId`](../../../../../../api-shared/types/course/type-aliases/CourseId.md)[]
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:6](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L6)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:6](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/filters/definitions.ts#L6)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/filters/definitions.ts:6](https://git
 
 > **leadInstructorIds**: `number`[]
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:7](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L7)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:7](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/filters/definitions.ts#L7)
 
 ***
 
@@ -32,6 +32,6 @@ Defined in: [ui/src/components/gantt/state/filters/definitions.ts:7](https://git
 
 > **shuffleNames**: `string`[]
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:9](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/state/filters/definitions.ts#L9)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:9](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/filters/definitions.ts#L9)
 
 Shuffle names: a syllabus passes when it has any of them (#886).

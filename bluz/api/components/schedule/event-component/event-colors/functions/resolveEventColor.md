@@ -8,7 +8,7 @@
 
 > **resolveEventColor**(`event`, `subject`, `lookups`, `fallback`): `string`
 
-Defined in: [ui/src/components/schedule/event-component/event-colors.ts:30](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/event-component/event-colors.ts#L30)
+Defined in: [ui/src/components/schedule/event-component/event-colors.ts:30](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/event-component/event-colors.ts#L30)
 
 Resolves the display color for a calendar event, including per-event overrides.
 `event.color` stores an ID (a custom color ID or a Hive subject ID), not a hex

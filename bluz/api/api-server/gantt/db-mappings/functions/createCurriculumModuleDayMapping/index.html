@@ -976,6 +976,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weekonly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weekOnly?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1035,7 +1046,7 @@
 <blockquote>
 <p><strong>createCurriculumModuleDayMapping</strong>(<code>data</code>, <code>executor?</code>): <code>Promise</code>\&lt;<code>object</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/gantt/db-mappings.ts#L74">ui/src/api-server/gantt/db-mappings.ts:74</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/db-mappings.ts#L74">ui/src/api-server/gantt/db-mappings.ts:74</a></p>
 <p>Creates a new module or event day mapping.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="data">data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h3>
@@ -1053,6 +1064,9 @@
 <p><code>string</code></p>
 <h4 id="sortorder">sortOrder?<a class="headerlink" href="#sortorder" title="Permanent link">&para;</a></h4>
 <p><code>number</code></p>
+<h4 id="weekonly">weekOnly?<a class="headerlink" href="#weekonly" title="Permanent link">&para;</a></h4>
+<p><code>boolean</code></p>
+<p>Placed for the week rather than this exact day (#964).</p>
 <h3 id="executor">executor?<a class="headerlink" href="#executor" title="Permanent link">&para;</a></h3>
 <p><a href="../../../type-aliases/GanttDbExecutor/"><code>GanttDbExecutor</code></a> = <code>postgresDb</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>

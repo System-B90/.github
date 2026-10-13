@@ -965,6 +965,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#shortname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shortName?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#shuffledescriptions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1040,7 +1051,7 @@
 <blockquote>
 <p><strong>GanttSyllabus</strong> = <code>object</code> &amp; <a href="../../../shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/models/syllabus.ts#L9">ui/src/api-shared/types/gantt/models/syllabus.ts:9</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/models/syllabus.ts#L9">ui/src/api-shared/types/gantt/models/syllabus.ts:9</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="color">color?<a class="headerlink" href="#color" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -1070,6 +1081,12 @@
 <blockquote>
 <p><strong>modules</strong>: <a href="../../../shared/type-aliases/GanttModuleId/"><code>GanttModuleId</code></a>[]</p>
 </blockquote>
+<h3 id="shortname">shortName?<a class="headerlink" href="#shortname" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shortName?</strong>: <code>null</code> | <code>string</code></p>
+</blockquote>
+<p>Short name / symbol prefixed to events cut from this syllabus (#973).
+Unset ⇒ the linked Hive subject's symbol, else the title.</p>
 <h3 id="shuffledescriptions">shuffleDescriptions?<a class="headerlink" href="#shuffledescriptions" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>shuffleDescriptions?</strong>: <a href="../../../../../../gantt/shuffle-names/type-aliases/ShuffleDescriptions/"><code>ShuffleDescriptions</code></a></p>

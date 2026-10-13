@@ -933,6 +933,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#expandcourses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        expandCourses?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1148,7 +1159,7 @@
 <blockquote>
 <p><strong>createSegmentCache</strong>(): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/schedule/calendar/split/segments.ts#L128">ui/src/components/schedule/calendar/split/segments.ts:128</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/segments.ts#L128">ui/src/components/schedule/calendar/split/segments.ts:128</a></p>
 <p>Incremental <a href="../buildEventSegments/">buildEventSegments</a> for the calendar (#927). One websocket
 upsert used to rebuild every segment, so every tile and day column
 re-laid-out. This keeps, across calls:
@@ -1158,12 +1169,14 @@ re-laid-out. This keeps, across calls:
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <h3 id="breakwindows">breakWindows()<a class="headerlink" href="#breakwindows" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>breakWindows</strong>(<code>events</code>): readonly <a href="../../../../../../../api-shared/break-windows/type-aliases/BreakWindow/"><code>BreakWindow</code></a>[]</p>
+<p><strong>breakWindows</strong>(<code>events</code>, <code>expandCourses?</code>): readonly <a href="../../../../../../../api-shared/break-windows/type-aliases/BreakWindow/"><code>BreakWindow</code></a>[]</p>
 </blockquote>
 <p><a href="../../../../../../../api-shared/break-windows/functions/collectBreakWindows/">collectBreakWindows</a>, but the previous array while equal.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h5>
 <p>readonly <a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>[]</p>
+<h5 id="expandcourses">expandCourses?<a class="headerlink" href="#expandcourses" title="Permanent link">&para;</a></h5>
+<p>(<code>courseIds</code>) =&gt; <code>Iterable</code>\&lt;<code>string</code>&gt;</p>
 <h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
 <p>readonly <a href="../../../../../../../api-shared/break-windows/type-aliases/BreakWindow/"><code>BreakWindow</code></a>[]</p>
 <h3 id="keep">keep()<a class="headerlink" href="#keep" title="Permanent link">&para;</a></h3>

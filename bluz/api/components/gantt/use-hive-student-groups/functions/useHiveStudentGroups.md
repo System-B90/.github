@@ -8,7 +8,7 @@
 
 > **useHiveStudentGroups**(): `HiveStudentGroups` \| `null`
 
-Defined in: [ui/src/components/gantt/use-hive-student-groups.ts:25](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/use-hive-student-groups.ts#L25)
+Defined in: [ui/src/components/gantt/use-hive-student-groups.ts:25](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/use-hive-student-groups.ts#L25)
 
 Hive student groups, keyed by normalized name. A shuffle is 1:1 with a Hive
 student group matched by name (see `resolveDesiredRules`), so this tells a

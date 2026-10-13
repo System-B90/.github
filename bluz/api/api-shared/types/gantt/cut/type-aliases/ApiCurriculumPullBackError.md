@@ -8,7 +8,7 @@
 
 > **ApiCurriculumPullBackError** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:176](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L176)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:201](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L201)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:176](https://github.com/System
 
 > **code**: [`CurriculumPullBackErrorCode`](CurriculumPullBackErrorCode.md)
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:177](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L177)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:202](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L202)
 
 ***
 
@@ -24,6 +24,6 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:177](https://github.com/System
 
 > `optional` **message?**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:179](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/gantt/cut.ts#L179)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:204](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L204)
 
 Human-readable Hebrew message describing the rejection.

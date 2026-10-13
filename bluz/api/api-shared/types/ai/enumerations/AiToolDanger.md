@@ -6,7 +6,7 @@
 
 # Enumeration: AiToolDanger
 
-Defined in: [ui/src/api-shared/types/ai.ts:66](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai.ts#L66)
+Defined in: [ui/src/api-shared/types/ai.ts:66](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai.ts#L66)
 
 How much damage running a tool can do. Drives the colour, the wording and
 the extra confirmation on the approval card — a reversible edit and an
@@ -18,7 +18,7 @@ irreversible delete must not look alike.
 
 > **Caution**: `"caution"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:70](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai.ts#L70)
+Defined in: [ui/src/api-shared/types/ai.ts:70](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai.ts#L70)
 
 Changes stored data; recoverable through history.
 
@@ -28,7 +28,7 @@ Changes stored data; recoverable through history.
 
 > **Destructive**: `"destructive"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:72](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai.ts#L72)
+Defined in: [ui/src/api-shared/types/ai.ts:72](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai.ts#L72)
 
 Destroys or overwrites data at scale. Needs an explicit re-confirm.
 
@@ -38,6 +38,6 @@ Destroys or overwrites data at scale. Needs an explicit re-confirm.
 
 > **Safe**: `"safe"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:68](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-shared/types/ai.ts#L68)
+Defined in: [ui/src/api-shared/types/ai.ts:68](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai.ts#L68)
 
 Reads only, or a write that loses nothing.

@@ -8,7 +8,7 @@
 
 > **HiveUsersContextState** = `object`
 
-Defined in: [ui/src/components/base/HiveUsersProvider.tsx:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/base/HiveUsersProvider.tsx#L14)
+Defined in: [ui/src/components/base/HiveUsersProvider.tsx:14](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveUsersProvider.tsx#L14)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/HiveUsersProvider.tsx:14](https://github.com
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/HiveUsersProvider.tsx:15](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/base/HiveUsersProvider.tsx#L15)
+Defined in: [ui/src/components/base/HiveUsersProvider.tsx:15](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveUsersProvider.tsx#L15)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/base/HiveUsersProvider.tsx:15](https://github.com
 
 > **getInstructor**: (`id`) => `CourseUser` \| `undefined`
 
-Defined in: [ui/src/components/base/HiveUsersProvider.tsx:18](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/base/HiveUsersProvider.tsx#L18)
+Defined in: [ui/src/components/base/HiveUsersProvider.tsx:18](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveUsersProvider.tsx#L18)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/base/HiveUsersProvider.tsx:18](https://github.com
 
 > **instructors**: `CourseUser`[]
 
-Defined in: [ui/src/components/base/HiveUsersProvider.tsx:17](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/base/HiveUsersProvider.tsx#L17)
+Defined in: [ui/src/components/base/HiveUsersProvider.tsx:17](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveUsersProvider.tsx#L17)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [ui/src/components/base/HiveUsersProvider.tsx:17](https://github.com
 
 > **users**: `Record`\<`number`, `CourseUser`\>
 
-Defined in: [ui/src/components/base/HiveUsersProvider.tsx:16](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/base/HiveUsersProvider.tsx#L16)
+Defined in: [ui/src/components/base/HiveUsersProvider.tsx:16](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveUsersProvider.tsx#L16)

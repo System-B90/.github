@@ -8,7 +8,7 @@
 
 > **ShuffleSelect**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/ShuffleSelect.tsx:14](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/gantt/ShuffleSelect.tsx#L14)
+Defined in: [ui/src/components/gantt/ShuffleSelect.tsx:14](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/ShuffleSelect.tsx#L14)
 
 Multi-select for tagging a Gantt module/event with shuffle (student group)
 names defined on the parent syllabus. An empty selection means the item

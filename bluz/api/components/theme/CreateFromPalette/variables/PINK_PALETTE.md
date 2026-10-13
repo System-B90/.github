@@ -8,7 +8,7 @@
 
 > `const` **PINK\_PALETTE**: `object`
 
-Defined in: [ui/src/components/theme/CreateFromPalette.ts:51](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/components/theme/CreateFromPalette.ts#L51)
+Defined in: [ui/src/components/theme/CreateFromPalette.ts:51](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/theme/CreateFromPalette.ts#L51)
 
 Princess Aurora pink (#765): a light scheme, so `mode` stays light.
 
@@ -48,7 +48,7 @@ Princess Aurora pink (#765): a light scheme, so `mode` stays light.
 
 #### info.main
 
-> `readonly` **main**: `"#8E2F62"` = `"#8E2F62"`
+> `readonly` **main**: `"#C2185B"` = `"#C2185B"`
 
 ### mode
 

@@ -8,7 +8,7 @@
 
 > **AskUserArgs** = `object`
 
-Defined in: [ui/src/api-server/ai/tools/ask-user.ts:19](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tools/ask-user.ts#L19)
+Defined in: [ui/src/api-server/ai/tools/ask-user.ts:19](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/ask-user.ts#L19)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/tools/ask-user.ts:19](https://github.com/Syste
 
 > `optional` **allowFreeText?**: `boolean`
 
-Defined in: [ui/src/api-server/ai/tools/ask-user.ts:22](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tools/ask-user.ts#L22)
+Defined in: [ui/src/api-server/ai/tools/ask-user.ts:22](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/ask-user.ts#L22)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/ai/tools/ask-user.ts:22](https://github.com/Syste
 
 > **options**: [`AiChoiceOption`](../../../../../api-shared/types/ai/type-aliases/AiChoiceOption.md)[]
 
-Defined in: [ui/src/api-server/ai/tools/ask-user.ts:21](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tools/ask-user.ts#L21)
+Defined in: [ui/src/api-server/ai/tools/ask-user.ts:21](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/ask-user.ts#L21)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-server/ai/tools/ask-user.ts:21](https://github.com/Syste
 
 > **question**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/ask-user.ts:20](https://github.com/System-B90/Bluz/blob/4bd90f164a3cfe171409116b1f28d79f80797dcd/ui/src/api-server/ai/tools/ask-user.ts#L20)
+Defined in: [ui/src/api-server/ai/tools/ask-user.ts:20](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/ask-user.ts#L20)

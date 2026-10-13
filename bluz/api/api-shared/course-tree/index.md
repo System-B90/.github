@@ -12,6 +12,7 @@
 
 ## Functions
 
+- [descendantCoursesResolver](functions/descendantCoursesResolver.md)
 - [isShuffleCourse](functions/isShuffleCourse.md)
 - [lowestCommonCourse](functions/lowestCommonCourse.md)
 - [relatedCourses](functions/relatedCourses.md)
