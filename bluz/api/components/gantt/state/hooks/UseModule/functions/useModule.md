@@ -10,7 +10,7 @@
 
 > **useModule**(`moduleId`): `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseModule.ts:8](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/hooks/UseModule.ts#L8)
+Defined in: [ui/src/components/gantt/state/hooks/UseModule.ts:8](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/state/hooks/UseModule.ts#L8)
 
 ### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/gantt/state/hooks/UseModule.ts:8](https://github.
 
 > **useModule**(`moduleId`): `object` & [`BaseGantItem`](../../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDocument`](../../../../../../api-client/gantt/base/type-aliases/BaseDocument.md) & `object` \| `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseModule.ts:9](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/hooks/UseModule.ts#L9)
+Defined in: [ui/src/components/gantt/state/hooks/UseModule.ts:9](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/state/hooks/UseModule.ts#L9)
 
 ### Parameters
 

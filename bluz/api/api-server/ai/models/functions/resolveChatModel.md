@@ -8,7 +8,7 @@
 
 > **resolveChatModel**(`provider`, `requested`, `hasOwnKey`): `Promise`\<`string` \| `undefined`\>
 
-Defined in: [ui/src/api-server/ai/models.ts:59](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/models.ts#L59)
+Defined in: [ui/src/api-server/ai/models.ts:59](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/models.ts#L59)
 
 The model to send for this user's chat, or undefined for the server default.
 

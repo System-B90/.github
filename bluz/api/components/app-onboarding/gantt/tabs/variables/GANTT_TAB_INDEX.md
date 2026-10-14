@@ -8,7 +8,7 @@
 
 > `const` **GANTT\_TAB\_INDEX**: `object`
 
-Defined in: [ui/src/components/app-onboarding/gantt/tabs.ts:8](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/app-onboarding/gantt/tabs.ts#L8)
+Defined in: [ui/src/components/app-onboarding/gantt/tabs.ts:8](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-onboarding/gantt/tabs.ts#L8)
 
 The gantt view tabs, by index, as `CurriculumViewTabs` renders them.
 

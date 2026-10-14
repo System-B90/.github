@@ -8,7 +8,7 @@
 
 > **AiModelInfo** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:9](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-models.ts#L9)
+Defined in: [ui/src/api-shared/types/ai-models.ts:9](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/ai-models.ts#L9)
 
 Model discovery for OpenAI-compatible backends (#779).
 
@@ -22,7 +22,7 @@ personal-settings dropdown and the self-test's "is AI_MODEL real" check.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:11](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-models.ts#L11)
+Defined in: [ui/src/api-shared/types/ai-models.ts:11](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/ai-models.ts#L11)
 
 The slug sent as `model` in chat requests.
 
@@ -32,6 +32,6 @@ The slug sent as `model` in chat requests.
 
 > `optional` **name?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:13](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/ai-models.ts#L13)
+Defined in: [ui/src/api-shared/types/ai-models.ts:13](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/ai-models.ts#L13)
 
 Display name, when the backend reports one (Open WebUI does).

@@ -8,4 +8,4 @@
 
 > `const` **moduleApi**: [`BasicGantApi`](../../base/type-aliases/BasicGantApi.md)\<[`GanttModule`](../../../../api-shared/types/gantt/models/module/type-aliases/GanttModule.md), [`CreateGanttModulePayload`](../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttModulePayload.md)\>
 
-Defined in: [ui/src/api-client/gantt/module.ts:12](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/module.ts#L12)
+Defined in: [ui/src/api-client/gantt/module.ts:12](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/module.ts#L12)

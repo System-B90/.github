@@ -8,7 +8,7 @@
 
 > **StudentPath** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:40](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/student-load.ts#L40)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:41](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/student-load.ts#L41)
 
 One kind of student: a root-to-leaf chain through the course tree.
 
@@ -18,7 +18,7 @@ One kind of student: a root-to-leaf chain through the course tree.
 
 > **courseIds**: `string`[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:43](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/student-load.ts#L43)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:44](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/student-load.ts#L44)
 
 Course ids from the root down to the leaf; empty when no courses exist.
 
@@ -28,7 +28,7 @@ Course ids from the root down to the leaf; empty when no courses exist.
 
 > **id**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:41](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/student-load.ts#L41)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:42](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/student-load.ts#L42)
 
 ***
 
@@ -36,6 +36,6 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:41](https:/
 
 > **label**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:45](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/student-load.ts#L45)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:46](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/student-load.ts#L46)
 
 Display name — the chain below the root, e.g. "אפולו › צוות א".

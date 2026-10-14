@@ -8,7 +8,7 @@
 
 > `const` **CurriculumSyncContext**: `Context`\<`MutableRefObject`\<[`CurriculumSyncHandler`](../type-aliases/CurriculumSyncHandler.md)\> \| `null`\>
 
-Defined in: [ui/src/components/gantt/curriculum-fab/curriculum-sync-context.ts:12](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-fab/curriculum-sync-context.ts#L12)
+Defined in: [ui/src/components/gantt/curriculum-fab/curriculum-sync-context.ts:12](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-fab/curriculum-sync-context.ts#L12)
 
 Lets curriculum-status actions rendered outside the FAB (e.g. the syllabus
 tab's about card) push updates into the FAB's own curriculum list cache,

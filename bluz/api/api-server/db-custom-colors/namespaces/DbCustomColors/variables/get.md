@@ -8,7 +8,7 @@
 
 > `const` **get**: () => `Promise`\<[`CustomColor`](../../../../../api-shared/types/custom-color/type-aliases/CustomColor.md)[]\> = `getDbCustomColors`
 
-Defined in: [ui/src/api-server/db-custom-colors.ts:48](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/db-custom-colors.ts#L48)
+Defined in: [ui/src/api-server/db-custom-colors.ts:48](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/db-custom-colors.ts#L48)
 
 ## Returns
 

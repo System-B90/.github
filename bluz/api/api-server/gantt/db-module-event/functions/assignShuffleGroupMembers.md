@@ -8,7 +8,7 @@
 
 > **assignShuffleGroupMembers**\<`T`\>(`existing`, `wanted`, `originId`): `object`
 
-Defined in: [ui/src/api-server/gantt/db-module-event.ts:170](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/db-module-event.ts#L170)
+Defined in: [ui/src/api-server/gantt/db-module-event.ts:170](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/db-module-event.ts#L170)
 
 Decides which existing group member keeps which of the `wanted` shuffles.
 

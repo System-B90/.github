@@ -8,7 +8,7 @@
 
 > **useViewRangeSync**(`__namedParameters`): \[`Date`, `Dispatch`\<`SetStateAction`\<`Date`\>\>\]
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts:20](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts#L20)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts:20](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts#L20)
 
 Two-way sync between the calendar view's date and the provider's range.
 
@@ -25,6 +25,12 @@ of the range the view pushed itself is never treated as an outside change.
 ## Parameters
 
 ### \_\_namedParameters
+
+#### initialDate?
+
+`Date` \| `null`
+
+Date from the URL, so a reload reopens the same timeframe.
 
 #### setEndDate
 

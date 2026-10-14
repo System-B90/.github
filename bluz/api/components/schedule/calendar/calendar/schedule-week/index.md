@@ -9,3 +9,4 @@
 ## Functions
 
 - [iterationWeekNumber](functions/iterationWeekNumber.md)
+- [iterationWeekStart](functions/iterationWeekStart.md)

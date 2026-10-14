@@ -8,7 +8,7 @@
 
 > **DayMapping** = `object`
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:44](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L44)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:44](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L44)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:44
 
 > **allottedMinutes**: `number`
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:50](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L50)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:50](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L50)
 
 Minutes this event takes on this day — the mapping's own share.
 
@@ -26,7 +26,7 @@ Minutes this event takes on this day — the mapping's own share.
 
 > **dayId**: `string`
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:45](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L45)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:45](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L45)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:45
 
 > **eventId**: `null` \| `string`
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:47](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L47)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:47](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L47)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:47
 
 > **moduleId**: `string`
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:46](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L46)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:46](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L46)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:46
 
 > **sortOrder**: `null` \| `number`
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:48](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L48)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:48](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L48)

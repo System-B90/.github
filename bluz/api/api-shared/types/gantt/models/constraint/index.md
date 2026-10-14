@@ -23,5 +23,6 @@
 
 - [constraintToHumanReadableString](functions/constraintToHumanReadableString.md)
 - [getAllowedDayIndices](functions/getAllowedDayIndices.md)
+- [getConstraintsByEvent](functions/getConstraintsByEvent.md)
 - [hasConflictingTemporalConstraints](functions/hasConflictingTemporalConstraints.md)
 - [qualifiedEntityName](functions/qualifiedEntityName.md)

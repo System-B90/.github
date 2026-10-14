@@ -8,4 +8,4 @@
 
 > `const` **DnDCalendar**: `ComponentType`\<`DragAndDropCalendarProps`\<[`EventSegment`](../../../split/segments/type-aliases/EventSegment.md), [`Room`](../../../../../../api-shared/types/room/type-aliases/Room.md)\>\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar/DndLocalizer.tsx:26](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/calendar/DndLocalizer.tsx#L26)
+Defined in: [ui/src/components/schedule/calendar/calendar/DndLocalizer.tsx:26](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/calendar/DndLocalizer.tsx#L26)

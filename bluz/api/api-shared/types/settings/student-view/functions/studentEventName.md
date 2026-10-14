@@ -8,7 +8,7 @@
 
 > **studentEventName**(`event`, `subjectSymbol`, `settings`): `string`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:81](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/settings/student-view.ts#L81)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:81](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/settings/student-view.ts#L81)
 
 The name a student sees for an event. In symbol mode the real name is only
 used for break/prayer; everything else is built from the type label and the

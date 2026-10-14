@@ -8,4 +8,4 @@
 
 > `const` **AI\_BENCHMARK\_CASES**: [`AiBenchmarkCaseSpec`](../type-aliases/AiBenchmarkCaseSpec.md)[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:538](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/benchmark/cases.ts#L538)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:538](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/benchmark/cases.ts#L538)

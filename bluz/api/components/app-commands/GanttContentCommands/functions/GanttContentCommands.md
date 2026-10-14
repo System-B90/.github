@@ -8,7 +8,7 @@
 
 > **GanttContentCommands**(): `null`
 
-Defined in: [ui/src/components/app-commands/GanttContentCommands.tsx:79](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/app-commands/GanttContentCommands.tsx#L79)
+Defined in: [ui/src/components/app-commands/GanttContentCommands.tsx:79](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-commands/GanttContentCommands.tsx#L79)
 
 Contributes the loaded curriculum's syllabuses, modules and events to the
 entity lane, reusing the same flattened item list and scroll-into-view

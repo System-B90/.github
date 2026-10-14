@@ -8,7 +8,7 @@
 
 > **breakKindForBoundary**(`before`, `after`, `exerciseRunMinutes`, `classRunMinutes`): `"post-long-exercise"` \| `"between-syllabuses"` \| `"prayer-cover"` \| `"post-lecture"` \| `"room-change"` \| `null`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:126](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-breaks.ts#L126)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:126](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-breaks.ts#L126)
 
 The kind of break, if any, that the boundary between `before` and `after`
 earns. Returns the highest-priority kind that applies — one boundary never

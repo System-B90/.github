@@ -8,7 +8,7 @@
 
 > **WeekOverflow** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:68](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-balancer.ts#L68)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:68](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-balancer.ts#L68)
 
 A week whose load exceeds its own working hours even after balancing.
 
@@ -18,7 +18,7 @@ A week whose load exceeds its own working hours even after balancing.
 
 > **appliedResolution**: [`WeekOverflowResolution`](../../cut-rules/type-aliases/WeekOverflowResolution.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:75](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-balancer.ts#L75)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:75](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-balancer.ts#L75)
 
 What the balancer did, absent a user decision.
 
@@ -28,7 +28,7 @@ What the balancer did, absent a user decision.
 
 > **excessMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:71](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-balancer.ts#L71)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:71](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-balancer.ts#L71)
 
 Minutes of load that could not be placed inside any day's window.
 
@@ -38,7 +38,7 @@ Minutes of load that could not be placed inside any day's window.
 
 > **overloadedDays**: `object`[]
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:73](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-balancer.ts#L73)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:73](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-balancer.ts#L73)
 
 Day ids still over capacity, with their overflow.
 
@@ -56,4 +56,4 @@ Day ids still over capacity, with their overflow.
 
 > **weekId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:69](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/cut-balancer.ts#L69)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:69](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-balancer.ts#L69)

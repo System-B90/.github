@@ -158,6 +158,12 @@ Re-exports [getAllowedDayIndices](constraint/functions/getAllowedDayIndices.md)
 
 ***
 
+### getConstraintsByEvent
+
+Re-exports [getConstraintsByEvent](constraint/functions/getConstraintsByEvent.md)
+
+***
+
 ### getDayNameDisplay
 
 Re-exports [getDayNameDisplay](day/functions/getDayNameDisplay.md)

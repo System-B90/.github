@@ -8,7 +8,7 @@
 
 > `const` **REVEAL\_ON\_HOVER\_OR\_FOCUS**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts:15](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts#L15)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts:15](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts#L15)
 
 The +/− buttons appear on hover, and on keyboard focus anywhere in the cell
 (#842): before, they were opacity 0 yet still tabbable.

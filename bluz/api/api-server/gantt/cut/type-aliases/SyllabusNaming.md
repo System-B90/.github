@@ -8,17 +8,27 @@
 
 > **SyllabusNaming** = `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:319](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L319)
+Defined in: [ui/src/api-server/gantt/cut.ts:320](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/cut.ts#L320)
 
 What a cut event's syllabus prefix is chosen from (#965).
 
 ## Properties
 
+### color?
+
+> `optional` **color?**: `null` \| `string`
+
+Defined in: [ui/src/api-server/gantt/cut.ts:325](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/cut.ts#L325)
+
+The syllabus's default colour id, stamped on its cut events (#960).
+
+***
+
 ### hiveSubjectId
 
 > **hiveSubjectId**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:322](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L322)
+Defined in: [ui/src/api-server/gantt/cut.ts:323](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/cut.ts#L323)
 
 ***
 
@@ -26,7 +36,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:322](https://github.com/System-B90/B
 
 > **shortName**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:321](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L321)
+Defined in: [ui/src/api-server/gantt/cut.ts:322](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/cut.ts#L322)
 
 ***
 
@@ -34,4 +44,4 @@ Defined in: [ui/src/api-server/gantt/cut.ts:321](https://github.com/System-B90/B
 
 > **title**: `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:320](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L320)
+Defined in: [ui/src/api-server/gantt/cut.ts:321](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/cut.ts#L321)

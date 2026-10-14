@@ -8,7 +8,7 @@
 
 > **runLessonActivationTick**(`now?`, `controller?`, `client?`): `Promise`\<[`HiveActivationTickResult`](../../../../api-shared/types/hive-activation/type-aliases/HiveActivationTickResult.md)\>
 
-Defined in: [ui/src/api-server/hive/lesson-activation.ts:93](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/hive/lesson-activation.ts#L93)
+Defined in: [ui/src/api-server/hive/lesson-activation.ts:93](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/hive/lesson-activation.ts#L93)
 
 Runs one activation pass over the current iteration.
 

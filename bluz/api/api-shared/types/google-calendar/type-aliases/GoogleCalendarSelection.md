@@ -8,7 +8,7 @@
 
 > **GoogleCalendarSelection** = `object`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:63](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/google-calendar.ts#L63)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:63](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/google-calendar.ts#L63)
 
 Client-safe view of the linked calendar — no tokens.
 
@@ -18,7 +18,7 @@ Client-safe view of the linked calendar — no tokens.
 
 > `optional` **accessRole?**: [`GoogleCalendarAccessRole`](GoogleCalendarAccessRole.md)
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:66](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/google-calendar.ts#L66)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:66](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/google-calendar.ts#L66)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:66](https://github.com/S
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:64](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/google-calendar.ts#L64)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:64](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/google-calendar.ts#L64)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:64](https://github.com/S
 
 > `optional` **iterationId?**: [`IterationId`](../../iteration/type-aliases/IterationId.md)
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:67](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/google-calendar.ts#L67)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:67](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/google-calendar.ts#L67)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:67](https://github.com/S
 
 > `optional` **iterationLabel?**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:69](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/google-calendar.ts#L69)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:69](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/google-calendar.ts#L69)
 
 Label of `iterationId`, resolved server-side for display.
 
@@ -52,7 +52,7 @@ Label of `iterationId`, resolved server-side for display.
 
 > **linkedUsers**: `number`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:71](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/google-calendar.ts#L71)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:71](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/google-calendar.ts#L71)
 
 How many Bluz users (including this one) mirror into this same calendar.
 
@@ -62,4 +62,4 @@ How many Bluz users (including this one) mirror into this same calendar.
 
 > **summary**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:65](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/google-calendar.ts#L65)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:65](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/google-calendar.ts#L65)

@@ -8,7 +8,7 @@
 
 > **CurriculumStudentSchedule** = [`StudentSchedule`](../../student-load/type-aliases/StudentSchedule.md) & `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/use-student-schedule.ts:16](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/use-student-schedule.ts#L16)
+Defined in: [ui/src/components/gantt/curriculum-view/use-student-schedule.ts:17](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/use-student-schedule.ts#L17)
 
 ## Type Declaration
 

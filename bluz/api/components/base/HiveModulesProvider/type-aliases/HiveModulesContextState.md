@@ -8,7 +8,7 @@
 
 > **HiveModulesContextState** = `object`
 
-Defined in: [ui/src/components/base/HiveModulesProvider.tsx:15](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveModulesProvider.tsx#L15)
+Defined in: [ui/src/components/base/HiveModulesProvider.tsx:15](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/base/HiveModulesProvider.tsx#L15)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/HiveModulesProvider.tsx:15](https://github.c
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/HiveModulesProvider.tsx:16](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveModulesProvider.tsx#L16)
+Defined in: [ui/src/components/base/HiveModulesProvider.tsx:16](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/base/HiveModulesProvider.tsx#L16)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/base/HiveModulesProvider.tsx:16](https://github.c
 
 > **getModule**: (`id`) => [`Module`](../../../../api-shared/types/module/type-aliases/Module.md) \| `undefined`
 
-Defined in: [ui/src/components/base/HiveModulesProvider.tsx:18](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveModulesProvider.tsx#L18)
+Defined in: [ui/src/components/base/HiveModulesProvider.tsx:18](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/base/HiveModulesProvider.tsx#L18)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/base/HiveModulesProvider.tsx:18](https://github.c
 
 > **getModulesOfSubject**: (`subject`) => [`Module`](../../../../api-shared/types/module/type-aliases/Module.md)[]
 
-Defined in: [ui/src/components/base/HiveModulesProvider.tsx:19](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveModulesProvider.tsx#L19)
+Defined in: [ui/src/components/base/HiveModulesProvider.tsx:19](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/base/HiveModulesProvider.tsx#L19)
 
 #### Parameters
 
@@ -60,4 +60,4 @@ Defined in: [ui/src/components/base/HiveModulesProvider.tsx:19](https://github.c
 
 > **modules**: [`Module`](../../../../api-shared/types/module/type-aliases/Module.md)[]
 
-Defined in: [ui/src/components/base/HiveModulesProvider.tsx:17](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/HiveModulesProvider.tsx#L17)
+Defined in: [ui/src/components/base/HiveModulesProvider.tsx:17](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/base/HiveModulesProvider.tsx#L17)

@@ -8,7 +8,7 @@
 
 > **useGanttView**(`curriculumId`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts:37](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts#L37)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts:37](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts#L37)
 
 ## Parameters
 
@@ -47,6 +47,10 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 #### contextValue.allLinearDays
 
 > **allLinearDays**: `string`[]
+
+#### contextValue.constraintsByEvent
+
+> **constraintsByEvent**: `Record`\<`string`, [`GanttConstraint`](../../../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md)[]\>
 
 #### contextValue.curriculumMappings
 

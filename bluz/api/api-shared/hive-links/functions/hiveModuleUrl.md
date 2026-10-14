@@ -8,7 +8,7 @@
 
 > **hiveModuleUrl**(`subjectId`, `moduleId`, `baseUrl?`): `string` \| `null`
 
-Defined in: [ui/src/api-shared/hive-links.ts:34](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/hive-links.ts#L34)
+Defined in: [ui/src/api-shared/hive-links.ts:34](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/hive-links.ts#L34)
 
 Link to a module's Hive page — the one screen that lists both its lessons
 (with their group→queue rules) and its queues. Hive has no per-lesson

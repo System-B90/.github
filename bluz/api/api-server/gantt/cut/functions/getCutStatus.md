@@ -8,7 +8,7 @@
 
 > **getCutStatus**(`curriculumId`): `Promise`\<[`ApiCurriculumCutStatus`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutStatus.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1658](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/gantt/cut.ts#L1658)
+Defined in: [ui/src/api-server/gantt/cut.ts:1666](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/cut.ts#L1666)
 
 Report whether a curriculum has live cut events in its linked iteration.
 `cut: false` when there is no linked iteration or every cut event was already

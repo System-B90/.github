@@ -911,6 +911,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#initialdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        initialDate?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setenddate" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1002,7 +1013,7 @@
 <blockquote>
 <p><strong>useViewRangeSync</strong>(<code>__namedParameters</code>): [<code>Date</code>, <code>Dispatch</code>\&lt;<code>SetStateAction</code>\&lt;<code>Date</code>&gt;&gt;]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts#L20">ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts:20</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts#L20">ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts:20</a></p>
 <p>Two-way sync between the calendar view's date and the provider's range.</p>
 <p>The view owns <code>currentDate</code> and pushes its range into the context; a range
 set from outside (a snapshot restore, #653) must move the view. Telling the
@@ -1014,6 +1025,9 @@ every render and the grid flickered between the two weeks until a reload.</p>
 of the range the view pushed itself is never treated as an outside change.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
+<h4 id="initialdate">initialDate?<a class="headerlink" href="#initialdate" title="Permanent link">&para;</a></h4>
+<p><code>Date</code> | <code>null</code></p>
+<p>Date from the URL, so a reload reopens the same timeframe.</p>
 <h4 id="setenddate">setEndDate<a class="headerlink" href="#setenddate" title="Permanent link">&para;</a></h4>
 <p><code>Dispatch</code>\&lt;<code>SetStateAction</code>\&lt;<code>Date</code> | <code>undefined</code>&gt;&gt;</p>
 <h4 id="setstartdate">setStartDate<a class="headerlink" href="#setstartdate" title="Permanent link">&para;</a></h4>

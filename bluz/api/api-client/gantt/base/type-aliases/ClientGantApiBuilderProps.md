@@ -8,7 +8,7 @@
 
 > **ClientGantApiBuilderProps**\<`TEntity`, `_TCreatePayload`\> = `object`
 
-Defined in: [ui/src/api-client/gantt/base.ts:48](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/base.ts#L48)
+Defined in: [ui/src/api-client/gantt/base.ts:48](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L48)
 
 ## Type Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:48](https://github.com/System-B90/B
 
 > **apiBaseUrl**: `string`
 
-Defined in: [ui/src/api-client/gantt/base.ts:52](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/base.ts#L52)
+Defined in: [ui/src/api-client/gantt/base.ts:52](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L52)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/api-client/gantt/base.ts:52](https://github.com/System-B90/B
 
 > **dateFixup**: [`DateFixup`](DateFixup.md)\<`TEntity` & [`RawBaseDocument`](../../../../api-shared/types/gantt/api-layer/type-aliases/RawBaseDocument.md)\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:53](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/base.ts#L53)
+Defined in: [ui/src/api-client/gantt/base.ts:53](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L53)

@@ -8,7 +8,7 @@
 
 > `const` **STUDENT\_SYNC\_ID**: `"students:current"` = `"students:current"`
 
-Defined in: [session-server/session-common.ts:121](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/session-server/session-common.ts#L121)
+Defined in: [session-server/session-common.ts:121](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/session-server/session-common.ts#L121)
 
 Sync-object id for the student refresh channel.
 

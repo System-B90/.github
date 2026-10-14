@@ -8,7 +8,7 @@
 
 > **describeUnresolvedShuffles**(`event`, `courseById`, `hiveClasses`): `string`
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:136](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/hive/lesson-sync.ts#L136)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:136](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/hive/lesson-sync.ts#L136)
 
 Says why each queue-carrying shuffle of an event failed to resolve to a
 Hive group: the course is missing from this iteration, or no group matches

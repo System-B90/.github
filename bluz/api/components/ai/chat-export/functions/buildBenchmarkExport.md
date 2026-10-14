@@ -8,7 +8,7 @@
 
 > **buildBenchmarkExport**(`result`, `exportedAt`): `object`
 
-Defined in: [ui/src/components/ai/chat-export.ts:133](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/ai/chat-export.ts#L133)
+Defined in: [ui/src/components/ai/chat-export.ts:133](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/ai/chat-export.ts#L133)
 
 JSON export of a self-test run: the system prompt once, then per case the
 prompt, verdicts, and the full transcript (tool calls with raw arguments and

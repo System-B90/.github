@@ -8,7 +8,7 @@
 
 > **countRequiredOccurrences**(`event`, `eventId`, `state`, `__namedParameters`): `number`
 
-Defined in: [ui/src/components/gantt/utils.tsx:104](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/utils.tsx#L104)
+Defined in: [ui/src/components/gantt/utils.tsx:107](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/utils.tsx#L107)
 
 How many times a recurring event is required to occur: every day (daily)
 or week (weekly) its recurrence pattern hits inside its recurrence window,
@@ -32,7 +32,7 @@ A non-recurring event is required once.
 
 ### \_\_namedParameters
 
-`Pick`\<[`RecurrenceOccurrenceContext`](../type-aliases/RecurrenceOccurrenceContext.md), `"dateOf"` \| `"exceptions"` \| `"linearDays"` \| `"mappings"`\>
+`Pick`\<[`RecurrenceOccurrenceContext`](../type-aliases/RecurrenceOccurrenceContext.md), `"constraintsByEvent"` \| `"dateOf"` \| `"exceptions"` \| `"linearDays"` \| `"mappings"`\>
 
 ## Returns
 

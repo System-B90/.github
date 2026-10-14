@@ -8,7 +8,7 @@
 
 > **AiToolRegistry** = `object`
 
-Defined in: [ui/src/api-server/ai/tools/index.ts:37](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/index.ts#L37)
+Defined in: [ui/src/api-server/ai/tools/index.ts:37](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/tools/index.ts#L37)
 
 A set of tools the agent loop may call.
 
@@ -23,7 +23,7 @@ the user's real records.
 
 > **find**: (`name`) => [`AiTool`](../types/type-aliases/AiTool.md)\<`any`\> \| `undefined`
 
-Defined in: [ui/src/api-server/ai/tools/index.ts:38](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/index.ts#L38)
+Defined in: [ui/src/api-server/ai/tools/index.ts:38](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/tools/index.ts#L38)
 
 #### Parameters
 
@@ -41,7 +41,7 @@ Defined in: [ui/src/api-server/ai/tools/index.ts:38](https://github.com/System-B
 
 > **specs**: () => [`AiToolSpec`](../../provider/type-aliases/AiToolSpec.md)[]
 
-Defined in: [ui/src/api-server/ai/tools/index.ts:39](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/index.ts#L39)
+Defined in: [ui/src/api-server/ai/tools/index.ts:39](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/tools/index.ts#L39)
 
 #### Returns
 
@@ -53,7 +53,7 @@ Defined in: [ui/src/api-server/ai/tools/index.ts:39](https://github.com/System-B
 
 > **title**: (`name`) => `string`
 
-Defined in: [ui/src/api-server/ai/tools/index.ts:41](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/index.ts#L41)
+Defined in: [ui/src/api-server/ai/tools/index.ts:41](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/tools/index.ts#L41)
 
 Human-facing label for a name, including names not in this registry.
 

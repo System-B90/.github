@@ -911,6 +911,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#constraintsbyevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        constraintsByEvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#courses" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1035,12 +1046,14 @@
 <blockquote>
 <p><strong>computeStudentSchedule</strong>(<code>__namedParameters</code>): <a href="../../type-aliases/StudentSchedule/"><code>StudentSchedule</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/student-load.ts#L445">ui/src/components/gantt/curriculum-view/student-load.ts:445</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/student-load.ts#L449">ui/src/components/gantt/curriculum-view/student-load.ts:449</a></p>
 <p>Lays out every mapped event (spillover by what its own students have left
 on a day) and totals each day per student path. Recurring events count as
 if materialized on every occurrence, and are placed before anything spills.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
+<h4 id="constraintsbyevent">constraintsByEvent<a class="headerlink" href="#constraintsbyevent" title="Permanent link">&para;</a></h4>
+<p><code>Record</code>\&lt;<code>string</code>, <a href="../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint/"><code>GanttConstraint</code></a>[]&gt;</p>
 <h4 id="courses">courses<a class="headerlink" href="#courses" title="Permanent link">&para;</a></h4>
 <p><a href="../../../../../../api-shared/types/course/type-aliases/Course/"><code>Course</code></a>[]</p>
 <h4 id="dateof">dateOf?<a class="headerlink" href="#dateof" title="Permanent link">&para;</a></h4>

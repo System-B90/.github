@@ -8,7 +8,7 @@
 
 > **BaseDocument** = `object`
 
-Defined in: [ui/src/api-client/gantt/base.ts:8](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/base.ts#L8)
+Defined in: [ui/src/api-client/gantt/base.ts:8](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L8)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-client/gantt/base.ts:8](https://github.com/System-B90/Bl
 
 > **createdAt**: `Dayjs`
 
-Defined in: [ui/src/api-client/gantt/base.ts:9](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/base.ts#L9)
+Defined in: [ui/src/api-client/gantt/base.ts:9](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L9)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-client/gantt/base.ts:9](https://github.com/System-B90/Bl
 
 > **updatedAt**: `Dayjs`
 
-Defined in: [ui/src/api-client/gantt/base.ts:10](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/base.ts#L10)
+Defined in: [ui/src/api-client/gantt/base.ts:10](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L10)

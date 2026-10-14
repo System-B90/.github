@@ -8,7 +8,7 @@
 
 > **OutsiderValues** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:10](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:10](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L10)
 
 The outsider form's fields as one value bag, so the tab passes a single
 object down instead of drilling twelve value/setter pairs. See #191.
@@ -19,7 +19,7 @@ object down instead of drilling twelve value/setter pairs. See #191.
 
 > **comment**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:16](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:16](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L16)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/val
 
 > **idNumber**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:14](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L14)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:14](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L14)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/val
 
 > **name**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:11](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:11](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L11)
 
 ***
 
@@ -43,7 +43,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/val
 
 > **personalNumber**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:13](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:13](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L13)
 
 ***
 
@@ -51,7 +51,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/val
 
 > **phone**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:12](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:12](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L12)
 
 ***
 
@@ -59,4 +59,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/val
 
 > **releaseDate**: `Dayjs` \| `null`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:15](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:15](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L15)

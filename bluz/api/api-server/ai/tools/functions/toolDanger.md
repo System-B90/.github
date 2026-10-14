@@ -8,7 +8,7 @@
 
 > **toolDanger**(`name`): [`AiToolDanger`](../../../../api-shared/types/ai/enumerations/AiToolDanger.md)
 
-Defined in: [ui/src/api-server/ai/tools/index.ts:86](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-server/ai/tools/index.ts#L86)
+Defined in: [ui/src/api-server/ai/tools/index.ts:86](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/tools/index.ts#L86)
 
 How dangerous a named tool is; unknown names are treated as writes.
 

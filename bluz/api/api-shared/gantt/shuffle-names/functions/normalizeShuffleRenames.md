@@ -8,7 +8,7 @@
 
 > **normalizeShuffleRenames**(`renames`): [`ShuffleRenames`](../type-aliases/ShuffleRenames.md)
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:82](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/gantt/shuffle-names.ts#L82)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:82](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/shuffle-names.ts#L82)
 
 Normalizes a rename map, dropping blank or no-op entries so "renamed to
 itself" never cascades a write.

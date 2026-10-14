@@ -8,7 +8,7 @@
 
 > **clientGantApiBuilder**\<`TEntity`, `TCreatePayload`\>(`__namedParameters`): [`BasicGantApi`](../type-aliases/BasicGantApi.md)\<`TEntity`, `TCreatePayload`\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:112](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-client/gantt/base.ts#L112)
+Defined in: [ui/src/api-client/gantt/base.ts:112](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L112)
 
 ## Type Parameters
 

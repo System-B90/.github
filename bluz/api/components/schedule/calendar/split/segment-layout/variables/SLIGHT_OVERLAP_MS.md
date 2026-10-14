@@ -8,7 +8,7 @@
 
 > `const` **SLIGHT\_OVERLAP\_MS**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/split/segment-layout.ts:34](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/calendar/split/segment-layout.ts#L34)
+Defined in: [ui/src/components/schedule/calendar/split/segment-layout.ts:34](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/split/segment-layout.ts#L34)
 
 Overlap that still counts as back-to-back: events stack at full width only
 when one ends where the next starts, give or take this much. Anything more

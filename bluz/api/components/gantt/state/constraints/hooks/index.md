@@ -8,4 +8,5 @@
 
 ## Functions
 
+- [useConstraintsByEvent](functions/useConstraintsByEvent.md)
 - [useGanttConstraints](functions/useGanttConstraints.md)

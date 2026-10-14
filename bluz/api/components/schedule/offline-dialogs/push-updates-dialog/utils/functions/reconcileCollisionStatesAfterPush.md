@@ -8,7 +8,7 @@
 
 > **reconcileCollisionStatesAfterPush**(`collisionStates`, `resolvedIds`): [`CollisionStates`](../../types/type-aliases/CollisionStates.md)
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:238](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L238)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:238](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L238)
 
 Removes already-resolved events (synced or reverted) from the collision set
 so a partial-failure retry only re-shows the items that still need syncing

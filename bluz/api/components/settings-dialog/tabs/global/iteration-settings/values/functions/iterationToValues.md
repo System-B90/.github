@@ -8,7 +8,7 @@
 
 > **iterationToValues**(`iteration`): [`IterationValues`](../type-aliases/IterationValues.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:39](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L39)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:39](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L39)
 
 ## Parameters
 

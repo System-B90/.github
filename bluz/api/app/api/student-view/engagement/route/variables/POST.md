@@ -8,7 +8,7 @@
 
 > `const` **POST**: `ServerApiStudentEngagementPost`
 
-Defined in: [ui/src/app/api/student-view/engagement/route.ts:35](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/app/api/student-view/engagement/route.ts#L35)
+Defined in: [ui/src/app/api/student-view/engagement/route.ts:35](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/student-view/engagement/route.ts#L35)
 
 Records how long the student-view board has been open *and* focused (#656).
 

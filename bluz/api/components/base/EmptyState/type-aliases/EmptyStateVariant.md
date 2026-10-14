@@ -8,7 +8,7 @@
 
 > **EmptyStateVariant** = `"empty"` \| `"filtered"`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:13](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/base/EmptyState.tsx#L13)
+Defined in: [ui/src/components/base/EmptyState.tsx:13](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/base/EmptyState.tsx#L13)
 
 "Nothing here yet" and "your filters excluded everything" are different
 problems with different fixes, so they get different icons and different

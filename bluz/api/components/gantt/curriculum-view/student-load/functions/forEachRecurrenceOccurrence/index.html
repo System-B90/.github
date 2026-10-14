@@ -911,6 +911,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#constraintsbyevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        constraintsByEvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dateof" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1024,12 +1035,14 @@
 <blockquote>
 <p><strong>forEachRecurrenceOccurrence</strong>(<code>__namedParameters</code>, <code>visit</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/student-load.ts#L363">ui/src/components/gantt/curriculum-view/student-load.ts:363</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/student-load.ts#L364">ui/src/components/gantt/curriculum-view/student-load.ts:364</a></p>
 <p>Calls <code>visit</code> once per recurrence echo of every mapped recurring event (its
 start day excluded), with its root mapping's allotted minutes. Skipped and materialized
 occurrences are left out.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
+<h4 id="constraintsbyevent">constraintsByEvent<a class="headerlink" href="#constraintsbyevent" title="Permanent link">&para;</a></h4>
+<p><code>Record</code>\&lt;<code>string</code>, <a href="../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint/"><code>GanttConstraint</code></a>[]&gt;</p>
 <h4 id="dateof">dateOf?<a class="headerlink" href="#dateof" title="Permanent link">&para;</a></h4>
 <p>(<code>dayId</code>) =&gt; <code>string</code> | <code>undefined</code></p>
 <h4 id="exceptions">exceptions<a class="headerlink" href="#exceptions" title="Permanent link">&para;</a></h4>

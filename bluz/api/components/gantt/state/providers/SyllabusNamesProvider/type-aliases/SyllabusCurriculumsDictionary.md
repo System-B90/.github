@@ -8,7 +8,7 @@
 
 > **SyllabusCurriculumsDictionary** = `Record`\<[`GanttSyllabusId`](../../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md), [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)[]\>
 
-Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:25](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L25)
+Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:25](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L25)
 
 Which curriculums each syllabus is linked to. A syllabus is shareable, so
 this is a list — see #310.

@@ -8,7 +8,7 @@
 
 > **relativeTime**(`iso`): `string`
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/format-change.ts:165](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/schedule/event-dialog/event-history/format-change.ts#L165)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/format-change.ts:165](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-dialog/event-history/format-change.ts#L165)
 
 Relative wording for a timestamp ("לפני 5 דקות"), with day granularity past
 a week. Kept local rather than pulling in dayjs' relativeTime plugin and a

@@ -8,7 +8,7 @@
 
 > **eventDateFixupToDayjs**\<`T`\>(`event`): `Omit`\<`T`, `"startTime"` \| `"endTime"`\> & `Pick`\<[`Event`](../../types/event/type-aliases/Event.md), `"startTime"` \| `"endTime"`\>
 
-Defined in: [ui/src/api-shared/calendar.ts:45](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/calendar.ts#L45)
+Defined in: [ui/src/api-shared/calendar.ts:45](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/calendar.ts#L45)
 
 Client-side: turns startTime/endTime into a `Dayjs` anchored to the app
 timezone, so the wall-clock is DST-correct and independent of the

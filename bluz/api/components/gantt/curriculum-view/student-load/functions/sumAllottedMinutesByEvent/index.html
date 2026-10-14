@@ -911,6 +911,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#constraintsbyevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        constraintsByEvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dateof" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1013,13 +1024,15 @@
 <blockquote>
 <p><strong>sumAllottedMinutesByEvent</strong>(<code>ctx</code>): <code>Map</code>\&lt;<code>string</code>, <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/gantt/curriculum-view/student-load.ts#L423">ui/src/components/gantt/curriculum-view/student-load.ts:423</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/student-load.ts#L426">ui/src/components/gantt/curriculum-view/student-load.ts:426</a></p>
 <p>Minutes each event is allotted in a curriculum: every one of its mappings'
 allotted minutes, plus each surviving recurrence echo at its earliest
 mapping's. The single read path for an event's scheduled time; 0 means
 the event is documented but not part of the curriculum.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="ctx">ctx<a class="headerlink" href="#ctx" title="Permanent link">&para;</a></h3>
+<h4 id="constraintsbyevent">constraintsByEvent<a class="headerlink" href="#constraintsbyevent" title="Permanent link">&para;</a></h4>
+<p><code>Record</code>\&lt;<code>string</code>, <a href="../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint/"><code>GanttConstraint</code></a>[]&gt;</p>
 <h4 id="dateof">dateOf?<a class="headerlink" href="#dateof" title="Permanent link">&para;</a></h4>
 <p>(<code>dayId</code>) =&gt; <code>string</code> | <code>undefined</code></p>
 <h4 id="exceptions">exceptions<a class="headerlink" href="#exceptions" title="Permanent link">&para;</a></h4>

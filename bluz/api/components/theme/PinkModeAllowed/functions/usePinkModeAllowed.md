@@ -8,7 +8,7 @@
 
 > **usePinkModeAllowed**(): `boolean`
 
-Defined in: [ui/src/components/theme/PinkModeAllowed.tsx:23](https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/components/theme/PinkModeAllowed.tsx#L23)
+Defined in: [ui/src/components/theme/PinkModeAllowed.tsx:23](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/theme/PinkModeAllowed.tsx#L23)
 
 ## Returns
 

@@ -907,6 +907,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Type Literal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ok
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weeks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -922,7 +961,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ok" class="md-nav__link">
+  <a href="#ok_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         ok
@@ -966,7 +1005,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#weeks" class="md-nav__link">
+  <a href="#weeks_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         weeks
@@ -1011,20 +1050,33 @@
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/gantt/cut</a> / ApiCurriculumCutPlanResponse</p>
 <h1 id="type-alias-apicurriculumcutplanresponse">Type Alias: ApiCurriculumCutPlanResponse<a class="headerlink" href="#type-alias-apicurriculumcutplanresponse" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>ApiCurriculumCutPlanResponse</strong> = { <code>errors</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; } | { <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>plannedEvents</code>: <code>number</code>; <code>report</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weeks</code>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
+<p><strong>ApiCurriculumCutPlanResponse</strong> = { <code>errors</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; <code>weeks</code>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]; } | { <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>plannedEvents</code>: <code>number</code>; <code>report</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weeks</code>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/624fadadf2fc828abebeab4f5f0c3cf73dcb1351/ui/src/api-shared/types/gantt/cut.ts#L73">ui/src/api-shared/types/gantt/cut.ts:73</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/cut.ts#L73">ui/src/api-shared/types/gantt/cut.ts:73</a></p>
 <p>Response of POST .../cut/plan — the "plan" half of the plan-then-confirm
 flow. Runs the whole pipeline without writing and reports what the cut would
 do plus every open question, so the dialog can ask them one at a time before
 committing. Never writes.</p>
 <h2 id="union-members">Union Members<a class="headerlink" href="#union-members" title="Permanent link">&para;</a></h2>
 <h3 id="type-literal">Type Literal<a class="headerlink" href="#type-literal" title="Permanent link">&para;</a></h3>
-<p>{ <code>errors</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; }</p>
+<p>{ <code>errors</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; <code>weeks</code>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
+<h4 id="errors">errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>errors</strong>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]</p>
+</blockquote>
+<h4 id="ok">ok<a class="headerlink" href="#ok" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>ok</strong>: <code>false</code></p>
+</blockquote>
+<h4 id="weeks">weeks<a class="headerlink" href="#weeks" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>weeks</strong>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]</p>
+</blockquote>
+<p>Still listed so a single-week cut can be picked (#970).</p>
 <hr />
 <h3 id="type-literal_1">Type Literal<a class="headerlink" href="#type-literal_1" title="Permanent link">&para;</a></h3>
 <p>{ <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>plannedEvents</code>: <code>number</code>; <code>report</code>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weeks</code>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
-<h4 id="ok">ok<a class="headerlink" href="#ok" title="Permanent link">&para;</a></h4>
+<h4 id="ok_1">ok<a class="headerlink" href="#ok_1" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>ok</strong>: <code>true</code></p>
 </blockquote>
@@ -1042,7 +1094,7 @@ committing. Never writes.</p>
 <p><strong>report</strong>: <a href="../../../../../gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a></p>
 </blockquote>
 <p>What the balancer, break pass and constraint solver did.</p>
-<h4 id="weeks">weeks<a class="headerlink" href="#weeks" title="Permanent link">&para;</a></h4>
+<h4 id="weeks_1">weeks<a class="headerlink" href="#weeks_1" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>weeks</strong>: <a href="../ApiCutWeek/"><code>ApiCutWeek</code></a>[]</p>
 </blockquote>
