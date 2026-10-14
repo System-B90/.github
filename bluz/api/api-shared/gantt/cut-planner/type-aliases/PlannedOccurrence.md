@@ -8,7 +8,7 @@
 
 > **PlannedOccurrence** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:177](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L177)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:177](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L177)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:177](https://github.com/Syst
 
 > **endTime**: `Date`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:182](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L182)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:182](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L182)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:182](https://github.com/Syst
 
 > **ganttEventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:178](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L178)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:178](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L178)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:178](https://github.com/Syst
 
 > `optional` **generatedBreak?**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:196](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L196)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:196](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L196)
 
 Set on occurrences the break post-pass generated rather than the gantt.
 These are real הפסקה events in the schedule, tagged so a pull-back
@@ -58,7 +58,7 @@ Prayer this break was positioned to cover, when any.
 
 > **isRecurrenceEcho**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:184](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L184)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:184](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L184)
 
 True when this is a recurrence echo rather than the mapped start day.
 
@@ -68,7 +68,7 @@ True when this is a recurrence echo rather than the mapped start day.
 
 > **occurrenceDate**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:180](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L180)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:180](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L180)
 
 ISO date (yyyy-MM-dd) of the occurrence — also the recurrence disambiguator.
 
@@ -78,7 +78,7 @@ ISO date (yyyy-MM-dd) of the occurrence — also the recurrence disambiguator.
 
 > `optional` **spilledFromDayId?**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:190](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L190)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:190](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L190)
 
 Set when the balancer relocated this occurrence off the day it was mapped
 to — the id of that original day. Drives the preview's moved/unmoved
@@ -90,4 +90,4 @@ highlight.
 
 > **startTime**: `Date`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:181](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-planner.ts#L181)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:181](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L181)

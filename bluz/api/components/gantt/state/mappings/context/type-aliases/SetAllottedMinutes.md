@@ -13,7 +13,7 @@
     allottedMinutes,
 }`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/gantt/state/mappings/context.ts:51](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/state/mappings/context.ts#L51)
+Defined in: [ui/src/components/gantt/state/mappings/context.ts:51](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/mappings/context.ts#L51)
 
 Sets the minutes an event is allotted on one of its mapped days.
 

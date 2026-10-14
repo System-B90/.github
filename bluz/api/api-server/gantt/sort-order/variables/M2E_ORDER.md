@@ -8,6 +8,6 @@
 
 > `const` **M2E\_ORDER**: `SQL`\<`unknown`\>[]
 
-Defined in: [ui/src/api-server/gantt/sort-order.ts:33](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/sort-order.ts#L33)
+Defined in: [ui/src/api-server/gantt/sort-order.ts:33](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/sort-order.ts#L33)
 
 Stable m2e order. See [S2M\_ORDER](S2M_ORDER.md).

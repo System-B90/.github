@@ -8,7 +8,7 @@
 
 > **readCliDistFile**(`name`): `Promise`\<`Buffer`\<`ArrayBufferLike`\> \| `null`\>
 
-Defined in: [ui/src/api-server/cli-dist.ts:38](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/cli-dist.ts#L38)
+Defined in: [ui/src/api-server/cli-dist.ts:38](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/cli-dist.ts#L38)
 
 Bytes of one distributed file, or null. Only names the directory actually
 lists are served, so a crafted name can never escape it.

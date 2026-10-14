@@ -8,7 +8,7 @@
 
 > `const` **PINK\_DARK\_PALETTE**: `object`
 
-Defined in: [ui/src/components/theme/CreateFromPalette.ts:92](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/theme/CreateFromPalette.ts#L92)
+Defined in: [ui/src/components/theme/CreateFromPalette.ts:92](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/theme/CreateFromPalette.ts#L92)
 
 Night-time counterpart of [PINK\_PALETTE](PINK_PALETTE.md): deep rose surfaces, not plum.
 

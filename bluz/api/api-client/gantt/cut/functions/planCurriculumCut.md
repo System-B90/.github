@@ -8,7 +8,7 @@
 
 > **planCurriculumCut**(`curriculumId`, `options?`): `Promise`\<[`ApiCurriculumCutPlanResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPlanResponse.md)\>
 
-Defined in: [ui/src/api-client/gantt/cut.ts:49](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/cut.ts#L49)
+Defined in: [ui/src/api-client/gantt/cut.ts:49](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-client/gantt/cut.ts#L49)
 
 POST /api/gantt/curriculums/[id]/cut/plan — the "plan" half of the
 plan-then-confirm flow. Runs the full cut pipeline without writing and

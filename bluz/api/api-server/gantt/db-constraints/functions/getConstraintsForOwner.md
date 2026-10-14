@@ -8,7 +8,7 @@
 
 > **getConstraintsForOwner**(`ownerId`, `ownerType`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-constraints.ts:31](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/gantt/db-constraints.ts#L31)
+Defined in: [ui/src/api-server/gantt/db-constraints.ts:31](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/db-constraints.ts#L31)
 
 Retrieves all constraints owned by a specific Event or Module.
 Used to load the dependencies a specific entity has before it can be scheduled.

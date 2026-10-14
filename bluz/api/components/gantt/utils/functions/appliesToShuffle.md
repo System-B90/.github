@@ -8,7 +8,7 @@
 
 > **appliesToShuffle**(`itemShuffles`, `shuffle`): `boolean`
 
-Defined in: [ui/src/components/gantt/utils.tsx:22](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/utils.tsx#L22)
+Defined in: [ui/src/components/gantt/utils.tsx:22](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/utils.tsx#L22)
 
 True when an item (module/event) applies to the given shuffle.
 An empty/undefined shuffle list means "applies to all shuffles".

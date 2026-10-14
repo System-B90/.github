@@ -8,7 +8,7 @@
 
 > **excludeSwatchIds**\<`T`\>(`swatches`, `excludeIds`): `T`[]
 
-Defined in: [ui/src/components/schedule/event-component/event-colors.ts:97](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-component/event-colors.ts#L97)
+Defined in: [ui/src/components/schedule/event-component/event-colors.ts:97](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-component/event-colors.ts#L97)
 
 Filters out swatches whose id is already present in `excludeIds` - used to
 keep a recently-used color from being listed twice when it's also a

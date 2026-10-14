@@ -8,7 +8,7 @@
 
 > **ServerApi**\<`PayloadT`, `ResponseT`\> = (`request`) => `Promise`\<`NextResponse`\<`ResponseT`\> \| `Response`\>
 
-Defined in: [ui/src/api-server/common.ts:321](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/common.ts#L321)
+Defined in: [ui/src/api-server/common.ts:321](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/common.ts#L321)
 
 ## Type Parameters
 

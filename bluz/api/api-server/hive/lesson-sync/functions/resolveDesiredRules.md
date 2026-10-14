@@ -8,7 +8,7 @@
 
 > **resolveDesiredRules**(`event`, `courseById`, `hiveClasses`): `Map`\<`number`, `number`\>
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:107](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/hive/lesson-sync.ts#L107)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:107](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/hive/lesson-sync.ts#L107)
 
 Resolves an event's shuffle→queue mapping into Hive ids.
 

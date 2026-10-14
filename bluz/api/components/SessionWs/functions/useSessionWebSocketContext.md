@@ -8,7 +8,7 @@
 
 > **useSessionWebSocketContext**(): `object`
 
-Defined in: [ui/src/components/SessionWs.tsx:35](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/SessionWs.tsx#L35)
+Defined in: [ui/src/components/SessionWs.tsx:35](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/SessionWs.tsx#L35)
 
 Custom hook to establish and manage client-side WebSocket sessions.
 Manages event listener registrations, session heartbeats, and auto-reconnection

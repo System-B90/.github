@@ -8,7 +8,7 @@
 
 > **PickerSubmenu**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:111](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-context-menu/Submenu.tsx#L111)
+Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:111](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/Submenu.tsx#L111)
 
 A submenu that picks one option out of a list, with a filter box once the
 list outgrows a glance. The list is data, not markup, so the same component

@@ -8,7 +8,7 @@
 
 > **useResizeKeyHeld**(`dragging`): `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:111](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L111)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:111](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L111)
 
 Whether resizing is unlocked (#961). Dragging a tile always moves it; its
 edges only resize while Shift is held, so a move never resizes by accident.

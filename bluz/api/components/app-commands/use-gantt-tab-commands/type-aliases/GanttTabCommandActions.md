@@ -8,7 +8,7 @@
 
 > **GanttTabCommandActions** = `object`
 
-Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:55](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L55)
+Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:55](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L55)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:55](https
 
 > **selectedTabIndex**: `number`
 
-Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:56](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L56)
+Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:56](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L56)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:56](https
 
 > **setSelectedTabIndex**: (`index`) => `void`
 
-Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:57](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L57)
+Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:57](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L57)
 
 #### Parameters
 

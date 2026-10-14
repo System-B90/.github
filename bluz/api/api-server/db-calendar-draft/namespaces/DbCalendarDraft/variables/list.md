@@ -8,7 +8,7 @@
 
 > `const` **list**: (`controller`, `iterationId?`) => `Promise`\<[`CalendarDraftSummary`](../../../../../api-shared/types/type-aliases/CalendarDraftSummary.md)[]\> = `listDrafts`
 
-Defined in: [ui/src/api-server/db-calendar-draft.ts:198](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/db-calendar-draft.ts#L198)
+Defined in: [ui/src/api-server/db-calendar-draft.ts:198](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/db-calendar-draft.ts#L198)
 
 Lists shared drafts newest-updated-first, without their events payload.
 

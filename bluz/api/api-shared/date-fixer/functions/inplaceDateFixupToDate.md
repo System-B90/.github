@@ -8,7 +8,7 @@
 
 > **inplaceDateFixupToDate**\<`T`\>(`item`, `fieldName`): `T`
 
-Defined in: [ui/src/api-shared/date-fixer.ts:16](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/date-fixer.ts#L16)
+Defined in: [ui/src/api-shared/date-fixer.ts:16](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/date-fixer.ts#L16)
 
 Server-side: mutates `item[fieldName]` into a native `Date` in place.
 

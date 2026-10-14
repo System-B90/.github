@@ -8,7 +8,7 @@
 
 > **ApiCurriculumReloadPayload** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:79](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L79)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:79](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L79)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:79](https://github.com/Syst
 
 > `optional` **dryRun?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:81](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L81)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:81](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L81)
 
 Compute the diff and write nothing.
 
@@ -26,7 +26,7 @@ Compute the diff and write nothing.
 
 > `optional` **force?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:88](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L88)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:88](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L88)
 
 Plan around unmapped events / unsatisfied recurrences, as with the cut.
 
@@ -36,7 +36,7 @@ Plan around unmapped events / unsatisfied recurrences, as with the cut.
 
 > `optional` **overrideEventIds?**: `string`[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:86](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L86)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:86](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L86)
 
 Manually-edited events the user chose to overwrite anyway. Their
 conflicts are applied instead of skipped.

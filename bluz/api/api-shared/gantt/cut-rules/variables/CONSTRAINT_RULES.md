@@ -8,7 +8,7 @@
 
 > `const` **CONSTRAINT\_RULES**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:380](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-rules.ts#L380)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:380](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-rules.ts#L380)
 
 How the cut treats `GanttConstraint`s (relational after/before with optional
 min/max day delays, and temporal allowed/forbidden weekdays).

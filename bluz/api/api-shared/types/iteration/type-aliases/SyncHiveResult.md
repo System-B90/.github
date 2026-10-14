@@ -8,7 +8,7 @@
 
 > **SyncHiveResult** = `object`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:51](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/iteration.ts#L51)
+Defined in: [ui/src/api-shared/types/iteration.ts:51](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/iteration.ts#L51)
 
 Response of `POST /api/iterations/[id]/sync-hive`.
 
@@ -18,7 +18,7 @@ Response of `POST /api/iterations/[id]/sync-hive`.
 
 > **changes**: [`HiveCacheChanges`](HiveCacheChanges.md)
 
-Defined in: [ui/src/api-shared/types/iteration.ts:53](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/iteration.ts#L53)
+Defined in: [ui/src/api-shared/types/iteration.ts:53](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/iteration.ts#L53)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-shared/types/iteration.ts:53](https://github.com/System-
 
 > **iteration**: [`Iteration`](Iteration.md)
 
-Defined in: [ui/src/api-shared/types/iteration.ts:52](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/iteration.ts#L52)
+Defined in: [ui/src/api-shared/types/iteration.ts:52](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/iteration.ts#L52)

@@ -8,7 +8,7 @@
 
 > **CurriculumConstraintProvider**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/state/constraints/CurriculumConstraintProvider.tsx:40](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/state/constraints/CurriculumConstraintProvider.tsx#L40)
+Defined in: [ui/src/components/gantt/state/constraints/CurriculumConstraintProvider.tsx:40](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/constraints/CurriculumConstraintProvider.tsx#L40)
 
 Loads every constraint of a curriculum once and resolves them per event,
 for anything that reasons about weekdays: recurrence echoes, student load,

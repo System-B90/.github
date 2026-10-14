@@ -8,7 +8,7 @@
 
 > **ReloadRemoval** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:37](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L37)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:37](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L37)
 
 A cut event whose planned occurrence disappeared — will be archived.
 
@@ -18,7 +18,7 @@ A cut event whose planned occurrence disappeared — will be archived.
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:38](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L38)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:38](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L38)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:38](https://github.com/Syst
 
 > **ganttEventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:39](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L39)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:39](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L39)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:39](https://github.com/Syst
 
 > **occurrenceDate**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:40](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L40)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:40](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L40)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:40](https://github.com/Syst
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:41](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/reload.ts#L41)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:41](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L41)

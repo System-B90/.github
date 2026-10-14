@@ -8,7 +8,7 @@
 
 > **ConstraintEntity** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:31](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-constraints.ts#L31)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:31](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-constraints.ts#L31)
 
 Constraint pass for the cut.
 
@@ -35,7 +35,7 @@ be satisfied by moving between weeks is reported as a violation instead.
 
 > **constraints**: [`GanttConstraint`](../../../types/gantt/models/constraint/type-aliases/GanttConstraint.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:35](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-constraints.ts#L35)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:35](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-constraints.ts#L35)
 
 ***
 
@@ -43,7 +43,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:35](https://github.com/S
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:33](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-constraints.ts#L33)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:33](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-constraints.ts#L33)
 
 Event id, or module id for a module-owned constraint.
 
@@ -53,4 +53,4 @@ Event id, or module id for a module-owned constraint.
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:34](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-constraints.ts#L34)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:34](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-constraints.ts#L34)

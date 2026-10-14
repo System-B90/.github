@@ -8,7 +8,7 @@
 
 > **ColorFormCardProps** = `Omit`\<[`FormCardBaseProps`](../../../common/FormCard/type-aliases/FormCardBaseProps.md)\<[`ColorEntry`](../../types/type-aliases/ColorEntry.md)\>, `"selectedEntity"`\> & `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx:14](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx#L14)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx:14](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx#L14)
 
 ## Type Declaration
 

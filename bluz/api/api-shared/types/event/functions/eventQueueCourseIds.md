@@ -8,7 +8,7 @@
 
 > **eventQueueCourseIds**(`event`): `string`[]
 
-Defined in: [ui/src/api-shared/types/event.ts:120](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/event.ts#L120)
+Defined in: [ui/src/api-shared/types/event.ts:120](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/event.ts#L120)
 
 The shuffles (Bluz course ids) of an event that carry a Hive queue, i.e. the
 groups whose students should get a queue opened when the event goes live.

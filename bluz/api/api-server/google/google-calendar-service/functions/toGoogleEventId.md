@@ -8,7 +8,7 @@
 
 > **toGoogleEventId**(`bluzEventId`): `string`
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:258](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/google/google-calendar-service.ts#L258)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:258](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/google/google-calendar-service.ts#L258)
 
 Deterministic, idempotent Google event id derived from the Bluz event id.
 Bluz ids are UUIDs / Mongo ObjectIds, so stripping dashes leaves lowercase

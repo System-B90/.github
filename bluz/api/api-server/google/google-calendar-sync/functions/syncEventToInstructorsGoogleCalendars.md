@@ -8,7 +8,7 @@
 
 > **syncEventToInstructorsGoogleCalendars**(`event`, `action`, `iterationId?`, `previous?`): `void`
 
-Defined in: [ui/src/api-server/google/google-calendar-sync.ts:93](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/google/google-calendar-sync.ts#L93)
+Defined in: [ui/src/api-server/google/google-calendar-sync.ts:93](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/google/google-calendar-sync.ts#L93)
 
 Fire-and-forget: mirrors the given event into every linked Google calendar
 that wants it — one write per calendar, however many users share it. A

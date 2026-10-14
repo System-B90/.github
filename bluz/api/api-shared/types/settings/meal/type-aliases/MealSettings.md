@@ -8,7 +8,7 @@
 
 > **MealSettings** = `object`
 
-Defined in: [ui/src/api-shared/types/settings/meal.ts:3](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/settings/meal.ts#L3)
+Defined in: [ui/src/api-shared/types/settings/meal.ts:3](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/settings/meal.ts#L3)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/settings/meal.ts:3](https://github.com/Syst
 
 > **breakfastTime**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/meal.ts:5](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/settings/meal.ts#L5)
+Defined in: [ui/src/api-shared/types/settings/meal.ts:5](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/settings/meal.ts#L5)
 
 Preferred breakfast time ("HH:mm").
 
@@ -26,7 +26,7 @@ Preferred breakfast time ("HH:mm").
 
 > **dinnerTime**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/meal.ts:9](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/settings/meal.ts#L9)
+Defined in: [ui/src/api-shared/types/settings/meal.ts:9](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/settings/meal.ts#L9)
 
 Preferred dinner time ("HH:mm").
 
@@ -36,6 +36,6 @@ Preferred dinner time ("HH:mm").
 
 > **lunchTime**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/meal.ts:7](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/settings/meal.ts#L7)
+Defined in: [ui/src/api-shared/types/settings/meal.ts:7](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/settings/meal.ts#L7)
 
 Preferred lunch time ("HH:mm").

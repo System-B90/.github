@@ -8,7 +8,7 @@
 
 > `const` **FIXTURE\_TOOLS**: [`AiTool`](../../../tools/types/type-aliases/AiTool.md)\<`any`\>[]
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:504](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/benchmark/fixture.ts#L504)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:504](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/benchmark/fixture.ts#L504)
 
 The fixture's own tools. The run lays them over the production registry
 (see `benchmarkTools`), so the model sees every real tool; these only

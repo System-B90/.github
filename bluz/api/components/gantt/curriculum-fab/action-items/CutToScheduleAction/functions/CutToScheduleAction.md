@@ -8,7 +8,7 @@
 
 > **CutToScheduleAction**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/action-items/CutToScheduleAction.tsx:23](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-fab/action-items/CutToScheduleAction.tsx#L23)
+Defined in: [ui/src/components/gantt/curriculum-fab/action-items/CutToScheduleAction.tsx:23](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-fab/action-items/CutToScheduleAction.tsx#L23)
 
 "גזירה ללו"ז" / "משיכה חזרה" — a single status-aware action. Once a
 curriculum has been cut, the cut button is replaced by a pull-back button

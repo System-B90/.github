@@ -8,4 +8,4 @@
 
 > `const` **SETTINGS\_TABS**: readonly \[`"personal"`, `"global"`, `"courses"`, `"colors"`, `"rooms"`, `"outsiders"`, `"iterations"`\]
 
-Defined in: [ui/src/components/settings-dialog/UseSettingsDialogUrl.ts:4](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/UseSettingsDialogUrl.ts#L4)
+Defined in: [ui/src/components/settings-dialog/UseSettingsDialogUrl.ts:4](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/settings-dialog/UseSettingsDialogUrl.ts#L4)

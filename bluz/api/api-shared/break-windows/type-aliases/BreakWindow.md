@@ -8,7 +8,7 @@
 
 > **BreakWindow** = [`Interval`](../../interval-layout/type-aliases/Interval.md) & `object`
 
-Defined in: [ui/src/api-shared/break-windows.ts:35](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/break-windows.ts#L35)
+Defined in: [ui/src/api-shared/break-windows.ts:35](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/break-windows.ts#L35)
 
 A break window plus the audience it applies to.
 

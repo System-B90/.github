@@ -8,4 +8,4 @@
 
 > `const` **HEBREW\_DAYS\_SHORT**: readonly \[`"א'"`, `"ב'"`, `"ג'"`, `"ד'"`, `"ה'"`, `"ו'"`, `"ש'"`\]
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:28](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/models/day.ts#L28)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:28](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/models/day.ts#L28)

@@ -8,7 +8,7 @@
 
 > **useCommand**(`command`): `void`
 
-Defined in: [ui/src/components/app-commands/use-command.ts:15](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-commands/use-command.ts#L15)
+Defined in: [ui/src/components/app-commands/use-command.ts:15](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/app-commands/use-command.ts#L15)
 
 Mirror a single on-screen control in the palette.
 

@@ -8,7 +8,7 @@
 
 > **BuildInsightContextInput** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:25](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L25)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:25](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L25)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **constraintsByEvent**: `Record`\<`string`, [`GanttConstraint`](../../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md)[]\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:31](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L31)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:31](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L31)
 
 Constraints binding each event (own + modules').
 
@@ -26,7 +26,7 @@ Constraints binding each event (own + modules').
 
 > **curriculum**: [`GanttCurriculumDocument`](../../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:26](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L26)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:26](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L26)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **exceptions**: `Record`\<`string`, [`GanttEventRecurrenceException`](../../../../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:29](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L29)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:29](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L29)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **execution**: [`InsightContext`](../../types/type-aliases/InsightContext.md)\[`"execution"`\]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:35](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L35)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:35](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L35)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **instructorName**: [`InsightContext`](../../types/type-aliases/InsightContext.md)\[`"instructorName"`\]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:33](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L33)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:33](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L33)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **mappings**: `Record`\<`string`, [`GanttCurriculumEventDayMapping`](../../../../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:28](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L28)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:28](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L28)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **now**: `Dayjs`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:32](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L32)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:32](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L32)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **outsiderName**: [`InsightContext`](../../types/type-aliases/InsightContext.md)\[`"outsiderName"`\]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:34](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L34)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:34](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L34)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-c
 
 > **schedule**: `Pick`\<[`CurriculumStudentSchedule`](../../../../use-student-schedule/type-aliases/CurriculumStudentSchedule.md), `"byDay"` \| `"requiredMinutes"` \| `"spans"`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:37](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L37)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:37](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L37)
 
 One student's schedule — see `useCurriculumStudentSchedule`.
 
@@ -92,4 +92,4 @@ One student's schedule — see `useCurriculumStudentSchedule`.
 
 > **state**: [`NormalizedStore`](../../../../../../../api-client/gantt/drizzle-normalize/type-aliases/NormalizedStore.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:27](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L27)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:27](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L27)

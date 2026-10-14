@@ -8,6 +8,6 @@
 
 > `const` **ROOMLESS\_ROOM\_NAMES**: `ReadonlyArray`\<`string`\>
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:258](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-rules.ts#L258)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:258](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-rules.ts#L258)
 
 Rooms that never justify a transition break — no walk is involved.

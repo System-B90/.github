@@ -8,7 +8,7 @@
 
 > **useEventContextMenu**(`selection`): `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:26](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L26)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-context-menu.ts:26](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-context-menu.ts#L26)
 
 Owns the right-click menu's open state and decides what a right-click acts
 on (#706): inside an existing multi-selection it adopts the whole selection,

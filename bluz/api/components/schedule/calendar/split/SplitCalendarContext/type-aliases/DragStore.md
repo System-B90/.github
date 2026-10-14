@@ -8,7 +8,7 @@
 
 > **DragStore** = [`ExternalStore`](../../../../../base/external-store/type-aliases/ExternalStore.md)\<[`ActiveDrag`](ActiveDrag.md) \| `null`\>
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:36](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L36)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:36](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L36)
 
 The grid drag in flight, outside React state (#955). In the shared context,
 a drag start, a drop and every Ctrl/Alt press mid-drag re-rendered every

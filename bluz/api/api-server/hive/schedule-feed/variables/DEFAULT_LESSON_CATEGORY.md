@@ -8,6 +8,6 @@
 
 > `const` **DEFAULT\_LESSON\_CATEGORY**: `"שיעור"` = `"שיעור"`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:52](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/hive/schedule-feed.ts#L52)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:52](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/hive/schedule-feed.ts#L52)
 
 Hive event category (with `has_lesson`) that subject-bound events use.

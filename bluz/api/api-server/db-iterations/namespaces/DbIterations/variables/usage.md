@@ -8,7 +8,7 @@
 
 > `const` **usage**: (`id`) => `Promise`\<[`IterationUsage`](../../../../../api-shared/types/iteration/type-aliases/IterationUsage.md)\> = `describeIterationUsage`
 
-Defined in: [ui/src/api-server/db-iterations.ts:378](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/db-iterations.ts#L378)
+Defined in: [ui/src/api-server/db-iterations.ts:378](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/db-iterations.ts#L378)
 
 What still hangs off an iteration. Only a fully orphaned iteration may be
 deleted (#473), so the UI asks for this to decide whether to enable its

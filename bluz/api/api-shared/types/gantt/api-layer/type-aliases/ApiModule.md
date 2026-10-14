@@ -8,7 +8,7 @@
 
 > **ApiModule** = `object` & `Omit`\<[`GanttModule`](../../models/module/type-aliases/GanttModule.md) & [`RawBaseDocument`](RawBaseDocument.md), `"constraints"` \| `"events"`\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:61](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/api-layer.ts#L61)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:61](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/api-layer.ts#L61)
 
 ## Type Declaration
 

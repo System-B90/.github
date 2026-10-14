@@ -8,7 +8,7 @@
 
 > **useScheduleCommands**(`__namedParameters`): `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:44](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-commands/use-schedule-commands.tsx#L44)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:44](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/app-commands/use-schedule-commands.tsx#L44)
 
 Schedule-page commands.
 

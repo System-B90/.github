@@ -8,7 +8,7 @@
 
 > **solveConstraints**(`input`): [`ConstraintPassResult`](../type-aliases/ConstraintPassResult.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:161](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-constraints.ts#L161)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:161](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-constraints.ts#L161)
 
 Run the constraint solver over an already-balanced placement map.
 

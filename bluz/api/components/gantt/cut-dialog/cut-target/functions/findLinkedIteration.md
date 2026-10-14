@@ -8,7 +8,7 @@
 
 > **findLinkedIteration**(`iterations`, `curriculumId`): [`Iteration`](../../../../../api-shared/types/iteration/type-aliases/Iteration.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/cut-dialog/cut-target.ts:17](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/cut-dialog/cut-target.ts#L17)
+Defined in: [ui/src/components/gantt/cut-dialog/cut-target.ts:17](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/cut-dialog/cut-target.ts#L17)
 
 The iteration the cut endpoint will write into, if any.
 

@@ -8,7 +8,7 @@
 
 > **CliDistManifest** = `object`
 
-Defined in: [ui/src/api-shared/types/cli-dist.ts:8](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/cli-dist.ts#L8)
+Defined in: [ui/src/api-shared/types/cli-dist.ts:8](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/cli-dist.ts#L8)
 
 Response of `GET /api/cli-dist` — a bare object, not the API envelope.
 
@@ -18,7 +18,7 @@ Response of `GET /api/cli-dist` — a bare object, not the API envelope.
 
 > **plugin**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/cli-dist.ts:12](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/cli-dist.ts#L12)
+Defined in: [ui/src/api-shared/types/cli-dist.ts:12](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/cli-dist.ts#L12)
 
 Plugin archive file name, null when not built.
 
@@ -28,6 +28,6 @@ Plugin archive file name, null when not built.
 
 > **wheel**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/cli-dist.ts:10](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/cli-dist.ts#L10)
+Defined in: [ui/src/api-shared/types/cli-dist.ts:10](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/cli-dist.ts#L10)
 
 Wheel file name (`bluz-<version>-py3-none-any.whl`), null when not built.

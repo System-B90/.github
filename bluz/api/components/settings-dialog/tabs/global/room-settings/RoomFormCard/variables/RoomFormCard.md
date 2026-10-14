@@ -8,4 +8,4 @@
 
 > `const` **RoomFormCard**: [`FormCard`](../../../common/type-aliases/FormCard.md)\<[`Room`](../../../../../../../api-shared/types/room/type-aliases/Room.md), [`RoomFormCardProps`](../type-aliases/RoomFormCardProps.md)\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx:222](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx#L222)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx:222](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx#L222)

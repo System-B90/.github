@@ -8,7 +8,7 @@
 
 > **escapeRegex**(`value`): `string`
 
-Defined in: [ui/src/api-server/ai/tools/common.ts:62](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/ai/tools/common.ts#L62)
+Defined in: [ui/src/api-server/ai/tools/common.ts:62](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/tools/common.ts#L62)
 
 Escapes text before it reaches Mongo's `$regex`. The model relays whatever
 the user typed, so an unescaped value both widens the search silently (`.`,

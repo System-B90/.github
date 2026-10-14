@@ -8,7 +8,7 @@
 
 > **ContextMenuClipboard** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:57](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-context-menu/index.tsx#L57)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:57](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/index.tsx#L57)
 
 Clipboard (#859): the same actions as Ctrl+C / Ctrl+X / Ctrl+V.
 
@@ -18,7 +18,7 @@ Clipboard (#859): the same actions as Ctrl+C / Ctrl+X / Ctrl+V.
 
 > **canPaste**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:62](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-context-menu/index.tsx#L62)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:62](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/index.tsx#L62)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:62](https:/
 
 > **copy**: (`event`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:58](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-context-menu/index.tsx#L58)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:58](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/index.tsx#L58)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:58](https:/
 
 > **cut**: (`event`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:59](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-context-menu/index.tsx#L59)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:59](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/index.tsx#L59)
 
 #### Parameters
 
@@ -62,7 +62,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:59](https:/
 
 > **paste**: (`slot`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:61](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/event-context-menu/index.tsx#L61)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:61](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/index.tsx#L61)
 
 Pastes at the clicked event's start time.
 

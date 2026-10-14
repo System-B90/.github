@@ -8,7 +8,7 @@
 
 > **useViewRangeSync**(`__namedParameters`): \[`Date`, `Dispatch`\<`SetStateAction`\<`Date`\>\>\]
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts:20](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts#L20)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts:20](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/calendar/use-view-range-sync.ts#L20)
 
 Two-way sync between the calendar view's date and the provider's range.
 

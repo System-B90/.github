@@ -8,7 +8,7 @@
 
 > **createNoOverlapLayout**(`minTileMs?`): \<`TEvent`\>(`input`) => `object`[]
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:117](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/student-view/no-overlap-layout.ts#L117)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:117](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/student-view/no-overlap-layout.ts#L117)
 
 ## Parameters
 

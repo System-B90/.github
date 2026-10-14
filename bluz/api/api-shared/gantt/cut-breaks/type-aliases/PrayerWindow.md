@@ -8,7 +8,7 @@
 
 > **PrayerWindow** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:48](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-breaks.ts#L48)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:48](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-breaks.ts#L48)
 
 A prayer window in minutes-of-day.
 
@@ -18,7 +18,7 @@ A prayer window in minutes-of-day.
 
 > **endMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:51](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-breaks.ts#L51)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:51](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-breaks.ts#L51)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:51](https://github.com/System
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:49](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-breaks.ts#L49)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:49](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-breaks.ts#L49)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:49](https://github.com/System
 
 > **startMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:50](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/cut-breaks.ts#L50)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:50](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-breaks.ts#L50)

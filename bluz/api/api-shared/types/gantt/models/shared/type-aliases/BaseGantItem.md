@@ -8,7 +8,7 @@
 
 > **BaseGantItem** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:1](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/models/shared.ts#L1)
+Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:1](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/models/shared.ts#L1)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:1](https://github.co
 
 > `readonly` **id**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:2](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/models/shared.ts#L2)
+Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:2](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/models/shared.ts#L2)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:2](https://github.co
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:3](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/gantt/models/shared.ts#L3)
+Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:3](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/models/shared.ts#L3)

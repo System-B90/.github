@@ -8,7 +8,7 @@
 
 > **waitForTabPaint**(): `Promise`\<`void`\>
 
-Defined in: [ui/src/components/app-onboarding/gantt/tabs.ts:23](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/app-onboarding/gantt/tabs.ts#L23)
+Defined in: [ui/src/components/app-onboarding/gantt/tabs.ts:23](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/app-onboarding/gantt/tabs.ts#L23)
 
 Tab content mounts a couple of frames after the tab changes (the tab strip
 defers the first mount so the switch animates), so a tour step that points

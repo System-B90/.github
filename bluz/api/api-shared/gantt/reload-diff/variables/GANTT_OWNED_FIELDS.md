@@ -8,7 +8,7 @@
 
 > `const` **GANTT\_OWNED\_FIELDS**: `ReadonlyArray`\<keyof [`DbEventDocument`](../../../types/event/type-aliases/DbEventDocument.md)\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:19](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/gantt/reload-diff.ts#L19)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:19](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/reload-diff.ts#L19)
 
 Fields the gantt owns. Everything else on a cut event (rooms, tags, colors,
 locked/hidden flags, …) is schedule-side data the cut never wrote, so a

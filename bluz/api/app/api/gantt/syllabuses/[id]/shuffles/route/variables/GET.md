@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/syllabuses/\[id\]/shuffles/route.ts:31](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/syllabuses/[id]/shuffles/route.ts#L31)
+Defined in: [ui/src/app/api/gantt/syllabuses/\[id\]/shuffles/route.ts:31](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/app/api/gantt/syllabuses/[id]/shuffles/route.ts#L31)
 
 Lists the modules and events using the shuffle names in `?name=a&name=b`, so
 the UI can show what a deletion would strip before it happens (#485).

@@ -8,7 +8,7 @@
 
 > **parseJsonBody**\<`T`\>(`text`): `T`
 
-Defined in: [ui/src/api-server/common.ts:40](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/common.ts#L40)
+Defined in: [ui/src/api-server/common.ts:40](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/common.ts#L40)
 
 `JSON.parse` on a request body, with a malformed payload reported as the
 400 it is. Parsing straight through leaks a `SyntaxError` into the generic

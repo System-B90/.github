@@ -8,7 +8,7 @@
 
 > **RevealGanttItem** = (`syllabusId`, `moduleId`, `eventId?`) => `void`
 
-Defined in: [ui/src/components/gantt/state/context.ts:52](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/state/context.ts#L52)
+Defined in: [ui/src/components/gantt/state/context.ts:52](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/context.ts#L52)
 
 Reveals a module/event row in the רצף זמן timeline: expands its ancestors,
 scrolls it into view and flash-highlights it. The actual behavior is

@@ -8,7 +8,7 @@
 
 > **formatPhoneNumber**(`value`): `string`
 
-Defined in: [ui/src/components/base/utils/phone-numbers.ts:48](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/base/utils/phone-numbers.ts#L48)
+Defined in: [ui/src/components/base/utils/phone-numbers.ts:48](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/base/utils/phone-numbers.ts#L48)
 
 Formats a string into an Israeli phone number format based on identified patterns.
 

@@ -8,7 +8,7 @@
 
 > **AiChoiceOption** = `object`
 
-Defined in: [ui/src/api-shared/types/ai.ts:86](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/ai.ts#L86)
+Defined in: [ui/src/api-shared/types/ai.ts:86](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L86)
 
 One selectable answer in an [AiStreamEventType.Choice](../enumerations/AiStreamEventType.md#choice) prompt.
 
@@ -18,7 +18,7 @@ One selectable answer in an [AiStreamEventType.Choice](../enumerations/AiStreamE
 
 > `optional` **description?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:92](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/ai.ts#L92)
+Defined in: [ui/src/api-shared/types/ai.ts:92](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L92)
 
 Optional one-line clarification under the label.
 
@@ -28,7 +28,7 @@ Optional one-line clarification under the label.
 
 > **label**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:90](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/ai.ts#L90)
+Defined in: [ui/src/api-shared/types/ai.ts:90](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L90)
 
 Hebrew label on the button.
 
@@ -38,6 +38,6 @@ Hebrew label on the button.
 
 > **value**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:88](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-shared/types/ai.ts#L88)
+Defined in: [ui/src/api-shared/types/ai.ts:88](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L88)
 
 Sent back to the model verbatim.

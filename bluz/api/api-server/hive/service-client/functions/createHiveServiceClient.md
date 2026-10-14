@@ -8,7 +8,7 @@
 
 > **createHiveServiceClient**(`hiveUrl?`): `Promise`\<[`HiveClient`](../../client/classes/HiveClient.md)\>
 
-Defined in: [ui/src/api-server/hive/service-client.ts:55](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-server/hive/service-client.ts#L55)
+Defined in: [ui/src/api-server/hive/service-client.ts:55](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/hive/service-client.ts#L55)
 
 A Hive client authenticated as the Bluz service account.
 

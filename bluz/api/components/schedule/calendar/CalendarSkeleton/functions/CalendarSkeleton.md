@@ -8,7 +8,7 @@
 
 > **CalendarSkeleton**(): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/CalendarSkeleton.tsx:17](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/CalendarSkeleton.tsx#L17)
+Defined in: [ui/src/components/schedule/calendar/CalendarSkeleton.tsx:17](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/CalendarSkeleton.tsx#L17)
 
 Stands in for the week grid while the first event fetch is in flight.
 Rendered as an overlay rather than instead of the calendar: the calendar

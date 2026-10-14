@@ -8,7 +8,7 @@
 
 > **useAsyncAction**(`onProcessingChange`): \<`T`\>(`apiCall`, `onSuccess`, `errorMessage`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/action-items/use-async-action.ts:6](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/gantt/curriculum-fab/action-items/use-async-action.ts#L6)
+Defined in: [ui/src/components/gantt/curriculum-fab/action-items/use-async-action.ts:6](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/curriculum-fab/action-items/use-async-action.ts#L6)
 
 ## Parameters
 

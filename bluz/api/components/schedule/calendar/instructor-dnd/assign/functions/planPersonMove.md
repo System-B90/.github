@@ -8,7 +8,7 @@
 
 > **planPersonMove**(`source`, `target`, `personId`, `withModifier`, `sourceField?`): [`PersonMovePlan`](../type-aliases/PersonMovePlan.md)
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:57](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L57)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:57](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L57)
 
 Decides whether a person can move between two events, and into which field.
 

@@ -8,7 +8,7 @@
 
 > **asDateFixup**\<`T`\>(): [`DateFixup`](../type-aliases/DateFixup.md)\<`T`\>
 
-Defined in: [ui/src/api-client/gantt/base.ts:44](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/api-client/gantt/base.ts#L44)
+Defined in: [ui/src/api-client/gantt/base.ts:44](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-client/gantt/base.ts#L44)
 
 Adapts `baseDocumentFixup` — precisely typed as
 `(doc: T) => T & BaseDocument` — to the looser `DateFixup<T>` shape

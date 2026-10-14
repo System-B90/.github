@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/integrations/google-calendar/sync/route.ts:29](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/integrations/google-calendar/sync/route.ts#L29)
+Defined in: [ui/src/app/api/integrations/google-calendar/sync/route.ts:29](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/app/api/integrations/google-calendar/sync/route.ts#L29)
 
 POST /api/integrations/google-calendar/sync — manual "sync now": pushes the
 signed-in user's own upcoming events from the iteration their calendar is

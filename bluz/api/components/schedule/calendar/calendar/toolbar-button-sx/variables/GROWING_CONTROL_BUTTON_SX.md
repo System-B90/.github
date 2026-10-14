@@ -8,7 +8,7 @@
 
 > `const` **GROWING\_CONTROL\_BUTTON\_SX**: `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/toolbar-button-sx.ts:23](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/components/schedule/calendar/calendar/toolbar-button-sx.ts#L23)
+Defined in: [ui/src/components/schedule/calendar/calendar/toolbar-button-sx.ts:23](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/calendar/toolbar-button-sx.ts#L23)
 
 Control button that also grows slightly on hover (toolbar visibility toggle).
 

@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/recurrence-exceptions/route.ts:17](https://github.com/System-B90/Bluz/blob/9293ec523a02fdbe59b9479de6b3caee2f4be11c/ui/src/app/api/gantt/curriculums/[id]/recurrence-exceptions/route.ts#L17)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/recurrence-exceptions/route.ts:17](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/app/api/gantt/curriculums/[id]/recurrence-exceptions/route.ts#L17)
 
 GET: Fetches every recurrence exception for a curriculum.
 
