@@ -5,7 +5,8 @@ description: >-
   images are read from its release compose file; the offline bundle vendors
   every wheel the bundle's bootstrap needs, for Linux and Windows. Replaces the
   hand-written "Prepare Workspace / Export Offline Images / Vendor wheels /
-  Compress" steps each app's craft-release job used to carry.
+  Compress" steps each app's craft-release job used to carry. With
+  delta-bases, also a delta package (sb90-deploy delta) for small offline upgrades.
 
 inputs:
   tag:
@@ -34,6 +35,17 @@ inputs:
     description: sb90-deploy version to install from the org pip index.
     required: false
     default: "0.1.0"
+  delta-bases:
+    description: >-
+      Also craft <app>-delta-<tag>.tar.zst against the offline bundles of this
+      many newest earlier stable releases (sb90-deploy >= 0.6.0). One delta
+      upgrades a host on any of them. 0 (default) crafts none.
+    required: false
+    default: "0"
+  github-token:
+    description: Token that can download the release repo's assets (delta bases).
+    required: false
+    default: ${{ github.token }}
   python-version:
     description: Python used to run the bundler (not the target hosts' Python).
     required: false
@@ -46,6 +58,9 @@ outputs:
   offline:
     description: Path of <app>-offline-<tag>.tar.gz
     value: ${{ steps.craft.outputs.offline }}
+  delta:
+    description: Path of <app>-delta-<tag>.tar.zst ("" when none was crafted)
+    value: ${{ steps.delta.outputs.delta }}
 
 runs:
   using: composite
@@ -74,3 +89,36 @@ runs:
         --out "${{ inputs.out }}"
         --images "${{ inputs.images }}"
         ${{ inputs.wheels != 'true' && '--no-wheels' || '' }}
+
+    # Bases: the newest earlier stable releases below this tag (a hotfix on an
+    # old line never "upgrades" a newer host). Bases bundled with an older
+    # sb90-deploy are skipped by `delta` itself: their hosts cannot apply one.
+    - name: Craft delta package
+      id: delta
+      if: inputs.delta-bases != '0' && inputs.images != 'skip'
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        TAG: ${{ inputs.tag }}
+        COUNT: ${{ inputs.delta-bases }}
+      run: |
+        read -r repo dir < <(python -c "import json,sys; a=json.load(open(sys.argv[1])); print(a['release_repo'], a.get('bundle', {}).get('dir', a['name']))" "${{ inputs.app }}")
+        work="$RUNNER_TEMP/delta-bases"
+        rm -rf "$work" && mkdir -p "$work"
+        bases=()
+        for tag in $( { gh release list -R "$repo" --exclude-drafts --exclude-pre-releases -L 100 --json tagName -q '.[].tagName'; echo "$TAG"; } \
+            | sort -uV | awk -v t="$TAG" '$0 == t { exit } { print }' | tail -n "$COUNT"); do
+          asset="$dir-offline-$tag.tar.gz"
+          if gh release download "$tag" -R "$repo" -p "$asset" -D "$work"; then
+            bases+=(--base "$work/$asset")
+          else
+            echo "::warning::$tag has no $asset - not a delta base"
+          fi
+        done
+        if [ "${#bases[@]}" -eq 0 ]; then
+          echo "::notice::No earlier offline bundle - no delta package"
+          echo "delta=" >> "$GITHUB_OUTPUT"
+        else
+          python -m sb90_deploy delta --target "${{ steps.craft.outputs.offline }}" "${bases[@]}" --out "${{ inputs.out }}"
+        fi
+        rm -rf "$work"
