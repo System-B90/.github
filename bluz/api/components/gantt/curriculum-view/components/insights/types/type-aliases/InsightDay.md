@@ -8,7 +8,7 @@
 
 > **InsightDay** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:70](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L70)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:70](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L70)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.t
 
 > **capacityMinutes**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:74](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L74)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:74](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L74)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.t
 
 > **date**: `Dayjs` \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:76](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L76)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:76](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L76)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.t
 
 > **dayIndex**: [`GanttDayIndex`](../../../../../../../api-shared/types/gantt/models/day/enumerations/GanttDayIndex.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:72](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L72)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:72](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L72)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.t
 
 > **id**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:71](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L71)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:71](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L71)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.t
 
 > **scheduledMinutes**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:75](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L75)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:75](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L75)
 
 ***
 
@@ -56,4 +56,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.t
 
 > **weekNumber**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:73](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L73)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:73](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L73)

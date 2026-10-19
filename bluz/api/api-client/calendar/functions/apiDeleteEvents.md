@@ -8,7 +8,7 @@
 
 > **apiDeleteEvents**(`eventIds`, `initiator?`, `props?`, `iterationId?`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-client/calendar.ts:262](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-client/calendar.ts#L262)
+Defined in: [ui/src/api-client/calendar.ts:262](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-client/calendar.ts#L262)
 
 Deletes many events in one request (`DELETE /api/event/bulk`).
 

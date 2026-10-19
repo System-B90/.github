@@ -8,7 +8,7 @@
 
 > **isDuplicateKeyError**(`e`): `boolean`
 
-Defined in: [ui/src/api-server/common.ts:221](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/common.ts#L221)
+Defined in: [ui/src/api-server/common.ts:221](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/common.ts#L221)
 
 A Mongo unique-index violation (error code 11000). Unlike the opaque
 database errors below this one is entirely the caller's doing — it means the

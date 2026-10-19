@@ -8,7 +8,7 @@
 
 > `const` **SPILLOVER\_RULES**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:70](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-rules.ts#L70)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:70](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-rules.ts#L70)
 
 Spillover moves events off an over-full day onto a later day that has room.
 

@@ -8,7 +8,7 @@
 
 > **WeekTemplateEventDocument** = [`DbEventDocument`](../../event/type-aliases/DbEventDocument.md) & `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:75](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/week-template.ts#L75)
+Defined in: [ui/src/api-shared/types/week-template.ts:75](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/week-template.ts#L75)
 
 A stored template event: a schedule event placed in the reference week.
 Course ids belong to whichever iteration the template was saved from, so the

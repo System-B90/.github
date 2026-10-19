@@ -8,7 +8,7 @@
 
 > **ConstraintPassResult** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:93](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-constraints.ts#L93)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:93](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-constraints.ts#L93)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:93](https://github.com/S
 
 > **proposals**: [`ConstraintMoveProposal`](ConstraintMoveProposal.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:94](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-constraints.ts#L94)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:94](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-constraints.ts#L94)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:94](https://github.com/S
 
 > **violations**: [`ConstraintViolation`](ConstraintViolation.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:95](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-constraints.ts#L95)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:95](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-constraints.ts#L95)

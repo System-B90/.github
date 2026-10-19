@@ -8,7 +8,7 @@
 
 > **withCourseMembership**(`event`, `courseId`, `member`): [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:70](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/actions.ts#L70)
+Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:70](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/actions.ts#L70)
 
 Adds or removes one shuffle (מסלול) from an event, leaving its other
 shuffles alone. Order is preserved on removal so the event's course list

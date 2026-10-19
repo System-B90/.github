@@ -8,7 +8,7 @@
 
 > **AiToolResult** = `object`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:51](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/tools/types.ts#L51)
+Defined in: [ui/src/api-server/ai/tools/types.ts:51](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/tools/types.ts#L51)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/tools/types.ts:51](https://github.com/System-B
 
 > **data**: `unknown`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:53](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/tools/types.ts#L53)
+Defined in: [ui/src/api-server/ai/tools/types.ts:53](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/tools/types.ts#L53)
 
 Returned to the model. Keep it compact — it is re-sent every turn.
 
@@ -26,7 +26,7 @@ Returned to the model. Keep it compact — it is re-sent every turn.
 
 > `optional` **hints?**: `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:61](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/tools/types.ts#L61)
+Defined in: [ui/src/api-server/ai/tools/types.ts:61](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/tools/types.ts#L61)
 
 Guidance that depends on what this call returned, e.g. a rule that only
 matters when the payload holds people. Keeps the system prompt short:
@@ -38,6 +38,6 @@ the model learns a rule at the moment it needs it.
 
 > **summary**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:55](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/tools/types.ts#L55)
+Defined in: [ui/src/api-server/ai/tools/types.ts:55](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/tools/types.ts#L55)
 
 One Hebrew line shown in the chat transcript.

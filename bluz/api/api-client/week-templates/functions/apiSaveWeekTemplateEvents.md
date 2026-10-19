@@ -8,7 +8,7 @@
 
 > **apiSaveWeekTemplateEvents**(`id`, `events`, `applyToCutWeeks`, `iterationId?`): `Promise`\<[`ApiWeekTemplateSaveResponse`](../../../api-shared/types/week-template/type-aliases/ApiWeekTemplateSaveResponse.md)\>
 
-Defined in: [ui/src/api-client/week-templates.ts:79](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-client/week-templates.ts#L79)
+Defined in: [ui/src/api-client/week-templates.ts:79](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-client/week-templates.ts#L79)
 
 Replaces a template's events with an edited week.
 

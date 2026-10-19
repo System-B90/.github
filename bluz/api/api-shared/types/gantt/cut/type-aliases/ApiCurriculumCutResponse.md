@@ -8,7 +8,7 @@
 
 > **ApiCurriculumCutResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:108](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L108)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:108](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L108)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:108](https://github.com/System
 
 > **createdCourses**: `object`[]
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:114](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L114)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:114](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L114)
 
 Courses that were newly created for shuffles during the cut.
 
@@ -34,7 +34,7 @@ Courses that were newly created for shuffles during the cut.
 
 > **createdEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:110](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L110)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:110](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L110)
 
 Number of schedule events created.
 
@@ -44,7 +44,7 @@ Number of schedule events created.
 
 > **hiveSubjectsUnavailable**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:137](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L137)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:137](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L137)
 
 True when Hive could not be reached for the module → subject map during
 this cut and events were written without their subject (and so without
@@ -57,7 +57,7 @@ their color) because of it (#662). The cut itself succeeded; running
 
 > **insertedBreaks**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:130](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L130)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:130](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L130)
 
 הפסקה events the break post-pass created.
 
@@ -67,7 +67,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:130](https://github.com/System
 
 > **overlaps**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:116](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L116)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:116](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L116)
 
 Occurrences that overlap each other after stacking (informational).
 
@@ -77,7 +77,7 @@ Occurrences that overlap each other after stacking (informational).
 
 > **parkedEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:128](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L128)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:128](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L128)
 
 Events cut into the unassigned box (ארגז): week-only ones under
 `parkWeekOnly`, and day overflow under the `park` resolution.
@@ -88,7 +88,7 @@ Events cut into the unassigned box (ארגז): week-only ones under
 
 > `optional` **replacedEvents?**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:112](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L112)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:112](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L112)
 
 Earlier cut events of the week a single-week cut replaced (#970).
 
@@ -98,7 +98,7 @@ Earlier cut events of the week a single-week cut replaced (#970).
 
 > **spilledEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:118](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L118)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:118](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L118)
 
 Events the balancer moved to a later day in the same week.
 
@@ -108,7 +108,7 @@ Events the balancer moved to a later day in the same week.
 
 > **spills**: [`CutSpillDetail`](../../../../gantt/cut-planner/type-aliases/CutSpillDetail.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L123)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L123)
 
 The same relocations, one entry each, so the dialog can expand the count
 into exactly what moved and where.

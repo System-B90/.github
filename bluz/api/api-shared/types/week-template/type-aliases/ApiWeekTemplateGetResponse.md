@@ -8,7 +8,7 @@
 
 > **ApiWeekTemplateGetResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:97](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/week-template.ts#L97)
+Defined in: [ui/src/api-shared/types/week-template.ts:97](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/week-template.ts#L97)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/week-template.ts:97](https://github.com/Sys
 
 > **events**: [`DbEventDocument`](../../event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/types/week-template.ts:100](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/week-template.ts#L100)
+Defined in: [ui/src/api-shared/types/week-template.ts:100](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/week-template.ts#L100)
 
 Course ids already resolved against the requested iteration.
 
@@ -26,4 +26,4 @@ Course ids already resolved against the requested iteration.
 
 > **template**: [`WeekTemplate`](WeekTemplate.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:98](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/week-template.ts#L98)
+Defined in: [ui/src/api-shared/types/week-template.ts:98](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/week-template.ts#L98)

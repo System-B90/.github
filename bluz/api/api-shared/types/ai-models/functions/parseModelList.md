@@ -8,7 +8,7 @@
 
 > **parseModelList**(`body`): [`AiModelInfo`](../type-aliases/AiModelInfo.md)[]
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:32](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/ai-models.ts#L32)
+Defined in: [ui/src/api-shared/types/ai-models.ts:32](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/ai-models.ts#L32)
 
 Normalises a `/models` response. OpenAI and most gateways answer
 `{ data: [{ id }] }`; Open WebUI's `/api/models` answers the same envelope

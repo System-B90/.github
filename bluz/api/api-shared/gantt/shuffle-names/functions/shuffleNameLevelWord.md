@@ -8,7 +8,7 @@
 
 > **shuffleNameLevelWord**(`name`): `"מתחילים"` \| `"בינוניים"` \| `"מתקדמים"` \| `null`
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:170](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/shuffle-names.ts#L170)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:170](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/shuffle-names.ts#L170)
 
 The staff-level word a trainee name wrongly contains, or null when clean.
 

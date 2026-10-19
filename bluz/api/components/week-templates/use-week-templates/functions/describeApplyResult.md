@@ -8,7 +8,7 @@
 
 > **describeApplyResult**(`result`): `string`
 
-Defined in: [ui/src/components/week-templates/use-week-templates.ts:61](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/week-templates/use-week-templates.ts#L61)
+Defined in: [ui/src/components/week-templates/use-week-templates.ts:61](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/week-templates/use-week-templates.ts#L61)
 
 What re-applying a template to its cut weeks did, as one Hebrew sentence.
 

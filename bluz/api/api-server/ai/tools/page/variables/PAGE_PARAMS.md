@@ -8,7 +8,7 @@
 
 > `const` **PAGE\_PARAMS**: `object`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:12](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/tools/page.ts#L12)
+Defined in: [ui/src/api-server/ai/tools/page.ts:12](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/tools/page.ts#L12)
 
 Schema fragment every paginated list tool spreads into its properties.
 

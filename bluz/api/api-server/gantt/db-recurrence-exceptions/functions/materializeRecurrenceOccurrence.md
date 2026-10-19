@@ -8,7 +8,7 @@
 
 > **materializeRecurrenceOccurrence**(`data`): `Promise`\<\{ `event`: [`GanttEvent`](../../../../api-shared/types/gantt/models/event/type-aliases/GanttEvent.md) \| [`ApiModuleEvent`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiModuleEvent.md); `mapping`: \{ `allottedMinutes`: `number`; `createdAt`: `Date`; `curriculumId`: `string`; `dayId`: `string`; `eventId`: `string` \| `null`; `id`: `string`; `moduleId`: `string`; `sortOrder`: `number`; `updatedAt`: `Date`; `weekOnly`: `boolean`; \}; \}\>
 
-Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:57](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L57)
+Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:57](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L57)
 
 Materializes a recurring occurrence into its own standalone event: copies
 the source event's fields (recurrence reset to "none"), links the copy to

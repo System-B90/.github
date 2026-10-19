@@ -8,7 +8,7 @@
 
 > **BluzCommandPalette**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/app-commands/BluzCommandPalette.tsx:33](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/app-commands/BluzCommandPalette.tsx#L33)
+Defined in: [ui/src/components/app-commands/BluzCommandPalette.tsx:33](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/BluzCommandPalette.tsx#L33)
 
 Bluz's palette. Wraps the generic package with this app's copy and its
 app-wide commands.

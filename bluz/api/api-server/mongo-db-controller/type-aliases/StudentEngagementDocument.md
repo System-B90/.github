@@ -8,7 +8,7 @@
 
 > **StudentEngagementDocument** = `object`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:419](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/mongo-db-controller.ts#L419)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:419](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L419)
 
 One student's focused time on the schedule board for one day. `id` is
 `<userId>:<date>` so the upsert is a single keyed `$inc` with no read.
@@ -19,7 +19,7 @@ One student's focused time on the schedule board for one day. `id` is
 
 > **date**: `string`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:423](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/mongo-db-controller.ts#L423)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:423](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L423)
 
 `yyyy-MM-dd` in the app timezone.
 
@@ -29,7 +29,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:423](https://github.com/Sy
 
 > **id**: `string`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:420](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/mongo-db-controller.ts#L420)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:420](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L420)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:420](https://github.com/Sy
 
 > **seconds**: `number`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:425](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/mongo-db-controller.ts#L425)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:425](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L425)
 
 Total seconds the board was open *and* focused that day.
 
@@ -47,7 +47,7 @@ Total seconds the board was open *and* focused that day.
 
 > **updatedAt**: `Date`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:426](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/mongo-db-controller.ts#L426)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:426](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L426)
 
 ***
 
@@ -55,4 +55,4 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:426](https://github.com/Sy
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:421](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/mongo-db-controller.ts#L421)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:421](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L421)

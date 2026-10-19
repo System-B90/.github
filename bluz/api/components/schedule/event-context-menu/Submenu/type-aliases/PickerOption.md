@@ -8,7 +8,7 @@
 
 > **PickerOption** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:91](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/Submenu.tsx#L91)
+Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:91](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/Submenu.tsx#L91)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:91](https
 
 > **id**: `string`
 
-Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:92](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/Submenu.tsx#L92)
+Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:92](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/Submenu.tsx#L92)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:92](https
 
 > **label**: `string`
 
-Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:93](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/Submenu.tsx#L93)
+Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:93](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/Submenu.tsx#L93)

@@ -8,7 +8,7 @@
 
 > **RecurrenceOccurrenceContext** = `object`
 
-Defined in: [ui/src/components/gantt/utils.tsx:38](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L38)
+Defined in: [ui/src/components/gantt/utils.tsx:38](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L38)
 
 Placement/exception data needed to count how many times a recurring event
 actually occurs on the timeline. Omitted ⇒ every event counts once,
@@ -20,7 +20,7 @@ matching the pre-recurrence-aware behavior (e.g. before placement exists).
 
 > **constraintsByEvent**: `Record`\<`string`, [`GanttConstraint`](../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md)[]\>
 
-Defined in: [ui/src/components/gantt/utils.tsx:49](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L49)
+Defined in: [ui/src/components/gantt/utils.tsx:49](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L49)
 
 Constraints binding each event (own + modules'); echoes skip forbidden weekdays.
 
@@ -30,7 +30,7 @@ Constraints binding each event (own + modules'); echoes skip forbidden weekdays.
 
 > `optional` **dateOf?**: (`dayId`) => `string` \| `undefined`
 
-Defined in: [ui/src/components/gantt/utils.tsx:47](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L47)
+Defined in: [ui/src/components/gantt/utils.tsx:47](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L47)
 
 Calendar date of a day ("YYYY-MM-DD"), so the recurrence window applies (#468).
 
@@ -50,7 +50,7 @@ Calendar date of a day ("YYYY-MM-DD"), so the recurrence window applies (#468).
 
 > **exceptions**: `Record`\<`string`, [`GanttEventRecurrenceException`](../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException.md)\>
 
-Defined in: [ui/src/components/gantt/utils.tsx:41](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L41)
+Defined in: [ui/src/components/gantt/utils.tsx:41](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L41)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/components/gantt/utils.tsx:41](https://github.com/System-B90
 
 > **linearDays**: `string`[]
 
-Defined in: [ui/src/components/gantt/utils.tsx:43](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L43)
+Defined in: [ui/src/components/gantt/utils.tsx:43](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L43)
 
 Timeline day ids in chronological order.
 
@@ -68,7 +68,7 @@ Timeline day ids in chronological order.
 
 > **mappings**: `Record`\<`string`, [`GanttCurriculumEventDayMapping`](../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md)\>
 
-Defined in: [ui/src/components/gantt/utils.tsx:40](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L40)
+Defined in: [ui/src/components/gantt/utils.tsx:40](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L40)
 
 ***
 
@@ -76,6 +76,6 @@ Defined in: [ui/src/components/gantt/utils.tsx:40](https://github.com/System-B90
 
 > `optional` **onlyDayIds?**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/components/gantt/utils.tsx:45](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L45)
+Defined in: [ui/src/components/gantt/utils.tsx:45](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L45)
 
 Count only occurrences on these days (e.g. one week); unplaced events count 0.

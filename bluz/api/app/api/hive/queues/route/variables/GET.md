@@ -8,7 +8,7 @@
 
 > `const` **GET**: `ServerApiHiveQueuesGet`
 
-Defined in: [ui/src/app/api/hive/queues/route.ts:23](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/app/api/hive/queues/route.ts#L23)
+Defined in: [ui/src/app/api/hive/queues/route.ts:23](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/hive/queues/route.ts#L23)
 
 GET /api/hive/queues?module=<id> — the queues of one Hive module, for the
 event dialog's per-shuffle queue picker. Module-scoped by design: Hive

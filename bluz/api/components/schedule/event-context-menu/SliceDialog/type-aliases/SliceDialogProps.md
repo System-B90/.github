@@ -8,7 +8,7 @@
 
 > **SliceDialogProps** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:23](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L23)
+Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:23](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L23)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:23](h
 
 > **event**: [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md) \| `null`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:25](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L25)
+Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:25](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L25)
 
 The event being sliced; null while closed.
 
@@ -26,7 +26,7 @@ The event being sliced; null while closed.
 
 > **onClose**: () => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:26](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L26)
+Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:26](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L26)
 
 #### Returns
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:26](h
 
 > **onSliceAfter**: (`event`, `headWorkingMs`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:28](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L28)
+Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:28](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L28)
 
 Cut after this much working time.
 

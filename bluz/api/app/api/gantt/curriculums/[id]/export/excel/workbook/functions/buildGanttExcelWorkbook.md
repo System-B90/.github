@@ -8,7 +8,7 @@
 
 > **buildGanttExcelWorkbook**(`curriculum`, `mappings`, `userNamesById?`): `Promise`\<`Workbook`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:130](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L130)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/export/excel/workbook.ts:130](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/gantt/curriculums/[id]/export/excel/workbook.ts#L130)
 
 ## Parameters
 

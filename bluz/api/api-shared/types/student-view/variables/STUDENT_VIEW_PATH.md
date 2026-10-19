@@ -8,6 +8,6 @@
 
 > `const` **STUDENT\_VIEW\_PATH**: `"/student-view"` = `"/student-view"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:101](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/student-view.ts#L101)
+Defined in: [ui/src/api-shared/types/student-view.ts:101](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/student-view.ts#L101)
 
 The one route a student session is allowed to render.

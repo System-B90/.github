@@ -8,7 +8,7 @@
 
 > **buildGeneratedBreakEvent**(`occurrence`, `courseIds`, `curriculumId`): [`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:666](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/cut.ts#L666)
+Defined in: [ui/src/api-server/gantt/cut.ts:666](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L666)
 
 Build a schedule event for a break the post-pass invented. It has no gantt
 event behind it, so everything comes from the occurrence itself. The

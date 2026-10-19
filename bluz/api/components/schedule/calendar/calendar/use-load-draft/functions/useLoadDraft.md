@@ -8,7 +8,7 @@
 
 > **useLoadDraft**(): (`draftId`) => `Promise`\<\{ `eventCount`: `number`; `label`: `string`; \}\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-load-draft.ts:18](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/calendar/calendar/use-load-draft.ts#L18)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-load-draft.ts:18](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/calendar/use-load-draft.ts#L18)
 
 Opens a shared draft for editing (#62). A draft is by definition not
 deployed, so opening one enters offline mode: the server's events for the

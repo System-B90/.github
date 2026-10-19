@@ -8,7 +8,7 @@
 
 > `const` **recordBulk**: (`args`) => `Promise`\<`void`\> = `recordMany`
 
-Defined in: [ui/src/api-server/db-event-history.ts:228](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/db-event-history.ts#L228)
+Defined in: [ui/src/api-server/db-event-history.ts:228](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-event-history.ts#L228)
 
 Bulk variant of [record](add.md) for cut/reload writes.
 

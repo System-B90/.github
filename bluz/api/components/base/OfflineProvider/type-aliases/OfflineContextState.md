@@ -8,7 +8,7 @@
 
 > **OfflineContextState** = `object`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:37](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L37)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:37](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L37)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:37](https://github.com/S
 
 > **activeDraft**: [`ActiveDraft`](ActiveDraft.md) \| `null`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:52](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L52)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:52](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L52)
 
 The draft being edited, while the offline session is a draft session.
 
@@ -26,7 +26,7 @@ The draft being edited, while the offline session is a draft session.
 
 > **activeTemplate**: [`ActiveTemplate`](ActiveTemplate.md) \| `null`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:70](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L70)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:70](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L70)
 
 The week template being edited, while the session is a template session.
 
@@ -36,7 +36,7 @@ The week template being edited, while the session is a template session.
 
 > **beginDraftSession**: (`draft`, `baseline`, `createdIds`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:59](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L59)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:59](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L59)
 
 Starts (or restarts) an offline session for a draft: `baseline` is
 what the server holds for the draft's range, so leaving offline mode
@@ -67,7 +67,7 @@ events the server does not have.
 
 > **beginTemplateSession**: (`template`, `events`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:76](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L76)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:76](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L76)
 
 Starts an offline session editing a week template. Its stored events
 are both what is shown and the baseline; nothing is ever diffed against
@@ -93,7 +93,7 @@ the live schedule.
 
 > **captureEventBeforeEdit**: (`event`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:43](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L43)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:43](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L43)
 
 #### Parameters
 
@@ -111,7 +111,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:43](https://github.com/S
 
 > **captureInitialEvents**: (`events`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:44](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L44)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:44](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L44)
 
 #### Parameters
 
@@ -129,7 +129,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:44](https://github.com/S
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:38](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L38)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:38](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L38)
 
 ***
 
@@ -137,7 +137,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:38](https://github.com/S
 
 > **getCapturedEvent**: (`eventId`) => [`Event`](../../../../api-shared/types/event/type-aliases/Event.md) \| `null`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:47](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L47)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:47](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L47)
 
 #### Parameters
 
@@ -155,7 +155,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:47](https://github.com/S
 
 > **getCapturedState**: () => `Record`\<[`EventId`](../../../../api-shared/types/event/type-aliases/EventId.md), [`Event`](../../../../api-shared/types/event/type-aliases/Event.md)\>
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:48](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L48)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:48](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L48)
 
 #### Returns
 
@@ -167,7 +167,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:48](https://github.com/S
 
 > **isEventCreatedLocally**: (`eventId`) => `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:50](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L50)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:50](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L50)
 
 #### Parameters
 
@@ -185,7 +185,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:50](https://github.com/S
 
 > **markEventCreatedLocally**: (`eventId`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:49](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L49)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:49](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L49)
 
 #### Parameters
 
@@ -203,7 +203,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:49](https://github.com/S
 
 > **moveTemplateSession**: (`weekStart`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:78](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L78)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:78](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L78)
 
 Records that the template session's events now sit in another week.
 
@@ -223,7 +223,7 @@ Records that the template session's events now sit in another week.
 
 > **offlineMode**: `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:39](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L39)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:39](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L39)
 
 ***
 
@@ -231,7 +231,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:39](https://github.com/S
 
 > **purgeCapturedEvents**: (`eventIds`) => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:46](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L46)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:46](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L46)
 
 #### Parameters
 
@@ -249,7 +249,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:46](https://github.com/S
 
 > **purgeCapturedState**: () => `void`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:45](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L45)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:45](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L45)
 
 #### Returns
 
@@ -261,7 +261,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:45](https://github.com/S
 
 > **pushDialogOpen**: `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:41](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L41)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:41](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L41)
 
 ***
 
@@ -269,7 +269,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:41](https://github.com/S
 
 > **setOfflineMode**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:40](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L40)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:40](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L40)
 
 ***
 
@@ -277,7 +277,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:40](https://github.com/S
 
 > **setPushDialogOpen**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:42](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L42)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:42](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L42)
 
 ***
 
@@ -285,7 +285,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:42](https://github.com/S
 
 > **takeProvidedBaseline**: () => `boolean`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:68](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/OfflineProvider.tsx#L68)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:68](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OfflineProvider.tsx#L68)
 
 True once per session when the baseline was supplied by
 `beginDraftSession`, so the calendar must not capture its own.

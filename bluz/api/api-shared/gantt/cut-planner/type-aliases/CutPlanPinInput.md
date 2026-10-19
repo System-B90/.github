@@ -8,7 +8,7 @@
 
 > **CutPlanPinInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:168](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L168)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:168](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L168)
 
 One week-template placement of an event (#997).
 
@@ -18,7 +18,7 @@ One week-template placement of an event (#997).
 
 > **dayIndex**: [`GanttDayIndex`](../../../types/gantt/models/day/enumerations/GanttDayIndex.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:171](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L171)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:171](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L171)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:171](https://github.com/Syst
 
 > **durationMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:173](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L173)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:173](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L173)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:173](https://github.com/Syst
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:169](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L169)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:169](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L169)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:169](https://github.com/Syst
 
 > **startMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:172](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L172)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:172](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L172)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:172](https://github.com/Syst
 
 > **weekId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:170](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L170)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:170](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L170)

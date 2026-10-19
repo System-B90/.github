@@ -8,7 +8,7 @@
 
 > **insertBreaksForDay**(`input`): [`BreakPassResult`](../type-aliases/BreakPassResult.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:207](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-breaks.ts#L207)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:207](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-breaks.ts#L207)
 
 Insert breaks into a single day's slack.
 

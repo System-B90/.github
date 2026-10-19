@@ -8,7 +8,7 @@
 
 > **getSyllabusShuffleTotals**(`syllabus`, `fieldName`, `state`, `occurrenceCtx?`): `Record`\<`string`, `number`\> \| `null`
 
-Defined in: [ui/src/components/gantt/utils.tsx:218](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/utils.tsx#L218)
+Defined in: [ui/src/components/gantt/utils.tsx:218](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L218)
 
 Per-shuffle sums of an event field across a whole syllabus, or null when
 neither the syllabus nor its modules/events are shuffle-tagged.

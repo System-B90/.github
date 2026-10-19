@@ -8,7 +8,7 @@
 
 > **applyTemplateToCutWeeks**(`template`): `Promise`\<[`ApiWeekTemplateApplyResult`](../../../../api-shared/types/week-template/type-aliases/ApiWeekTemplateApplyResult.md)\>
 
-Defined in: [ui/src/api-server/gantt/week-template-apply.ts:85](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/week-template-apply.ts#L85)
+Defined in: [ui/src/api-server/gantt/week-template-apply.ts:85](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/week-template-apply.ts#L85)
 
 Re-plan every week of the current iteration that was cut with `template`.
 This is a gantt reload limited to those weeks, so events a person edited

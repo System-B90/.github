@@ -8,7 +8,7 @@
 
 > `const` **TIMELINE\_VIEW\_KEYWORDS**: `string`[]
 
-Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:20](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L20)
+Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:20](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L20)
 
 What the timeline toolbar's own view commands answer to. Those commands are
 registered only while the timeline is mounted, so on the other tabs a search

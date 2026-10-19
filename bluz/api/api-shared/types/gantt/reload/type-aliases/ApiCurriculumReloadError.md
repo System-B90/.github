@@ -8,7 +8,7 @@
 
 > **ApiCurriculumReloadError** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:125](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L125)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:125](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/reload.ts#L125)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:125](https://github.com/Sys
 
 > **code**: [`CurriculumReloadErrorCode`](CurriculumReloadErrorCode.md)
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:126](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L126)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:126](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/reload.ts#L126)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:126](https://github.com/Sys
 
 > `optional` **errors?**: [`CutValidationError`](../../../../gantt/cut-planner/type-aliases/CutValidationError.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:128](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L128)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:128](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/reload.ts#L128)
 
 Present for `invalid-plan`: the pure planner's validation errors.
 
@@ -34,4 +34,4 @@ Present for `invalid-plan`: the pure planner's validation errors.
 
 > `optional` **message?**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:129](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L129)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:129](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/reload.ts#L129)

@@ -8,7 +8,7 @@
 
 > **slightOverlapEnds**(`events`, `accessors`): `Map`\<[`EventSegment`](../../segments/type-aliases/EventSegment.md), `Date`\>
 
-Defined in: [ui/src/components/schedule/calendar/split/segment-layout.ts:42](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/calendar/split/segment-layout.ts#L42)
+Defined in: [ui/src/components/schedule/calendar/split/segment-layout.ts:42](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/split/segment-layout.ts#L42)
 
 For each event that runs at most [SLIGHT\_OVERLAP\_MS](../variables/SLIGHT_OVERLAP_MS.md) into a later
 one, the later event's start: where the layout should consider it ended.

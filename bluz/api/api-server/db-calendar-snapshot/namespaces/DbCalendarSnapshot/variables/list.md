@@ -8,7 +8,7 @@
 
 > `const` **list**: (`controller`, `iterationId?`) => `Promise`\<[`CalendarSnapshotSummary`](../../../../../api-shared/types/type-aliases/CalendarSnapshotSummary.md)[]\> = `listSnapshots`
 
-Defined in: [ui/src/api-server/db-calendar-snapshot.ts:281](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/db-calendar-snapshot.ts#L281)
+Defined in: [ui/src/api-server/db-calendar-snapshot.ts:281](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-calendar-snapshot.ts#L281)
 
 Lists snapshots newest-first, without their (large) events payload.
 

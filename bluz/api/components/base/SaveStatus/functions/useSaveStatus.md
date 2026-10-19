@@ -8,7 +8,7 @@
 
 > **useSaveStatus**(): `object`
 
-Defined in: [ui/src/components/base/SaveStatus.tsx:15](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/SaveStatus.tsx#L15)
+Defined in: [ui/src/components/base/SaveStatus.tsx:15](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/SaveStatus.tsx#L15)
 
 Tracks the autosaves of a save-on-blur form (#836): `track(promise)` flips
 to "saving", then "saved" or "error". Overlapping saves resolve in order —

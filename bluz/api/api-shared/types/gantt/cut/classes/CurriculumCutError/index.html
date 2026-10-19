@@ -1145,7 +1145,7 @@
 <hr />
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/gantt/cut</a> / CurriculumCutError</p>
 <h1 id="class-curriculumcuterror">Class: CurriculumCutError<a class="headerlink" href="#class-curriculumcuterror" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L258">ui/src/api-shared/types/gantt/cut.ts:258</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L258">ui/src/api-shared/types/gantt/cut.ts:258</a></p>
 <p>Thrown by the client wrapper when a cut is rejected. Carries the full
 structured payload (code + planner validation errors + already-cut count)
 so the UI can render a specific message or validation list instead of a
@@ -1164,7 +1164,7 @@ the shared snackbar handling.</p>
 <blockquote>
 <p><strong>new CurriculumCutError</strong>(<code>payload</code>): <code>CurriculumCutError</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L267">ui/src/api-shared/types/gantt/cut.ts:267</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L267">ui/src/api-shared/types/gantt/cut.ts:267</a></p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="payload">payload<a class="headerlink" href="#payload" title="Permanent link">&para;</a></h5>
 <p><a href="../../type-aliases/ApiCurriculumCutError/"><code>ApiCurriculumCutError</code></a></p>
@@ -1177,7 +1177,7 @@ the shared snackbar handling.</p>
 <blockquote>
 <p><code>readonly</code> <strong>code</strong>: <a href="../../type-aliases/CurriculumCutErrorCode/"><code>CurriculumCutErrorCode</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L262">ui/src/api-shared/types/gantt/cut.ts:262</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L262">ui/src/api-shared/types/gantt/cut.ts:262</a></p>
 <h4 id="implementation-of">Implementation of<a class="headerlink" href="#implementation-of" title="Permanent link">&para;</a></h4>
 <p><code>ApiCurriculumCutError.code</code></p>
 <hr />
@@ -1185,7 +1185,7 @@ the shared snackbar handling.</p>
 <blockquote>
 <p><code>readonly</code> <code>optional</code> <strong>count?</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L264">ui/src/api-shared/types/gantt/cut.ts:264</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L264">ui/src/api-shared/types/gantt/cut.ts:264</a></p>
 <p>Present for <code>already-cut</code> (this curriculum's own live cut events) and for
 <code>foreign-cut</code> (another curriculum's, still live in the same iteration).</p>
 <h4 id="implementation-of_1">Implementation of<a class="headerlink" href="#implementation-of_1" title="Permanent link">&para;</a></h4>
@@ -1195,7 +1195,7 @@ the shared snackbar handling.</p>
 <blockquote>
 <p><code>readonly</code> <code>optional</code> <strong>errors?</strong>: <a href="../../../../../gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L263">ui/src/api-shared/types/gantt/cut.ts:263</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L263">ui/src/api-shared/types/gantt/cut.ts:263</a></p>
 <p>Present for <code>invalid-plan</code>: the pure planner's collected validation errors.</p>
 <h4 id="implementation-of_2">Implementation of<a class="headerlink" href="#implementation-of_2" title="Permanent link">&para;</a></h4>
 <p><code>ApiCurriculumCutError.errors</code></p>
@@ -1204,7 +1204,7 @@ the shared snackbar handling.</p>
 <blockquote>
 <p><code>readonly</code> <code>optional</code> <strong>foreignCurriculumId?</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/cut.ts#L265">ui/src/api-shared/types/gantt/cut.ts:265</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L265">ui/src/api-shared/types/gantt/cut.ts:265</a></p>
 <p>Present for <code>foreign-cut</code>: the curriculum whose cut is occupying the iteration.</p>
 <h4 id="implementation-of_3">Implementation of<a class="headerlink" href="#implementation-of_3" title="Permanent link">&para;</a></h4>
 <p><code>ApiCurriculumCutError.foreignCurriculumId</code></p>

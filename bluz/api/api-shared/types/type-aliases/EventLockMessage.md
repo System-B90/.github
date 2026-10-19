@@ -8,7 +8,7 @@
 
 > **EventLockMessage** = `object`
 
-Defined in: [ui/src/api-shared/types.ts:35](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types.ts#L35)
+Defined in: [ui/src/api-shared/types.ts:35](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types.ts#L35)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types.ts:35](https://github.com/System-B90/Bluz/b
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:36](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types.ts#L36)
+Defined in: [ui/src/api-shared/types.ts:36](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types.ts#L36)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types.ts:36](https://github.com/System-B90/Bluz/b
 
 > `optional` **iterationId?**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:41](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types.ts#L41)
+Defined in: [ui/src/api-shared/types.ts:41](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types.ts#L41)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/types.ts:41](https://github.com/System-B90/Bluz/b
 
 > **lockedById**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:40](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types.ts#L40)
+Defined in: [ui/src/api-shared/types.ts:40](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types.ts#L40)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/api-shared/types.ts:40](https://github.com/System-B90/Bluz/b
 
 > **lockedByName**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:38](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types.ts#L38)
+Defined in: [ui/src/api-shared/types.ts:38](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types.ts#L38)

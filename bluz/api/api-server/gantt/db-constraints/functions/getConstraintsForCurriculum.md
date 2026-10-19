@@ -8,7 +8,7 @@
 
 > **getConstraintsForCurriculum**(`curriculumId`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-constraints.ts:173](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/db-constraints.ts#L173)
+Defined in: [ui/src/api-server/gantt/db-constraints.ts:173](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/db-constraints.ts#L173)
 
 Retrieves all constraints associated with a specific curriculum.
 Resolves constraints owned by any modules or events mapped to the curriculum.

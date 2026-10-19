@@ -8,7 +8,7 @@
 
 > `const` **ARCHIVED\_HIVE\_CACHE\_TTL**: `number`
 
-Defined in: [ui/src/settings.tsx:31](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/settings.tsx#L31)
+Defined in: [ui/src/settings.tsx:31](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/settings.tsx#L31)
 
 A past iteration's Hive data is frozen — its Hive instance is gone or its ids
 have been reused, so the response is served from the snapshot taken at

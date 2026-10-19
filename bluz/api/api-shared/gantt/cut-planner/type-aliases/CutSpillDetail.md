@@ -8,7 +8,7 @@
 
 > **CutSpillDetail** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:259](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L259)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:259](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L259)
 
 One relocated slot, described in terms a user can read: which event moved,
 from which date to which. A slot the balancer bounced twice (off ראשון, then
@@ -20,7 +20,7 @@ off שני) collapses into a single detail spanning its first and last day.
 
 > **durationMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:270](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L270)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:270](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L270)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:270](https://github.com/Syst
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:261](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L261)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:261](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L261)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:261](https://github.com/Syst
 
 > **fromDate**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:267](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L267)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:267](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L267)
 
 ISO date (yyyy-MM-dd) the slot was originally mapped to.
 
@@ -46,7 +46,7 @@ ISO date (yyyy-MM-dd) the slot was originally mapped to.
 
 > **fromDayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:264](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L264)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:264](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L264)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:264](https://github.com/Syst
 
 > **slotKey**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:260](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L260)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:260](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L260)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:260](https://github.com/Syst
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:263](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L263)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:263](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L263)
 
 Event title at plan time; falls back to the id for generated slots.
 
@@ -72,7 +72,7 @@ Event title at plan time; falls back to the id for generated slots.
 
 > **toDate**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:269](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L269)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:269](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L269)
 
 ISO date (yyyy-MM-dd) it ended up on.
 
@@ -82,4 +82,4 @@ ISO date (yyyy-MM-dd) it ended up on.
 
 > **toDayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:265](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L265)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:265](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L265)

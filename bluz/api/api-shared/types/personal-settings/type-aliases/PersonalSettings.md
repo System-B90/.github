@@ -8,7 +8,7 @@
 
 > **PersonalSettings** = `object`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:1](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L1)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:1](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L1)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/personal-settings.ts:1](https://github.com/
 
 > **aiApiToken**: `string`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:22](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L22)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:22](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L22)
 
 Per-user OpenRouter API key. Empty string means "use the server's
 default key" (`OPENROUTER_API_KEY`), so a deployment with no personal
@@ -28,7 +28,7 @@ key still works when the server itself is configured.
 
 > **aiAssistantEnabled**: `boolean`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:16](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L16)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:16](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L16)
 
 Shows/hides the AI assistant FAB. On by default where AI is configured.
 
@@ -38,7 +38,7 @@ Shows/hides the AI assistant FAB. On by default where AI is configured.
 
 > **aiModel**: `string`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:27](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L27)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:27](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L27)
 
 Personal model choice (#779); "" = the server's `AI_MODEL`. Honoured
 only with the user's own key or when the server's backend lists it.
@@ -49,7 +49,7 @@ only with the user's own key or when the server's backend lists it.
 
 > **favoriteOutsiders**: `string`[]
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:4](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L4)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:4](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L4)
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: [ui/src/api-shared/types/personal-settings.ts:4](https://github.com/
 
 > **googleCalendarEnabled**: `boolean`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:9](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L9)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:9](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L9)
 
 Opt-in two-way sync of the user's own events to their Google Calendar.
 Off by default — Bluz must work fully in offline/no-internet deployments.
@@ -68,7 +68,7 @@ Off by default — Bluz must work fully in offline/no-internet deployments.
 
 > **googleCalendarSyncAllEvents**: `boolean`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:14](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L14)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:14](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L14)
 
 When on, sync every schedule event (not just ones the user instructs/
 lectures in) to the user's Google Calendar. Requires googleCalendarEnabled.
@@ -79,7 +79,7 @@ lectures in) to the user's Google Calendar. Requires googleCalendarEnabled.
 
 > **groups**: `string`[]
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:2](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L2)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:2](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L2)
 
 ***
 
@@ -87,7 +87,7 @@ Defined in: [ui/src/api-shared/types/personal-settings.ts:2](https://github.com/
 
 > **instructors**: `string`[]
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:3](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L3)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:3](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L3)
 
 ***
 
@@ -95,7 +95,7 @@ Defined in: [ui/src/api-shared/types/personal-settings.ts:3](https://github.com/
 
 > **roundedEventsEnabled**: `boolean`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:31](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L31)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:31](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L31)
 
 Rounded corners on schedule events. Off by default: rectangles (#976).
 
@@ -105,6 +105,6 @@ Rounded corners on schedule events. Off by default: rectangles (#976).
 
 > **successSnackbarsEnabled**: `boolean`
 
-Defined in: [ui/src/api-shared/types/personal-settings.ts:29](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/personal-settings.ts#L29)
+Defined in: [ui/src/api-shared/types/personal-settings.ts:29](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/personal-settings.ts#L29)
 
 Shows success snackbars. On by default; errors always show.

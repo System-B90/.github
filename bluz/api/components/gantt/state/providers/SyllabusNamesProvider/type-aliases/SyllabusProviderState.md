@@ -8,7 +8,7 @@
 
 > **SyllabusProviderState** = `object`
 
-Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:30](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L30)
+Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:30](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L30)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:3
 
 > **error**: `Error` \| `null`
 
-Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:34](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L34)
+Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:34](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L34)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:3
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:33](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L33)
+Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:33](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L33)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:3
 
 > **refetch**: () => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:35](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L35)
+Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:35](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L35)
 
 #### Returns
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:3
 
 > **syllabusCurriculums**: [`SyllabusCurriculumsDictionary`](SyllabusCurriculumsDictionary.md)
 
-Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:32](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L32)
+Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:32](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L32)
 
 ***
 
@@ -52,4 +52,4 @@ Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:3
 
 > **syllabusNames**: [`SyllabusDictionary`](SyllabusDictionary.md)
 
-Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:31](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L31)
+Defined in: [ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx:31](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/providers/SyllabusNamesProvider.tsx#L31)

@@ -8,7 +8,7 @@
 
 > **defaultExpandedSyllabusIds**(`syllabusIds`, `state`, `courses`, `userId`): `string`[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/default-expansion.ts:26](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/default-expansion.ts#L26)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/default-expansion.ts:26](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/default-expansion.ts#L26)
 
 The syllabuses a viewer sees open before touching anything: the ones they
 orchestrate; failing that, the ones that exist for a course they are in

@@ -8,7 +8,7 @@
 
 > **ListItemsResult**\<`T`\> = `Record`\<`T`\[`"id"`\], [`ListItemWithParent`](ListItemWithParent.md)\<`T`\>\> \| `Record`\<`T`\[`"id"`\], `T`\[`"title"`\]\>
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:214](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/db-base.ts#L214)
+Defined in: [ui/src/api-server/gantt/db-base.ts:214](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/db-base.ts#L214)
 
 ## Type Parameters
 

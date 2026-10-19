@@ -8,7 +8,7 @@
 
 > **PlacedTile**\<`TEvent`\> = `object`
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:38](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/student-view/no-overlap-layout.ts#L38)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:38](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/no-overlap-layout.ts#L38)
 
 Side-by-side day layout that never draws one tile over another.
 
@@ -38,7 +38,7 @@ over neighbouring columns it has to itself.
 
 > **column**: `number`
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:42](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/student-view/no-overlap-layout.ts#L42)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:42](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/no-overlap-layout.ts#L42)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/components/student-view/no-overlap-layout.ts:42](https://git
 
 > **event**: `TEvent`
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:39](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/student-view/no-overlap-layout.ts#L39)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:39](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/no-overlap-layout.ts#L39)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/components/student-view/no-overlap-layout.ts:39](https://git
 
 > **geometry**: `object`
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:41](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/student-view/no-overlap-layout.ts#L41)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:41](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/no-overlap-layout.ts#L41)
 
 All percentages of the day column.
 

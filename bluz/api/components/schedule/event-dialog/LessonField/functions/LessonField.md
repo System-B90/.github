@@ -8,7 +8,7 @@
 
 > **LessonField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-dialog/LessonField.tsx:12](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-dialog/LessonField.tsx#L12)
+Defined in: [ui/src/components/schedule/event-dialog/LessonField.tsx:12](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-dialog/LessonField.tsx#L12)
 
 Event-dialog binding around the reusable [HiveLessonSelect](../../../../base/HiveLessonSelect/functions/HiveLessonSelect.md).
 

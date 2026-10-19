@@ -8,7 +8,7 @@
 
 > **studentEventName**(`event`, `subjectSymbol`, `settings`): `string`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:82](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/settings/student-view.ts#L82)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:82](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/settings/student-view.ts#L82)
 
 The name a student sees for an event. A staff-set `studentName` wins in
 every mode (#966). Otherwise, in symbol mode the real name is only used for

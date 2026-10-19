@@ -8,7 +8,7 @@
 
 > **recurringTemplateSeed**(): `Promise`\<[`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)[]\>
 
-Defined in: [ui/src/api-server/gantt/week-template-apply.ts:122](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/week-template-apply.ts#L122)
+Defined in: [ui/src/api-server/gantt/week-template-apply.ts:122](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/week-template-apply.ts#L122)
 
 A new template's starting point: one parked copy of each recurring event of
 the curriculum linked to the current iteration, named and coursed exactly

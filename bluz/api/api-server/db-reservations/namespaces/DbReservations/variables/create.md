@@ -8,7 +8,7 @@
 
 > `const` **create**: (`reservation`, `controller`) => `Promise`\<[`DbReservation`](../../../../../api-shared/types/reservation/type-aliases/DbReservation.md)\> = `createReservation`
 
-Defined in: [ui/src/api-server/db-reservations.ts:91](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/db-reservations.ts#L91)
+Defined in: [ui/src/api-server/db-reservations.ts:91](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-reservations.ts#L91)
 
 ## Parameters
 

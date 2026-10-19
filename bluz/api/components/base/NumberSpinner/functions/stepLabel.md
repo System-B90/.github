@@ -8,7 +8,7 @@
 
 > **stepLabel**(`action`, `fieldLabel?`): `string`
 
-Defined in: [ui/src/components/base/NumberSpinner.tsx:60](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/NumberSpinner.tsx#L60)
+Defined in: [ui/src/components/base/NumberSpinner.tsx:60](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/NumberSpinner.tsx#L60)
 
 Hebrew stepper names, scoped to the field when it has a name (#835).
 

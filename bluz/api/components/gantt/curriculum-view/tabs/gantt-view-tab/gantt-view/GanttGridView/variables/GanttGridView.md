@@ -8,7 +8,7 @@
 
 > `const` **GanttGridView**: `React.FC`\<[`GanttViewProps`](../../types/type-aliases/GanttViewProps.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttGridView.tsx:113](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttGridView.tsx#L113)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttGridView.tsx:113](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttGridView.tsx#L113)
 
 Spreadsheet-style gantt: weeks as columns, events as rows, each cell the
 hours the event takes that week (recurrence echoes and week splits
