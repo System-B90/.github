@@ -10,6 +10,7 @@
 
 - [ContextMenuClipboard](type-aliases/ContextMenuClipboard.md)
 - [ContextMenuGuards](type-aliases/ContextMenuGuards.md)
+- [ContextMenuSlice](type-aliases/ContextMenuSlice.md)
 - [EventContextMenuProps](type-aliases/EventContextMenuProps.md)
 
 ## Functions

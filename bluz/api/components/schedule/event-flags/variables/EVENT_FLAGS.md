@@ -8,8 +8,8 @@
 
 > `const` **EVENT\_FLAGS**: `ReadonlyArray`\<[`EventFlagDef`](../type-aliases/EventFlagDef.md)\>
 
-Defined in: [ui/src/components/schedule/event-flags.ts:34](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-flags.ts#L34)
+Defined in: [ui/src/components/schedule/event-flags.ts:34](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-flags.ts#L34)
 
 Single source of truth for the event markers, shared by the event dialog's
 toggle chips and the calendar's right-click "סמן כ…" submenu (#706) — the
-two must never drift into naming or colouring the same flag differently.
+two must never drift into naming or coloring the same flag differently.

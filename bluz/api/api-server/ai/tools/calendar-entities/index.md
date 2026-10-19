@@ -19,6 +19,7 @@
 - [listCalendarDraftsTool](variables/listCalendarDraftsTool.md)
 - [listCalendarSnapshotsTool](variables/listCalendarSnapshotsTool.md)
 - [listReservationsTool](variables/listReservationsTool.md)
+- [listWeekTemplatesTool](variables/listWeekTemplatesTool.md)
 - [OUTSIDER\_TOOLS](variables/OUTSIDER_TOOLS.md)
 - [restoreCalendarSnapshotTool](variables/restoreCalendarSnapshotTool.md)
 - [ROOM\_TOOLS](variables/ROOM_TOOLS.md)

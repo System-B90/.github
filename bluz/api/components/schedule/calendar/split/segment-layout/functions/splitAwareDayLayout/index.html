@@ -909,6 +909,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lanekey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        laneKey?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -950,22 +961,14 @@
 <p><a href="../../../../../../../">TypeDoc API</a> / <a href="../../">components/schedule/calendar/split/segment-layout</a> / splitAwareDayLayout</p>
 <h1 id="function-splitawaredaylayout">Function: splitAwareDayLayout()<a class="headerlink" href="#function-splitawaredaylayout" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>splitAwareDayLayout</strong>(<code>input</code>): <code>StyledSegment</code>[]</p>
+<p><strong>splitAwareDayLayout</strong>(<code>input</code>, <code>laneKey?</code>): <code>StyledSegment</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/split/segment-layout.ts#L75">ui/src/components/schedule/calendar/split/segment-layout.ts:75</a></p>
-<p>The built-in <code>overlap</code> layout, with the pieces of a split event squared up
-into a single column band.</p>
-<p>Left alone, each piece is measured against whatever it collides with on its
-own: the piece running into a break is narrowed to share the column, while
-the pieces on the other side have the column to themselves and stay full
-width. The result is a ragged event that reads as several unrelated blocks.</p>
-<p>So every piece is given the <em>intersection</em> of its run's bands — the widest
-strip all of them can occupy. Narrowing a piece can never make it collide
-with anything, since the strip is contained in the band the algorithm
-already cleared for it.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/calendar/split/segment-layout.ts#L96">ui/src/components/schedule/calendar/split/segment-layout.ts:96</a></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="input">input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h3>
 <p><code>LayoutInput</code></p>
+<h3 id="lanekey">laneKey?<a class="headerlink" href="#lanekey" title="Permanent link">&para;</a></h3>
+<p><a href="../../../../../../student-view/no-overlap-layout/type-aliases/LaneKey/"><code>LaneKey</code></a>\&lt;<a href="../../../segments/type-aliases/EventSegment/"><code>EventSegment</code></a>&gt;</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>StyledSegment</code>[]</p>
 

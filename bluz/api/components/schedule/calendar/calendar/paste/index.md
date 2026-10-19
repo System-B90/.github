@@ -17,3 +17,4 @@
 ## Functions
 
 - [pastedEventFrom](functions/pastedEventFrom.md)
+- [roomsOfSlot](functions/roomsOfSlot.md)

@@ -8,6 +8,8 @@
 
 ## Type Aliases
 
+- [ActiveDraft](type-aliases/ActiveDraft.md)
+- [ActiveTemplate](type-aliases/ActiveTemplate.md)
 - [OfflineContextState](type-aliases/OfflineContextState.md)
 
 ## Functions

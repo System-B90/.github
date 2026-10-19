@@ -8,12 +8,12 @@
 
 > `const` **CONTRAST\_COLORS**: `object`
 
-Defined in: [ui/src/components/theme/CreateFromPalette.ts:43](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/theme/CreateFromPalette.ts#L43)
+Defined in: [ui/src/components/theme/CreateFromPalette.ts:43](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/theme/CreateFromPalette.ts#L43)
 
-Text colours, checked by `tests/backend/theme-contrast.test.ts`.
+Text colors, checked by `tests/backend/theme-contrast.test.ts`.
 
 - Light mode keeps the brand turquoise `#67C8DD` and orange `#ED6C02` as
-  text and icon colours; darkening them made the app look worse (#938).
+  text and icon colors; darkening them made the app look worse (#938).
 - Red `#F44336` is 4.39:1 on the dark paper, so dark mode lightens it (#826).
 
 ## Type Declaration

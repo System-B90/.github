@@ -38,6 +38,7 @@
 - [getWeekDateRange](functions/getWeekDateRange.md)
 - [getWeekOverAllocationSeverity](functions/getWeekOverAllocationSeverity.md)
 - [getWeekTotalMinutes](functions/getWeekTotalMinutes.md)
+- [hoursUnit](functions/hoursUnit.md)
 - [parseTimeInputToMinutes](functions/parseTimeInputToMinutes.md)
 - [setHoursFormat](functions/setHoursFormat.md)
 - [subscribeHoursFormat](functions/subscribeHoursFormat.md)

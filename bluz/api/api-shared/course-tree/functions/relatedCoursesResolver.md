@@ -8,7 +8,7 @@
 
 > **relatedCoursesResolver**(`courses`): (`courseIds`) => `Set`\<`string`\>
 
-Defined in: [ui/src/api-shared/course-tree.ts:54](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/course-tree.ts#L54)
+Defined in: [ui/src/api-shared/course-tree.ts:54](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/course-tree.ts#L54)
 
 `relatedCourses` with the tree indexed once and each course's closure
 cached, for callers resolving many id sets against the same course list.

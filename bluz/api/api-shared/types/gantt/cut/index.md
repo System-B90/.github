@@ -30,4 +30,5 @@
 
 - [isCurriculumCutErrorPayload](functions/isCurriculumCutErrorPayload.md)
 - [isCurriculumPullBackErrorPayload](functions/isCurriculumPullBackErrorPayload.md)
+- [parseTemplateId](functions/parseTemplateId.md)
 - [parseWeekId](functions/parseWeekId.md)

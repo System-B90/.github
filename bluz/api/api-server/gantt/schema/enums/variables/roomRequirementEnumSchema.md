@@ -8,6 +8,6 @@
 
 > `const` **roomRequirementEnumSchema**: `PgEnum`\<\[`"בחדר מסווג"`, `"בחוץ"`, `"כמה כיתות"`, `"מחוץ לבסיס"`, `"באופן מקוון"`\]\>
 
-Defined in: [ui/src/api-server/gantt/schema/enums.ts:16](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/schema/enums.ts#L16)
+Defined in: [ui/src/api-server/gantt/schema/enums.ts:16](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/schema/enums.ts#L16)
 
 Drizzle database schema definition for an event's room requirement.

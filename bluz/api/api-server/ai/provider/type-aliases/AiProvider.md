@@ -8,7 +8,7 @@
 
 > **AiProvider** = `object`
 
-Defined in: [ui/src/api-server/ai/provider.ts:59](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/provider.ts#L59)
+Defined in: [ui/src/api-server/ai/provider.ts:59](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/provider.ts#L59)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/provider.ts:59](https://github.com/System-B90/
 
 > **chat**: (`request`) => `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/provider.ts:66](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/provider.ts#L66)
+Defined in: [ui/src/api-server/ai/provider.ts:66](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/provider.ts#L66)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -36,7 +36,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/provider.ts:63](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/provider.ts#L63)
+Defined in: [ui/src/api-server/ai/provider.ts:63](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/provider.ts#L63)
 
 Model used when a request does not name one.
 
@@ -46,7 +46,7 @@ Model used when a request does not name one.
 
 > `optional` **listModels?**: (`signal?`) => `Promise`\<[`AiModelInfo`](../../../../api-shared/types/ai-models/type-aliases/AiModelInfo.md)[]\>
 
-Defined in: [ui/src/api-server/ai/provider.ts:78](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/provider.ts#L78)
+Defined in: [ui/src/api-server/ai/provider.ts:78](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/provider.ts#L78)
 
 Models the backend offers (#779). Optional: a backend that cannot list
 them simply leaves the settings field free-text.
@@ -67,7 +67,7 @@ them simply leaves the settings field free-text.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/provider.ts:61](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/provider.ts#L61)
+Defined in: [ui/src/api-server/ai/provider.ts:61](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/provider.ts#L61)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -77,7 +77,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **streamChat**: (`request`) => `AsyncIterable`\<[`AiProviderEvent`](AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/provider.ts:72](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/ai/provider.ts#L72)
+Defined in: [ui/src/api-server/ai/provider.ts:72](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/ai/provider.ts#L72)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

@@ -10,4 +10,5 @@
 
 - [normalizeOptionalStoredEvents](functions/normalizeOptionalStoredEvents.md)
 - [normalizeStoredEvents](functions/normalizeStoredEvents.md)
+- [parseDraftRange](functions/parseDraftRange.md)
 - [requireIdParam](functions/requireIdParam.md)

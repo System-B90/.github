@@ -6,20 +6,36 @@
 
 # Function: EventTooltipContent()
 
-> **EventTooltipContent**(`__namedParameters`): `Element`
+> **EventTooltipContent**(`breakWindows`): `Element`
 
-Defined in: [ui/src/components/schedule/event-component/EventTooltip.tsx:36](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-component/EventTooltip.tsx#L36)
+Defined in: [ui/src/components/schedule/event-component/EventTooltip.tsx:51](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-component/EventTooltip.tsx#L51)
 
 Rich tooltip content displayed on long-hover over any event.
 Shows ALL event information regardless of event size.
 
 ## Parameters
 
-### \_\_namedParameters
+### breakWindows
+
+The calendar's break windows. An event they split shows
+       its real end and a per-piece timeline: its stored `endTime` is only
+       start + net working time, which no clock on the grid ever shows.
+
+#### breakWindows?
+
+readonly [`BreakWindow`](../../../../../api-shared/break-windows/type-aliases/BreakWindow.md)[] = `[]`
 
 #### event
 
 [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)
+
+#### hoveredEnd?
+
+`number`
+
+#### hoveredStart?
+
+`number`
 
 ## Returns
 

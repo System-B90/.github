@@ -12,5 +12,6 @@
 
 ## Functions
 
+- [createSegmentLaneKey](functions/createSegmentLaneKey.md)
 - [slightOverlapEnds](functions/slightOverlapEnds.md)
 - [splitAwareDayLayout](functions/splitAwareDayLayout.md)

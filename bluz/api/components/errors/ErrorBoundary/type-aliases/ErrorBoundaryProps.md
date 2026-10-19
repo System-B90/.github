@@ -8,7 +8,7 @@
 
 > **ErrorBoundaryProps** = `object`
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:8](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/errors/ErrorBoundary.tsx#L8)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:8](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/errors/ErrorBoundary.tsx#L8)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/errors/ErrorBoundary.tsx:8](https://github.com/Sy
 
 > **children**: `React.ReactNode`
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:9](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/errors/ErrorBoundary.tsx#L9)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:9](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/errors/ErrorBoundary.tsx#L9)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/errors/ErrorBoundary.tsx:9](https://github.com/Sy
 
 > **fallback**: [`ErrorBoundaryFallback`](ErrorBoundaryFallback.md)
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:10](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/errors/ErrorBoundary.tsx#L10)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:10](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/errors/ErrorBoundary.tsx#L10)
 
 ***
 
@@ -32,6 +32,6 @@ Defined in: [ui/src/components/errors/ErrorBoundary.tsx:10](https://github.com/S
 
 > `optional` **scope?**: `string`
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:12](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/errors/ErrorBoundary.tsx#L12)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:12](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/errors/ErrorBoundary.tsx#L12)
 
 Label used in the console log so a crash can be traced to its subtree.

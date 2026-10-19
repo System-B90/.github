@@ -953,6 +953,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        range?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -994,9 +1005,9 @@
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../../../">api-server/db-calendar-draft</a> / <a href="../../">DbCalendarDraft</a> / create</p>
 <h1 id="variable-create">Variable: create<a class="headerlink" href="#variable-create" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><code>const</code> <strong>create</strong>: (<code>label</code>, <code>events</code>, <code>author</code>, <code>controller</code>, <code>iterationId?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../../api-shared/types/type-aliases/CalendarDraftSummary/"><code>CalendarDraftSummary</code></a>&gt; = <code>createDraft</code></p>
+<p><code>const</code> <strong>create</strong>: (<code>label</code>, <code>events</code>, <code>author</code>, <code>controller</code>, <code>iterationId?</code>, <code>range?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../../api-shared/types/type-aliases/CalendarDraftSummary/"><code>CalendarDraftSummary</code></a>&gt; = <code>createDraft</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/db-calendar-draft.ts#L196">ui/src/api-server/db-calendar-draft.ts:196</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/db-calendar-draft.ts#L215">ui/src/api-server/db-calendar-draft.ts:215</a></p>
 <p>Creates a new shared draft capturing the supplied events. Drafts are shared
 across all users of the iteration (multi-user).</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
@@ -1010,6 +1021,8 @@ across all users of the iteration (multi-user).</p>
 <p><a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a> = <code>databaseController</code></p>
 <h3 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h3>
 <p><code>string</code></p>
+<h3 id="range">range?<a class="headerlink" href="#range" title="Permanent link">&para;</a></h3>
+<p><a href="../../../../../../api-shared/types/type-aliases/CalendarDraftRange/"><code>CalendarDraftRange</code></a></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<a href="../../../../../../api-shared/types/type-aliases/CalendarDraftSummary/"><code>CalendarDraftSummary</code></a>&gt;</p>
 

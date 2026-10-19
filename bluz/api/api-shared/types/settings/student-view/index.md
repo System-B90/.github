@@ -24,6 +24,7 @@
 
 ## Functions
 
+- [autoStudentEventName](functions/autoStudentEventName.md)
 - [isStudentViewSettings](functions/isStudentViewSettings.md)
 - [resolveStudentViewSettings](functions/resolveStudentViewSettings.md)
 - [studentEventName](functions/studentEventName.md)

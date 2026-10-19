@@ -8,6 +8,7 @@
 
 ## Type Aliases
 
+- [LaneKey](type-aliases/LaneKey.md)
 - [PlacedTile](type-aliases/PlacedTile.md)
 
 ## Functions

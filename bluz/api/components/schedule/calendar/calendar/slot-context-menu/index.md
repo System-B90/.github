@@ -9,6 +9,7 @@
 ## Type Aliases
 
 - [OpenSlotContextMenu](type-aliases/OpenSlotContextMenu.md)
+- [SlotGapFinder](type-aliases/SlotGapFinder.md)
 
 ## Functions
 

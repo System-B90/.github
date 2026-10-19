@@ -8,5 +8,7 @@
 
 ## Functions
 
+- [clockAsDuration](functions/clockAsDuration.md)
+- [durationAsClock](functions/durationAsClock.md)
 - [EventTimeField](functions/EventTimeField.md)
 - [isEndTimeValid](functions/isEndTimeValid.md)

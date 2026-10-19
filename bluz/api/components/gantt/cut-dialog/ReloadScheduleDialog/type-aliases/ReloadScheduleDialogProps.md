@@ -8,12 +8,17 @@
 
 > **ReloadScheduleDialogProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:42](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L42)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:48](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L48)
 
 "עדכון הלו״ז לפי הגאנט" — reconciles an already-cut schedule with the
 current gantt. Non-conflicting changes are applied immediately; events a
 person edited after the cut are listed here so the user can decide, per
 event, whether the gantt version should win after all.
+
+Always runs forced: an unmapped event or unsatisfied recurrence is skipped
+rather than blocking the update. The extra "the gantt is incomplete" step
+that used to ask first was dropped — a reload is cheap to run again once
+the gantt is finished. A missing start date still fails, as a plain error.
 
 ## Properties
 
@@ -21,7 +26,7 @@ event, whether the gantt version should win after all.
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:44](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L44)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:50](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L50)
 
 ***
 
@@ -29,7 +34,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:44](htt
 
 > `optional` **curriculumTitle?**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:45](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L45)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:51](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L51)
 
 ***
 
@@ -37,7 +42,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:45](htt
 
 > **onClose**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:46](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L46)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:52](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L52)
 
 #### Returns
 
@@ -49,7 +54,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:46](htt
 
 > `optional` **onSuccess?**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:48](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L48)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:54](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L54)
 
 Fired after any successful apply so the caller can refresh its view.
 
@@ -63,4 +68,4 @@ Fired after any successful apply so the caller can refresh its view.
 
 > **open**: `boolean`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:43](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L43)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:49](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L49)

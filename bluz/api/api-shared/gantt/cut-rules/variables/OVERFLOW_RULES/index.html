@@ -952,7 +952,7 @@
 <blockquote>
 <p><code>const</code> <strong>OVERFLOW_RULES</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-rules.ts#L130">ui/src/api-shared/gantt/cut-rules.ts:130</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-rules.ts#L130">ui/src/api-shared/gantt/cut-rules.ts:130</a></p>
 <p>What happens when a week is over capacity even after the balancer has packed
 every day in it — the load simply does not fit into the week's working hours.</p>
 <p>The cut never silently invents time. It surfaces the week as a decision
@@ -961,14 +961,15 @@ what the dialog pre-selects and what a non-interactive caller gets.</p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="defaultresolution">defaultResolution<a class="headerlink" href="#defaultresolution" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><code>readonly</code> <strong>defaultResolution</strong>: <code>"overlap-source"</code></p>
+<p><code>readonly</code> <strong>defaultResolution</strong>: <code>"park"</code></p>
 </blockquote>
-<p><code>overlap-source</code> — leftovers stay on the day they were mapped to and
-overlap the events already there. Honours "always prefer overlapping
-events rather than placing events outside working hours".</p>
+<p><code>park</code> — what does not fit its day goes to the schedule's unassigned
+box (ארגז), to be placed by hand. Nothing overlaps and nothing runs
+past working hours. <code>overlap-source</code> (leftovers stay on their day and
+overlap what is there) was the default before.</p>
 <h3 id="resolutions">resolutions<a class="headerlink" href="#resolutions" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><code>readonly</code> <strong>resolutions</strong>: readonly [<code>"overlap-source"</code>, <code>"overlap-least-full"</code>, <code>"extend-day"</code>, <code>"drop"</code>]</p>
+<p><code>readonly</code> <strong>resolutions</strong>: readonly [<code>"park"</code>, <code>"overlap-source"</code>, <code>"overlap-least-full"</code>, <code>"extend-day"</code>, <code>"drop"</code>]</p>
 </blockquote>
 <p>Every resolution the dialog may offer for an overflowing week.</p>
 

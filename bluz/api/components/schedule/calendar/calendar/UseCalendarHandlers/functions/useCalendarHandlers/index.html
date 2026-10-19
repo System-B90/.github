@@ -1183,15 +1183,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#handleslotselect" class="md-nav__link">
+  <a href="#handlesliceevent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        handleSlotSelect
+        handleSliceEvent
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="handleSlotSelect">
+    <nav class="md-nav" aria-label="handleSliceEvent">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1207,10 +1207,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#slotinfo" class="md-nav__link">
+  <a href="#event_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        slotInfo
+        event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headworkingms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        headWorkingMs
       
     </span>
   </a>
@@ -1239,15 +1250,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#handlesplitevent" class="md-nav__link">
+  <a href="#handleslotselect" class="md-nav__link">
     <span class="md-ellipsis">
       
-        handleSplitEvent
+        handleSlotSelect
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="handleSplitEvent">
+    <nav class="md-nav" aria-label="handleSlotSelect">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1263,21 +1274,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#event_2" class="md-nav__link">
+  <a href="#slotinfo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        event
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#atms" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        atMs
+        slotInfo
       
     </span>
   </a>
@@ -1306,6 +1306,73 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#handlesplitevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        handleSplitEvent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="handleSplitEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        atMs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Returns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pasteat" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1318,7 +1385,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#parameters_6" class="md-nav__link">
+  <a href="#parameters_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         Parameters
@@ -1346,7 +1413,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#returns_6" class="md-nav__link">
+  <a href="#returns_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         Returns
@@ -1404,7 +1471,7 @@
 <blockquote>
 <p><strong>useCalendarHandlers</strong>(<code>events</code>, <code>handleSaveEvent</code>, <code>handleDeleteEvent</code>, <code>setSelectedEvent</code>, <code>setOpenEventDialog</code>, <code>confirmLockedEdit?</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L42">ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:42</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L48">ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:48</a></p>
 <p>Custom React hook to manage calendar event logic, user interactions (e.g. drag &amp; drop, select, click),
 and keyboard shortcuts (copy, paste, delete).</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
@@ -1466,39 +1533,48 @@ event another user has open (#775). Omitted → no check.</p>
 <p><a href="../../type-aliases/GridInteraction/"><code>GridInteraction</code></a> = <code>"move"</code></p>
 <h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
+<h3 id="handlesliceevent">handleSliceEvent<a class="headerlink" href="#handlesliceevent" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>handleSliceEvent</strong>: (<code>event</code>, <code>headWorkingMs</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Cuts an event after <code>headWorkingMs</code> of working time.</p>
+<h4 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">&para;</a></h4>
+<h5 id="event_2">event<a class="headerlink" href="#event_2" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a></p>
+<h5 id="headworkingms">headWorkingMs<a class="headerlink" href="#headworkingms" title="Permanent link">&para;</a></h5>
+<p><code>number</code></p>
+<h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">&para;</a></h4>
+<p><code>void</code></p>
 <h3 id="handleslotselect">handleSlotSelect<a class="headerlink" href="#handleslotselect" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>handleSlotSelect</strong>: (<code>slotInfo</code>) =&gt; <code>void</code></p>
 </blockquote>
-<h4 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">&para;</a></h4>
+<h4 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">&para;</a></h4>
 <h5 id="slotinfo">slotInfo<a class="headerlink" href="#slotinfo" title="Permanent link">&para;</a></h5>
 <p><code>SlotInfo</code></p>
-<h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">&para;</a></h4>
+<h4 id="returns_5">Returns<a class="headerlink" href="#returns_5" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
 <h3 id="handlesplitevent">handleSplitEvent<a class="headerlink" href="#handlesplitevent" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>handleSplitEvent</strong>: (<code>event</code>, <code>atMs</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Cuts an event in two at a wall-clock instant (#657): the original keeps
-its head and is trimmed to end at the cut, and a new event carrying the
-same fields takes the tail. Durations are measured in <em>working</em> time, so
-an event that jumps over a break keeps the same total after the cut.</p>
-<h4 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">&para;</a></h4>
-<h5 id="event_2">event<a class="headerlink" href="#event_2" title="Permanent link">&para;</a></h5>
+<p>Cuts an event at a wall-clock instant (#657).</p>
+<h4 id="parameters_6">Parameters<a class="headerlink" href="#parameters_6" title="Permanent link">&para;</a></h4>
+<h5 id="event_3">event<a class="headerlink" href="#event_3" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a></p>
 <h5 id="atms">atMs<a class="headerlink" href="#atms" title="Permanent link">&para;</a></h5>
 <p><code>number</code></p>
-<h4 id="returns_5">Returns<a class="headerlink" href="#returns_5" title="Permanent link">&para;</a></h4>
+<h4 id="returns_6">Returns<a class="headerlink" href="#returns_6" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
 <h3 id="pasteat">pasteAt<a class="headerlink" href="#pasteat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>pasteAt</strong>: (<code>slot</code>) =&gt; <code>void</code></p>
 </blockquote>
 <p>Pastes the clipboard at <code>slot</code> (or beside the original); no-op when empty.</p>
-<h4 id="parameters_6">Parameters<a class="headerlink" href="#parameters_6" title="Permanent link">&para;</a></h4>
+<h4 id="parameters_7">Parameters<a class="headerlink" href="#parameters_7" title="Permanent link">&para;</a></h4>
 <h5 id="slot">slot<a class="headerlink" href="#slot" title="Permanent link">&para;</a></h5>
 <p><a href="../../../paste/type-aliases/PasteSlot/"><code>PasteSlot</code></a> | <code>null</code></p>
-<h4 id="returns_6">Returns<a class="headerlink" href="#returns_6" title="Permanent link">&para;</a></h4>
+<h4 id="returns_7">Returns<a class="headerlink" href="#returns_7" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
 <h3 id="setactiveevent">setActiveEvent<a class="headerlink" href="#setactiveevent" title="Permanent link">&para;</a></h3>
 <blockquote>

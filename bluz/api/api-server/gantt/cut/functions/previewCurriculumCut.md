@@ -8,13 +8,12 @@
 
 > **previewCurriculumCut**(`curriculumId`, `options?`): `Promise`\<[`ApiCurriculumCutPreviewResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPreviewResponse.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:752](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/cut.ts#L752)
+Defined in: [ui/src/api-server/gantt/cut.ts:782](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/cut.ts#L782)
 
 Dry-run of the cut (CLI preview route, AI preview tool): runs the exact same
 pipeline as `cutCurriculumToSchedule` up to and including `planCut`, but
 skips every gate (draft, iteration link, already-cut) and writes nothing.
-Schedule timing settings come from the linked iteration when one exists,
-falling back to the defaults otherwise so drafts still preview.
+Timing comes from the requested week template, else the default one.
 
 ## Parameters
 
@@ -24,7 +23,7 @@ falling back to the defaults otherwise so drafts still preview.
 
 ### options?
 
-[`CutPlanOptions`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions.md) = `{}`
+[`CutPlanOptions`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions.md) & `object` = `{}`
 
 ## Returns
 

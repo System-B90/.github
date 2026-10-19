@@ -8,7 +8,7 @@
 
 > **ApiCurriculumReloadResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:91](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L91)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:98](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L98)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:91](https://github.com/Syst
 
 > **addedEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:96](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L96)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:103](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L103)
 
 Counts of what was actually written (all zero on a dry run).
 
@@ -26,7 +26,7 @@ Counts of what was actually written (all zero on a dry run).
 
 > **applied**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:93](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L93)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:100](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L100)
 
 False for a dry run — the diff is a proposal, nothing was written.
 
@@ -36,7 +36,7 @@ False for a dry run — the diff is a proposal, nothing was written.
 
 > **createdCourses**: `object`[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:102](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L102)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:109](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L109)
 
 Courses newly created for shuffles introduced since the cut.
 
@@ -54,7 +54,7 @@ Courses newly created for shuffles introduced since the cut.
 
 > **diff**: [`ReloadDiff`](ReloadDiff.md)
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:94](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L94)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:101](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L101)
 
 ***
 
@@ -62,10 +62,10 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:94](https://github.com/Syst
 
 > **hiveSubjectsUnavailable**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:108](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L108)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:115](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L115)
 
 True when Hive could not supply the module → subject map for this run and
-events were left without their subject (and colour) as a result (#662).
+events were left without their subject (and color) as a result (#662).
 A later reload, once Hive is reachable, repairs them.
 
 ***
@@ -74,7 +74,7 @@ A later reload, once Hive is reachable, repairs them.
 
 > **removedEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:98](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L98)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:105](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L105)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:98](https://github.com/Syst
 
 > **skippedConflicts**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:100](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L100)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:107](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L107)
 
 Conflicts left untouched because the user did not override them.
 
@@ -92,4 +92,4 @@ Conflicts left untouched because the user did not override them.
 
 > **updatedEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:97](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L97)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:104](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L104)

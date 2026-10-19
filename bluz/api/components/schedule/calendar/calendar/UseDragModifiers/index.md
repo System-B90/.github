@@ -13,9 +13,10 @@
 ## Variables
 
 - [NO\_MODIFIERS](variables/NO_MODIFIERS.md)
+- [RESIZE\_UNLOCKED\_ATTR](variables/RESIZE_UNLOCKED_ATTR.md)
 
 ## Functions
 
 - [readDragModifiers](functions/readDragModifiers.md)
 - [useDragModifiers](functions/useDragModifiers.md)
-- [useResizeKeyHeld](functions/useResizeKeyHeld.md)
+- [useResizeKeyGate](functions/useResizeKeyGate.md)

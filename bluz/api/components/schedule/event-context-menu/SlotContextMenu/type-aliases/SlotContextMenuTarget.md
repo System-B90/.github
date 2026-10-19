@@ -8,15 +8,25 @@
 
 > **SlotContextMenuTarget** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:13](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L13)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:17](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L17)
 
 ## Properties
+
+### gap
+
+> **gap**: [`Interval`](../../../../../api-shared/interval-layout/type-aliases/Interval.md) \| `null`
+
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:21](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L21)
+
+The empty run around the slot; null when the slot is covered.
+
+***
 
 ### position
 
 > **position**: `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:14](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L14)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:18](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L18)
 
 #### left
 
@@ -32,4 +42,4 @@ Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:1
 
 > **slot**: [`PasteSlot`](../../../calendar/calendar/paste/type-aliases/PasteSlot.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:15](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L15)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:19](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L19)

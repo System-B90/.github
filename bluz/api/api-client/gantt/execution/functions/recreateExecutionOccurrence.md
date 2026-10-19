@@ -8,7 +8,7 @@
 
 > **recreateExecutionOccurrence**(`curriculumId`, `ganttEventId`, `occurrenceDate`): `Promise`\<\{ `createdEvents`: `number`; \}\>
 
-Defined in: [ui/src/api-client/gantt/execution.ts:22](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-client/gantt/execution.ts#L22)
+Defined in: [ui/src/api-client/gantt/execution.ts:22](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-client/gantt/execution.ts#L22)
 
 POST /api/gantt/curriculums/[id]/execution/recreate — re-create the schedule
 event for one deleted cut occurrence (#682).

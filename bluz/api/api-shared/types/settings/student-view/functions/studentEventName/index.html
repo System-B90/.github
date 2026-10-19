@@ -922,6 +922,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#studentname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        studentName?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#type" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1002,14 +1013,17 @@
 <blockquote>
 <p><strong>studentEventName</strong>(<code>event</code>, <code>subjectSymbol</code>, <code>settings</code>): <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/settings/student-view.ts#L81">ui/src/api-shared/types/settings/student-view.ts:81</a></p>
-<p>The name a student sees for an event. In symbol mode the real name is only
-used for break/prayer; everything else is built from the type label and the
-subject symbol, and degrades to the label (or a generic word) rather than
-falling back to the real name.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/settings/student-view.ts#L82">ui/src/api-shared/types/settings/student-view.ts:82</a></p>
+<p>The name a student sees for an event. A staff-set <code>studentName</code> wins in
+every mode (#966). Otherwise, in symbol mode the real name is only used for
+break/prayer; everything else is built from the type label and the subject
+symbol, and degrades to the label (or a generic word) rather than falling
+back to the real name.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="event">event<a class="headerlink" href="#event" title="Permanent link">&para;</a></h3>
 <h4 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
+<p><code>string</code></p>
+<h4 id="studentname">studentName?<a class="headerlink" href="#studentname" title="Permanent link">&para;</a></h4>
 <p><code>string</code></p>
 <h4 id="type">type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h4>
 <p><a href="../../../../event/enumerations/EventType/"><code>EventType</code></a></p>

@@ -15,6 +15,7 @@
 - [CutPlanInput](type-aliases/CutPlanInput.md)
 - [CutPlanMappingInput](type-aliases/CutPlanMappingInput.md)
 - [CutPlanOptions](type-aliases/CutPlanOptions.md)
+- [CutPlanPinInput](type-aliases/CutPlanPinInput.md)
 - [CutPlanRecurrenceExceptionInput](type-aliases/CutPlanRecurrenceExceptionInput.md)
 - [CutPlanReport](type-aliases/CutPlanReport.md)
 - [CutPlanWeekInput](type-aliases/CutPlanWeekInput.md)

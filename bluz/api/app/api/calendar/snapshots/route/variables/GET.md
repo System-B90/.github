@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/calendar/snapshots/route.ts:31](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/app/api/calendar/snapshots/route.ts#L31)
+Defined in: [ui/src/app/api/calendar/snapshots/route.ts:31](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/app/api/calendar/snapshots/route.ts#L31)
 
 GET /api/calendar/snapshots
   - no params  → list snapshots (summaries, newest first)

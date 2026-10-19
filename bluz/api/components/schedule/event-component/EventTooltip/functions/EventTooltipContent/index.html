@@ -899,22 +899,55 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#__namedparameters" class="md-nav__link">
+  <a href="#breakwindows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        __namedParameters
+        breakWindows
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="__namedParameters">
+    <nav class="md-nav" aria-label="breakWindows">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakwindows_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        breakWindows?
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#event" class="md-nav__link">
     <span class="md-ellipsis">
       
         event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hoveredend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hoveredEnd?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hoveredstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hoveredStart?
       
     </span>
   </a>
@@ -967,15 +1000,24 @@
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../">components/schedule/event-component/EventTooltip</a> / EventTooltipContent</p>
 <h1 id="function-eventtooltipcontent">Function: EventTooltipContent()<a class="headerlink" href="#function-eventtooltipcontent" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>EventTooltipContent</strong>(<code>__namedParameters</code>): <code>Element</code></p>
+<p><strong>EventTooltipContent</strong>(<code>breakWindows</code>): <code>Element</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-component/EventTooltip.tsx#L36">ui/src/components/schedule/event-component/EventTooltip.tsx:36</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-component/EventTooltip.tsx#L51">ui/src/components/schedule/event-component/EventTooltip.tsx:51</a></p>
 <p>Rich tooltip content displayed on long-hover over any event.
 Shows ALL event information regardless of event size.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
-<h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
+<h3 id="breakwindows">breakWindows<a class="headerlink" href="#breakwindows" title="Permanent link">&para;</a></h3>
+<p>The calendar's break windows. An event they split shows
+       its real end and a per-piece timeline: its stored <code>endTime</code> is only
+       start + net working time, which no clock on the grid ever shows.</p>
+<h4 id="breakwindows_1">breakWindows?<a class="headerlink" href="#breakwindows_1" title="Permanent link">&para;</a></h4>
+<p>readonly <a href="../../../../../../api-shared/break-windows/type-aliases/BreakWindow/"><code>BreakWindow</code></a>[] = <code>[]</code></p>
 <h4 id="event">event<a class="headerlink" href="#event" title="Permanent link">&para;</a></h4>
 <p><a href="../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a></p>
+<h4 id="hoveredend">hoveredEnd?<a class="headerlink" href="#hoveredend" title="Permanent link">&para;</a></h4>
+<p><code>number</code></p>
+<h4 id="hoveredstart">hoveredStart?<a class="headerlink" href="#hoveredstart" title="Permanent link">&para;</a></h4>
+<p><code>number</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Element</code></p>
 

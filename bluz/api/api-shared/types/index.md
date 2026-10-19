@@ -13,6 +13,7 @@
 ## Type Aliases
 
 - [CalendarDraft](type-aliases/CalendarDraft.md)
+- [CalendarDraftRange](type-aliases/CalendarDraftRange.md)
 - [CalendarDraftSummary](type-aliases/CalendarDraftSummary.md)
 - [CalendarSnapshot](type-aliases/CalendarSnapshot.md)
 - [CalendarSnapshotRestoreResult](type-aliases/CalendarSnapshotRestoreResult.md)

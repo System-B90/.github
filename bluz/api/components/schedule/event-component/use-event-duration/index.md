@@ -9,4 +9,5 @@
 ## Functions
 
 - [eventTimeRange](functions/eventTimeRange.md)
+- [formatDurationLabel](functions/formatDurationLabel.md)
 - [useEventDuration](functions/useEventDuration.md)

@@ -8,7 +8,7 @@
 
 > **RawBaseDocument** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:27](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/api-layer.ts#L27)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:27](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/api-layer.ts#L27)
 
 A document as it comes off the wire: timestamps are still ISO strings, before
 the client's date fixup turns them into Dayjs. Lives here rather than in
@@ -21,7 +21,7 @@ depend on either side of it.
 
 > **createdAt**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:28](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/api-layer.ts#L28)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:28](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/api-layer.ts#L28)
 
 ***
 
@@ -29,4 +29,4 @@ Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:28](https://github.com/S
 
 > **updatedAt**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:29](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/api-layer.ts#L29)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:29](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/api-layer.ts#L29)

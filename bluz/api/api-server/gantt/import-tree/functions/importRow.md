@@ -8,7 +8,7 @@
 
 > **importRow**(`table`, `source`, `typeName`, `id`, `now`): `Record`\<`string`, `unknown`\>
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:52](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/import-tree.ts#L52)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:52](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/import-tree.ts#L52)
 
 Builds an insert row for an exported entity: every real column of the
 target table is carried over (recurrence, shuffles, lecturers, room

@@ -8,7 +8,7 @@
 
 > **BalancerResult** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:78](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-balancer.ts#L78)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:78](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-balancer.ts#L78)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:78](https://github.com/Syst
 
 > **moves**: [`SpillMove`](SpillMove.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:80](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-balancer.ts#L80)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:80](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-balancer.ts#L80)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:80](https://github.com/Syst
 
 > **overflows**: [`WeekOverflow`](WeekOverflow.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:81](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-balancer.ts#L81)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:81](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-balancer.ts#L81)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:81](https://github.com/Syst
 
 > **slotsByDay**: `Map`\<`string`, [`BalancerSlot`](BalancerSlot.md)[]\>
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:79](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-balancer.ts#L79)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:79](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-balancer.ts#L79)

@@ -1005,15 +1005,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#selectonly" class="md-nav__link">
+  <a href="#selectmany" class="md-nav__link">
     <span class="md-ellipsis">
       
-        selectOnly
+        selectMany
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="selectOnly">
+    <nav class="md-nav" aria-label="selectMany">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1029,10 +1029,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#eventid_1" class="md-nav__link">
+  <a href="#eventids" class="md-nav__link">
     <span class="md-ellipsis">
       
-        eventId
+        eventIds
       
     </span>
   </a>
@@ -1061,6 +1061,62 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#selectonly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        selectOnly
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="selectOnly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eventid_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eventId
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Returns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#toggle" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1073,7 +1129,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#parameters_2" class="md-nav__link">
+  <a href="#parameters_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         Parameters
@@ -1101,7 +1157,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#returns_3" class="md-nav__link">
+  <a href="#returns_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         Returns
@@ -1148,13 +1204,13 @@
 <blockquote>
 <p><strong>EventSelection</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L6">ui/src/components/schedule/event-context-menu/use-event-selection.ts:6</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L6">ui/src/components/schedule/event-context-menu/use-event-selection.ts:6</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="clear">clear<a class="headerlink" href="#clear" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>clear</strong>: () =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L14">ui/src/components/schedule/event-context-menu/use-event-selection.ts:14</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L16">ui/src/components/schedule/event-context-menu/use-event-selection.ts:16</a></p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
 <hr />
@@ -1162,7 +1218,7 @@
 <blockquote>
 <p><strong>isSelected</strong>: (<code>eventId</code>) =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L9">ui/src/components/schedule/event-context-menu/use-event-selection.ts:9</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L9">ui/src/components/schedule/event-context-menu/use-event-selection.ts:9</a></p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="eventid">eventId<a class="headerlink" href="#eventid" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a></p>
@@ -1173,40 +1229,52 @@
 <blockquote>
 <p><strong>selectedEventIds</strong>: <code>ReadonlySet</code>\&lt;<a href="../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L8">ui/src/components/schedule/event-context-menu/use-event-selection.ts:8</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L8">ui/src/components/schedule/event-context-menu/use-event-selection.ts:8</a></p>
 <p>Ids the user has explicitly multi-selected (Ctrl/Cmd+click).</p>
 <hr />
 <h3 id="selectedevents">selectedEvents<a class="headerlink" href="#selectedevents" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>selectedEvents</strong>: <a href="../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L20">ui/src/components/schedule/event-context-menu/use-event-selection.ts:20</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L22">ui/src/components/schedule/event-context-menu/use-event-selection.ts:22</a></p>
 <p>The selected events, in calendar order, resolved against the live event
 list. Ids whose event is gone (deleted here or by another user) drop out
 rather than being handed to an action that would then fail server-side.</p>
+<hr />
+<h3 id="selectmany">selectMany<a class="headerlink" href="#selectmany" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>selectMany</strong>: (<code>eventIds</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L15">ui/src/components/schedule/event-context-menu/use-event-selection.ts:15</a></p>
+<p>Replaces the selection with exactly these events (#1000 click-through).</p>
+<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
+<h5 id="eventids">eventIds<a class="headerlink" href="#eventids" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a>[]</p>
+<h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
+<p><code>void</code></p>
 <hr />
 <h3 id="selectonly">selectOnly<a class="headerlink" href="#selectonly" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>selectOnly</strong>: (<code>eventId</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L11">ui/src/components/schedule/event-context-menu/use-event-selection.ts:11</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L11">ui/src/components/schedule/event-context-menu/use-event-selection.ts:11</a></p>
 <p>Collapses the selection down to this one event.</p>
-<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
+<h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
 <h5 id="eventid_1">eventId<a class="headerlink" href="#eventid_1" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a></p>
-<h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
+<h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
 <hr />
 <h3 id="toggle">toggle<a class="headerlink" href="#toggle" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>toggle</strong>: (<code>eventId</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L13">ui/src/components/schedule/event-context-menu/use-event-selection.ts:13</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L13">ui/src/components/schedule/event-context-menu/use-event-selection.ts:13</a></p>
 <p>Ctrl/Cmd+click: adds or removes one event without disturbing the rest.</p>
-<h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
+<h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">&para;</a></h4>
 <h5 id="eventid_2">eventId<a class="headerlink" href="#eventid_2" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../../api-shared/types/event/type-aliases/EventId/"><code>EventId</code></a></p>
-<h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">&para;</a></h4>
+<h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
 
 

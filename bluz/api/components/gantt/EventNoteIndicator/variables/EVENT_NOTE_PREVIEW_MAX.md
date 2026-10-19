@@ -8,6 +8,6 @@
 
 > `const` **EVENT\_NOTE\_PREVIEW\_MAX**: `400` = `400`
 
-Defined in: [ui/src/components/gantt/EventNoteIndicator.tsx:6](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/EventNoteIndicator.tsx#L6)
+Defined in: [ui/src/components/gantt/EventNoteIndicator.tsx:6](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/EventNoteIndicator.tsx#L6)
 
 Longest note shown in the hover tooltip; the full text stays in the event dialog.

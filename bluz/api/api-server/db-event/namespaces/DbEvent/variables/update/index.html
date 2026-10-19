@@ -994,9 +994,9 @@
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../../../">api-server/db-event</a> / <a href="../../">DbEvent</a> / update</p>
 <h1 id="variable-update">Variable: update<a class="headerlink" href="#variable-update" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><code>const</code> <strong>update</strong>: (<code>eventData</code>, <code>options?</code>, <code>controller</code>, <code>iterationId?</code>, <code>origin</code>) =&gt; <code>Promise</code>\&lt;{ <code>after</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>before</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; }&gt; = <code>updateDbEvent</code></p>
+<p><code>const</code> <strong>update</strong>: (<code>eventData</code>, <code>options?</code>, <code>controller</code>, <code>iterationId?</code>, <code>origin</code>) =&gt; <code>Promise</code>\&lt;{ <code>after</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>before</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>stale?</code>: <code>boolean</code>; }&gt; = <code>updateDbEvent</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/db-event.ts#L588">ui/src/api-server/db-event.ts:588</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/db-event.ts#L687">ui/src/api-server/db-event.ts:687</a></p>
 <p><a href="../set/">setDbEvent</a> that also returns the stored copy it replaced, so callers
 that need the old version (the Google fan-out) don't read it again (#926).
 Read and write are one atomic <code>findOneAndUpdate</code>, so <code>before</code> is exactly
@@ -1013,7 +1013,7 @@ what was overwritten.</p>
 <h3 id="origin">origin?<a class="headerlink" href="#origin" title="Permanent link">&para;</a></h3>
 <p><a href="../../../../../db-event-history/type-aliases/EventWriteOrigin/"><code>EventWriteOrigin</code></a> = <code>UNKNOWN_ORIGIN</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
-<p><code>Promise</code>\&lt;{ <code>after</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>before</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; }&gt;</p>
+<p><code>Promise</code>\&lt;{ <code>after</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>before</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>stale?</code>: <code>boolean</code>; }&gt;</p>
 
 
 

@@ -899,6 +899,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#templateid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        templateId?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#templateidbyweekstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        templateIdByWeekStart?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#weekid" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -941,9 +963,20 @@
 <blockquote>
 <p><strong>CutWeekOptions</strong> = <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions/"><code>CutPlanOptions</code></a> &amp; <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/cut.ts#L957">ui/src/api-server/gantt/cut.ts:957</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/cut.ts#L984">ui/src/api-server/gantt/cut.ts:984</a></p>
 <p>Cut options, optionally limited to one timeline week (#970).</p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
+<h3 id="templateid">templateId?<a class="headerlink" href="#templateid" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>templateId?</strong>: <code>string</code></p>
+</blockquote>
+<p>Template for the weeks being cut; the default one when omitted (#997).</p>
+<h3 id="templateidbyweekstart">templateIdByWeekStart?<a class="headerlink" href="#templateidbyweekstart" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>templateIdByWeekStart?</strong>: <code>Record</code>\&lt;<code>string</code>, <code>string</code>&gt;</p>
+</blockquote>
+<p>Template ids by week Sunday (YYYY-MM-DD), overriding <code>templateId</code>: the
+templates weeks were cut with, for reloads and template saves.</p>
 <h3 id="weekid">weekId?<a class="headerlink" href="#weekid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>weekId?</strong>: <code>string</code></p>

@@ -6,7 +6,7 @@
 
 # Enumeration: AiToolKind
 
-Defined in: [ui/src/api-shared/types/ai.ts:50](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L50)
+Defined in: [ui/src/api-shared/types/ai.ts:50](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/ai.ts#L50)
 
 Whether running a tool changes stored data. Read tools run unattended;
 write tools stop the turn and wait for the human to approve the exact call.
@@ -17,7 +17,7 @@ write tools stop the turn and wait for the human to approve the exact call.
 
 > **Prompt**: `"prompt"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:58](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L58)
+Defined in: [ui/src/api-shared/types/ai.ts:58](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/ai.ts#L58)
 
 Not a data operation at all: the tool's whole effect is to put a
 question to the human and stop the turn. Answered by the client, never
@@ -29,7 +29,7 @@ executed on the server.
 
 > **Read**: `"read"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:51](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L51)
+Defined in: [ui/src/api-shared/types/ai.ts:51](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/ai.ts#L51)
 
 ***
 
@@ -37,4 +37,4 @@ Defined in: [ui/src/api-shared/types/ai.ts:51](https://github.com/System-B90/Blu
 
 > **Write**: `"write"`
 
-Defined in: [ui/src/api-shared/types/ai.ts:52](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/ai.ts#L52)
+Defined in: [ui/src/api-shared/types/ai.ts:52](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/ai.ts#L52)

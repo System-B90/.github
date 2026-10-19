@@ -1152,7 +1152,7 @@ accounts hold real sessions.</p>
    <code>endTime</code>, <code>color</code> (resolved hex), <code>rooms</code> (display names), <code>courses</code> (display names).
    No Hive ids, no subject id, no instructors/lecturers, no notes/tags, no gantt
    provenance, no <code>hidden</code>/<code>locked</code>/<code>required</code>/<code>personalTalk</code>.</li>
-<li><strong>The colour is a hex string.</strong> A colour <em>id</em> is a custom-colour id or a Hive subject
+<li><strong>The color is a hex string.</strong> A color <em>id</em> is a custom-color id or a Hive subject
    id; returning one leaks the subject. Resolution happens server-side.</li>
 <li><strong>Names, never ids.</strong> A course or room that cannot be resolved to a display name is
    dropped from the projection, never passed through as an id.</li>
@@ -1242,7 +1242,7 @@ accounts hold real sessions.</p>
 </tr>
 <tr>
 <td><code>tests/backend/student-view-route.test.ts</code></td>
-<td>Field whitelist, envelope keys, calendar hours, room short names, hidden-event filter, colour resolution.</td>
+<td>Field whitelist, envelope keys, calendar hours, room short names, hidden-event filter, color resolution.</td>
 </tr>
 <tr>
 <td><code>tests/backend/student-clearance-gating.test.ts</code></td>
@@ -1262,7 +1262,7 @@ accounts hold real sessions.</p>
 </tr>
 <tr>
 <td><code>tests/student-view.spec.ts</code></td>
-<td>The whole boundary against a real Hive student token: staff APIs, staff pages, the raw response body, the rendered HTML, the socket frames — plus a sweep that scans <strong>every HTTP body and websocket frame the page receives</strong> for staff markers, and asserts the projection's <em>values</em> (hex colours, display names, never a uuid).</td>
+<td>The whole boundary against a real Hive student token: staff APIs, staff pages, the raw response body, the rendered HTML, the socket frames — plus a sweep that scans <strong>every HTTP body and websocket frame the page receives</strong> for staff markers, and asserts the projection's <em>values</em> (hex colors, display names, never a uuid).</td>
 </tr>
 </tbody>
 </table>

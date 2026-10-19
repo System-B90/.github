@@ -1046,7 +1046,7 @@
 <blockquote>
 <p><strong>MaterializationOutcome</strong> = { <code>errors</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutValidationError/"><code>CutValidationError</code></a>[]; <code>ok</code>: <code>false</code>; <code>weeks</code>: <a href="../../../../../api-shared/types/gantt/cut/type-aliases/ApiCutWeek/"><code>ApiCutWeek</code></a>[]; } | { <code>createdCourses</code>: <code>object</code>[]; <code>documents</code>: <a href="../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]; <code>hiveSubjectsUnavailable</code>: <code>boolean</code>; <code>ok</code>: <code>true</code>; <code>overlaps</code>: <code>number</code>; <code>report</code>: <a href="../../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanReport/"><code>CutPlanReport</code></a>; <code>weekRange</code>: <code>DateRange</code> | <code>null</code>; <code>weeks</code>: <a href="../../../../../api-shared/types/gantt/cut/type-aliases/ApiCutWeek/"><code>ApiCutWeek</code></a>[]; }</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/cut.ts#L986">ui/src/api-server/gantt/cut.ts:986</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/cut.ts#L1329">ui/src/api-server/gantt/cut.ts:1329</a></p>
 <p>The documents a plan materializes into, plus what producing them created.</p>
 <h2 id="union-members">Union Members<a class="headerlink" href="#union-members" title="Permanent link">&para;</a></h2>
 <h3 id="type-literal">Type Literal<a class="headerlink" href="#type-literal" title="Permanent link">&para;</a></h3>
@@ -1069,7 +1069,7 @@
 <p>True when Hive could not supply the module → subject map and at
 least one event was left subject-less because of it (#662). The
 events are still written; the caller is expected to tell the user
-a reload will fix their colours.</p>
+a reload will fix their colors.</p>
 <h4 id="ok">ok<a class="headerlink" href="#ok" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p><strong>ok</strong>: <code>true</code></p>

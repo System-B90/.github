@@ -8,9 +8,9 @@
 
 > **EventHistoryTimelineProps** = `object`
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx:33](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx#L33)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx:33](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx#L33)
 
-The change log as a vertical timeline: one marker per change, colour-coded
+The change log as a vertical timeline: one marker per change, color-coded
 by what produced it, with the changed fields shown as before → after pairs.
 
 ## Properties
@@ -19,7 +19,7 @@ by what produced it, with the changed fields shown as before → after pairs.
 
 > **entries**: [`ApiEventHistoryEntry`](../../../../../../api-shared/types/event-history/type-aliases/ApiEventHistoryEntry.md)[]
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx:34](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx#L34)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx:34](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx#L34)
 
 ***
 
@@ -27,4 +27,4 @@ Defined in: [ui/src/components/schedule/event-dialog/event-history/EventHistoryT
 
 > **lookups**: [`ChangeValueLookups`](../../format-change/type-aliases/ChangeValueLookups.md)
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx:35](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx#L35)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx:35](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/event-dialog/event-history/EventHistoryTimeline.tsx#L35)

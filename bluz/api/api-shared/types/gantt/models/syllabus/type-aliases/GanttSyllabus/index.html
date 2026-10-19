@@ -998,6 +998,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#shufflelevels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shuffleLevels?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#shuffles" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1051,13 +1062,13 @@
 <blockquote>
 <p><strong>GanttSyllabus</strong> = <code>object</code> &amp; <a href="../../../shared/type-aliases/BaseGantItem/"><code>BaseGantItem</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/models/syllabus.ts#L9">ui/src/api-shared/types/gantt/models/syllabus.ts:9</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/models/syllabus.ts#L10">ui/src/api-shared/types/gantt/models/syllabus.ts:10</a></p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="color">color?<a class="headerlink" href="#color" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>color?</strong>: <code>null</code> | <code>string</code></p>
 </blockquote>
-<p>Default colour id (custom colour or Hive subject); unset ⇒ none.</p>
+<p>Default color id (custom color or Hive subject); unset ⇒ none.</p>
 <h3 id="courseids">courseIds?<a class="headerlink" href="#courseids" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>courseIds?</strong>: <a href="../../../../../course/type-aliases/CourseId/"><code>CourseId</code></a>[]</p>
@@ -1099,6 +1110,12 @@ mirrors that group's staff-only description (max 100 chars).</p>
 </blockquote>
 <p>Shuffle name → explicitly linked Hive student-group id (#774). A shuffle
 without an entry matches the Hive group with its exact name.</p>
+<h3 id="shufflelevels">shuffleLevels?<a class="headerlink" href="#shufflelevels" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shuffleLevels?</strong>: <a href="../../../../../../gantt/shuffle-names/type-aliases/ShuffleLevels/"><code>ShuffleLevels</code></a></p>
+</blockquote>
+<p>Shuffle name → staff (סגל) level (#991). The name itself is the
+trainee (חניכים) name and never contains a level word.</p>
 <h3 id="shuffles">shuffles?<a class="headerlink" href="#shuffles" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>shuffles?</strong>: <code>string</code>[]</p>

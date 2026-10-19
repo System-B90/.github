@@ -931,6 +931,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gap
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -972,10 +983,11 @@
 <p><a href="../../../../../../../">TypeDoc API</a> / <a href="../../">components/schedule/calendar/calendar/slot-context-menu</a> / OpenSlotContextMenu</p>
 <h1 id="type-alias-openslotcontextmenu">Type Alias: OpenSlotContextMenu<a class="headerlink" href="#type-alias-openslotcontextmenu" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>OpenSlotContextMenu</strong> = (<code>slot</code>, <code>clientX</code>, <code>clientY</code>) =&gt; <code>void</code></p>
+<p><strong>OpenSlotContextMenu</strong> = (<code>slot</code>, <code>clientX</code>, <code>clientY</code>, <code>gap</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L9">ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:9</a></p>
-<p>Right-click on an empty grid slot, in viewport coordinates (#859).</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L13">ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:13</a></p>
+<p>Right-click on an empty grid slot, in viewport coordinates (#859). <code>gap</code> is
+the empty run around the slot in its column, null when the slot is covered.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="slot">slot<a class="headerlink" href="#slot" title="Permanent link">&para;</a></h3>
 <p><a href="../../../paste/type-aliases/PasteSlot/"><code>PasteSlot</code></a></p>
@@ -983,6 +995,8 @@
 <p><code>number</code></p>
 <h3 id="clienty">clientY<a class="headerlink" href="#clienty" title="Permanent link">&para;</a></h3>
 <p><code>number</code></p>
+<h3 id="gap">gap<a class="headerlink" href="#gap" title="Permanent link">&para;</a></h3>
+<p><a href="../../../../../../../api-shared/interval-layout/type-aliases/Interval/"><code>Interval</code></a> | <code>null</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>void</code></p>
 

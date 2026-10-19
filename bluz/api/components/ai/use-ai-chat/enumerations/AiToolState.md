@@ -6,7 +6,7 @@
 
 # Enumeration: AiToolState
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:51](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/ai/use-ai-chat.ts#L51)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:51](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/ai/use-ai-chat.ts#L51)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:51](https://github.com/System-B
 
 > **Failed**: `"failed"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:54](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/ai/use-ai-chat.ts#L54)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:54](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/ai/use-ai-chat.ts#L54)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:54](https://github.com/System-B
 
 > **Ok**: `"ok"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:53](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/ai/use-ai-chat.ts#L53)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:53](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/ai/use-ai-chat.ts#L53)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:53](https://github.com/System-B
 
 > **Running**: `"running"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:52](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/ai/use-ai-chat.ts#L52)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:52](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/ai/use-ai-chat.ts#L52)

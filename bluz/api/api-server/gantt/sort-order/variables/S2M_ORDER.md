@@ -8,6 +8,6 @@
 
 > `const` **S2M\_ORDER**: `SQL`\<`unknown`\>[]
 
-Defined in: [ui/src/api-server/gantt/sort-order.ts:27](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/sort-order.ts#L27)
+Defined in: [ui/src/api-server/gantt/sort-order.ts:27](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/sort-order.ts#L27)
 
 Stable s2m order: rows sharing a `sort_order` (legacy data) never swap between reads.

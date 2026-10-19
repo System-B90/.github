@@ -8,7 +8,7 @@
 
 > **CollectionMutation**\<`T`\> = `object`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:82](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/base/collection/create-collection-provider.tsx#L82)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:82](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/collection/create-collection-provider.tsx#L82)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:82
 
 > **failureMessage**: `string`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:86](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/base/collection/create-collection-provider.tsx#L86)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:86](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/collection/create-collection-provider.tsx#L86)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:86
 
 > **optimistic**: (`ops`) => `void`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:83](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/base/collection/create-collection-provider.tsx#L83)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:83](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/collection/create-collection-provider.tsx#L83)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:83
 
 > **request**: () => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:84](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/base/collection/create-collection-provider.tsx#L84)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:84](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/collection/create-collection-provider.tsx#L84)
 
 #### Returns
 
@@ -60,4 +60,4 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:84
 
 > **successMessage**: `string`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:85](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/base/collection/create-collection-provider.tsx#L85)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:85](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/collection/create-collection-provider.tsx#L85)

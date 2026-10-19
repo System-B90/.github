@@ -909,6 +909,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#gapat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gapAt
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -950,15 +961,18 @@
 <p><a href="../../../../../../../">TypeDoc API</a> / <a href="../../">components/schedule/calendar/calendar/slot-context-menu</a> / slotContextMenuHandler</p>
 <h1 id="function-slotcontextmenuhandler">Function: slotContextMenuHandler()<a class="headerlink" href="#function-slotcontextmenuhandler" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>slotContextMenuHandler</strong>(<code>open</code>): (<code>pointer</code>) =&gt; <code>void</code></p>
+<p><strong>slotContextMenuHandler</strong>(<code>open</code>, <code>gapAt</code>): (<code>pointer</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L57">ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:57</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L70">ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:70</a></p>
 <p><code>onContextMenu</code> for the grid: opens the slot menu on empty grid, leaves the
 browser's own menu everywhere else. Tiles stop propagation themselves.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="open">open<a class="headerlink" href="#open" title="Permanent link">&para;</a></h3>
 <p><a href="../../type-aliases/OpenSlotContextMenu/"><code>OpenSlotContextMenu</code></a> | <code>null</code></p>
 <p>The slot menu opener; null while the calendar is read-only.</p>
+<h3 id="gapat">gapAt<a class="headerlink" href="#gapat" title="Permanent link">&para;</a></h3>
+<p><a href="../../type-aliases/SlotGapFinder/"><code>SlotGapFinder</code></a></p>
+<p>Resolves the empty run around the clicked slot.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p>(<code>pointer</code>) =&gt; <code>void</code></p>
 

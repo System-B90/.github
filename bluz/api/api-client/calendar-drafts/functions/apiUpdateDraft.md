@@ -6,9 +6,9 @@
 
 # Function: apiUpdateDraft()
 
-> **apiUpdateDraft**(`id`, `events`, `iterationId?`, `label?`): `Promise`\<[`CalendarDraftSummary`](../../../api-shared/types/type-aliases/CalendarDraftSummary.md)\>
+> **apiUpdateDraft**(`id`, `events`, `iterationId?`, `label?`, `range?`): `Promise`\<[`CalendarDraftSummary`](../../../api-shared/types/type-aliases/CalendarDraftSummary.md)\>
 
-Defined in: [ui/src/api-client/calendar-drafts.ts:41](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-client/calendar-drafts.ts#L41)
+Defined in: [ui/src/api-client/calendar-drafts.ts:46](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-client/calendar-drafts.ts#L46)
 
 Updates an existing shared draft's events (and optionally its label).
 
@@ -29,6 +29,10 @@ Updates an existing shared draft's events (and optionally its label).
 ### label?
 
 `string`
+
+### range?
+
+[`CalendarDraftRange`](../../../api-shared/types/type-aliases/CalendarDraftRange.md)
 
 ## Returns
 

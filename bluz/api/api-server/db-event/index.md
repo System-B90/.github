@@ -14,6 +14,10 @@
 
 - [EVENT\_RANGE\_LIMIT](variables/EVENT_RANGE_LIMIT.md)
 
+## Functions
+
+- [withEventArrays](functions/withEventArrays.md)
+
 ## References
 
 ### DbEventDocument

@@ -10,6 +10,7 @@
 
 - [CalendarAction](type-aliases/CalendarAction.md)
 - [HistoryState](type-aliases/HistoryState.md)
+- [TravelOutcome](type-aliases/TravelOutcome.md)
 
 ## Functions
 

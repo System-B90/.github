@@ -8,7 +8,7 @@
 
 > **CustomColor** = `object`
 
-Defined in: [ui/src/api-shared/types/custom-color.ts:1](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/custom-color.ts#L1)
+Defined in: [ui/src/api-shared/types/custom-color.ts:1](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/custom-color.ts#L1)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/custom-color.ts:1](https://github.com/Syste
 
 > **hex**: `string`
 
-Defined in: [ui/src/api-shared/types/custom-color.ts:4](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/custom-color.ts#L4)
+Defined in: [ui/src/api-shared/types/custom-color.ts:4](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/custom-color.ts#L4)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/custom-color.ts:4](https://github.com/Syste
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/custom-color.ts:2](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/custom-color.ts#L2)
+Defined in: [ui/src/api-shared/types/custom-color.ts:2](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/custom-color.ts#L2)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/custom-color.ts:2](https://github.com/Syste
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/custom-color.ts:3](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/custom-color.ts#L3)
+Defined in: [ui/src/api-shared/types/custom-color.ts:3](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/custom-color.ts#L3)

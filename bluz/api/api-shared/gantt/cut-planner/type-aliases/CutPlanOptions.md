@@ -8,7 +8,7 @@
 
 > **CutPlanOptions** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:317](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L317)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:339](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L339)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:317](https://github.com/Syst
 
 > `optional` **acceptedConstraintMoves?**: `string`[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:341](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L341)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:363](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L363)
 
 Constraint-solver moves the user accepted, by event id. Proposals not
 listed here are reported but not applied — the cut never silently moves
@@ -28,7 +28,7 @@ an event the user mapped deliberately.
 
 > `optional` **autoSpillover?**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:330](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L330)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:352](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L352)
 
 Auto-spillover: rebalance each week so no day carries more than its
 working window, cascading work forward within the week. Defaults to on —
@@ -40,7 +40,7 @@ pass `false` for the pre-#… raw stacking behaviour.
 
 > `optional` **force?**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:324](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L324)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:346](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L346)
 
 When true, an unmapped event or an unsatisfied recurrence no longer
 fails the whole plan — the offending event is dropped and planning
@@ -53,10 +53,22 @@ start date is still fatal (nothing is datable without it).
 
 > `optional` **insertBreaks?**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:335](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L335)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:357](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L357)
 
 Break post-pass: spread a day's leftover slack through the day as real
 הפסקה events instead of leaving it as an empty tail. Defaults to on.
+
+***
+
+### parkWeekOnly?
+
+> `optional` **parkWeekOnly?**: `boolean`
+
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:374](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L374)
+
+Park week-only mappings (#964) in the schedule's unassigned box instead
+of auto-scheduling them, so the user places each one by hand. They take
+no weekday time, so nothing else moves to make room for them.
 
 ***
 
@@ -64,7 +76,7 @@ Break post-pass: spread a day's leftover slack through the day as real
 
 > `optional` **weekOverflowResolutions?**: `Record`\<`string`, [`WeekOverflowResolution`](../../cut-rules/type-aliases/WeekOverflowResolution.md)\>
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:346](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/gantt/cut-planner.ts#L346)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:368](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/gantt/cut-planner.ts#L368)
 
 Per-week answer to a `week-overflow` decision. Absent weeks use
-`OVERFLOW_RULES.defaultResolution` (`overlap-source`).
+`OVERFLOW_RULES.defaultResolution` (`park`).

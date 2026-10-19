@@ -8,7 +8,7 @@
 
 > **EntitySelectProps**\<`TId`\> = `object` & `Omit`\<`FormControlProps`, `"onChange"`\>
 
-Defined in: [ui/src/components/base/EntitySelect.tsx:18](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/base/EntitySelect.tsx#L18)
+Defined in: [ui/src/components/base/EntitySelect.tsx:18](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/base/EntitySelect.tsx#L18)
 
 ## Type Declaration
 
@@ -17,6 +17,13 @@ Defined in: [ui/src/components/base/EntitySelect.tsx:18](https://github.com/Syst
 > `optional` **allowEmpty?**: `boolean`
 
 Render a leading empty option so the user can clear the choice.
+
+### autoSelectSole?
+
+> `optional` **autoSelectSole?**: `boolean`
+
+Pick the option automatically when it is the only one and nothing is
+selected. Fires once per sole option, so clearing it sticks.
 
 ### disableWhenEmpty?
 

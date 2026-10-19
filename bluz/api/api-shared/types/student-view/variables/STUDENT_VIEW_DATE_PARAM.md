@@ -8,7 +8,7 @@
 
 > `const` **STUDENT\_VIEW\_DATE\_PARAM**: `"date"` = `"date"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:95](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/student-view.ts#L95)
+Defined in: [ui/src/api-shared/types/student-view.ts:98](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/student-view.ts#L98)
 
 Query param staff may use to preview another day. Ignored — and rejected —
 for student sessions, which always get the server's own current day.

@@ -8,7 +8,7 @@
 
 > **ApiCurriculumReloadPayload** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:79](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L79)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:84](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L84)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:79](https://github.com/Syst
 
 > `optional` **dryRun?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:81](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L81)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:86](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L86)
 
 Compute the diff and write nothing.
 
@@ -26,7 +26,7 @@ Compute the diff and write nothing.
 
 > `optional` **force?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:88](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L88)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:93](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L93)
 
 Plan around unmapped events / unsatisfied recurrences, as with the cut.
 
@@ -36,7 +36,17 @@ Plan around unmapped events / unsatisfied recurrences, as with the cut.
 
 > `optional` **overrideEventIds?**: `string`[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:86](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/gantt/reload.ts#L86)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:91](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L91)
 
 Manually-edited events the user chose to overwrite anyway. Their
 conflicts are applied instead of skipped.
+
+***
+
+### weekId?
+
+> `optional` **weekId?**: `string`
+
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:95](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/gantt/reload.ts#L95)
+
+Reload only this timeline week; omitted ⇒ the whole curriculum.

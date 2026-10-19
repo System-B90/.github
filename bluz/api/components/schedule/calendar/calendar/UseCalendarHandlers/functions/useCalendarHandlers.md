@@ -8,7 +8,7 @@
 
 > **useCalendarHandlers**(`events`, `handleSaveEvent`, `handleDeleteEvent`, `setSelectedEvent`, `setOpenEventDialog`, `confirmLockedEdit?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:42](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L42)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:48](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L48)
 
 Custom React hook to manage calendar event logic, user interactions (e.g. drag & drop, select, click),
 and keyboard shortcuts (copy, paste, delete).
@@ -110,6 +110,26 @@ State and event handlers for the calendar.
 
 `void`
 
+### handleSliceEvent
+
+> **handleSliceEvent**: (`event`, `headWorkingMs`) => `void`
+
+Cuts an event after `headWorkingMs` of working time.
+
+#### Parameters
+
+##### event
+
+[`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
+
+##### headWorkingMs
+
+`number`
+
+#### Returns
+
+`void`
+
 ### handleSlotSelect
 
 > **handleSlotSelect**: (`slotInfo`) => `void`
@@ -128,10 +148,7 @@ State and event handlers for the calendar.
 
 > **handleSplitEvent**: (`event`, `atMs`) => `void`
 
-Cuts an event in two at a wall-clock instant (#657): the original keeps
-its head and is trimmed to end at the cut, and a new event carrying the
-same fields takes the tail. Durations are measured in *working* time, so
-an event that jumps over a break keeps the same total after the cut.
+Cuts an event at a wall-clock instant (#657).
 
 #### Parameters
 

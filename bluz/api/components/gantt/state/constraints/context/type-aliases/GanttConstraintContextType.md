@@ -8,7 +8,7 @@
 
 > **GanttConstraintContextType** = `object`
 
-Defined in: [ui/src/components/gantt/state/constraints/context.ts:43](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/constraints/context.ts#L43)
+Defined in: [ui/src/components/gantt/state/constraints/context.ts:43](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/constraints/context.ts#L43)
 
 The structured type of the Gantt constraints context value.
 
@@ -18,7 +18,7 @@ The structured type of the Gantt constraints context value.
 
 > **createConstraint**: [`CreateConstraint`](CreateConstraint.md)
 
-Defined in: [ui/src/components/gantt/state/constraints/context.ts:51](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/constraints/context.ts#L51)
+Defined in: [ui/src/components/gantt/state/constraints/context.ts:51](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/constraints/context.ts#L51)
 
 Function to create a new constraint.
 
@@ -28,7 +28,7 @@ Function to create a new constraint.
 
 > **refreshConstraints**: [`RefreshConstraints`](RefreshConstraints.md)
 
-Defined in: [ui/src/components/gantt/state/constraints/context.ts:48](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/constraints/context.ts#L48)
+Defined in: [ui/src/components/gantt/state/constraints/context.ts:48](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/constraints/context.ts#L48)
 
 Function to refresh constraints from server.
 
@@ -38,7 +38,7 @@ Function to refresh constraints from server.
 
 > **removeConstraint**: [`RemoveConstraint`](RemoveConstraint.md)
 
-Defined in: [ui/src/components/gantt/state/constraints/context.ts:57](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/constraints/context.ts#L57)
+Defined in: [ui/src/components/gantt/state/constraints/context.ts:57](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/constraints/context.ts#L57)
 
 Function to delete a constraint.
 
@@ -48,7 +48,7 @@ Function to delete a constraint.
 
 > **state**: [`GanttConstraintState`](../../types/type-aliases/GanttConstraintState.md)
 
-Defined in: [ui/src/components/gantt/state/constraints/context.ts:45](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/constraints/context.ts#L45)
+Defined in: [ui/src/components/gantt/state/constraints/context.ts:45](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/constraints/context.ts#L45)
 
 The current state of constraints in the store.
 
@@ -58,6 +58,6 @@ The current state of constraints in the store.
 
 > **updateConstraint**: [`UpdateConstraint`](UpdateConstraint.md)
 
-Defined in: [ui/src/components/gantt/state/constraints/context.ts:54](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/components/gantt/state/constraints/context.ts#L54)
+Defined in: [ui/src/components/gantt/state/constraints/context.ts:54](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/components/gantt/state/constraints/context.ts#L54)
 
 Function to update an existing constraint.

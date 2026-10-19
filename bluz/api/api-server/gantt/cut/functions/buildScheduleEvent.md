@@ -8,16 +8,7 @@
 
 > **buildScheduleEvent**(`occurrence`, `ganttEvent`, `courseIds`, `moduleHiveIds`, `hiveModuleSubjectById`, `curriculumId`, `naming?`): [`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:566](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/cut.ts#L566)
-
-Build a single schedule-event document from a planned occurrence and its
-source gantt event. Hive linkage is copied when present on the event
-itself; when the event has no linkage of its own, it falls back to the
-first Hive module linked on its containing Gantt module (via
-`hiveModuleSubjectById`), since users commonly link Hive at the module
-level (module dialog chips) rather than per-event. Only when neither is
-set is the event stored as a non-Hive placeholder (subject/module 0,
-lesson null), matching how "fake" events represent "no Hive linkage".
+Defined in: [ui/src/api-server/gantt/cut.ts:606](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/cut.ts#L606)
 
 ## Parameters
 

@@ -8,7 +8,7 @@
 
 > **ShabbatWindow** = `object`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:7](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/shabbat.ts#L7)
+Defined in: [ui/src/api-shared/types/shabbat.ts:7](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/shabbat.ts#L7)
 
 The Shabbat window of one Sunday-to-Saturday week, in Israel local time
 (Beer Sheva). Times are zero-padded `HH:mm`.
@@ -19,7 +19,7 @@ The Shabbat window of one Sunday-to-Saturday week, in Israel local time
 
 > **candleLighting**: `string`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:12](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/shabbat.ts#L12)
+Defined in: [ui/src/api-shared/types/shabbat.ts:12](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/shabbat.ts#L12)
 
 `כניסת שבת`, Friday.
 
@@ -29,7 +29,7 @@ Defined in: [ui/src/api-shared/types/shabbat.ts:12](https://github.com/System-B9
 
 > **friday**: `string`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:9](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/shabbat.ts#L9)
+Defined in: [ui/src/api-shared/types/shabbat.ts:9](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/shabbat.ts#L9)
 
 Civil dates (`YYYY-MM-DD`) of the week's Friday and Saturday.
 
@@ -39,7 +39,7 @@ Civil dates (`YYYY-MM-DD`) of the week's Friday and Saturday.
 
 > **fridayLastEventEnd**: `string`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:16](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/shabbat.ts#L16)
+Defined in: [ui/src/api-shared/types/shabbat.ts:16](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/shabbat.ts#L16)
 
 Friday: the last event must end by this time (candle lighting − 2h).
 
@@ -49,7 +49,7 @@ Friday: the last event must end by this time (candle lighting − 2h).
 
 > **havdalah**: `string`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:14](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/shabbat.ts#L14)
+Defined in: [ui/src/api-shared/types/shabbat.ts:14](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/shabbat.ts#L14)
 
 `צאת שבת`, Saturday.
 
@@ -59,7 +59,7 @@ Defined in: [ui/src/api-shared/types/shabbat.ts:14](https://github.com/System-B9
 
 > **saturday**: `string`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:10](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/shabbat.ts#L10)
+Defined in: [ui/src/api-shared/types/shabbat.ts:10](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/shabbat.ts#L10)
 
 ***
 
@@ -67,6 +67,6 @@ Defined in: [ui/src/api-shared/types/shabbat.ts:10](https://github.com/System-B9
 
 > **saturdayFirstEventStart**: `string`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:18](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-shared/types/shabbat.ts#L18)
+Defined in: [ui/src/api-shared/types/shabbat.ts:18](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-shared/types/shabbat.ts#L18)
 
 Saturday: the first event may start at this time (havdalah + 30m).

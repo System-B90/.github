@@ -1443,12 +1443,16 @@ week at a time:</p>
 </thead>
 <tbody>
 <tr>
-<td><code>overlap-source</code> <em>(default)</em></td>
+<td><code>park</code> <em>(default)</em></td>
+<td>Leftovers are cut into the schedule's unassigned box (ארגז), on their own day, for the user to place by hand. Nothing overlaps.</td>
+</tr>
+<tr>
+<td><code>overlap-source</code></td>
 <td>Leftovers overlap inside the day's window — the stack wraps back to the day's start rather than running past its end.</td>
 </tr>
 <tr>
 <td><code>overlap-least-full</code></td>
-<td>Overlap is placed on the week's least-loaded day.</td>
+<td>Meant to place the overlap on the week's least-loaded day. Not implemented yet: behaves as <code>overlap-source</code>.</td>
 </tr>
 <tr>
 <td><code>extend-day</code></td>
@@ -1460,6 +1464,8 @@ week at a time:</p>
 </tr>
 </tbody>
 </table>
+<p><code>park</code> and <code>drop</code> set an event aside the moment it does not fit, without moving
+the day's cursor, so a shorter event later in the same day can still fit.</p>
 <h2 id="breaks">Breaks<a class="headerlink" href="#breaks" title="Permanent link">&para;</a></h2>
 <p>The break pass runs after events have their final days and times. Its job is to
 take the empty tail that would otherwise sit at the end of a day and spread it
@@ -1590,7 +1596,7 @@ case is still a single click.</p>
 <p>The Cut Preview tab runs the same pipeline as the real cut and highlights the
 diff:</p>
 <ul>
-<li>relocated occurrences are outlined with a dashed warning-coloured border;</li>
+<li>relocated occurrences are outlined with a dashed warning-colored border;</li>
 <li>generated breaks render as neutral filler rather than as lessons;</li>
 <li>the toolbar summarises how many events were rebalanced and how many breaks
   were added.</li>

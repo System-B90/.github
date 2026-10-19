@@ -8,11 +8,24 @@
 
 > **CutWeekOptions** = [`CutPlanOptions`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions.md) & `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:957](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/cut.ts#L957)
+Defined in: [ui/src/api-server/gantt/cut.ts:984](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/cut.ts#L984)
 
 Cut options, optionally limited to one timeline week (#970).
 
 ## Type Declaration
+
+### templateId?
+
+> `optional` **templateId?**: `string`
+
+Template for the weeks being cut; the default one when omitted (#997).
+
+### templateIdByWeekStart?
+
+> `optional` **templateIdByWeekStart?**: `Record`\<`string`, `string`\>
+
+Template ids by week Sunday (YYYY-MM-DD), overriding `templateId`: the
+templates weeks were cut with, for reloads and template saves.
 
 ### weekId?
 

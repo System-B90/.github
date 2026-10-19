@@ -8,7 +8,7 @@
 
 > **ReloadOptions** = `object`
 
-Defined in: [ui/src/api-server/gantt/reload.ts:50](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/reload.ts#L50)
+Defined in: [ui/src/api-server/gantt/reload.ts:56](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/reload.ts#L56)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/gantt/reload.ts:50](https://github.com/System-B90
 
 > `optional` **dryRun?**: `boolean`
 
-Defined in: [ui/src/api-server/gantt/reload.ts:51](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/reload.ts#L51)
+Defined in: [ui/src/api-server/gantt/reload.ts:57](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/reload.ts#L57)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/gantt/reload.ts:51](https://github.com/System-B90
 
 > `optional` **force?**: `boolean`
 
-Defined in: [ui/src/api-server/gantt/reload.ts:52](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/reload.ts#L52)
+Defined in: [ui/src/api-server/gantt/reload.ts:58](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/reload.ts#L58)
 
 ***
 
@@ -32,4 +32,26 @@ Defined in: [ui/src/api-server/gantt/reload.ts:52](https://github.com/System-B90
 
 > `optional` **overrideEventIds?**: `string`[]
 
-Defined in: [ui/src/api-server/gantt/reload.ts:53](https://github.com/System-B90/Bluz/blob/2cdd88d3becf12eb3973de760603dde72ccbd37e/ui/src/api-server/gantt/reload.ts#L53)
+Defined in: [ui/src/api-server/gantt/reload.ts:59](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/reload.ts#L59)
+
+***
+
+### weekId?
+
+> `optional` **weekId?**: `string`
+
+Defined in: [ui/src/api-server/gantt/reload.ts:64](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/reload.ts#L64)
+
+Reload only this timeline week. The rest of the schedule is neither
+compared nor touched, so other weeks' events never look removed.
+
+***
+
+### weekStarts?
+
+> `optional` **weekStarts?**: `string`[]
+
+Defined in: [ui/src/api-server/gantt/reload.ts:69](https://github.com/System-B90/Bluz/blob/9713962ebc3106e4e61b30619aa36a3bd2b7d3c7/ui/src/api-server/gantt/reload.ts#L69)
+
+Reload only the weeks starting on these Sundays (YYYY-MM-DD). A template
+save re-applies itself to exactly the weeks cut with it (#997).
