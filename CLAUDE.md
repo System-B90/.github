@@ -109,12 +109,12 @@ layout, then add an entry to the root `.claude-plugin/marketplace.json` with
 
 ## Runners
 
-**Public repos (`excelts`) run on GitHub-hosted runners only.** A self-hosted
-runner on a public repo runs any fork's pull request on the org's own box, and
-hosted minutes are free for public repos, so nothing below applies to them.
-**Known conflict:** `.github` is public too, yet its `ci.yml` runs every
-`pull_request`, forks' included, on self-hosted by default — flagged here, not
-yet changed.
+**Public repos never run pull requests on self-hosted runners.** A PR to a
+public repo can come from any fork, and on a self-hosted runner its code runs on
+the org's own box. Hosted minutes are free for public repos, so the budget
+below does not apply. `excelts` runs everything GitHub-hosted. `.github`'s
+`ci.yml` sends every `pull_request` run to `ubuntu-latest`; its push-to-`main`
+and `workflow_dispatch` runs (code already merged) keep the self-hosted default.
 
 **Long-running work belongs on the self-hosted runner
 (`runs-on: self-hosted`).** GitHub-hosted minutes are scarce, so anything that
