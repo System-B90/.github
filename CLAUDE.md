@@ -21,7 +21,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 | **hive-nextauth** | Shared NextAuth.js + Hive SSO helpers — `@system-b90/hive-nextauth`. |
 | **devops-py** | Shared dev-ops helpers behind each repo's `tools.py` — `sb90-devops`, published to the org pip index. Extracted from Bluz/madash copies (Bluz#226). |
 | **deploy-py** | Shared deployment flows behind every app's release bundle — `sb90-deploy`, published to the org pip index. Release bundling (`actions/craft-release`), the bundle bootstrap (host Python 3.6+ → 3.10+ `.venv`), install, in-place upgrade, `link-hive`, and the `setup.py` wizard toolkit (TLS, Hive SSO via pyhive). Each app keeps only `deploy/app.json` + its own `setup.py`. Ported from Bluz's scripts. |
-| **excelts** | ExcelJS with zero dependencies — `@system-b90/excelts`. **Public, MIT, published to npmjs.org** (and GitHub Packages). The full ExcelJS API as one self-contained, typed bundle, verified against upstream `exceljs` on every build. Extracted from Bluz's hand-rolled `ui/vendor/exceljs` bundle (Bluz#690, #777). |
+| **excelts** | Spreadsheet library — `@system-b90/excelts`: read, write and stream XLSX, and CSV, with zero runtime dependencies. **Public, MIT, published to npmjs.org** (and GitHub Packages). Its own source in `src/lib/`, behaviour pinned by snapshot tests. Bluz's vendored spreadsheet bundle (Bluz#690) moves to it once it is released. |
 | **.github** | Org-wide CI reusable workflows and composite actions (this repo). |
 
 Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Directories suffixed `-wt-*` (e.g. `bluz-wt-shared-pkgs`) are `git worktree` checkouts of the main repo on a different branch, not independent repos.
