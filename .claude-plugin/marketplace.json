@@ -23,6 +23,12 @@
       "description": "Auto-installs the madash CLI on session start and teaches the agent every command — madrat message (incl. live watch), call-to-Hadas board, journal, status board — no source reading required.",
       "source": "./plugins/madash",
       "category": "productivity"
+    },
+    {
+      "name": "pyhive",
+      "description": "Auto-installs PyHive on session start and teaches the agent the pyhive CLI and Python SDK for Hive LMS — sign-in without a browser, every command, JSON shapes, SDK recipes, known quirks — no source reading required.",
+      "source": "./plugins/pyhive",
+      "category": "productivity"
     }
   ]
 }
