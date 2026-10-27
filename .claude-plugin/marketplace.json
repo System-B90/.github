@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "bluz",
-      "description": "Auto-installs the bluz CLI on session start and teaches the agent every command, payload shape, and known server quirk — no source reading required.",
+      "description": "The /bluz skill — drive the Bluz scheduling/curriculum app through the bluz CLI and build a week's schedule by the formal week-building rules. Auto-installs the CLI on session start. Replaces the deprecated bluz-cli plugin.",
       "source": "./plugins/bluz",
       "category": "productivity"
     },

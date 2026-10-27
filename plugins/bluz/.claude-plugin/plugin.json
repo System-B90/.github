@@ -1,21 +1,21 @@
 {
-  "name": "bluz",
-  "description": "Skill + auto-setup for the bluz CLI (scheduling/curriculum API) — installs the CLI if missing and teaches an agent to drive it without reading source.",
-  "author": {
-    "name": "Michael K. Steinberg"
-  },
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ensure-bluz.js\"",
-            "timeout": 30,
-            "statusMessage": "Checking bluz CLI install..."
-          }
+    "name": "bluz",
+    "description": "The /bluz skill — drive the Bluz scheduling/curriculum app through the bluz CLI and build a week's schedule by the formal week-building rules. Installs the CLI on session start if missing. Replaces the deprecated bluz-cli plugin.",
+    "author": {
+        "name": "Michael K. Steinberg"
+    },
+    "hooks": {
+        "SessionStart": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ensure-bluz.js\"",
+                        "timeout": 30,
+                        "statusMessage": "Checking bluz CLI install..."
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }

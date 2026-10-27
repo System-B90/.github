@@ -71,7 +71,7 @@ Currently hosted:
 
 | Plugin | Source repo | What it does |
 | --- | --- | --- |
-| `bluz` | `bluz` (private) | Skill + auto-install for the `bluz` CLI. `SessionStart` hook `pip install`s `bluz` from this repo's pip index (see Package conventions) if missing — no Bluz checkout needed. |
+| `bluz` | `bluz` (private) | `/bluz` skill (CLI reference + week-building rules) + auto-install for the `bluz` CLI. `SessionStart` hook `pip install`s `bluz` from this repo's pip index (see Package conventions) if missing — no Bluz checkout needed. Copied from Bluz's `plugin/bluz/`: edit it there, never here. Replaced the old `bluz-cli` plugin. |
 | `pyhive` | `pyhive` | Skill + auto-install for the `pyhive` CLI and SDK. `skills/pyhive/` is generated: pyhive's `docs.yml` copies `pyhive/docs/*.md` there on every `v*` tag, alongside the built docs site at `pyhive/` in this repo — edit the docs in pyhive, never here. |
 
 Install any hosted plugin:
