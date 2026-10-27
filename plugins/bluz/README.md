@@ -21,11 +21,30 @@ if it isn't — no auth, no Bluz clone.
 
 ## What it does
 
-- Ships the `bluz` skill (`skills/bluz/SKILL.md`) — command reference,
-  payload shapes, output parsing conventions, known server bugs.
+- Ships the `/bluz` skill (`skills/bluz/`): `SKILL.md` routes between
+  week building (`week-builder.md` + `RULES.md`, the formal week-building
+  rules) and CLI use (`cli-reference.md` — every command, payload shapes,
+  known server bugs).
 - Runs a `SessionStart` hook (`hooks/ensure-bluz.js`) that silently
-  `pip install`s `bluz` from the org pip index if `bluz --version` fails.
-  Never blocks session start on error.
+  `pip install`s `bluz` if `bluz --version` fails — from the Bluz instance in
+  `instance.json` or `$BLUZ_URL` when set, else the org pip index. Never
+  blocks session start on error.
+
+## Source of truth
+
+Everything except this README is a copy of Bluz's `plugin/bluz/` (Bluz#978).
+Edit it there, then copy it here; don't edit the copy. Every Bluz instance
+also serves the same plugin at `/api/cli-dist` (`bluz plugin install`
+installs it as `bluz@bluz`).
+
+## Migrating from `bluz-cli`
+
+The old `bluz-cli` plugin is gone from this marketplace. If you still have
+it, remove it, then install `bluz` as above:
+
+```
+/plugin uninstall bluz-cli@system-b90-marketplace
+```
 
 ## How the CLI gets published here
 

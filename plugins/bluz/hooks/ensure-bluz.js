@@ -1,18 +1,17 @@
 #!/usr/bin/env node
 "use strict";
 
-// SessionStart hook: makes `bluz` usable with zero manual setup, without
-// needing any Bluz source checkout. Checks whether the CLI is on PATH; if
-// not, installs it from the org's public pip index (System-B90/.github,
-// PEP 503 static index served over GitHub Pages — no auth required, same
-// pattern as pyhive). raw.githubusercontent.com does NOT work here: it has
-// no directory-index fallback, so pip's request for the bare package
-// directory 404s. Silent-fails on any error — must never block session
-// start.
+// SessionStart hook: makes `bluz` usable with zero manual setup. If the CLI is
+// not on PATH, installs the wheel served by the Bluz instance this plugin came
+// from (`instance.json`, written by `bluz plugin install`), else the one at
+// $BLUZ_URL, else the org's public pip index. Silent-fails on any error — must
+// never block session start.
 
 const { spawnSync } = require("child_process");
+const fs = require("fs");
+const path = require("path");
 
-const INDEX_URL = "https://system-b90.github.io/.github/pypi/";
+const ORG_INDEX_URL = "https://system-b90.github.io/.github/pypi/";
 
 function commandExists() {
     const probe = spawnSync("bluz", ["--version"], { stdio: "ignore" });
@@ -27,18 +26,41 @@ function findPip() {
     return null;
 }
 
-function main() {
+function instanceUrl() {
+    try {
+        const file = path.join(__dirname, "..", "instance.json");
+        const { url } = JSON.parse(fs.readFileSync(file, "utf8"));
+        if (url) return url.replace(/\/+$/, "");
+    } catch {
+        // No instance.json — plugin installed from the org marketplace.
+    }
+    return (process.env.BLUZ_URL || "").replace(/\/+$/, "") || null;
+}
+
+async function wheelUrl(base) {
+    try {
+        const response = await fetch(`${base}/api/cli-dist`);
+        if (!response.ok) return null;
+        const { wheel } = await response.json();
+        return wheel ? `${base}/api/cli-dist/${wheel}` : null;
+    } catch {
+        return null;
+    }
+}
+
+async function main() {
     try {
         if (commandExists()) return;
 
         const pip = findPip();
         if (!pip) return;
 
-        spawnSync(
-            pip,
-            ["install", "--quiet", "--index-url", INDEX_URL, "bluz"],
-            { stdio: "ignore", timeout: 25000 },
-        );
+        const base = instanceUrl();
+        const wheel = base ? await wheelUrl(base) : null;
+        const args = wheel
+            ? ["install", "--quiet", wheel]
+            : ["install", "--quiet", "--extra-index-url", ORG_INDEX_URL, "bluz"];
+        spawnSync(pip, args, { stdio: "ignore", timeout: 25000 });
     } catch {
         // Never block session start over an install hiccup.
     }
