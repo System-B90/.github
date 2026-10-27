@@ -1,0 +1,101 @@
+name: Mirror release
+
+# Cuts a release of the System-B90 offline mirror (ops/mirror, #42): one nginx
+# image holding the pip index with every dependency, the docs sites and the
+# plugin marketplace, released as online/offline bundles the same way the apps
+# are, so an air-gapped host installs it with ./install.sh and upgrades with
+# ./update.sh --package. Manual on purpose: a release is a snapshot of main, and
+# nothing tells us when an air-gapped site wants a fresh one.
+on:
+    workflow_dispatch:
+        inputs:
+            tag:
+                description: 'Release tag (semver; default vYYYY.M.D of today)'
+                required: false
+                default: ''
+            runner:
+                description: 'Runner environment to execute on'
+                required: false
+                default: 'self-hosted'
+                type: choice
+                options:
+                    - self-hosted
+                    - github-hosted
+
+concurrency:
+    group: mirror-release
+    cancel-in-progress: false
+
+permissions:
+    contents: write
+    packages: write
+
+jobs:
+    # Builds an image and resolves wheels for 8 platform/Python targets, so it
+    # runs self-hosted (org CLAUDE.md, Runners). Only dispatched from main, so
+    # no fork code reaches the pool.
+    release:
+        name: Build and release the mirror
+        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux"]') }}
+        timeout-minutes: 60
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v7
+
+            - name: Setup Python
+              uses: actions/setup-python@v7
+              with:
+                  python-version: "3.13"
+
+            - name: Resolve tag
+              id: tag
+              env:
+                  TAG: ${{ inputs.tag }}
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  tag="${TAG:-v$(date -u +%Y.%-m.%-d)}"
+                  if ! [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+                      echo "::error::$tag is not vX.Y.Z; sb90-deploy's update only follows semver tags."
+                      exit 1
+                  fi
+                  if gh release view "$tag" >/dev/null 2>&1; then
+                      echo "::error::Release $tag already exists. A second release on one day needs an explicit tag, e.g. the next day's date."
+                      exit 1
+                  fi
+                  echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+            - name: Install sb90-deploy
+              run: >-
+                  python -m pip install --quiet --upgrade pip
+                  "sb90-deploy[bundle]==0.6.0"
+                  --extra-index-url https://system-b90.github.io/.github/pypi/
+
+            - name: Stage the site
+              run: python ops/mirror/build_site.py "$RUNNER_TEMP/mirror" --tag "${{ steps.tag.outputs.tag }}"
+
+            - name: Build and push the image
+              env:
+                  IMAGE: ghcr.io/system-b90/mirror/web:${{ steps.tag.outputs.tag }}
+              run: |
+                  echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+                  docker build --pull -t "$IMAGE" "$RUNNER_TEMP/mirror"
+                  docker push "$IMAGE"
+
+            - name: Craft bundles
+              id: craft
+              uses: ./actions/craft-release
+              with:
+                  tag: ${{ steps.tag.outputs.tag }}
+                  app: ops/mirror/app.json
+                  images: local
+                  sb90-deploy-version: "0.6.0"
+
+            - name: Publish the release
+              env:
+                  GH_TOKEN: ${{ github.token }}
+                  TAG: ${{ steps.tag.outputs.tag }}
+              run: |
+                  gh release create "$TAG" --target "$GITHUB_SHA" --title "Mirror $TAG" \
+                      --notes "System-B90 offline mirror, a snapshot of main at $GITHUB_SHA. Air-gapped hosts: download sb90-mirror-offline-$TAG.tar.gz, extract, run ./install.sh (upgrade: ./update.sh --package <file>). See ops/mirror/README.md." \
+                      "${{ steps.craft.outputs.online }}" "${{ steps.craft.outputs.offline }}"

@@ -22,7 +22,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 | **devops-py** | Shared dev-ops helpers behind each repo's `tools.py` — `sb90-devops`, published to the org pip index. Extracted from Bluz/madash copies (Bluz#226). |
 | **deploy-py** | Shared deployment flows behind every app's release bundle — `sb90-deploy`, published to the org pip index. Release bundling (`actions/craft-release`), the bundle bootstrap (host Python 3.6+ → 3.10+ `.venv`), install, in-place upgrade, `link-hive`, and the `setup.py` wizard toolkit (TLS, Hive SSO via pyhive). Each app keeps only `deploy/app.json` + its own `setup.py`. Ported from Bluz's scripts. |
 | **excelts** | Spreadsheet library — `@system-b90/excelts`: read, write and stream XLSX, and CSV, with zero runtime dependencies. **Public, MIT, published to npmjs.org** (and GitHub Packages). Its own source in `src/lib/`, behaviour pinned by snapshot tests. Bluz's vendored spreadsheet bundle (Bluz#690) moves to it once it is released. |
-| **.github** | Org-wide CI reusable workflows and composite actions (this repo). |
+| **.github** | Org-wide CI reusable workflows and composite actions (this repo). Also the offline mirror (`ops/mirror/`): the pip index with every dependency, the plugin marketplace and the docs in one nginx image, released as sb90-deploy bundles for air-gapped networks. |
 
 Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Directories suffixed `-wt-*` (e.g. `bluz-wt-shared-pkgs`) are `git worktree` checkouts of the main repo on a different branch, not independent repos.
 
@@ -88,6 +88,18 @@ e.g. `/plugin install bluz@system-b90-marketplace`.
 Adding a new plugin here: create `plugins/<name>/` following the `bluz`
 layout, then add an entry to the root `.claude-plugin/marketplace.json` with
 `"source": "./plugins/<name>"` and a row to the table above.
+
+## Offline mirror
+
+`ops/mirror/` packages what GitHub Pages serves (`pypi/` plus the full
+dependency closure, `bluz/` and `pyhive/` docs, the plugin marketplace) into
+`ghcr.io/system-b90/mirror/web:<tag>`, released from this repo by the manual
+**Mirror release** workflow as `sb90-mirror-{online,offline}-<tag>.tar.gz`. An
+air-gapped host installs it with `./install.sh` like any app. Anything that
+hard-codes `https://system-b90.github.io/.github` keeps working there: nginx
+rewrites that address in served text, and the marketplace's plugins are
+rewritten at container start. So keep using that one address in docs and
+hooks, not a variant of it. See `ops/mirror/README.md`.
 
 ## Git workflow
 
