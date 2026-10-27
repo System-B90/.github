@@ -4,6 +4,8 @@
 # actions/shared-hive-release; also usable by hand on the host.
 #
 #   hive-shared.sh bootstrap <hive-stack-dir>   (re)create the instance + baseline
+#   hive-shared.sh check                        exit 0 if the instance is usable, 1 if it
+#                                               needs a bootstrap (no state, pins or baseline)
 #   hive-shared.sh ensure                       start it if stopped, fail if absent
 #                                               (GHCR_TOKEN: re-fetch lost image pins)
 #   hive-shared.sh reset                        restore the baseline (clean state)
@@ -224,6 +226,21 @@ cmd_ensure() {
   compose up -d
 }
 
+# Whether ensure can bring the instance up, or it has to be bootstrapped again.
+# The baseline database can be lost while state/ survives (Postgres' data dir
+# emptied under a live state/ dir); ensure then fails on every run, so the
+# acquire action treats that as "needs bootstrap" too. Missing pinned images
+# are not a reason: ensure re-fetches them.
+cmd_check() {
+  [ -s "$STATE/dbname" ] && [ -f "$STACK/docker-compose.yaml" ] && [ -f "$STACK/$PIN_FILE" ] || return 1
+  restore_pins
+  compose up -d database redis
+  wait_db || return 1
+  [ -n "$(psql_admin "SELECT 1 FROM pg_database WHERE datname='$BASELINE_DB'")" ] || {
+    log "Baseline database '$BASELINE_DB' is missing"; return 1
+  }
+}
+
 cmd_reset() {
   local db owner; local -a svcs
   db=$(cat "$STATE/dbname")
@@ -248,6 +265,7 @@ cmd_status() {
 sub="${1:-status}"; shift || true
 case "$sub" in
   bootstrap) cmd_bootstrap "$@" ;;
+  check) cmd_check ;;
   ensure) cmd_ensure ;;
   reset) cmd_reset ;;
   wait) cmd_wait "$@" ;;
