@@ -136,11 +136,13 @@ runs:
       shell: bash
       env:
         REBUILD: ${{ inputs.rebuild }}
+        HIVE_SHARED: ${{ github.action_path }}/../shared-hive/hive-shared.sh
+        GHCR_TOKEN: ${{ inputs.stack-token }}
       run: |
-        # No pin file = bootstrapped before images were pinned (hive-shared.sh
-        # pin_images); its hive/* tags can't be trusted, so rebuild it.
-        if [ "$REBUILD" = "true" ] || [ ! -s "$HOME/hive-shared/state/dbname" ] ||
-          [ ! -f "$HOME/hive-shared/stack/docker-compose.pin.yaml" ]; then
+        # hive-shared.sh check fails when there is no instance, when it was
+        # bootstrapped before images were pinned (its hive/* tags can't be
+        # trusted), or when its baseline database is gone. All need a rebuild.
+        if [ "$REBUILD" = "true" ] || ! bash "$HIVE_SHARED" check; then
           echo "needed=true" >> "$GITHUB_OUTPUT"
         else
           echo "needed=false" >> "$GITHUB_OUTPUT"
