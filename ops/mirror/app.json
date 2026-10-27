@@ -1,0 +1,21 @@
+{
+  "name": "sb90-mirror",
+  "display_name": "System-B90 mirror",
+  "env_prefix": "MIRROR",
+  "release_repo": "System-B90/.github",
+  "roll": ["web"],
+  "health": { "service": "web", "url": "http://127.0.0.1/healthz" },
+  "containers": { "ui": "sb90-mirror-web", "proxy": "sb90-mirror-web" },
+  "state": ["ssl"],
+  "post_install": [
+    "Open the mirror's address in a browser: the landing page lists the pip,",
+    "git and Claude Code commands, and links ca.crt for clients to trust."
+  ],
+  "bundle": {
+    "dir": "sb90-mirror",
+    "files": {
+      "docker-compose.yml": "ops/mirror/docker-compose.release.yml",
+      "setup.py": "ops/mirror/setup.py"
+    }
+  }
+}

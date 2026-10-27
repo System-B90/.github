@@ -5,3 +5,7 @@
 ops/runner/*.sh text eol=lf
 ops/runner/*.service text eol=lf
 ops/runner/*.timer text eol=lf
+# Copied into a Linux image as-is (ops/mirror/Dockerfile).
+ops/mirror/*.sh text eol=lf
+ops/mirror/nginx.conf text eol=lf
+ops/mirror/Dockerfile text eol=lf
