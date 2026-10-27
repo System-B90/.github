@@ -41,6 +41,14 @@ npm install @system-b90/hive-core
 
 Installing needs a `GITHUB_TOKEN` or `NPM_TOKEN` carrying `read:packages`.
 
+`@system-b90/command-palette` is the exception: it is public on npmjs.org
+only, so a plain `npm install` works without a token. With the scope pointed
+at GitHub Packages, install it from npmjs.org explicitly:
+
+```bash
+npm install @system-b90/command-palette --@system-b90:registry=https://registry.npmjs.org
+```
+
 ### Run an app locally
 
 Every app repo ships a `tools.py` dev-ops CLI. From a fresh clone:
