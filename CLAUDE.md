@@ -5,7 +5,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 ## Org overview
 
 - **System-B90** — מערכות בלמ"סיות עבור הבי"ס — LMS tooling for a school.
-- Org: `github.com/System-B90`. All repos are **private**, except `.github` itself — GitHub requires the org-profile `.github` repo to be public for its README/health files to render.
+- Org: `github.com/System-B90`. All repos are **private**, except `.github` itself — GitHub requires the org-profile `.github` repo to be public for its README/health files to render — and `excelts`, which is open source on purpose (see its row below).
 - This file lives in the `.github` repo (checked out locally as `org-github` — the directory name doesn't match the GitHub repo name, don't let that confuse path assumptions).
 
 ## Repos and their purpose
@@ -21,6 +21,7 @@ Guidance for Claude Code / agentic sessions working anywhere in the System-B90 o
 | **hive-nextauth** | Shared NextAuth.js + Hive SSO helpers — `@system-b90/hive-nextauth`. |
 | **devops-py** | Shared dev-ops helpers behind each repo's `tools.py` — `sb90-devops`, published to the org pip index. Extracted from Bluz/madash copies (Bluz#226). |
 | **deploy-py** | Shared deployment flows behind every app's release bundle — `sb90-deploy`, published to the org pip index. Release bundling (`actions/craft-release`), the bundle bootstrap (host Python 3.6+ → 3.10+ `.venv`), install, in-place upgrade, `link-hive`, and the `setup.py` wizard toolkit (TLS, Hive SSO via pyhive). Each app keeps only `deploy/app.json` + its own `setup.py`. Ported from Bluz's scripts. |
+| **excelts** | Spreadsheet library — `@system-b90/excelts`: read, write and stream XLSX, and CSV, with zero runtime dependencies. **Public, MIT, published to npmjs.org** (and GitHub Packages). Its own source in `src/lib/`, behaviour pinned by snapshot tests. Bluz's vendored spreadsheet bundle (Bluz#690) moves to it once it is released. |
 | **.github** | Org-wide CI reusable workflows and composite actions (this repo). |
 
 Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Directories suffixed `-wt-*` (e.g. `bluz-wt-shared-pkgs`) are `git worktree` checkouts of the main repo on a different branch, not independent repos.
@@ -45,7 +46,7 @@ Local checkouts all live under `C:\Users\mkupe\Code\system-b90\<repo-name>`. Dir
 
 ## Package conventions
 
-- All shared npm packages are scoped `@system-b90/*`, published to GitHub Packages.
+- All shared npm packages are scoped `@system-b90/*`, published to GitHub Packages. `@system-b90/excelts` is also on the public npmjs.org registry, so it installs with or without the `.npmrc` below.
 - To install: add an `.npmrc` with `@system-b90:registry=https://npm.pkg.github.com`.
 - Auth requires `NPM_TOKEN` or `GITHUB_TOKEN` with `read:packages` scope.
 - pyhive is **not** on the official PyPI. It's published to a PEP 503 index hosted as static files in this repo (`pypi/`), served over **GitHub Pages** (`https://system-b90.github.io/.github/`). No auth is required to install — `.github` is public (see Org overview above):
@@ -108,6 +109,13 @@ layout, then add an entry to the root `.claude-plugin/marketplace.json` with
 - Never skip hooks (`--no-verify`, `-n`) to force a commit through.
 
 ## Runners
+
+**Public repos never run pull requests on self-hosted runners.** A PR to a
+public repo can come from any fork, and on a self-hosted runner its code runs on
+the org's own box. Hosted minutes are free for public repos, so the budget
+below does not apply. `excelts` runs everything GitHub-hosted. `.github`'s
+`ci.yml` sends every `pull_request` run to `ubuntu-latest`; its push-to-`main`
+and `workflow_dispatch` runs (code already merged) keep the self-hosted default.
 
 **Long-running work belongs on the self-hosted runner
 (`runs-on: self-hosted`).** GitHub-hosted minutes are scarce, so anything that

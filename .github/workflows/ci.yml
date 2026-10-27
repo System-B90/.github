@@ -28,15 +28,17 @@ permissions:
     contents: read
 
 jobs:
-    # GitHub-hosted on purpose, against the org CLAUDE.md default: the whole
-    # job is seconds long and only fires on PRs to this repo. Nothing here
-    # boots a Hive stack or builds an image, so it is not what the minutes
-    # budget is about. One job with sequential steps rather than a lint/test
-    # split, per the same guidance — the split would multiply checkout and
-    # install I/O for no parallelism worth having at this size.
+    # Pull requests always run GitHub-hosted. This repo is public, so a PR can
+    # come from any fork, and on a self-hosted runner its code would run on the
+    # org's own box. Hosted minutes are free for public repos, and the whole job
+    # is seconds long. Pushes to main and manual dispatches run code already
+    # merged, so they keep the self-hosted default and its `runner` toggle.
+    # One job with sequential steps rather than a lint/test split, per the org
+    # CLAUDE.md: the split would multiply checkout and install I/O for no
+    # parallelism worth having at this size.
     check:
         name: Lint and test
-        runs-on: ${{ (inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux"]') }}
+        runs-on: ${{ (github.event_name == 'pull_request' || inputs.runner == 'github-hosted' || vars.CI_RUNNER == 'github-hosted') && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux"]') }}
         timeout-minutes: 10
 
         steps:
