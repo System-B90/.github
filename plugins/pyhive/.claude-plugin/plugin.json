@@ -1,0 +1,21 @@
+{
+  "name": "pyhive",
+  "description": "Skill + auto-setup for the pyhive CLI and Python SDK (Hive LMS) — installs PyHive if missing and teaches an agent to drive it without reading source.",
+  "author": {
+    "name": "Michael K. Steinberg"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ensure-pyhive.js\"",
+            "timeout": 30,
+            "statusMessage": "Checking pyhive CLI install..."
+          }
+        ]
+      }
+    ]
+  }
+}
