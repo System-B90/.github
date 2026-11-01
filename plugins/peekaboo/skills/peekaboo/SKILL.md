@@ -86,7 +86,10 @@ peekaboo settings reset --yes                    # restore all defaults
 ```
 Keys: `VNC_CLIENT_PASSWORD, VNC_MASTER_PASSWORD, HIVE_HOSTNAME, HIVE_PASSWORD,
 HIVE_POSTGRES_HOSTNAME, HIVE_API_USERNAME, HIVE_API_PASSWORD, HIVE_POSTGRES_USERNAME,
-MATTERMOST_URL, MATTERMOST_ACCESS_TOKEN, TWEET_CHANNEL_ID`. Unknown keys are rejected.
+MATTERMOST_URL, MATTERMOST_ACCESS_TOKEN, TWEET_CHANNEL_URL`. Unknown keys are rejected.
+The tweet channel is set by its URL as copied from the browser
+(`https://<server>/<team>/channels/<channel>`), never by channel ID: the server looks the ID
+up when saving (a URL it can't resolve is refused) and shows it read-only as `TWEET_CHANNEL_ID`.
 **Always pass `--yes` to `reset`** in scripts, otherwise it blocks on a prompt.
 
 ### Misc
@@ -106,6 +109,6 @@ peekaboo --json students list --status Toilet | jq -r '.[].hostname'
 peekaboo --json students list --mine | jq -r '.[] | "\(.studentUsername)\t\(.currentExerciseName)"'
 # Point TigerVNC at a student
 peekaboo --json vnc info alice --reveal
-# Change the tweet channel
-peekaboo settings set TWEET_CHANNEL_ID=abc123
+# Change the tweet channel (its URL, as copied from the browser)
+peekaboo settings set TWEET_CHANNEL_URL=https://mattermost.example.com/my-team/channels/tweets
 ```
