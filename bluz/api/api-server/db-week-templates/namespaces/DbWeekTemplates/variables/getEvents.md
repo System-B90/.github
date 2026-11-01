@@ -8,7 +8,7 @@
 
 > `const` **getEvents**: (`id`, `courses`) => `Promise`\<[`WeekTemplateEventDocument`](../../../../../api-shared/types/week-template/type-aliases/WeekTemplateEventDocument.md)[]\> = `getTemplateEvents`
 
-Defined in: [ui/src/api-server/db-week-templates.ts:313](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-week-templates.ts#L313)
+Defined in: [ui/src/api-server/db-week-templates.ts:336](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-week-templates.ts#L336)
 
 A template's events for one iteration: course names resolved to that
 iteration's course ids, names it lacks dropped. Times stay in the

@@ -9,3 +9,4 @@
 ## Functions
 
 - [getModuleSpanDayIds](functions/getModuleSpanDayIds.md)
+- [getSyllabusSpanDayIds](functions/getSyllabusSpanDayIds.md)

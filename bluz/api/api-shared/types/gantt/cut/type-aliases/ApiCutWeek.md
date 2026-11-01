@@ -8,7 +8,7 @@
 
 > **ApiCutWeek** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:76](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L76)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:88](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L88)
 
 A timeline week the cut dialog can offer for a single-week cut (#970).
 
@@ -18,7 +18,7 @@ A timeline week the cut dialog can offer for a single-week cut (#970).
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:77](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L77)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:89](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L89)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:77](https://github.com/System-
 
 > **number**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:79](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L79)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:91](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L91)
 
 1-based position on the timeline.
 
@@ -36,6 +36,6 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:79](https://github.com/System-
 
 > **startDate**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:81](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L81)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:93](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L93)
 
 The week's Sunday (YYYY-MM-DD), or null without a start date.

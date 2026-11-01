@@ -8,7 +8,7 @@
 
 > **useEventState**(`initialState?`, `onTravel?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:254](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L254)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:274](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L274)
 
 ## Parameters
 
@@ -71,3 +71,17 @@ Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEven
 #### Returns
 
 [`TravelOutcome`](../type-aliases/TravelOutcome.md)
+
+### undoDeletion
+
+> **undoDeletion**: (`ids`) => `"stale"` \| [`TravelOutcome`](../type-aliases/TravelOutcome.md)
+
+#### Parameters
+
+##### ids
+
+`string`[]
+
+#### Returns
+
+`"stale"` \| [`TravelOutcome`](../type-aliases/TravelOutcome.md)

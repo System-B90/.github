@@ -6,18 +6,17 @@
 
 # Function: SettingsTextField()
 
-> **SettingsTextField**(`__namedParameters`): `Element`
+> **SettingsTextField**(`props`): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx:9](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx:8](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/SettingsTextField.tsx#L8)
 
-`TextField` with the settings-form look: small, full width, and the 10px
-input radius that every settings field repeated inline. Anything can still
-be overridden per call, and a caller-supplied `sx` merges on top rather
-than replacing the radius. See #191.
+`TextField` with the settings-form look: small and full width. The input
+radius is the theme's, like every other field in the app
+(docs/ux-guidelines.md §2); it used to be a settings-only 10px (#191).
 
 ## Parameters
 
-### \_\_namedParameters
+### props
 
 `TextFieldProps`
 

@@ -8,7 +8,7 @@
 
 > **pickTemplateTimes**(`source`, `fallback?`): [`WeekTemplateTimes`](../type-aliases/WeekTemplateTimes.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:215](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/week-template.ts#L215)
+Defined in: [ui/src/api-shared/types/week-template.ts:255](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/week-template.ts#L255)
 
 The time fields of a template, without its metadata.
 

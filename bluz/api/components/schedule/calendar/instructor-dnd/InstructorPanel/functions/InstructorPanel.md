@@ -8,7 +8,7 @@
 
 > **InstructorPanel**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx:146](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx#L146)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx:149](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx#L149)
 
 Every instructor as a drag source for the schedule calendar, plus the drop
 zone that unassigns a dragged person chip. Lives in the schedule side dock,

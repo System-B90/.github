@@ -8,7 +8,7 @@
 
 > **segmentKey**(`eventId`, `index`): `string`
 
-Defined in: [ui/src/components/schedule/calendar/split/segments.ts:214](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/split/segments.ts#L214)
+Defined in: [ui/src/components/schedule/calendar/split/segments.ts:234](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/split/segments.ts#L234)
 
 ## Parameters
 

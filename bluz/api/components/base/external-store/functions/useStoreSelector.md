@@ -8,7 +8,7 @@
 
 > **useStoreSelector**\<`T`, `S`\>(`store`, `selector`): `S`
 
-Defined in: [ui/src/components/base/external-store.ts:46](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/external-store.ts#L46)
+Defined in: [ui/src/components/base/external-store.ts:49](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/external-store.ts#L49)
 
 Subscribes to `store`, re-rendering only when `selector`'s result changes
 (by `Object.is`). The selector must return a primitive or an object that

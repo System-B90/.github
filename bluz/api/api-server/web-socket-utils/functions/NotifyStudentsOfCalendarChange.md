@@ -8,7 +8,7 @@
 
 > **NotifyStudentsOfCalendarChange**(`iterationId?`): `void`
 
-Defined in: [ui/src/api-server/web-socket-utils.ts:190](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/web-socket-utils.ts#L190)
+Defined in: [ui/src/api-server/web-socket-utils.ts:214](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/web-socket-utils.ts#L214)
 
 Tells student boards that the current iteration's calendar changed, so they
 refetch (#656).
@@ -21,7 +21,10 @@ here instead would put every one of those guarantees on the wrong side of
 the boundary.
 
 Only current-iteration writes ping: a student's board is pinned to the
-current iteration server-side and has no concept of any other.
+current iteration server-side and has no concept of any other. The staff UI
+always sends the current iteration's real id (`?it=` is backfilled), so an
+explicit id is checked against the registry rather than read as "past" —
+otherwise no staff edit ever reached a student board.
 
 ## Parameters
 

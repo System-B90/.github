@@ -8,7 +8,7 @@
 
 > **isPinkModeAllowed**(`clearance`, `studentPinkMode?`): `boolean`
 
-Defined in: [ui/src/api-server/student-pink-mode.ts:10](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/student-pink-mode.ts#L10)
+Defined in: [ui/src/api-server/student-pink-mode.ts:10](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/student-pink-mode.ts#L10)
 
 Whether a session gets the pink-mode toggle (#765). Staff always do;
 students only when the deployment sets `BLUZ_STUDENT_PINK_MODE=true`.

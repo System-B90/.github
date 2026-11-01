@@ -8,6 +8,6 @@
 
 > `const` **FIXTURE\_TUESDAY\_BLOCKED\_ID**: `"fx-h3"` = `"fx-h3"`
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:283](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/benchmark/fixture.ts#L283)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:285](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/benchmark/fixture.ts#L285)
 
 Hidden on Tuesday but under a visible event — must be skipped.

@@ -8,7 +8,7 @@
 
 > **aiModelHelper**(`model`, `list`, `hasOwnKey`): `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/PersonalSettings.tsx:909](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/PersonalSettings.tsx#L909)
+Defined in: [ui/src/components/settings-dialog/tabs/PersonalSettings.tsx:853](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/PersonalSettings.tsx#L853)
 
 Helper text under the model field (#779): says which model answers, and why
 a typed one may be ignored.

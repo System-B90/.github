@@ -11,7 +11,6 @@
 - [apiGetClasses](variables/apiGetClasses.md)
 - [apiGetLessons](variables/apiGetLessons.md)
 - [apiGetModules](variables/apiGetModules.md)
-- [apiGetQueues](variables/apiGetQueues.md)
 - [apiGetStudents](variables/apiGetStudents.md)
 - [apiGetSubjects](variables/apiGetSubjects.md)
 - [getHiveUsers](variables/getHiveUsers.md)

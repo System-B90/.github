@@ -6,12 +6,12 @@
 
 # Class: HiveClient
 
-Defined in: [ui/src/api-server/hive/client.ts:24](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/client.ts#L24)
+Defined in: [ui/src/api-server/hive/client.ts:24](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L24)
 
 Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
 rules, subjects, modules) lives in `@system-b90/hive-core`; this subclass
-adds rooms and the student-group/module-queue shortcuts.
+adds rooms, a cached student-group list and clearing a group's lesson.
 
 ## Extends
 
@@ -49,14 +49,47 @@ Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:173
 
 ## Methods
 
+### clearClassLesson()
+
+> **clearClassLesson**(`classId`): `Promise`\<`void`\>
+
+Defined in: [ui/src/api-server/hive/client.ts:89](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L89)
+
+#### Parameters
+
+##### classId
+
+`number`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### currentAccessToken()
+
+> **currentAccessToken**(): `string`
+
+Defined in: [ui/src/api-server/hive/client.ts:84](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L84)
+
+The access token this client currently holds, for calling another
+System-B90 app (Peek-a-Boo) that checks it against Hive.
+
+#### Returns
+
+`string`
+
+***
+
 ### getClasses()
 
 > **getClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:31](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/client.ts#L31)
+Defined in: [ui/src/api-server/hive/client.ts:32](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L32)
 
 Student groups change rarely and Bluz never writes them, yet every cut,
-lesson sync and feed fetches them: share one request per Hive instance
+activation tick and feed fetches them: share one request per Hive instance
 for `CLASSES_TTL_MS`. The promise is cached, so concurrent callers share
 the in-flight request; a failure is dropped so the next call retries.
 
@@ -70,32 +103,11 @@ the in-flight request; a failure is dropped so the next call retries.
 
 ***
 
-### getModuleQueues()
-
-> **getModuleQueues**(`moduleId`): `Promise`\<`Queue`[]\>
-
-Defined in: [ui/src/api-server/hive/client.ts:70](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/client.ts#L70)
-
-The queues of one Hive module — the only queues a lesson rule may point
-at (Hive rejects user queues on a rule).
-
-#### Parameters
-
-##### moduleId
-
-`number`
-
-#### Returns
-
-`Promise`\<`Queue`[]\>
-
-***
-
 ### getRooms()
 
 > **getRooms**(): `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/client.ts#L58)
+Defined in: [ui/src/api-server/hive/client.ts:65](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L65)
 
 #### Returns
 
@@ -107,11 +119,11 @@ Defined in: [ui/src/api-server/hive/client.ts:58](https://github.com/System-B90/
 
 > **refreshClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:53](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/client.ts#L53)
+Defined in: [ui/src/api-server/hive/client.ts:59](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L59)
 
 Drops this Hive's cached student groups and fetches them again, for a
 caller that just missed a group that may have been created since the
-cache filled (the lesson sync, when a shuffle matches no group).
+cache filled (the activator and feed, when a shuffle matches no group).
 
 #### Returns
 

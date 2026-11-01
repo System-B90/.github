@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1007,6 +1034,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ai-assistant-enoent-no-such-file-or-directory-open-etcbluzai-cacapem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI assistant: ENOENT: no such file or directory, open /etc/bluz/ai-ca/ca.pem
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1096,9 +1134,9 @@ even though the addresses differ.</p>
 <p><strong>Fix — distinct IPs.</strong> Works, but <em>both</em> stacks must bind specifically. Leaving
 either on <code>0.0.0.0</code> re-creates the conflict:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Hive's compose             # Bluz's .env</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">ports</span><span class="p">:</span><span class="w">                       </span><span class="l l-Scalar l-Scalar-Plain">BLUZ_BIND_IP=127.0.0.3</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">- "127.0.0.1:80:80"</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">- "127.0.0.1:443:443"</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">ports</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BLUZ_BIND_IP=127.0.0.3</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">- "127.0.0.1:80:80"</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">- "127.0.0.1:443:443"</span>
 </code></pre></div>
 <p>Find what currently holds the port:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ss<span class="w"> </span>-ltnp<span class="w"> </span><span class="s2">"sport = :80"</span><span class="w">                          </span><span class="c1"># Linux</span>
@@ -1220,13 +1258,24 @@ secrets before sharing, as <code>docker compose config</code> prints resolved va
 <p><strong>Cause.</strong> The AI gateway (e.g. Open WebUI on an internal network) presents a
 certificate signed by a private CA that the Bluz container does not trust.
 Disabling validation is not supported.</p>
-<p><strong>Fix.</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>ai-ca<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>/path/to/internal-ca.pem<span class="w"> </span>ai-ca/ca.pem
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'AI_CA_CERT_PATH=/etc/bluz/ai-ca/ca.pem'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.env
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>ui
+<p><strong>Fix.</strong> Re-run the wizard. It fetches the gateway's CA, shows its fingerprint
+and saves it to <code>ai-ca/ca.pem</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>python3<span class="w"> </span>bootstrap.py<span class="w"> </span>setup<span class="w">     </span><span class="c1"># enable the AI assistant, confirm the CA</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>ui
 </code></pre></div>
+<p>If this host cannot reach the gateway, copy the CA by hand and re-run setup:
+<code>mkdir -p ai-ca &amp;&amp; cp /path/to/internal-ca.pem ai-ca/ca.pem</code>.</p>
 <p><code>AI_CA_CERT_PATH</code> is trusted by the AI client only. Use
 <code>NODE_EXTRA_CA_CERTS=/etc/bluz/ai-ca/ca.pem</code> instead to trust it process-wide.</p>
+<h2 id="ai-assistant-enoent-no-such-file-or-directory-open-etcbluzai-cacapem">AI assistant: <code>ENOENT: no such file or directory, open /etc/bluz/ai-ca/ca.pem</code><a class="headerlink" href="#ai-assistant-enoent-no-such-file-or-directory-open-etcbluzai-cacapem" title="Permanent link">&para;</a></h2>
+<p><strong>Cause.</strong> <code>.env</code> sets <code>AI_CA_CERT_PATH</code>, but <code>ai-ca/ca.pem</code> beside
+<code>docker-compose.yml</code> is missing. Older wizards wrote the path without
+fetching the file.</p>
+<p><strong>Fix.</strong> Re-run the wizard. It probes the gateway, then either fetches its CA
+into <code>ai-ca/ca.pem</code> or clears the variable when the gateway is publicly trusted:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>python3<span class="w"> </span>bootstrap.py<span class="w"> </span>setup
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>ui
+</code></pre></div>
 
 
 

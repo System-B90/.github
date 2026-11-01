@@ -1,0 +1,46 @@
+[**TypeDoc API**](../../../../index.md)
+
+***
+
+[TypeDoc API](../../../../index.md) / [api-server/hive/live-lesson-push](../index.md) / planLiveLessonPush
+
+# Function: planLiveLessonPush()
+
+> **planLiveLessonPush**(`change`, `opened`, `heldElsewhere`): [`LiveLessonPlan`](../type-aliases/LiveLessonPlan.md)
+
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:94](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/live-lesson-push.ts#L94)
+
+Decides which groups an edit touches. Kept pure so it is testable without
+a Hive.
+
+Re-assigning resets every student of the group to where the lesson's
+rules (in Hive) send them, so it is done only where something changed: a
+group new to the event, or a new lesson. Renaming a running event moves
+nobody. Only groups Bluz actually assigned (the ledger) are cleared, and
+never one another running event holds.
+
+## Parameters
+
+### change
+
+[`LiveLessonChange`](../type-aliases/LiveLessonChange.md)
+
+The edit.
+
+### opened
+
+`Pick`\<[`HiveLessonActivation`](../../../../api-shared/types/hive-activation/type-aliases/HiveLessonActivation.md), `"hiveClassId"` \| `"lessonId"`\>[]
+
+The ledger rows of the occurrence(s) being edited.
+
+### heldElsewhere
+
+`Set`\<`number`\>
+
+Groups another live event has opened.
+
+## Returns
+
+[`LiveLessonPlan`](../type-aliases/LiveLessonPlan.md)
+
+The groups to assign and to close.

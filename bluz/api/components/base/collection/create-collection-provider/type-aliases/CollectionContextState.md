@@ -8,7 +8,7 @@
 
 > **CollectionContextState**\<`T`, `TCreate`\> = `object`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:126](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L126)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:128](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L128)
 
 ## Type Parameters
 
@@ -24,9 +24,12 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:12
 
 ### addItem
 
-> **addItem**: (`data`) => `Promise`\<`void`\>
+> **addItem**: (`data`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:131](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L131)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:137](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L137)
+
+Mutations report failure with a snackbar and resolve to `false`
+instead of rejecting, so a form can keep what was typed.
 
 #### Parameters
 
@@ -36,7 +39,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
@@ -44,15 +47,15 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:127](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L127)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:129](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L129)
 
 ***
 
 ### deleteItem
 
-> **deleteItem**: (`key`) => `Promise`\<`void`\>
+> **deleteItem**: (`key`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:135](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L135)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:141](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L141)
 
 #### Parameters
 
@@ -62,7 +65,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
@@ -70,7 +73,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 > **getItem**: (`key`) => `T` \| `undefined`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:130](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L130)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:132](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L132)
 
 #### Parameters
 
@@ -88,7 +91,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:129](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L129)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:131](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L131)
 
 ***
 
@@ -96,15 +99,15 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:12
 
 > **items**: `T`[]
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:128](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L128)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:130](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L130)
 
 ***
 
 ### mutate
 
-> **mutate**: (`mutation`) => `Promise`\<`void`\>
+> **mutate**: (`mutation`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:137](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L137)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:143](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L143)
 
 Escape hatch for collection-specific writes (e.g. room extended info).
 
@@ -116,15 +119,15 @@ Escape hatch for collection-specific writes (e.g. room extended info).
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
 ### patchItem
 
-> **patchItem**: (`key`, `changes`) => `Promise`\<`void`\>
+> **patchItem**: (`key`, `changes`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:134](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L134)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:140](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L140)
 
 Merges `changes` into the stored item and persists the merged result.
 
@@ -140,15 +143,15 @@ Merges `changes` into the stored item and persists the merged result.
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
 ### updateItem
 
-> **updateItem**: (`item`) => `Promise`\<`void`\>
+> **updateItem**: (`item`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:132](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L132)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:138](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L138)
 
 #### Parameters
 
@@ -158,4 +161,4 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>

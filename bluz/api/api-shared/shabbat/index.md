@@ -8,4 +8,6 @@
 
 ## Functions
 
+- [civilDate](functions/civilDate.md)
 - [getShabbatWindow](functions/getShabbatWindow.md)
+- [venueLocation](functions/venueLocation.md)

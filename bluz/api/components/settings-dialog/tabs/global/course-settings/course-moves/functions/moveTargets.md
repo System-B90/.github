@@ -6,13 +6,13 @@
 
 # Function: moveTargets()
 
-> **moveTargets**(`courses`, `course`): [`CourseOption`](../../../../../../base/course-options/type-aliases/CourseOption.md)[]
+> **moveTargets**(`courses`, `course`, `searchQuery?`): [`CourseOption`](../../../../../../base/course-options/type-aliases/CourseOption.md)[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:33](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L33)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L33)
 
 Where `course` can move to, as course-tree rows: every course except the
 course itself, its descendants (which would make a cycle) and its current
-parent (a no-op).
+parent (a no-op). A search keeps matches plus their ancestors.
 
 ## Parameters
 
@@ -23,6 +23,10 @@ readonly [`Course`](../../../../../../../api-shared/types/course/type-aliases/Co
 ### course
 
 [`Course`](../../../../../../../api-shared/types/course/type-aliases/Course.md)
+
+### searchQuery?
+
+`string` = `""`
 
 ## Returns
 

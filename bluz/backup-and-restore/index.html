@@ -372,6 +372,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ai-assistant/" class="md-nav__link">
         
   
@@ -798,10 +825,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -819,8 +846,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1237,10 +1264,10 @@ volumes does not survive the failure it exists to protect against.</p>
    (<code>bluz-restore.sh</code> does this automatically.)</li>
 <li><strong>Announce downtime.</strong> The restore stops <code>ui</code> and <code>sessions</code>.</li>
 <li><strong>Run the restore.</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>./deploy/backup/bluz-restore.sh<span class="w"> </span>/var/backups/bluz/daily/&lt;stamp&gt;
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>./deploy/backup/bluz-restore.sh<span class="w"> </span>/var/backups/bluz/daily/&lt;stamp&gt;
 </code></pre></div>
-   It prompts for the literal word <code>RESTORE</code>. Pass <code>--yes</code> to skip the prompt in
-   an automated drill.</li>
+    It prompts for the literal word <code>RESTORE</code>. Pass <code>--yes</code> to skip the prompt in
+    an automated drill.</li>
 <li><strong>Restore one engine only</strong> when only one is damaged:
    <code>--postgres-only</code> or <code>--mongo-only</code>.</li>
 <li><strong>Verify.</strong> Log in, open the schedule (MongoDB) and a curriculum (Postgres).

@@ -8,6 +8,6 @@
 
 > `const` **FIXTURE\_MEALS\_FROM\_DAY**: `14` = `14`
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:232](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/benchmark/fixture.ts#L232)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:233](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/benchmark/fixture.ts#L233)
 
 First day of the bulk meal block, days after [FIXTURE\_NOW](FIXTURE_NOW.md).

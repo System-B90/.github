@@ -8,7 +8,7 @@
 
 > **subscribeHoursFormat**(`listener`): () => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:86](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L86)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:99](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L99)
 
 ## Parameters
 

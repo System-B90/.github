@@ -8,7 +8,7 @@
 
 > **callbackUrl**(`port`, `code`, `handoffCode`): `string`
 
-Defined in: [ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx:32](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx#L32)
+Defined in: [ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx#L33)
 
 The loopback callback URL. Carries the verification code (#521 -- proves
 the browser talking to the CLI's server is the one this login started

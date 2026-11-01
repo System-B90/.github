@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/week-templates/\[id\]/route.ts:40](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/week-templates/[id]/route.ts#L40)
+Defined in: [ui/src/app/api/week-templates/\[id\]/route.ts:42](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/week-templates/[id]/route.ts#L42)
 
 GET /api/week-templates/[id] — a template and its events, their courses
 resolved by name against the requested iteration.

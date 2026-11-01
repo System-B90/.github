@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -921,10 +948,43 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ips?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#seconds" class="md-nav__link">
     <span class="md-ellipsis">
       
         seconds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#securityeventcount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        securityEventCount?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#securityevents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        securityEvents?
       
     </span>
   </a>
@@ -985,7 +1045,7 @@
 <blockquote>
 <p><strong>StudentEngagementDocument</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L419">ui/src/api-server/mongo-db-controller.ts:419</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L455">ui/src/api-server/mongo-db-controller.ts:455</a></p>
 <p>One student's focused time on the schedule board for one day. <code>id</code> is
 <code>&lt;userId&gt;:&lt;date&gt;</code> so the upsert is a single keyed <code>$inc</code> with no read.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
@@ -993,33 +1053,54 @@
 <blockquote>
 <p><strong>date</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L423">ui/src/api-server/mongo-db-controller.ts:423</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L459">ui/src/api-server/mongo-db-controller.ts:459</a></p>
 <p><code>yyyy-MM-dd</code> in the app timezone.</p>
 <hr />
 <h3 id="id">id<a class="headerlink" href="#id" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>id</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L420">ui/src/api-server/mongo-db-controller.ts:420</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L456">ui/src/api-server/mongo-db-controller.ts:456</a></p>
+<hr />
+<h3 id="ips">ips?<a class="headerlink" href="#ips" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>ips?</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L464">ui/src/api-server/mongo-db-controller.ts:464</a></p>
+<p>Every address the board reported from that day (nginx-derived).</p>
 <hr />
 <h3 id="seconds">seconds<a class="headerlink" href="#seconds" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>seconds</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L425">ui/src/api-server/mongo-db-controller.ts:425</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L461">ui/src/api-server/mongo-db-controller.ts:461</a></p>
 <p>Total seconds the board was open <em>and</em> focused that day.</p>
+<hr />
+<h3 id="securityeventcount">securityEventCount?<a class="headerlink" href="#securityeventcount" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>securityEventCount?</strong>: <code>number</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L468">ui/src/api-server/mongo-db-controller.ts:468</a></p>
+<p>True total, including any dropped from <code>securityEvents</code>.</p>
+<hr />
+<h3 id="securityevents">securityEvents?<a class="headerlink" href="#securityevents" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>securityEvents?</strong>: <a href="../../../../api-shared/types/student-view/type-aliases/StudentSecurityEvent/"><code>StudentSecurityEvent</code></a>[]</p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L466">ui/src/api-server/mongo-db-controller.ts:466</a></p>
+<p>Most recent suspected malicious attempts that day, oldest dropped first.</p>
 <hr />
 <h3 id="updatedat">updatedAt<a class="headerlink" href="#updatedat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>updatedAt</strong>: <code>Date</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L426">ui/src/api-server/mongo-db-controller.ts:426</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L462">ui/src/api-server/mongo-db-controller.ts:462</a></p>
 <hr />
 <h3 id="userid">userId<a class="headerlink" href="#userid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>userId</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L421">ui/src/api-server/mongo-db-controller.ts:421</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L457">ui/src/api-server/mongo-db-controller.ts:457</a></p>
 
 
 

@@ -8,7 +8,7 @@
 
 > **GanttFilterButton**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/GanttFilterButton.tsx:30](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/GanttFilterButton.tsx#L30)
+Defined in: [ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/GanttFilterButton.tsx:31](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/GanttFilterButton.tsx#L31)
 
 Popover with the gantt syllabus filters, mirroring the schedule's filter icon.
 

@@ -6,7 +6,7 @@
 
 # Class: AiNotConfiguredError
 
-Defined in: [ui/src/api-server/ai/provider.ts:97](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/provider.ts#L97)
+Defined in: [ui/src/api-server/ai/provider.ts:96](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/provider.ts#L96)
 
 Raised when the deployment has no usable AI configuration.
 
@@ -20,7 +20,7 @@ Raised when the deployment has no usable AI configuration.
 
 > **new AiNotConfiguredError**(`message`): `AiNotConfiguredError`
 
-Defined in: [ui/src/api-server/ai/provider.ts:98](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/provider.ts#L98)
+Defined in: [ui/src/api-server/ai/provider.ts:98](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/provider.ts#L98)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-server/ai/provider.ts:98](https://github.com/System-B90/
 
 > `readonly` `optional` **status?**: `number`
 
-Defined in: [ui/src/api-server/ai/provider.ts:87](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/provider.ts#L87)
+Defined in: [ui/src/api-server/ai/provider.ts:85](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/provider.ts#L85)
 
 #### Inherited from
 

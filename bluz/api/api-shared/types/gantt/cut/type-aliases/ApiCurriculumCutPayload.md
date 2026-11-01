@@ -8,7 +8,7 @@
 
 > **ApiCurriculumCutPayload** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:17](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L17)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:17](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L17)
 
 API contract for the curriculum → schedule cut ("גזירה ללו"ז", #118).
 The endpoint materializes a published curriculum's gantt data into schedule
@@ -21,10 +21,20 @@ from the curriculum id, so the request carries no payload.
 
 > `optional` **acceptedConstraintMoves?**: `string`[]
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:43](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L43)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:47](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L47)
 
 Event ids whose constraint-solver moves the user accepted in the dialog.
 Anything not listed is reported but never moved.
+
+***
+
+### assignInstructors?
+
+> `optional` **assignInstructors?**: `boolean`
+
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:37](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L37)
+
+Place each event's orchestrator as its instructor. Defaults to on.
 
 ***
 
@@ -32,7 +42,7 @@ Anything not listed is reported but never moved.
 
 > `optional` **autoSpillover?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:28](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L28)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:28](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L28)
 
 Rebalance each week so no day exceeds its working window, cascading work
 forward within the week. Defaults to on.
@@ -43,7 +53,7 @@ forward within the week. Defaults to on.
 
 > `optional` **force?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:23](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L23)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:23](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L23)
 
 Cut anyway despite unmapped events / unsatisfied recurrences (an
 unfinished gantt). The user explicitly acknowledges the gap; those
@@ -55,10 +65,22 @@ events are dropped from the cut instead of blocking it.
 
 > `optional` **insertBreaks?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:33](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L33)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L33)
 
 Spread each day's leftover slack through the day as real הפסקה events
 instead of leaving it as an empty tail. Defaults to on.
+
+***
+
+### parkNonTemplate?
+
+> `optional` **parkNonTemplate?**: `boolean`
+
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:68](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L68)
+
+Place only what the week template places and park the rest in the
+unassigned box, instead of auto-placing it around the template's
+events. Defaults to off.
 
 ***
 
@@ -66,7 +88,7 @@ instead of leaving it as an empty tail. Defaults to on.
 
 > `optional` **parkWeekOnly?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:38](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L38)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:42](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L42)
 
 Put week-only mappings in the schedule's unassigned box (ארגז) instead
 of auto-scheduling them. Defaults to off.
@@ -77,7 +99,7 @@ of auto-scheduling them. Defaults to off.
 
 > `optional` **templateId?**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:58](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L58)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:62](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L62)
 
 Week template to cut with (#997): its events' placements and its day
 start, meal and prayer times. Omitted ⇒ the default template.
@@ -88,7 +110,7 @@ start, meal and prayer times. Omitted ⇒ the default template.
 
 > `optional` **weekId?**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:53](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L53)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:57](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L57)
 
 Cut only this timeline week (#970). Its earlier cut events are replaced;
 every other week is left as it is. Omitted ⇒ the whole curriculum.
@@ -99,7 +121,7 @@ every other week is left as it is. Omitted ⇒ the whole curriculum.
 
 > `optional` **weekOverflowResolutions?**: `Record`\<`string`, [`WeekOverflowResolution`](../../../../gantt/cut-rules/type-aliases/WeekOverflowResolution.md)\>
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:48](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/cut.ts#L48)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:52](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/cut.ts#L52)
 
 The user's answer to each `week-overflow` decision, keyed by week id.
 Weeks left out fall back to `OVERFLOW_RULES.defaultResolution`.

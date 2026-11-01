@@ -8,11 +8,11 @@
 
 > **getSessionUser**(): `Promise`\<[`SessionUser`](../type-aliases/SessionUser.md) \| `null`\>
 
-Defined in: [ui/src/api-server/session-user.ts:18](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/session-user.ts#L18)
+Defined in: [ui/src/api-server/session-user.ts:162](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/session-user.ts#L162)
 
-Resolves the currently authenticated user from the NextAuth session, or
-`null` when there is no active session. Use for attributing server-side
-writes (e.g. who last edited a shared draft).
+Resolves the currently authenticated user from the NextAuth session (or a
+personal access token), or `null` when there is none. Use for attributing
+server-side writes (e.g. who last edited a shared draft).
 
 ## Returns
 

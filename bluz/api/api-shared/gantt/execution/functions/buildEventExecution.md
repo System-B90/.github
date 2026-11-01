@@ -8,7 +8,7 @@
 
 > **buildEventExecution**(`args`): [`GanttEventExecution`](../../../types/gantt/execution/type-aliases/GanttEventExecution.md)
 
-Defined in: [ui/src/api-shared/gantt/execution.ts:46](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/execution.ts#L46)
+Defined in: [ui/src/api-shared/gantt/execution.ts:50](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/execution.ts#L50)
 
 Joins one gantt event's planned occurrences with its cut schedule events.
 

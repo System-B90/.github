@@ -6,15 +6,16 @@
 
 # Function: syncEventLessonToHive()
 
-> **syncEventLessonToHive**(`event`, `action`, `controller?`): `void`
+> **syncEventLessonToHive**(`event`, `action`, `controller?`, `previous?`): `void`
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:235](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/lesson-sync.ts#L235)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:122](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/lesson-sync.ts#L122)
 
-Fire-and-forget wrapper hung off the event write routes, mirroring how
-Google Calendar sync is attached: it runs with the editing Segel's Hive
-credentials and can never fail the Bluz write it accompanies. The lesson id
-it settles on is written straight back onto the stored event, without going
-through `DbEvent.set` — that would re-enter this sync.
+Fire-and-forget hook on the event write routes, mirroring how Google
+Calendar sync is attached: it can never fail the Bluz write it accompanies.
+Only a running event has anything to push; every other write is a no-op
+until the activator reaches the event's start.
+
+Runs with the editing Segel's own Hive credentials.
 
 ## Parameters
 
@@ -26,7 +27,7 @@ The event as stored.
 
 ### action
 
-`"delete"` \| `"upsert"`
+`"upsert"` \| `"delete"`
 
 Whether the event still exists or was just deleted.
 
@@ -36,6 +37,12 @@ Whether the event still exists or was just deleted.
 
 The iteration's Mongo controller.
 
+### previous?
+
+[`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)
+
+The event before this write, for an update.
+
 ## Returns
 
 `void`
@@ -43,5 +50,5 @@ The iteration's Mongo controller.
 ## Example
 
 ```typescript
-syncEventLessonToHive(updated, "upsert", controller);
+syncEventLessonToHive(updated, "upsert", controller, previous);
 ```

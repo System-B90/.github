@@ -15,6 +15,7 @@
 - [getCurriculumTool](variables/getCurriculumTool.md)
 - [listCurriculumsTool](variables/listCurriculumsTool.md)
 - [previewCutTool](variables/previewCutTool.md)
+- [reloadScheduleTool](variables/reloadScheduleTool.md)
 
 ## Functions
 

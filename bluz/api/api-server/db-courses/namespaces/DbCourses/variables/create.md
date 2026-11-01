@@ -6,9 +6,9 @@
 
 # Variable: create
 
-> `const` **create**: (`course`, `controller`) => `Promise`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md)\> = `createDbCourse`
+> `const` **create**: (`course`, `controller`) => `Promise`\<`Pick`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md), `"id"` \| `"name"` \| `"description"` \| `"color"` \| `"parentId"` \| `"hiveClassId"` \| `"instructorIds"`\>\> = `createDbCourse`
 
-Defined in: [ui/src/api-server/db-courses.ts:81](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-courses.ts#L81)
+Defined in: [ui/src/api-server/db-courses.ts:88](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-courses.ts#L88)
 
 ## Parameters
 
@@ -22,4 +22,4 @@ Defined in: [ui/src/api-server/db-courses.ts:81](https://github.com/System-B90/B
 
 ## Returns
 
-`Promise`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md)\>
+`Promise`\<`Pick`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md), `"id"` \| `"name"` \| `"description"` \| `"color"` \| `"parentId"` \| `"hiveClassId"` \| `"instructorIds"`\>\>

@@ -8,15 +8,15 @@
 
 > **RoomsContextState** = `object`
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:23](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L23)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:23](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L23)
 
 ## Properties
 
 ### addRoom
 
-> **addRoom**: (`roomData`) => `Promise`\<`void`\>
+> **addRoom**: (`roomData`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:28](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L28)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:28](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L28)
 
 #### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:28](https://github.com/Sys
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
@@ -34,15 +34,15 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:28](https://github.com/Sys
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:24](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L24)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:24](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L24)
 
 ***
 
 ### deleteRoom
 
-> **deleteRoom**: (`roomId`) => `Promise`\<`void`\>
+> **deleteRoom**: (`roomId`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:30](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L30)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:30](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L30)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:30](https://github.com/Sys
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:30](https://github.com/Sys
 
 > **getRoom**: (`id`) => `null` \| [`Room`](../../../../api-shared/types/room/type-aliases/Room.md)
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:27](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L27)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:27](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L27)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:27](https://github.com/Sys
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:26](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L26)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:26](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L26)
 
 ***
 
@@ -86,15 +86,15 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:26](https://github.com/Sys
 
 > **rooms**: [`Room`](../../../../api-shared/types/room/type-aliases/Room.md)[]
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:25](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L25)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:25](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L25)
 
 ***
 
 ### updateRoom
 
-> **updateRoom**: (`room`) => `Promise`\<`void`\>
+> **updateRoom**: (`room`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:29](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L29)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:29](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L29)
 
 #### Parameters
 
@@ -104,15 +104,15 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:29](https://github.com/Sys
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
 ### updateRoomExtendedInfo
 
-> **updateRoomExtendedInfo**: (`roomId`, `roomSource`, `extendedInfo`) => `Promise`\<`void`\>
+> **updateRoomExtendedInfo**: (`roomId`, `roomSource`, `extendedInfo`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/RoomsProvider.tsx:31](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/RoomsProvider.tsx#L31)
+Defined in: [ui/src/components/base/RoomsProvider.tsx:31](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/RoomsProvider.tsx#L31)
 
 #### Parameters
 
@@ -130,4 +130,4 @@ Defined in: [ui/src/components/base/RoomsProvider.tsx:31](https://github.com/Sys
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>

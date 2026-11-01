@@ -12,8 +12,10 @@
 
 ## Functions
 
+- [courseFilterMatches](functions/courseFilterMatches.md)
 - [descendantCoursesResolver](functions/descendantCoursesResolver.md)
 - [isShuffleCourse](functions/isShuffleCourse.md)
 - [lowestCommonCourse](functions/lowestCommonCourse.md)
+- [namedCourseOptions](functions/namedCourseOptions.md)
 - [relatedCourses](functions/relatedCourses.md)
 - [relatedCoursesResolver](functions/relatedCoursesResolver.md)

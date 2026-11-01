@@ -8,7 +8,7 @@
 
 > **formatDateTimeChangeNote**(`from`, `to`): `string` \| `null`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:105](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L105)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:105](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L105)
 
 Builds a human-readable Hebrew note describing a startTime/endTime change,
 e.g. "הוקדם משעה 11:15 לשעה 10:15" / "נדחה משעה 10:15 לשעה 11:15" for a
@@ -20,11 +20,11 @@ Returns null when there's nothing meaningful to report.
 
 ### from
 
-`string` \| `number` \| `boolean` \| `string`[] \| `number`[] \| `Record`\<`string`, `number`\> \| `Dayjs` \| [`ResolvableRoom`](../../../../../../api-shared/types/room/type-aliases/ResolvableRoom.md)[] \| [`PersonId`](../../../../../../api-shared/types/event/type-aliases/PersonId.md)[] \| `null` \| `undefined`
+`string` \| `number` \| `boolean` \| `string`[] \| `number`[] \| `Dayjs` \| [`ResolvableRoom`](../../../../../../api-shared/types/room/type-aliases/ResolvableRoom.md)[] \| [`PersonId`](../../../../../../api-shared/types/event/type-aliases/PersonId.md)[] \| `null` \| `undefined`
 
 ### to
 
-`string` \| `number` \| `boolean` \| `string`[] \| `number`[] \| `Record`\<`string`, `number`\> \| `Dayjs` \| [`ResolvableRoom`](../../../../../../api-shared/types/room/type-aliases/ResolvableRoom.md)[] \| [`PersonId`](../../../../../../api-shared/types/event/type-aliases/PersonId.md)[] \| `null` \| `undefined`
+`string` \| `number` \| `boolean` \| `string`[] \| `number`[] \| `Dayjs` \| [`ResolvableRoom`](../../../../../../api-shared/types/room/type-aliases/ResolvableRoom.md)[] \| [`PersonId`](../../../../../../api-shared/types/event/type-aliases/PersonId.md)[] \| `null` \| `undefined`
 
 ## Returns
 

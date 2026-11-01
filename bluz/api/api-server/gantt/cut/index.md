@@ -31,6 +31,7 @@
 - [cutEventName](functions/cutEventName.md)
 - [getCutStatus](functions/getCutStatus.md)
 - [indexCurriculumEvents](functions/indexCurriculumEvents.md)
+- [loadManuallyDeletedKeys](functions/loadManuallyDeletedKeys.md)
 - [loadPlanningContext](functions/loadPlanningContext.md)
 - [materializeCurriculumEvents](functions/materializeCurriculumEvents.md)
 - [moduleEventTypeToCalendarType](functions/moduleEventTypeToCalendarType.md)

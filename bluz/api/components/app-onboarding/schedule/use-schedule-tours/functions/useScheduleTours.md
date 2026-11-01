@@ -6,13 +6,23 @@
 
 # Function: useScheduleTours()
 
-> **useScheduleTours**(): `void`
+> **useScheduleTours**(`__namedParameters`): `void`
 
-Defined in: [ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx:33](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx#L33)
+Defined in: [ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx:22](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx#L22)
 
-The schedule screen's two tours (#986): a basic one that runs on the first
-visit, and a power-user one for building a whole week, replayed from the
-help panel. Same pattern as the gantt tour.
+Registers every schedule tutorial (#986) for as long as the screen is
+mounted: the intro, which runs by itself on the first visit, and one tour
+per task, run from the help panel or the palette.
+
+Built in one `useMemo`, since `useTour` needs referentially stable tours, and
+registered in `SCHEDULE_TUTORIAL_LIST` order, which is the order the help
+panel lists them in.
+
+## Parameters
+
+### \_\_namedParameters
+
+[`ScheduleTourDeps`](../../tours/types/type-aliases/ScheduleTourDeps.md)
 
 ## Returns
 

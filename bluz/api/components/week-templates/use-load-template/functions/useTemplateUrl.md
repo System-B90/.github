@@ -8,9 +8,13 @@
 
 > **useTemplateUrl**(): `void`
 
-Defined in: [ui/src/components/week-templates/use-load-template.ts:65](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/week-templates/use-load-template.ts#L65)
+Defined in: [ui/src/components/week-templates/use-load-template.ts:81](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/week-templates/use-load-template.ts#L81)
 
-Opens the template named in `?template=` once, after the first fetch lands.
+Every template has its own editing URL, `/?template=<id>`. Opening that URL
+opens the template once the first fetch lands. While a template is open,
+however it was opened, the address bar names it, so the link can be shared
+and a refresh reopens it. Ending the session drops the param. Edits are
+local until saved, so leaving or refreshing with unsaved edits asks first.
 
 ## Returns
 

@@ -8,6 +8,6 @@
 
 > `const` **SYLLABUS\_EXPORT\_KIND**: `"bluz-syllabus"` = `"bluz-syllabus"`
 
-Defined in: [ui/src/api-shared/types/gantt/syllabus-export.ts:4](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/syllabus-export.ts#L4)
+Defined in: [ui/src/api-shared/types/gantt/syllabus-export.ts:4](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/syllabus-export.ts#L4)
 
 Marks a file as one syllabus, not a whole curriculum (#757).

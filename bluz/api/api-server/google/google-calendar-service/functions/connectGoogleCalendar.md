@@ -8,7 +8,7 @@
 
 > **connectGoogleCalendar**(`userId`, `code`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:457](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/google/google-calendar-service.ts#L457)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:503](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/google/google-calendar-service.ts#L503)
 
 Exchanges the GIS popup authorization `code` for tokens, finds (or creates)
 the calendar for the current iteration in the user's account, and persists

@@ -8,5 +8,6 @@
 
 ## Functions
 
+- [ForceReloadStudentViews](functions/ForceReloadStudentViews.md)
 - [NotifyStudentsOfCalendarChange](functions/NotifyStudentsOfCalendarChange.md)
 - [SendServerRequestToSessionServer](functions/SendServerRequestToSessionServer.md)

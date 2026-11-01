@@ -9,4 +9,4 @@
 ## Functions
 
 - [getRangeForView](functions/getRangeForView.md)
-- [isWeekendInAppTimezone](functions/isWeekendInAppTimezone.md)
+- [isOffWorkWeekInAppTimezone](functions/isOffWorkWeekInAppTimezone.md)

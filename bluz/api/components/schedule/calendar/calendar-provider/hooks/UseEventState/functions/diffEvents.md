@@ -8,7 +8,7 @@
 
 > **diffEvents**(`previous`, `next`): `HistoryEntry`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:101](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L101)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:107](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L107)
 
 The events that differ between two states, by id.
 

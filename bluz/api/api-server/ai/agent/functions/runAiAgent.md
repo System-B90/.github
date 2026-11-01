@@ -8,7 +8,7 @@
 
 > **runAiAgent**(`options`): `AsyncGenerator`\<[`AiStreamEvent`](../../../../api-shared/types/ai/type-aliases/AiStreamEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/agent.ts:138](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/agent.ts#L138)
+Defined in: [ui/src/api-server/ai/agent.ts:146](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/agent.ts#L146)
 
 Runs one turn and yields it as a stream of app-level events.
 

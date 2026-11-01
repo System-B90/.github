@@ -8,7 +8,7 @@
 
 > **EntitySelectProps**\<`TId`\> = `object` & `Omit`\<`FormControlProps`, `"onChange"`\>
 
-Defined in: [ui/src/components/base/EntitySelect.tsx:18](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/EntitySelect.tsx#L18)
+Defined in: [ui/src/components/base/EntitySelect.tsx:20](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EntitySelect.tsx#L20)
 
 ## Type Declaration
 
@@ -36,6 +36,12 @@ Disable the control when there is nothing to pick. Defaults to true.
 > `optional` **emptyLabel?**: `string`
 
 Label for the empty option.
+
+### endAdornment?
+
+> `optional` **endAdornment?**: `ReactNode`
+
+Rendered inside the field, before the dropdown arrow.
 
 ### label
 

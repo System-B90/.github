@@ -8,7 +8,7 @@
 
 > **ScheduleCommandActions** = `object`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:23](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L23)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:26](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L26)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:23](https:
 
 > **createEvent**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:24](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L24)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:27](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L27)
 
 #### Returns
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:24](https:
 
 > **exportIcs**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:33](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L33)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:40](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L40)
 
 #### Returns
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:33](https:
 
 > **navigateNext**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:28](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L28)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:31](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L31)
 
 #### Returns
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:28](https:
 
 > **navigatePrev**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:27](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L27)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:30](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L30)
 
 #### Returns
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:27](https:
 
 > **navigateToday**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:29](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L29)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:32](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L32)
 
 #### Returns
 
@@ -76,7 +76,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:29](https:
 
 > **redo**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:26](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L26)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:29](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L29)
 
 #### Returns
 
@@ -88,7 +88,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:26](https:
 
 > **setView**: (`view`) => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:30](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L30)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L33)
 
 #### Parameters
 
@@ -102,11 +102,31 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:30](https:
 
 ***
 
+### showWeekDay
+
+> **showWeekDay**: (`dayIndex`) => `void`
+
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:35](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L35)
+
+Day view of the shown week's day `dayIndex` (0 = Sunday).
+
+#### Parameters
+
+##### dayIndex
+
+`number`
+
+#### Returns
+
+`void`
+
+***
+
 ### toggleFullscreen
 
 > **toggleFullscreen**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:32](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L32)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:39](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L39)
 
 #### Returns
 
@@ -118,7 +138,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:32](https:
 
 > **toggleToolbar**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:31](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L31)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:36](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L36)
 
 #### Returns
 
@@ -126,11 +146,21 @@ Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:31](https:
 
 ***
 
+### toolbarVisible
+
+> **toolbarVisible**: `boolean`
+
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:38](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L38)
+
+Whether the toolbar is showing, so the command says what it will do.
+
+***
+
 ### undo
 
 > **undo**: () => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:25](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-commands/use-schedule-commands.tsx#L25)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:28](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/use-schedule-commands.tsx#L28)
 
 #### Returns
 

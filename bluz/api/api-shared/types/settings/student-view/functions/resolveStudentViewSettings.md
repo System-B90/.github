@@ -8,7 +8,7 @@
 
 > **resolveStudentViewSettings**(`value`): [`StudentViewSettings`](../type-aliases/StudentViewSettings.md)
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:71](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/settings/student-view.ts#L71)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:72](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/settings/student-view.ts#L72)
 
 Stored value merged over defaults; anything malformed reads as the defaults.
 

@@ -8,7 +8,7 @@
 
 > **importConstraints**(`tx`, `constraints`, `maps`, `now`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:182](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/import-tree.ts#L182)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:189](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/import-tree.ts#L189)
 
 Re-creates `constraints` against the ids in `maps`. A constraint whose owner
 was not imported is dropped; a target outside the import is cleared.

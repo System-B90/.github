@@ -8,7 +8,7 @@
 
 > **hasConflictingTemporalConstraints**(`constraints`): `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:146](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/constraint.ts#L146)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:158](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/constraint.ts#L158)
 
 Detects mutually conflicting temporal constraints (issue #104): intersects
 all `allowedDays`, subtracts all `forbiddenDays`, and reports a conflict

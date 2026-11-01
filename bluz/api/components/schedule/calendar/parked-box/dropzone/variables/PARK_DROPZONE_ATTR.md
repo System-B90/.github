@@ -8,6 +8,6 @@
 
 > `const` **PARK\_DROPZONE\_ATTR**: `"data-park-dropzone"` = `"data-park-dropzone"`
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/dropzone.ts:2](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/parked-box/dropzone.ts#L2)
+Defined in: [ui/src/components/schedule/calendar/parked-box/dropzone.ts:2](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/parked-box/dropzone.ts#L2)
 
 Marks the element a tile can be released over to park it (#981).

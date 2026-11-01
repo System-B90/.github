@@ -8,21 +8,33 @@
 
 > `const` **SCHEDULE\_ANCHORS**: `object`
 
-Defined in: [ui/src/components/app-onboarding/anchors.ts:24](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-onboarding/anchors.ts#L24)
+Defined in: [ui/src/components/app-onboarding/anchors.ts:30](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/anchors.ts#L30)
 
 ## Type Declaration
+
+### alignment
+
+> `readonly` **alignment**: `"schedule.alignment"` = `"schedule.alignment"`
+
+The shuffle alignment check.
 
 ### dock
 
 > `readonly` **dock**: `"schedule.dock"` = `"schedule.dock"`
 
-The side dock: unassigned box and instructors.
+The side dock: the ארגז and the מבוזרים list.
+
+### drafts
+
+> `readonly` **drafts**: `"schedule.drafts"` = `"schedule.drafts"`
+
+The shared drafts menu.
 
 ### filters
 
 > `readonly` **filters**: `"schedule.filters"` = `"schedule.filters"`
 
-The toolbar group holding the filters button.
+The toolbar group holding the offline switch and the filters button.
 
 ### grid
 
@@ -30,8 +42,38 @@ The toolbar group holding the filters button.
 
 The week grid itself.
 
+### navigation
+
+> `readonly` **navigation**: `"schedule.navigation"` = `"schedule.navigation"`
+
+Previous / today / next, and the מחזור selector beside them.
+
+### range
+
+> `readonly` **range**: `"schedule.range"` = `"schedule.range"`
+
+The range title, with the week number that jumps to a week.
+
+### snapshots
+
+> `readonly` **snapshots**: `"schedule.snapshots"` = `"schedule.snapshots"`
+
+The snapshots (restore points) menu.
+
 ### store
 
 > `readonly` **store**: `"schedule.store"` = `"schedule.store"`
 
-Drafts, snapshots and the alignment check.
+Drafts, templates, snapshots, the alignment check and the export.
+
+### templates
+
+> `readonly` **templates**: `"schedule.templates"` = `"schedule.templates"`
+
+The week templates menu.
+
+### views
+
+> `readonly` **views**: `"schedule.views"` = `"schedule.views"`
+
+Day / work week / week.

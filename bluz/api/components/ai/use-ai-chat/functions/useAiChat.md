@@ -8,7 +8,7 @@
 
 > **useAiChat**(`scope`): `object`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:134](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/ai/use-ai-chat.ts#L134)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:135](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/ai/use-ai-chat.ts#L135)
 
 ## Parameters
 
@@ -81,7 +81,7 @@ The write currently awaiting a decision, if any.
 > **calls**: [`AiApprovalCall`](../type-aliases/AiApprovalCall.md)[]
 
 Every write the model proposed in one turn. A batch is approved or
-declined as a unit — "fill five days" is one decision, not five.
+declined as a unit — "fill six days" is one decision, not six.
 
 ##### id
 

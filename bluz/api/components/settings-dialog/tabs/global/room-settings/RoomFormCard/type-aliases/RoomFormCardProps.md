@@ -8,9 +8,13 @@
 
 > **RoomFormCardProps** = `Omit`\<[`FormCardBaseProps`](../../../common/FormCard/type-aliases/FormCardBaseProps.md)\<[`Room`](../../../../../../../api-shared/types/room/type-aliases/Room.md)\>, `"selectedEntity"`\> & `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx:26](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx#L26)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx:27](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/room-settings/RoomFormCard.tsx#L27)
 
 ## Type Declaration
+
+### errors
+
+> **errors**: [`FieldErrors`](../../../common/UseEntityForm/type-aliases/FieldErrors.md)\<[`RoomValues`](../../values/type-aliases/RoomValues.md)\>
 
 ### setValue
 

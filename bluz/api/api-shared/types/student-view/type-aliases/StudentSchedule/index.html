@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -899,6 +926,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#courseoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        courseOptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#events" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -939,11 +977,15 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/student-view</a> / StudentSchedule</p>
 <h1 id="type-alias-studentschedule">Type Alias: StudentSchedule<a class="headerlink" href="#type-alias-studentschedule" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>StudentSchedule</strong> = <code>Omit</code>\&lt;<a href="../ApiStudentScheduleGetResponse/"><code>ApiStudentScheduleGetResponse</code></a>, <code>"courseGroups"</code> | <code>"courseNames"</code> | <code>"events"</code> | <code>"roomNames"</code>&gt; &amp; <code>object</code></p>
+<p><strong>StudentSchedule</strong> = <code>Omit</code>\&lt;<a href="../ApiStudentScheduleGetResponse/"><code>ApiStudentScheduleGetResponse</code></a>, <code>"courseGroups"</code> | <code>"courseNames"</code> | <code>"courseOptions"</code> | <code>"events"</code> | <code>"roomNames"</code>&gt; &amp; <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/student-view.ts#L89">ui/src/api-shared/types/student-view.ts:89</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L95">ui/src/api-shared/types/student-view.ts:95</a></p>
 <p>Client-side result of <code>apiGetStudentSchedule</code>, names resolved.</p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
+<h3 id="courseoptions">courseOptions<a class="headerlink" href="#courseoptions" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>courseOptions</strong>: <code>string</code>[]</p>
+</blockquote>
 <h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>events</strong>: <a href="../StudentEvent/"><code>StudentEvent</code></a>[]</p>

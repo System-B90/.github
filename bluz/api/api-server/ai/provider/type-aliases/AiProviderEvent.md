@@ -6,9 +6,9 @@
 
 # Type Alias: AiProviderEvent
 
-> **AiProviderEvent** = \{ `kind`: `"reasoning"`; `text`: `string`; \} \| \{ `kind`: `"final"`; `result`: [`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md); \} \| \{ `kind`: `"reasoning"`; `text`: `string`; \} \| \{ `kind`: `"text"`; `text`: `string`; \}
+> **AiProviderEvent** = \{ `kind`: `"reasoning"`; `text`: `string`; \} \| \{ `kind`: `"final"`; `result`: [`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md); \} \| \{ `kind`: `"text"`; `text`: `string`; \}
 
-Defined in: [ui/src/api-server/ai/provider.ts:40](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/provider.ts#L40)
+Defined in: [ui/src/api-server/ai/provider.ts:40](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/provider.ts#L40)
 
 Provider-level stream frame. Deliberately narrower than the app-level
 `AiStreamEvent`: a provider knows about text and completions, not about
@@ -28,6 +28,8 @@ Private chain-of-thought, on backends that expose it. Kept
 separate from `text` so the UI can collapse it: merged into the
 answer it would read as the assistant thinking out loud at the
 user, and it is not part of the transcript replayed next turn.
+Distinct from an answer wrapped in <think> tags, which arrives as
+ordinary `text` and is split client-side.
 
 #### text
 
@@ -38,12 +40,6 @@ user, and it is not part of the transcript replayed next turn.
 ### Type Literal
 
 \{ `kind`: `"final"`; `result`: [`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md); \}
-
-***
-
-### Type Literal
-
-\{ `kind`: `"reasoning"`; `text`: `string`; \}
 
 ***
 

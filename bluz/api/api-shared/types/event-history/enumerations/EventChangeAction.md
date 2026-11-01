@@ -6,7 +6,7 @@
 
 # Enumeration: EventChangeAction
 
-Defined in: [ui/src/api-shared/types/event-history.ts:100](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L100)
+Defined in: [ui/src/api-shared/types/event-history.ts:102](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L102)
 
 Kind of write a history row describes.
 
@@ -16,7 +16,7 @@ Kind of write a history row describes.
 
 > **Archived**: `"archived"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:104](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L104)
+Defined in: [ui/src/api-shared/types/event-history.ts:106](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L106)
 
 Soft-delete (archived: true).
 
@@ -26,7 +26,7 @@ Soft-delete (archived: true).
 
 > **Created**: `"created"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:101](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L101)
+Defined in: [ui/src/api-shared/types/event-history.ts:103](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L103)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/api-shared/types/event-history.ts:101](https://github.com/Sy
 
 > **Updated**: `"updated"`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:102](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L102)
+Defined in: [ui/src/api-shared/types/event-history.ts:104](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L104)

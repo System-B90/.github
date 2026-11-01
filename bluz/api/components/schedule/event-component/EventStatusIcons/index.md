@@ -9,3 +9,4 @@
 ## Functions
 
 - [EventStatusIcons](functions/EventStatusIcons.md)
+- [HiveLessonIssueIcon](functions/HiveLessonIssueIcon.md)

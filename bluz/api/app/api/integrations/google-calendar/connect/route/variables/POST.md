@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/integrations/google-calendar/connect/route.ts:25](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/integrations/google-calendar/connect/route.ts#L25)
+Defined in: [ui/src/app/api/integrations/google-calendar/connect/route.ts:25](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/integrations/google-calendar/connect/route.ts#L25)
 
 POST /api/integrations/google-calendar/connect — receives the authorization
 code produced by the browser-side Google Identity Services popup

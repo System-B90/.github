@@ -8,12 +8,12 @@
 
 > **withInstructorMembership**(`event`, `instructorId`, `member`): [`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:115](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-context-menu/actions.ts#L115)
+Defined in: [ui/src/components/schedule/event-context-menu/actions.ts:121](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-context-menu/actions.ts#L121)
 
 Adds or removes one instructor (מבזר) from an event, leaving the rest of
-its roster alone. `lecturers` is filtered down to whoever is still on the
-event, so a lecture cannot keep naming a lecturer who is no longer
-assigned to it.
+its roster alone. A removed instructor leaves `lecturers` too, so a lecture
+cannot keep naming them. Other lecturers stay: one dropped straight into
+the lecturer list is not an instructor, and lost it on any toggle.
 
 ## Parameters
 

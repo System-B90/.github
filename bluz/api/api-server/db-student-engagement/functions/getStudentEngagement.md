@@ -8,7 +8,7 @@
 
 > **getStudentEngagement**(`userId`, `date`): `Promise`\<[`StudentEngagementDocument`](../../mongo-db-controller/type-aliases/StudentEngagementDocument.md) \| `null`\>
 
-Defined in: [ui/src/api-server/db-student-engagement.ts:66](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-student-engagement.ts#L66)
+Defined in: [ui/src/api-server/db-student-engagement.ts:73](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-student-engagement.ts#L73)
 
 Reads one student's counter for a day. Staff-only callers.
 

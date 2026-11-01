@@ -524,6 +524,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ai-assistant/" class="md-nav__link">
         
   
@@ -809,10 +836,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -830,8 +857,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1184,18 +1211,28 @@
 </code></pre></div>
 <h3 id="2-configure-hosts">2. Configure hosts<a class="headerlink" href="#2-configure-hosts" title="Permanent link">&para;</a></h3>
 <p>Route <code>bluz.dev</code> to <code>127.0.0.3</code> in your hosts file:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows (PowerShell — admin)</label><label for="__tabbed_1_2">Linux / macOS</label></div>
+<!-- prettier-ignore-start -->
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows (PowerShell — admin)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Add-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">Windows</span><span class="p">\</span><span class="n">System32</span><span class="p">\</span><span class="n">drivers</span><span class="p">\</span><span class="n">etc</span><span class="p">\</span><span class="n">hosts</span> <span class="s2">"127.0.0.3 bluz.dev"</span>
 </code></pre></div>
 </div>
+</div>
+</div>
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Linux / macOS</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'127.0.0.3 bluz.dev'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/hosts
 </code></pre></div>
 </div>
 </div>
 </div>
+<!-- prettier-ignore-end -->
+
 <h3 id="3-environment-setup">3. Environment setup<a class="headerlink" href="#3-environment-setup" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>typer<span class="w"> </span>InquirerPy<span class="w"> </span>python-dotenv
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python<span class="w"> </span>setup.py<span class="w">          </span><span class="c1"># Interactive — generates .env with secrets</span>
@@ -1303,12 +1340,19 @@
 <td><code>OPENROUTER_API_KEY</code></td>
 <td>Credential for the <code>openrouter</code> AI provider. Unset ⇒ assistant hidden</td>
 </tr>
+<tr>
+<td><code>ANTHROPIC_BASE_URL</code>, <code>LITELLM_API_KEY_HELPER</code>, <code>CC_SSO_BACKEND</code></td>
+<td><code>litellm</code> AI provider (see <a href="../ai-assistant/">AI Assistant</a>)</td>
+</tr>
 </tbody>
 </table>
+<!-- prettier-ignore-start -->
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><code>NEXT_PUBLIC_*</code> vars are exposed to the browser — never put secrets behind that prefix.</p>
 </div>
+<!-- prettier-ignore-end -->
+
 <h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
 <ul>
 <li>A running <strong>Hive</strong> instance (org data + SSO)</li>

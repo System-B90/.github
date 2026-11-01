@@ -8,7 +8,7 @@
 
 > `const` **BREAK\_PLACEMENT\_RULES**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:300](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-rules.ts#L300)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:302](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-rules.ts#L302)
 
 Structural rules that constrain *where* a break may go, independent of kind.
 

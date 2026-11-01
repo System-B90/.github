@@ -8,7 +8,7 @@
 
 > **syncEventToInstructorsGoogleCalendars**(`event`, `action`, `iterationId?`, `previous?`): `void`
 
-Defined in: [ui/src/api-server/google/google-calendar-sync.ts:93](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/google/google-calendar-sync.ts#L93)
+Defined in: [ui/src/api-server/google/google-calendar-sync.ts:99](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/google/google-calendar-sync.ts#L99)
 
 Fire-and-forget: mirrors the given event into every linked Google calendar
 that wants it — one write per calendar, however many users share it. A
@@ -27,7 +27,7 @@ the Bluz event write it's attached to.
 
 ### action
 
-`"delete"` \| `"upsert"`
+`"upsert"` \| `"delete"`
 
 ### iterationId?
 

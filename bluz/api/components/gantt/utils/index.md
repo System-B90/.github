@@ -17,3 +17,4 @@
 - [countRequiredOccurrences](functions/countRequiredOccurrences.md)
 - [doShuffleTotalsDiffer](functions/doShuffleTotalsDiffer.md)
 - [getSyllabusShuffleTotals](functions/getSyllabusShuffleTotals.md)
+- [recurrenceRootDayId](functions/recurrenceRootDayId.md)

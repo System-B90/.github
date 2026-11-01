@@ -8,7 +8,7 @@
 
 > **pruneExpiredLocks**(`state`, `now`): [`LockState`](../type-aliases/LockState.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:108](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L108)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:113](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L113)
 
 Remove every lock whose expiry has passed.
 

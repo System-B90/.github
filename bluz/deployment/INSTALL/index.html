@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -971,6 +998,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#schedule-feed-into-hive-ics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schedule feed into Hive (ICS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#port-conflicts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1026,6 +1064,17 @@
     <span class="md-ellipsis">
       
         Air-gapped (offline bundle)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#air-gapped-small-delta-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Air-gapped, small (delta package)
       
     </span>
   </a>
@@ -1181,9 +1230,9 @@ machines to silence browser warnings; it is reused across re-issues.</p>
 automatically by an ACME server — e.g. the network's own Let's Encrypt (#803).
 The proxy does it itself with nginx's built-in ACME client
 (<code>ngx_http_acme_module</code>); there is no extra container.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Optional: the ACME server's own CA, when it is private</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>acme/ca<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>/path/to/acme-server-ca.pem<span class="w"> </span>acme/ca/ca.pem
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python3<span class="w"> </span>bootstrap.py<span class="w"> </span>setup<span class="w">     </span><span class="c1"># answer yes, give the directory URL</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Answer yes and give the directory URL. A privately signed ACME server's CA</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># is fetched, shown by fingerprint and saved to acme/ca/ca.pem.</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python3<span class="w"> </span>bootstrap.py<span class="w"> </span>setup
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>proxy
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>docker<span class="w"> </span>logs<span class="w"> </span>bluz-proxy<span class="w">         </span><span class="c1"># "40-bluz-acme.sh: ACME on for &lt;domain&gt; ..."</span>
 </code></pre></div>
@@ -1204,22 +1253,23 @@ secrets are kept, not rotated.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>bluz/
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── docker-compose.yml              # the stack
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── docker-compose.hive-local.yml   # overlay, co-located Hive only
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── .env                            # written by the wizard — contains secrets
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>├── install.sh / install.ps1        # launchers: find Python, run bootstrap.py
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>├── update.sh / update.ps1          # in-place upgrade to a newer release (online or --package)
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>├── link-hive.sh / link-hive.ps1
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>├── bootstrap.py, requirements.txt  # builds .venv with the deployment tools
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>├── app.json                        # describes Bluz to the shared tooling
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>├── setup.py                        # the configuration wizard
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>├── .venv/                          # created on first run
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>├── backup/                         # bluz-backup / bluz-restore (.sh and .ps1)
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>├── nginx/ssl/                      # cert.pem + key.pem
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>├── acme/                           # ACME only: account/cert state, ACME server CA
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>├── ai-ca/                          # private CA for an internal AI gateway (optional)
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>├── VERSION                         # which release this is
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>├── images/                         # offline bundle only — image .tar archives
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>├── wheels/                         # offline bundle only — vendored Python wheels
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>└── TROUBLESHOOTING.md
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── docker-compose.hive-feed.yml    # overlay, ICS schedule feed into Hive
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>├── .env                            # written by the wizard — contains secrets
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>├── install.sh / install.ps1        # launchers: find Python, run bootstrap.py
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>├── update.sh / update.ps1          # in-place upgrade to a newer release (online, or --package offline/delta)
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>├── link-hive.sh / link-hive.ps1
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>├── bootstrap.py, requirements.txt  # builds .venv with the deployment tools
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>├── app.json                        # describes Bluz to the shared tooling
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>├── setup.py                        # the configuration wizard
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>├── .venv/                          # created on first run
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>├── backup/                         # bluz-backup / bluz-restore (.sh and .ps1)
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>├── nginx/ssl/                      # cert.pem + key.pem
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>├── acme/                           # ACME only: account/cert state, ACME server CA
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>├── ai-ca/                          # private CA for an internal AI gateway (optional)
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>├── VERSION                         # which release this is
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>├── images/                         # offline bundle only — image .tar archives
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>├── wheels/                         # offline bundle only — vendored Python wheels
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>└── TROUBLESHOOTING.md
 </code></pre></div>
 <p><strong><code>.env</code> must stay next to <code>docker-compose.yml</code>.</strong> Compose has two separate
 <code>.env</code> mechanisms — <code>env_file:</code> for container environments, and its own <code>${VAR}</code>
@@ -1246,32 +1296,106 @@ Override its guesses with <code>HIVE_NETWORK_NAME</code>, <code>HIVE_NGINX_CONTA
 gateway address, which does not reach Hive when Hive's nginx is bound to a
 specific loopback IP. A container alias on the shared network has no dependency
 on host bind addresses or the host's <code>hosts</code> file.</p>
+<h3 id="schedule-feed-into-hive-ics">Schedule feed into Hive (ICS)<a class="headerlink" href="#schedule-feed-into-hive-ics" title="Permanent link">&para;</a></h3>
+<p>Hive in external schedule mode (<code>HIVE_SCHEDULE_MODE=external</code>) reads its
+schedule from <code>/mnt/calendars/Calendar.ics</code>. A sidecar pulls Bluz's feed and
+writes that file whenever the schedule changes.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python3<span class="w"> </span>bootstrap.py<span class="w"> </span>setup<span class="w">   </span><span class="c1"># answer "yes" to the ICS feed question</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose.yml<span class="w"> </span>-f<span class="w"> </span>docker-compose.hive-feed.yml<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div>
+<p>Then pick "ICS להייב" in Bluz settings → "שילוב שיעורים בהייב". The
+"נתיב הקובץ" field below it sets where the file is written, relative to
+<code>HIVE_CALENDAR_DIRS_PATH</code> (e.g. <code>bluz/Calendar.ics</code>). It takes effect on the
+next poll, with no restart. Leave it empty to use <code>HIVE_CALENDAR_FILE</code>. The
+file at the old path is left in place; delete it yourself.</p>
+<p>"חלון הפרסום" sets how many hours before the start and after the end of today
+(Israel time) the feed carries. The default 24 sends yesterday, today and
+tomorrow. Hive deletes every Bluz event the file no longer carries, so Hive's
+schedule shows exactly that window. Widen it if staff use Hive's week view.</p>
+<table>
+<thead>
+<tr>
+<th><code>.env</code> key</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HIVE_CALENDAR_DIRS_PATH</code></td>
+<td>—</td>
+<td>Host dir Hive mounts at <code>/mnt/calendars</code>. Absolute path.</td>
+</tr>
+<tr>
+<td><code>HIVE_CALENDAR_FILE</code></td>
+<td><code>Calendar.ics</code></td>
+<td>File written in that dir, unless Settings names another.</td>
+</tr>
+<tr>
+<td><code>HIVE_FEED_URL</code></td>
+<td><code>http://ui:3000/api/event/export/hive</code></td>
+<td>Feed the sidecar pulls.</td>
+</tr>
+<tr>
+<td><code>HIVE_FEED_INTERVAL</code></td>
+<td><code>30</code></td>
+<td>Seconds between polls.</td>
+</tr>
+<tr>
+<td><code>HIVE_FEED_LESSON_CATEGORY</code></td>
+<td><code>שיעור</code></td>
+<td>Hive event category for subject events.</td>
+</tr>
+<tr>
+<td><code>HIVE_FEED_UID</code>/<code>_GID</code></td>
+<td>owner of the dir</td>
+<td>Write as this user instead of the dir's owner.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The lesson category must exist in Hive with <strong>has_lesson</strong> on. Hive creates a
+  missing one without it, and then never assigns a lesson.</li>
+<li>Use the same directory as <code>HIVE_CALENDAR_DIRS_PATH</code> in Hive's <code>.env</code>, as an
+  absolute path. A relative path resolves against the Bluz bundle, not Hive's.</li>
+<li>The feed needs the Hive API user (<code>HIVE_API_USERNAME</code>/<code>HIVE_API_PASSWORD</code>).</li>
+<li>The sidecar writes as the dir's owner, whatever uid that is. Up to v1.8.0 it
+  wrote as <code>1000:1000</code> and logged <code>feed fetch failed: curl 26, HTTP</code> on a dir
+  owned by anyone else. Upgrade, or set <code>HIVE_FEED_UID</code>/<code>_GID</code> to the owner.</li>
+<li><code>HIVE_CALENDAR_DIRS_PATH is not writable by uid …</code> now means the mount
+  itself refuses writes (read-only, root-squashed NFS, a wrong <code>HIVE_FEED_UID</code>).</li>
+<li>Hive reads only <code>Calendar.ics</code> in its mount. Point the Settings path elsewhere
+  only when Hive's mount is a subdirectory of the shared dir.</li>
+<li>The offline bundle ships the sidecar's <code>curlimages/curl</code> image.</li>
+<li><code>update.sh</code> leaves the sidecar running as is. Re-run the <code>docker compose … up -d</code>
+  above after changing any of these keys.</li>
+</ul>
 <h3 id="port-conflicts">Port conflicts<a class="headerlink" href="#port-conflicts" title="Permanent link">&para;</a></h3>
 <p>Bluz publishes on <code>0.0.0.0:80</code> and <code>0.0.0.0:443</code> by default. If the machine
 already serves those ports, set different ones in <code>.env</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="na">BLUZ_HTTP_PORT</span><span class="o">=</span><span class="s">8080</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="na">BLUZ_HTTPS_PORT</span><span class="o">=</span><span class="s">8443</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="na">BLUZ_HTTP_PORT</span><span class="o">=</span><span class="s">8080</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="na">BLUZ_HTTPS_PORT</span><span class="o">=</span><span class="s">8443</span>
 </code></pre></div>
 <p>Separate ports are the portable answer. Binding a distinct loopback IP
 (<code>BLUZ_BIND_IP</code>) also works, but on Windows it needs an admin-added loopback
 alias <em>and</em> the other stack must stop binding <code>0.0.0.0</code> — see
 <a href="../TROUBLESHOOTING/">TROUBLESHOOTING.md</a>.</p>
 <h2 id="verifying-the-install">Verifying the install<a class="headerlink" href="#verifying-the-install" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps<span class="w">                       </span><span class="c1"># every service "running", ui "healthy"</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>curl<span class="w"> </span>-k<span class="w"> </span>https://localhost/api/health<span class="w">     </span><span class="c1"># {"status":"ok",...}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps<span class="w">                       </span><span class="c1"># every service "running", ui "healthy"</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>curl<span class="w"> </span>-k<span class="w"> </span>https://localhost/api/health<span class="w">     </span><span class="c1"># {"status":"ok",...}</span>
 </code></pre></div>
 <p>Then open your domain in a browser and sign in through Hive. If sign-in fails,
 check <code>.env</code> for <code>MANUAL_ENTRY_REQUIRED</code> — that means SSO registration did not
 complete. <code>TROUBLESHOOTING.md</code> has the manual path.</p>
 <h2 id="day-two-operations">Day-two operations<a class="headerlink" href="#day-two-operations" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps<span class="w">            </span><span class="c1"># status</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>ui<span class="w">    </span><span class="c1"># follow a service's logs</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w">          </span><span class="c1"># stop (data volumes are kept)</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w"> </span>-v<span class="w">       </span><span class="c1"># stop AND DELETE all data</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps<span class="w">            </span><span class="c1"># status</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>ui<span class="w">    </span><span class="c1"># follow a service's logs</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w">          </span><span class="c1"># stop (data volumes are kept)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w"> </span>-v<span class="w">       </span><span class="c1"># stop AND DELETE all data</span>
 </code></pre></div>
 <h3 id="upgrading-a-live-deployment">Upgrading a live deployment<a class="headerlink" href="#upgrading-a-live-deployment" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>bluz-online-v1.1.0.tar.gz<span class="w">   </span><span class="c1"># extracts into bluz/, keeps your .env and nginx/ssl/</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">cd</span><span class="w"> </span>bluz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./update.sh
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>bluz-online-v1.1.0.tar.gz<span class="w">   </span><span class="c1"># extracts into bluz/, keeps your .env and nginx/ssl/</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">cd</span><span class="w"> </span>bluz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./update.sh
 </code></pre></div>
 <p><code>update.sh</code> (<code>update.ps1</code> on Windows) upgrades in place with near-zero downtime: it backs up both engines
 first, pulls the new images while the old containers keep serving, then rolls
@@ -1286,7 +1410,7 @@ pins it explicitly. <code>--skip-backup</code> accepts the risk of an unrecovera
 <code>--yes</code> skips the confirmation prompt. It refuses to run against a stopped
 stack — use <code>./install.sh</code> for a first install.</p>
 <h4 id="air-gapped-offline-bundle">Air-gapped (offline bundle)<a class="headerlink" href="#air-gapped-offline-bundle" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>./update.sh<span class="w"> </span>--package<span class="w"> </span>/media/usb/bluz-offline-v1.1.0.tar.gz
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>./update.sh<span class="w"> </span>--package<span class="w"> </span>/media/usb/bluz-offline-v1.1.0.tar.gz
 </code></pre></div>
 <p>Same upgrade, no registry access. Point <code>--package</code> at the <strong>full new offline
 package</strong> — the downloaded <code>bluz-offline-&lt;tag&gt;.tar.gz</code> or a directory it was
@@ -1304,6 +1428,27 @@ verify, rollback hint on failure — is identical.</p>
 diagnosis: it ships no images, so it cannot upgrade an air-gapped host.
 <code>--package</code> cannot be combined with <code>--version</code> or <code>--pre-release</code> — a package
 carries exactly one release.</p>
+<h4 id="air-gapped-small-delta-package">Air-gapped, small (delta package)<a class="headerlink" href="#air-gapped-small-delta-package" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>./update.sh<span class="w"> </span>--package<span class="w"> </span>/media/usb/bluz-delta-v1.1.0.tar.zst
+</code></pre></div>
+<p>The same offline upgrade from a file of a few hundred KB to a few MB instead of
+~650 MB: <code>bluz-delta-&lt;tag&gt;.tar.zst</code> ships only the image layers, wheels and
+bundle files this host lacks. Any changed layer ships as a binary patch
+against the one the host already runs. <strong>One delta covers every release listed
+as its base, which is up to the 5 previous stable releases.</strong> Download the single
+file for the target version. You never chain patches.</p>
+<p>Before anything is touched, <code>update.sh</code> checks that the running release is one of
+the delta's bases. It then <code>docker save</code>s the images this host runs and rebuilds
+the full offline package from them plus the delta. Every layer is verified
+against its digest. From there the upgrade is the offline one above.</p>
+<p>Use the full <code>bluz-offline-&lt;tag&gt;.tar.gz</code> instead when:</p>
+<ul>
+<li>the host runs a release older than the delta's bases (the error lists them);</li>
+<li>the running release's images were pruned from Docker;</li>
+<li>the host was installed from a bundle older than the first delta-capable
+  release. Its update tooling cannot read a delta, so upgrade it once with the
+  full package.</li>
+</ul>
 <p>Re-running the installer over an existing <code>.env</code> also works and is the fallback
 when the stack is down: it skips the wizard and updates <code>BLUZ_VERSION</code> from the
 new <code>VERSION</code> file, but it does not back up or roll services one at a time.</p>

@@ -8,7 +8,7 @@
 
 > **useSplitCalendar**(): [`SplitCalendarContextValue`](../type-aliases/SplitCalendarContextValue.md)
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:108](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L108)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:111](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L111)
 
 Reads the split-calendar interaction state. Falls back to inert defaults
 outside a provider so the event component stays renderable in isolation.

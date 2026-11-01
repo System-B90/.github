@@ -8,6 +8,6 @@
 
 > `const` **LONG\_EXERCISE\_THRESHOLD\_MINUTES**: `90` = `90`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:277](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-rules.ts#L277)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:279](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-rules.ts#L279)
 
 Continuous ע"ע at or above this many minutes earns a break after it.

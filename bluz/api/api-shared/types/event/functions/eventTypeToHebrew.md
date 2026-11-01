@@ -8,7 +8,7 @@
 
 > **eventTypeToHebrew**(`type`): `string`
 
-Defined in: [ui/src/api-shared/types/event.ts:300](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L300)
+Defined in: [ui/src/api-shared/types/event.ts:281](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L281)
 
 Returns the displayable Hebrew label for a given EventType.
 Since the EventType enum is standardized to Hebrew values, this returns the value itself.

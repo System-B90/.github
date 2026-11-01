@@ -6,9 +6,9 @@
 
 # Function: useStudentLiveRefresh()
 
-> **useStudentLiveRefresh**(`onChange`): `void`
+> **useStudentLiveRefresh**(`onChange`, `onReload?`): `void`
 
-Defined in: [ui/src/components/student-view/use-student-live-refresh.ts:26](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/use-student-live-refresh.ts#L26)
+Defined in: [ui/src/components/student-view/use-student-live-refresh.ts:40](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/student-view/use-student-live-refresh.ts#L40)
 
 Keeps the student board live (#656).
 
@@ -25,6 +25,11 @@ broadcast) and refuses every sync object but this one. There is deliberately
 no per-iteration student channel, so nothing here can reveal that iterations
 exist.
 
+A staff "push update" (`STUDENT_RELOAD`) reloads the whole page instead, so
+a new deploy reaches every screen. Each board waits a random slice of
+[RELOAD\_JITTER\_MS](../variables/RELOAD_JITTER_MS.md) first, so a room full of boards does not hit the
+server in the same instant.
+
 ## Parameters
 
 ### onChange
@@ -32,6 +37,12 @@ exist.
 () => `void`
 
 Called when the schedule may have changed. Must be stable.
+
+### onReload?
+
+() => `void`
+
+Called on a push update. Defaults to a jittered page reload.
 
 ## Returns
 

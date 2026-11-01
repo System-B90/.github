@@ -8,7 +8,7 @@
 
 > **EmptyStateProps** = `object`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:15](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/EmptyState.tsx#L15)
+Defined in: [ui/src/components/base/EmptyState.tsx:15](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EmptyState.tsx#L15)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/EmptyState.tsx:15](https://github.com/System
 
 > `optional` **actionLabel?**: `string`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:20](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/EmptyState.tsx#L20)
+Defined in: [ui/src/components/base/EmptyState.tsx:20](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EmptyState.tsx#L20)
 
 ***
 
@@ -24,9 +24,19 @@ Defined in: [ui/src/components/base/EmptyState.tsx:20](https://github.com/System
 
 > `optional` **hint?**: `string`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:19](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/EmptyState.tsx#L19)
+Defined in: [ui/src/components/base/EmptyState.tsx:19](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EmptyState.tsx#L19)
 
 Secondary line, e.g. what the call to action will do.
+
+***
+
+### icon?
+
+> `optional` **icon?**: `React.ElementType`
+
+Defined in: [ui/src/components/base/EmptyState.tsx:23](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EmptyState.tsx#L23)
+
+Replaces the variant's icon, e.g. the ארגז box.
 
 ***
 
@@ -34,7 +44,7 @@ Secondary line, e.g. what the call to action will do.
 
 > **message**: `string`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:17](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/EmptyState.tsx#L17)
+Defined in: [ui/src/components/base/EmptyState.tsx:17](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EmptyState.tsx#L17)
 
 ***
 
@@ -42,7 +52,7 @@ Defined in: [ui/src/components/base/EmptyState.tsx:17](https://github.com/System
 
 > `optional` **onAction?**: () => `void`
 
-Defined in: [ui/src/components/base/EmptyState.tsx:21](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/EmptyState.tsx#L21)
+Defined in: [ui/src/components/base/EmptyState.tsx:21](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EmptyState.tsx#L21)
 
 #### Returns
 
@@ -54,4 +64,4 @@ Defined in: [ui/src/components/base/EmptyState.tsx:21](https://github.com/System
 
 > `optional` **variant?**: [`EmptyStateVariant`](EmptyStateVariant.md)
 
-Defined in: [ui/src/components/base/EmptyState.tsx:16](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/EmptyState.tsx#L16)
+Defined in: [ui/src/components/base/EmptyState.tsx:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/EmptyState.tsx#L16)

@@ -8,7 +8,7 @@
 
 > **EventFieldChange** = `object`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:108](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L108)
+Defined in: [ui/src/api-shared/types/event-history.ts:110](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L110)
 
 One changed field, with both sides serialized as plain JSON.
 
@@ -18,7 +18,7 @@ One changed field, with both sides serialized as plain JSON.
 
 > **field**: `string`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:109](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L109)
+Defined in: [ui/src/api-shared/types/event-history.ts:111](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L111)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/event-history.ts:109](https://github.com/Sy
 
 > **from**: `unknown`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:110](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L110)
+Defined in: [ui/src/api-shared/types/event-history.ts:112](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L112)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/api-shared/types/event-history.ts:110](https://github.com/Sy
 
 > **to**: `unknown`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:111](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event-history.ts#L111)
+Defined in: [ui/src/api-shared/types/event-history.ts:113](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event-history.ts#L113)

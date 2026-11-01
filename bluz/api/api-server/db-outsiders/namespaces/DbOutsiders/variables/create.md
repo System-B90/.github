@@ -6,9 +6,9 @@
 
 # Variable: create
 
-> `const` **create**: (`outsider`, `controller`) => `Promise`\<[`Outsider`](../../../../../api-shared/types/outsider/type-aliases/Outsider.md)\> = `createDbOutsider`
+> `const` **create**: (`outsider`, `controller`) => `Promise`\<`Pick`\<[`Outsider`](../../../../../api-shared/types/outsider/type-aliases/Outsider.md), `"id"` \| `"name"` \| `"comment"` \| `"phone"` \| `"personalNumber"` \| `"idNumber"` \| `"releaseDate"`\>\> = `createDbOutsider`
 
-Defined in: [ui/src/api-server/db-outsiders.ts:86](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-outsiders.ts#L86)
+Defined in: [ui/src/api-server/db-outsiders.ts:93](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-outsiders.ts#L93)
 
 ## Parameters
 
@@ -22,4 +22,4 @@ Defined in: [ui/src/api-server/db-outsiders.ts:86](https://github.com/System-B90
 
 ## Returns
 
-`Promise`\<[`Outsider`](../../../../../api-shared/types/outsider/type-aliases/Outsider.md)\>
+`Promise`\<`Pick`\<[`Outsider`](../../../../../api-shared/types/outsider/type-aliases/Outsider.md), `"id"` \| `"name"` \| `"comment"` \| `"phone"` \| `"personalNumber"` \| `"idNumber"` \| `"releaseDate"`\>\>

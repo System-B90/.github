@@ -557,6 +557,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ai-assistant/" class="md-nav__link">
         
   
@@ -842,10 +869,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -863,8 +890,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1271,11 +1298,14 @@ essential before making any code changes.</p>
 <li><strong>Contains</strong>: TypeScript types, enums, contracts, pure utility functions</li>
 <li><strong>Rules</strong>: Must be <strong>side-effect-free</strong> — compiles into both bundles</li>
 </ul>
+<!-- prettier-ignore-start -->
 <div class="admonition danger">
 <p class="admonition-title">Most Common Mistake</p>
 <p>Putting code in the wrong layer. A stray browser import in <code>api-server</code> or a side
 effect in <code>api-shared</code> breaks the build in non-obvious ways.</p>
 </div>
+<!-- prettier-ignore-end -->
+
 <h2 id="two-databases-two-engines">Two Databases, Two Engines<a class="headerlink" href="#two-databases-two-engines" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1393,7 +1423,7 @@ Postgres tables: <code>ui/src/api-server/gantt/schema/</code></p>
 <ul>
 <li><strong>RTL-first</strong>: The entire app is <code>dir="rtl"</code>. Use logical CSS properties (<code>start</code>/<code>end</code>), not <code>left</code>/<code>right</code>.</li>
 <li><strong>Hebrew strings</strong>: Appear directly in components. Don't translate to English.</li>
-<li><strong>Prettier</strong>: 4-space indent, double quotes, semicolons, trailing commas, LF line endings.</li>
+<li><strong>Formatting</strong>: ESLint <code>@stylistic</code> formats JS/TS (Allman braces, 4-space, double quotes, semicolons, trailing commas, <code>{ x }</code> / <code>[ x ]</code> spacing, LF); Prettier formats only JSON/CSS/MD.</li>
 <li><strong>Server/client boundary</strong>: Load-bearing. Respect it strictly.</li>
 </ul>
 

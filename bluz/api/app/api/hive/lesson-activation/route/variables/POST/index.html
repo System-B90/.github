@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -905,13 +932,13 @@
 <blockquote>
 <p><code>const</code> <strong>POST</strong>: <code>ServerApiLessonActivationRun</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/hive/lesson-activation/route.ts#L21">ui/src/app/api/hive/lesson-activation/route.ts:21</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/hive/lesson-activation/route.ts#L21">ui/src/app/api/hive/lesson-activation/route.ts:21</a></p>
 <p>POST /api/hive/lesson-activation — run one activation pass now and report
 what it did.</p>
 <p>The pass is what the background timer runs every 30 seconds, and it is
-idempotent, so triggering it by hand can only ever bring the queues forward
+idempotent, so triggering it by hand can only ever bring the lessons forward
 to where they should already be. It exists because the timer is otherwise
-invisible: when a queue does not open, this is how staff (and the e2e
+invisible: when a lesson does not reach a group, this is how staff (and the e2e
 suite) find out whether the event was even considered, and why not.</p>
 
 

@@ -1,0 +1,41 @@
+[**TypeDoc API**](../../../../index.md)
+
+***
+
+[TypeDoc API](../../../../index.md) / [components/base/server-clock](../index.md) / useAppDayRollover
+
+# Function: useAppDayRollover()
+
+> **useAppDayRollover**(`onRollover`, `__namedParameters?`): `void`
+
+Defined in: [ui/src/components/base/server-clock.ts:133](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/server-clock.ts#L133)
+
+Calls `onRollover(newDate, previousDate)` when the server's day (Jerusalem
+time) changes: at midnight, on waking from sleep or returning to a tab whose
+midnight timer never ran, and when a resync shows the day moved.
+
+Runs only once the server clock is synced — before that there is no "today"
+to roll over from. The timer only measures a duration; the hour is always
+the server's.
+
+## Parameters
+
+### onRollover
+
+(`date`, `previous`) => `void`
+
+Receives the new and the previous `yyyy-MM-dd`.
+
+### \_\_namedParameters?
+
+#### enabled?
+
+`boolean` = `true`
+
+#### jitterMs?
+
+`number` = `0`
+
+## Returns
+
+`void`

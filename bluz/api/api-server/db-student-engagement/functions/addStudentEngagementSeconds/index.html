@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -931,6 +958,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ip?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -972,9 +1010,9 @@
 <p><a href="../../../../">TypeDoc API</a> / <a href="../../">api-server/db-student-engagement</a> / addStudentEngagementSeconds</p>
 <h1 id="function-addstudentengagementseconds">Function: addStudentEngagementSeconds()<a class="headerlink" href="#function-addstudentengagementseconds" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>addStudentEngagementSeconds</strong>(<code>userId</code>, <code>date</code>, <code>seconds</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
+<p><strong>addStudentEngagementSeconds</strong>(<code>userId</code>, <code>date</code>, <code>seconds</code>, <code>ip?</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-student-engagement.ts#L30">ui/src/api-server/db-student-engagement.ts:30</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-student-engagement.ts#L33">ui/src/api-server/db-student-engagement.ts:33</a></p>
 <p>Adds focused-time to a student's counter for one day (#656).</p>
 <p>The caller's identity comes from the session, never from the request body —
 a student must not be able to write to another student's counter. The
@@ -990,6 +1028,11 @@ scripted client can inflate its own number only up to a day's length.</p>
 <h3 id="seconds">seconds<a class="headerlink" href="#seconds" title="Permanent link">&para;</a></h3>
 <p><code>number</code></p>
 <p>Reported focused seconds since the last report.</p>
+<h3 id="ip">ip?<a class="headerlink" href="#ip" title="Permanent link">&para;</a></h3>
+<p><code>string</code></p>
+<p>The reporting address (from nginx, never the body), added to the
+          day's <code>ips</code>, so an unattributable attempt in the security log can
+          be matched to whoever used that address.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<code>number</code>&gt;</p>
 <p>The seconds actually recorded.</p>

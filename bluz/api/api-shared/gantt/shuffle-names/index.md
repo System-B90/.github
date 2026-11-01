@@ -21,6 +21,7 @@
 
 ## Functions
 
+- [curriculumShuffleHiveGroups](functions/curriculumShuffleHiveGroups.md)
 - [isShuffleDescriptions](functions/isShuffleDescriptions.md)
 - [isShuffleHiveGroups](functions/isShuffleHiveGroups.md)
 - [isShuffleLevels](functions/isShuffleLevels.md)

@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -899,6 +926,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#calendarfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        calendarFile?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedwindowhours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        feedWindowHours?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lessondriver" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -941,13 +990,34 @@
 <blockquote>
 <p><strong>HiveIntegrationSettings</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/settings/hive-integration.ts#L17">ui/src/api-shared/types/settings/hive-integration.ts:17</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/settings/hive-integration.ts#L17">ui/src/api-shared/types/settings/hive-integration.ts:17</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="calendarfile">calendarFile?<a class="headerlink" href="#calendarfile" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>calendarFile?</strong>: <code>string</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/settings/hive-integration.ts#L26">ui/src/api-shared/types/settings/hive-integration.ts:26</a></p>
+<p>Where the <code>hive-feed</code> sidecar writes the ICS feed, relative to the
+directory it shares with Hive (<code>HIVE_CALENDAR_DIRS_PATH</code>). The directory
+itself is a bind mount, fixed when the container starts, so only the
+path inside it is editable here. Unset ⇒ the sidecar's own
+<code>HIVE_CALENDAR_FILE</code>, else <a href="../../variables/DEFAULT_HIVE_CALENDAR_FILE/">DEFAULT_HIVE_CALENDAR_FILE</a>.</p>
+<hr />
+<h3 id="feedwindowhours">feedWindowHours?<a class="headerlink" href="#feedwindowhours" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>feedWindowHours?</strong>: <code>number</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/settings/hive-integration.ts#L33">ui/src/api-shared/types/settings/hive-integration.ts:33</a></p>
+<p>How far the ICS feed reaches, in hours, before the start and after the
+end of the current day (Israel time). Hive deletes every Bluz event the
+file no longer carries, so this is also what Hive's schedule keeps.
+Unset ⇒ <a href="../../variables/DEFAULT_HIVE_FEED_WINDOW_HOURS/">DEFAULT_HIVE_FEED_WINDOW_HOURS</a>.</p>
+<hr />
 <h3 id="lessondriver">lessonDriver<a class="headerlink" href="#lessondriver" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>lessonDriver</strong>: <a href="../../enumerations/HiveLessonDriver/"><code>HiveLessonDriver</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/settings/hive-integration.ts#L18">ui/src/api-shared/types/settings/hive-integration.ts:18</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/settings/hive-integration.ts#L18">ui/src/api-shared/types/settings/hive-integration.ts:18</a></p>
 
 
 

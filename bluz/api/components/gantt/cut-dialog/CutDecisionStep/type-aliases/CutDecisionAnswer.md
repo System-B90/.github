@@ -8,7 +8,7 @@
 
 > **CutDecisionAnswer** = \{ `acceptedEventIds`: `string`[]; `type`: `"constraint-moves"`; \} \| \{ `acknowledged`: `true`; `type`: `"constraint-violation"`; \} \| \{ `resolution`: [`WeekOverflowResolution`](../../../../../api-shared/gantt/cut-rules/type-aliases/WeekOverflowResolution.md); `type`: `"week-overflow"`; `weekId`: `string`; \}
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:24](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L24)
+Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:24](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L24)
 
 One question from the cut's plan phase, rendered on its own.
 

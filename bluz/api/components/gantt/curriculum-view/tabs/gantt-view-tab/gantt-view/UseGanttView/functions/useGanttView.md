@@ -8,7 +8,7 @@
 
 > **useGanttView**(`curriculumId`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts:37](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts#L37)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts:37](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/UseGanttView.ts#L37)
 
 ## Parameters
 
@@ -47,6 +47,10 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-v
 #### contextValue.allLinearDays
 
 > **allLinearDays**: `string`[]
+
+#### contextValue.allTimelineWeeks
+
+> **allTimelineWeeks**: [`GanttWeek`](../../../../../../../../api-shared/types/gantt/models/week/type-aliases/GanttWeek.md)[]
 
 #### contextValue.constraintsByEvent
 

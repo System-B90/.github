@@ -8,7 +8,7 @@
 
 > **formatValue**(`value`, `key`): `string`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:37](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L37)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:37](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L37)
 
 Formats event property values into elegant, human-readable Hebrew strings.
 
@@ -16,7 +16,7 @@ Formats event property values into elegant, human-readable Hebrew strings.
 
 ### value
 
-`string` \| `number` \| `boolean` \| `string`[] \| `number`[] \| `Record`\<`string`, `number`\> \| `Dayjs` \| [`ResolvableRoom`](../../../../../../api-shared/types/room/type-aliases/ResolvableRoom.md)[] \| [`PersonId`](../../../../../../api-shared/types/event/type-aliases/PersonId.md)[] \| `null` \| `undefined`
+`string` \| `number` \| `boolean` \| `string`[] \| `number`[] \| `Dayjs` \| [`ResolvableRoom`](../../../../../../api-shared/types/room/type-aliases/ResolvableRoom.md)[] \| [`PersonId`](../../../../../../api-shared/types/event/type-aliases/PersonId.md)[] \| `null` \| `undefined`
 
 ### key
 

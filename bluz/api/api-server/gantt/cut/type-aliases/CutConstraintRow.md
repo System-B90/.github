@@ -8,7 +8,7 @@
 
 > **CutConstraintRow** = `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:117](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L117)
+Defined in: [ui/src/api-server/gantt/cut.ts:126](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L126)
 
 Plain-data constraint row (subset of the Drizzle `cntrs` row).
 
@@ -18,7 +18,7 @@ Plain-data constraint row (subset of the Drizzle `cntrs` row).
 
 > **allowedDays**: `number`[] \| `null`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:127](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L127)
+Defined in: [ui/src/api-server/gantt/cut.ts:136](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L136)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:127](https://github.com/System-B90/B
 
 > **forbiddenDays**: `number`[] \| `null`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:128](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L128)
+Defined in: [ui/src/api-server/gantt/cut.ts:137](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L137)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:128](https://github.com/System-B90/B
 
 > **id**: `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:118](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L118)
+Defined in: [ui/src/api-server/gantt/cut.ts:127](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L127)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:118](https://github.com/System-B90/B
 
 > **maxDelayDays**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:126](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L126)
+Defined in: [ui/src/api-server/gantt/cut.ts:135](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L135)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:126](https://github.com/System-B90/B
 
 > **minDelayDays**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:125](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L125)
+Defined in: [ui/src/api-server/gantt/cut.ts:134](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L134)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:125](https://github.com/System-B90/B
 
 > **ownerEventId**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:120](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L120)
+Defined in: [ui/src/api-server/gantt/cut.ts:129](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L129)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:120](https://github.com/System-B90/B
 
 > **ownerModuleId**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:121](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L121)
+Defined in: [ui/src/api-server/gantt/cut.ts:130](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L130)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:121](https://github.com/System-B90/B
 
 > **relation**: `"after"` \| `"before"` \| `null`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:122](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L122)
+Defined in: [ui/src/api-server/gantt/cut.ts:131](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L131)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:122](https://github.com/System-B90/B
 
 > **targetEventId**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L123)
+Defined in: [ui/src/api-server/gantt/cut.ts:132](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L132)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/B
 
 > **targetModuleId**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:124](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L124)
+Defined in: [ui/src/api-server/gantt/cut.ts:133](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L133)
 
 ***
 
@@ -98,4 +98,4 @@ Defined in: [ui/src/api-server/gantt/cut.ts:124](https://github.com/System-B90/B
 
 > **type**: `"RELATIONAL"` \| `"TEMPORAL"`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:119](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L119)
+Defined in: [ui/src/api-server/gantt/cut.ts:128](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L128)

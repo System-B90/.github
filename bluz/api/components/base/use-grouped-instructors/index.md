@@ -14,5 +14,4 @@
 
 ## Functions
 
-- [sortHe](functions/sortHe.md)
 - [useGroupedInstructors](functions/useGroupedInstructors.md)

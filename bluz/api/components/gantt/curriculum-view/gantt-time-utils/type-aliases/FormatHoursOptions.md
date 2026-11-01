@@ -8,7 +8,7 @@
 
 > **FormatHoursOptions** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:91](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L91)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:105](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L105)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:91](htt
 
 > `optional` **maximumFractionDigits?**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:93](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L93)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:107](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L107)
 
 Decimal places in decimal mode (clock mode is always `h:mm`).
 
@@ -26,7 +26,7 @@ Decimal places in decimal mode (clock mode is always `h:mm`).
 
 > `optional` **unit?**: `boolean`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:98](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L98)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:112](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L112)
 
 Append the unit (`ש׳`, or `דק׳` in minutes mode), so a duration never
 reads as a clock time (#813).

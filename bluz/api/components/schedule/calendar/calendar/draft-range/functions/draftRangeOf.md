@@ -8,7 +8,7 @@
 
 > **draftRangeOf**(`draft`, `events`, `fallback`): [`CalendarDraftRange`](../../../../../../api-shared/types/type-aliases/CalendarDraftRange.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/draft-range.ts:8](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/calendar/draft-range.ts#L8)
+Defined in: [ui/src/components/schedule/calendar/calendar/draft-range.ts:8](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/calendar/draft-range.ts#L8)
 
 The range a draft covers (#62): its stored range, else — for drafts saved
 before ranges were stored — the span of its own events, else `fallback`.

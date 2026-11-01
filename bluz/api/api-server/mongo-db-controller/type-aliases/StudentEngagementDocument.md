@@ -8,7 +8,7 @@
 
 > **StudentEngagementDocument** = `object`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:419](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L419)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:455](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L455)
 
 One student's focused time on the schedule board for one day. `id` is
 `<userId>:<date>` so the upsert is a single keyed `$inc` with no read.
@@ -19,7 +19,7 @@ One student's focused time on the schedule board for one day. `id` is
 
 > **date**: `string`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:423](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L423)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:459](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L459)
 
 `yyyy-MM-dd` in the app timezone.
 
@@ -29,7 +29,17 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:423](https://github.com/Sy
 
 > **id**: `string`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:420](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L420)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:456](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L456)
+
+***
+
+### ips?
+
+> `optional` **ips?**: `string`[]
+
+Defined in: [ui/src/api-server/mongo-db-controller.ts:464](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L464)
+
+Every address the board reported from that day (nginx-derived).
 
 ***
 
@@ -37,9 +47,29 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:420](https://github.com/Sy
 
 > **seconds**: `number`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:425](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L425)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:461](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L461)
 
 Total seconds the board was open *and* focused that day.
+
+***
+
+### securityEventCount?
+
+> `optional` **securityEventCount?**: `number`
+
+Defined in: [ui/src/api-server/mongo-db-controller.ts:468](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L468)
+
+True total, including any dropped from `securityEvents`.
+
+***
+
+### securityEvents?
+
+> `optional` **securityEvents?**: [`StudentSecurityEvent`](../../../api-shared/types/student-view/type-aliases/StudentSecurityEvent.md)[]
+
+Defined in: [ui/src/api-server/mongo-db-controller.ts:466](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L466)
+
+Most recent suspected malicious attempts that day, oldest dropped first.
 
 ***
 
@@ -47,7 +77,7 @@ Total seconds the board was open *and* focused that day.
 
 > **updatedAt**: `Date`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:426](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L426)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:462](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L462)
 
 ***
 
@@ -55,4 +85,4 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:426](https://github.com/Sy
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:421](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L421)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:457](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L457)

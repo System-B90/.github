@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -922,6 +949,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#iscontentready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isContentReady
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#onupdate" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -980,11 +1018,16 @@
 <blockquote>
 <p><strong>EventPrimaryDetails</strong>(<code>__namedParameters</code>): <code>Element</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx#L20">ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx:20</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx#L23">ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx:23</a></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
 <h4 id="event">event<a class="headerlink" href="#event" title="Permanent link">&para;</a></h4>
 <p><code>Partial</code>\&lt;<a href="../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>&gt;</p>
+<h4 id="iscontentready">isContentReady<a class="headerlink" href="#iscontentready" title="Permanent link">&para;</a></h4>
+<p><code>boolean</code></p>
+<p>False while the dialog opens: everything but the name field is a
+skeleton of its own size, and the name stays live so typing right away
+still lands in it (see EventDialog).</p>
 <h4 id="onupdate">onUpdate<a class="headerlink" href="#onupdate" title="Permanent link">&para;</a></h4>
 <p>(<code>u</code>) =&gt; <code>void</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>

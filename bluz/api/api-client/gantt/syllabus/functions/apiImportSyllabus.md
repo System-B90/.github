@@ -8,7 +8,7 @@
 
 > **apiImportSyllabus**(`curriculumId`, `document`): `Promise`\<[`ApiSyllabus`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiSyllabus.md)\>
 
-Defined in: [ui/src/api-client/gantt/syllabus.ts:44](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-client/gantt/syllabus.ts#L44)
+Defined in: [ui/src/api-client/gantt/syllabus.ts:45](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/gantt/syllabus.ts#L45)
 
 Adds an exported syllabus to `curriculumId` as a new copy (#757).
 

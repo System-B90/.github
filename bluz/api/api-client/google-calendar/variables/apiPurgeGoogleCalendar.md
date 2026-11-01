@@ -8,6 +8,6 @@
 
 > `const` **apiPurgeGoogleCalendar**: [`ClientApi`](../../common/type-aliases/ClientApi.md)\<[`ApiGoogleCalendarPurgePayload`](../../../api-shared/types/google-calendar/type-aliases/ApiGoogleCalendarPurgePayload.md), [`ApiGoogleCalendarPurgeResponse`](../../../api-shared/types/google-calendar/type-aliases/ApiGoogleCalendarPurgeResponse.md)\>
 
-Defined in: [ui/src/api-client/google-calendar.ts:77](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-client/google-calendar.ts#L77)
+Defined in: [ui/src/api-client/google-calendar.ts:83](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/google-calendar.ts#L83)
 
 Removes Bluz-tagged events from the linked calendar (orphans, or all).

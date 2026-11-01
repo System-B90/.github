@@ -8,7 +8,7 @@
 
 > **getAllRooms**(`controller?`, `hiveUrl?`, `hiveCache?`): `Promise`\<[`Room`](../../../../../api-shared/types/room/type-aliases/Room.md)[]\>
 
-Defined in: [ui/src/app/api/rooms/utils.ts:32](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/rooms/utils.ts#L32)
+Defined in: [ui/src/app/api/rooms/utils.ts:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/rooms/utils.ts#L33)
 
 ## Parameters
 

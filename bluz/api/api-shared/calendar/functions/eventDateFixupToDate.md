@@ -8,7 +8,7 @@
 
 > **eventDateFixupToDate**\<`T`\>(`event`): `Omit`\<`T`, `"startTime"` \| `"endTime"`\> & `Pick`\<[`DbEventDocument`](../../types/event/type-aliases/DbEventDocument.md), `"startTime"` \| `"endTime"`\>
 
-Defined in: [ui/src/api-shared/calendar.ts:23](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/calendar.ts#L23)
+Defined in: [ui/src/api-shared/calendar.ts:23](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/calendar.ts#L23)
 
 Server-side: turns startTime/endTime into native `Date`s.
 

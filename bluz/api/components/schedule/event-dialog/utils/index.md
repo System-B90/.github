@@ -13,3 +13,4 @@
 ## Functions
 
 - [buildGanttEventLink](functions/buildGanttEventLink.md)
+- [hasUnsavedChanges](functions/hasUnsavedChanges.md)

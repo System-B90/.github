@@ -8,23 +8,17 @@
 
 > **TimeSettingRow** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:12](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:12](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L12)
 
 ## Properties
-
-### bgColor
-
-> **bgColor**: `string`
-
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:18](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L18)
-
-***
 
 ### icon
 
 > **icon**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:17](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L17)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:18](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L18)
+
+Neutral glyph; the icons alone tell the rows apart (no per-row hues).
 
 ***
 
@@ -32,7 +26,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > **key**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:13](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:13](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L13)
 
 ***
 
@@ -40,7 +34,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > **label**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:14](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L14)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:14](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L14)
 
 ***
 
@@ -48,7 +42,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > **onChange**: (`newValue`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:16](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L16)
 
 #### Parameters
 
@@ -66,4 +60,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > **value**: `Dayjs` \| `null`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:15](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:15](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L15)

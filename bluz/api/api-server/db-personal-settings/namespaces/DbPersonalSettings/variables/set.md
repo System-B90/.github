@@ -8,7 +8,7 @@
 
 > `const` **set**: (`userId`, `settings`) => `Promise`\<[`PersonalSettings`](../../../../../api-shared/types/personal-settings/type-aliases/PersonalSettings.md)\> = `setPersonalSettings`
 
-Defined in: [ui/src/api-server/db-personal-settings.ts:67](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-personal-settings.ts#L67)
+Defined in: [ui/src/api-server/db-personal-settings.ts:70](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-personal-settings.ts#L70)
 
 ## Parameters
 

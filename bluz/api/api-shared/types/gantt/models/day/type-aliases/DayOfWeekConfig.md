@@ -8,7 +8,7 @@
 
 > **DayOfWeekConfig** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:31](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/day.ts#L31)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:32](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/day.ts#L32)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:31](https://github.com/
 
 > `readonly` **index**: [`GanttDayIndex`](../enumerations/GanttDayIndex.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:32](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/day.ts#L32)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/day.ts#L33)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:32](https://github.com/
 
 > `readonly` **label**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:33](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/day.ts#L33)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:34](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/day.ts#L34)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/day.ts:33](https://github.com/
 
 > `readonly` **short**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:34](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/day.ts#L34)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:35](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/day.ts#L35)

@@ -8,7 +8,7 @@
 
 > **StudentViewSetting**(): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/StudentViewSetting.tsx:27](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/StudentViewSetting.tsx#L27)
+Defined in: [ui/src/components/settings-dialog/tabs/global/StudentViewSetting.tsx:28](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/StudentViewSetting.tsx#L28)
 
 What students see as an event's name in /student-view (#744).
 

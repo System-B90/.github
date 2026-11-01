@@ -10,3 +10,4 @@
 
 - [searchableMenuProps](functions/searchableMenuProps.md)
 - [SelectSearchHeader](functions/SelectSearchHeader.md)
+- [useSelectSearch](functions/useSelectSearch.md)

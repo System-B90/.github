@@ -372,6 +372,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ai-assistant/" class="md-nav__link">
         
   
@@ -842,10 +869,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -863,8 +890,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1280,9 +1307,11 @@ create/edit/remove state machine, both draft→payload converters (relational an
 temporal, including the comma-string day parsing), the conflict check, the
 loading skeletons, and the list/edit-form rendering. The only real difference is
 which owner id is stamped on the create payload and which constraints are listed.</p>
-<p><strong>Extracted:</strong>
-- <code>module-dialog/constraints/use-constraint-editor.ts</code> — <code>useConstraintEditor(ownerType, ownerId)</code> owns all state and payload mapping.
-- <code>module-dialog/constraints/ConstraintRows.tsx</code> — the shared list body, plus <code>TEMPORAL_CONFLICT_MESSAGE</code>.</p>
+<p><strong>Extracted:</strong></p>
+<ul>
+<li><code>module-dialog/constraints/use-constraint-editor.ts</code> — <code>useConstraintEditor(ownerType, ownerId)</code> owns all state and payload mapping.</li>
+<li><code>module-dialog/constraints/ConstraintRows.tsx</code> — the shared list body, plus <code>TEMPORAL_CONFLICT_MESSAGE</code>.</li>
+</ul>
 <p>The views now hold only their own chrome (card vs collapsible section, summary
 chips, virtual sibling constraints).</p>
 <h3 id="3-cut-preview-tabs-157-lines">3. Cut preview tabs (~157 lines)<a class="headerlink" href="#3-cut-preview-tabs-157-lines" title="Permanent link">&para;</a></h3>

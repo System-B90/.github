@@ -12,4 +12,5 @@
 
 ## Functions
 
+- [CourseChips](functions/CourseChips.md)
 - [CourseSelect](functions/CourseSelect.md)

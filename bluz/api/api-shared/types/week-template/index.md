@@ -11,12 +11,15 @@
 - [ApiWeekTemplateApplyResult](type-aliases/ApiWeekTemplateApplyResult.md)
 - [ApiWeekTemplateCreatePayload](type-aliases/ApiWeekTemplateCreatePayload.md)
 - [ApiWeekTemplateGetResponse](type-aliases/ApiWeekTemplateGetResponse.md)
+- [ApiWeekTemplateLinkPayload](type-aliases/ApiWeekTemplateLinkPayload.md)
+- [ApiWeekTemplateLinkResponse](type-aliases/ApiWeekTemplateLinkResponse.md)
 - [ApiWeekTemplatePatchPayload](type-aliases/ApiWeekTemplatePatchPayload.md)
 - [ApiWeekTemplateSavePayload](type-aliases/ApiWeekTemplateSavePayload.md)
 - [ApiWeekTemplateSaveResponse](type-aliases/ApiWeekTemplateSaveResponse.md)
 - [WeekTemplate](type-aliases/WeekTemplate.md)
 - [WeekTemplateEventDocument](type-aliases/WeekTemplateEventDocument.md)
 - [WeekTemplateId](type-aliases/WeekTemplateId.md)
+- [WeekTemplateLink](type-aliases/WeekTemplateLink.md)
 - [WeekTemplateTimes](type-aliases/WeekTemplateTimes.md)
 
 ## Variables
@@ -24,6 +27,7 @@
 - [DEFAULT\_WEEK\_TEMPLATE\_TIMES](variables/DEFAULT_WEEK_TEMPLATE_TIMES.md)
 - [TEMPLATE\_PRAYER\_LABELS](variables/TEMPLATE_PRAYER_LABELS.md)
 - [TEMPLATE\_REFERENCE\_WEEK\_START](variables/TEMPLATE_REFERENCE_WEEK_START.md)
+- [WEEK\_TEMPLATE\_LINK\_WEEK\_PARAM](variables/WEEK_TEMPLATE_LINK_WEEK_PARAM.md)
 
 ## Functions
 

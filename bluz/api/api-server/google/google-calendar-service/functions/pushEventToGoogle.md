@@ -8,7 +8,7 @@
 
 > **pushEventToGoogle**(`userId`, `event`, `action`, `iterationId?`): `Promise`\<`boolean`\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:677](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/google/google-calendar-service.ts#L677)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:748](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/google/google-calendar-service.ts#L748)
 
 Push a single Bluz event to the user's linked Google calendar. Silent no-op
 when the integration isn't configured/connected, or when Google is
@@ -26,7 +26,7 @@ unreachable (offline-hosted deployments must never fail on this).
 
 ### action
 
-`"delete"` \| `"upsert"`
+`"upsert"` \| `"delete"`
 
 ### iterationId?
 

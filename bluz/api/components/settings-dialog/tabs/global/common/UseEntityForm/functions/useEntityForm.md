@@ -8,7 +8,7 @@
 
 > **useEntityForm**\<`TEntity`, `TValues`\>(`__namedParameters`): `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:63](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L63)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:82](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L82)
 
 The "list + form" state every settings tab was re-implementing: which entity
 is selected, whether we are creating, one value bag, and the
@@ -38,9 +38,23 @@ value and setter as its own prop.
 
 ## Returns
 
+### clearForm
+
+> **clearForm**: () => `void`
+
+Empties the form without asking — after a save or a delete.
+
+#### Returns
+
+`void`
+
 ### confirmDialog
 
 > **confirmDialog**: `Element`
+
+### errors
+
+> **errors**: `Partial`\<`Record`\<keyof `TValues`, `string`\>\>
 
 ### handleCancelEdit
 
@@ -90,6 +104,10 @@ value and setter as its own prop.
 
 > **isCreating**: `boolean`
 
+### isDirty
+
+> **isDirty**: `boolean`
+
 ### isSubmitting
 
 > **isSubmitting**: `boolean`
@@ -134,7 +152,7 @@ selection *from* the URL doesn't write it straight back.
 
 > **setValue**: \<`TKey`\>(`key`, `value`) => `void`
 
-Updates one field, leaving the rest untouched.
+Updates one field, leaving the rest untouched, and clears its error.
 
 #### Type Parameters
 

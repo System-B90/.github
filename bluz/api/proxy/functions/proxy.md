@@ -8,7 +8,7 @@
 
 > **proxy**(`request`): `Promise`\<`NextResponse`\<`unknown`\>\>
 
-Defined in: [ui/src/proxy.ts:6](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/proxy.ts#L6)
+Defined in: [ui/src/proxy.ts:40](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/proxy.ts#L40)
 
 ## Parameters
 

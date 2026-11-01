@@ -8,15 +8,15 @@
 
 > **OutsidersContextState** = `object`
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:14](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L14)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:14](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L14)
 
 ## Properties
 
 ### addOutsider
 
-> **addOutsider**: (`outsiderData`) => `Promise`\<`void`\>
+> **addOutsider**: (`outsiderData`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:19](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L19)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:19](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L19)
 
 #### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:19](https://github.com
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
@@ -34,15 +34,15 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:19](https://github.com
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:15](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L15)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:15](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L15)
 
 ***
 
 ### deleteOutsider
 
-> **deleteOutsider**: (`outsiderId`) => `Promise`\<`void`\>
+> **deleteOutsider**: (`outsiderId`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:21](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L21)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:21](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L21)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:21](https://github.com
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:21](https://github.com
 
 > **getOutsider**: (`id`) => `null` \| [`Outsider`](../../../../api-shared/types/outsider/type-aliases/Outsider.md)
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:18](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L18)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:18](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L18)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:18](https://github.com
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:17](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L17)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:17](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L17)
 
 ***
 
@@ -86,15 +86,15 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:17](https://github.com
 
 > **outsiders**: [`Outsider`](../../../../api-shared/types/outsider/type-aliases/Outsider.md)[]
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:16](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L16)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L16)
 
 ***
 
 ### updateOutsider
 
-> **updateOutsider**: (`outsider`) => `Promise`\<`void`\>
+> **updateOutsider**: (`outsider`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/OutsidersProvider.tsx:20](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/OutsidersProvider.tsx#L20)
+Defined in: [ui/src/components/base/OutsidersProvider.tsx:20](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/OutsidersProvider.tsx#L20)
 
 #### Parameters
 
@@ -104,4 +104,4 @@ Defined in: [ui/src/components/base/OutsidersProvider.tsx:20](https://github.com
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>

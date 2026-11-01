@@ -8,7 +8,7 @@
 
 > **toggleInstructor**(`ids`, `instructorId`): `number`[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx:16](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx:18](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx#L18)
 
 Instructor ids after toggling one instructor on a course (#848).
 

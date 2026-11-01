@@ -8,48 +8,23 @@
 
 > `const` **DbSyllabus**: `object`
 
-Defined in: [ui/src/api-server/gantt/db-syllabus.ts:479](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/db-syllabus.ts#L479)
+Defined in: [ui/src/api-server/gantt/db-syllabus.ts:549](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/db-syllabus.ts#L549)
 
 ## Type Declaration
 
 ### applyShuffles
 
-> **applyShuffles**: (`id`, `requested`, `requestedDescriptions?`, `requestedRenames?`) => `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
-
-Replaces the syllabus' shuffle list, cascading every removed name off the
-modules and events that carry it (#485), and every renamed one onto them
-(#774).
-
-Without the cascade the child keeps a dangling name and the UI only offers
-to clear it once the user retypes the deleted shuffle on the syllabus — so
-the caller confirms first (see `ShufflesSection`) and this applies both
-sides in one transaction. Descriptions of removed names go with them and
-renamed ones follow their shuffle; `requestedDescriptions`, when given,
-replaces the rest.
+> `readonly` **applyShuffles**: (...`args`) => `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\> = `applyShufflesAndCourseLinks`
 
 #### Parameters
 
-##### id
+##### args
 
-`string`
-
-##### requested
-
-`string`[]
-
-##### requestedDescriptions?
-
-[`ShuffleDescriptions`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions.md)
-
-##### requestedRenames?
-
-[`ShuffleRenames`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleRenames.md)
+...\[`string`, `string`[], [`ShuffleDescriptions`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleDescriptions.md), [`ShuffleRenames`](../../../../api-shared/gantt/shuffle-names/type-aliases/ShuffleRenames.md)\]
 
 #### Returns
 
 `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
-
-Every module and event whose tags were rewritten, as they were.
 
 ### attachParentIds
 
@@ -185,7 +160,7 @@ names; an event reached through another syllabus keeps its own tags.
 
 ### linkItem
 
-> `readonly` **linkItem**: (`curriculumId`, `syllabusId`) => `Promise`\<[`ApiSyllabus`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiSyllabus.md)\> = `addSyllabusToCurriculum`
+> `readonly` **linkItem**: (`curriculumId`, `syllabusId`) => `Promise`\<[`ApiSyllabus`](../../../../api-shared/types/gantt/api-layer/type-aliases/ApiSyllabus.md)\> = `addSyllabusToCurriculumAndCourseLinks`
 
 #### Parameters
 
@@ -253,10 +228,7 @@ names; an event reached through another syllabus keeps its own tags.
 
 ### updateItem
 
-> `readonly` **updateItem**: (`id`, `updateData`) => `Promise`\<[`GanttSyllabus`](../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabus.md)\> = `updateSyllabus`
-
-Blocks a plain PATCH that drops a shuffle still in use (#485). Callers that
-mean to cascade go through `applyShuffles` after confirming with the user.
+> `readonly` **updateItem**: (`id`, `updateData`) => `Promise`\<[`GanttSyllabus`](../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabus.md)\> = `updateSyllabusAndCourseLinks`
 
 #### Parameters
 

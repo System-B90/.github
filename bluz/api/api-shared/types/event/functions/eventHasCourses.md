@@ -8,7 +8,7 @@
 
 > **eventHasCourses**(`type`): `boolean`
 
-Defined in: [ui/src/api-shared/types/event.ts:255](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L255)
+Defined in: [ui/src/api-shared/types/event.ts:235](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L235)
 
 Checks if an event type is assigned to specific courses. Prayers apply to
 everyone, so they carry none. Deliberately its own predicate rather than a

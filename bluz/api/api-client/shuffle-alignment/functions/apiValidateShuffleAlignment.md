@@ -8,7 +8,7 @@
 
 > **apiValidateShuffleAlignment**(`request`, `iterationId?`): `Promise`\<[`ShuffleAlignmentResponse`](../../../api-shared/shuffle-alignment/type-aliases/ShuffleAlignmentResponse.md)\>
 
-Defined in: [ui/src/api-client/shuffle-alignment.ts:12](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-client/shuffle-alignment.ts#L12)
+Defined in: [ui/src/api-client/shuffle-alignment.ts:12](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/shuffle-alignment.ts#L12)
 
 R-50/R-51 check (#1000) over a range, a saved draft or inline events.
 

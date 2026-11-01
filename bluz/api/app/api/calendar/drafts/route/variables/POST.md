@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/calendar/drafts/route.ts:64](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/calendar/drafts/route.ts#L64)
+Defined in: [ui/src/app/api/calendar/drafts/route.ts:67](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/calendar/drafts/route.ts#L67)
 
 POST /api/calendar/drafts — create a new shared draft.
 

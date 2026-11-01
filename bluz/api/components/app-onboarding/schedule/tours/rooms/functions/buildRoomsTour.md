@@ -1,0 +1,22 @@
+[**TypeDoc API**](../../../../../../index.md)
+
+***
+
+[TypeDoc API](../../../../../../index.md) / [components/app-onboarding/schedule/tours/rooms](../index.md) / buildRoomsTour
+
+# Function: buildRoomsTour()
+
+> **buildRoomsTour**(): `Tour`
+
+Defined in: [ui/src/components/app-onboarding/schedule/tours/rooms.tsx:18](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/schedule/tours/rooms.tsx#L18)
+
+Rooms, from the tile to the settings: what a tile says about its room, the
+two ways to assign one, the day view's column per room, the room filter,
+and where rooms themselves are managed.
+
+Says כיתה on the schedule and חדר in settings and the filter, because that
+is what each surface says (docs/ux-guidelines.md §4 leaves the term open).
+
+## Returns
+
+`Tour`

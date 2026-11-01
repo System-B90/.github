@@ -12,6 +12,5 @@
 - [HIVE\_TOOLS](variables/HIVE_TOOLS.md)
 - [listHiveClassesTool](variables/listHiveClassesTool.md)
 - [listHiveLessonsTool](variables/listHiveLessonsTool.md)
-- [listHiveQueuesTool](variables/listHiveQueuesTool.md)
 - [listHiveSubjectsTool](variables/listHiveSubjectsTool.md)
 - [listPeopleTool](variables/listPeopleTool.md)

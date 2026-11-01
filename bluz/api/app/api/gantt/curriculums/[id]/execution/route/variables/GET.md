@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/execution/route.ts:20](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/app/api/gantt/curriculums/[id]/execution/route.ts#L20)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/execution/route.ts:20](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/gantt/curriculums/[id]/execution/route.ts#L20)
 
 GET: תכנון מול ביצוע — computed-on-read comparison between the curriculum's
 gantt plan and the schedule events cut from it. Not-yet-cut curriculums

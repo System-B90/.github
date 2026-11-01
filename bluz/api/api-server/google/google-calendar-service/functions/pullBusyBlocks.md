@@ -8,7 +8,7 @@
 
 > **pullBusyBlocks**(`userId`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:902](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/google/google-calendar-service.ts#L902)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:1012](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/google/google-calendar-service.ts#L1012)
 
 Reads the user's Google free/busy blocks over the next 30 days so Bluz can
 surface external conflicts. Returns an empty array on any failure

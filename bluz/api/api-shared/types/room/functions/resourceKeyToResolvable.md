@@ -8,7 +8,7 @@
 
 > **resourceKeyToResolvable**(`key`): [`ResolvableRoom`](../type-aliases/ResolvableRoom.md)
 
-Defined in: [ui/src/api-shared/types/room.ts:95](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/room.ts#L95)
+Defined in: [ui/src/api-shared/types/room.ts:100](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/room.ts#L100)
 
 Inverse of [roomLikeToResourceKey](roomLikeToResourceKey.md). Splits on the first `:` only, so
 ids containing further separators survive intact. Hive ids are numeric and

@@ -8,7 +8,7 @@
 
 > **apiApplyModuleEventShuffleGroup**(`eventId`, `moduleId`, `shuffles`): `Promise`\<\{ `members`: [`ModuleEventDocument`](../type-aliases/ModuleEventDocument.md)[]; `removedIds`: `string`[]; \}\>
 
-Defined in: [ui/src/api-client/gantt/module-event.ts:40](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-client/gantt/module-event.ts#L40)
+Defined in: [ui/src/api-client/gantt/module-event.ts:41](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/gantt/module-event.ts#L41)
 
 Reconciles the event's shuffle group so it covers exactly `shuffles`, one
 sibling event per name (#699). Returns the surviving members and the ids of

@@ -8,11 +8,17 @@
 
 > **CutWeekOptions** = [`CutPlanOptions`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanOptions.md) & `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:984](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/gantt/cut.ts#L984)
+Defined in: [ui/src/api-server/gantt/cut.ts:1086](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1086)
 
 Cut options, optionally limited to one timeline week (#970).
 
 ## Type Declaration
+
+### assignInstructors?
+
+> `optional` **assignInstructors?**: `boolean`
+
+Place each event's orchestrator as its instructor. Defaults to on.
 
 ### templateId?
 

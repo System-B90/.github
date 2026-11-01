@@ -8,7 +8,7 @@
 
 > **MoveEventDialog**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/module-dialog/MoveEventDialog.tsx:20](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/module-dialog/MoveEventDialog.tsx#L20)
+Defined in: [ui/src/components/gantt/module-dialog/MoveEventDialog.tsx:21](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/module-dialog/MoveEventDialog.tsx#L21)
 
 ## Parameters
 
@@ -25,6 +25,12 @@ Defined in: [ui/src/components/gantt/module-dialog/MoveEventDialog.tsx:20](https
 #### onClose
 
 () => `void`
+
+#### onMoved?
+
+(`toModuleId`) => `void`
+
+Fired after a successful move, with the event's new module.
 
 #### open
 

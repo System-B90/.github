@@ -9,6 +9,7 @@
 ## Classes
 
 - [GoogleReauthRequiredError](classes/GoogleReauthRequiredError.md)
+- [HiveSessionRequiredError](classes/HiveSessionRequiredError.md)
 
 ## Functions
 

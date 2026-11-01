@@ -6,19 +6,13 @@
 
 # Function: planPersonMove()
 
-> **planPersonMove**(`source`, `target`, `personId`, `withModifier`, `sourceField?`): [`PersonMovePlan`](../type-aliases/PersonMovePlan.md)
+> **planPersonMove**(`target`, `personId`, `withModifier`, `sourceField?`): [`PersonMovePlan`](../type-aliases/PersonMovePlan.md)
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:57](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L57)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:57](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L57)
 
-Decides whether a person can move between two events, and into which field.
+Decides whether a person can move onto an event, and into which field.
 
 ## Parameters
-
-### source
-
-[`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md) \| `undefined`
-
-The event the chip was dragged out of.
 
 ### target
 

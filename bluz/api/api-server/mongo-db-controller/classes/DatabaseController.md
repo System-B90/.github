@@ -6,7 +6,7 @@
 
 # Class: DatabaseController
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:120](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L120)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:130](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L130)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:120](https://github.com/Sy
 
 > **new DatabaseController**(`dbName?`): `DatabaseController`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:124](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L124)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:134](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L134)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:124](https://github.com/Sy
 
 > `readonly` **dbName**: `string`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:122](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L122)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:132](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L132)
 
 ## Accessors
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:122](https://github.com/Sy
 
 > **get** **calendarDrafts**(): `Collection`\<[`CalendarDraft`](../../../api-shared/types/type-aliases/CalendarDraft.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:194](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L194)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:204](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L204)
 
 ##### Returns
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:194](https://github.com/Sy
 
 > **get** **calendarSnapshots**(): `Collection`\<[`CalendarSnapshot`](../../../api-shared/types/type-aliases/CalendarSnapshot.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:190](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L190)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:200](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L200)
 
 ##### Returns
 
@@ -70,7 +70,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:190](https://github.com/Sy
 
 > **get** **client**(): `MongoClient`
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:218](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L218)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:228](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L228)
 
 ##### Returns
 
@@ -84,7 +84,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:218](https://github.com/Sy
 
 > **get** **courses**(): `Collection`\<[`Course`](../../../api-shared/types/course/type-aliases/Course.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:154](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L154)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:164](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L164)
 
 ##### Returns
 
@@ -98,7 +98,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:154](https://github.com/Sy
 
 > **get** **curriculumCuts**(): `Collection`\<[`CurriculumCutClaim`](../../../api-shared/types/curriculum-cut/type-aliases/CurriculumCutClaim.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:214](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L214)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:224](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L224)
 
 Claims of the one-shot curriculum cut. Like the activation ledger above,
 the unique index is the concurrency control — an unlocked
@@ -117,7 +117,7 @@ insert the whole schedule (#515).
 
 > **get** **curriculums**(): `Collection`\<`object` & [`BaseGantItem`](../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDbDocument`](../../gantt/db-base/type-aliases/BaseDbDocument.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:162](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L162)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:172](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L172)
 
 ##### Returns
 
@@ -131,7 +131,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:162](https://github.com/Sy
 
 > **get** **eventHistory**(): `Collection`\<[`EventHistoryEntry`](../../../api-shared/types/event-history/type-aliases/EventHistoryEntry.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:146](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L146)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:156](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L156)
 
 Append-only change log for events. Rows reference events by id and never
 copy event state, so the events collection stays free of audit columns.
@@ -148,7 +148,7 @@ copy event state, so the events collection stays free of audit columns.
 
 > **get** **events**(): `Collection`\<[`DbEventDocument`](../../../api-shared/types/event/type-aliases/DbEventDocument.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:138](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L138)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:148](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L148)
 
 ##### Returns
 
@@ -162,9 +162,9 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:138](https://github.com/Sy
 
 > **get** **hiveLessonActivations**(): `Collection`\<[`HiveLessonActivation`](../../../api-shared/types/hive-activation/type-aliases/HiveLessonActivation.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:204](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L204)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:214](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L214)
 
-Ledger of Hive queue openings: one row per (event, occurrence, student
+Ledger of Hive lesson assignments: one row per (event, occurrence, student
 group) that the activator has already pushed to Hive. Its unique index
 is what makes the activator idempotent and safe to run in more than one
 replica — the insert, not a lock, decides who acts.
@@ -181,7 +181,7 @@ replica — the insert, not a lock, decides who acts.
 
 > **get** **moduleEvents**(): `Collection`\<`object` & [`BaseGantItem`](../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDbDocument`](../../gantt/db-base/type-aliases/BaseDbDocument.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:174](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L174)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:184](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L184)
 
 ##### Returns
 
@@ -195,7 +195,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:174](https://github.com/Sy
 
 > **get** **modules**(): `Collection`\<`object` & [`BaseGantItem`](../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDbDocument`](../../gantt/db-base/type-aliases/BaseDbDocument.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:170](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L170)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:180](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L180)
 
 ##### Returns
 
@@ -209,7 +209,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:170](https://github.com/Sy
 
 > **get** **outsiders**(): `Collection`\<[`Outsider`](../../../api-shared/types/outsider/type-aliases/Outsider.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:182](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L182)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:192](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L192)
 
 ##### Returns
 
@@ -223,7 +223,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:182](https://github.com/Sy
 
 > **get** **reservations**(): `Collection`\<[`DbReservation`](../../../api-shared/types/reservation/type-aliases/DbReservation.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:186](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L186)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:196](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L196)
 
 ##### Returns
 
@@ -237,7 +237,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:186](https://github.com/Sy
 
 > **get** **roomExtendedInfo**(): `Collection`\<[`RoomExtendedInfoDocument`](../type-aliases/RoomExtendedInfoDocument.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:178](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L178)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:188](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L188)
 
 ##### Returns
 
@@ -251,7 +251,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:178](https://github.com/Sy
 
 > **get** **rooms**(): `Collection`\<[`CustomRoom`](../../../api-shared/types/room/type-aliases/CustomRoom.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:158](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L158)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:168](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L168)
 
 ##### Returns
 
@@ -265,7 +265,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:158](https://github.com/Sy
 
 > **get** **settings**(): `Collection`\<[`Setting`](../../../api-shared/types/settings/settings/type-aliases/Setting.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:150](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L150)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:160](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L160)
 
 ##### Returns
 
@@ -279,7 +279,7 @@ Defined in: [ui/src/api-server/mongo-db-controller.ts:150](https://github.com/Sy
 
 > **get** **syllabuses**(): `Collection`\<`object` & [`BaseGantItem`](../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`BaseDbDocument`](../../gantt/db-base/type-aliases/BaseDbDocument.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:166](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/mongo-db-controller.ts#L166)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:176](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L176)
 
 ##### Returns
 

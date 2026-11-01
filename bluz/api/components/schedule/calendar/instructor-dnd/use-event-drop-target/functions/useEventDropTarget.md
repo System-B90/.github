@@ -8,11 +8,17 @@
 
 > **useEventDropTarget**(`event`, `enabled`, `dropKey?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts:21](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts#L21)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts#L33)
 
-Registers a calendar event as a drop target for instructor drags.
-Registration is skipped for locked events, which cannot take assignments
-anyway.
+Makes a calendar event a drop target for instructor drags. Locked events
+take drops too: the lock pins timing, not people (#1016).
+
+The droppable itself registers through `registration`, rendered as a
+[DroppableRegistration](../../../../../base/dnd/drag-over-store/functions/DroppableRegistration.md) leaf: dnd-kit re-renders whoever registers a
+droppable on every change to the drag, and the tile must not be that (#955
+did the same for grid drags). What the tile draws reads from the drag-over
+store, so it re-renders only when a drag starts or ends and when the drag
+enters or leaves it.
 
 ## Parameters
 
@@ -41,7 +47,8 @@ Distinguishes co-existing drop targets for the same event —
 
 `object`
 
-The droppable ref plus whether a drop here is currently armed.
+The element ref, the registration's props, and whether a drop
+         here is currently armed / under the pointer.
 
 ### isDropTarget
 
@@ -51,16 +58,26 @@ The droppable ref plus whether a drop here is currently armed.
 
 > **isOver**: `boolean`
 
+### registration
+
+> **registration**: `object`
+
+#### registration.data
+
+> **data**: [`EventDropData`](../../types/type-aliases/EventDropData.md)
+
+#### registration.disabled
+
+> **disabled**: `boolean` = `!enabled`
+
+#### registration.id
+
+> **id**: `string`
+
+#### registration.slot
+
+> **slot**: [`NodeSlot`](../../../../../base/dnd/drag-over-store/type-aliases/NodeSlot.md)
+
 ### setDropRef
 
-> **setDropRef**: (`element`) => `void` = `setNodeRef`
-
-#### Parameters
-
-##### element
-
-`HTMLElement` \| `null`
-
-#### Returns
-
-`void`
+> **setDropRef**: `RefCallback`\<`HTMLElement`\> = `slot.setNode`

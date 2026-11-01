@@ -8,7 +8,7 @@
 
 > **CutPlanReport** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:274](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L274)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:275](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L275)
 
 Everything the balancer and the break pass did, for the preview and dialog.
 
@@ -18,7 +18,7 @@ Everything the balancer and the break pass did, for the preview and dialog.
 
 > **breaks**: [`GeneratedBreak`](../../cut-breaks/type-aliases/GeneratedBreak.md) & `object`[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:282](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L282)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:283](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L283)
 
 Breaks the post-pass inserted, keyed to the day they landed on.
 
@@ -28,7 +28,7 @@ Breaks the post-pass inserted, keyed to the day they landed on.
 
 > **constraintProposals**: [`ConstraintMoveProposal`](../../cut-constraints/type-aliases/ConstraintMoveProposal.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:284](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L284)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:285](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L285)
 
 Cross-day moves the constraint solver would like to make.
 
@@ -38,7 +38,7 @@ Cross-day moves the constraint solver would like to make.
 
 > **constraintViolations**: [`ConstraintViolation`](../../cut-constraints/type-aliases/ConstraintViolation.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:286](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L286)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:287](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L287)
 
 Constraints no legal placement satisfies.
 
@@ -48,7 +48,7 @@ Constraints no legal placement satisfies.
 
 > **decisions**: [`CutDecision`](CutDecision.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:288](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L288)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:289](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L289)
 
 Open questions for the dialog, in the order they should be asked.
 
@@ -58,7 +58,7 @@ Open questions for the dialog, in the order they should be asked.
 
 > **moves**: [`SpillMove`](../../cut-balancer/type-aliases/SpillMove.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:276](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L276)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:277](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L277)
 
 Occurrences the balancer relocated to a later day in the same week.
 
@@ -68,7 +68,7 @@ Occurrences the balancer relocated to a later day in the same week.
 
 > **overflows**: [`WeekOverflow`](../../cut-balancer/type-aliases/WeekOverflow.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:280](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L280)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:281](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L281)
 
 Weeks that still exceed their working hours after balancing.
 
@@ -78,6 +78,6 @@ Weeks that still exceed their working hours after balancing.
 
 > **spills**: [`CutSpillDetail`](CutSpillDetail.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:278](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L278)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:279](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L279)
 
 The same relocations, resolved to titles and dates for display.

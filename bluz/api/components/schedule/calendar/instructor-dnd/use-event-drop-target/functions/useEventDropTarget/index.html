@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -971,6 +998,67 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        registration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registrationdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        registration.data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registrationdisabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        registration.disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registrationid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        registration.id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registrationslot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        registration.slot
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setdropref" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -978,51 +1066,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="setDropRef">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parameters_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameters
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Parameters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#element" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        element
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#returns_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Returns
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1058,10 +1101,15 @@
 <blockquote>
 <p><strong>useEventDropTarget</strong>(<code>event</code>, <code>enabled</code>, <code>dropKey?</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts#L21">ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts:21</a></p>
-<p>Registers a calendar event as a drop target for instructor drags.
-Registration is skipped for locked events, which cannot take assignments
-anyway.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts#L33">ui/src/components/schedule/calendar/instructor-dnd/use-event-drop-target.ts:33</a></p>
+<p>Makes a calendar event a drop target for instructor drags. Locked events
+take drops too: the lock pins timing, not people (#1016).</p>
+<p>The droppable itself registers through <code>registration</code>, rendered as a
+<a href="../../../../../../base/dnd/drag-over-store/functions/DroppableRegistration/">DroppableRegistration</a> leaf: dnd-kit re-renders whoever registers a
+droppable on every change to the drag, and the tile must not be that (#955
+did the same for grid drags). What the tile draws reads from the drag-over
+store, so it re-renders only when a drag starts or ends and when the drag
+enters or leaves it.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="event">event<a class="headerlink" href="#event" title="Permanent link">&para;</a></h3>
 <p><a href="../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a></p>
@@ -1077,7 +1125,8 @@ anyway.</p>
                event id.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>object</code></p>
-<p>The droppable ref plus whether a drop here is currently armed.</p>
+<p>The element ref, the registration's props, and whether a drop
+         here is currently armed / under the pointer.</p>
 <h3 id="isdroptarget">isDropTarget<a class="headerlink" href="#isdroptarget" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>isDropTarget</strong>: <code>boolean</code></p>
@@ -1086,15 +1135,30 @@ anyway.</p>
 <blockquote>
 <p><strong>isOver</strong>: <code>boolean</code></p>
 </blockquote>
+<h3 id="registration">registration<a class="headerlink" href="#registration" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>registration</strong>: <code>object</code></p>
+</blockquote>
+<h4 id="registrationdata">registration.data<a class="headerlink" href="#registrationdata" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>data</strong>: <a href="../../../types/type-aliases/EventDropData/"><code>EventDropData</code></a></p>
+</blockquote>
+<h4 id="registrationdisabled">registration.disabled<a class="headerlink" href="#registrationdisabled" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>disabled</strong>: <code>boolean</code> = <code>!enabled</code></p>
+</blockquote>
+<h4 id="registrationid">registration.id<a class="headerlink" href="#registrationid" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>id</strong>: <code>string</code></p>
+</blockquote>
+<h4 id="registrationslot">registration.slot<a class="headerlink" href="#registrationslot" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>slot</strong>: <a href="../../../../../../base/dnd/drag-over-store/type-aliases/NodeSlot/"><code>NodeSlot</code></a></p>
+</blockquote>
 <h3 id="setdropref">setDropRef<a class="headerlink" href="#setdropref" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>setDropRef</strong>: (<code>element</code>) =&gt; <code>void</code> = <code>setNodeRef</code></p>
+<p><strong>setDropRef</strong>: <code>RefCallback</code>\&lt;<code>HTMLElement</code>&gt; = <code>slot.setNode</code></p>
 </blockquote>
-<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
-<h5 id="element">element<a class="headerlink" href="#element" title="Permanent link">&para;</a></h5>
-<p><code>HTMLElement</code> | <code>null</code></p>
-<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
-<p><code>void</code></p>
 
 
 

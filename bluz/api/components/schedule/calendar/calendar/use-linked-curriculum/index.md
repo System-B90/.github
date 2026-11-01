@@ -13,3 +13,4 @@
 ## Functions
 
 - [useLinkedCurriculum](functions/useLinkedCurriculum.md)
+- [useLinkedCurriculumId](functions/useLinkedCurriculumId.md)

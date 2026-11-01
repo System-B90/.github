@@ -6,9 +6,12 @@
 
 # components/gantt/module-dialog/ModuleEventView
 
+## Variables
+
+- [ModuleEventView](variables/ModuleEventView.md)
+
 ## Functions
 
 - [eventActionLabel](functions/eventActionLabel.md)
 - [eventFieldLabel](functions/eventFieldLabel.md)
-- [ModuleEventView](functions/ModuleEventView.md)
 - [ShuffleChips](functions/ShuffleChips.md)

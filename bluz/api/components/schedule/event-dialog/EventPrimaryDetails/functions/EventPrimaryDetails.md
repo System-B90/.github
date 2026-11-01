@@ -8,7 +8,7 @@
 
 > **EventPrimaryDetails**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx:20](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx#L20)
+Defined in: [ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx:23](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx#L23)
 
 ## Parameters
 
@@ -17,6 +17,14 @@ Defined in: [ui/src/components/schedule/event-dialog/EventPrimaryDetails.tsx:20]
 #### event
 
 `Partial`\<[`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)\>
+
+#### isContentReady
+
+`boolean`
+
+False while the dialog opens: everything but the name field is a
+skeleton of its own size, and the name stays live so typing right away
+still lands in it (see EventDialog).
 
 #### onUpdate
 

@@ -8,7 +8,7 @@
 
 > **dropWarningFor**(`payload`, `target`, `sources`): `string` \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:35](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L35)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts:35](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/drop-warning.ts#L35)
 
 The reason not to drop `payload` on `target`, or null when it is fine.
 

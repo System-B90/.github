@@ -6,13 +6,23 @@
 
 # Function: ScheduleOnboarding()
 
-> **ScheduleOnboarding**(): `null`
+> **ScheduleOnboarding**(`__namedParameters`): `null`
 
-Defined in: [ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx:26](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx#L26)
+Defined in: [ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx:19](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx#L19)
 
-Registers the schedule screen's tours and help topics (#986) for as long as
-the screen is mounted. The topics repeat the tours' claims, so the two
-cannot drift apart.
+Registers the schedule's tutorials (#986) and their help-panel entries for
+as long as the screen is mounted.
+
+One topic per tutorial — what it is for, and the button that runs it — so
+the panel reads as a menu of tasks: a returning user picks the one they are
+about to do. The topic text is the tutorial's own summary, so the two cannot
+drift apart.
+
+## Parameters
+
+### \_\_namedParameters
+
+[`ScheduleTourDeps`](../../tours/types/type-aliases/ScheduleTourDeps.md)
 
 ## Returns
 

@@ -8,7 +8,7 @@
 
 > `const` **resolve**: (`id?`) => `Promise`\<[`WeekTemplate`](../../../../../api-shared/types/week-template/type-aliases/WeekTemplate.md) \| `null`\> = `resolveTemplate`
 
-Defined in: [ui/src/api-server/db-week-templates.ts:309](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-week-templates.ts#L309)
+Defined in: [ui/src/api-server/db-week-templates.ts:332](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-week-templates.ts#L332)
 
 The template a cut uses: the one asked for, else the default. Null only
 when no template exists at all, which the seed makes unreachable in

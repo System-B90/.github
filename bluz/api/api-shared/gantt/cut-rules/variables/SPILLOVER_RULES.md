@@ -8,7 +8,7 @@
 
 > `const` **SPILLOVER\_RULES**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:70](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-rules.ts#L70)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:70](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-rules.ts#L70)
 
 Spillover moves events off an over-full day onto a later day that has room.
 
@@ -26,7 +26,7 @@ Invariants — these are the rules the balancer may never break:
    the mapped day is the earliest a user asked for it.
 
 Spill may cascade over several days in the same week, so a week with
-everything piled onto ראשון rebalances across ראשון–חמישי.
+everything piled onto ראשון rebalances across ראשון–שישי.
 
 ## Type Declaration
 

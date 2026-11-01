@@ -6,10 +6,6 @@
 
 # components/gantt/curriculum-fab/utils
 
-## Functions
-
-- [fetchDrawerData](functions/fetchDrawerData.md)
-
 ## References
 
 ### byUpdatedAtDesc

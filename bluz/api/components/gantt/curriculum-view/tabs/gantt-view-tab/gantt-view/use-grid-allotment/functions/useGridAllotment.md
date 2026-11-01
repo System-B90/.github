@@ -8,7 +8,7 @@
 
 > **useGridAllotment**(`ctx`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx:62](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx#L62)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx:62](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-allotment.tsx#L62)
 
 Commits a grid week-cell edit to the event's mappings' allotted minutes,
 asking first whenever the edit means more than changing a number: removing

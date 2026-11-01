@@ -8,12 +8,7 @@
 
 > **countEventOccurrences**(`event`, `eventId`, `state`, `ctx?`): `number`
 
-Defined in: [ui/src/components/gantt/utils.tsx:58](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/utils.tsx#L58)
-
-Number of times an event occurs. Without `onlyDayIds` this is its required
-count ([countRequiredOccurrences](countRequiredOccurrences.md)). With it, the placed occurrences on
-those days: its mapped start day plus every surviving echo inside the
-recurrence window, skipping recurrence exceptions (#111, #468).
+Defined in: [ui/src/components/gantt/utils.tsx:86](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/utils.tsx#L86)
 
 ## Parameters
 

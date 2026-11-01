@@ -8,7 +8,7 @@
 
 > **defaultModuleEventSplitAcrossBreaks**(`type`): `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:106](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/event.ts#L106)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:107](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L107)
 
 Default value for `splitAcrossBreaks` when an event's type is picked/changed:
 on for exercises, off for everything else.

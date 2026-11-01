@@ -8,7 +8,7 @@
 
 > **buildStudentPaths**(`courses`, `assignedCourseIds`, `includeRoots`): [`StudentPath`](../type-aliases/StudentPath.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:119](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/student-load.ts#L119)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:123](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/student-load.ts#L123)
 
 The student paths a curriculum's syllabuses and events distinguish: every
 root-to-leaf chain of the course tree, cut at the deepest course anything
@@ -21,7 +21,7 @@ any course, there is a single all-students path.
 
 ### courses
 
-`Pick`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md), `"name"` \| `"id"` \| `"description"` \| `"parentId"`\>[]
+`Pick`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md), `"id"` \| `"name"` \| `"description"` \| `"parentId"`\>[]
 
 ### assignedCourseIds
 

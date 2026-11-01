@@ -6,15 +6,23 @@
 
 # Enumeration: ModuleEventType
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:8](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/event.ts#L8)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:8](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L8)
 
 ## Enumeration Members
+
+### Break
+
+> **Break**: `"הפסקה"`
+
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:12](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L12)
+
+***
 
 ### Exercise
 
 > **Exercise**: "ע\"ע"
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:10](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/event.ts#L10)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:10](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L10)
 
 ***
 
@@ -22,7 +30,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:10](https://github.co
 
 > **Lecture**: `"הרצאה"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:9](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/event.ts#L9)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:9](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L9)
 
 ***
 
@@ -30,7 +38,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:9](https://github.com
 
 > **Other**: `"אחר"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:12](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/event.ts#L12)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:13](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L13)
 
 ***
 
@@ -38,4 +46,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:12](https://github.co
 
 > **SelfTeaching**: "ל\"ע"
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:11](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/event.ts#L11)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:11](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L11)

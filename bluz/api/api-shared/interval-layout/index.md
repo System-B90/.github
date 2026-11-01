@@ -20,4 +20,5 @@
 - [layoutAroundWindows](functions/layoutAroundWindows.md)
 - [layoutEnd](functions/layoutEnd.md)
 - [normalizeWindows](functions/normalizeWindows.md)
+- [subtractWindows](functions/subtractWindows.md)
 - [workingMsUpTo](functions/workingMsUpTo.md)

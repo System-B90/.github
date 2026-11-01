@@ -11,7 +11,12 @@
 - [LaneKey](type-aliases/LaneKey.md)
 - [PlacedTile](type-aliases/PlacedTile.md)
 
+## Variables
+
+- [SLIGHT\_OVERLAP\_MS](variables/SLIGHT_OVERLAP_MS.md)
+
 ## Functions
 
 - [createNoOverlapLayout](functions/createNoOverlapLayout.md)
 - [placeNoOverlap](functions/placeNoOverlap.md)
+- [slightOverlapEnds](functions/slightOverlapEnds.md)

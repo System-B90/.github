@@ -8,7 +8,7 @@
 
 > **prayerTypeToHebrew**(`prayerType`): `string`
 
-Defined in: [ui/src/api-shared/types/event.ts:280](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L280)
+Defined in: [ui/src/api-shared/types/event.ts:260](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L260)
 
 Translates a prayer type enum value to its displayable Hebrew name.
 

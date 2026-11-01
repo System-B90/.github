@@ -134,15 +134,9 @@ Re-exports [EventId](../../../../api-shared/types/event/type-aliases/EventId.md)
 
 ***
 
-### eventOpensHiveQueue
+### eventNeedsInstructors
 
-Re-exports [eventOpensHiveQueue](../../../../api-shared/types/event/functions/eventOpensHiveQueue.md)
-
-***
-
-### eventQueueCourseIds
-
-Re-exports [eventQueueCourseIds](../../../../api-shared/types/event/functions/eventQueueCourseIds.md)
+Re-exports [eventNeedsInstructors](../../../../api-shared/types/event/functions/eventNeedsInstructors.md)
 
 ***
 

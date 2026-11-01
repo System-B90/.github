@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://system-b90.github.io/bluz/ai-assistant/">
       
       
-        <link rel="prev" href="../student-boundary/">
+        <link rel="prev" href="../ux-guidelines/">
       
       
         <link rel="next" href="../performance-and-scaling/">
@@ -369,6 +369,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -451,6 +478,45 @@
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#litellm-sso-key-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LiteLLM + SSO key helper
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LiteLLM + SSO key helper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-cc-sso-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing cc-sso-helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-the-helper-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the helper fails
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -798,10 +864,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -819,8 +885,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1054,6 +1120,45 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#litellm-sso-key-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LiteLLM + SSO key helper
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LiteLLM + SSO key helper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-cc-sso-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing cc-sso-helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-the-helper-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the helper fails
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1162,8 +1267,14 @@ flows, what the model is told, and what stops it.</p>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">export</span><span class="w"> </span><span class="nv">AI_MODEL</span><span class="o">=</span>stealth/ox-alpha<span class="w">       </span><span class="c1"># optional for openrouter; set it for openai</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>npm<span class="w"> </span>run<span class="w"> </span>dev
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1"># open the app, click the ✨ FAB, ask: מה יש בלו"ז השבוע?</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1"># ...or a LiteLLM proxy with an SSO key helper (same values as Claude Code)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">export</span><span class="w"> </span><span class="nv">AI_PROVIDER</span><span class="o">=</span>litellm
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span>https://litellm.corp<span class="w">   </span><span class="c1"># LiteLLM root</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nb">export</span><span class="w"> </span><span class="nv">LITELLM_API_KEY_HELPER</span><span class="o">=</span>cc-sso-helper<span class="w">      </span><span class="c1"># Claude Code's apiKeyHelper</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CC_SSO_BACKEND</span><span class="o">=</span>&lt;backend&gt;<span class="w">                  </span><span class="c1"># read by the helper</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>npm<span class="w"> </span>run<span class="w"> </span>dev
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># open the app, click the ✨ FAB, ask: מה יש בלו"ז השבוע?</span>
 </code></pre></div>
 <table>
 <thead>
@@ -1184,6 +1295,11 @@ flows, what the model is told, and what stops it.</p>
 <td><code>openai</code></td>
 <td><code>OPENAI_BASE_URL</code>, <code>OPENAI_API_KEY</code></td>
 </tr>
+<tr>
+<td>LiteLLM</td>
+<td><code>litellm</code></td>
+<td><code>ANTHROPIC_BASE_URL</code>, plus <code>LITELLM_API_KEY_HELPER</code> or <code>LITELLM_API_KEY</code></td>
+</tr>
 </tbody>
 </table>
 <p>A user's own token (Settings → אישי → עוזר AI) replaces the key for either
@@ -1203,20 +1319,110 @@ when set, else the server key — the same provider chat would use.</p>
   <code>AI_MODEL</code> is not on it.</li>
 <li>The Bluz <strong>server</strong> makes the call, not the browser. It needs a network route
   to the gateway.</li>
-<li><strong>Private CA</strong> (#780): never disable TLS validation. Put the CA PEM at
-  <code>ai-ca/ca.pem</code> beside <code>docker-compose.yml</code> (<code>certificates/ai-ca/</code> in a
-  checkout) and set <code>AI_CA_CERT_PATH=/etc/bluz/ai-ca/ca.pem</code>. It is trusted by
-  the AI client only, on top of the system roots. <code>NODE_EXTRA_CA_CERTS</code> (same
-  path) also works, process-wide. The setup wizard asks for it. An untrusted
-  certificate now reports <code>תעודת ה-TLS של שירות ה-AI אינה מהימנה (&lt;code&gt;)</code>
+<li><strong>Private CA</strong> (#780): never disable TLS validation. The setup wizard
+  fetches the CA itself. It probes the gateway URL. A publicly trusted gateway
+  needs nothing. A private one has its chain fetched and completed to the root
+  through AIA, and the CA's SHA-256 fingerprint is shown for confirmation. The
+  CA is saved to <code>ai-ca/ca.pem</code> beside <code>docker-compose.yml</code>
+  (<code>certificates/ai-ca/</code> in a checkout), and <code>AI_CA_CERT_PATH</code> is set to
+  <code>/etc/bluz/ai-ca/ca.pem</code>. The wizard never sets the path without the file.
+  The CA is trusted by the AI client only, on top of the system roots.
+  <code>NODE_EXTRA_CA_CERTS</code> (same path) also works, process-wide. An untrusted
+  certificate reports <code>תעודת ה-TLS של שירות ה-AI אינה מהימנה (&lt;code&gt;)</code>
   instead of the generic connect error.</li>
 <li>The model must support tool calling. Wrapped models and pipes may silently
   drop <code>tools</code>; run the self-test to catch that.</li>
 </ul>
+<h3 id="litellm-sso-key-helper">LiteLLM + SSO key helper<a class="headerlink" href="#litellm-sso-key-helper" title="Permanent link">&para;</a></h3>
+<p>Same contract as Claude Code. Copy the values from its <code>settings.json</code> into
+<code>.env</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Claude Code <code>settings.json</code></th>
+<th>Bluz <code>.env</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>env.ANTHROPIC_BASE_URL</code></td>
+<td><code>ANTHROPIC_BASE_URL</code></td>
+</tr>
+<tr>
+<td><code>apiKeyHelper</code></td>
+<td><code>LITELLM_API_KEY_HELPER</code></td>
+</tr>
+<tr>
+<td><code>env.CC_SSO_BACKEND</code></td>
+<td><code>CC_SSO_BACKEND</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Bluz calls the same route as Claude Code: <code>&lt;ANTHROPIC_BASE_URL&gt;/v1/messages</code>
+  (Anthropic Messages API), with the token in both <code>x-api-key</code> and
+  <code>Authorization: Bearer</code>. SSO keys are often refused on LiteLLM's OpenAI
+  routes, so Bluz does not use them. A <code>/anthropic</code> pass-through base URL is
+  kept as-is.</li>
+<li>The helper runs on the Bluz <strong>server</strong>, through the platform shell
+  (<code>/bin/sh</code>; <code>cmd.exe</code> on Windows). It inherits Bluz's environment, so
+  <code>CC_SSO_BACKEND</code> reaches it. Its trimmed stdout is the bearer token.</li>
+<li>The token is cached for 5 minutes. A <code>401</code> re-runs the helper and retries
+  once. Concurrent requests share one run; a run times out after 60 s.</li>
+<li><code>AI_MODEL</code> defaults to <code>claude-sonnet-5-5</code>, the id Claude Code requests.
+  Set it to any alias your LiteLLM routes.</li>
+</ul>
+<h4 id="installing-cc-sso-helper">Installing cc-sso-helper<a class="headerlink" href="#installing-cc-sso-helper" title="Permanent link">&para;</a></h4>
+<p>It ships from an internal npm registry. Bluz never installs or imports it —
+it is <strong>not</strong> in <code>package.json</code>, so <code>npm ci</code>, CI and the Docker build never
+need that registry. Install it on the host that runs Bluz:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@applai/cc-sso-helper<span class="w"> </span>--registry<span class="o">=</span>&lt;internal-registry-url&gt;
+</code></pre></div>
+<p>In Docker it must exist <strong>inside</strong> the container: mount it and point
+<code>LITELLM_API_KEY_HELPER</code> at its absolute path.</p>
+<h4 id="when-the-helper-fails">When the helper fails<a class="headerlink" href="#when-the-helper-fails" title="Permanent link">&para;</a></h4>
+<p>The helper is optional. Each request picks the first key that exists:</p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Key</th>
+<th>Helper runs?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Personal token (Settings → אישי → עוזר AI)</td>
+<td>Never</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>LITELLM_API_KEY</code> in <code>.env</code></td>
+<td>Never</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>LITELLM_API_KEY_HELPER</code></td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>No registry access, helper missing, or SSO broken → paste a token in
+  Settings. That user works at once; nobody else is affected.</li>
+<li>A failed run answers in Hebrew and names the personal-token fallback. The
+  stderr goes to the server log. The failure is remembered for 30 s, so a
+  missing helper is not re-run on every request.</li>
+<li>The helper's stdin is closed: a helper waiting for input fails at once
+  instead of hanging until the timeout.</li>
+<li>The model list in Settings stops waiting after 5 s even while the helper
+  still runs.</li>
+</ul>
 <h2 id="anatomy-of-a-turn">Anatomy of a turn<a class="headerlink" href="#anatomy-of-a-turn" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>browser ──POST /api/ai/chat──► route ──► runAiAgent ──► provider ──► model
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                                   ▲          │
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                                   └── tools ◄┘
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>browser ──POST /api/ai/chat──► route ──► runAiAgent ──► provider ──► model
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>                                   ▲          │
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>                                   └── tools ◄┘
 </code></pre></div>
 <ol>
 <li><code>route.ts</code> authenticates, validates and rate-limits, then opens an SSE
@@ -1268,18 +1474,18 @@ means "human-gated" is a property of a normal client, not a server guarantee
 that a person clicked anything.</p>
 <h2 id="tool-results-are-envelopes">Tool results are envelopes<a class="headerlink" href="#tool-results-are-envelopes" title="Permanent link">&para;</a></h2>
 <p>A tool never hands the model a bare payload. <code>envelope.ts</code> wraps every outcome:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">"ok"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">"tool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"delete_event"</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"אירוע e1 לא נמצא"</span><span class="p">,</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not_found"</span><span class="p">,</span><span class="w"> </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"אירוע e1 לא נמצא"</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">"retryable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">"next"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="s2">"המזהה לא קיים. הרץ שוב את כלי הקריאה המתאים כדי לקבל מזהים עדכניים."</span><span class="p">,</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="s2">"אל תקרא לכלי הזה שוב עם אותו מזהה."</span><span class="p">,</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="s2">"אל תדווח למשתמש שהפעולה הצליחה."</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="p">]</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">"ok"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">"tool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"delete_event"</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"אירוע e1 לא נמצא"</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not_found"</span><span class="p">,</span><span class="w"> </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"אירוע e1 לא נמצא"</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nt">"retryable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nt">"next"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="s2">"המזהה לא קיים. הרץ שוב את כלי הקריאה המתאים כדי לקבל מזהים עדכניים."</span><span class="p">,</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="s2">"אל תקרא לכלי הזה שוב עם אותו מזהה."</span><span class="p">,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="s2">"אל תדווח למשתמש שהפעולה הצליחה."</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">}</span>
 </code></pre></div>
 <p><code>next</code> is written as orders, not description: a model told "the id does not
 exist" may or may not re-list; a model told "call the listing tool again"

@@ -6,6 +6,11 @@
 
 # api-shared/hive-groups
 
+## Type Aliases
+
+- [EventHiveGroups](type-aliases/EventHiveGroups.md)
+
 ## Functions
 
 - [findCourseHiveGroup](functions/findCourseHiveGroup.md)
+- [resolveEventHiveGroups](functions/resolveEventHiveGroups.md)

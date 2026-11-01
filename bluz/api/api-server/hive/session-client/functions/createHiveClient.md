@@ -8,7 +8,16 @@
 
 > **createHiveClient**(`hiveUrl?`): `Promise`\<[`HiveClient`](../../client/classes/HiveClient.md)\>
 
-Defined in: [ui/src/api-server/hive/session-client.ts:17](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/session-client.ts#L17)
+Defined in: [ui/src/api-server/hive/session-client.ts:31](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/session-client.ts#L31)
+
+A Hive client acting as the current caller, with the caller's own Hive SSO
+tokens — so Hive applies that user's permissions, never broader ones.
+
+Personal access tokens carry no Hive credentials and are refused. Never
+fall back to the service account here: it would hand a token holder the
+service account's Hive view instead of their own. (Delegating the user's
+Hive refresh token does not work either: it is short-lived and rotates, so
+a 90-day access token would lose Hive within a day.)
 
 ## Parameters
 
@@ -19,3 +28,11 @@ Defined in: [ui/src/api-server/hive/session-client.ts:17](https://github.com/Sys
 ## Returns
 
 `Promise`\<[`HiveClient`](../../client/classes/HiveClient.md)\>
+
+## Throws
+
+HiveSessionRequiredError for an access-token caller.
+
+## Throws
+
+UserNotLoggedInError when there is no caller at all.

@@ -8,7 +8,7 @@
 
 > **useGroupedInstructors**(`options?`): [`GroupedInstructors`](../type-aliases/GroupedInstructors.md)
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:37](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/use-grouped-instructors.ts#L37)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:41](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/use-grouped-instructors.ts#L41)
 
 Groups instructors under the course (מסלול) tree they belong to, walking
 parents before children so nested programs read in hierarchy order. Shared by
@@ -21,7 +21,8 @@ the same grouping.
 
 [`GroupedInstructorsOptions`](../type-aliases/GroupedInstructorsOptions.md) = `{}`
 
-Free-text filter and whether teachers are excluded.
+Free-text filter, whether teachers are excluded, and whether
+to group at all.
 
 ## Returns
 

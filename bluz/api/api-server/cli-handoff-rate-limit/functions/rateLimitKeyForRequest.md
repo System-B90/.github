@@ -8,12 +8,14 @@
 
 > **rateLimitKeyForRequest**(`request`): `string`
 
-Defined in: [ui/src/api-server/cli-handoff-rate-limit.ts:42](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/cli-handoff-rate-limit.ts#L42)
+Defined in: [ui/src/api-server/cli-handoff-rate-limit.ts:55](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/cli-handoff-rate-limit.ts#L55)
 
 Best-effort caller identity for rate limiting. Behind the app's own nginx
-(see AGENTS.md) `x-forwarded-for` carries the real client IP; unset in
-environments without a proxy in front, so every direct caller shares one
-bucket there rather than the limiter silently doing nothing.
+(see AGENTS.md) `x-real-ip` is `$remote_addr`. The first `x-forwarded-for`
+entry is whatever the caller sent, so keying on it let a client mint a
+fresh bucket per attempt; the last entry is the one nginx appended. Unset
+without a proxy in front, so every direct caller shares one bucket there
+rather than the limiter silently doing nothing.
 
 ## Parameters
 

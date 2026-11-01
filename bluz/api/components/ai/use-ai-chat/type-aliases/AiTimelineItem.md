@@ -8,7 +8,7 @@
 
 > **AiTimelineItem** = \{ `calls`: [`AiApprovalCall`](AiApprovalCall.md)[]; `id`: `string`; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); \} \| \{ `id`: `string`; `kind`: [`Assistant`](../enumerations/AiTimelineKind.md#assistant); `text`: `string`; \} \| \{ `allowFreeText`: `boolean`; `answer?`: `string`; `id`: `string`; `kind`: [`Choice`](../enumerations/AiTimelineKind.md#choice); `options`: [`AiChoiceOption`](../../../../api-shared/types/ai/type-aliases/AiChoiceOption.md)[]; `question`: `string`; `toolCallId`: `string`; \} \| \{ `id`: `string`; `kind`: [`Failure`](../enumerations/AiTimelineKind.md#failure); `message`: `string`; \} \| \{ `id`: `string`; `kind`: [`Thinking`](../enumerations/AiTimelineKind.md#thinking); `text`: `string`; \} \| \{ `detail?`: `unknown`; `durationMs?`: `number`; `id`: `string`; `kind`: [`Tool`](../enumerations/AiTimelineKind.md#tool); `name`: `string`; `state`: [`AiToolState`](../enumerations/AiToolState.md); `summary`: `string`; `title`: `string`; \} \| \{ `id`: `string`; `kind`: [`User`](../enumerations/AiTimelineKind.md#user); `text`: `string`; \}
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:74](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/ai/use-ai-chat.ts#L74)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:74](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/ai/use-ai-chat.ts#L74)
 
 ## Union Members
 
@@ -21,7 +21,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:74](https://github.com/System-B
 > **calls**: [`AiApprovalCall`](AiApprovalCall.md)[]
 
 Every write the model proposed in one turn. A batch is approved or
-declined as a unit — "fill five days" is one decision, not five.
+declined as a unit — "fill six days" is one decision, not six.
 
 #### id
 

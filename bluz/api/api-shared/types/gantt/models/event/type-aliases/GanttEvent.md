@@ -8,7 +8,7 @@
 
 > **GanttEvent** = `object` & [`BaseGantItem`](../../shared/type-aliases/BaseGantItem.md)
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:29](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/gantt/models/event.ts#L29)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:30](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/gantt/models/event.ts#L30)
 
 ## Type Declaration
 

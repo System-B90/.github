@@ -8,7 +8,7 @@
 
 > `const` **createMany**: (`events`, `options?`, `controller`, `iterationId?`, `origin`) => `Promise`\<[`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md)[]\> = `createDbEvents`
 
-Defined in: [ui/src/api-server/db-event.ts:692](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-event.ts#L692)
+Defined in: [ui/src/api-server/db-event.ts:799](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-event.ts#L799)
 
 Bulk [createDbEvent](create.md): one insertMany, one history insert (#932).
 

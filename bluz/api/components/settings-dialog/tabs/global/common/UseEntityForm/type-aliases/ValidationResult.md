@@ -4,11 +4,18 @@
 
 [TypeDoc API](../../../../../../../index.md) / [components/settings-dialog/tabs/global/common/UseEntityForm](../index.md) / ValidationResult
 
-# Type Alias: ValidationResult
+# Type Alias: ValidationResult\<TValues\>
 
-> **ValidationResult** = `null` \| `string`
+> **ValidationResult**\<`TValues`\> = [`FieldError`](FieldError.md)\<`TValues`\> \| `null` \| `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:12](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:20](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L20)
 
-A validation failure: the message shown to the user as a warning snackbar.
+A validation failure. A `FieldError` is shown on its field, which gets
+focus; a bare string (no single field to blame) is a warning snackbar.
 Returning `null` means the values are valid.
+
+## Type Parameters
+
+### TValues
+
+`TValues`

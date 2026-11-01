@@ -8,7 +8,7 @@
 
 > **EventNoteIndicator**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/gantt/EventNoteIndicator.tsx:25](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/EventNoteIndicator.tsx#L25)
+Defined in: [ui/src/components/gantt/EventNoteIndicator.tsx:26](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/EventNoteIndicator.tsx#L26)
 
 Small note icon beside a gantt event title. Hovering shows the note, so the
 user sees it without opening the edit dialog (#773). Renders nothing for an

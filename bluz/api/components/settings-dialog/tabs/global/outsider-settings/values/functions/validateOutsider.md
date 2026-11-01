@@ -6,9 +6,9 @@
 
 # Function: validateOutsider()
 
-> **validateOutsider**(`values`): [`ValidationResult`](../../../common/UseEntityForm/type-aliases/ValidationResult.md)
+> **validateOutsider**(`values`): [`ValidationResult`](../../../common/UseEntityForm/type-aliases/ValidationResult.md)\<[`OutsiderValues`](../type-aliases/OutsiderValues.md)\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:44](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L44)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:45](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L45)
 
 ## Parameters
 
@@ -18,4 +18,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/val
 
 ## Returns
 
-[`ValidationResult`](../../../common/UseEntityForm/type-aliases/ValidationResult.md)
+[`ValidationResult`](../../../common/UseEntityForm/type-aliases/ValidationResult.md)\<[`OutsiderValues`](../type-aliases/OutsiderValues.md)\>

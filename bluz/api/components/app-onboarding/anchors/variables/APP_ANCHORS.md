@@ -8,7 +8,7 @@
 
 > `const` **APP\_ANCHORS**: `object`
 
-Defined in: [ui/src/components/app-onboarding/anchors.ts:8](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/app-onboarding/anchors.ts#L8)
+Defined in: [ui/src/components/app-onboarding/anchors.ts:8](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/anchors.ts#L8)
 
 Every anchor id Bluz spotlights, in one place.
 
@@ -22,4 +22,22 @@ than inline keeps that contract greppable and typo-proof.
 
 > `readonly` **help**: `"app.help"` = `"app.help"`
 
-The "?" button in the app bar.
+The "?" button: the gantt's status actions, the schedule's toolbar.
+
+### palette
+
+> `readonly` **palette**: `"app.palette"` = `"app.palette"`
+
+The command palette pill in the app bar.
+
+### settings
+
+> `readonly` **settings**: `"app.settings"` = `"app.settings"`
+
+The settings gear in the app bar.
+
+### studentView
+
+> `readonly` **studentView**: `"app.student-view"` = `"app.student-view"`
+
+The student-view preview link in the app bar.

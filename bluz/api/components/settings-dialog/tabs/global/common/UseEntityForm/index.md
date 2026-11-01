@@ -8,6 +8,8 @@
 
 ## Type Aliases
 
+- [FieldError](type-aliases/FieldError.md)
+- [FieldErrors](type-aliases/FieldErrors.md)
 - [UseEntityFormProps](type-aliases/UseEntityFormProps.md)
 - [ValidationResult](type-aliases/ValidationResult.md)
 

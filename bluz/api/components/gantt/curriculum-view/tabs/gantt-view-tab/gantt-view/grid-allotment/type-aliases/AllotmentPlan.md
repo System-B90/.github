@@ -8,7 +8,7 @@
 
 > **AllotmentPlan** = \{ `dayId`: `string`; `kind`: `"create"`; `minutes`: `number`; \} \| \{ `dayId`: `string`; `kind`: `"materialize"`; `minutes`: `number`; \} \| \{ `kind`: `"none"`; \} \| \{ `dayId`: `string`; `fromDayId`: `string`; `kind`: `"outside"`; `minutes`: `number`; \} \| \{ `changes`: `object`[]; `kind`: `"set"`; \} \| \{ `dayIds`: `string`[]; `kind`: `"zero"`; \}
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-allotment.ts:28](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-allotment.ts#L28)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-allotment.ts:28](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-allotment.ts#L28)
 
 What a week-cell edit does to the event's mappings:
 - `set`: change minutes on mappings already in the week.

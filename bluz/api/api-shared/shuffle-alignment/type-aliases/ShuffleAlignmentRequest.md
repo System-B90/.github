@@ -8,7 +8,7 @@
 
 > **ShuffleAlignmentRequest** = `object`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:183](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/shuffle-alignment.ts#L183)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:196](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/shuffle-alignment.ts#L196)
 
 Body of `POST /api/calendar/validate/shuffle-alignment`: one source.
 
@@ -18,7 +18,7 @@ Body of `POST /api/calendar/validate/shuffle-alignment`: one source.
 
 > `optional` **draftId?**: `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:186](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/shuffle-alignment.ts#L186)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:199](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/shuffle-alignment.ts#L199)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/shuffle-alignment.ts:186](https://github.com/Syst
 
 > `optional` **end?**: `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:185](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/shuffle-alignment.ts#L185)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:198](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/shuffle-alignment.ts#L198)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/shuffle-alignment.ts:185](https://github.com/Syst
 
 > `optional` **events?**: [`DbEventDocument`](../../types/event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:187](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/shuffle-alignment.ts#L187)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:200](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/shuffle-alignment.ts#L200)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/api-shared/shuffle-alignment.ts:187](https://github.com/Syst
 
 > `optional` **start?**: `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:184](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/shuffle-alignment.ts#L184)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:197](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/shuffle-alignment.ts#L197)

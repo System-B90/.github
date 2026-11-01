@@ -6,6 +6,6 @@
 
 # components/schedule/event-component/base
 
-## Functions
+## Variables
 
-- [BluzEventComponent](functions/BluzEventComponent.md)
+- [BluzEventComponent](variables/BluzEventComponent.md)

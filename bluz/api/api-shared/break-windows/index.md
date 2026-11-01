@@ -18,5 +18,6 @@
 - [breakWindowsReaching](functions/breakWindowsReaching.md)
 - [collectBreakWindows](functions/collectBreakWindows.md)
 - [isBreakEvent](functions/isBreakEvent.md)
+- [piecesAroundBreaks](functions/piecesAroundBreaks.md)
 - [splitEventAcrossBreaks](functions/splitEventAcrossBreaks.md)
 - [workingMsOf](functions/workingMsOf.md)

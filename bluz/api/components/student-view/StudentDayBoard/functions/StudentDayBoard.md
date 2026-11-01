@@ -8,7 +8,7 @@
 
 > **StudentDayBoard**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/student-view/StudentDayBoard.tsx:90](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/StudentDayBoard.tsx#L90)
+Defined in: [ui/src/components/student-view/StudentDayBoard.tsx:147](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/student-view/StudentDayBoard.tsx#L147)
 
 The student-facing schedule board (#656).
 
@@ -25,6 +25,12 @@ server guarantees it can carry no others.
 #### date?
 
 `string`
+
+#### refreshSeconds?
+
+`number` = `0`
+
+Periodic refetch interval from `BLUZ_STUDENT_REFRESH_SECONDS`; 0 = off.
 
 ## Returns
 

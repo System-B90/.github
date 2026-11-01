@@ -8,7 +8,7 @@
 
 > **useCalendarHandlers**(`events`, `handleSaveEvent`, `handleDeleteEvent`, `setSelectedEvent`, `setOpenEventDialog`, `confirmLockedEdit?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:48](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L48)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:50](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L50)
 
 Custom React hook to manage calendar event logic, user interactions (e.g. drag & drop, select, click),
 and keyboard shortcuts (copy, paste, delete).
@@ -139,6 +139,24 @@ Cuts an event after `headWorkingMs` of working time.
 ##### slotInfo
 
 `SlotInfo`
+
+#### Returns
+
+`void`
+
+### handleSplitAroundBreaks
+
+> **handleSplitAroundBreaks**: (`event`) => `void`
+
+Turns the blocks an event is drawn as around its breaks into events of
+their own (#1017). The original keeps the first block; every other
+block is a new event carrying the same fields.
+
+#### Parameters
+
+##### event
+
+[`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
 
 #### Returns
 

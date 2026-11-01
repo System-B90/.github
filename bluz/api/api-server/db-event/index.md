@@ -16,6 +16,7 @@
 
 ## Functions
 
+- [sanitizeEventDocument](functions/sanitizeEventDocument.md)
 - [withEventArrays](functions/withEventArrays.md)
 
 ## References

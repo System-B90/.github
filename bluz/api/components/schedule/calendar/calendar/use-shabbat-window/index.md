@@ -8,5 +8,5 @@
 
 ## Functions
 
-- [isInShabbatWindow](functions/isInShabbatWindow.md)
+- [shabbatSpan](functions/shabbatSpan.md)
 - [useShabbatWindow](functions/useShabbatWindow.md)

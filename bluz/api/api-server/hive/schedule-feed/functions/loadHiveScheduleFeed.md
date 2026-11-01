@@ -8,7 +8,7 @@
 
 > **loadHiveScheduleFeed**(`now?`): `Promise`\<[`HiveScheduleFeed`](../type-aliases/HiveScheduleFeed.md) \| `null`\>
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:242](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/schedule-feed.ts#L242)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:325](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/schedule-feed.ts#L325)
 
 The current iteration's schedule as a Hive feed, resolved with the Bluz
 service account (the feed is fetched by a machine, never a browser).

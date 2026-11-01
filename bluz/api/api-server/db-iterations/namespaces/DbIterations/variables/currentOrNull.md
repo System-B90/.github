@@ -8,7 +8,7 @@
 
 > `const` **currentOrNull**: () => `Promise`\<[`Iteration`](../../../../../api-shared/types/iteration/type-aliases/Iteration.md) \| `null`\> = `getCurrentIterationOrNull`
 
-Defined in: [ui/src/api-server/db-iterations.ts:377](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-iterations.ts#L377)
+Defined in: [ui/src/api-server/db-iterations.ts:452](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-iterations.ts#L452)
 
 The current iteration, or null when the registry is still empty — a fresh
 install before the user has created their first iteration (#471). Read paths

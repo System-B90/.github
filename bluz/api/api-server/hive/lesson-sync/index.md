@@ -6,16 +6,7 @@
 
 # api-server/hive/lesson-sync
 
-## Type Aliases
-
-- [LessonRulePlan](type-aliases/LessonRulePlan.md)
-
 ## Functions
 
-- [buildLessonDescription](functions/buildLessonDescription.md)
-- [describeUnresolvedShuffles](functions/describeUnresolvedShuffles.md)
-- [isLessonOwnedByEvent](functions/isLessonOwnedByEvent.md)
-- [planLessonRules](functions/planLessonRules.md)
-- [reconcileEventLesson](functions/reconcileEventLesson.md)
-- [resolveDesiredRules](functions/resolveDesiredRules.md)
+- [eventHiveGroupResolver](functions/eventHiveGroupResolver.md)
 - [syncEventLessonToHive](functions/syncEventLessonToHive.md)

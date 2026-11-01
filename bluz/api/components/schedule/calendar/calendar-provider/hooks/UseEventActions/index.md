@@ -8,6 +8,7 @@
 
 ## Variables
 
+- [READ\_ONLY\_ITERATION\_HINT](variables/READ_ONLY_ITERATION_HINT.md)
 - [READ\_ONLY\_ITERATION\_MESSAGE](variables/READ_ONLY_ITERATION_MESSAGE.md)
 
 ## Functions

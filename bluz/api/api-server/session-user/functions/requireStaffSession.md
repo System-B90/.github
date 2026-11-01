@@ -8,12 +8,12 @@
 
 > **requireStaffSession**(): `Promise`\<`AuthSessionUser` & `object`\>
 
-Defined in: [ui/src/api-server/session-user.ts:58](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/session-user.ts#L58)
+Defined in: [ui/src/api-server/session-user.ts:233](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/session-user.ts#L233)
 
-Gates a route to Segel/Admin clearance (#199). Every request re-checks the
-JWT, not just the one-time sign-in gate in `sso.ts`'s `signInCallback`.
-Throws so callers can just `await requireStaffSession()` at the top of a
-`withApi` handler and let `catchHandler` map it to 401/403.
+Gates a route to Segel/Admin clearance (#199). Accepts a browser session or
+a personal access token. Throws so callers can just
+`await requireStaffSession()` at the top of a `withApi` handler and let
+`catchHandler` map it to 401/403.
 
 ## Returns
 

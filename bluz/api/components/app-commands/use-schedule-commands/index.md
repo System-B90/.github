@@ -10,6 +10,10 @@
 
 - [ScheduleCommandActions](type-aliases/ScheduleCommandActions.md)
 
+## Variables
+
+- [SCHEDULE\_PLAIN\_SHORTCUTS](variables/SCHEDULE_PLAIN_SHORTCUTS.md)
+
 ## Functions
 
 - [useScheduleCommands](functions/useScheduleCommands.md)

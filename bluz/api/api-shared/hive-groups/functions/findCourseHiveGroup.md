@@ -8,16 +8,18 @@
 
 > **findCourseHiveGroup**\<`T`\>(`course`, `groups`): `T` \| `undefined`
 
-Defined in: [ui/src/api-shared/hive-groups.ts:8](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/hive-groups.ts#L8)
+Defined in: [ui/src/api-shared/hive-groups.ts:11](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/hive-groups.ts#L11)
 
 The Hive student group a Bluz course (a shuffle) syncs against: its
-explicitly linked group when set (#774), else the group with its exact name.
+explicitly linked group when set (#774), else the group with its name.
+Names compare normalized (trimmed, inner spaces collapsed), the way the
+Gantt matches shuffles, so a group that looks linked there is linked here.
 
 ## Type Parameters
 
 ### T
 
-`T` *extends* `Pick`\<`Class`, `"name"` \| `"id"`\>
+`T` *extends* `Pick`\<`Class`, `"id"` \| `"name"`\>
 
 ## Parameters
 

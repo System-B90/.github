@@ -8,7 +8,7 @@
 
 > **tagSx**(`__namedParameters?`): `object`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:7](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/event-component/parts/tag-sx.ts#L7)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:11](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-component/parts/tag-sx.ts#L11)
 
 ## Parameters
 
@@ -36,13 +36,21 @@ Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:7](https
 
 > **borderColor**: `string`
 
+### borderInlineStartColor?
+
+> `optional` **borderInlineStartColor?**: `string` = `accentColor`
+
+### borderInlineStartWidth?
+
+> `optional` **borderInlineStartWidth?**: `string` = `"4px"`
+
 ### borderRadius
 
 > **borderRadius**: `string` = `"4px"`
 
 ### color
 
-> **color**: `string`
+> **color**: `string` = `"inherit"`
 
 ### display
 

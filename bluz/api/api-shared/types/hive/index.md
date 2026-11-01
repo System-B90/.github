@@ -12,8 +12,6 @@
 - [ApiHiveClassesGetResponse](type-aliases/ApiHiveClassesGetResponse.md)
 - [ApiHiveLessonsGetPayload](type-aliases/ApiHiveLessonsGetPayload.md)
 - [ApiHiveLessonsGetResponse](type-aliases/ApiHiveLessonsGetResponse.md)
-- [ApiHiveQueuesGetPayload](type-aliases/ApiHiveQueuesGetPayload.md)
-- [ApiHiveQueuesGetResponse](type-aliases/ApiHiveQueuesGetResponse.md)
 - [ApiHiveRoomsGetPayload](type-aliases/ApiHiveRoomsGetPayload.md)
 - [ApiHiveRoomsGetResponse](type-aliases/ApiHiveRoomsGetResponse.md)
 - [ApiHiveStudentsGetPayload](type-aliases/ApiHiveStudentsGetPayload.md)

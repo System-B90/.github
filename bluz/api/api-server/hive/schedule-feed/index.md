@@ -19,4 +19,5 @@
 ## Functions
 
 - [buildHiveScheduleIcs](functions/buildHiveScheduleIcs.md)
+- [hiveFeedWindow](functions/hiveFeedWindow.md)
 - [loadHiveScheduleFeed](functions/loadHiveScheduleFeed.md)

@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -909,6 +936,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#onreload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        onReload?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -950,9 +988,9 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">components/student-view/use-student-live-refresh</a> / useStudentLiveRefresh</p>
 <h1 id="function-usestudentliverefresh">Function: useStudentLiveRefresh()<a class="headerlink" href="#function-usestudentliverefresh" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>useStudentLiveRefresh</strong>(<code>onChange</code>): <code>void</code></p>
+<p><strong>useStudentLiveRefresh</strong>(<code>onChange</code>, <code>onReload?</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/use-student-live-refresh.ts#L26">ui/src/components/student-view/use-student-live-refresh.ts:26</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/student-view/use-student-live-refresh.ts#L40">ui/src/components/student-view/use-student-live-refresh.ts:40</a></p>
 <p>Keeps the student board live (#656).</p>
 <p>The socket carries no calendar data to students: the only thing that arrives
 on <code>STUDENT_SYNC_ID</code> is a content-free "something changed" ping, and the
@@ -965,10 +1003,17 @@ refuses to register it as a session (which would put it on the untargeted
 broadcast) and refuses every sync object but this one. There is deliberately
 no per-iteration student channel, so nothing here can reveal that iterations
 exist.</p>
+<p>A staff "push update" (<code>STUDENT_RELOAD</code>) reloads the whole page instead, so
+a new deploy reaches every screen. Each board waits a random slice of
+<a href="../../variables/RELOAD_JITTER_MS/">RELOAD_JITTER_MS</a> first, so a room full of boards does not hit the
+server in the same instant.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="onchange">onChange<a class="headerlink" href="#onchange" title="Permanent link">&para;</a></h3>
 <p>() =&gt; <code>void</code></p>
 <p>Called when the schedule may have changed. Must be stable.</p>
+<h3 id="onreload">onReload?<a class="headerlink" href="#onreload" title="Permanent link">&para;</a></h3>
+<p>() =&gt; <code>void</code></p>
+<p>Called on a push update. Defaults to a jittered page reload.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>void</code></p>
 

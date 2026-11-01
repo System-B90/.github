@@ -8,7 +8,10 @@
 
 > **FilterRoom**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/header/FilterRoom.tsx:13](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/header/FilterRoom.tsx#L13)
+Defined in: [ui/src/components/header/FilterRoom.tsx:19](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/header/FilterRoom.tsx#L19)
+
+Narrows the calendar to a set of rooms (#1018): their events only, and in
+the day view their columns only, so a schedule with many rooms stays legible.
 
 ## Parameters
 

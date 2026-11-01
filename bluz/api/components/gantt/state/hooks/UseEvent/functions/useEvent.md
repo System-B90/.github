@@ -10,7 +10,7 @@
 
 > **useEvent**(`eventId`): `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseEvent.ts:5](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/hooks/UseEvent.ts#L5)
+Defined in: [ui/src/components/gantt/state/hooks/UseEvent.ts:5](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/state/hooks/UseEvent.ts#L5)
 
 ### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/gantt/state/hooks/UseEvent.ts:5](https://github.c
 
 > **useEvent**(`eventId`): [`ModuleEventDocument`](../../../../../../api-client/gantt/module-event/type-aliases/ModuleEventDocument.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseEvent.ts:6](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/state/hooks/UseEvent.ts#L6)
+Defined in: [ui/src/components/gantt/state/hooks/UseEvent.ts:6](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/state/hooks/UseEvent.ts#L6)
 
 ### Parameters
 

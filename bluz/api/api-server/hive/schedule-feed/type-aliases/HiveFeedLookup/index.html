@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -899,15 +926,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#groupemail" class="md-nav__link">
+  <a href="#groupemails" class="md-nav__link">
     <span class="md-ellipsis">
       
-        groupEmail
+        groupEmails
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="groupEmail">
+    <nav class="md-nav" aria-label="groupEmails">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -923,10 +950,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#courseid" class="md-nav__link">
+  <a href="#courseids" class="md-nav__link">
     <span class="md-ellipsis">
       
-        courseId
+        courseIds
       
     </span>
   </a>
@@ -1154,25 +1181,26 @@
 <blockquote>
 <p><strong>HiveFeedLookup</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/schedule-feed.ts#L55">ui/src/api-server/hive/schedule-feed.ts:55</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/schedule-feed.ts#L90">ui/src/api-server/hive/schedule-feed.ts:90</a></p>
 <p>Hive names the feed resolves Bluz ids against.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
-<h3 id="groupemail">groupEmail<a class="headerlink" href="#groupemail" title="Permanent link">&para;</a></h3>
+<h3 id="groupemails">groupEmails<a class="headerlink" href="#groupemails" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>groupEmail</strong>: (<code>courseId</code>) =&gt; <code>string</code> | <code>undefined</code></p>
+<p><strong>groupEmails</strong>: (<code>courseIds</code>) =&gt; <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/schedule-feed.ts#L61">ui/src/api-server/hive/schedule-feed.ts:61</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/schedule-feed.ts#L97">ui/src/api-server/hive/schedule-feed.ts:97</a></p>
+<p>Group emails of the courses and all their sub-courses, deduplicated.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
-<h5 id="courseid">courseId<a class="headerlink" href="#courseid" title="Permanent link">&para;</a></h5>
-<p><a href="../../../../../api-shared/types/course/type-aliases/CourseId/"><code>CourseId</code></a></p>
+<h5 id="courseids">courseIds<a class="headerlink" href="#courseids" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../../api-shared/types/course/type-aliases/CourseId/"><code>CourseId</code></a>[]</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
-<p><code>string</code> | <code>undefined</code></p>
+<p><code>string</code>[]</p>
 <hr />
 <h3 id="lesson">lesson<a class="headerlink" href="#lesson" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>lesson</strong>: (<code>lessonId</code>) =&gt; { <code>name</code>: <code>string</code>; <code>subjectName</code>: <code>string</code>; } | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/schedule-feed.ts#L57">ui/src/api-server/hive/schedule-feed.ts:57</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/schedule-feed.ts#L92">ui/src/api-server/hive/schedule-feed.ts:92</a></p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
 <h5 id="lessonid">lessonId<a class="headerlink" href="#lessonid" title="Permanent link">&para;</a></h5>
 <p><a href="../../../../../api-shared/types/hive/type-aliases/HiveLessonId/"><code>HiveLessonId</code></a></p>
@@ -1183,7 +1211,7 @@
 <blockquote>
 <p><strong>roomName</strong>: (<code>roomId</code>) =&gt; <code>string</code> | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/schedule-feed.ts#L60">ui/src/api-server/hive/schedule-feed.ts:60</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/schedule-feed.ts#L95">ui/src/api-server/hive/schedule-feed.ts:95</a></p>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
 <h5 id="roomid">roomId<a class="headerlink" href="#roomid" title="Permanent link">&para;</a></h5>
 <p><code>number</code></p>
@@ -1194,7 +1222,7 @@
 <blockquote>
 <p><strong>subjectName</strong>: (<code>subjectId</code>) =&gt; <code>string</code> | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/schedule-feed.ts#L56">ui/src/api-server/hive/schedule-feed.ts:56</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/schedule-feed.ts#L91">ui/src/api-server/hive/schedule-feed.ts:91</a></p>
 <h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">&para;</a></h4>
 <h5 id="subjectid">subjectId<a class="headerlink" href="#subjectid" title="Permanent link">&para;</a></h5>
 <p><code>number</code></p>

@@ -8,4 +8,4 @@
 
 > **ApiReservationDeleteResponse** = `void`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:45](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/reservation.ts#L45)
+Defined in: [ui/src/api-shared/types/reservation.ts:46](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/reservation.ts#L46)

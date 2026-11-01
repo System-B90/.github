@@ -6,10 +6,6 @@
 
 # components/week-templates/use-load-template
 
-## Variables
-
-- [TEMPLATE\_QUERY\_PARAM](variables/TEMPLATE_QUERY_PARAM.md)
-
 ## Functions
 
 - [useLoadTemplate](functions/useLoadTemplate.md)

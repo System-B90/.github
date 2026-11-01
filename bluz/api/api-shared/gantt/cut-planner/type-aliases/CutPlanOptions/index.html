@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -943,6 +970,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#parknontemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parkNonTemplate?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#parkweekonly" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -996,13 +1034,13 @@
 <blockquote>
 <p><strong>CutPlanOptions</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L339">ui/src/api-shared/gantt/cut-planner.ts:339</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L342">ui/src/api-shared/gantt/cut-planner.ts:342</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="acceptedconstraintmoves">acceptedConstraintMoves?<a class="headerlink" href="#acceptedconstraintmoves" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>acceptedConstraintMoves?</strong>: <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L363">ui/src/api-shared/gantt/cut-planner.ts:363</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L366">ui/src/api-shared/gantt/cut-planner.ts:366</a></p>
 <p>Constraint-solver moves the user accepted, by event id. Proposals not
 listed here are reported but not applied — the cut never silently moves
 an event the user mapped deliberately.</p>
@@ -1011,7 +1049,7 @@ an event the user mapped deliberately.</p>
 <blockquote>
 <p><code>optional</code> <strong>autoSpillover?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L352">ui/src/api-shared/gantt/cut-planner.ts:352</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L355">ui/src/api-shared/gantt/cut-planner.ts:355</a></p>
 <p>Auto-spillover: rebalance each week so no day carries more than its
 working window, cascading work forward within the week. Defaults to on —
 pass <code>false</code> for the pre-#… raw stacking behaviour.</p>
@@ -1020,7 +1058,7 @@ pass <code>false</code> for the pre-#… raw stacking behaviour.</p>
 <blockquote>
 <p><code>optional</code> <strong>force?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L346">ui/src/api-shared/gantt/cut-planner.ts:346</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L349">ui/src/api-shared/gantt/cut-planner.ts:349</a></p>
 <p>When true, an unmapped event or an unsatisfied recurrence no longer
 fails the whole plan — the offending event is dropped and planning
 continues. Lets a user explicitly cut an unfinished gantt. A missing
@@ -1030,15 +1068,26 @@ start date is still fatal (nothing is datable without it).</p>
 <blockquote>
 <p><code>optional</code> <strong>insertBreaks?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L357">ui/src/api-shared/gantt/cut-planner.ts:357</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L360">ui/src/api-shared/gantt/cut-planner.ts:360</a></p>
 <p>Break post-pass: spread a day's leftover slack through the day as real
 הפסקה events instead of leaving it as an empty tail. Defaults to on.</p>
+<hr />
+<h3 id="parknontemplate">parkNonTemplate?<a class="headerlink" href="#parknontemplate" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>parkNonTemplate?</strong>: <code>boolean</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L385">ui/src/api-shared/gantt/cut-planner.ts:385</a></p>
+<p>Place only what the week template places, and park everything else in
+the schedule's unassigned box (ארגז) for the user to place by hand.
+Meal events keep their fixed times. No breaks are spread, since the
+gaps are where the parked work goes. Defaults to off: unpinned work is
+auto-placed around the template's events.</p>
 <hr />
 <h3 id="parkweekonly">parkWeekOnly?<a class="headerlink" href="#parkweekonly" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>parkWeekOnly?</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L374">ui/src/api-shared/gantt/cut-planner.ts:374</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L377">ui/src/api-shared/gantt/cut-planner.ts:377</a></p>
 <p>Park week-only mappings (#964) in the schedule's unassigned box instead
 of auto-scheduling them, so the user places each one by hand. They take
 no weekday time, so nothing else moves to make room for them.</p>
@@ -1047,7 +1096,7 @@ no weekday time, so nothing else moves to make room for them.</p>
 <blockquote>
 <p><code>optional</code> <strong>weekOverflowResolutions?</strong>: <code>Record</code>\&lt;<code>string</code>, <a href="../../../cut-rules/type-aliases/WeekOverflowResolution/"><code>WeekOverflowResolution</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/gantt/cut-planner.ts#L368">ui/src/api-shared/gantt/cut-planner.ts:368</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-planner.ts#L371">ui/src/api-shared/gantt/cut-planner.ts:371</a></p>
 <p>Per-week answer to a <code>week-overflow</code> decision. Absent weeks use
 <code>OVERFLOW_RULES.defaultResolution</code> (<code>park</code>).</p>
 

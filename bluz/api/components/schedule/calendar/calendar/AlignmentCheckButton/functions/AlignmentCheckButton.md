@@ -8,7 +8,7 @@
 
 > **AlignmentCheckButton**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/AlignmentCheckButton.tsx:30](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/schedule/calendar/calendar/AlignmentCheckButton.tsx#L30)
+Defined in: [ui/src/components/schedule/calendar/calendar/AlignmentCheckButton.tsx:31](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/calendar/AlignmentCheckButton.tsx#L31)
 
 "בדיקת יישור שאפלים" (#1000): runs the server's R-50/R-51 check over the
 shown week — the live calendar or the loaded draft, whichever is on screen —

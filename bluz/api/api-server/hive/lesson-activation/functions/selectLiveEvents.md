@@ -8,9 +8,9 @@
 
 > **selectLiveEvents**(`events`, `now`): [`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-server/hive/lesson-activation.ts:58](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/hive/lesson-activation.ts#L58)
+Defined in: [ui/src/api-server/hive/lesson-activation.ts:56](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/lesson-activation.ts#L56)
 
-Live, non-hidden events that should open a queue right now.
+Live, non-hidden events whose lesson should be assigned right now.
 
 Hidden events are excluded deliberately: they are not shown to students, so
 they must not move students' work either. Sorted by start time so that when

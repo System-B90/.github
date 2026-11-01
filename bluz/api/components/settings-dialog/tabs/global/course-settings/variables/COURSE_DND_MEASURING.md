@@ -8,7 +8,7 @@
 
 > `const` **COURSE\_DND\_MEASURING**: `MeasuringConfiguration`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/index.tsx:134](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/settings-dialog/tabs/global/course-settings/index.tsx#L134)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/index.tsx:136](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/index.tsx#L136)
 
 Re-measure drop targets throughout the drag. The layout shifts after a drag
 starts, and with the default (measure once at drag start) the root drop

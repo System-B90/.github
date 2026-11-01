@@ -6,27 +6,63 @@
 
 # Function: getPresentInstructors()
 
+## Call Signature
+
 > **getPresentInstructors**(`event`): `number`[]
 
-Defined in: [ui/src/api-shared/types/event.ts:315](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L315)
+Defined in: [ui/src/api-shared/types/event.ts:296](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L296)
 
 Compiles a unique list of instructor and lecturer IDs present at an event.
 
-## Parameters
+### Parameters
 
-### event
+#### event
 
 `Pick`\<[`Event`](../type-aliases/Event.md), `"instructors"` \| `"lecturers"`\>
 
 The Event object.
 
-## Returns
+### Returns
 
 `number`[]
 
 Array of unique PersonIds present at the event.
 
-## Example
+### Example
+
+```typescript
+const attendees = getPresentInstructors(event, true);
+```
+
+## Call Signature
+
+> **getPresentInstructors**(`event`, `includeOutsiders`): [`PersonId`](../type-aliases/PersonId.md)[]
+
+Defined in: [ui/src/api-shared/types/event.ts:299](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L299)
+
+Compiles a unique list of instructor and lecturer IDs present at an event.
+
+### Parameters
+
+#### event
+
+`Pick`\<[`Event`](../type-aliases/Event.md), `"instructors"` \| `"lecturers"`\>
+
+The Event object.
+
+#### includeOutsiders
+
+`boolean`
+
+Optional flag to include "איש חוץ" string marker in the return list.
+
+### Returns
+
+[`PersonId`](../type-aliases/PersonId.md)[]
+
+Array of unique PersonIds present at the event.
+
+### Example
 
 ```typescript
 const attendees = getPresentInstructors(event, true);

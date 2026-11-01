@@ -8,7 +8,7 @@
 
 > **formatRange**(`start`, `end`): `string`
 
-Defined in: [ui/src/api-server/ai/tools/common.ts:92](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/tools/common.ts#L92)
+Defined in: [ui/src/api-server/ai/tools/common.ts:99](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/tools/common.ts#L99)
 
 Renders a range the way the approval card should show it.
 

@@ -6,9 +6,9 @@
 
 # Function: addStudentEngagementSeconds()
 
-> **addStudentEngagementSeconds**(`userId`, `date`, `seconds`): `Promise`\<`number`\>
+> **addStudentEngagementSeconds**(`userId`, `date`, `seconds`, `ip?`): `Promise`\<`number`\>
 
-Defined in: [ui/src/api-server/db-student-engagement.ts:30](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-student-engagement.ts#L30)
+Defined in: [ui/src/api-server/db-student-engagement.ts:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-student-engagement.ts#L33)
 
 Adds focused-time to a student's counter for one day (#656).
 
@@ -36,6 +36,14 @@ Session-derived user id.
 `number`
 
 Reported focused seconds since the last report.
+
+### ip?
+
+`string`
+
+The reporting address (from nginx, never the body), added to the
+          day's `ips`, so an unattributable attempt in the security log can
+          be matched to whoever used that address.
 
 ## Returns
 

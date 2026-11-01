@@ -372,6 +372,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ai-assistant/" class="md-nav__link">
         
   
@@ -870,10 +897,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -891,8 +918,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1539,7 +1566,10 @@ They carry a synthetic <code>ganttEventId</code> prefixed <code>cut-break:</code
 <ul>
 <li>a pull-back (משיכה חזרה) archives them alongside everything else the cut
   created, since it matches on <code>ganttEventId</code> existing;</li>
-<li>a re-cut never duplicates them.</li>
+<li>a re-cut never duplicates them;</li>
+<li>a break (generated or gantt-authored) the user deleted from the schedule
+  stays deleted: a reload or single-week re-cut does not bring it back, not
+  even parked. Other deleted occurrences come back parked.</li>
 </ul>
 <h2 id="prayers">Prayers<a class="headerlink" href="#prayers" title="Permanent link">&para;</a></h2>
 <p>Prayer times (שחרית / מנחה / ערבית) live in the <strong>MongoDB</strong> schedule settings,

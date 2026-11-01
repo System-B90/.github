@@ -9,6 +9,7 @@
 ## Variables
 
 - [get](variables/get.md)
+- [hiveIntegration](variables/hiveIntegration.md)
 - [hiveLessonDriver](variables/hiveLessonDriver.md)
 - [init](variables/init.md)
 - [set](variables/set.md)

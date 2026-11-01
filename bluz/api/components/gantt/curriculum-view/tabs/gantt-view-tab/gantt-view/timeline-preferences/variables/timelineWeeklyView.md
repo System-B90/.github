@@ -8,7 +8,7 @@
 
 > `const` **timelineWeeklyView**: `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/timeline-preferences.ts:7](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/timeline-preferences.ts#L7)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/timeline-preferences.ts:7](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/timeline-preferences.ts#L7)
 
 The timeline (רצף זמן) toolbar's view choices, remembered per viewer so a
 reload keeps them (#821).

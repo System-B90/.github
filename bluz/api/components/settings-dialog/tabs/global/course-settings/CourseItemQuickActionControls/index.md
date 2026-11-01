@@ -12,4 +12,5 @@
 
 ## Functions
 
+- [courseDeleteMessage](functions/courseDeleteMessage.md)
 - [CourseItemQuickActionControls](functions/CourseItemQuickActionControls.md)

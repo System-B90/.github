@@ -8,7 +8,7 @@
 
 > `const` **FIXTURE\_CURRICULUM**: `object`
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:320](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/ai/benchmark/fixture.ts#L320)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:323](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/benchmark/fixture.ts#L323)
 
 ## Type Declaration
 

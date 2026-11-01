@@ -1,0 +1,2349 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Internal developer documentation for the Bluz scheduling & curriculum-management platform.">
+      
+      
+      
+        <link rel="canonical" href="https://system-b90.github.io/bluz/ux-guidelines/">
+      
+      
+        <link rel="prev" href="../student-boundary/">
+      
+      
+        <link rel="next" href="../ai-assistant/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>UX Guidelines - Bluz Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ux-guidelines" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Bluz Developer Documentation" class="md-header__button md-logo" aria-label="Bluz Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bluz Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UX Guidelines
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/system-b90/bluz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    system-b90/bluz
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Bluz Developer Documentation" class="md-nav__button md-logo" aria-label="Bluz Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Bluz Developer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/system-b90/bluz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    system-b90/bluz
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../student-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Student Boundary (Security)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spacing-radius-elevation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spacing, radius, elevation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-rtl-and-bidi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. RTL and bidi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hebrew-copy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hebrew copy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Hebrew copy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status messages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-components-and-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Components and patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Components and patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-icon-only-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Icon-only controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Toggles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-toolbars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Toolbars
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Menus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-dialogs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Dialogs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-confirm-vs-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Confirm vs. undo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-popovers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 Popovers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-settings-cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 Settings cards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-auth-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11 Auth pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Accessibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-schedule-surface-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Schedule surface map
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Schedule surface map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings-dialog-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings dialog map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-review-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Review checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-known-deviations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Known deviations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance-and-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance & Scaling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backup-and-restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup & Restore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Quality Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../duplication-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Duplication Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gantt-cut-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gantt Cut Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../e2e-cloud-runbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E2E Cloud Runbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python SDK
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python SDK
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/namespaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API namespaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spacing-radius-elevation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spacing, radius, elevation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-rtl-and-bidi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. RTL and bidi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hebrew-copy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hebrew copy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Hebrew copy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status messages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-components-and-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Components and patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Components and patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-icon-only-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Icon-only controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Toggles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-toolbars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Toolbars
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Menus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-dialogs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Dialogs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-confirm-vs-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Confirm vs. undo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-popovers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 Popovers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-settings-cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 Settings cards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-auth-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11 Auth pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Accessibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-schedule-surface-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Schedule surface map
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Schedule surface map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings-dialog-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings dialog map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-review-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Review checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-known-deviations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Known deviations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ux-guidelines">UX Guidelines<a class="headerlink" href="#ux-guidelines" title="Permanent link">&para;</a></h1>
+<p><strong>Owner:</strong> <a href="https://github.com/yoni254">@yoni254</a> (UX Engineer). Changes to this file, the
+theme, or a shared UI primitive need their review (see <code>.github/CODEOWNERS</code>).</p>
+<blockquote>
+<p><strong>Status: draft, not yet reviewed.</strong> Nobody has signed this document off yet, and until
+@yoni254 does, treat every rule here as a suggestion. Where a rule and good judgment
+disagree, use judgment and say so in the PR.</p>
+</blockquote>
+<p>This document describes how Bluz should look, read and behave. Once it is reviewed, a
+disagreement between code and this document means the code is the bug, unless the PR that
+changes the code also changes this document.</p>
+<p>The schedule surface (<code>ui/src/components/schedule/</code>) and the settings dialog
+(<code>ui/src/components/settings-dialog/</code>) are the reference implementations. Gantt and the
+student view are being brought in line. Their known gaps are listed in
+<a href="#10-known-deviations">§10</a>.</p>
+<hr />
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<p>Before you open a UI PR:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">npm</span> <span class="n">run</span> <span class="n">lint</span>                      <span class="c"># ESLint + style rules</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">npm</span> <span class="n">run</span> <span class="n">test</span><span class="p">:</span><span class="n">unit</span>                 <span class="c"># includes tests/backend/theme-contrast.test.ts</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">python</span> <span class="n">tools</span><span class="p">.</span><span class="n">py</span> <span class="n">dev</span> <span class="n">status</span>        <span class="c"># reuse the running dev server if it's up</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">python</span> <span class="n">tools</span><span class="p">.</span><span class="n">py</span> <span class="n">dev</span>               <span class="c"># else start one, then open https://bluz.dev</span>
+</code></pre></div>
+<p>Then go through the <a href="#9-review-checklist">review checklist</a> and attach before/after
+screenshots (light <strong>and</strong> dark) to the PR.</p>
+<hr />
+<h2 id="1-principles">1. Principles<a class="headerlink" href="#1-principles" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>One way to do a thing.</strong> If a pattern exists, use it. If it's wrong, fix it everywhere.
+   Don't fork it.</li>
+<li><strong>The schedule is a work tool.</strong> Users spend hours in it. Density and speed beat
+   decoration. Animate only to explain a change of state. Never animate to attract attention.</li>
+<li><strong>State is visible.</strong> Every toggle shows whether it's on. Every async action shows that
+   it's running, then whether it worked.</li>
+<li><strong>Reversible beats confirmed.</strong> If an action can be undone, don't ask. Do it and say what
+   happened. Ask only when it can't be undone, hits other people's work, or acts on many
+   things at once.</li>
+<li><strong>Hebrew-first, RTL-native.</strong> Design and write in Hebrew. Never translate an English
+   layout.</li>
+</ol>
+<hr />
+<h2 id="2-foundations">2. Foundations<a class="headerlink" href="#2-foundations" title="Permanent link">&para;</a></h2>
+<p>All values come from the theme (<code>ui/src/components/theme/CreateFromPalette.ts</code>). Never add
+a hex color, a shadow string or a pixel radius in a component.</p>
+<h3 id="color">Color<a class="headerlink" href="#color" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Use</th>
+<th>Token</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brand fill (contained buttons, active toggles, badges)</td>
+<td><code>primary.main</code></td>
+</tr>
+<tr>
+<td>Brand as <strong>text or icon</strong></td>
+<td><code>primaryText.main</code>. <code>color="primary"</code> on Typography, Link, SvgIcon, IconButton and text/outlined Button already maps to it.</td>
+</tr>
+<tr>
+<td>Body / secondary / disabled text</td>
+<td><code>text.primary</code> / <code>text.secondary</code> / <code>text.disabled</code></td>
+</tr>
+<tr>
+<td>Lines and borders</td>
+<td><code>divider</code></td>
+</tr>
+<tr>
+<td>Hover / selected backgrounds</td>
+<td><code>action.hover</code> / <code>action.selected</code></td>
+</tr>
+<tr>
+<td>Status</td>
+<td><code>success</code> / <code>info</code> / <code>warning</code> / <code>error</code>, each for its meaning only</td>
+</tr>
+<tr>
+<td>Event colors</td>
+<td><code>event-component/event-colors.ts</code>, the only place that turns an event color into a tile color</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The 4 color schemes (light, dark, pink, pink-dark) are checked for contrast by
+  <code>tests/backend/theme-contrast.test.ts</code>. A new text/background pairing goes in that test.</li>
+<li>Tints: <code>alpha(theme.palette.X.main, 0.08–0.18)</code>, or with CSS vars,
+  <code>rgb(${theme.vars.palette.X.mainChannel} / 0.12)</code>.</li>
+<li>Color is never the only signal. Pair it with an icon, a label or a shape.</li>
+</ul>
+<h3 id="typography">Typography<a class="headerlink" href="#typography" title="Permanent link">&para;</a></h3>
+<p>The font is Assistant. Use MUI variants, not <code>fontSize</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Variant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Page / calendar range title</td>
+<td><code>h6</code>, bold</td>
+</tr>
+<tr>
+<td>Dialog title</td>
+<td><code>h5</code>, bold (event dialog) or the default <code>DialogTitle</code></td>
+</tr>
+<tr>
+<td>Popover / panel heading</td>
+<td><code>subtitle1</code>, weight 700</td>
+</tr>
+<tr>
+<td>Body, menu items</td>
+<td><code>body2</code></td>
+</tr>
+<tr>
+<td>Meta, counts, hints, keyboard shortcuts</td>
+<td><code>caption</code> / <code>body2</code> + <code>text.secondary</code></td>
+</tr>
+</tbody>
+</table>
+<p>The exceptions are the two <strong>dense grids</strong>: schedule event tiles (<code>event-component/</code>) and
+the Gantt grid cells (<code>gantt/curriculum-view/tabs/gantt-view-tab/</code>). They are
+micro-layouts sized in <code>rem</code>. Don't copy their sizes anywhere else.</p>
+<h3 id="spacing-radius-elevation">Spacing, radius, elevation<a class="headerlink" href="#spacing-radius-elevation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Spacing is theme units only: <code>0.5, 1, 1.5, 2, 3</code>. Toolbar groups use <code>gap: 1.5</code>. Popover
+  padding is <code>2</code>. Dialog content uses <code>gap: 3</code>.</li>
+<li>Radius comes from the theme: Paper (popovers, menus, cards) = 12px (<code>borderRadius: 3</code>),
+  Dialog = 20px. Don't override it on a Dialog, Popover or Menu paper. Chips and small
+  surfaces use <code>borderRadius: 1–2</code>. Inputs and buttons keep the theme's radius. Don't add
+  a per-surface radius (settings used to set 10px on every field).</li>
+<li>Shadows: theme shadows only (<code>boxShadow: 2</code> resting, <code>4</code> lifted, <code>8</code> for a drag
+  overlay). Popovers and menus get their elevation from the theme. Cards inside a dialog
+  have a border and no shadow.</li>
+</ul>
+<h3 id="motion">Motion<a class="headerlink" href="#motion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use <code>theme.transitions.create([...], { duration: theme.transitions.duration.shorter })</code>.
+  Keep durations between 150 and 300ms.</li>
+<li>Never use <code>transition: "all …"</code>. Name the properties.</li>
+<li>No infinite animations, except a live-presence signal that <strong>must</strong> be noticed (the
+  "someone is editing" lock badge).</li>
+<li><code>prefers-reduced-motion: reduce</code> is honoured <strong>app-wide</strong> by <code>style/globals.css</code>, which
+  collapses every animation and transition. A component only adds its own media query
+  when reduced motion needs a different end state (e.g. hiding an exit row), not just
+  "no animation".</li>
+<li>No hover-scale, pulse or bounce on controls. Hover shows a color/background change. Press
+  shows the ripple.</li>
+</ul>
+<hr />
+<h2 id="3-rtl-and-bidi">3. RTL and bidi<a class="headerlink" href="#3-rtl-and-bidi" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Use logical properties only: <code>marginInlineStart</code>, <code>paddingInlineEnd</code>, <code>insetInlineEnd</code>,
+  <code>borderInlineStart</code>. Never use <code>ml/mr/pl/pr</code>, <code>left/right</code> or <code>marginLeft</code>.</li>
+<li>Exception: centering with <code>left: 50%</code> + <code>translateX(-50%)</code>. Comment it, as
+  <code>CalendarToolbar.tsx</code> does.</li>
+<li>Popover <code>anchorOrigin.horizontal</code> is physical. Pick the side that opens <strong>inward</strong>.</li>
+<li>Wrap Latin and mixed content (names from Hive, keyboard shortcuts, codes like <code>R-50</code>) in
+  <code>&lt;bdi&gt;</code>, or render it with <code>dir="ltr"</code> (<code>MenuShortcut</code> does this).</li>
+<li>Day names are full words (<code>יום ראשון</code>), never single letters.</li>
+</ul>
+<hr />
+<h2 id="4-hebrew-copy">4. Hebrew copy<a class="headerlink" href="#4-hebrew-copy" title="Permanent link">&para;</a></h2>
+<h3 id="voice">Voice<a class="headerlink" href="#voice" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Where</th>
+<th>Form</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buttons, menu items, tooltips, aria-labels</td>
+<td><strong>Action noun</strong> (שם פעולה). Gender-neutral.</td>
+<td>שמירה · מחיקה · הסתרת סרגל כלים · יציאה ממסך מלא · מעבר למצב לוקלי</td>
+</tr>
+<tr>
+<td>Instructions and hints in body text</td>
+<td><strong>Plural imperative</strong> (addresses everyone)</td>
+<td>גררו לכאן מופע כדי…</td>
+</tr>
+<tr>
+<td>Confirmation question</td>
+<td><strong>Infinitive question</strong> + consequence</td>
+<td>למחוק את הטיוטה "X"? לא ניתן לבטל.</td>
+</tr>
+<tr>
+<td>Confirmation button</td>
+<td><strong>Action noun</strong>, the specific verb</td>
+<td>מחיקה · פתיחה · הסרה. Not "אישור", not "כן".</td>
+</tr>
+<tr>
+<td>Toggle tooltip</td>
+<td>Says what the click <strong>will do</strong></td>
+<td>הצגת סננים ↔ הסתרת סננים</td>
+</tr>
+</tbody>
+</table>
+<p>Never use the masculine singular imperative (עבור, חזור, צא, בחר). It addresses only half
+the users, and the rest of the UI doesn't speak that way.</p>
+<h3 id="status-messages">Status messages<a class="headerlink" href="#status-messages" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Success</td>
+<td><code>&lt;object&gt; &lt;past verb&gt;.</code></td>
+<td>הטיוטה נשמרה לשרת.</td>
+</tr>
+<tr>
+<td>Failure</td>
+<td><code>&lt;action noun&gt; נכשל/ה!</code>. Details come from <code>enqueueApiErrorSnackbar</code></td>
+<td>מחיקת הטיוטה נכשלה!</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>number first, then a plural noun</td>
+<td>3 מופעים נמחקו</td>
+</tr>
+<tr>
+<td>Read-only</td>
+<td>one shared string</td>
+<td><code>READ_ONLY_ITERATION_MESSAGE</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h3>
+<p>Use one word per concept, everywhere.</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Term</th>
+<th>Not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>An item on the calendar</td>
+<td><strong>מופע</strong> / מופעים</td>
+<td>אירוע (that means a Google Calendar event)</td>
+</tr>
+<tr>
+<td>A run of the program (iteration)</td>
+<td><strong>מחזור</strong></td>
+<td>איטרציה</td>
+</tr>
+<tr>
+<td>Group of students in a syllabus</td>
+<td><strong>שאפל</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Unassigned events box</td>
+<td><strong>ארגז</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Shared server-side draft</td>
+<td><strong>טיוטה</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Saved week layout</td>
+<td><strong>תבנית שבוע</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Restore point</td>
+<td><strong>צילום מצב</strong></td>
+<td>גיבוי</td>
+</tr>
+<tr>
+<td>Filters</td>
+<td><strong>סננים</strong></td>
+<td>מסננים</td>
+</tr>
+<tr>
+<td>Classroom / room</td>
+<td><strong>Open decision (@yoni254).</strong> The schedule says כיתה (event field, grid column, student view). Settings says חדר (76 strings vs. 20). Until it's decided, use the term the surface already uses.</td>
+<td></td>
+</tr>
+<tr>
+<td>Instructors list</td>
+<td><strong>מבוזרים</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>A schedule item, as the Gantt names it</td>
+<td><strong>Open decision (@yoni254).</strong> Gantt calls its own blocks מופע and the schedule items a cut creates אירוע (<code>gantt/glossary.ts</code>). The schedule calls the same items מופע. Gantt copy was left as is.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-components-and-patterns">5. Components and patterns<a class="headerlink" href="#5-components-and-patterns" title="Permanent link">&para;</a></h2>
+<h3 id="51-buttons">5.1 Buttons<a class="headerlink" href="#51-buttons" title="Permanent link">&para;</a></h3>
+<ul>
+<li>At most <strong>one</strong> <code>variant="contained"</code> primary action per dialog or popover.</li>
+<li>Secondary actions are <code>text</code> (in dialogs) or <code>outlined</code> (in toolbars).</li>
+<li>Destructive actions use <code>color="error"</code>. Never make them the default focus.</li>
+<li>Long actions disable the button and swap its icon for <code>&lt;CircularProgress size={16} /&gt;</code>.
+  The button doesn't change size.</li>
+</ul>
+<h3 id="52-icon-only-controls">5.2 Icon-only controls<a class="headerlink" href="#52-icon-only-controls" title="Permanent link">&para;</a></h3>
+<p>Every icon-only control needs a <code>Tooltip</code> <strong>and</strong> an <code>aria-label</code> with the same text. Use
+the shared button for the surface. It does this for you:</p>
+<table>
+<thead>
+<tr>
+<th>Where</th>
+<th>Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schedule toolbar and its floating chrome</td>
+<td><code>ToolbarIconButton</code> (<code>schedule/calendar/calendar/</code>). Keeps disabled buttons hoverable and renders toggle state.</td>
+</tr>
+<tr>
+<td>App bar</td>
+<td><code>HeaderIconButton</code> (<code>header/</code>). Takes <code>href</code> for navigation (renders a link, not a button) and <code>pressed</code> for toggles.</td>
+</tr>
+</tbody>
+</table>
+<p>When an icon button repeats per row, the label names the row: <code>הסרת ${name}</code>,
+<code>שעה נוספת ב${day}</code>. Many identical "מחיקה" buttons are useless to a screen reader.</p>
+<h3 id="53-toggles">5.3 Toggles<a class="headerlink" href="#53-toggles" title="Permanent link">&para;</a></h3>
+<p>A toggle's "on" state is <code>variant="contained"</code> + <code>aria-pressed</code>. Don't paint a custom
+background. View pickers (יום / שבוע עבודה / שבוע), the offline switch, the filter button
+and the store menus ("something of mine is open") all work this way.</p>
+<h3 id="54-toolbars">5.4 Toolbars<a class="headerlink" href="#54-toolbars" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Controls are grouped by job into <code>ButtonGroup size="small" variant="outlined"</code> with
+  <code>sx={TOOLBAR_GROUP_SX}</code> (32px tall).</li>
+<li>Schedule order, from the start (right) edge: <strong>navigation</strong> (קודם / היום / הבא) ·
+  <strong>range title</strong> · <strong>stores</strong> (טיוטות, תבניות, צילומי מצב, בדיקה, ייצוא) · <strong>view</strong> ·
+  <strong>mode</strong> (מקוון/לוקלי, סננים) · <strong>chrome</strong> (עזרה והדרכה, הסתרת סרגל, מסך מלא).</li>
+<li>The "?" (עזרה והדרכה) opens the help panel, which lists every schedule tutorial. Along
+  with the palette (type הדרכה) it is the only way into them.</li>
+<li>A control that can never act in this context is hidden, not disabled. Disabled-with-tooltip
+  is for "not now, and here's why" (read-only מחזור, nothing to export).</li>
+</ul>
+<h3 id="55-menus">5.5 Menus<a class="headerlink" href="#55-menus" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>ListItemIcon</code> with a <code>fontSize="small"</code> icon on every item, or on none in that menu.</li>
+<li>Keyboard hints go in <code>MenuShortcut</code> (end-aligned, <code>dir="ltr"</code>, secondary text).</li>
+<li>Order: clipboard → structure → assignment → navigation → <strong>destructive last</strong>, after a
+  <code>Divider</code>, in <code>error.main</code>.</li>
+<li>Write actions in a read-only מחזור stay visible and disabled, so the menu doesn't change
+  shape.</li>
+</ul>
+<h3 id="56-dialogs">5.6 Dialogs<a class="headerlink" href="#56-dialogs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The title names the action and the object: <code>מופע חדש</code> when creating, <code>עריכת מופע</code> when
+  editing.</li>
+<li>Alerts that change what the user can do (read-only, locked by another user) go first,
+  above the form.</li>
+<li><code>DialogActions</code>, in RTL reading order: destructive at the start (<code>marginInlineEnd: "auto"</code>)
+  · ביטול · primary (contained) at the end.</li>
+<li>An action that can't apply (Delete on an unsaved event) isn't rendered at all.</li>
+<li>A primary action that is disabled says why, in a <code>Tooltip</code> on it (<code>יש להזין שם למופע</code>).
+  A greyed-out שמירה alone leaves the user guessing what to fix.</li>
+<li>A form dialog with real input (the event dialog) never loses edits silently. Esc, a
+  click outside and ביטול all go through one close handler that confirms when the form is
+  dirty: <code>לסגור בלי לשמור?</code> · <code>חזרה לעריכה</code> / <code>סגירה בלי שמירה</code>. An untouched form
+  closes at once.</li>
+<li>Settings list + form tabs get the same guard from <code>useEntityForm</code>: picking another row,
+  "add" and ביטול ask when the form is dirty (<code>לבטל את השינויים?</code>). The form reports
+  itself to the settings dialog (<code>useReportUnsavedChanges</code>), so closing the dialog or
+  switching tabs asks too. A save or delete clears the form without asking.</li>
+<li>Confirmations go through <code>useConfirmDialog</code>. Always pass <code>title</code> and a specific
+  <code>confirmLabel</code>. The defaults are a fallback, not a design.</li>
+</ul>
+<h3 id="57-confirm-vs-undo">5.7 Confirm vs. undo<a class="headerlink" href="#57-confirm-vs-undo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single event edit/move/delete (undoable via Ctrl+Z)</td>
+<td>No confirm. Snackbar result. A delete's snackbar carries a <code>ביטול</code> action that undoes exactly that delete (never a later edit).</td>
+</tr>
+<tr>
+<td>Bulk delete of a selection</td>
+<td>Confirm with count: <code>למחוק 5 מופעים?</code></td>
+</tr>
+<tr>
+<td>Deleting anything shared or stored on the server (טיוטה, תבנית, צילום מצב, מחזור, צבע, מסלול)</td>
+<td>Confirm with name + "לא ניתן לבטל."</td>
+</tr>
+<tr>
+<td>Replacing unsynced local work (opening a draft/template while offline)</td>
+<td>Confirm and name what is lost. Button names the action (<code>פתיחה</code>).</td>
+</tr>
+<tr>
+<td>Discarding unsynced local work (<code>שחזור הכל</code> in the sync dialog)</td>
+<td>Confirm with the count + "לא ניתן לבטל."</td>
+</tr>
+<tr>
+<td>Editing an event another user holds</td>
+<td>Confirm (<code>LOCKED_EDIT_*</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="58-feedback">5.8 Feedback<a class="headerlink" href="#58-feedback" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Snackbars</strong> (<code>notistack</code>): success = done, info = a mode changed, warning = refused or
+  partial, error = failed. Errors always go through <code>enqueueApiErrorSnackbar</code>.</li>
+<li><strong>Loading:</strong> first load of a surface = <code>Skeleton</code> in the surface's shape
+  (<code>CalendarSkeleton</code>). Refresh of a list = small centered <code>CircularProgress</code>. Never use a
+  bare Tailwind block. It ignores dark mode.</li>
+<li><strong>Empty:</strong> <code>base/EmptyState</code>. "Nothing here" and "your filters hid everything" are
+  different variants with different fixes.</li>
+<li><strong>Errors that block a surface:</strong> <code>ErrorSurface</code> inside an <code>ErrorBoundary</code>, with a retry.</li>
+<li><strong>Validation:</strong> an error that belongs to one field shows on that field (<code>error</code> +
+  <code>helperText</code>), and the field takes focus. A snackbar says what is wrong but not where.
+  In settings, <code>validate</code> returns <code>{ field, message }</code>; the field needs a matching <code>name</code>.
+  Forms set <code>noValidate</code>, so the browser's own bubble (in the browser's language) never
+  fires first. Don't flag an empty field as invalid while the user is still filling the
+  form; the required check runs on save.</li>
+</ul>
+<h3 id="59-popovers">5.9 Popovers<a class="headerlink" href="#59-popovers" title="Permanent link">&para;</a></h3>
+<p>Use plain <code>Popover</code> or <code>Menu</code>, styled by the theme. Set only <code>p</code>, <code>mt</code>, and a width when the
+content needs one. Heading = <code>subtitle1</code> bold, <code>mb: 1</code>.</p>
+<h3 id="510-settings-cards">5.10 Settings cards<a class="headerlink" href="#510-settings-cards" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Every card is <code>settingsCardSx</code>: a border, 12px radius, <code>p: 3</code>, no shadow.</li>
+<li>Every card header is <code>SettingsSectionHeader</code>: icon badge + <code>subtitle1</code> bold title +
+  <code>caption</code> subtitle + an optional trailing <code>action</code> (a switch, a button). Don't hand-roll
+  this block.</li>
+<li>A switch in a header needs an accessible name:
+  <code>slotProps={{ input: { "aria-label": &lt;title&gt; } }}</code>. The header text beside it isn't
+  linked to the input.</li>
+<li>List + edit tabs use <code>useEntityForm</code> + <code>SettingsListCardContent</code> + <code>BaseFormCard</code>. A
+  deletable entity passes <code>confirmDelete: { title, message }</code>, and the message names the
+  entity.</li>
+<li>Inline form actions (<code>SettingsFormActions</code>): the submit button stretches and comes
+  first, then ביטול, then tab extras. This is the inline-form counterpart of §5.6 dialog
+  actions.</li>
+<li>The dialog has a labelled title (<code>aria-labelledby</code>) and a close button with a tooltip.
+  Tab navigation is a list of real buttons with <code>aria-current</code>.</li>
+</ul>
+<h3 id="511-auth-pages">5.11 Auth pages<a class="headerlink" href="#511-auth-pages" title="Permanent link">&para;</a></h3>
+<p>Login, access-denied and CLI sign-in share <code>auth/AuthCard.tsx</code>: <code>AuthPage</code> (the scrollable
+page; <code>body</code> itself never scrolls) and <code>AuthCard</code> (theme Paper, <code>elevation={4}</code>, a
+border). Don't hand-roll another card for a pre-auth page.</p>
+<hr />
+<h2 id="6-accessibility">6. Accessibility<a class="headerlink" href="#6-accessibility" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Every focusable element shows the theme focus ring (<code>focusRing</code>). Never set
+  <code>outline: none</code>.</li>
+<li>Custom interactive <code>Box</code>es need a <code>role</code>, <code>tabIndex={0}</code>, Space/Enter handling and
+  <code>aria-checked</code>/<code>aria-pressed</code>. <code>EventToggles.tsx</code> shows how.</li>
+<li>Hit targets: 32px minimum in dense toolbars, 40px everywhere else.</li>
+<li>Dialogs trap focus and return it to the trigger. The tests are in
+  <code>tests/dialog-keyboard.spec.ts</code>.</li>
+<li>Text contrast must pass WCAG AA in all 4 schemes.</li>
+</ul>
+<hr />
+<h2 id="7-schedule-surface-map">7. Schedule surface map<a class="headerlink" href="#7-schedule-surface-map" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>File</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toolbar</td>
+<td><code>calendar/calendar/CalendarToolbar.tsx</code></td>
+<td>§5.4 order. Every icon control is a <code>ToolbarIconButton</code>.</td>
+</tr>
+<tr>
+<td>Floating chrome (toolbar hidden / fullscreen)</td>
+<td><code>calendar/calendar/index.tsx</code></td>
+<td>Same buttons and labels as the toolbar.</td>
+</tr>
+<tr>
+<td>Store popovers</td>
+<td><code>calendar/calendar/CalendarStoreMenu.tsx</code></td>
+<td>Drafts, templates and snapshots share it. Row deletes confirm.</td>
+</tr>
+<tr>
+<td>Event tile</td>
+<td><code>event-component/</code></td>
+<td>Tile type scale lives here only.</td>
+</tr>
+<tr>
+<td>Event dialog</td>
+<td><code>event-dialog/index.tsx</code></td>
+<td>§5.6</td>
+</tr>
+<tr>
+<td>Context menus</td>
+<td><code>event-context-menu/</code></td>
+<td>§5.5</td>
+</tr>
+<tr>
+<td>Side dock (ארגז, מבוזרים)</td>
+<td><code>calendar/side-dock/ScheduleSideDock.tsx</code></td>
+<td>Reference for icon rails: tooltip + aria-label + aria-pressed + reduced motion.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="settings-dialog-map">Settings dialog map<a class="headerlink" href="#settings-dialog-map" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>File</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shell, tab nav, close</td>
+<td><code>settings-dialog/SettingsDialog.tsx</code></td>
+<td>Theme dialog paper; labelled title</td>
+</tr>
+<tr>
+<td>Card + header primitives</td>
+<td><code>settings-dialog/tabs/global/common/</code></td>
+<td><code>settingsCardSx</code>, <code>SettingsSectionHeader</code>, <code>SettingsFormActions</code>, <code>SettingsAddButton</code>, <code>SettingsListItem</code></td>
+</tr>
+<tr>
+<td>List + edit state</td>
+<td><code>common/UseEntityForm.tsx</code></td>
+<td><code>confirmDelete</code> for deletable entities</td>
+</tr>
+<tr>
+<td>Time pickers</td>
+<td><code>common/BaseTimeSettingsCard.tsx</code></td>
+<td>Rows carry a neutral icon, no per-row hues</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-process">8. Process<a class="headerlink" href="#8-process" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Owner:</strong> @yoni254 reviews PRs that touch <code>docs/ux-guidelines.md</code> or
+  <code>ui/src/components/theme/</code>. Ask them early for any new pattern. Don't add it and
+  document it later.</li>
+<li><strong>New pattern?</strong> Add it here in the same PR, with the component that implements it.</li>
+<li><strong>Screenshots:</strong> before/after for every affected page, modal or component, in light and
+  dark. Update <code>tests/screenshots.spec.ts</code> when a user-facing page changes visibly.</li>
+</ul>
+<h2 id="9-review-checklist">9. Review checklist<a class="headerlink" href="#9-review-checklist" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> No hex, shadow strings, pixel radii or <code>fontSize</code> literals outside <code>event-component/</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Logical CSS properties only. Latin/mixed text wrapped in <code>&lt;bdi&gt;</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Icon-only controls have tooltip + aria-label. Toggles have contained + <code>aria-pressed</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Copy follows §4: action nouns, glossary terms, no masculine imperatives</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> At most one contained button per dialog/popover. Destructive is red and comes last.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Irreversible or shared deletes confirm. Undoable single edits don't.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Loading, empty and error states exist and use the shared components</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> No infinite or decorative animation. Reduced motion respected.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Works in light, dark, pink and pink-dark</li>
+</ul>
+<hr />
+<h2 id="10-known-deviations">10. Known deviations<a class="headerlink" href="#10-known-deviations" title="Permanent link">&para;</a></h2>
+<p>Not fixed yet:</p>
+<ul>
+<li>Settings: the dense rows of the course builder (<code>CourseItem</code>, <code>InstructorSourceList</code>)
+  and of the room, outsider and reservation lists still size text in <code>rem</code>. <code>AiSelfTest</code>
+  sizes icons in px.</li>
+<li>Settings: <code>lecture-comfort-switch.css</code> loops its sparkle/dust decoration. Reduced motion
+  stops it; whether it stays at all is @yoni254's call.</li>
+<li>Gantt: <code>DayCapacityCell</code> keeps the class names <code>day-capacity-cell</code> and <code>group/cell</code> as
+  hooks for its own <code>sx</code> hover selectors. They carry no Tailwind styling.</li>
+<li>Room vs. classroom terminology: see the glossary (§4).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 System B90
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

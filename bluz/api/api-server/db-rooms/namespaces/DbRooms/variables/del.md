@@ -8,7 +8,7 @@
 
 > `const` **del**: (`roomId`, `controller`) => `Promise`\<`void`\> = `deleteDbRoom`
 
-Defined in: [ui/src/api-server/db-rooms.ts:80](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-server/db-rooms.ts#L80)
+Defined in: [ui/src/api-server/db-rooms.ts:87](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-rooms.ts#L87)
 
 ## Parameters
 

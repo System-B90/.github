@@ -6,9 +6,10 @@
 
 # Enumeration: PrayerType
 
-Defined in: [ui/src/api-shared/types/event.ts:169](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L169)
+Defined in: [ui/src/api-shared/types/event.ts:137](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L137)
 
-Standardized types of prayers.
+Standardized types of prayer events. These are hand-made for special
+occasions: the daily prayers are a schedule tint, not events.
 
 ## Enumeration Members
 
@@ -16,7 +17,7 @@ Standardized types of prayers.
 
 > **ARVIT**: `"arvit"`
 
-Defined in: [ui/src/api-shared/types/event.ts:173](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L173)
+Defined in: [ui/src/api-shared/types/event.ts:141](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L141)
 
 ***
 
@@ -24,7 +25,7 @@ Defined in: [ui/src/api-shared/types/event.ts:173](https://github.com/System-B90
 
 > **MINCHA**: `"mincha"`
 
-Defined in: [ui/src/api-shared/types/event.ts:172](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L172)
+Defined in: [ui/src/api-shared/types/event.ts:140](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L140)
 
 ***
 
@@ -32,4 +33,12 @@ Defined in: [ui/src/api-shared/types/event.ts:172](https://github.com/System-B90
 
 > **SHACHARIT**: `"shacharit"`
 
-Defined in: [ui/src/api-shared/types/event.ts:171](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/api-shared/types/event.ts#L171)
+Defined in: [ui/src/api-shared/types/event.ts:139](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L139)
+
+***
+
+### YESHIVA\_DAY
+
+> **YESHIVA\_DAY**: `"yeshivaDay"`
+
+Defined in: [ui/src/api-shared/types/event.ts:142](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L142)

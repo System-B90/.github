@@ -368,6 +368,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../../../ux-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UX Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../../../ai-assistant/" class="md-nav__link">
         
   
@@ -653,10 +680,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
             
   
   
@@ -674,8 +701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1349,7 +1376,7 @@
 <blockquote>
 <p><strong>CollectionContextState</strong>\&lt;<code>T</code>, <code>TCreate</code>&gt; = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L126">ui/src/components/base/collection/create-collection-provider.tsx:126</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L128">ui/src/components/base/collection/create-collection-provider.tsx:128</a></p>
 <h2 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permanent link">&para;</a></h2>
 <h3 id="t">T<a class="headerlink" href="#t" title="Permanent link">&para;</a></h3>
 <p><code>T</code></p>
@@ -1358,37 +1385,39 @@
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="additem">addItem<a class="headerlink" href="#additem" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>addItem</strong>: (<code>data</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><strong>addItem</strong>: (<code>data</code>) =&gt; <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L131">ui/src/components/base/collection/create-collection-provider.tsx:131</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L137">ui/src/components/base/collection/create-collection-provider.tsx:137</a></p>
+<p>Mutations report failure with a snackbar and resolve to <code>false</code>
+instead of rejecting, so a form can keep what was typed.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="data">data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h5>
 <p><code>TCreate</code></p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
-<p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 <hr />
 <h3 id="default">default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>default</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L127">ui/src/components/base/collection/create-collection-provider.tsx:127</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L129">ui/src/components/base/collection/create-collection-provider.tsx:129</a></p>
 <hr />
 <h3 id="deleteitem">deleteItem<a class="headerlink" href="#deleteitem" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>deleteItem</strong>: (<code>key</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><strong>deleteItem</strong>: (<code>key</code>) =&gt; <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L135">ui/src/components/base/collection/create-collection-provider.tsx:135</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L141">ui/src/components/base/collection/create-collection-provider.tsx:141</a></p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
 <h5 id="key">key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
 <h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
-<p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 <hr />
 <h3 id="getitem">getItem<a class="headerlink" href="#getitem" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>getItem</strong>: (<code>key</code>) =&gt; <code>T</code> | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L130">ui/src/components/base/collection/create-collection-provider.tsx:130</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L132">ui/src/components/base/collection/create-collection-provider.tsx:132</a></p>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
 <h5 id="key_1">key<a class="headerlink" href="#key_1" title="Permanent link">&para;</a></h5>
 <p><code>string</code></p>
@@ -1399,31 +1428,31 @@
 <blockquote>
 <p><strong>isLoading</strong>: <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L129">ui/src/components/base/collection/create-collection-provider.tsx:129</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L131">ui/src/components/base/collection/create-collection-provider.tsx:131</a></p>
 <hr />
 <h3 id="items">items<a class="headerlink" href="#items" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>items</strong>: <code>T</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L128">ui/src/components/base/collection/create-collection-provider.tsx:128</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L130">ui/src/components/base/collection/create-collection-provider.tsx:130</a></p>
 <hr />
 <h3 id="mutate">mutate<a class="headerlink" href="#mutate" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>mutate</strong>: (<code>mutation</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><strong>mutate</strong>: (<code>mutation</code>) =&gt; <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L137">ui/src/components/base/collection/create-collection-provider.tsx:137</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L143">ui/src/components/base/collection/create-collection-provider.tsx:143</a></p>
 <p>Escape hatch for collection-specific writes (e.g. room extended info).</p>
 <h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">&para;</a></h4>
 <h5 id="mutation">mutation<a class="headerlink" href="#mutation" title="Permanent link">&para;</a></h5>
 <p><a href="../CollectionMutation/"><code>CollectionMutation</code></a>\&lt;<code>T</code>&gt;</p>
 <h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">&para;</a></h4>
-<p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 <hr />
 <h3 id="patchitem">patchItem<a class="headerlink" href="#patchitem" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>patchItem</strong>: (<code>key</code>, <code>changes</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><strong>patchItem</strong>: (<code>key</code>, <code>changes</code>) =&gt; <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L134">ui/src/components/base/collection/create-collection-provider.tsx:134</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L140">ui/src/components/base/collection/create-collection-provider.tsx:140</a></p>
 <p>Merges <code>changes</code> into the stored item and persists the merged result.</p>
 <h4 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">&para;</a></h4>
 <h5 id="key_2">key<a class="headerlink" href="#key_2" title="Permanent link">&para;</a></h5>
@@ -1431,18 +1460,18 @@
 <h5 id="changes">changes<a class="headerlink" href="#changes" title="Permanent link">&para;</a></h5>
 <p><code>Partial</code>\&lt;<code>T</code>&gt;</p>
 <h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">&para;</a></h4>
-<p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 <hr />
 <h3 id="updateitem">updateItem<a class="headerlink" href="#updateitem" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>updateItem</strong>: (<code>item</code>) =&gt; <code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><strong>updateItem</strong>: (<code>item</code>) =&gt; <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/base/collection/create-collection-provider.tsx#L132">ui/src/components/base/collection/create-collection-provider.tsx:132</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/collection/create-collection-provider.tsx#L138">ui/src/components/base/collection/create-collection-provider.tsx:138</a></p>
 <h4 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">&para;</a></h4>
 <h5 id="item">item<a class="headerlink" href="#item" title="Permanent link">&para;</a></h5>
 <p><code>T</code></p>
 <h4 id="returns_5">Returns<a class="headerlink" href="#returns_5" title="Permanent link">&para;</a></h4>
-<p><code>Promise</code>\&lt;<code>void</code>&gt;</p>
+<p><code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 
 
 

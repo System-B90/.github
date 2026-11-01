@@ -8,10 +8,11 @@
 
 > **StudentPreviewBar**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/student-view/StudentPreviewBar.tsx:24](https://github.com/System-B90/Bluz/blob/4901ffa77007f6f1d99198a04d841ed11708dad0/ui/src/components/student-view/StudentPreviewBar.tsx#L24)
+Defined in: [ui/src/components/student-view/StudentPreviewBar.tsx:29](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/student-view/StudentPreviewBar.tsx#L29)
 
 Staff-only banner over the student view: says plainly that this is a
-preview, offers a way back, and lets staff step to another day.
+preview, offers a way back, lets staff step to another day, and can push an
+update that reloads every open student board (this preview included).
 
 Rendered only when the *server* has confirmed Segel/Admin clearance — see
 the page component. It is not a client-side gate.
