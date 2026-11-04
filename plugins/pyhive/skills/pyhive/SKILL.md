@@ -66,16 +66,15 @@ above), so they need no credentials of their own.
 
 ## Rules for calling the CLI
 
-- **Always pass `--json`.** It works anywhere on the line. stdout then holds one
-  JSON document; progress lines (`Fetching …`) are suppressed.
-- **`-u`, `-p`, `-t` go before the group**: `pyhive -t "$TOKEN" --json users list`.
-  After the group they fail with `No such option`.
-- **`--hive-url` and `--verify` go after the leaf command**:
-  `pyhive --json programs list --hive-url https://hive.example`. Placed after the
-  group (`pyhive programs --hive-url … list`) they are **silently ignored**.
-  A `--hive-url` other than the cached server skips the cached token and
-  falls back to SSO, so leave it out unless the user names another server.
-- Defaults: the server cached by `auth login`, else `https://hive.org`; TLS
+- **Always pass `--json`.** stdout then holds one JSON document; progress lines
+  (`Fetching …`) are suppressed.
+- `--json`, `-u`, `-p`, `-t`, `--hive-url`, `--verify` and `--cache-token` work
+  **anywhere on the line**. One exception: in `users create`, `--password` is the
+  new account's password, so a sign-in password goes before `users`
+  (`pyhive -p PW users create ...`).
+- A `--hive-url` other than the cached server skips the cached token and falls
+  back to SSO, so leave it out unless the user names another server.
+- Defaults: the server cached by `auth login`, else `https://chive.bis.net`; TLS
   verification **off**.
 - Exit code `0` on success, `1` on any error. In `--json` mode the error is JSON
   on **stderr**: `{"error": "...", "details": "..."}`.
@@ -129,7 +128,7 @@ pyhive --json users list | python -c "import json,sys; print(len(json.load(sys.s
 from pyhive import HiveClient
 from pyhive.types import AssignmentStatusEnum, ClearanceEnum
 
-with HiveClient("admin", "password", "https://hive.org", verify=False) as client:
+with HiveClient("admin", "password", "https://chive.bis.net", verify=False) as client:
     program = client.get_program(2)
     for subject in program.get_subjects():          # list endpoints return generators
         for module in subject.get_modules():

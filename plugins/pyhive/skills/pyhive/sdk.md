@@ -8,7 +8,7 @@ objects.
 ```python
 from pyhive import HiveClient
 
-with HiveClient.from_sso("https://hive.org") as client:
+with HiveClient.from_sso("https://chive.bis.net") as client:
     for program in client.get_programs():
         for subject in program.get_subjects():
             print(program.name, subject.symbol, subject.name)
@@ -32,18 +32,18 @@ Python 3.10 or newer.
 from pyhive import HiveClient
 
 # Browser sign-in (SSO). The token refreshes itself.
-client = HiveClient.from_sso("https://hive.org")
+client = HiveClient.from_sso("https://chive.bis.net")
 
 # Username and password. The token refreshes itself.
-client = HiveClient("username", "password", "https://hive.org")
+client = HiveClient("username", "password", "https://chive.bis.net")
 
 # An access token you already have (e.g. from `pyhive token`).
 # It cannot refresh: when it expires, create a new client.
-client = HiveClient.from_api_token(token, "https://hive.org")
+client = HiveClient.from_api_token(token, "https://chive.bis.net")
 
 # An access token plus its refresh token: refreshes itself.
 client = HiveClient.from_api_token(
-    token, "https://hive.org", refresh_token=refresh, auth_strategy="sso"
+    token, "https://chive.bis.net", refresh_token=refresh, auth_strategy="sso"
 )
 
 # Whatever the `pyhive` CLI would use: the server and sign-in cached by

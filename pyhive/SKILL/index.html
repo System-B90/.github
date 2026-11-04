@@ -1,0 +1,863 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="How to read and change Hive LMS data with the `pyhive` CLI and the PyHive Python SDK — sign-in without a browser, every command, JSON output shapes, SDK filters and model helpers, known quirks. Use for any request to look up or modify Hive programs, subjects, modules, exercises, assignments, users/students, classes, the schedule or help requests, or to write a Python script against a Hive server.">
+      
+      
+      
+        <link rel="canonical" href="https://system-b90.github.io/.github/pyhive/SKILL/">
+      
+      
+        <link rel="prev" href="../examples/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Agent skill - PyHive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pyhive-for-agents" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PyHive" class="md-header__button md-logo" aria-label="PyHive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PyHive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Agent skill
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/System-B90/pyhive" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    System-B90/pyhive
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PyHive" class="md-nav__button md-logo" aria-label="PyHive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PyHive
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/System-B90/pyhive" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    System-B90/pyhive
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python SDK
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent skill
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent skill
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cli-or-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI or SDK?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signing-in-without-a-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signing in without a browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-for-calling-the-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules for calling the CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdk-essentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDK essentials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-quirks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known quirks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cli-or-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI or SDK?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signing-in-without-a-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signing in without a browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-for-calling-the-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules for calling the CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdk-essentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDK essentials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-quirks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known quirks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="pyhive-for-agents">PyHive for agents<a class="headerlink" href="#pyhive-for-agents" title="Permanent link">&para;</a></h1>
+<p><code>pyhive</code> is a Typer CLI over the PyHive SDK (<code>pip</code> package <code>PyHiveLMS</code>, import
+name <code>pyhive</code>). This page is self-contained for everyday work. Do not read the
+PyHive source to use it.</p>
+<table>
+<thead>
+<tr>
+<th>Need</th>
+<th>Read</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every command, option and output shape</td>
+<td><a href="../cli/">cli.md</a> · <code>pyhive docs show cli</code></td>
+</tr>
+<tr>
+<td>Writing a Python script against Hive</td>
+<td><a href="../sdk/">sdk.md</a> · <code>pyhive docs show sdk</code></td>
+</tr>
+<tr>
+<td>A working script to start from</td>
+<td><a href="../examples/">examples.md</a> · <code>pyhive examples list</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cli-or-sdk">CLI or SDK?<a class="headerlink" href="#cli-or-sdk" title="Permanent link">&para;</a></h2>
+<p>The CLI covers <strong>list / get / delete</strong> for programs, subjects, modules,
+exercises, assignments, classes and users, plus creating staff users. Anything
+else — filtering, creating course content or students, the schedule, help
+requests, bulk changes, joins across resources — is a short SDK script. Run it
+inline:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;'EOF'</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="s">from pyhive.cli.client_factory import default_hive_url, get_hive_client</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="s">client = get_hive_client(default_hive_url(), verify=False)  # same server and sign-in as the CLI</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="s">for module in client.get_modules(parent_subject__id=12):</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="s">    print(module.id, module.order, module.name)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="s">EOF</span>
+</code></pre></div>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pyhive<span class="w"> </span>version<span class="w">            </span><span class="c1"># installed? prints the PyHive version</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pip<span class="w"> </span>install<span class="w"> </span>PyHiveLMS<span class="w"> </span>--index-url<span class="w"> </span>https://system-b90.github.io/.github/pypi/<span class="w">   </span><span class="c1"># if not</span>
+</code></pre></div>
+<h2 id="signing-in-without-a-browser">Signing in without a browser<a class="headerlink" href="#signing-in-without-a-browser" title="Permanent link">&para;</a></h2>
+<p>With no credentials, every command falls back to <strong>SSO, which opens a browser
+and blocks</strong> until someone signs in. An agent must supply credentials. The CLI
+tries, in order:</p>
+<ol>
+<li><code>-u USER -p PASS</code> (root options)</li>
+<li><code>-t TOKEN</code> / <code>--token TOKEN</code> (root option)</li>
+<li>the <code>HIVE_ACCESS_TOKEN</code> environment variable</li>
+<li>the OS keyring cache from <code>pyhive auth login</code> (or <code>--cache-token</code>), used
+   only for the server it was saved for</li>
+<li>SSO in the browser</li>
+</ol>
+<p>Check first with <code>pyhive --json auth status</code>: <code>{"hive_url": ..., "token_cached":
+true}</code> means commands already sign in silently to that server. Otherwise ask the
+user to run this once in their own terminal (in Claude Code:
+<code>! pyhive auth login</code>). It asks for the Hive URL, signs in through the browser,
+and stores the URL and both tokens in the OS keyring. Every later <code>pyhive</code> call,
+and <code>get_hive_client(default_hive_url(), ...)</code> in scripts, then uses that server,
+signs in silently and refreshes the token itself. Never run <code>auth login</code>
+yourself: it prompts, then blocks on the browser.</p>
+<p>Scripts reuse the same chain through <code>get_hive_client()</code> (as in the snippet
+above), so they need no credentials of their own.</p>
+<h2 id="rules-for-calling-the-cli">Rules for calling the CLI<a class="headerlink" href="#rules-for-calling-the-cli" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Always pass <code>--json</code>.</strong> stdout then holds one JSON document; progress lines
+  (<code>Fetching …</code>) are suppressed.</li>
+<li><code>--json</code>, <code>-u</code>, <code>-p</code>, <code>-t</code>, <code>--hive-url</code>, <code>--verify</code> and <code>--cache-token</code> work
+  <strong>anywhere on the line</strong>. One exception: in <code>users create</code>, <code>--password</code> is the
+  new account's password, so a sign-in password goes before <code>users</code>
+  (<code>pyhive -p PW users create ...</code>).</li>
+<li>A <code>--hive-url</code> other than the cached server skips the cached token and falls
+  back to SSO, so leave it out unless the user names another server.</li>
+<li>Defaults: the server cached by <code>auth login</code>, else <code>https://chive.bis.net</code>; TLS
+  verification <strong>off</strong>.</li>
+<li>Exit code <code>0</code> on success, <code>1</code> on any error. In <code>--json</code> mode the error is JSON
+  on <strong>stderr</strong>: <code>{"error": "...", "details": "..."}</code>.</li>
+<li><code>delete</code> commands <strong>do not prompt</strong>. Confirm with the user before running
+  one. Deleting a subject also deletes its modules and exercises.</li>
+</ul>
+<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>programs<span class="w"> </span>list<span class="w">                 </span><span class="c1"># {"programs": [...]}</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>programs<span class="w"> </span>get<span class="w"> </span><span class="m">2</span><span class="w">                </span><span class="c1"># {"program": {...}}</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>programs<span class="w"> </span>delete<span class="w"> </span><span class="m">2</span><span class="w">             </span><span class="c1"># {"deleted_program_id": 2, "status": "success"}</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Same list/get/delete for: subjects, modules, exercises, classes</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>assignments<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>get<span class="w"> </span>ID<span class="w">     </span><span class="c1"># no delete</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>users<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>delete<span class="w"> </span>ID<span class="w">        </span><span class="c1"># no get</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>users<span class="w"> </span>create<span class="w"> </span>USERNAME<span class="w"> </span>--password<span class="w"> </span>PW<span class="w"> </span>--clearance<span class="w"> </span>checker<span class="w"> </span>--gender<span class="w"> </span>female<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="o">[</span>--first-name<span class="w"> </span>--last-name<span class="w"> </span>--number<span class="w"> </span>--status<span class="w"> </span>--teacher/--no-teacher<span class="w"> </span>--confirmed/--no-confirmed<span class="o">]</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>auth<span class="w"> </span>status<span class="w">                   </span><span class="c1"># {"hive_url", "token_cached", "env_token_set"}; no network</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>pyhive<span class="w"> </span>auth<span class="w"> </span>login<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nb">logout</span><span class="w">                  </span><span class="c1"># user runs login (prompts + browser); logout clears the cache</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>token<span class="w"> </span><span class="o">[</span>--cache-token<span class="o">]</span><span class="w">         </span><span class="c1"># SSO in the browser → {"access_token", "refresh_token", "expires_at"}</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>register<span class="w"> </span>NAME<span class="w"> </span>REDIRECT_URI<span class="w">    </span><span class="c1"># register an SSO client app → client_id/secret</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>version<span class="w"> </span><span class="p">|</span><span class="w"> </span>versions<span class="w">            </span><span class="c1"># PyHive version / Hive versions it supports</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>pyhive<span class="w"> </span>docs<span class="w"> </span><span class="o">[</span>show<span class="w"> </span>PAGE<span class="w"> </span><span class="p">|</span><span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>install-skill<span class="o">]</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>pyhive<span class="w"> </span>examples<span class="w"> </span><span class="o">[</span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>show<span class="w"> </span>NAME<span class="w"> </span><span class="p">|</span><span class="w"> </span>run<span class="w"> </span>NAME<span class="w"> </span><span class="o">[</span>ARGS...<span class="o">]]</span>
+</code></pre></div>
+<p><code>list</code> and <code>get</code> return every field Hive sends, under <strong>Hive's wire names</strong>:
+related objects are plain ids under <code>program</code>, <code>checker</code>, <code>mentor</code>,
+<code>parent_subject</code>, <code>parent_module</code>, <code>user</code>, <code>exercise</code>, and <code>classes</code>/<code>users</code> are
+id lists. The SDK names the same fields <code>program_id</code>, <code>mentor_id</code>, <code>class_ids</code>
+and so on.</p>
+<p>Enum names accepted by <code>users create</code> (any case):
+<code>--clearance</code> <code>HANICH</code> (student) · <code>CHECKER</code> · <code>SEGEL</code> (staff) · <code>ADMIN</code>;
+<code>--gender</code> <code>MALE</code> · <code>FEMALE</code> · <code>NONBINARY</code>; <code>--status</code> defaults to <code>PRESENT</code>.
+<code>users create</code> cannot make a student — a student needs a program and a number,
+and the command has no <code>--program</code>. Use <code>client.create_student(...)</code> in the SDK.</p>
+<p>Parse output with <code>jq</code> or Python:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>subjects<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">'.subjects[] | "\(.id)\t\(.symbol)\t\(.name)"'</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>users<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">"import json,sys; print(len(json.load(sys.stdin)['users']))"</span>
+</code></pre></div>
+<h2 id="sdk-essentials">SDK essentials<a class="headerlink" href="#sdk-essentials" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyhive</span><span class="w"> </span><span class="kn">import</span> <span class="n">HiveClient</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyhive.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">AssignmentStatusEnum</span><span class="p">,</span> <span class="n">ClearanceEnum</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">with</span> <span class="n">HiveClient</span><span class="p">(</span><span class="s2">"admin"</span><span class="p">,</span> <span class="s2">"password"</span><span class="p">,</span> <span class="s2">"https://chive.bis.net"</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">program</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_program</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="n">program</span><span class="o">.</span><span class="n">get_subjects</span><span class="p">():</span>          <span class="c1"># list endpoints return generators</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="k">for</span> <span class="n">module</span> <span class="ow">in</span> <span class="n">subject</span><span class="o">.</span><span class="n">get_modules</span><span class="p">():</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">subject</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="n">module</span><span class="o">.</span><span class="n">order</span><span class="p">,</span> <span class="n">module</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">student</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_student</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">1234</span><span class="p">)</span>        <span class="c1"># or name="First Last"; None if no single match</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">done</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">get_assignments</span><span class="p">(</span><span class="n">for_user</span><span class="o">=</span><span class="n">student</span><span class="p">)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>            <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">assignment_status</span> <span class="o">==</span> <span class="n">AssignmentStatusEnum</span><span class="o">.</span><span class="n">DONE</span><span class="p">]</span>
+</code></pre></div>
+<ul>
+<li>List methods (<code>get_*s</code>) return <strong>generators</strong>: wrap in <code>list(...)</code> to index,
+  count or reuse them.</li>
+<li>Methods accept an <strong>id or a model</strong> wherever they take a related object
+  (<code>get_assignments(for_user=student)</code> or <code>for_user=13</code>).</li>
+<li>Relations on models (<code>assignment.user</code>, <code>user.mentor</code>, <code>class_.users</code>) are
+  lazy and cost <strong>one request each</strong>. In loops, fetch the table once
+  (<code>{u.id: u for u in client.get_users()}</code>) and join by id.</li>
+<li>Enums live in <code>pyhive.types</code>; compare with members, not strings.</li>
+<li><code>*_name=</code> filters (<code>subject_name=</code>, <code>module_name=</code>, …) are <strong>exact</strong> matches.
+  Passing two filters that contradict each other raises <code>AssertionError</code>.</li>
+<li>Errors: HTTP 400 → <code>ValueError("HTTP 400 Error: {...}")</code> with Hive's message;
+  other HTTP errors → <code>httpx.HTTPStatusError</code>; a failed delete →
+  <code>RuntimeError</code>; an unlisted Hive version → <code>UnverifiedHiveVersionError</code>
+  (pass <code>skip_version_check=True</code> to try anyway).</li>
+</ul>
+<p>Full method reference and recipes: <a href="../sdk/">sdk.md</a>.</p>
+<h2 id="known-quirks">Known quirks<a class="headerlink" href="#known-quirks" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>get_user_me()</code> raises <code>NotImplementedError</code>.</li>
+<li>Staff accounts can only open <strong>chat</strong> help requests
+  (<code>client.create_chat(with_user=…)</code>); <code>create_help_request</code> with another type
+  is rejected with <code>Staff may only create staff chats</code>.</li>
+<li><code>get_student(name=…)</code> matches the full name, display name or username first,
+  then the first name alone. It returns <code>None</code> when nothing matches and raises
+  <code>RuntimeError</code> when several users share that first name.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 System B90
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,7 +1,7 @@
 # PyHive
 
 PyHive is the Python SDK and command-line tool for the
-[Hive](https://hive.org) learning management system. It reads and changes
+[Hive](https://chive.bis.net) learning management system. It reads and changes
 programs, subjects, modules, exercises, assignments, users, classes, the
 schedule and help requests.
 
@@ -34,7 +34,7 @@ pyhive examples run program_tree
 ```python
 from pyhive import HiveClient
 
-with HiveClient.from_sso("https://hive.org") as client:
+with HiveClient.from_sso("https://chive.bis.net") as client:
     program = next(iter(client.get_programs()))
     for subject in program.get_subjects():
         modules = list(subject.get_modules())

@@ -13,25 +13,28 @@ pyhive docs show cli       # this page, in the terminal
 ## Command line shape
 
 ```text
-pyhive [-u USER -p PASS | -t TOKEN] [--json] [--cache-token] GROUP COMMAND [ARGS] [--hive-url URL] [--verify]
+pyhive GROUP COMMAND [ARGS] [OPTIONS]
 ```
 
-| Option                | Where it goes                 | What it does                                                        |
-| --------------------- | ----------------------------- | ------------------------------------------------------------------- |
-| `-u`, `--username`    | before the group              | Hive username (with `-p`)                                           |
-| `-p`, `--password`    | before the group              | Hive password (with `-u`)                                           |
-| `-t`, `--token`       | before the group              | Hive access token                                                   |
-| `--json`              | anywhere                      | Print one JSON document on stdout instead of text                   |
-| `--cache-token`       | anywhere                      | Save the server and token in the OS keyring for later calls         |
-| `--hive-url URL`      | after the command             | Server to talk to. Default: the cached one, else `https://hive.org` |
-| `--verify/--no-verify`| after the command             | Verify TLS certificates. Default `--no-verify`                      |
+These options work anywhere on the line: before the group, between the group
+and the command, or after the command. `pyhive --json programs list`,
+`pyhive programs --json list` and `pyhive programs list --json` are the same.
 
-!!! warning "Option placement matters"
-    `-u`, `-p` and `-t` belong to the root command: after the group they fail
-    with `No such option`. `--hive-url` and `--verify` belong to the final
-    command: `pyhive programs --hive-url URL list` accepts the option but
-    **ignores** it and talks to the default server. Write
-    `pyhive programs list --hive-url URL`.
+| Option                 | What it does                                                        |
+| ---------------------- | ------------------------------------------------------------------- |
+| `-u`, `--username`     | Hive username (with `-p`)                                           |
+| `-p`, `--password`     | Hive password (with `-u`)                                           |
+| `-t`, `--token`        | Hive access token                                                   |
+| `--json`               | Print one JSON document on stdout instead of text                   |
+| `--cache-token`        | Save the server and token in the OS keyring for later calls         |
+| `--hive-url URL`       | Server to talk to. Default: the cached one, else `https://chive.bis.net` |
+| `--verify/--no-verify` | Verify TLS certificates. Default `--no-verify`                      |
+
+!!! note "A command's own option comes first"
+    `pyhive users create USERNAME --password PW` sets the **new account's**
+    password. To sign in with a password on that command, put `-p` (or
+    `--password`) before `users`. Anything after a bare `--` is passed through
+    untouched.
 
 ## Signing in
 
@@ -69,7 +72,7 @@ Every command that talks to Hive picks the first credentials it finds:
 
 `--cache-token` on any command saves the server it used and the token it ended
 up with, the same way `auth login` does. Without `--hive-url`, commands use the
-cached server, or `https://hive.org` if none is cached. Giving `--hive-url` for
+cached server, or `https://chive.bis.net` if none is cached. Giving `--hive-url` for
 a different server ignores the cached token instead of sending it there.
 
 A token from `-t` or `HIVE_ACCESS_TOKEN` cannot be refreshed: when it expires,
