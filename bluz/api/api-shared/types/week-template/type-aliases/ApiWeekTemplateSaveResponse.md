@@ -8,7 +8,7 @@
 
 > **ApiWeekTemplateSaveResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:111](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L111)
+Defined in: [ui/src/api-shared/types/week-template.ts:111](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L111)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/week-template.ts:111](https://github.com/Sy
 
 > **applied**: [`ApiWeekTemplateApplyResult`](ApiWeekTemplateApplyResult.md) \| `null`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:113](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L113)
+Defined in: [ui/src/api-shared/types/week-template.ts:113](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L113)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-shared/types/week-template.ts:113](https://github.com/Sy
 
 > **template**: [`WeekTemplate`](WeekTemplate.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:112](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L112)
+Defined in: [ui/src/api-shared/types/week-template.ts:112](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L112)

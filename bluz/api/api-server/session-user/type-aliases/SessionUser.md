@@ -8,7 +8,7 @@
 
 > **SessionUser** = `object`
 
-Defined in: [ui/src/api-server/session-user.ts:22](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/session-user.ts#L22)
+Defined in: [ui/src/api-server/session-user.ts:22](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/session-user.ts#L22)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/session-user.ts:22](https://github.com/System-B90
 
 > **displayName**: `string`
 
-Defined in: [ui/src/api-server/session-user.ts:24](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/session-user.ts#L24)
+Defined in: [ui/src/api-server/session-user.ts:24](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/session-user.ts#L24)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-server/session-user.ts:24](https://github.com/System-B90
 
 > **id**: `string`
 
-Defined in: [ui/src/api-server/session-user.ts:23](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/session-user.ts#L23)
+Defined in: [ui/src/api-server/session-user.ts:23](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/session-user.ts#L23)

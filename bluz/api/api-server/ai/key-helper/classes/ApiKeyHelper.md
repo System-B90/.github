@@ -6,7 +6,7 @@
 
 # Class: ApiKeyHelper
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:31](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/key-helper.ts#L31)
+Defined in: [ui/src/api-server/ai/key-helper.ts:31](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/key-helper.ts#L31)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/key-helper.ts:31](https://github.com/System-B9
 
 > **new ApiKeyHelper**(`options`): `ApiKeyHelper`
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:37](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/key-helper.ts#L37)
+Defined in: [ui/src/api-server/ai/key-helper.ts:37](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/key-helper.ts#L37)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ The helper's environment — where `CC_SSO_BACKEND` reaches it.
 
 > **get**(`signal?`): `Promise`\<`string`\>
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:49](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/key-helper.ts#L49)
+Defined in: [ui/src/api-server/ai/key-helper.ts:49](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/key-helper.ts#L49)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ the background and its key serves the next request.
 
 > **invalidate**(): `void`
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:72](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/key-helper.ts#L72)
+Defined in: [ui/src/api-server/ai/key-helper.ts:72](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/key-helper.ts#L72)
 
 #### Returns
 

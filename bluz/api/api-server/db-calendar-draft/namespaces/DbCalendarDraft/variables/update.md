@@ -8,7 +8,7 @@
 
 > `const` **update**: (`draftId`, `events`, `author`, `controller`, `label?`, `range?`) => `Promise`\<[`CalendarDraftSummary`](../../../../../api-shared/types/type-aliases/CalendarDraftSummary.md)\> = `updateDraft`
 
-Defined in: [ui/src/api-server/db-calendar-draft.ts:235](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/db-calendar-draft.ts#L235)
+Defined in: [ui/src/api-server/db-calendar-draft.ts:235](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/db-calendar-draft.ts#L235)
 
 Updates an existing shared draft's events (and optionally its label),
 re-stamping the last editor. Returns the updated summary.

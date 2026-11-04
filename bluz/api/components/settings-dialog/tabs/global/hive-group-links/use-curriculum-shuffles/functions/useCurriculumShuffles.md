@@ -8,7 +8,7 @@
 
 > **useCurriculumShuffles**(`curriculumId`): `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:56](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L56)
+Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:56](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L56)
 
 The shuffles of one curriculum's syllabuses, and a writer that links a
 shuffle name to a Hive group in every syllabus that defines it. `null`

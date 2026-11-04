@@ -6,7 +6,7 @@
 
 # Enumeration: AiToolErrorKind
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:19](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/types.ts#L19)
+Defined in: [ui/src/api-server/ai/tools/types.ts:19](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/types.ts#L19)
 
 Failure classes a tool can produce, chosen for what the *model* should do
 next rather than for what went wrong internally. Two errors with the same
@@ -18,7 +18,7 @@ recovery path share a kind.
 
 > **Conflict**: `"conflict"`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:27](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/types.ts#L27)
+Defined in: [ui/src/api-server/ai/tools/types.ts:27](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/types.ts#L27)
 
 Existing data conflicts. Needs a human decision.
 
@@ -28,7 +28,7 @@ Existing data conflicts. Needs a human decision.
 
 > **InvalidArguments**: `"invalid_arguments"`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:21](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/types.ts#L21)
+Defined in: [ui/src/api-server/ai/tools/types.ts:21](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/types.ts#L21)
 
 The model's arguments were malformed or invalid. Fix and retry.
 
@@ -38,7 +38,7 @@ The model's arguments were malformed or invalid. Fix and retry.
 
 > **NotFound**: `"not_found"`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:23](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/types.ts#L23)
+Defined in: [ui/src/api-server/ai/tools/types.ts:23](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/types.ts#L23)
 
 The referenced record does not exist. Re-list, do not retry as-is.
 
@@ -48,7 +48,7 @@ The referenced record does not exist. Re-list, do not retry as-is.
 
 > **Rejected**: `"rejected"`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:25](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/types.ts#L25)
+Defined in: [ui/src/api-server/ai/tools/types.ts:25](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/types.ts#L25)
 
 A business rule refused it. Not retryable by any phrasing.
 
@@ -58,6 +58,6 @@ A business rule refused it. Not retryable by any phrasing.
 
 > **Unavailable**: `"unavailable"`
 
-Defined in: [ui/src/api-server/ai/tools/types.ts:29](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/types.ts#L29)
+Defined in: [ui/src/api-server/ai/tools/types.ts:29](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/types.ts#L29)
 
 A dependency is down. Retry at most once.

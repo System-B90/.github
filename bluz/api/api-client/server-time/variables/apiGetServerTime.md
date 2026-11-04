@@ -8,7 +8,7 @@
 
 > `const` **apiGetServerTime**: [`ClientApiNoPayload`](../../common/type-aliases/ClientApiNoPayload.md)\<[`ApiServerTimeGetResponse`](../../../api-shared/types/server-time/type-aliases/ApiServerTimeGetResponse.md)\>
 
-Defined in: [ui/src/api-client/server-time.ts:13](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-client/server-time.ts#L13)
+Defined in: [ui/src/api-client/server-time.ts:13](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-client/server-time.ts#L13)
 
 The server clock — the only source of "now" for the student board, and of
 "today" for the staff calendar.

@@ -8,7 +8,7 @@
 
 > **useServerClockSync**(): `boolean`
 
-Defined in: [ui/src/components/base/use-server-clock-sync.ts:36](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/base/use-server-clock-sync.ts#L36)
+Defined in: [ui/src/components/base/use-server-clock-sync.ts:36](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/use-server-clock-sync.ts#L36)
 
 Reads the server clock from `/api/server-time` — on mount, whenever the tab
 comes back to the foreground, and every [SERVER\_CLOCK\_RESYNC\_MS](../variables/SERVER_CLOCK_RESYNC_MS.md).

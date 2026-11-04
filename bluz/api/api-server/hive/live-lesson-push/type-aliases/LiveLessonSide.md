@@ -8,7 +8,7 @@
 
 > **LiveLessonSide** = `object`
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:21](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/live-lesson-push.ts#L21)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:21](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/live-lesson-push.ts#L21)
 
 One side of an edit, as far as Hive cares.
 
@@ -18,7 +18,7 @@ One side of an edit, as far as Hive cares.
 
 > **groups**: `Set`\<`number`\>
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:25](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/live-lesson-push.ts#L25)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:25](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/live-lesson-push.ts#L25)
 
 Hive student-group ids the event reaches.
 
@@ -28,6 +28,6 @@ Hive student-group ids the event reaches.
 
 > **occurrenceStart**: `string`
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:23](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/live-lesson-push.ts#L23)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:23](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/live-lesson-push.ts#L23)
 
 ISO start of the occurrence, the activation ledger's key.

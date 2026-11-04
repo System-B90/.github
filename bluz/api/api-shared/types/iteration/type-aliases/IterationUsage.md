@@ -8,7 +8,7 @@
 
 > **IterationUsage** = `object`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:86](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/iteration.ts#L86)
+Defined in: [ui/src/api-shared/types/iteration.ts:86](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/iteration.ts#L86)
 
 What an iteration still owns, as reported by `GET /api/iterations/[id]/usage`.
 Drives the delete affordance (#473) — only an orphaned iteration is deletable.
@@ -19,7 +19,7 @@ Drives the delete affordance (#473) — only an orphaned iteration is deletable.
 
 > **curriculums**: `number`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:88](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/iteration.ts#L88)
+Defined in: [ui/src/api-shared/types/iteration.ts:88](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/iteration.ts#L88)
 
 1 when a Gantt curriculum is linked, 0 otherwise.
 
@@ -29,7 +29,7 @@ Defined in: [ui/src/api-shared/types/iteration.ts:88](https://github.com/System-
 
 > **events**: `number`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:90](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/iteration.ts#L90)
+Defined in: [ui/src/api-shared/types/iteration.ts:90](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/iteration.ts#L90)
 
 Capped existence probe over the iteration's events (0 or 1).
 
@@ -39,7 +39,7 @@ Capped existence probe over the iteration's events (0 or 1).
 
 > **isCurrent**: `boolean`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:91](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/iteration.ts#L91)
+Defined in: [ui/src/api-shared/types/iteration.ts:91](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/iteration.ts#L91)
 
 ***
 
@@ -47,4 +47,4 @@ Defined in: [ui/src/api-shared/types/iteration.ts:91](https://github.com/System-
 
 > **orphaned**: `boolean`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:92](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/iteration.ts#L92)
+Defined in: [ui/src/api-shared/types/iteration.ts:92](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/iteration.ts#L92)

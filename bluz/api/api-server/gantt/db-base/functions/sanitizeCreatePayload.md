@@ -8,7 +8,7 @@
 
 > **sanitizeCreatePayload**(`table`, `data`, `typeName`): `Record`\<`string`, `unknown`\>
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:59](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/db-base.ts#L59)
+Defined in: [ui/src/api-server/gantt/db-base.ts:59](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/gantt/db-base.ts#L59)
 
 Check a create payload against the target table *before* it reaches the
 insert, and return only the fields the table actually has.

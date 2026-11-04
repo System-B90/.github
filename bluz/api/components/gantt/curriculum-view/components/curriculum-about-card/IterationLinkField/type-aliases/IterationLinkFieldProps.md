@@ -8,7 +8,7 @@
 
 > **IterationLinkFieldProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx:21](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx#L21)
+Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx:21](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx#L21)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx:22](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx#L22)
+Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx:22](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx#L22)

@@ -8,7 +8,7 @@
 
 > **calculateStudentTentativeMinutes**(`__namedParameters`): `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:673](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/student-load.ts#L673)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:673](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/curriculum-view/student-load.ts#L673)
 
 One student's time in the modules placed whole (tentatively) on the
 timeline, each module counted once however many days it is mapped to.

@@ -8,7 +8,7 @@
 
 > **ApiWeekTemplateSavePayload** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:91](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L91)
+Defined in: [ui/src/api-shared/types/week-template.ts:91](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L91)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/week-template.ts:91](https://github.com/Sys
 
 > `optional` **applyToCutWeeks?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:94](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L94)
+Defined in: [ui/src/api-shared/types/week-template.ts:94](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L94)
 
 Retime the untouched events of weeks already cut from this template.
 
@@ -26,4 +26,4 @@ Retime the untouched events of weeks already cut from this template.
 
 > **events**: [`DbEventDocument`](../../event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/types/week-template.ts:92](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L92)
+Defined in: [ui/src/api-shared/types/week-template.ts:92](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L92)

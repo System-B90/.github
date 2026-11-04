@@ -8,7 +8,7 @@
 
 > **listRow**(`summary`, `fields`): `Partial`\<[`AiEventSummary`](../../calendar/type-aliases/AiEventSummary.md)\>
 
-Defined in: [ui/src/api-server/ai/tools/list-row.ts:51](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/list-row.ts#L51)
+Defined in: [ui/src/api-server/ai/tools/list-row.ts:51](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/list-row.ts#L51)
 
 One list row: the base columns plus the requested extras, minus empty
 values. A week of meals would otherwise repeat the same `[]` and `false`

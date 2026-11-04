@@ -8,7 +8,7 @@
 
 > **getPrayerWindows**(`date`, `times`): [`DayPrayerWindow`](../../types/prayer-windows/type-aliases/DayPrayerWindow.md)[]
 
-Defined in: [ui/src/api-shared/prayer-windows.ts:204](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/prayer-windows.ts#L204)
+Defined in: [ui/src/api-shared/prayer-windows.ts:204](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/prayer-windows.ts#L204)
 
 The daily prayer windows of the Sunday-to-Saturday week holding `date`, at
 `times`. Each lasts its plain-weekday length (BASE\_MINUTES) plus

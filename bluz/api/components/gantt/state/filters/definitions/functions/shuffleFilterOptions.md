@@ -8,7 +8,7 @@
 
 > **shuffleFilterOptions**(`syllabuses`): `string`[]
 
-Defined in: [ui/src/components/gantt/state/filters/definitions.ts:76](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/state/filters/definitions.ts#L76)
+Defined in: [ui/src/components/gantt/state/filters/definitions.ts:76](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/state/filters/definitions.ts#L76)
 
 Every shuffle name used by syllabuses, sorted, for the shuffle filter.
 

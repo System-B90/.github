@@ -6,7 +6,7 @@
 
 # Class: CurriculumCutError
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:270](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/cut.ts#L270)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:270](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L270)
 
 Thrown by the client wrapper when a cut is rejected. Carries the full
 structured payload (code + planner validation errors + already-cut count)
@@ -28,7 +28,7 @@ the shared snackbar handling.
 
 > **new CurriculumCutError**(`payload`): `CurriculumCutError`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:279](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/cut.ts#L279)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:279](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L279)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:279](https://github.com/System
 
 > `readonly` **code**: [`CurriculumCutErrorCode`](../type-aliases/CurriculumCutErrorCode.md)
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:274](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/cut.ts#L274)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:274](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L274)
 
 #### Implementation of
 
@@ -62,7 +62,7 @@ Defined in: [ui/src/api-shared/types/gantt/cut.ts:274](https://github.com/System
 
 > `readonly` `optional` **count?**: `number`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:276](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/cut.ts#L276)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:276](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L276)
 
 Present for `already-cut` (this curriculum's own live cut events) and for
 `foreign-cut` (another curriculum's, still live in the same iteration).
@@ -77,7 +77,7 @@ Present for `already-cut` (this curriculum's own live cut events) and for
 
 > `readonly` `optional` **errors?**: [`CutValidationError`](../../../../gantt/cut-planner/type-aliases/CutValidationError.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:275](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/cut.ts#L275)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:275](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L275)
 
 Present for `invalid-plan`: the pure planner's collected validation errors.
 
@@ -91,7 +91,7 @@ Present for `invalid-plan`: the pure planner's collected validation errors.
 
 > `readonly` `optional` **foreignCurriculumId?**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:277](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/cut.ts#L277)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:277](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L277)
 
 Present for `foreign-cut`: the curriculum whose cut is occupying the iteration.
 

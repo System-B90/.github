@@ -8,7 +8,7 @@
 
 > `const` **CAPACITY\_RULES**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:32](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/gantt/cut-rules.ts#L32)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:32](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/cut-rules.ts#L32)
 
 A day's capacity is its **working window**: the clock span from the day's
 start time to its end time (`GanttDay.dayEndTime`). Not a minute budget — a

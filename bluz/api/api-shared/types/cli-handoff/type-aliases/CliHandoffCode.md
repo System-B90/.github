@@ -8,7 +8,7 @@
 
 > **CliHandoffCode** = `object`
 
-Defined in: [ui/src/api-shared/types/cli-handoff.ts:25](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/cli-handoff.ts#L25)
+Defined in: [ui/src/api-shared/types/cli-handoff.ts:25](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/cli-handoff.ts#L25)
 
 One outstanding CLI login handoff. `code` is the lookup key (opaque,
 crypto.randomBytes-derived — never the verification code shown on screen,
@@ -30,7 +30,7 @@ next TTL sweep (which runs on a ~60s cadence).
 
 > **code**: `string`
 
-Defined in: [ui/src/api-shared/types/cli-handoff.ts:26](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/cli-handoff.ts#L26)
+Defined in: [ui/src/api-shared/types/cli-handoff.ts:26](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/cli-handoff.ts#L26)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/api-shared/types/cli-handoff.ts:26](https://github.com/Syste
 
 > **createdAt**: `Date`
 
-Defined in: [ui/src/api-shared/types/cli-handoff.ts:29](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/cli-handoff.ts#L29)
+Defined in: [ui/src/api-shared/types/cli-handoff.ts:29](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/cli-handoff.ts#L29)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/api-shared/types/cli-handoff.ts:29](https://github.com/Syste
 
 > **sealedToken**: `string`
 
-Defined in: [ui/src/api-shared/types/cli-handoff.ts:27](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/cli-handoff.ts#L27)
+Defined in: [ui/src/api-shared/types/cli-handoff.ts:27](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/cli-handoff.ts#L27)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [ui/src/api-shared/types/cli-handoff.ts:27](https://github.com/Syste
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-shared/types/cli-handoff.ts:28](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/cli-handoff.ts#L28)
+Defined in: [ui/src/api-shared/types/cli-handoff.ts:28](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/cli-handoff.ts#L28)

@@ -8,7 +8,7 @@
 
 > **piecesAroundBreaks**(`event`, `windows`): [`Interval`](../../interval-layout/type-aliases/Interval.md)[]
 
-Defined in: [ui/src/api-shared/break-windows.ts:129](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/break-windows.ts#L129)
+Defined in: [ui/src/api-shared/break-windows.ts:129](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/break-windows.ts#L129)
 
 The blocks an event becomes when split into separate events around the
 breaks that reach it (#1017) — the same blocks the schedule draws. A

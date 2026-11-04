@@ -8,7 +8,7 @@
 
 > **ApiServerTimeGetResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/server-time.ts:5](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/server-time.ts#L5)
+Defined in: [ui/src/api-shared/types/server-time.ts:5](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/server-time.ts#L5)
 
 `GET /api/server-time` — the server clock, for students and staff alike.
 Part of the student surface: the envelope is closed, `now` and nothing else.
@@ -19,6 +19,6 @@ Part of the student surface: the envelope is closed, `now` and nothing else.
 
 > **now**: `number`
 
-Defined in: [ui/src/api-shared/types/server-time.ts:7](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/server-time.ts#L7)
+Defined in: [ui/src/api-shared/types/server-time.ts:7](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/server-time.ts#L7)
 
 Epoch ms when the response was built.

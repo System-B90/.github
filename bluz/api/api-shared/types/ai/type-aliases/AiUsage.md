@@ -8,7 +8,7 @@
 
 > **AiUsage** = `object`
 
-Defined in: [ui/src/api-shared/types/ai.ts:116](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/ai.ts#L116)
+Defined in: [ui/src/api-shared/types/ai.ts:116](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/ai.ts#L116)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:116](https://github.com/System-B90/Bl
 
 > **completionTokens**: `number`
 
-Defined in: [ui/src/api-shared/types/ai.ts:118](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/ai.ts#L118)
+Defined in: [ui/src/api-shared/types/ai.ts:118](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/ai.ts#L118)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:118](https://github.com/System-B90/Bl
 
 > **promptTokens**: `number`
 
-Defined in: [ui/src/api-shared/types/ai.ts:117](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/ai.ts#L117)
+Defined in: [ui/src/api-shared/types/ai.ts:117](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/ai.ts#L117)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/ai.ts:117](https://github.com/System-B90/Bl
 
 > **totalTokens**: `number`
 
-Defined in: [ui/src/api-shared/types/ai.ts:119](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/ai.ts#L119)
+Defined in: [ui/src/api-shared/types/ai.ts:119](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/ai.ts#L119)

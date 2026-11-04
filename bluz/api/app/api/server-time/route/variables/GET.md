@@ -8,7 +8,7 @@
 
 > `const` **GET**: `ServerApiServerTimeGet`
 
-Defined in: [ui/src/app/api/server-time/route.ts:22](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/app/api/server-time/route.ts#L22)
+Defined in: [ui/src/app/api/server-time/route.ts:22](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/app/api/server-time/route.ts#L22)
 
 GET /api/server-time — the server's clock. The student board's only source
 of "now" (the day on screen, the midnight rollover, the time line), and the

@@ -8,7 +8,7 @@
 
 > **isCurriculumCutErrorPayload**(`error`): `error is ClientApiError & ApiCurriculumCutError`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:302](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/cut.ts#L302)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:302](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L302)
 
 Narrows a caught ClientApiError to one carrying a cut error code.
 

@@ -8,7 +8,7 @@
 
 > **WeeksTableSkeleton**(): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksTableSkeleton.tsx:11](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksTableSkeleton.tsx#L11)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksTableSkeleton.tsx:11](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksTableSkeleton.tsx#L11)
 
 The weeks table's shape while it loads (#839): a header row and
 13 weeks × 7 day cells, instead of a lone spinner in an empty area.

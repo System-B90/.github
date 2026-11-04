@@ -8,7 +8,7 @@
 
 > **recordStudentSecurityEvent**(`userId`, `action`, `detail`, `ip?`): `void`
 
-Defined in: [ui/src/api-server/student-security-log.ts:119](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/student-security-log.ts#L119)
+Defined in: [ui/src/api-server/student-security-log.ts:119](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/student-security-log.ts#L119)
 
 Records a suspected malicious attempt by a student (or an unattributable
 caller) on that day's student time record.

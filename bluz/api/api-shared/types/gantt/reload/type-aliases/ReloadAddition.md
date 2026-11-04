@@ -8,7 +8,7 @@
 
 > **ReloadAddition** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:16](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/reload.ts#L16)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:16](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/reload.ts#L16)
 
 A planned occurrence that has no schedule event yet — will be created.
 
@@ -18,7 +18,7 @@ A planned occurrence that has no schedule event yet — will be created.
 
 > **endTime**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:24](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/reload.ts#L24)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:24](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/reload.ts#L24)
 
 ISO datetime.
 
@@ -28,7 +28,7 @@ ISO datetime.
 
 > **ganttEventId**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:17](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/reload.ts#L17)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:17](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/reload.ts#L17)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:17](https://github.com/Syst
 
 > **occurrenceDate**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:19](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/reload.ts#L19)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:19](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/reload.ts#L19)
 
 yyyy-MM-dd
 
@@ -46,7 +46,7 @@ yyyy-MM-dd
 
 > `optional` **parked?**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:29](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/reload.ts#L29)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:29](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/reload.ts#L29)
 
 The user deleted this occurrence from the schedule since the cut, so it
 is re-created in the unassigned-events box instead of on the grid.
@@ -57,7 +57,7 @@ is re-created in the unassigned-events box instead of on the grid.
 
 > **startTime**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:22](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/reload.ts#L22)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:22](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/reload.ts#L22)
 
 ISO datetime.
 
@@ -67,4 +67,4 @@ ISO datetime.
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:20](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/gantt/reload.ts#L20)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:20](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/reload.ts#L20)

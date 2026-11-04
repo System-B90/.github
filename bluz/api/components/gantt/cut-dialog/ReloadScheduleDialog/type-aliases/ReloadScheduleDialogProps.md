@@ -8,7 +8,7 @@
 
 > **ReloadScheduleDialogProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:55](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L55)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:55](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L55)
 
 "עדכון הלו״ז לפי הגאנט" — reconciles an already-cut schedule with the
 current gantt. Non-conflicting changes are applied immediately; events a
@@ -26,7 +26,7 @@ the gantt is finished. A missing start date still fails, as a plain error.
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:57](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L57)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:57](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L57)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:57](htt
 
 > `optional` **curriculumTitle?**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:58](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L58)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:58](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L58)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:58](htt
 
 > **onClose**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:59](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L59)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:59](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L59)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:59](htt
 
 > `optional` **onSuccess?**: () => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:61](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L61)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:61](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L61)
 
 Fired after any successful apply so the caller can refresh its view.
 
@@ -68,4 +68,4 @@ Fired after any successful apply so the caller can refresh its view.
 
 > **open**: `boolean`
 
-Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:56](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L56)
+Defined in: [ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx:56](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/cut-dialog/ReloadScheduleDialog.tsx#L56)

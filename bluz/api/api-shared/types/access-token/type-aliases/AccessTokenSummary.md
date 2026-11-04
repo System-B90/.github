@@ -8,7 +8,7 @@
 
 > **AccessTokenSummary** = `object`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:42](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L42)
+Defined in: [ui/src/api-shared/types/access-token.ts:42](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L42)
 
 What the API shows about a token. The secret itself is never returned after creation.
 
@@ -18,7 +18,7 @@ What the API shows about a token. The secret itself is never returned after crea
 
 > **createdAt**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:49](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L49)
+Defined in: [ui/src/api-shared/types/access-token.ts:49](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L49)
 
 ISO timestamps.
 
@@ -28,7 +28,7 @@ ISO timestamps.
 
 > **expiresAt**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:50](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L50)
+Defined in: [ui/src/api-shared/types/access-token.ts:50](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L50)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:50](https://github.com/Syst
 
 > **hint**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:47](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L47)
+Defined in: [ui/src/api-shared/types/access-token.ts:47](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L47)
 
 Last 4 characters of the secret, to tell tokens apart.
 
@@ -46,7 +46,7 @@ Last 4 characters of the secret, to tell tokens apart.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:43](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L43)
+Defined in: [ui/src/api-shared/types/access-token.ts:43](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L43)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:43](https://github.com/Syst
 
 > **lastUsedAt**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:51](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L51)
+Defined in: [ui/src/api-shared/types/access-token.ts:51](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L51)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:51](https://github.com/Syst
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:44](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L44)
+Defined in: [ui/src/api-shared/types/access-token.ts:44](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L44)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [ui/src/api-shared/types/access-token.ts:44](https://github.com/Syst
 
 > **scope**: [`AccessTokenScope`](../enumerations/AccessTokenScope.md)
 
-Defined in: [ui/src/api-shared/types/access-token.ts:45](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L45)
+Defined in: [ui/src/api-shared/types/access-token.ts:45](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/access-token.ts#L45)

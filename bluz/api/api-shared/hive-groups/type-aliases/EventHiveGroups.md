@@ -8,7 +8,7 @@
 
 > **EventHiveGroups**\<`T`\> = `object`
 
-Defined in: [ui/src/api-shared/hive-groups.ts:28](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/hive-groups.ts#L28)
+Defined in: [ui/src/api-shared/hive-groups.ts:28](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/hive-groups.ts#L28)
 
 What an event's courses resolve to in Hive.
 
@@ -24,7 +24,7 @@ What an event's courses resolve to in Hive.
 
 > **groups**: `T`[]
 
-Defined in: [ui/src/api-shared/hive-groups.ts:30](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/hive-groups.ts#L30)
+Defined in: [ui/src/api-shared/hive-groups.ts:30](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/hive-groups.ts#L30)
 
 The groups the event reaches, deduplicated, in course order.
 
@@ -34,6 +34,6 @@ The groups the event reaches, deduplicated, in course order.
 
 > **unmatchedCourseIds**: `string`[]
 
-Defined in: [ui/src/api-shared/hive-groups.ts:32](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/hive-groups.ts#L32)
+Defined in: [ui/src/api-shared/hive-groups.ts:32](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/hive-groups.ts#L32)
 
 The event's own courses whose whole subtree matches no Hive group.

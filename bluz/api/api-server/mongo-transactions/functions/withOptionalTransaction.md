@@ -8,7 +8,7 @@
 
 > **withOptionalTransaction**\<`T`\>(`client`, `operation`, `context`): `Promise`\<`T`\>
 
-Defined in: [ui/src/api-server/mongo-transactions.ts:68](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-transactions.ts#L68)
+Defined in: [ui/src/api-server/mongo-transactions.ts:68](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/mongo-transactions.ts#L68)
 
 Run `operation` inside a transaction, falling back to running it without one
 when the deployment does not support transactions.

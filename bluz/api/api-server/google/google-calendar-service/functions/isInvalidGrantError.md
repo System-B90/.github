@@ -8,7 +8,7 @@
 
 > **isInvalidGrantError**(`error`): `boolean`
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:139](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/google/google-calendar-service.ts#L139)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:139](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/google/google-calendar-service.ts#L139)
 
 Google's token endpoint refused the refresh token: it expired (7 days on an
 OAuth app still in "Testing") or the user revoked access. No retry helps —

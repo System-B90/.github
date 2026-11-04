@@ -8,7 +8,7 @@
 
 > `const` **GANTT\_TERMS**: `object`
 
-Defined in: [ui/src/components/gantt/glossary.ts:9](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/glossary.ts#L9)
+Defined in: [ui/src/components/gantt/glossary.ts:9](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/glossary.ts#L9)
 
 The one set of words the gantt UI uses for its core concepts (#832).
 

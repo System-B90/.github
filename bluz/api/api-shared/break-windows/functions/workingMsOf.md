@@ -8,7 +8,7 @@
 
 > **workingMsOf**(`event`): `number`
 
-Defined in: [ui/src/api-shared/break-windows.ts:52](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/break-windows.ts#L52)
+Defined in: [ui/src/api-shared/break-windows.ts:52](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/break-windows.ts#L52)
 
 Net working length of an event. `endTime` is a derivative of `startTime` and
 this duration — it is never inflated by the breaks the event steps over.

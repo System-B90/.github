@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/cli-auth/redeem/route.ts:26](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/app/api/cli-auth/redeem/route.ts#L26)
+Defined in: [ui/src/app/api/cli-auth/redeem/route.ts:26](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/app/api/cli-auth/redeem/route.ts#L26)
 
 Redeems a CLI login handoff code (#520) for the next-auth session token it
 was minted for. Deliberately unauthenticated -- the caller (the CLI, not a

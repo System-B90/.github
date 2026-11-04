@@ -8,7 +8,7 @@
 
 > **TargetOption** = `object`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:4](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/module-dialog/constraints/types.ts#L4)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:4](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/module-dialog/constraints/types.ts#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:4](https
 
 > **id**: `string`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:5](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/module-dialog/constraints/types.ts#L5)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:5](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/module-dialog/constraints/types.ts#L5)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:5](https
 
 > **label**: `string`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:6](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/module-dialog/constraints/types.ts#L6)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:6](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/module-dialog/constraints/types.ts#L6)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:6](https
 
 > **syllabusId**: `string`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:9](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/module-dialog/constraints/types.ts#L9)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:9](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/module-dialog/constraints/types.ts#L9)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:9](https
 
 > **title**: `string`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:7](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/module-dialog/constraints/types.ts#L7)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:7](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/module-dialog/constraints/types.ts#L7)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:7](https
 
 > **type**: `"event"` \| `"module"`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:8](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/module-dialog/constraints/types.ts#L8)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:8](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/module-dialog/constraints/types.ts#L8)

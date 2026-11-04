@@ -8,7 +8,7 @@
 
 > **GanttLinkCandidate** = `object`
 
-Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:5](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L5)
+Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:5](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L5)
 
 A gantt event a schedule event can be linked to.
 
@@ -18,7 +18,7 @@ A gantt event a schedule event can be linked to.
 
 > **id**: `string`
 
-Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:6](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L6)
+Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:6](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L6)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:6]
 
 > **path**: `string`
 
-Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:9](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L9)
+Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:9](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L9)
 
 "syllabus › module", for telling same-named events apart.
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:9]
 
 > **score**: `number`
 
-Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:11](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L11)
+Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:11](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L11)
 
 How well its Hive lesson/module/subject matches the schedule event; 0 ⇒ none.
 
@@ -46,4 +46,4 @@ How well its Hive lesson/module/subject matches the schedule event; 0 ⇒ none.
 
 > **title**: `string`
 
-Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:7](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L7)
+Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:7](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L7)

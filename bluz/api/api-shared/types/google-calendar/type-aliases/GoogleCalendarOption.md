@@ -8,7 +8,7 @@
 
 > **GoogleCalendarOption** = `object`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:52](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/google-calendar.ts#L52)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:52](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/google-calendar.ts#L52)
 
 One calendar the user may mirror into (from calendarList, `minAccessRole=writer`).
 
@@ -18,7 +18,7 @@ One calendar the user may mirror into (from calendarList, `minAccessRole=writer`
 
 > **accessRole**: [`GoogleCalendarAccessRole`](GoogleCalendarAccessRole.md)
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:55](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/google-calendar.ts#L55)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:55](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/google-calendar.ts#L55)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:55](https://github.com/S
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:53](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/google-calendar.ts#L53)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:53](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/google-calendar.ts#L53)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/google-calendar.ts:53](https://github.com/S
 
 > **primary**: `boolean`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:57](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/google-calendar.ts#L57)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:57](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/google-calendar.ts#L57)
 
 The user's primary calendar (their own main one).
 
@@ -44,7 +44,7 @@ The user's primary calendar (their own main one).
 
 > **shared**: `boolean`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:59](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/google-calendar.ts#L59)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:59](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/google-calendar.ts#L59)
 
 Someone else owns it and shared it with this user.
 
@@ -54,4 +54,4 @@ Someone else owns it and shared it with this user.
 
 > **summary**: `string`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:54](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/google-calendar.ts#L54)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:54](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/google-calendar.ts#L54)

@@ -8,7 +8,7 @@
 
 > `const` **CLAUDE\_CODE\_HEADERS**: `Readonly`\<`Record`\<`string`, `string`\>\>
 
-Defined in: [ui/src/api-server/ai/litellm.ts:26](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/litellm.ts#L26)
+Defined in: [ui/src/api-server/ai/litellm.ts:26](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/litellm.ts#L26)
 
 What Claude Code sends with every request to `ANTHROPIC_BASE_URL`. The
 version in the User-Agent only has to look like Claude Code's; override it
