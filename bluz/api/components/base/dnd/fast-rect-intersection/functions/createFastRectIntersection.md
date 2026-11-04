@@ -8,7 +8,7 @@
 
 > **createFastRectIntersection**(): `CollisionDetection`
 
-Defined in: [ui/src/components/base/dnd/fast-rect-intersection.ts:160](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/dnd/fast-rect-intersection.ts#L160)
+Defined in: [ui/src/components/base/dnd/fast-rect-intersection.ts:160](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/base/dnd/fast-rect-intersection.ts#L160)
 
 dnd-kit's `rectIntersection`, with the same result and a fraction of the
 cost, for a `DndContext` with many droppables (the Gantt's day cells).

@@ -8,7 +8,7 @@
 
 > **buildEditingTour**(): `Tour`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tours/editing.tsx:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/schedule/tours/editing.tsx#L16)
+Defined in: [ui/src/components/app-onboarding/schedule/tours/editing.tsx:16](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/app-onboarding/schedule/tours/editing.tsx#L16)
 
 Everyday editing of single מופעים: every gesture the grid answers to, with
 its mouse, menu and keyboard forms side by side. Most of these were only

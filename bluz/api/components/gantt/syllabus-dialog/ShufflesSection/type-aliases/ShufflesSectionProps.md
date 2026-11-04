@@ -8,7 +8,7 @@
 
 > **ShufflesSectionProps** = `object`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:61](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L61)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:62](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L62)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:61](htt
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:62](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L62)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:63](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L63)

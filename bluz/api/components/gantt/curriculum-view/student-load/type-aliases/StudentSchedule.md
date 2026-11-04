@@ -8,7 +8,7 @@
 
 > **StudentSchedule** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:74](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/student-load.ts#L74)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:74](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/student-load.ts#L74)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:74](https:/
 
 > **byDay**: `Record`\<[`GanttDayId`](../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDayId.md), [`DayStudentLoad`](DayStudentLoad.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:77](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/student-load.ts#L77)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:77](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/student-load.ts#L77)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:77](https:/
 
 > **paths**: [`StudentPath`](StudentPath.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:75](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/student-load.ts#L75)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:75](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/student-load.ts#L75)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:75](https:/
 
 > **spans**: `Record`\<`string`, [`EventDaySpan`](../../gantt-time-utils/type-aliases/EventDaySpan.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:76](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/student-load.ts#L76)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:76](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/student-load.ts#L76)

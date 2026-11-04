@@ -8,7 +8,7 @@
 
 > **startBenchmarkJob**(`options`): `object`
 
-Defined in: [ui/src/api-server/ai/benchmark/job.ts:43](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/benchmark/job.ts#L43)
+Defined in: [ui/src/api-server/ai/benchmark/job.ts:43](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/benchmark/job.ts#L43)
 
 Starts a run unless one is already going. Returns the job either way, so a
 second click (or a second tab) just attaches to the run in flight.

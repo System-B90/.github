@@ -8,7 +8,7 @@
 
 > **ScheduleTourDeps** = `object`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tours/types.ts:4](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/schedule/tours/types.ts#L4)
+Defined in: [ui/src/components/app-onboarding/schedule/tours/types.ts:4](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/app-onboarding/schedule/tours/types.ts#L4)
 
 What the schedule's tours need from the screen, to drive it as they go.
 
@@ -18,7 +18,7 @@ What the schedule's tours need from the screen, to drive it as they go.
 
 > **openDockPanel**: (`panel`) => `void`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tours/types.ts:6](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/schedule/tours/types.ts#L6)
+Defined in: [ui/src/components/app-onboarding/schedule/tours/types.ts:6](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/app-onboarding/schedule/tours/types.ts#L6)
 
 Opens a side-dock panel, so a step can point into it.
 

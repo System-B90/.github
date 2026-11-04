@@ -8,7 +8,7 @@
 
 > `const` **PALETTE\_LABELS**: `CommandPaletteLabels`
 
-Defined in: [ui/src/components/app-commands/labels.ts:12](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-commands/labels.ts#L12)
+Defined in: [ui/src/components/app-commands/labels.ts:12](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/app-commands/labels.ts#L12)
 
 Bluz's palette wording.
 

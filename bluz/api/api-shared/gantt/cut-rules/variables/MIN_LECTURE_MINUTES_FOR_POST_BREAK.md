@@ -8,7 +8,7 @@
 
 > `const` **MIN\_LECTURE\_MINUTES\_FOR\_POST\_BREAK**: `45` = `45`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:291](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-rules.ts#L291)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:291](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/gantt/cut-rules.ts#L291)
 
 Cumulative minutes of consecutive lecture/ע"ע at or above this many minutes
 earns a post-lecture break — one short lecture alone need not, but a run of

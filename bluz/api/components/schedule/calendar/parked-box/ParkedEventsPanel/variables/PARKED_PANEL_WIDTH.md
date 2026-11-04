@@ -8,6 +8,6 @@
 
 > `const` **PARKED\_PANEL\_WIDTH**: `280` = `280`
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx:29](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx#L29)
+Defined in: [ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx:29](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx#L29)
 
 Width of the box when it is the open side-dock panel.

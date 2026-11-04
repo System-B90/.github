@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1204,13 +1204,13 @@ are equivalent.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--url TEXT</code></td>
+<td><code>--url <str></code></td>
 <td>Bluz base URL (overrides config/env).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--token TEXT</code></td>
+<td><code>--token <str></code></td>
 <td>Session token (overrides config/env). Visible in process listings -- prefer BLUZ_TOKEN.</td>
 <td>No</td>
 <td>-</td>
@@ -1234,7 +1234,7 @@ are equivalent.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--timeout FLOAT</code></td>
+<td><code>--timeout <float></code></td>
 <td>HTTP request timeout in seconds (default 30).</td>
 <td>No</td>
 <td>-</td>
@@ -1403,13 +1403,13 @@ is the safer channel.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--url TEXT</code></td>
-<td>Bluz base URL, e.g. https://bluz.example.com.</td>
+<td><code>--url <str></code></td>
+<td>Bluz base URL, e.g. https://bluz.bis.net.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--token TEXT</code></td>
+<td><code>--token <str></code></td>
 <td>Personal access token (bluz_pat_…) or next-auth session token (skips the prompt).</td>
 <td>No</td>
 <td>-</td>
@@ -1485,7 +1485,7 @@ as a shell gate: <code>bluz health || echo &quot;down&quot;</code>.</p>
 <p><code>fridayLastEventEnd</code> is candle lighting − 2h and <code>saturdayFirstEventStart</code>
 is havdalah + 30m (RULES.md R-32). Times are Israel local.</p>
 <h4 id="usage_4">Usage<a class="headerlink" href="#usage_4" title="Permanent link">&para;</a></h4>
-<p><code>bluz shabbat [OPTIONS] DATE</code></p>
+<p><code>bluz shabbat [OPTIONS] {date}</code></p>
 <h4 id="arguments_4">Arguments<a class="headerlink" href="#arguments_4" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
@@ -1497,9 +1497,9 @@ is havdalah + 30m (RULES.md R-32). Times are Israel local.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>DATE</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>date</code></td>
+<td>Any date (YYYY-MM-DD) in the Sunday-to-Saturday week.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -1527,7 +1527,7 @@ is havdalah + 30m (RULES.md R-32). Times are Israel local.</p>
 <p>Lengthened on Rosh Chodesh, fasts and the like (<code>reasons</code>). A schedule
 tint, not events. Times are Israel local; <code>end</code> is "24:00" past midnight.</p>
 <h4 id="usage_5">Usage<a class="headerlink" href="#usage_5" title="Permanent link">&para;</a></h4>
-<p><code>bluz prayers [OPTIONS] DATE</code></p>
+<p><code>bluz prayers [OPTIONS] {date}</code></p>
 <h4 id="arguments_5">Arguments<a class="headerlink" href="#arguments_5" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
@@ -1539,9 +1539,9 @@ tint, not events. Times are Israel local; <code>end</code> is "24:00" past midni
 </thead>
 <tbody>
 <tr>
-<td><code>DATE</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>date</code></td>
+<td>Any date (YYYY-MM-DD) in the Sunday-to-Saturday week.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -1557,7 +1557,7 @@ tint, not events. Times are Israel local; <code>end</code> is "24:00" past midni
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -1672,13 +1672,13 @@ is the safer channel.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--url TEXT</code></td>
-<td>Bluz base URL, e.g. https://bluz.example.com.</td>
+<td><code>--url <str></code></td>
+<td>Bluz base URL, e.g. https://bluz.bis.net.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--token TEXT</code></td>
+<td><code>--token <str></code></td>
 <td>Personal access token (bluz_pat_…) or next-auth session token (skips the prompt).</td>
 <td>No</td>
 <td>-</td>
@@ -1843,14 +1843,14 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>NAME</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>name</code></td>
+<td>What the token is for, e.g. 'nightly export'.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>TOKEN</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>token</code></td>
+<td>Token id or name.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -1884,7 +1884,7 @@ real-time sync channel outside a browser.</p>
 <td><code>read-only</code></td>
 </tr>
 <tr>
-<td><code>--expires-in-days INTEGER</code></td>
+<td><code>--expires-in-days <int></code></td>
 <td>Lifetime: 7, 30, 90, 180 or 365 days.</td>
 <td>No</td>
 <td><code>30</code></td>
@@ -1953,13 +1953,13 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -2000,7 +2000,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-get"><code>bluz iterations get</code><a class="headerlink" href="#bluz-iterations-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single iteration by id.</p>
 <h6 id="usage_19">Usage<a class="headerlink" href="#usage_19" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations get [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations get [OPTIONS] {iteration_id}</code></p>
 <h6 id="arguments_19">Arguments<a class="headerlink" href="#arguments_19" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2012,9 +2012,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>iteration_id</code></td>
+<td>Iteration id, e.g. 2026a.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2040,7 +2040,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-settings"><code>bluz iterations settings</code><a class="headerlink" href="#bluz-iterations-settings" title="Permanent link">&para;</a></h5>
 <p>Show an iteration's schedule, meal and prayer settings.</p>
 <h6 id="usage_20">Usage<a class="headerlink" href="#usage_20" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations settings [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations settings [OPTIONS] {iteration_id}</code></p>
 <h6 id="arguments_20">Arguments<a class="headerlink" href="#arguments_20" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2052,9 +2052,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>iteration_id</code></td>
+<td>Iteration id, e.g. 2026a.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2080,7 +2080,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-register"><code>bluz iterations register</code><a class="headerlink" href="#bluz-iterations-register" title="Permanent link">&para;</a></h5>
 <p>Register a new iteration.</p>
 <h6 id="usage_21">Usage<a class="headerlink" href="#usage_21" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations register [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations register [OPTIONS] {iteration_id}</code></p>
 <h6 id="arguments_21">Arguments<a class="headerlink" href="#arguments_21" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2092,9 +2092,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>iteration_id</code></td>
+<td>Stable id, e.g. 2026a.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2110,37 +2110,37 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--label TEXT</code></td>
+<td><code>--label <str></code></td>
 <td>Human label, e.g. "מחזור 2026 א'".</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--db-name TEXT</code></td>
+<td><code>--db-name <str></code></td>
 <td>Mongo DB name (derived from id if omitted).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--hive-url TEXT</code></td>
+<td><code>--hive-url <str></code></td>
 <td>Per-iteration Hive base URL.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--start-date TEXT</code></td>
+<td><code>--start-date <str></code></td>
 <td>ISO start date.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--end-date TEXT</code></td>
+<td><code>--end-date <str></code></td>
 <td>ISO end date.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--gantt-curriculum-id TEXT</code></td>
+<td><code>--gantt-curriculum-id <str></code></td>
 <td>Linked Postgres curriculum id.</td>
 <td>No</td>
 <td>-</td>
@@ -2156,7 +2156,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-patch"><code>bluz iterations patch</code><a class="headerlink" href="#bluz-iterations-patch" title="Permanent link">&para;</a></h5>
 <p>Patch mutable fields of an iteration.</p>
 <h6 id="usage_22">Usage<a class="headerlink" href="#usage_22" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations patch [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations patch [OPTIONS] {iteration_id}</code></p>
 <h6 id="arguments_22">Arguments<a class="headerlink" href="#arguments_22" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2168,9 +2168,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>iteration_id</code></td>
+<td>Iteration id to update.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2186,31 +2186,31 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--label TEXT</code></td>
+<td><code>--label <str></code></td>
 <td>New label.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--hive-url TEXT</code></td>
+<td><code>--hive-url <str></code></td>
 <td>New Hive URL.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--start-date TEXT</code></td>
+<td><code>--start-date <str></code></td>
 <td>New ISO start date.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--end-date TEXT</code></td>
+<td><code>--end-date <str></code></td>
 <td>New ISO end date.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--gantt-curriculum-id TEXT</code></td>
+<td><code>--gantt-curriculum-id <str></code></td>
 <td>Linked curriculum id.</td>
 <td>No</td>
 <td>-</td>
@@ -2232,7 +2232,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-set-current"><code>bluz iterations set-current</code><a class="headerlink" href="#bluz-iterations-set-current" title="Permanent link">&para;</a></h5>
 <p>Make an iteration the current (writable) one.</p>
 <h6 id="usage_23">Usage<a class="headerlink" href="#usage_23" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations set-current [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations set-current [OPTIONS] {iteration_id}</code></p>
 <h6 id="arguments_23">Arguments<a class="headerlink" href="#arguments_23" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2244,9 +2244,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>iteration_id</code></td>
+<td>Iteration id to activate.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2272,7 +2272,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-delete"><code>bluz iterations delete</code><a class="headerlink" href="#bluz-iterations-delete" title="Permanent link">&para;</a></h5>
 <p>Delete an iteration.</p>
 <h6 id="usage_24">Usage<a class="headerlink" href="#usage_24" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations delete [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations delete [OPTIONS] {iteration_id}</code></p>
 <h6 id="arguments_24">Arguments<a class="headerlink" href="#arguments_24" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2284,9 +2284,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>iteration_id</code></td>
+<td>Iteration id to delete.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2318,7 +2318,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-sync-hive"><code>bluz iterations sync-hive</code><a class="headerlink" href="#bluz-iterations-sync-hive" title="Permanent link">&para;</a></h5>
 <p>Re-snapshot the iteration's Hive module/subject/room names.</p>
 <h6 id="usage_25">Usage<a class="headerlink" href="#usage_25" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations sync-hive [OPTIONS] ITERATION_ID</code></p>
+<p><code>bluz iterations sync-hive [OPTIONS] {iteration_id}</code></p>
 <h6 id="arguments_25">Arguments<a class="headerlink" href="#arguments_25" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2330,9 +2330,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITERATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>iteration_id</code></td>
+<td>Iteration id to re-snapshot.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2358,9 +2358,24 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-iterations-usage"><code>bluz iterations usage</code><a class="headerlink" href="#bluz-iterations-usage" title="Permanent link">&para;</a></h5>
 <p>What still hangs off an iteration — what a delete would take with it.</p>
 <h6 id="usage_26">Usage<a class="headerlink" href="#usage_26" title="Permanent link">&para;</a></h6>
-<p><code>bluz iterations usage [OPTIONS][ITERATION_ID]</code></p>
+<p><code>bluz iterations usage [OPTIONS][iteration_id]</code></p>
 <h6 id="arguments_26">Arguments<a class="headerlink" href="#arguments_26" title="Permanent link">&para;</a></h6>
-<p><em>No arguments available</em></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>iteration_id</code></td>
+<td>Iteration id. Omit to report on the current iteration.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 <h6 id="options_26">Options<a class="headerlink" href="#options_26" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2424,19 +2439,19 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -2452,7 +2467,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-rooms-get"><code>bluz rooms get</code><a class="headerlink" href="#bluz-rooms-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single room by id (filtered client-side — no per-id route).</p>
 <h6 id="usage_29">Usage<a class="headerlink" href="#usage_29" title="Permanent link">&para;</a></h6>
-<p><code>bluz rooms get [OPTIONS] ROOM_ID</code></p>
+<p><code>bluz rooms get [OPTIONS] {room_id}</code></p>
 <h6 id="arguments_29">Arguments<a class="headerlink" href="#arguments_29" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2464,9 +2479,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ROOM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>room_id</code></td>
+<td>Room id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2507,25 +2522,25 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>Room display name.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--description TEXT</code></td>
+<td><code>--description <str></code></td>
 <td>Optional description.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--id TEXT</code></td>
+<td><code>--id <str></code></td>
 <td>Custom room id (a UUID is generated if omitted).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -2541,7 +2556,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-rooms-update"><code>bluz rooms update</code><a class="headerlink" href="#bluz-rooms-update" title="Permanent link">&para;</a></h5>
 <p>Update a custom room.</p>
 <h6 id="usage_31">Usage<a class="headerlink" href="#usage_31" title="Permanent link">&para;</a></h6>
-<p><code>bluz rooms update [OPTIONS] ROOM_ID</code></p>
+<p><code>bluz rooms update [OPTIONS] {room_id}</code></p>
 <h6 id="arguments_31">Arguments<a class="headerlink" href="#arguments_31" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2553,9 +2568,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ROOM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>room_id</code></td>
+<td>Custom room id to update.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2571,19 +2586,19 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>New name.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--description TEXT</code></td>
+<td><code>--description <str></code></td>
 <td>New description.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -2599,7 +2614,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-rooms-delete"><code>bluz rooms delete</code><a class="headerlink" href="#bluz-rooms-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a custom room.</p>
 <h6 id="usage_32">Usage<a class="headerlink" href="#usage_32" title="Permanent link">&para;</a></h6>
-<p><code>bluz rooms delete [OPTIONS] ROOM_ID</code></p>
+<p><code>bluz rooms delete [OPTIONS] {room_id}</code></p>
 <h6 id="arguments_32">Arguments<a class="headerlink" href="#arguments_32" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2611,9 +2626,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ROOM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>room_id</code></td>
+<td>Custom room id to delete.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2629,7 +2644,7 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -2651,7 +2666,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-rooms-set-info"><code>bluz rooms set-info</code><a class="headerlink" href="#bluz-rooms-set-info" title="Permanent link">&para;</a></h5>
 <p>Patch a room's extended info (seats, workstations, comfort flags).</p>
 <h6 id="usage_33">Usage<a class="headerlink" href="#usage_33" title="Permanent link">&para;</a></h6>
-<p><code>bluz rooms set-info [OPTIONS] ROOM_ID</code></p>
+<p><code>bluz rooms set-info [OPTIONS] {room_id}</code></p>
 <h6 id="arguments_33">Arguments<a class="headerlink" href="#arguments_33" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2663,9 +2678,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ROOM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>room_id</code></td>
+<td>Room id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2681,19 +2696,19 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--source INTEGER</code></td>
+<td><code>--source <int></code></td>
 <td>0=custom, 1=hive.</td>
 <td>No</td>
 <td><code>1</code></td>
 </tr>
 <tr>
-<td><code>--info TEXT</code></td>
+<td><code>--info <str></code></td>
 <td>Extended info JSON, e.g. '{"workstationCount":20,"lectureSeatCount":40,"lectureComfortable":true,"peAyin":false}'.</td>
 <td>Yes</td>
 <td>-</td>
@@ -2750,19 +2765,19 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -2778,7 +2793,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-courses-get"><code>bluz courses get</code><a class="headerlink" href="#bluz-courses-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single course by id (filtered client-side — no per-id route).</p>
 <h6 id="usage_36">Usage<a class="headerlink" href="#usage_36" title="Permanent link">&para;</a></h6>
-<p><code>bluz courses get [OPTIONS] COURSE_ID</code></p>
+<p><code>bluz courses get [OPTIONS] {course_id}</code></p>
 <h6 id="arguments_36">Arguments<a class="headerlink" href="#arguments_36" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2790,9 +2805,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>COURSE_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>course_id</code></td>
+<td>Course id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2808,7 +2823,7 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -2839,37 +2854,37 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>Course name.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--color TEXT</code></td>
+<td><code>--color <str></code></td>
 <td>Hex color, e.g. #2196f3.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--parent-id TEXT</code></td>
+<td><code>--parent-id <str></code></td>
 <td>Parent course id.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--instructor-ids TEXT</code></td>
+<td><code>--instructor-ids <str></code></td>
 <td>JSON array of Hive instructor ids.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--id TEXT</code></td>
+<td><code>--id <str></code></td>
 <td>Course id (generated if omitted).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -2885,7 +2900,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-courses-update"><code>bluz courses update</code><a class="headerlink" href="#bluz-courses-update" title="Permanent link">&para;</a></h5>
 <p>Update a course.</p>
 <h6 id="usage_38">Usage<a class="headerlink" href="#usage_38" title="Permanent link">&para;</a></h6>
-<p><code>bluz courses update [OPTIONS] COURSE_ID</code></p>
+<p><code>bluz courses update [OPTIONS] {course_id}</code></p>
 <h6 id="arguments_38">Arguments<a class="headerlink" href="#arguments_38" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2897,9 +2912,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>COURSE_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>course_id</code></td>
+<td>Course id to update.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2915,31 +2930,31 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>New name.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--color TEXT</code></td>
+<td><code>--color <str></code></td>
 <td>New hex color.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--parent-id TEXT</code></td>
+<td><code>--parent-id <str></code></td>
 <td>New parent id.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--instructor-ids TEXT</code></td>
+<td><code>--instructor-ids <str></code></td>
 <td>JSON array of instructor ids.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -2955,7 +2970,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-courses-delete"><code>bluz courses delete</code><a class="headerlink" href="#bluz-courses-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a course.</p>
 <h6 id="usage_39">Usage<a class="headerlink" href="#usage_39" title="Permanent link">&para;</a></h6>
-<p><code>bluz courses delete [OPTIONS] COURSE_ID</code></p>
+<p><code>bluz courses delete [OPTIONS] {course_id}</code></p>
 <h6 id="arguments_39">Arguments<a class="headerlink" href="#arguments_39" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -2967,9 +2982,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>COURSE_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>course_id</code></td>
+<td>Course id to delete.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -2985,7 +3000,7 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -3048,43 +3063,43 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--room-id TEXT</code></td>
+<td><code>--room-id <str></code></td>
 <td>Filter by room id.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--room-source INTEGER</code></td>
+<td><code>--room-source <int></code></td>
 <td>0=custom, 1=hive.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--from TEXT</code></td>
+<td><code>--from <str></code></td>
 <td>ISO start of range.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--to TEXT</code></td>
+<td><code>--to <str></code></td>
 <td>ISO end of range.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -3100,7 +3115,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-reservations-get"><code>bluz reservations get</code><a class="headerlink" href="#bluz-reservations-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single reservation by id (filtered client-side — no per-id route).</p>
 <h6 id="usage_42">Usage<a class="headerlink" href="#usage_42" title="Permanent link">&para;</a></h6>
-<p><code>bluz reservations get [OPTIONS] RESERVATION_ID</code></p>
+<p><code>bluz reservations get [OPTIONS] {reservation_id}</code></p>
 <h6 id="arguments_42">Arguments<a class="headerlink" href="#arguments_42" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3112,9 +3127,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>RESERVATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>reservation_id</code></td>
+<td>Reservation _id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3155,49 +3170,49 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--room-id TEXT</code></td>
+<td><code>--room-id <str></code></td>
 <td>Room id.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--room-source INTEGER</code></td>
+<td><code>--room-source <int></code></td>
 <td>0=custom, 1=hive.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--start TEXT</code></td>
+<td><code>--start <str></code></td>
 <td>ISO start datetime.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--end TEXT</code></td>
+<td><code>--end <str></code></td>
 <td>ISO end datetime.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--reserver-type TEXT</code></td>
+<td><code>--reserver-type <str></code></td>
 <td>instructor</td>
 <td>outsider.</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td><code>--reserver-id TEXT</code></td>
+<td><code>--reserver-id <str></code></td>
 <td>Id of the reserver.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--note TEXT</code></td>
+<td><code>--note <str></code></td>
 <td>Optional note.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to write into.</td>
 <td>No</td>
 <td>-</td>
@@ -3213,7 +3228,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-reservations-cancel"><code>bluz reservations cancel</code><a class="headerlink" href="#bluz-reservations-cancel" title="Permanent link">&para;</a></h5>
 <p>Cancel (delete) a reservation.</p>
 <h6 id="usage_44">Usage<a class="headerlink" href="#usage_44" title="Permanent link">&para;</a></h6>
-<p><code>bluz reservations cancel [OPTIONS] RESERVATION_ID</code></p>
+<p><code>bluz reservations cancel [OPTIONS] {reservation_id}</code></p>
 <h6 id="arguments_44">Arguments<a class="headerlink" href="#arguments_44" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3225,9 +3240,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>RESERVATION_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>reservation_id</code></td>
+<td>Reservation _id to cancel.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3249,7 +3264,7 @@ real-time sync channel outside a browser.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to write into.</td>
 <td>No</td>
 <td>-</td>
@@ -3306,19 +3321,19 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -3334,7 +3349,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-outsiders-get"><code>bluz outsiders get</code><a class="headerlink" href="#bluz-outsiders-get" title="Permanent link">&para;</a></h5>
 <p>Fetch a single outsider by id (filtered client-side — no per-id route).</p>
 <h6 id="usage_47">Usage<a class="headerlink" href="#usage_47" title="Permanent link">&para;</a></h6>
-<p><code>bluz outsiders get [OPTIONS] OUTSIDER_ID</code></p>
+<p><code>bluz outsiders get [OPTIONS] {outsider_id}</code></p>
 <h6 id="arguments_47">Arguments<a class="headerlink" href="#arguments_47" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3346,9 +3361,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>OUTSIDER_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>outsider_id</code></td>
+<td>Outsider id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3389,49 +3404,49 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>Full name (שם מלא).</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--phone TEXT</code></td>
+<td><code>--phone <str></code></td>
 <td>Phone (טלפון).</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--personal-number TEXT</code></td>
+<td><code>--personal-number <str></code></td>
 <td>מספר אישי (7 digits).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--id-number TEXT</code></td>
+<td><code>--id-number <str></code></td>
 <td>ת.ז. (9 digits).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--release-date TEXT</code></td>
+<td><code>--release-date <str></code></td>
 <td>ISO release date.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--comment TEXT</code></td>
+<td><code>--comment <str></code></td>
 <td>Free-text comment (הערה).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--id TEXT</code></td>
+<td><code>--id <str></code></td>
 <td>Outsider id (generated if omitted).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -3447,7 +3462,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-outsiders-update"><code>bluz outsiders update</code><a class="headerlink" href="#bluz-outsiders-update" title="Permanent link">&para;</a></h5>
 <p>Update an outsider.</p>
 <h6 id="usage_49">Usage<a class="headerlink" href="#usage_49" title="Permanent link">&para;</a></h6>
-<p><code>bluz outsiders update [OPTIONS] OUTSIDER_ID</code></p>
+<p><code>bluz outsiders update [OPTIONS] {outsider_id}</code></p>
 <h6 id="arguments_49">Arguments<a class="headerlink" href="#arguments_49" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3459,9 +3474,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>OUTSIDER_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>outsider_id</code></td>
+<td>Outsider id to update.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3477,43 +3492,43 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>New name.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--phone TEXT</code></td>
+<td><code>--phone <str></code></td>
 <td>New phone.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--personal-number TEXT</code></td>
+<td><code>--personal-number <str></code></td>
 <td>New personal number.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--id-number TEXT</code></td>
+<td><code>--id-number <str></code></td>
 <td>New ID number.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--release-date TEXT</code></td>
+<td><code>--release-date <str></code></td>
 <td>New release date.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--comment TEXT</code></td>
+<td><code>--comment <str></code></td>
 <td>New comment.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -3529,7 +3544,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-outsiders-delete"><code>bluz outsiders delete</code><a class="headerlink" href="#bluz-outsiders-delete" title="Permanent link">&para;</a></h5>
 <p>Delete an outsider.</p>
 <h6 id="usage_50">Usage<a class="headerlink" href="#usage_50" title="Permanent link">&para;</a></h6>
-<p><code>bluz outsiders delete [OPTIONS] OUTSIDER_ID</code></p>
+<p><code>bluz outsiders delete [OPTIONS] {outsider_id}</code></p>
 <h6 id="arguments_50">Arguments<a class="headerlink" href="#arguments_50" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3541,9 +3556,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>OUTSIDER_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>outsider_id</code></td>
+<td>Outsider id to delete.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3559,7 +3574,7 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -3622,31 +3637,31 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--start, --sd TEXT</code></td>
+<td><code>--start, --sd <str></code></td>
 <td>ISO range start.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--end, --ed TEXT</code></td>
+<td><code>--end, --ed <str></code></td>
 <td>ISO range end.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -3662,7 +3677,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-events-get"><code>bluz events get</code><a class="headerlink" href="#bluz-events-get" title="Permanent link">&para;</a></h5>
 <p>Fetch multiple events by id.</p>
 <h6 id="usage_53">Usage<a class="headerlink" href="#usage_53" title="Permanent link">&para;</a></h6>
-<p><code>bluz events get [OPTIONS] IDS</code></p>
+<p><code>bluz events get [OPTIONS] {ids}</code></p>
 <h6 id="arguments_53">Arguments<a class="headerlink" href="#arguments_53" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3674,9 +3689,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated event ids.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3692,7 +3707,7 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id.</td>
 <td>No</td>
 <td>-</td>
@@ -3723,13 +3738,13 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>Event JSON payload.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -3760,13 +3775,13 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>Event JSON payload (must include id).</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -3782,7 +3797,7 @@ real-time sync channel outside a browser.</p>
 <h5 id="bluz-events-delete"><code>bluz events delete</code><a class="headerlink" href="#bluz-events-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a calendar event.</p>
 <h6 id="usage_56">Usage<a class="headerlink" href="#usage_56" title="Permanent link">&para;</a></h6>
-<p><code>bluz events delete [OPTIONS] EVENT_ID</code></p>
+<p><code>bluz events delete [OPTIONS] {event_id}</code></p>
 <h6 id="arguments_56">Arguments<a class="headerlink" href="#arguments_56" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3794,9 +3809,9 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>event_id</code></td>
+<td>Event id to delete.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3812,7 +3827,7 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -3849,25 +3864,25 @@ real-time sync channel outside a browser.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--start, --sd TEXT</code></td>
+<td><code>--start, --sd <str></code></td>
 <td>ISO range start.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--end, --ed TEXT</code></td>
+<td><code>--end, --ed <str></code></td>
 <td>ISO range end.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--it-a TEXT</code></td>
+<td><code>--it-a <str></code></td>
 <td>First iteration id.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--it-b TEXT</code></td>
+<td><code>--it-b <str></code></td>
 <td>Second iteration id.</td>
 <td>No</td>
 <td>-</td>
@@ -3885,7 +3900,7 @@ real-time sync channel outside a browser.</p>
 <p>Read-only: rows are written by the write paths themselves. The log names
 who changed what, so it is never served anonymously.</p>
 <h6 id="usage_58">Usage<a class="headerlink" href="#usage_58" title="Permanent link">&para;</a></h6>
-<p><code>bluz events history [OPTIONS] EVENT_ID</code></p>
+<p><code>bluz events history [OPTIONS] {event_id}</code></p>
 <h6 id="arguments_58">Arguments<a class="headerlink" href="#arguments_58" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -3897,9 +3912,9 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>event_id</code></td>
+<td>Event id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -3915,19 +3930,19 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -3984,25 +3999,25 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--start, --sd TEXT</code></td>
+<td><code>--start, --sd <str></code></td>
 <td>ISO range start.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--end, --ed TEXT</code></td>
+<td><code>--end, --ed <str></code></td>
 <td>ISO range end.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>-o, --output PATH</code></td>
+<td><code>-o, --output <path></code></td>
 <td>Destination .ics path.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4033,31 +4048,31 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--start, --sd TEXT</code></td>
+<td><code>--start, --sd <str></code></td>
 <td>ISO range start.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--end, --ed TEXT</code></td>
+<td><code>--end, --ed <str></code></td>
 <td>ISO range end.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--draft TEXT</code></td>
+<td><code>--draft <str></code></td>
 <td>Check a saved draft instead.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--events-file PATH</code></td>
+<td><code>--events-file <path></code></td>
 <td>Check an unsaved events array (JSON file).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4073,7 +4088,7 @@ who changed what, so it is never served anonymously.</p>
 <h5 id="bluz-calendar-drafts"><code>bluz calendar drafts</code><a class="headerlink" href="#bluz-calendar-drafts" title="Permanent link">&para;</a></h5>
 <p>Shared calendar drafts.</p>
 <h6 id="usage_62">Usage<a class="headerlink" href="#usage_62" title="Permanent link">&para;</a></h6>
-<p><code>bluz calendar drafts delete [OPTIONS] DRAFT_ID</code></p>
+<p><code>bluz calendar drafts delete [OPTIONS] {draft_id}</code></p>
 <h6 id="arguments_62">Arguments<a class="headerlink" href="#arguments_62" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4085,19 +4100,19 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>DRAFT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>draft_id</code></td>
+<td>Draft id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>DRAFT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>draft_id</code></td>
+<td>Draft id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>DRAFT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>draft_id</code></td>
+<td>Draft id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4119,19 +4134,19 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -4143,7 +4158,7 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4155,25 +4170,25 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--label TEXT</code></td>
+<td><code>--label <str></code></td>
 <td>Draft label.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--events TEXT</code></td>
+<td><code>--events <str></code></td>
 <td>Events as a JSON array.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--events-file PATH</code></td>
+<td><code>--events-file <path></code></td>
 <td>Path to a JSON file holding the events array.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4185,25 +4200,25 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--label TEXT</code></td>
+<td><code>--label <str></code></td>
 <td>New label (optional).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--events TEXT</code></td>
+<td><code>--events <str></code></td>
 <td>Events as a JSON array.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--events-file PATH</code></td>
+<td><code>--events-file <path></code></td>
 <td>Path to a JSON file holding the events array.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4215,7 +4230,7 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4237,7 +4252,7 @@ who changed what, so it is never served anonymously.</p>
 <h5 id="bluz-calendar-snapshots"><code>bluz calendar snapshots</code><a class="headerlink" href="#bluz-calendar-snapshots" title="Permanent link">&para;</a></h5>
 <p>Calendar snapshots.</p>
 <h6 id="usage_63">Usage<a class="headerlink" href="#usage_63" title="Permanent link">&para;</a></h6>
-<p><code>bluz calendar snapshots restore [OPTIONS] SNAPSHOT_ID</code></p>
+<p><code>bluz calendar snapshots restore [OPTIONS] {snapshot_id}</code></p>
 <h6 id="arguments_63">Arguments<a class="headerlink" href="#arguments_63" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4249,19 +4264,19 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>SNAPSHOT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>snapshot_id</code></td>
+<td>Snapshot id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>SNAPSHOT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>snapshot_id</code></td>
+<td>Snapshot id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>SNAPSHOT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>snapshot_id</code></td>
+<td>Snapshot id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4283,19 +4298,19 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -4307,7 +4322,7 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4319,25 +4334,25 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--label TEXT</code></td>
+<td><code>--label <str></code></td>
 <td>Snapshot label.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--events TEXT</code></td>
+<td><code>--events <str></code></td>
 <td>Events as a JSON array.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--events-file PATH</code></td>
+<td><code>--events-file <path></code></td>
 <td>Path to a JSON file holding the events array.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4349,7 +4364,7 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4367,7 +4382,7 @@ who changed what, so it is never served anonymously.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id to scope to (default: current).</td>
 <td>No</td>
 <td>-</td>
@@ -4440,7 +4455,7 @@ who changed what, so it is never served anonymously.</p>
 <h5 id="bluz-settings-get"><code>bluz settings get</code><a class="headerlink" href="#bluz-settings-get" title="Permanent link">&para;</a></h5>
 <p>Read a setting by key.</p>
 <h6 id="usage_66">Usage<a class="headerlink" href="#usage_66" title="Permanent link">&para;</a></h6>
-<p><code>bluz settings get [OPTIONS] NAME</code></p>
+<p><code>bluz settings get [OPTIONS] {name}</code></p>
 <h6 id="arguments_66">Arguments<a class="headerlink" href="#arguments_66" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4452,9 +4467,9 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>NAME</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>name</code></td>
+<td>Setting key, e.g. schedule.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4480,7 +4495,7 @@ who changed what, so it is never served anonymously.</p>
 <h5 id="bluz-settings-set"><code>bluz settings set</code><a class="headerlink" href="#bluz-settings-set" title="Permanent link">&para;</a></h5>
 <p>Write a setting value (JSON).</p>
 <h6 id="usage_67">Usage<a class="headerlink" href="#usage_67" title="Permanent link">&para;</a></h6>
-<p><code>bluz settings set [OPTIONS] NAME</code></p>
+<p><code>bluz settings set [OPTIONS] {name}</code></p>
 <h6 id="arguments_67">Arguments<a class="headerlink" href="#arguments_67" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4492,9 +4507,9 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>NAME</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>name</code></td>
+<td>Setting key.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4510,7 +4525,7 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--value TEXT</code></td>
+<td><code>--value <str></code></td>
 <td>Setting value as JSON.</td>
 <td>Yes</td>
 <td>-</td>
@@ -4566,7 +4581,7 @@ who changed what, so it is never served anonymously.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--value TEXT</code></td>
+<td><code>--value <str></code></td>
 <td>Schedule settings as JSON.</td>
 <td>Yes</td>
 <td>-</td>
@@ -4582,9 +4597,24 @@ who changed what, so it is never served anonymously.</p>
 <h5 id="bluz-settings-set-hive-calendar-file"><code>bluz settings set-hive-calendar-file</code><a class="headerlink" href="#bluz-settings-set-hive-calendar-file" title="Permanent link">&para;</a></h5>
 <p>Set where the hive-feed sidecar writes the ICS file (Settings → נתיב הקובץ).</p>
 <h6 id="usage_70">Usage<a class="headerlink" href="#usage_70" title="Permanent link">&para;</a></h6>
-<p><code>bluz settings set-hive-calendar-file [OPTIONS][PATH]</code></p>
+<p><code>bluz settings set-hive-calendar-file [OPTIONS][path]</code></p>
 <h6 id="arguments_70">Arguments<a class="headerlink" href="#arguments_70" title="Permanent link">&para;</a></h6>
-<p><em>No arguments available</em></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>Path inside HIVE_CALENDAR_DIRS_PATH, e.g. bluz/Calendar.ics. Omit with --clear.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 <h6 id="options_70">Options<a class="headerlink" href="#options_70" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4615,7 +4645,7 @@ who changed what, so it is never served anonymously.</p>
 <p>Hive deletes every Bluz event the feed no longer carries, so this is also
 what Hive's schedule keeps.</p>
 <h6 id="usage_71">Usage<a class="headerlink" href="#usage_71" title="Permanent link">&para;</a></h6>
-<p><code>bluz settings set-hive-feed-window [OPTIONS] HOURS</code></p>
+<p><code>bluz settings set-hive-feed-window [OPTIONS] {hours}</code></p>
 <h6 id="arguments_71">Arguments<a class="headerlink" href="#arguments_71" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4627,9 +4657,9 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>HOURS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>hours</code></td>
+<td>Hours before the start and after the end of today (default 24).</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4706,7 +4736,7 @@ what Hive's schedule keeps.</p>
 <h5 id="bluz-templates-get"><code>bluz templates get</code><a class="headerlink" href="#bluz-templates-get" title="Permanent link">&para;</a></h5>
 <p>Show a template and its events.</p>
 <h6 id="usage_74">Usage<a class="headerlink" href="#usage_74" title="Permanent link">&para;</a></h6>
-<p><code>bluz templates get [OPTIONS] TEMPLATE_ID</code></p>
+<p><code>bluz templates get [OPTIONS] {template_id}</code></p>
 <h6 id="arguments_74">Arguments<a class="headerlink" href="#arguments_74" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4718,9 +4748,9 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>TEMPLATE_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>template_id</code></td>
+<td>Template id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4746,7 +4776,7 @@ what Hive's schedule keeps.</p>
 <h5 id="bluz-templates-create"><code>bluz templates create</code><a class="headerlink" href="#bluz-templates-create" title="Permanent link">&para;</a></h5>
 <p>Create a template, seeded with the linked curriculum's recurring events, parked.</p>
 <h6 id="usage_75">Usage<a class="headerlink" href="#usage_75" title="Permanent link">&para;</a></h6>
-<p><code>bluz templates create [OPTIONS] NAME</code></p>
+<p><code>bluz templates create [OPTIONS] {name}</code></p>
 <h6 id="arguments_75">Arguments<a class="headerlink" href="#arguments_75" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4758,9 +4788,9 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>NAME</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>name</code></td>
+<td>Template name.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4776,7 +4806,7 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--copy-times-from TEXT</code></td>
+<td><code>--copy-times-from <str></code></td>
 <td>Template id to copy times from (default: the default template).</td>
 <td>No</td>
 <td>-</td>
@@ -4792,7 +4822,7 @@ what Hive's schedule keeps.</p>
 <h5 id="bluz-templates-set-times"><code>bluz templates set-times</code><a class="headerlink" href="#bluz-templates-set-times" title="Permanent link">&para;</a></h5>
 <p>Rename a template or change its day-start, meal and prayer times.</p>
 <h6 id="usage_76">Usage<a class="headerlink" href="#usage_76" title="Permanent link">&para;</a></h6>
-<p><code>bluz templates set-times [OPTIONS] TEMPLATE_ID</code></p>
+<p><code>bluz templates set-times [OPTIONS] {template_id}</code></p>
 <h6 id="arguments_76">Arguments<a class="headerlink" href="#arguments_76" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4804,9 +4834,9 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>TEMPLATE_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>template_id</code></td>
+<td>Template id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4822,55 +4852,55 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>New name.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--day-start TEXT</code></td>
+<td><code>--day-start <str></code></td>
 <td>HH:mm</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--weekend-home-start TEXT</code></td>
+<td><code>--weekend-home-start <str></code></td>
 <td>HH:mm, after a weekend at home.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--breakfast TEXT</code></td>
+<td><code>--breakfast <str></code></td>
 <td>HH:mm</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--lunch TEXT</code></td>
+<td><code>--lunch <str></code></td>
 <td>HH:mm</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--dinner TEXT</code></td>
+<td><code>--dinner <str></code></td>
 <td>HH:mm</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--shacharit TEXT</code></td>
+<td><code>--shacharit <str></code></td>
 <td>HH:mm</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--mincha TEXT</code></td>
+<td><code>--mincha <str></code></td>
 <td>HH:mm</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--arvit TEXT</code></td>
+<td><code>--arvit <str></code></td>
 <td>HH:mm</td>
 <td>No</td>
 <td>-</td>
@@ -4892,7 +4922,7 @@ what Hive's schedule keeps.</p>
 <h5 id="bluz-templates-set-default"><code>bluz templates set-default</code><a class="headerlink" href="#bluz-templates-set-default" title="Permanent link">&para;</a></h5>
 <p>Make a template the default, used when a cut names none.</p>
 <h6 id="usage_77">Usage<a class="headerlink" href="#usage_77" title="Permanent link">&para;</a></h6>
-<p><code>bluz templates set-default [OPTIONS] TEMPLATE_ID</code></p>
+<p><code>bluz templates set-default [OPTIONS] {template_id}</code></p>
 <h6 id="arguments_77">Arguments<a class="headerlink" href="#arguments_77" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4904,9 +4934,9 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>TEMPLATE_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>template_id</code></td>
+<td>Template id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -4932,7 +4962,7 @@ what Hive's schedule keeps.</p>
 <h5 id="bluz-templates-delete"><code>bluz templates delete</code><a class="headerlink" href="#bluz-templates-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a template. Weeks already cut from it are unchanged.</p>
 <h6 id="usage_78">Usage<a class="headerlink" href="#usage_78" title="Permanent link">&para;</a></h6>
-<p><code>bluz templates delete [OPTIONS] TEMPLATE_ID</code></p>
+<p><code>bluz templates delete [OPTIONS] {template_id}</code></p>
 <h6 id="arguments_78">Arguments<a class="headerlink" href="#arguments_78" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -4944,9 +4974,9 @@ what Hive's schedule keeps.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>TEMPLATE_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>template_id</code></td>
+<td>Template id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -5046,25 +5076,25 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>Full settings object as JSON (replaces everything).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--groups TEXT</code></td>
+<td><code>--groups <str></code></td>
 <td>Comma-separated group ids.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--instructors TEXT</code></td>
+<td><code>--instructors <str></code></td>
 <td>Comma-separated instructor ids.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--favorite-outsiders TEXT</code></td>
+<td><code>--favorite-outsiders <str></code></td>
 <td>Comma-separated outsider ids.</td>
 <td>No</td>
 <td>-</td>
@@ -5133,13 +5163,13 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -5155,7 +5185,7 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 <h5 id="bluz-colors-get"><code>bluz colors get</code><a class="headerlink" href="#bluz-colors-get" title="Permanent link">&para;</a></h5>
 <p>Fetch one color (filtered client-side — the server has no per-id route).</p>
 <h6 id="usage_84">Usage<a class="headerlink" href="#usage_84" title="Permanent link">&para;</a></h6>
-<p><code>bluz colors get [OPTIONS] COLOR_ID</code></p>
+<p><code>bluz colors get [OPTIONS] {color_id}</code></p>
 <h6 id="arguments_84">Arguments<a class="headerlink" href="#arguments_84" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5167,9 +5197,9 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>COLOR_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>color_id</code></td>
+<td>Color id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -5210,19 +5240,19 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>Display name.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--hex TEXT</code></td>
+<td><code>--hex <str></code></td>
 <td>Hex code, e.g. #3f51b5.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--id TEXT</code></td>
+<td><code>--id <str></code></td>
 <td>Color id (generated when omitted).</td>
 <td>No</td>
 <td>-</td>
@@ -5239,7 +5269,7 @@ current values; <code>--data</code> bypasses the merge and writes verbatim.</p>
 <p>Update a color. The server replaces the whole record, so unset fields are
 carried over from the current value.</p>
 <h6 id="usage_86">Usage<a class="headerlink" href="#usage_86" title="Permanent link">&para;</a></h6>
-<p><code>bluz colors update [OPTIONS] COLOR_ID</code></p>
+<p><code>bluz colors update [OPTIONS] {color_id}</code></p>
 <h6 id="arguments_86">Arguments<a class="headerlink" href="#arguments_86" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5251,9 +5281,9 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>COLOR_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>color_id</code></td>
+<td>Color id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -5269,13 +5299,13 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--name TEXT</code></td>
+<td><code>--name <str></code></td>
 <td>New display name.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--hex TEXT</code></td>
+<td><code>--hex <str></code></td>
 <td>New hex code.</td>
 <td>No</td>
 <td>-</td>
@@ -5291,7 +5321,7 @@ carried over from the current value.</p>
 <h5 id="bluz-colors-delete"><code>bluz colors delete</code><a class="headerlink" href="#bluz-colors-delete" title="Permanent link">&para;</a></h5>
 <p>Delete a custom color.</p>
 <h6 id="usage_87">Usage<a class="headerlink" href="#usage_87" title="Permanent link">&para;</a></h6>
-<p><code>bluz colors delete [OPTIONS] COLOR_ID</code></p>
+<p><code>bluz colors delete [OPTIONS] {color_id}</code></p>
 <h6 id="arguments_87">Arguments<a class="headerlink" href="#arguments_87" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5303,9 +5333,9 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>COLOR_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>color_id</code></td>
+<td>Color id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -5363,7 +5393,7 @@ carried over from the current value.</p>
 <h5 id="bluz-gantt-curriculums"><code>bluz gantt curriculums</code><a class="headerlink" href="#bluz-gantt-curriculums" title="Permanent link">&para;</a></h5>
 <p>Curriculums.</p>
 <h6 id="usage_89">Usage<a class="headerlink" href="#usage_89" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt curriculums cut-plan [OPTIONS] CURRICULUM_ID</code></p>
+<p><code>bluz gantt curriculums cut-plan [OPTIONS] {curriculum_id}</code></p>
 <h6 id="arguments_89">Arguments<a class="headerlink" href="#arguments_89" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5375,114 +5405,114 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated ids.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>FILE</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>file</code></td>
+<td>Path to an exported curriculum JSON file.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id to clone.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>CURRICULUM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>curriculum_id</code></td>
+<td>Curriculum id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -5510,13 +5540,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -5540,7 +5570,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -5552,7 +5582,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON patch payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -5576,7 +5606,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>-o, --output PATH</code></td>
+<td><code>-o, --output <path></code></td>
 <td>Write JSON to this file.</td>
 <td>No</td>
 <td>-</td>
@@ -5588,7 +5618,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>-o, --output PATH</code></td>
+<td><code>-o, --output <path></code></td>
 <td>Destination .xlsx path.</td>
 <td>Yes</td>
 <td>-</td>
@@ -5606,13 +5636,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--syllabus-id TEXT</code></td>
+<td><code>--syllabus-id <str></code></td>
 <td>Scope to a syllabus.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Scope to a module.</td>
 <td>No</td>
 <td>-</td>
@@ -5630,25 +5660,25 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Module id.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--day-id TEXT</code></td>
+<td><code>--day-id <str></code></td>
 <td>Day to place the mapping on.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--event-id TEXT</code></td>
+<td><code>--event-id <str></code></td>
 <td>Event id (omit to place the module itself).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--sort-order FLOAT</code></td>
+<td><code>--sort-order <float></code></td>
 <td>Sort order weight within the day.</td>
 <td>No</td>
 <td>-</td>
@@ -5660,31 +5690,31 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Module id.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--old-day-id TEXT</code></td>
+<td><code>--old-day-id <str></code></td>
 <td>Day the mapping is currently on.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--new-day-id TEXT</code></td>
+<td><code>--new-day-id <str></code></td>
 <td>Day to move the mapping to.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--event-id TEXT</code></td>
+<td><code>--event-id <str></code></td>
 <td>Event id (omit to move the module itself).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--sort-order FLOAT</code></td>
+<td><code>--sort-order <float></code></td>
 <td>New sort order weight within the day.</td>
 <td>No</td>
 <td>-</td>
@@ -5696,19 +5726,19 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Module id.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--day-id TEXT</code></td>
+<td><code>--day-id <str></code></td>
 <td>Day the mapping is currently on.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--event-id TEXT</code></td>
+<td><code>--event-id <str></code></td>
 <td>Event id (omit to unset the module itself).</td>
 <td>No</td>
 <td>-</td>
@@ -5720,7 +5750,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--overrides TEXT</code></td>
+<td><code>--overrides <str></code></td>
 <td>JSON object overriding the clone's fields (defaults to the source's).</td>
 <td>No</td>
 <td>-</td>
@@ -5738,7 +5768,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--template TEXT</code></td>
+<td><code>--template <str></code></td>
 <td>Week template id to cut with (see <code>bluz templates list</code>). Default: the default template.</td>
 <td>No</td>
 <td>-</td>
@@ -5780,25 +5810,25 @@ carried over from the current value.</p>
 <td><code>no-park-week-only</code></td>
 </tr>
 <tr>
-<td><code>--accepted-constraint-moves TEXT</code></td>
+<td><code>--accepted-constraint-moves <str></code></td>
 <td>JSON array of constraint moves to accept, as returned by cut-plan.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--week-overflow-resolutions TEXT</code></td>
+<td><code>--week-overflow-resolutions <str></code></td>
 <td>JSON object of week-overflow answers, as returned by cut-plan.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--template TEXT</code></td>
+<td><code>--template <str></code></td>
 <td>Week template id to cut with (see <code>bluz templates list</code>). Default: the default template.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--week TEXT</code></td>
+<td><code>--week <str></code></td>
 <td>Timeline week id to act on alone (see <code>cut-plan</code>'s <code>weeks</code>). Default: the whole curriculum.</td>
 <td>No</td>
 <td>-</td>
@@ -5822,25 +5852,25 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--week TEXT</code></td>
+<td><code>--week <str></code></td>
 <td>Timeline week id to act on alone (see <code>cut-plan</code>'s <code>weeks</code>). Default: the whole curriculum.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--template TEXT</code></td>
+<td><code>--template <str></code></td>
 <td>Re-plan the reloaded weeks under this week template (see <code>bluz templates list</code>). Default: each week keeps the template it was cut with.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--placement TEXT</code></td>
+<td><code>--placement <str></code></td>
 <td>What happens to work the template does not place: <code>auto</code> places it around the template, <code>park</code> puts it in the unassigned box. Default: every event keeps its current parked state.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--override TEXT</code></td>
+<td><code>--override <str></code></td>
 <td>Comma-separated ids of hand-edited events to overwrite anyway (the <code>conflicts</code> of a previous run).</td>
 <td>No</td>
 <td>-</td>
@@ -5882,13 +5912,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -5900,13 +5930,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--gantt-event-id TEXT</code></td>
+<td><code>--gantt-event-id <str></code></td>
 <td>Gantt event whose occurrence was deleted.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--date TEXT</code></td>
+<td><code>--date <str></code></td>
 <td>Date of the deleted occurrence (ISO).</td>
 <td>Yes</td>
 <td>-</td>
@@ -5942,25 +5972,25 @@ carried over from the current value.</p>
 <td><code>no-park-week-only</code></td>
 </tr>
 <tr>
-<td><code>--accepted-constraint-moves TEXT</code></td>
+<td><code>--accepted-constraint-moves <str></code></td>
 <td>JSON array of constraint moves to accept, as returned by cut-plan.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--week-overflow-resolutions TEXT</code></td>
+<td><code>--week-overflow-resolutions <str></code></td>
 <td>JSON object of week-overflow answers, as returned by cut-plan.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--template TEXT</code></td>
+<td><code>--template <str></code></td>
 <td>Week template id to cut with (see <code>bluz templates list</code>). Default: the default template.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--week TEXT</code></td>
+<td><code>--week <str></code></td>
 <td>Timeline week id to act on alone (see <code>cut-plan</code>'s <code>weeks</code>). Default: the whole curriculum.</td>
 <td>No</td>
 <td>-</td>
@@ -5982,7 +6012,7 @@ carried over from the current value.</p>
 <h5 id="bluz-gantt-syllabuses"><code>bluz gantt syllabuses</code><a class="headerlink" href="#bluz-gantt-syllabuses" title="Permanent link">&para;</a></h5>
 <p>Syllabuses.</p>
 <h6 id="usage_90">Usage<a class="headerlink" href="#usage_90" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt syllabuses set-shuffles [OPTIONS] SYLLABUS_ID</code></p>
+<p><code>bluz gantt syllabuses set-shuffles [OPTIONS] {syllabus_id}</code></p>
 <h6 id="arguments_90">Arguments<a class="headerlink" href="#arguments_90" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -5994,69 +6024,69 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated ids.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>NEW_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>new_parent_id</code></td>
+<td>New parent id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>OLD_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>old_parent_id</code></td>
+<td>Parent id to detach from.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Parent item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated child ids in new order.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>SYLLABUS_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>syllabus_id</code></td>
+<td>Syllabus id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>SYLLABUS_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>syllabus_id</code></td>
+<td>Syllabus id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>SYLLABUS_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>syllabus_id</code></td>
+<td>Syllabus id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -6084,13 +6114,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -6114,7 +6144,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6126,7 +6156,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON patch payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6168,7 +6198,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--names TEXT</code></td>
+<td><code>--names <str></code></td>
 <td>Comma-separated shuffle names to look up.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6180,13 +6210,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--courses TEXT</code></td>
+<td><code>--courses <str></code></td>
 <td>Comma-separated course ids (מסלולים). Empty string clears.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--leads TEXT</code></td>
+<td><code>--leads <str></code></td>
 <td>Comma-separated Hive instructor ids (אחראי מקצוע). Empty string clears.</td>
 <td>No</td>
 <td>-</td>
@@ -6198,13 +6228,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--shuffles TEXT</code></td>
+<td><code>--shuffles <str></code></td>
 <td>Comma-separated shuffle names. Pass an empty string to clear them all.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>-d, --description TEXT</code></td>
+<td><code>-d, --description <str></code></td>
 <td>NAME=TEXT description for a shuffle (its Hive student-group description, max 100 chars). Repeatable. Passing any replaces all descriptions; omitting keeps the current ones.</td>
 <td>No</td>
 <td>-</td>
@@ -6226,7 +6256,7 @@ carried over from the current value.</p>
 <h5 id="bluz-gantt-modules"><code>bluz gantt modules</code><a class="headerlink" href="#bluz-gantt-modules" title="Permanent link">&para;</a></h5>
 <p>Modules.</p>
 <h6 id="usage_91">Usage<a class="headerlink" href="#usage_91" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt modules reorder-events [OPTIONS] ITEM_ID IDS</code></p>
+<p><code>bluz gantt modules reorder-events [OPTIONS] {item_id} {ids}</code></p>
 <h6 id="arguments_91">Arguments<a class="headerlink" href="#arguments_91" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -6238,54 +6268,54 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated ids.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>NEW_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>new_parent_id</code></td>
+<td>New parent id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>OLD_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>old_parent_id</code></td>
+<td>Parent id to detach from.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Parent item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated child ids in new order.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -6313,13 +6343,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -6343,7 +6373,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6355,7 +6385,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON patch payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6401,7 +6431,7 @@ carried over from the current value.</p>
 <h5 id="bluz-gantt-events"><code>bluz gantt events</code><a class="headerlink" href="#bluz-gantt-events" title="Permanent link">&para;</a></h5>
 <p>Gantt events.</p>
 <h6 id="usage_92">Usage<a class="headerlink" href="#usage_92" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt events shuffle-group [OPTIONS] EVENT_ID</code></p>
+<p><code>bluz gantt events shuffle-group [OPTIONS] {event_id}</code></p>
 <h6 id="arguments_92">Arguments<a class="headerlink" href="#arguments_92" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -6413,64 +6443,64 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated ids.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>NEW_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>new_parent_id</code></td>
+<td>New parent id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>OLD_PARENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>old_parent_id</code></td>
+<td>Parent id to detach from.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>event_id</code></td>
+<td>Gantt event id to clone.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>event_id</code></td>
+<td>Recurring gantt event id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>event_id</code></td>
+<td>Recurring gantt event id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>EVENT_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>event_id</code></td>
+<td>Gantt event id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -6498,13 +6528,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -6528,7 +6558,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6540,7 +6570,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON patch payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6576,7 +6606,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Module the copy is created under.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6588,13 +6618,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--curriculum-id TEXT</code></td>
+<td><code>--curriculum-id <str></code></td>
 <td>Curriculum id.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--day-id TEXT</code></td>
+<td><code>--day-id <str></code></td>
 <td>Day the occurrence falls on.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6606,19 +6636,19 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--curriculum-id TEXT</code></td>
+<td><code>--curriculum-id <str></code></td>
 <td>Curriculum id.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Module id.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--day-id TEXT</code></td>
+<td><code>--day-id <str></code></td>
 <td>Day the occurrence falls on.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6630,13 +6660,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Module the group lives in.</td>
 <td>Yes</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--shuffles TEXT</code></td>
+<td><code>--shuffles <str></code></td>
 <td>Comma-separated shuffle names — one sibling event per name. Fewer than two ungroups.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6652,7 +6682,7 @@ carried over from the current value.</p>
 <h5 id="bluz-gantt-days"><code>bluz gantt days</code><a class="headerlink" href="#bluz-gantt-days" title="Permanent link">&para;</a></h5>
 <p>Curriculum days.</p>
 <h6 id="usage_93">Usage<a class="headerlink" href="#usage_93" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt days delete [OPTIONS] ITEM_ID</code></p>
+<p><code>bluz gantt days delete [OPTIONS] {item_id}</code></p>
 <h6 id="arguments_93">Arguments<a class="headerlink" href="#arguments_93" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -6664,24 +6694,24 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated ids.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -6709,13 +6739,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -6739,7 +6769,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6751,7 +6781,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON patch payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6779,7 +6809,7 @@ carried over from the current value.</p>
 <h5 id="bluz-gantt-weeks"><code>bluz gantt weeks</code><a class="headerlink" href="#bluz-gantt-weeks" title="Permanent link">&para;</a></h5>
 <p>Curriculum weeks.</p>
 <h6 id="usage_94">Usage<a class="headerlink" href="#usage_94" title="Permanent link">&para;</a></h6>
-<p><code>bluz gantt weeks delete [OPTIONS] ITEM_ID</code></p>
+<p><code>bluz gantt weeks delete [OPTIONS] {item_id}</code></p>
 <h6 id="arguments_94">Arguments<a class="headerlink" href="#arguments_94" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -6791,24 +6821,24 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>IDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>ids</code></td>
+<td>Comma-separated ids.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td><code>ITEM_ID</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>item_id</code></td>
+<td>Item id.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -6836,13 +6866,13 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -6866,7 +6896,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6878,7 +6908,7 @@ carried over from the current value.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--data TEXT</code></td>
+<td><code>--data <str></code></td>
 <td>JSON patch payload.</td>
 <td>Yes</td>
 <td>-</td>
@@ -6947,13 +6977,13 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -6984,13 +7014,13 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -7021,13 +7051,13 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -7058,13 +7088,13 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -7095,13 +7125,13 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -7132,13 +7162,13 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -7169,25 +7199,25 @@ carried over from the current value.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--module-id TEXT</code></td>
+<td><code>--module-id <str></code></td>
 <td>Filter by Hive module id.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--program-ids TEXT</code></td>
+<td><code>--program-ids <str></code></td>
 <td>Comma-separated parent-program ids to filter by.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -7234,7 +7264,7 @@ iteration.</p>
 <p>Users without an uploaded avatar answer 404 — that is a miss, not a
 failure, and it is reported as one.</p>
 <h6 id="usage_104">Usage<a class="headerlink" href="#usage_104" title="Permanent link">&para;</a></h6>
-<p><code>bluz hive avatar [OPTIONS] SLUG</code></p>
+<p><code>bluz hive avatar [OPTIONS] {slug}</code></p>
 <h6 id="arguments_104">Arguments<a class="headerlink" href="#arguments_104" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -7246,9 +7276,9 @@ failure, and it is reported as one.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>SLUG</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>slug</code></td>
+<td>Hive user id whose avatar to fetch.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -7264,7 +7294,7 @@ failure, and it is reported as one.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>-o, --output PATH</code></td>
+<td><code>-o, --output <path></code></td>
 <td>Destination image file.</td>
 <td>Yes</td>
 <td>-</td>
@@ -7333,7 +7363,7 @@ failure, and it is reported as one.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--code TEXT</code></td>
+<td><code>--code <str></code></td>
 <td>Authorization code from the Google Identity Services popup.</td>
 <td>Yes</td>
 <td>-</td>
@@ -7369,7 +7399,7 @@ failure, and it is reported as one.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--id TEXT</code></td>
+<td><code>--id <str></code></td>
 <td>Calendar id from <code>bluz integrations google calendars</code> (a shared one to join colleagues on).</td>
 <td>No</td>
 <td>-</td>
@@ -7387,7 +7417,7 @@ failure, and it is reported as one.</p>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--scope TEXT</code></td>
+<td><code>--scope <str></code></td>
 <td><code>orphaned</code> (no live Bluz event behind them) or <code>all</code> (every Bluz-created event).</td>
 <td>No</td>
 <td><code>orphaned</code></td>
@@ -7450,25 +7480,25 @@ failure, and it is reported as one.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--date TEXT</code></td>
+<td><code>--date <str></code></td>
 <td>Day to show (ISO). Staff-only preview — a student session is always served its own current day.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration id (staff preview only).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--limit INTEGER</code></td>
+<td><code>--limit <int></code></td>
 <td>Cap the number of rows shown.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--offset INTEGER</code></td>
+<td><code>--offset <int></code></td>
 <td>Skip this many rows before showing.</td>
 <td>No</td>
 <td>-</td>
@@ -7487,7 +7517,7 @@ failure, and it is reported as one.</p>
 can only ever add to the reporter's own number, for today; the increment
 is clamped and the daily total capped server-side.</p>
 <h6 id="usage_109">Usage<a class="headerlink" href="#usage_109" title="Permanent link">&para;</a></h6>
-<p><code>bluz student-view report-engagement [OPTIONS] SECONDS</code></p>
+<p><code>bluz student-view report-engagement [OPTIONS] {seconds}</code></p>
 <h6 id="arguments_109">Arguments<a class="headerlink" href="#arguments_109" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
@@ -7499,9 +7529,9 @@ is clamped and the daily total capped server-side.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>SECONDS</code></td>
-<td>[required]</td>
-<td>No</td>
+<td><code>seconds</code></td>
+<td>Focused seconds to add to today's count.</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -7551,13 +7581,55 @@ random delay so they do not all hit the server at once.</p>
 </tr>
 </tbody>
 </table>
+<h5 id="bluz-student-view-refresh-interval"><code>bluz student-view refresh-interval</code><a class="headerlink" href="#bluz-student-view-refresh-interval" title="Permanent link">&para;</a></h5>
+<p>Show or set how often every student board refreshes (staff only).</p>
+<p>Boards do not follow schedule edits live; they refetch on this interval.
+Mirrors the interval field on the student preview bar.</p>
+<h6 id="usage_111">Usage<a class="headerlink" href="#usage_111" title="Permanent link">&para;</a></h6>
+<p><code>bluz student-view refresh-interval [OPTIONS][seconds]</code></p>
+<h6 id="arguments_111">Arguments<a class="headerlink" href="#arguments_111" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>seconds</code></td>
+<td>New interval in seconds (10-3600). Omit to show the current one.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h6 id="options_111">Options<a class="headerlink" href="#options_111" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 <h3 id="bluz-ai"><code>bluz ai</code><a class="headerlink" href="#bluz-ai" title="Permanent link">&para;</a></h3>
 <p>The Bluz AI assistant.</p>
-<h4 id="usage_111">Usage<a class="headerlink" href="#usage_111" title="Permanent link">&para;</a></h4>
+<h4 id="usage_112">Usage<a class="headerlink" href="#usage_112" title="Permanent link">&para;</a></h4>
 <p><code>bluz ai [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_111">Arguments<a class="headerlink" href="#arguments_111" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_112">Arguments<a class="headerlink" href="#arguments_112" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_111">Options<a class="headerlink" href="#options_111" title="Permanent link">&para;</a></h4>
+<h4 id="options_112">Options<a class="headerlink" href="#options_112" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -7581,11 +7653,11 @@ random delay so they do not all hit the server at once.</p>
 <p>What the assistant can do, and whether AI is configured at all.</p>
 <p>Reports <code>enabled: false</code> on a deployment with no model key rather than
 failing — the same signal the UI uses to hide the launcher.</p>
-<h6 id="usage_112">Usage<a class="headerlink" href="#usage_112" title="Permanent link">&para;</a></h6>
+<h6 id="usage_113">Usage<a class="headerlink" href="#usage_113" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai tools [OPTIONS]</code></p>
-<h6 id="arguments_112">Arguments<a class="headerlink" href="#arguments_112" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_113">Arguments<a class="headerlink" href="#arguments_113" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_112">Options<a class="headerlink" href="#options_112" title="Permanent link">&para;</a></h6>
+<h6 id="options_113">Options<a class="headerlink" href="#options_113" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7608,11 +7680,11 @@ failing — the same signal the UI uses to hide the launcher.</p>
 <p>List the models the configured AI backend offers.</p>
 <p>Use it to pick a valid <code>AI_MODEL</code>; an empty list comes with the reason
 (e.g. an untrusted certificate or a backend without <code>/models</code>).</p>
-<h6 id="usage_113">Usage<a class="headerlink" href="#usage_113" title="Permanent link">&para;</a></h6>
+<h6 id="usage_114">Usage<a class="headerlink" href="#usage_114" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai models [OPTIONS]</code></p>
-<h6 id="arguments_113">Arguments<a class="headerlink" href="#arguments_113" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_114">Arguments<a class="headerlink" href="#arguments_114" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_113">Options<a class="headerlink" href="#options_113" title="Permanent link">&para;</a></h6>
+<h6 id="options_114">Options<a class="headerlink" href="#options_114" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7635,11 +7707,11 @@ failing — the same signal the UI uses to hide the launcher.</p>
 <p>Run the assistant self-test against a fabricated fixture.</p>
 <p>Throttled server-side to once an hour per user (a run costs real tokens),
 which comes back as an <code>AiRateLimitError</code>.</p>
-<h6 id="usage_114">Usage<a class="headerlink" href="#usage_114" title="Permanent link">&para;</a></h6>
+<h6 id="usage_115">Usage<a class="headerlink" href="#usage_115" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai benchmark [OPTIONS]</code></p>
-<h6 id="arguments_114">Arguments<a class="headerlink" href="#arguments_114" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_115">Arguments<a class="headerlink" href="#arguments_115" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_114">Options<a class="headerlink" href="#options_114" title="Permanent link">&para;</a></h6>
+<h6 id="options_115">Options<a class="headerlink" href="#options_115" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7664,11 +7736,26 @@ which comes back as an <code>AiRateLimitError</code>.</p>
 Re-run with <code>--approve &lt;toolCallId&gt;</code> (plus <code>--messages</code> carrying the
 transcript the <code>done</code> frame returned) to let one through, or pass <code>--yes</code>
 to approve and resume in a single invocation.</p>
-<h6 id="usage_115">Usage<a class="headerlink" href="#usage_115" title="Permanent link">&para;</a></h6>
-<p><code>bluz ai chat [OPTIONS][PROMPT]</code></p>
-<h6 id="arguments_115">Arguments<a class="headerlink" href="#arguments_115" title="Permanent link">&para;</a></h6>
-<p><em>No arguments available</em></p>
-<h6 id="options_115">Options<a class="headerlink" href="#options_115" title="Permanent link">&para;</a></h6>
+<h6 id="usage_116">Usage<a class="headerlink" href="#usage_116" title="Permanent link">&para;</a></h6>
+<p><code>bluz ai chat [OPTIONS][prompt]</code></p>
+<h6 id="arguments_116">Arguments<a class="headerlink" href="#arguments_116" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prompt</code></td>
+<td>What to ask the assistant. Omit when resuming with --approve.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h6 id="options_116">Options<a class="headerlink" href="#options_116" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7680,31 +7767,31 @@ to approve and resume in a single invocation.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>--iteration, --it TEXT</code></td>
+<td><code>--iteration, --it <str></code></td>
 <td>Iteration the question is about.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--curriculum-id TEXT</code></td>
+<td><code>--curriculum-id <str></code></td>
 <td>Curriculum in view, for gantt questions.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--model TEXT</code></td>
+<td><code>--model <str></code></td>
 <td>Override the server's model.</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--messages TEXT</code></td>
+<td><code>--messages <str></code></td>
 <td>JSON array continuing a previous transcript (a <code>done</code> frame's messages).</td>
 <td>No</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>--approve TEXT</code></td>
+<td><code>--approve <str></code></td>
 <td>Tool-call id to approve, repeatable. An approval covers that one call.</td>
 <td>No</td>
 <td>-</td>
@@ -7725,11 +7812,11 @@ to approve and resume in a single invocation.</p>
 </table>
 <h3 id="bluz-plugin"><code>bluz plugin</code><a class="headerlink" href="#bluz-plugin" title="Permanent link">&para;</a></h3>
 <p>The bluz Claude Code plugin served by the Bluz instance.</p>
-<h4 id="usage_116">Usage<a class="headerlink" href="#usage_116" title="Permanent link">&para;</a></h4>
+<h4 id="usage_117">Usage<a class="headerlink" href="#usage_117" title="Permanent link">&para;</a></h4>
 <p><code>bluz plugin [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_116">Arguments<a class="headerlink" href="#arguments_116" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_117">Arguments<a class="headerlink" href="#arguments_117" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_116">Options<a class="headerlink" href="#options_116" title="Permanent link">&para;</a></h4>
+<h4 id="options_117">Options<a class="headerlink" href="#options_117" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -7751,11 +7838,11 @@ to approve and resume in a single invocation.</p>
 <h4 id="subcommands_18">Subcommands<a class="headerlink" href="#subcommands_18" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-plugin-install"><code>bluz plugin install</code><a class="headerlink" href="#bluz-plugin-install" title="Permanent link">&para;</a></h5>
 <p>Download the plugin, register it as marketplace <code>bluz</code>, install <code>bluz@bluz</code>.</p>
-<h6 id="usage_117">Usage<a class="headerlink" href="#usage_117" title="Permanent link">&para;</a></h6>
+<h6 id="usage_118">Usage<a class="headerlink" href="#usage_118" title="Permanent link">&para;</a></h6>
 <p><code>bluz plugin install [OPTIONS]</code></p>
-<h6 id="arguments_117">Arguments<a class="headerlink" href="#arguments_117" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_118">Arguments<a class="headerlink" href="#arguments_118" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_117">Options<a class="headerlink" href="#options_117" title="Permanent link">&para;</a></h6>
+<h6 id="options_118">Options<a class="headerlink" href="#options_118" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7835,10 +7922,10 @@ to approve and resume in a single invocation.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

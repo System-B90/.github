@@ -8,6 +8,6 @@
 
 > `const` **WEEK\_TEMPLATE\_LINK\_WEEK\_PARAM**: `"week"` = `"week"`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:117](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/week-template.ts#L117)
+Defined in: [ui/src/api-shared/types/week-template.ts:117](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L117)
 
 Query param naming the week (any date in it, `YYYY-MM-DD`) of a link request.

@@ -8,7 +8,7 @@
 
 > **MoveCourseButton**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L33)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:33](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L33)
 
 Keyboard/click alternative to dragging a course under another one, or onto
 the root drop zone (#885). The menu lists only valid parents: never the

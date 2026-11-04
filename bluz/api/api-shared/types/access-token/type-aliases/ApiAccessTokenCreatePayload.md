@@ -8,7 +8,7 @@
 
 > **ApiAccessTokenCreatePayload** = `object`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:56](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/access-token.ts#L56)
+Defined in: [ui/src/api-shared/types/access-token.ts:56](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L56)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:56](https://github.com/Syst
 
 > **expiresInDays**: [`AccessTokenExpiryDays`](AccessTokenExpiryDays.md)
 
-Defined in: [ui/src/api-shared/types/access-token.ts:59](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/access-token.ts#L59)
+Defined in: [ui/src/api-shared/types/access-token.ts:59](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L59)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:59](https://github.com/Syst
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:57](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/access-token.ts#L57)
+Defined in: [ui/src/api-shared/types/access-token.ts:57](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L57)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/access-token.ts:57](https://github.com/Syst
 
 > **scope**: [`AccessTokenScope`](../enumerations/AccessTokenScope.md)
 
-Defined in: [ui/src/api-shared/types/access-token.ts:58](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/access-token.ts#L58)
+Defined in: [ui/src/api-shared/types/access-token.ts:58](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L58)

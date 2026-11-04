@@ -8,7 +8,7 @@
 
 > **eventNeedsInstructors**(`type`): `boolean`
 
-Defined in: [ui/src/api-shared/types/event.ts:195](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/event.ts#L195)
+Defined in: [ui/src/api-shared/types/event.ts:195](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/event.ts#L195)
 
 Whether an event type is expected to have a מבזר, i.e. whether one missing
 is worth flagging. Prayers and breaks run without one — a break may still

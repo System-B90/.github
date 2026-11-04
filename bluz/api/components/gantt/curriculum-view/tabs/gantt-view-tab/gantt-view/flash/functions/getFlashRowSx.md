@@ -8,7 +8,7 @@
 
 > **getFlashRowSx**(`theme`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/flash.ts:8](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/flash.ts#L8)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/flash.ts:8](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/flash.ts#L8)
 
 `sx` that briefly flashes a row's sticky label cell when its `data-gantt-flash`
 attribute is present. Used to draw the eye after scrolling to an item (from the

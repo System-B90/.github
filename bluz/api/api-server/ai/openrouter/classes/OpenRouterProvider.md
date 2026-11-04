@@ -6,7 +6,7 @@
 
 # Class: OpenRouterProvider
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/openrouter.ts#L16)
+Defined in: [ui/src/api-server/ai/openrouter.ts:16](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/openrouter.ts#L16)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/openrouter.ts:16](https://github.com/System-B9
 
 > **new OpenRouterProvider**(`options`): `OpenRouterProvider`
 
-Defined in: [ui/src/api-server/ai/openrouter.ts:18](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/openrouter.ts#L18)
+Defined in: [ui/src/api-server/ai/openrouter.ts:18](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/openrouter.ts#L18)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Attribution headers; OpenRouter uses them for rate-limit tiers.
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:175](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/openai-compatible.ts#L175)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:175](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/openai-compatible.ts#L175)
 
 Model used when a request does not name one.
 
@@ -74,7 +74,7 @@ Model used when a request does not name one.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:174](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/openai-compatible.ts#L174)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:174](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/openai-compatible.ts#L174)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -88,7 +88,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:208](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/openai-compatible.ts#L208)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:208](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/openai-compatible.ts#L208)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -112,7 +112,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **listModels**(`signal?`): `Promise`\<[`AiModelInfo`](../../../../api-shared/types/ai-models/type-aliases/AiModelInfo.md)[]\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:308](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/openai-compatible.ts#L308)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:308](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/openai-compatible.ts#L308)
 
 `GET {baseUrl}/models`. With Open WebUI the base URL is `…/api`, so this
 is its `/api/models`; OpenAI, OpenRouter and vLLM answer the same path.
@@ -137,7 +137,7 @@ is its `/api/models`; OpenAI, OpenRouter and vLLM answer the same path.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/openai-compatible.ts:233](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/openai-compatible.ts#L233)
+Defined in: [ui/src/api-server/ai/openai-compatible.ts:233](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/openai-compatible.ts#L233)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

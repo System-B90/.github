@@ -8,7 +8,7 @@
 
 > **PlanningContext** = `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1349](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1349)
+Defined in: [ui/src/api-server/gantt/cut.ts:1349](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1349)
 
 Everything planning a curriculum under its week templates needs (#997).
 
@@ -18,7 +18,7 @@ Everything planning a curriculum under its week templates needs (#997).
 
 > **baseInput**: [`CutPlanInput`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlanInput.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1350](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1350)
+Defined in: [ui/src/api-server/gantt/cut.ts:1350](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1350)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:1350](https://github.com/System-B90/
 
 > **courses**: [`Course`](../../../../api-shared/types/course/type-aliases/Course.md)[]
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1352](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1352)
+Defined in: [ui/src/api-server/gantt/cut.ts:1352](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1352)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:1352](https://github.com/System-B90/
 
 > **curriculumIndex**: `ReturnType`\<*typeof* [`indexCurriculumEvents`](../functions/indexCurriculumEvents.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1353](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1353)
+Defined in: [ui/src/api-server/gantt/cut.ts:1353](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1353)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:1353](https://github.com/System-B90/
 
 > **hiveModules**: `HiveModuleSubjectLookup`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1354](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1354)
+Defined in: [ui/src/api-server/gantt/cut.ts:1354](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1354)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:1354](https://github.com/System-B90/
 
 > **plan**: (`planner`) => [`CutPlan`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlan.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1356](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1356)
+Defined in: [ui/src/api-server/gantt/cut.ts:1356](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1356)
 
 Plans every week under its own template with the given planner.
 
@@ -70,7 +70,7 @@ Plans every week under its own template with the given planner.
 
 > **templateIdOfDate**: (`date`) => `string` \| `undefined`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1358](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1358)
+Defined in: [ui/src/api-server/gantt/cut.ts:1358](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1358)
 
 The template id a dated occurrence's week is planned with.
 
@@ -90,4 +90,4 @@ The template id a dated occurrence's week is planned with.
 
 > **weeks**: [`ApiCutWeek`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCutWeek.md)[]
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1351](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L1351)
+Defined in: [ui/src/api-server/gantt/cut.ts:1351](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L1351)

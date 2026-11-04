@@ -8,7 +8,7 @@
 
 > **resolveHiveIntegrationSettings**(`value`): [`HiveIntegrationSettings`](../type-aliases/HiveIntegrationSettings.md)
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:124](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/settings/hive-integration.ts#L124)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:124](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/settings/hive-integration.ts#L124)
 
 A stored setting made safe to act on: a missing or corrupt driver falls
 back to the activator (behaviour before the setting), an unusable

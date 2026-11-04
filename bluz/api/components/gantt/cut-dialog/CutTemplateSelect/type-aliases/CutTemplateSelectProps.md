@@ -8,7 +8,7 @@
 
 > **CutTemplateSelectProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:6](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L6)
+Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:6](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L6)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:6](https:/
 
 > `optional` **emptyLabel?**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:15](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L15)
+Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:15](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L15)
 
 What `""` means, when not "the default template": the reload keeps
 each week's own template. The default is then listed by name.
@@ -27,7 +27,7 @@ each week's own template. The default is then listed by name.
 
 > **onChange**: (`templateId`) => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:10](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L10)
+Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:10](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L10)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:10](https:
 
 > **templates**: [`WeekTemplate`](../../../../../api-shared/types/week-template/type-aliases/WeekTemplate.md)[]
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:7](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L7)
+Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:7](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L7)
 
 ***
 
@@ -53,6 +53,6 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:7](https:/
 
 > **value**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:9](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L9)
+Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:9](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L9)
 
 Selected template id; `""` ⇒ the default template, or `emptyLabel`.

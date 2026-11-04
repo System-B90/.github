@@ -8,7 +8,7 @@
 
 > **subtractWindows**(`start`, `end`, `windows`, `options?`): [`Interval`](../type-aliases/Interval.md)[]
 
-Defined in: [ui/src/api-shared/interval-layout.ts:129](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/interval-layout.ts#L129)
+Defined in: [ui/src/api-shared/interval-layout.ts:129](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/interval-layout.ts#L129)
 
 What is left of `[start, end]` once every window is cut out of it. Unlike
 [layoutAroundWindows](layoutAroundWindows.md) the span does not grow: window time is lost,

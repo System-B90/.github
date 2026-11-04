@@ -8,7 +8,7 @@
 
 > **apiGetPrayerWindows**(`date`, `iterationId?`, `props?`): `Promise`\<[`DayPrayerWindow`](../../../api-shared/types/prayer-windows/type-aliases/DayPrayerWindow.md)[]\>
 
-Defined in: [ui/src/api-client/prayer-windows.ts:11](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/prayer-windows.ts#L11)
+Defined in: [ui/src/api-client/prayer-windows.ts:11](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-client/prayer-windows.ts#L11)
 
 Daily prayer windows of the week containing `date` (`YYYY-MM-DD`).
 

@@ -8,7 +8,7 @@
 
 > `const` **create**: (`eventData`, `options?`, `controller`, `iterationId?`, `origin`) => `Promise`\<[`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md)\> = `createDbEvent`
 
-Defined in: [ui/src/api-server/db-event.ts:796](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-event.ts#L796)
+Defined in: [ui/src/api-server/db-event.ts:796](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/db-event.ts#L796)
 
 Inserts a new calendar event into the MongoDB collection.
 Triggers a real-time WebSocket broadcast to notify clients of the new event.

@@ -8,7 +8,7 @@
 
 > **ShufflesSection**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:257](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L257)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx:267](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/syllabus-dialog/ShufflesSection.tsx#L267)
 
 The syllabus' shuffles (student groups), a section of the syllabus dialog
 (#699, folded into the single dialog in #7xx).

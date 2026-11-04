@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -27,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1250,7 +1250,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/hive/client</a> / HiveClient</p>
 <h1 id="class-hiveclient">Class: HiveClient<a class="headerlink" href="#class-hiveclient" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L24">ui/src/api-server/hive/client.ts:24</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/client.ts#L24">ui/src/api-server/hive/client.ts:24</a></p>
 <p>Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
 rules, subjects, modules) lives in <code>@system-b90/hive-core</code>; this subclass
@@ -1281,7 +1281,7 @@ adds rooms, a cached student-group list and clearing a group's lesson.</p>
 <blockquote>
 <p><strong>clearClassLesson</strong>(<code>classId</code>): <code>Promise</code>\&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L89">ui/src/api-server/hive/client.ts:89</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/client.ts#L89">ui/src/api-server/hive/client.ts:89</a></p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
 <h5 id="classid">classId<a class="headerlink" href="#classid" title="Permanent link">&para;</a></h5>
 <p><code>number</code></p>
@@ -1292,7 +1292,7 @@ adds rooms, a cached student-group list and clearing a group's lesson.</p>
 <blockquote>
 <p><strong>currentAccessToken</strong>(): <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L84">ui/src/api-server/hive/client.ts:84</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/client.ts#L84">ui/src/api-server/hive/client.ts:84</a></p>
 <p>The access token this client currently holds, for calling another
 System-B90 app (Peek-a-Boo) that checks it against Hive.</p>
 <h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
@@ -1302,7 +1302,7 @@ System-B90 app (Peek-a-Boo) that checks it against Hive.</p>
 <blockquote>
 <p><strong>getClasses</strong>(): <code>Promise</code>\&lt;<code>Class</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L32">ui/src/api-server/hive/client.ts:32</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/client.ts#L32">ui/src/api-server/hive/client.ts:32</a></p>
 <p>Student groups change rarely and Bluz never writes them, yet every cut,
 activation tick and feed fetches them: share one request per Hive instance
 for <code>CLASSES_TTL_MS</code>. The promise is cached, so concurrent callers share
@@ -1316,7 +1316,7 @@ the in-flight request; a failure is dropped so the next call retries.</p>
 <blockquote>
 <p><strong>getRooms</strong>(): <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/room/type-aliases/HiveRoom/"><code>HiveRoom</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L65">ui/src/api-server/hive/client.ts:65</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/client.ts#L65">ui/src/api-server/hive/client.ts:65</a></p>
 <h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../api-shared/types/room/type-aliases/HiveRoom/"><code>HiveRoom</code></a>[]&gt;</p>
 <hr />
@@ -1324,7 +1324,7 @@ the in-flight request; a failure is dropped so the next call retries.</p>
 <blockquote>
 <p><strong>refreshClasses</strong>(): <code>Promise</code>\&lt;<code>Class</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/hive/client.ts#L59">ui/src/api-server/hive/client.ts:59</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/hive/client.ts#L59">ui/src/api-server/hive/client.ts:59</a></p>
 <p>Drops this Hive's cached student groups and fetches them again, for a
 caller that just missed a group that may have been created since the
 cache filled (the activator and feed, when a shuffle matches no group).</p>
@@ -1389,10 +1389,10 @@ cache filled (the activator and feed, when a shuffle matches no group).</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

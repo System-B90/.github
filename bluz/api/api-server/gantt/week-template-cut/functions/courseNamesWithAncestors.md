@@ -8,7 +8,7 @@
 
 > **courseNamesWithAncestors**(`courseIds`, `courses`): `string`[]
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:100](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/week-template-cut.ts#L100)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:100](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/week-template-cut.ts#L100)
 
 Names of the courses an event's course ids stand for, plus every ancestor.
 Templates ignore shuffles, so a template event for "Apollo" must still match

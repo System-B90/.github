@@ -8,7 +8,7 @@
 
 > **shuffleAlignmentWarning**(`moves`, `sources`): `string` \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts:98](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts#L98)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts:98](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/shuffle-alignment.ts#L98)
 
 Why `moves` would misalign a syllabus's shuffles on some day, or null.
 Only a day that was aligned and no longer is counts; an existing

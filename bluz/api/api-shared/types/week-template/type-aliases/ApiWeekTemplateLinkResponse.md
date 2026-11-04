@@ -8,7 +8,7 @@
 
 > **ApiWeekTemplateLinkResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:140](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/week-template.ts#L140)
+Defined in: [ui/src/api-shared/types/week-template.ts:140](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L140)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/week-template.ts:140](https://github.com/Sy
 
 > **link**: [`WeekTemplateLink`](WeekTemplateLink.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:141](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/week-template.ts#L141)
+Defined in: [ui/src/api-shared/types/week-template.ts:141](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L141)
 
 ***
 
@@ -24,6 +24,6 @@ Defined in: [ui/src/api-shared/types/week-template.ts:141](https://github.com/Sy
 
 > **updatedEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:143](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/week-template.ts#L143)
+Defined in: [ui/src/api-shared/types/week-template.ts:143](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/week-template.ts#L143)
 
 Cut events restamped with the template.

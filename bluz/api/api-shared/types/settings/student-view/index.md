@@ -20,11 +20,14 @@
 - [DEFAULT\_STUDENT\_VIEW\_SETTINGS](variables/DEFAULT_STUDENT_VIEW_SETTINGS.md)
 - [STUDENT\_LABELLED\_TYPES](variables/STUDENT_LABELLED_TYPES.md)
 - [STUDENT\_NAME\_PASSTHROUGH\_TYPES](variables/STUDENT_NAME_PASSTHROUGH_TYPES.md)
+- [STUDENT\_REFRESH\_MAX\_SECONDS](variables/STUDENT_REFRESH_MAX_SECONDS.md)
+- [STUDENT\_REFRESH\_MIN\_SECONDS](variables/STUDENT_REFRESH_MIN_SECONDS.md)
 - [STUDENT\_VIEW\_SETTING\_KEY](variables/STUDENT_VIEW_SETTING_KEY.md)
 
 ## Functions
 
 - [autoStudentEventName](functions/autoStudentEventName.md)
+- [isStudentRefreshSeconds](functions/isStudentRefreshSeconds.md)
 - [isStudentViewSettings](functions/isStudentViewSettings.md)
 - [resolveStudentViewSettings](functions/resolveStudentViewSettings.md)
 - [studentEventName](functions/studentEventName.md)

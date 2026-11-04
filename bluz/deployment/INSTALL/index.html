@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -27,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1286,10 +1286,11 @@ Bluz's containers need a name that resolves to Hive's container. <code>link-hive
 handles the second; the port question is answered during setup.</p>
 <h3 id="co-located-hive">Co-located Hive<a class="headerlink" href="#co-located-hive" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>./install.sh<span class="w">      </span><span class="c1"># answer "yes" to the ports question, pick 8080/8443</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>./link-hive.sh<span class="w">    </span><span class="c1"># aliases hive.org onto Hive's nginx, then brings Bluz up</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>./link-hive.sh<span class="w">    </span><span class="c1"># aliases your Hive host onto Hive's nginx, then brings Bluz up</span>
 </code></pre></div>
 <p><code>link-hive.sh</code> finds Hive's Docker network and its nginx container, adds a
-<code>hive.org</code> network alias to it, and starts Bluz with the co-located overlay.
+network alias for your Hive host (the host in <code>NEXT_PUBLIC_HIVE_URL</code>, e.g.
+<code>chive.bis.net</code>) to it, and starts Bluz with the co-located overlay.
 Override its guesses with <code>HIVE_NETWORK_NAME</code>, <code>HIVE_NGINX_CONTAINER</code>, or
 <code>HIVE_HOSTNAME</code> if your Hive stack is named unusually.</p>
 <p>Why an alias rather than <code>extra_hosts</code>: <code>host-gateway</code> resolves to the host's
@@ -1517,10 +1518,10 @@ CLI documents itself: <code>bluz --help</code> and <code>bluz &lt;command&gt; --
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

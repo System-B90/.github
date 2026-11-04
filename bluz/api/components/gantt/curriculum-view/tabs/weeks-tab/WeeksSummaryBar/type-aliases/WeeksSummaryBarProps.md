@@ -8,7 +8,7 @@
 
 > **WeeksSummaryBarProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx:17](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx#L17)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx:17](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx#L17)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummary
 
 > **curriculum**: [`GanttCurriculum`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculum.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx:18](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx#L18)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx:18](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx#L18)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummary
 
 > **state**: [`NormalizedStore`](../../../../../../../api-client/gantt/drizzle-normalize/type-aliases/NormalizedStore.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx:19](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx#L19)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx:19](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksSummaryBar.tsx#L19)

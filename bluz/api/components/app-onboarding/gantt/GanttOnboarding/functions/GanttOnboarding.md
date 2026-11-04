@@ -8,7 +8,7 @@
 
 > **GanttOnboarding**(`__namedParameters`): `null`
 
-Defined in: [ui/src/components/app-onboarding/gantt/GanttOnboarding.tsx:14](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/app-onboarding/gantt/GanttOnboarding.tsx#L14)
+Defined in: [ui/src/components/app-onboarding/gantt/GanttOnboarding.tsx:14](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/app-onboarding/gantt/GanttOnboarding.tsx#L14)
 
 Registers the gantt screen's tour and help topics for exactly as long as the
 screen is mounted.

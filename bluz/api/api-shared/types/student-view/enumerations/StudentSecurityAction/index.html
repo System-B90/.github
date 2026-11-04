@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -27,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1042,7 +1042,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/student-view</a> / StudentSecurityAction</p>
 <h1 id="enumeration-studentsecurityaction">Enumeration: StudentSecurityAction<a class="headerlink" href="#enumeration-studentsecurityaction" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L123">ui/src/api-shared/types/student-view.ts:123</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L129">ui/src/api-shared/types/student-view.ts:129</a></p>
 <p>Suspected malicious attempts recorded against a student's daily time record.
 Each value names <em>what</em> was tried; the specifics ride in <code>detail</code>.</p>
 <h2 id="enumeration-members">Enumeration Members<a class="headerlink" href="#enumeration-members" title="Permanent link">&para;</a></h2>
@@ -1050,7 +1050,7 @@ Each value names <em>what</em> was tried; the specifics ride in <code>detail</co
 <blockquote>
 <p><strong>CLOCK_TAMPERING</strong>: <code>"clock-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L147">ui/src/api-shared/types/student-view.ts:147</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L153">ui/src/api-shared/types/student-view.ts:153</a></p>
 <p>The board's device clock is more than <a href="../../variables/MAX_STUDENT_CLOCK_SKEW_MS/">MAX_STUDENT_CLOCK_SKEW_MS</a>
 off the server's (or the clock header is not a timestamp): a student
 winding the clock to reach another day.</p>
@@ -1059,21 +1059,21 @@ winding the clock to reach another day.</p>
 <blockquote>
 <p><strong>ENGAGEMENT_TAMPERING</strong>: <code>"engagement-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L131">ui/src/api-shared/types/student-view.ts:131</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L137">ui/src/api-shared/types/student-view.ts:137</a></p>
 <p>A malformed engagement report — a body the board cannot produce.</p>
 <hr />
 <h3 id="forged_session_token">FORGED_SESSION_TOKEN<a class="headerlink" href="#forged_session_token" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>FORGED_SESSION_TOKEN</strong>: <code>"forged-session-token"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L133">ui/src/api-shared/types/student-view.ts:133</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L139">ui/src/api-shared/types/student-view.ts:139</a></p>
 <p>A session cookie that fails decryption: forged or altered, not merely expired.</p>
 <hr />
 <h3 id="header_tampering">HEADER_TAMPERING<a class="headerlink" href="#header_tampering" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>HEADER_TAMPERING</strong>: <code>"header-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L141">ui/src/api-shared/types/student-view.ts:141</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L147">ui/src/api-shared/types/student-view.ts:147</a></p>
 <p>Headers a browser never sends — Next.js internals, verb/path overrides,
 spoofed client addresses. nginx strips them and names them in
 <a href="../../variables/HEADER_TAMPERING_HEADER/">HEADER_TAMPERING_HEADER</a>.</p>
@@ -1082,28 +1082,28 @@ spoofed client addresses. nginx strips them and names them in
 <blockquote>
 <p><strong>INVALID_ACCESS_TOKEN</strong>: <code>"invalid-access-token"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L135">ui/src/api-shared/types/student-view.ts:135</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L141">ui/src/api-shared/types/student-view.ts:141</a></p>
 <p>A bearer token that is not a live Bluz access token.</p>
 <hr />
 <h3 id="param_tampering">PARAM_TAMPERING<a class="headerlink" href="#param_tampering" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>PARAM_TAMPERING</strong>: <code>"param-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L129">ui/src/api-shared/types/student-view.ts:129</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L135">ui/src/api-shared/types/student-view.ts:135</a></p>
 <p>A Hanich session sent query parameters the board never sends (<code>?date=</code>, <code>?it=</code>, …).</p>
 <hr />
 <h3 id="staff_api_probe">STAFF_API_PROBE<a class="headerlink" href="#staff_api_probe" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>STAFF_API_PROBE</strong>: <code>"staff-api-probe"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L125">ui/src/api-shared/types/student-view.ts:125</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L131">ui/src/api-shared/types/student-view.ts:131</a></p>
 <p>A Hanich session called a staff-only API.</p>
 <hr />
 <h3 id="unknown_route">UNKNOWN_ROUTE<a class="headerlink" href="#unknown_route" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>UNKNOWN_ROUTE</strong>: <code>"unknown-route"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/student-view.ts#L127">ui/src/api-shared/types/student-view.ts:127</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/student-view.ts#L133">ui/src/api-shared/types/student-view.ts:133</a></p>
 <p>A Hanich session requested an API path that does not exist (dir-busting).</p>
 
 
@@ -1164,10 +1164,10 @@ spoofed client addresses. nginx strips them and names them in
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

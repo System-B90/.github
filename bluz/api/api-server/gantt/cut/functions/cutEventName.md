@@ -8,7 +8,7 @@
 
 > **cutEventName**(`eventTitle`, `naming`, `eventSubjectId`, `symbolBySubjectId`): `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:353](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/gantt/cut.ts#L353)
+Defined in: [ui/src/api-server/gantt/cut.ts:353](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/gantt/cut.ts#L353)
 
 `{syllabus} - {gantt_event_name}` (#965). `{syllabus}` is the syllabus's own
 short name (#973), else its Hive subject's symbol — the syllabus link first,

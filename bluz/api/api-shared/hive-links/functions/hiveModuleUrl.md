@@ -8,7 +8,7 @@
 
 > **hiveModuleUrl**(`subjectId`, `moduleId`, `baseUrl?`): `string` \| `null`
 
-Defined in: [ui/src/api-shared/hive-links.ts:34](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/hive-links.ts#L34)
+Defined in: [ui/src/api-shared/hive-links.ts:34](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/hive-links.ts#L34)
 
 Link to a module's Hive page — the one screen that lists its lessons. Hive
 has no per-lesson route, so this is as deep as a lesson link goes.

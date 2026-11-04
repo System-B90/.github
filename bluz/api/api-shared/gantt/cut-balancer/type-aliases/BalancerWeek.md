@@ -8,7 +8,7 @@
 
 > **BalancerWeek** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:45](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-balancer.ts#L45)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:45](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/gantt/cut-balancer.ts#L45)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:45](https://github.com/Syst
 
 > **dayIds**: `string`[]
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:48](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-balancer.ts#L48)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:48](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/gantt/cut-balancer.ts#L48)
 
 Day ids in display order.
 
@@ -26,4 +26,4 @@ Day ids in display order.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:46](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-balancer.ts#L46)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:46](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/gantt/cut-balancer.ts#L46)

@@ -8,7 +8,7 @@
 
 > **StudentDayBoard**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/student-view/StudentDayBoard.tsx:147](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/student-view/StudentDayBoard.tsx#L147)
+Defined in: [ui/src/components/student-view/StudentDayBoard.tsx:170](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/student-view/StudentDayBoard.tsx#L170)
 
 The student-facing schedule board (#656).
 
@@ -30,7 +30,8 @@ server guarantees it can carry no others.
 
 `number` = `0`
 
-Periodic refetch interval from `BLUZ_STUDENT_REFRESH_SECONDS`; 0 = off.
+Refetch interval until the first schedule response names the current
+one (staff-set, else `BLUZ_STUDENT_REFRESH_SECONDS`); 0 = off.
 
 ## Returns
 

@@ -8,7 +8,7 @@
 
 > **normalizeApiSyllabus**(`rawSyllabus`, `curriculumId`): [`NormalizedSyllabusSubtree`](../type-aliases/NormalizedSyllabusSubtree.md)
 
-Defined in: [ui/src/api-client/gantt/drizzle-normalize.ts:62](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/gantt/drizzle-normalize.ts#L62)
+Defined in: [ui/src/api-client/gantt/drizzle-normalize.ts:62](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-client/gantt/drizzle-normalize.ts#L62)
 
 Flattens one `ApiSyllabus` (with nested `s2m → module → m2e → event`) into
 normalized store slices, resolving the reverse child-id arrays.

@@ -8,7 +8,7 @@
 
 > **SettingsFormActions**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:27](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L27)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx:27](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/common/FormActions.tsx#L27)
 
 The action row shared by every settings edit panel: a filled submit button
 that stretches, then "ביטול", then any tab-specific extras. Placement,

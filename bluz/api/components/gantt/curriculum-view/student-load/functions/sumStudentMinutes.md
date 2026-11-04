@@ -8,7 +8,7 @@
 
 > **sumStudentMinutes**(`byDay`, `dayIds`, `pathId?`): `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:539](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/student-load.ts#L539)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:539](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/student-load.ts#L539)
 
 Scheduled minutes over a set of days: each path's total, and the busiest
 path's. A student's week is the sum of their days, not of the busiest days.

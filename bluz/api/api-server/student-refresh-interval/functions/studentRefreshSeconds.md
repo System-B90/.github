@@ -8,12 +8,14 @@
 
 > **studentRefreshSeconds**(`raw?`): `number`
 
-Defined in: [ui/src/api-server/student-refresh-interval.ts:12](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/student-refresh-interval.ts#L12)
+Defined in: [ui/src/api-server/student-refresh-interval.ts:16](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/student-refresh-interval.ts#L16)
 
-How often the student board refetches on its own, in seconds. The live
-ping already covers staff edits; this is the safety net for a missed ping
-(dropped socket, a write path that does not ping) and for the day rolling
-over on a wall display. `0` turns it off.
+The deployment default for how often the student board refetches, in
+seconds. The board does not follow staff edits live: it refetches on this
+interval (and at server midnight, and on a staff push update). Staff
+override it per iteration from the student preview
+(`StudentViewSettings.refreshSeconds`); see [studentRefreshSecondsFor](studentRefreshSecondsFor.md).
+`0` turns the periodic refetch off.
 
 Read at request time, so a deployment changes it in `.env` without a rebuild.
 

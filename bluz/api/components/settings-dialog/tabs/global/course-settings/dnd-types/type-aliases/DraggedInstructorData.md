@@ -8,7 +8,7 @@
 
 > **DraggedInstructorData** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:3](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L3)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:3](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L3)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-t
 
 > **instructorId**: `number`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:5](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L5)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:5](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L5)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-t
 
 > **type**: `"INSTRUCTOR"`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:4](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L4)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:4](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L4)

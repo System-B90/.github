@@ -8,7 +8,7 @@
 
 > **DaySelectionProvider**(`orderedDayIds`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DaySelectionContext.tsx:47](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DaySelectionContext.tsx#L47)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DaySelectionContext.tsx:47](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DaySelectionContext.tsx#L47)
 
 Selection state for the weeks grid's day cells. Lives above the rows so a
 range can span weeks, and holds nothing but ids — the cells stay the owners

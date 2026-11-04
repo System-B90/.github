@@ -8,7 +8,7 @@
 
 > **fetchAiModels**(): `Promise`\<[`ApiAiModelsResponse`](../../../api-shared/types/ai-models/type-aliases/ApiAiModelsResponse.md)\>
 
-Defined in: [ui/src/api-client/ai.ts:78](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/ai.ts#L78)
+Defined in: [ui/src/api-client/ai.ts:78](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-client/ai.ts#L78)
 
 Models the configured AI backend offers (#779). Never throws: an empty list
 (with `error`) just leaves the settings field free-text.

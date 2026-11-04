@@ -8,7 +8,7 @@
 
 > **TagSxOptions** = `object`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:1](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-component/parts/tag-sx.ts#L1)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:1](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-component/parts/tag-sx.ts#L1)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:1](https
 
 > `optional` **accentColor?**: `string`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:8](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-component/parts/tag-sx.ts#L8)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:8](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-component/parts/tag-sx.ts#L8)
 
 Identity color (a course's), drawn as a stripe on the tag's start edge.
 Never the text color: on a tile of a similar hue it went unreadable.
@@ -27,7 +27,7 @@ Never the text color: on a tile of a similar hue it went unreadable.
 
 > `optional` **isLecturer?**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:2](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-component/parts/tag-sx.ts#L2)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:2](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-component/parts/tag-sx.ts#L2)
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:2](https
 
 > `optional` **overcrowded?**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:3](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-component/parts/tag-sx.ts#L3)
+Defined in: [ui/src/components/schedule/event-component/parts/tag-sx.ts:3](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-component/parts/tag-sx.ts#L3)

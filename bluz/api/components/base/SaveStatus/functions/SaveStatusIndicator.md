@@ -8,7 +8,7 @@
 
 > **SaveStatusIndicator**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/SaveStatus.tsx:60](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/SaveStatus.tsx#L60)
+Defined in: [ui/src/components/base/SaveStatus.tsx:60](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/base/SaveStatus.tsx#L60)
 
 A small live status next to a dialog title: שומר… → נשמר ✓, or an error.
 

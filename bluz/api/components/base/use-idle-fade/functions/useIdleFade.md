@@ -8,7 +8,7 @@
 
 > **useIdleFade**(`active`): `object`
 
-Defined in: [ui/src/components/base/use-idle-fade.ts:21](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/base/use-idle-fade.ts#L21)
+Defined in: [ui/src/components/base/use-idle-fade.ts:21](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/base/use-idle-fade.ts#L21)
 
 Fades floating chrome (the fullscreen exit button) once the user stops
 moving, so it does not sit over the grid on a wall display. Any activity

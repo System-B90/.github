@@ -8,6 +8,6 @@
 
 > `const` **STUDENT\_LABELLED\_TYPES**: `ReadonlyArray`\<[`EventType`](../../../event/enumerations/EventType.md)\>
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:33](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/settings/student-view.ts#L33)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:53](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/settings/student-view.ts#L53)
 
 Types whose label can be edited in settings, in display order.

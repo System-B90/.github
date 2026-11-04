@@ -8,7 +8,7 @@
 
 > **CurriculmImportExportButtonProps** = `object` & `Pick`\<[`GanttCreationDeletionCallbackProps`](../../../../../curriculum-fab/CurriculumActionItems/type-aliases/GanttCreationDeletionCallbackProps.md), `"onCreate"`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumImportExportButton.tsx:17](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumImportExportButton.tsx#L17)
+Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumImportExportButton.tsx:17](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/CurriculumImportExportButton.tsx#L17)
 
 ## Type Declaration
 

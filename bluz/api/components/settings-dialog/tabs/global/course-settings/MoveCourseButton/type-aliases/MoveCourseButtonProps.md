@@ -8,7 +8,7 @@
 
 > **MoveCourseButtonProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:22](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L22)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:22](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L22)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveC
 
 > **course**: [`Course`](../../../../../../../api-shared/types/course/type-aliases/Course.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:23](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L23)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:23](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L23)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveC
 
 > `optional` **onOpenChange?**: (`open`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:25](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L25)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx:25](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/course-settings/MoveCourseButton.tsx#L25)
 
 Keeps the card's quick actions open while the menu is.
 

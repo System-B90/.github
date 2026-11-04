@@ -8,7 +8,7 @@
 
 > **runAiBenchmark**(`options`): `Promise`\<[`AiBenchmarkResult`](../../../../../api-shared/types/ai-benchmark/type-aliases/AiBenchmarkResult.md)\>
 
-Defined in: [ui/src/api-server/ai/benchmark/run.ts:255](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/benchmark/run.ts#L255)
+Defined in: [ui/src/api-server/ai/benchmark/run.ts:255](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/benchmark/run.ts#L255)
 
 Runs the whole suite.
 

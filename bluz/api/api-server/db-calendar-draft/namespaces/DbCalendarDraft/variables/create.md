@@ -8,7 +8,7 @@
 
 > `const` **create**: (`label`, `events`, `author`, `controller`, `iterationId?`, `range?`) => `Promise`\<[`CalendarDraftSummary`](../../../../../api-shared/types/type-aliases/CalendarDraftSummary.md)\> = `createDraft`
 
-Defined in: [ui/src/api-server/db-calendar-draft.ts:234](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-calendar-draft.ts#L234)
+Defined in: [ui/src/api-server/db-calendar-draft.ts:234](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/db-calendar-draft.ts#L234)
 
 Creates a new shared draft capturing the supplied events. Drafts are shared
 across all users of the iteration (multi-user).

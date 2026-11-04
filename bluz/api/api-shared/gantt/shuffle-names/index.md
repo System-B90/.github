@@ -37,3 +37,4 @@
 - [retagShuffles](functions/retagShuffles.md)
 - [shuffleNameError](functions/shuffleNameError.md)
 - [shuffleNameLevelWord](functions/shuffleNameLevelWord.md)
+- [withShuffleLevel](functions/withShuffleLevel.md)

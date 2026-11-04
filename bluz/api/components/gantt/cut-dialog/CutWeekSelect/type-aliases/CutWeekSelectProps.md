@@ -8,7 +8,7 @@
 
 > **CutWeekSelectProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:12](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L12)
+Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:12](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L12)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:12](https://gi
 
 > **label**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:13](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L13)
+Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:13](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L13)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:13](https://gi
 
 > **onChange**: (`weekId`) => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:17](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L17)
+Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:17](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L17)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:17](https://gi
 
 > **value**: `string`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L16)
+Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:16](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L16)
 
 Selected week id; `""` ⇒ the whole curriculum.
 
@@ -52,4 +52,4 @@ Selected week id; `""` ⇒ the whole curriculum.
 
 > **weeks**: [`ApiCutWeek`](../../../../../api-shared/types/gantt/cut/type-aliases/ApiCutWeek.md)[]
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:14](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L14)
+Defined in: [ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx:14](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/cut-dialog/CutWeekSelect.tsx#L14)

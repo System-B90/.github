@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/ai/tools/route.ts:15](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/ai/tools/route.ts#L15)
+Defined in: [ui/src/app/api/ai/tools/route.ts:15](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/app/api/ai/tools/route.ts#L15)
 
 What the assistant can do, for the chat's capability hint. Also reports
 whether AI is configured at all, so the UI can hide the launcher on a

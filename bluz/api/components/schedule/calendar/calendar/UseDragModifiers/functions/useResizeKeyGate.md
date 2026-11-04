@@ -8,7 +8,7 @@
 
 > **useResizeKeyGate**(`dragging`): `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:129](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L129)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:129](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L129)
 
 Gates resizing behind Shift (#961). Dragging a tile always moves it; its
 edges only resize while Shift is held, so a move never resizes by accident.

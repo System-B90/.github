@@ -8,7 +8,7 @@
 
 > **templateWeekChanged**(`baseline`, `live`): `boolean`
 
-Defined in: [ui/src/components/week-templates/template-week.ts:27](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/week-templates/template-week.ts#L27)
+Defined in: [ui/src/components/week-templates/template-week.ts:27](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/week-templates/template-week.ts#L27)
 
 Whether a template session's events differ from what was loaded: what
 saving would actually change, so showing another week does not count.

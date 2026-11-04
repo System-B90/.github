@@ -8,7 +8,7 @@
 
 > **hiveClassUrl**(`hiveClassId`, `baseUrl?`): `string` \| `null`
 
-Defined in: [ui/src/api-shared/hive-links.ts:70](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/hive-links.ts#L70)
+Defined in: [ui/src/api-shared/hive-links.ts:70](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/hive-links.ts#L70)
 
 Link to a student group in Hive's mentor view — where its current lesson
 and queue are shown and can be reassigned by hand.

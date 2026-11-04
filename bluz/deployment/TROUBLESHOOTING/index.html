@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -27,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1149,23 +1149,23 @@ either on <code>0.0.0.0</code> re-creates the conflict:</p>
 exchange, so it needs working name resolution of its own — the browser reaching
 Hive proves nothing about what <code>ui</code> can reach.</p>
 <p>On a co-located install the specific trap is: Docker's embedded DNS doesn't know
-<code>hive.org</code>, falls through to the host's <code>hosts</code> file, finds <code>127.0.0.1 hive.org</code>
+your Hive host (say <code>chive.bis.net</code>), falls through to the host's <code>hosts</code> file, finds <code>127.0.0.1 chive.bis.net</code>
 — and inside <code>ui</code>'s network namespace, <code>127.0.0.1</code> is <code>ui</code> itself. It tries to
 talk OAuth to itself.</p>
 <p><strong>Diagnose:</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>bluz-ui<span class="w"> </span>node<span class="w"> </span>-e<span class="w"> </span><span class="s2">"require('dns').lookup('hive.org',console.log)"</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>bluz-ui<span class="w"> </span>node<span class="w"> </span>-e<span class="w"> </span><span class="s2">"fetch('https://hive.org/api/core/version/').then(r=&gt;console.log(r.status)).catch(console.error)"</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>bluz-ui<span class="w"> </span>node<span class="w"> </span>-e<span class="w"> </span><span class="s2">"require('dns').lookup('chive.bis.net',console.log)"</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>bluz-ui<span class="w"> </span>node<span class="w"> </span>-e<span class="w"> </span><span class="s2">"fetch('https://chive.bis.net/api/core/version/').then(r=&gt;console.log(r.status)).catch(console.error)"</span>
 </code></pre></div>
 <p><strong>Fix — Hive on another machine:</strong> set <code>NEXT_PUBLIC_HIVE_URL</code> to a hostname that
 resolves from inside containers (a real DNS name, not a hosts-file entry).</p>
 <p><strong>Fix — Hive on this machine:</strong> run <code>./link-hive.sh</code> (or <code>.\link-hive.ps1</code>). It
-puts a <code>hive.org</code> alias on Hive's own nginx container inside the shared Docker
+puts an alias for your Hive host on Hive's own nginx container inside the shared Docker
 network and brings Bluz up joined to that network. Manually:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>network<span class="w"> </span>disconnect<span class="w"> </span>hive-stack_hive-net<span class="w"> </span>hive-nginx
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>docker<span class="w"> </span>network<span class="w"> </span>connect<span class="w"> </span>--alias<span class="w"> </span>hive.org<span class="w"> </span>hive-stack_hive-net<span class="w"> </span>hive-nginx
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>docker<span class="w"> </span>network<span class="w"> </span>connect<span class="w"> </span>--alias<span class="w"> </span>chive.bis.net<span class="w"> </span>hive-stack_hive-net<span class="w"> </span>hive-nginx
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose.yml<span class="w"> </span>-f<span class="w"> </span>docker-compose.hive-local.yml<span class="w"> </span>up<span class="w"> </span>-d
 </code></pre></div>
-<p><code>extra_hosts: hive.org:host-gateway</code> is <strong>not</strong> a reliable fix: <code>host-gateway</code>
+<p><code>extra_hosts: chive.bis.net:host-gateway</code> is <strong>not</strong> a reliable fix: <code>host-gateway</code>
 is the host's gateway address, which does not reach a Hive nginx bound to a
 specific loopback IP.</p>
 <hr />
@@ -1335,10 +1335,10 @@ into <code>ai-ca/ca.pem</code> or clears the variable when the gateway is public
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

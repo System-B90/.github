@@ -8,7 +8,7 @@
 
 > **disambiguatedSyllabusTitles**(`syllabuses`, `getCourse`): `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-shared/gantt/syllabus-titles.ts:14](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/syllabus-titles.ts#L14)
+Defined in: [ui/src/api-shared/gantt/syllabus-titles.ts:14](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/gantt/syllabus-titles.ts#L14)
 
 Display titles for syllabuses. A title shared by several syllabuses gets its
 course names in brackets ("דמות (אפולו)"), so namesakes stay distinguishable.

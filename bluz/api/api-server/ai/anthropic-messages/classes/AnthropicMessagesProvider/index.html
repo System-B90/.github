@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -27,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1017,6 +1017,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        headers?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#missingkeymessage" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1384,7 +1395,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/ai/anthropic-messages</a> / AnthropicMessagesProvider</p>
 <h1 id="class-anthropicmessagesprovider">Class: AnthropicMessagesProvider<a class="headerlink" href="#class-anthropicmessagesprovider" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/anthropic-messages.ts#L184">ui/src/api-server/ai/anthropic-messages.ts:184</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/anthropic-messages.ts#L184">ui/src/api-server/ai/anthropic-messages.ts:184</a></p>
 <h2 id="extended-by">Extended by<a class="headerlink" href="#extended-by" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../../litellm/classes/LiteLlmProvider/"><code>LiteLlmProvider</code></a></li>
@@ -1398,7 +1409,7 @@
 <blockquote>
 <p><strong>new AnthropicMessagesProvider</strong>(<code>options</code>): <code>AnthropicMessagesProvider</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/anthropic-messages.ts#L192">ui/src/api-server/ai/anthropic-messages.ts:192</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/anthropic-messages.ts#L193">ui/src/api-server/ai/anthropic-messages.ts:193</a></p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="options">options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h5>
 <h6 id="apikey">apiKey<a class="headerlink" href="#apikey" title="Permanent link">&para;</a></h6>
@@ -1408,6 +1419,9 @@
 <p>Everything before <code>/v1/messages</code>, as in <code>ANTHROPIC_BASE_URL</code>.</p>
 <h6 id="defaultmodel">defaultModel<a class="headerlink" href="#defaultmodel" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
+<h6 id="headers">headers?<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h6>
+<p><code>Record</code>\&lt;<code>string</code>, <code>string</code>&gt;</p>
+<p>Sent on every request after the auth headers (and may override them).</p>
 <h6 id="missingkeymessage">missingKeyMessage<a class="headerlink" href="#missingkeymessage" title="Permanent link">&para;</a></h6>
 <p><code>string</code></p>
 <p>Error shown when <code>apiKey</code> is empty — names the env var operators set.</p>
@@ -1420,7 +1434,7 @@
 <blockquote>
 <p><code>readonly</code> <strong>defaultModel</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/anthropic-messages.ts#L187">ui/src/api-server/ai/anthropic-messages.ts:187</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/anthropic-messages.ts#L187">ui/src/api-server/ai/anthropic-messages.ts:187</a></p>
 <p>Model used when a request does not name one.</p>
 <h4 id="implementation-of">Implementation of<a class="headerlink" href="#implementation-of" title="Permanent link">&para;</a></h4>
 <p><code>AiProvider.defaultModel</code></p>
@@ -1429,7 +1443,7 @@
 <blockquote>
 <p><code>readonly</code> <strong>name</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/anthropic-messages.ts#L186">ui/src/api-server/ai/anthropic-messages.ts:186</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/anthropic-messages.ts#L186">ui/src/api-server/ai/anthropic-messages.ts:186</a></p>
 <p>Stable identifier, used in logs and in <code>AI_PROVIDER</code>.</p>
 <h4 id="implementation-of_1">Implementation of<a class="headerlink" href="#implementation-of_1" title="Permanent link">&para;</a></h4>
 <p><code>AiProvider.name</code></p>
@@ -1438,7 +1452,7 @@
 <blockquote>
 <p><strong>chat</strong>(<code>request</code>): <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/ai/type-aliases/AiChatResult/"><code>AiChatResult</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/anthropic-messages.ts#L212">ui/src/api-server/ai/anthropic-messages.ts:212</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/anthropic-messages.ts#L216">ui/src/api-server/ai/anthropic-messages.ts:216</a></p>
 <p>One-shot completion, for callers with nothing to stream to.</p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
 <h5 id="request">request<a class="headerlink" href="#request" title="Permanent link">&para;</a></h5>
@@ -1452,7 +1466,7 @@
 <blockquote>
 <p><strong>listModels</strong>(<code>signal?</code>): <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/ai-models/type-aliases/AiModelInfo/"><code>AiModelInfo</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/anthropic-messages.ts#L310">ui/src/api-server/ai/anthropic-messages.ts:310</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/anthropic-messages.ts#L314">ui/src/api-server/ai/anthropic-messages.ts:314</a></p>
 <p>Models the backend offers (#779). Optional: a backend that cannot list
 them simply leaves the settings field free-text.</p>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
@@ -1467,7 +1481,7 @@ them simply leaves the settings field free-text.</p>
 <blockquote>
 <p><strong>streamChat</strong>(<code>request</code>): <code>AsyncIterable</code>\&lt;<a href="../../../provider/type-aliases/AiProviderEvent/"><code>AiProviderEvent</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/anthropic-messages.ts#L240">ui/src/api-server/ai/anthropic-messages.ts:240</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/anthropic-messages.ts#L244">ui/src/api-server/ai/anthropic-messages.ts:244</a></p>
 <p>Incremental completion. Yields text as it arrives and terminates with a
 single <code>final</code> frame carrying tool calls and usage.</p>
 <h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">&para;</a></h4>
@@ -1536,10 +1550,10 @@ single <code>final</code> frame carrying tool calls and usage.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

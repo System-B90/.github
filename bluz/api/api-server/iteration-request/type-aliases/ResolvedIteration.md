@@ -8,7 +8,7 @@
 
 > **ResolvedIteration** = `object`
 
-Defined in: [ui/src/api-server/iteration-request.ts:32](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/iteration-request.ts#L32)
+Defined in: [ui/src/api-server/iteration-request.ts:32](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/iteration-request.ts#L32)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/iteration-request.ts:32](https://github.com/Syste
 
 > **controller**: [`DatabaseController`](../../mongo-db-controller/classes/DatabaseController.md)
 
-Defined in: [ui/src/api-server/iteration-request.ts:36](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/iteration-request.ts#L36)
+Defined in: [ui/src/api-server/iteration-request.ts:36](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/iteration-request.ts#L36)
 
 Controller scoped to that iteration's database.
 
@@ -26,6 +26,6 @@ Controller scoped to that iteration's database.
 
 > `optional` **iterationId?**: [`IterationId`](../../../api-shared/types/iteration/type-aliases/IterationId.md)
 
-Defined in: [ui/src/api-server/iteration-request.ts:34](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/iteration-request.ts#L34)
+Defined in: [ui/src/api-server/iteration-request.ts:34](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/iteration-request.ts#L34)
 
 The iteration id from the request, or undefined for the current run.

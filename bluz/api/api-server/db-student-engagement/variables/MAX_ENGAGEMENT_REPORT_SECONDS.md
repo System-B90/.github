@@ -8,7 +8,7 @@
 
 > `const` **MAX\_ENGAGEMENT\_REPORT\_SECONDS**: `120` = `120`
 
-Defined in: [ui/src/api-server/db-student-engagement.ts:12](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/db-student-engagement.ts#L12)
+Defined in: [ui/src/api-server/db-student-engagement.ts:12](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/db-student-engagement.ts#L12)
 
 Largest increment a single report may carry, in seconds. The client flushes
 on a fixed heartbeat, so anything much larger than one interval is either a

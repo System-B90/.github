@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -27,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1045,7 +1045,7 @@
 <blockquote>
 <p><strong>StudentEngagementDocument</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L455">ui/src/api-server/mongo-db-controller.ts:455</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L455">ui/src/api-server/mongo-db-controller.ts:455</a></p>
 <p>One student's focused time on the schedule board for one day. <code>id</code> is
 <code>&lt;userId&gt;:&lt;date&gt;</code> so the upsert is a single keyed <code>$inc</code> with no read.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
@@ -1053,54 +1053,54 @@
 <blockquote>
 <p><strong>date</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L459">ui/src/api-server/mongo-db-controller.ts:459</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L459">ui/src/api-server/mongo-db-controller.ts:459</a></p>
 <p><code>yyyy-MM-dd</code> in the app timezone.</p>
 <hr />
 <h3 id="id">id<a class="headerlink" href="#id" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>id</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L456">ui/src/api-server/mongo-db-controller.ts:456</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L456">ui/src/api-server/mongo-db-controller.ts:456</a></p>
 <hr />
 <h3 id="ips">ips?<a class="headerlink" href="#ips" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>ips?</strong>: <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L464">ui/src/api-server/mongo-db-controller.ts:464</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L464">ui/src/api-server/mongo-db-controller.ts:464</a></p>
 <p>Every address the board reported from that day (nginx-derived).</p>
 <hr />
 <h3 id="seconds">seconds<a class="headerlink" href="#seconds" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>seconds</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L461">ui/src/api-server/mongo-db-controller.ts:461</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L461">ui/src/api-server/mongo-db-controller.ts:461</a></p>
 <p>Total seconds the board was open <em>and</em> focused that day.</p>
 <hr />
 <h3 id="securityeventcount">securityEventCount?<a class="headerlink" href="#securityeventcount" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>securityEventCount?</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L468">ui/src/api-server/mongo-db-controller.ts:468</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L468">ui/src/api-server/mongo-db-controller.ts:468</a></p>
 <p>True total, including any dropped from <code>securityEvents</code>.</p>
 <hr />
 <h3 id="securityevents">securityEvents?<a class="headerlink" href="#securityevents" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>securityEvents?</strong>: <a href="../../../../api-shared/types/student-view/type-aliases/StudentSecurityEvent/"><code>StudentSecurityEvent</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L466">ui/src/api-server/mongo-db-controller.ts:466</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L466">ui/src/api-server/mongo-db-controller.ts:466</a></p>
 <p>Most recent suspected malicious attempts that day, oldest dropped first.</p>
 <hr />
 <h3 id="updatedat">updatedAt<a class="headerlink" href="#updatedat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>updatedAt</strong>: <code>Date</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L462">ui/src/api-server/mongo-db-controller.ts:462</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L462">ui/src/api-server/mongo-db-controller.ts:462</a></p>
 <hr />
 <h3 id="userid">userId<a class="headerlink" href="#userid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>userId</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/mongo-db-controller.ts#L457">ui/src/api-server/mongo-db-controller.ts:457</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/mongo-db-controller.ts#L457">ui/src/api-server/mongo-db-controller.ts:457</a></p>
 
 
 
@@ -1160,10 +1160,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

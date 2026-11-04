@@ -8,6 +8,6 @@
 
 > `const` **LIST\_EXTRA\_FIELDS**: readonly \[`"type"`, `"rooms"`, `"courses"`, `"instructors"`, `"lecturers"`, `"locked"`, `"hidden"`, `"fake"`, `"color"`, `"notes"`\]
 
-Defined in: [ui/src/api-server/ai/tools/list-row.ts:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/ai/tools/list-row.ts#L16)
+Defined in: [ui/src/api-server/ai/tools/list-row.ts:16](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/ai/tools/list-row.ts#L16)
 
 Columns the model may ask list_events for; get_event returns all of them.

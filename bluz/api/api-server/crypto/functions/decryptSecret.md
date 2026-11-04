@@ -8,7 +8,7 @@
 
 > **decryptSecret**(`stored`): `string`
 
-Defined in: [ui/src/api-server/crypto.ts:45](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/crypto.ts#L45)
+Defined in: [ui/src/api-server/crypto.ts:45](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/crypto.ts#L45)
 
 Decrypts a value produced by [encryptSecret](encryptSecret.md). A value without the
 `enc:v1:` prefix is returned unchanged — covers "" and any row written

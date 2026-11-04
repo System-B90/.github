@@ -8,7 +8,7 @@
 
 > **resolveStudentViewDate**(`rawDate`, `isStaff`): `string`
 
-Defined in: [ui/src/api-server/student-view.ts:93](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/student-view.ts#L93)
+Defined in: [ui/src/api-server/student-view.ts:94](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/student-view.ts#L94)
 
 Resolves which day to serve. Students always get the *server's* current day
 in the app timezone; a client-supplied date is not merely ignored for them

@@ -8,7 +8,7 @@
 
 > `const` **dynamic**: `"force-dynamic"` = `"force-dynamic"`
 
-Defined in: [ui/src/app/api/access-tokens/current/route.ts:10](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/app/api/access-tokens/current/route.ts#L10)
+Defined in: [ui/src/app/api/access-tokens/current/route.ts:10](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/app/api/access-tokens/current/route.ts#L10)
 
 Name: route.ts
 Purpose: Describe the access token the caller authenticated with — the

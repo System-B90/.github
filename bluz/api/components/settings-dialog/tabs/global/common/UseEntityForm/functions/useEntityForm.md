@@ -8,7 +8,7 @@
 
 > **useEntityForm**\<`TEntity`, `TValues`\>(`__namedParameters`): `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:82](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L82)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:82](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L82)
 
 The "list + form" state every settings tab was re-implementing: which entity
 is selected, whether we are creating, one value bag, and the

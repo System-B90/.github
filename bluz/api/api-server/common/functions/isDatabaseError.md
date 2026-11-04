@@ -8,7 +8,7 @@
 
 > **isDatabaseError**(`e`): `boolean`
 
-Defined in: [ui/src/api-server/common.ts:233](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/common.ts#L233)
+Defined in: [ui/src/api-server/common.ts:233](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/common.ts#L233)
 
 Detects a raw database driver error (postgres.js `PostgresError`, identified
 by its `name` or a 5-char SQLSTATE `code`). These carry internal details —

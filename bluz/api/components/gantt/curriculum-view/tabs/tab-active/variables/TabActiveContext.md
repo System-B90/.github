@@ -8,7 +8,7 @@
 
 > `const` **TabActiveContext**: `Context`\<`boolean`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/tab-active.ts:9](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/gantt/curriculum-view/tabs/tab-active.ts#L9)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/tab-active.ts:9](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/gantt/curriculum-view/tabs/tab-active.ts#L9)
 
 Whether the gantt tab this subtree renders in is the one on screen.
 Visited tabs stay mounted while hidden (#326), so window-level shortcuts

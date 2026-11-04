@@ -8,6 +8,6 @@
 
 > `const` **SECURITY\_TWEET\_COMMANDER**: `"מערכת בלוז"` = `"מערכת בלוז"`
 
-Defined in: [ui/src/api-server/peekaboo-security-tweet.ts:15](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-server/peekaboo-security-tweet.ts#L15)
+Defined in: [ui/src/api-server/peekaboo-security-tweet.ts:15](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-server/peekaboo-security-tweet.ts#L15)
 
 How the tweet names its sender, in place of the service account.

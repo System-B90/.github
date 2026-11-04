@@ -8,7 +8,7 @@
 
 > `const` **ITERATION\_QUERY\_PARAM**: `"it"` = `"it"`
 
-Defined in: [ui/src/api-shared/types/iteration.ts:16](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/iteration.ts#L16)
+Defined in: [ui/src/api-shared/types/iteration.ts:16](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/iteration.ts#L16)
 
 Query-string key carrying the active iteration id. Lives here rather than in
 `api-server` so the browser can build the same URLs the routes parse.

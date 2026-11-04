@@ -14,4 +14,5 @@
 ## Functions
 
 - [buildSecurityTweet](functions/buildSecurityTweet.md)
+- [markdownCodeSpan](functions/markdownCodeSpan.md)
 - [startSecurityTweets](functions/startSecurityTweets.md)

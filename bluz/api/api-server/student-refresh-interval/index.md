@@ -13,3 +13,4 @@
 ## Functions
 
 - [studentRefreshSeconds](functions/studentRefreshSeconds.md)
+- [studentRefreshSecondsFor](functions/studentRefreshSecondsFor.md)

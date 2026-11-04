@@ -8,7 +8,7 @@
 
 > **apiCompareEvents**(`__namedParameters`): `Promise`\<\{ `a`: [`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]; `b`: [`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]; \}\>
 
-Defined in: [ui/src/api-client/calendar.ts:202](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-client/calendar.ts#L202)
+Defined in: [ui/src/api-client/calendar.ts:202](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-client/calendar.ts#L202)
 
 Fetch the events of two iterations over the same date range in one round-trip,
 for side-by-side / week comparison views.

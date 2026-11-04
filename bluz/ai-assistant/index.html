@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1356,6 +1356,10 @@ when set, else the server key — the same provider chat would use.</p>
 <td><code>env.CC_SSO_BACKEND</code></td>
 <td><code>CC_SSO_BACKEND</code></td>
 </tr>
+<tr>
+<td><code>env.ANTHROPIC_CUSTOM_HEADERS</code></td>
+<td><code>ANTHROPIC_CUSTOM_HEADERS</code></td>
+</tr>
 </tbody>
 </table>
 <ul>
@@ -1364,6 +1368,14 @@ when set, else the server key — the same provider chat would use.</p>
   <code>Authorization: Bearer</code>. SSO keys are often refused on LiteLLM's OpenAI
   routes, so Bluz does not use them. A <code>/anthropic</code> pass-through base URL is
   kept as-is.</li>
+<li>Every request also carries the headers Claude Code identifies itself with:
+  <code>User-Agent: claude-cli/&lt;version&gt; (external, cli)</code>, <code>x-app: cli</code> and
+  <code>anthropic-beta: claude-code-20250219</code>. A gateway set up for Claude Code can
+  then route, meter or admit Bluz the same way.</li>
+<li><code>ANTHROPIC_CUSTOM_HEADERS</code> works as in Claude Code: one <code>Name: Value</code> per
+  line, added to every request. A name matching a default (any case)
+  replaces it — e.g. <code>User-Agent: claude-cli/2.1.0 (external, cli)</code> to pin a
+  version your gateway requires.</li>
 <li>The helper runs on the Bluz <strong>server</strong>, through the platform shell
   (<code>/bin/sh</code>; <code>cmd.exe</code> on Windows). It inherits Bluz's environment, so
   <code>CC_SSO_BACKEND</code> reaches it. Its trimmed stdout is the bearer token.</li>
@@ -1611,10 +1623,10 @@ stops calling tools correctly.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

@@ -8,7 +8,7 @@
 
 > `const` **AI\_MAX\_TOOL\_RESULT\_CHARS**: `12000` = `12_000`
 
-Defined in: [ui/src/api-shared/types/ai.ts:265](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/ai.ts#L265)
+Defined in: [ui/src/api-shared/types/ai.ts:265](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/ai.ts#L265)
 
 Character cap on one tool result before it is truncated. A tool that hands
 the model a 200KB curriculum tree spends the whole context window on a

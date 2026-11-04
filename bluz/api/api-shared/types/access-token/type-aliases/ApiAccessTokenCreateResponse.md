@@ -8,7 +8,7 @@
 
 > **ApiAccessTokenCreateResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:63](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/access-token.ts#L63)
+Defined in: [ui/src/api-shared/types/access-token.ts:63](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L63)
 
 `token` is the plaintext secret. Shown once — the server keeps only its hash.
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:63](https://github.com/Syst
 
 > **accessToken**: [`AccessTokenSummary`](AccessTokenSummary.md)
 
-Defined in: [ui/src/api-shared/types/access-token.ts:65](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/access-token.ts#L65)
+Defined in: [ui/src/api-shared/types/access-token.ts:65](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L65)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-shared/types/access-token.ts:65](https://github.com/Syst
 
 > **token**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:64](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/types/access-token.ts#L64)
+Defined in: [ui/src/api-shared/types/access-token.ts:64](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/types/access-token.ts#L64)

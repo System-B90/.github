@@ -8,7 +8,7 @@
 
 > `const` **OVERFLOW\_RULES**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:131](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/api-shared/gantt/cut-rules.ts#L131)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:131](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/api-shared/gantt/cut-rules.ts#L131)
 
 What happens when a week is over capacity even after the balancer has packed
 every day in it — the load simply does not fit into the week's working hours.

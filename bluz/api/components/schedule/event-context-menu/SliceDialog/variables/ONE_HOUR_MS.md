@@ -8,6 +8,6 @@
 
 > `const` **ONE\_HOUR\_MS**: `number`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:21](https://github.com/System-B90/Bluz/blob/2fa23325da73d58527b069b0943f3bd1e838efee/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L21)
+Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:24](https://github.com/System-B90/Bluz/blob/d025a8d42fb581c0b03907e922b963d1295ddc4b/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L24)
 
 The head "שעה + שארית" keeps.
