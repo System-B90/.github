@@ -8,7 +8,7 @@
 
 > **resolveEventDefaultColor**(`event`, `subject`, `fallback`): `string`
 
-Defined in: [ui/src/components/schedule/event-component/event-colors.ts:12](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-component/event-colors.ts#L12)
+Defined in: [ui/src/components/schedule/event-component/event-colors.ts:12](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-component/event-colors.ts#L12)
 
 Resolves the default display color for a calendar event (ignoring per-event overrides).
 Resolution order: Prayer default → Hive subject color → fallback.

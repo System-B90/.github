@@ -8,7 +8,7 @@
 
 > **junctionSortOrder**(`link`): `number`
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:40](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/gantt/import-tree.ts#L40)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:40](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/import-tree.ts#L40)
 
 Junction rows come back from the export with their `sortOrder`, but the
 shared `Api*` junction shapes do not declare it; read it defensively.

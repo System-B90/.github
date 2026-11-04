@@ -21,4 +21,5 @@
 
 ## Functions
 
+- [safeLoginUrl](functions/safeLoginUrl.md)
 - [useAiChat](functions/useAiChat.md)

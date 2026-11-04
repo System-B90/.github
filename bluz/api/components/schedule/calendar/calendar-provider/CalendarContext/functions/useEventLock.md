@@ -8,7 +8,7 @@
 
 > **useEventLock**(`eventId`): [`EventLockMessage`](../../../../../../api-shared/types/type-aliases/EventLockMessage.md) \| `undefined`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:87](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L87)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:93](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L93)
 
 `eventId`'s lock held by another user, if any; re-renders only when it changes.
 

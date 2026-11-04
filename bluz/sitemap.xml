@@ -833,10 +833,6 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
-         <loc>https://system-b90.github.io/bluz/api/components/schedule/calendar/calendar/SnapshotMenu/functions/eventsDateRange/</loc>
-         <lastmod>2026-11-04</lastmod>
-    </url>
-    <url>
          <loc>https://system-b90.github.io/bluz/api/components/schedule/calendar/calendar/SnapshotMenu/functions/SnapshotMenu/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -1685,6 +1681,14 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/components/schedule/event-component/PaStudentsTooltip/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/components/schedule/event-component/PaStudentsTooltip/functions/PaStudentsTooltip/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/components/schedule/event-component/EventTooltip/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -2369,7 +2373,19 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/components/base/CalendarFilterProvider/functions/instructorBusyIntervals/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/components/base/CalendarFilterProvider/functions/CalendarFiltersProvider/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/components/base/CalendarFilterProvider/functions/usePaInstructorId/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/components/base/CalendarFilterProvider/functions/isBusyDuring/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -2378,6 +2394,10 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/components/base/CalendarFilterProvider/type-aliases/CalendarFiltersContextState/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/components/base/CalendarFilterProvider/type-aliases/BusyInterval/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -3209,6 +3229,10 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/components/ai/use-ai-chat/functions/safeLoginUrl/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/components/ai/use-ai-chat/functions/useAiChat/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -3646,6 +3670,10 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/components/settings-dialog/tabs/PersonalSettings/functions/PersonalSettings/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/components/settings-dialog/tabs/PersonalSettings/functions/looksLikeSsoJwt/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -8165,6 +8193,14 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/pa-students/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/pa-students/functions/paCandidateStudents/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/api-shared/calendar/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -8226,6 +8262,30 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/api-shared/app-day/functions/nextAppMidnight/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/student-hidden-words/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/student-hidden-words/variables/SHUFFLE_STAFF_LEVELS/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/student-hidden-words/variables/STUDENT_HIDDEN_WORDS/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/student-hidden-words/functions/studentHiddenWord/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/student-hidden-words/functions/scrubStudentText/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/student-hidden-words/type-aliases/ShuffleStaffLevel/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -8302,6 +8362,18 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/api-shared/sse/functions/encodeSseEvent/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/snapshot-range/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/snapshot-range/functions/eventsDateRange/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-shared/snapshot-range/functions/snapshotRangeOf/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -10381,10 +10453,6 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
-         <loc>https://system-b90.github.io/bluz/api/api-shared/gantt/shuffle-names/variables/SHUFFLE_STAFF_LEVELS/</loc>
-         <lastmod>2026-11-04</lastmod>
-    </url>
-    <url>
          <loc>https://system-b90.github.io/bluz/api/api-shared/gantt/shuffle-names/variables/SHUFFLE_DESCRIPTION_MAX_LENGTH/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -10425,10 +10493,6 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
-         <loc>https://system-b90.github.io/bluz/api/api-shared/gantt/shuffle-names/functions/shuffleNameLevelWord/</loc>
-         <lastmod>2026-11-04</lastmod>
-    </url>
-    <url>
          <loc>https://system-b90.github.io/bluz/api/api-shared/gantt/shuffle-names/functions/normalizeShuffleName/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -10458,10 +10522,6 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/api-shared/gantt/shuffle-names/type-aliases/ShuffleHiveGroups/</loc>
-         <lastmod>2026-11-04</lastmod>
-    </url>
-    <url>
-         <loc>https://system-b90.github.io/bluz/api/api-shared/gantt/shuffle-names/type-aliases/ShuffleStaffLevel/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -12745,6 +12805,10 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/ai/anthropic-messages/functions/withoutAuthHeaders/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/ai/anthropic-messages/functions/toWireRequest/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -12762,6 +12826,18 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/ai/key-helper/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/ai/key-helper/variables/DEFAULT_KEY_FILE/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/ai/key-helper/functions/keyFromOutput/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/ai/key-helper/functions/findLoginUrl/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -13553,11 +13629,19 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/ai/provider/classes/AiLoginRequiredError/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/ai/provider/classes/AiProviderError/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/ai/litellm/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/ai/litellm/variables/HELPER_CONFLICTING_ENV/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -13578,6 +13662,10 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/ai/litellm/functions/claudeCodeHeaders/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/ai/litellm/functions/helperEnv/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>

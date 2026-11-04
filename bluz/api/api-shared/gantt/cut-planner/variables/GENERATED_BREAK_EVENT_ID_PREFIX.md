@@ -8,7 +8,7 @@
 
 > `const` **GENERATED\_BREAK\_EVENT\_ID\_PREFIX**: `"cut-break:"` = `"cut-break:"`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:182](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/cut-planner.ts#L182)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:182](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/gantt/cut-planner.ts#L182)
 
 Synthetic `ganttEventId` prefix for breaks the post-pass generated. They are
 real schedule events with no gantt event behind them; the prefix marks their

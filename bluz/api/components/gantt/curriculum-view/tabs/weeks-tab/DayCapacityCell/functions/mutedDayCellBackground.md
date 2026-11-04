@@ -8,7 +8,7 @@
 
 > **mutedDayCellBackground**(`theme`): `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DayCapacityCell.tsx:59](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DayCapacityCell.tsx#L59)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DayCapacityCell.tsx:59](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/DayCapacityCell.tsx#L59)
 
 The home-leave Saturday cell (#840): a light hatch on the normal paper with
 full-opacity text. It used to be 72% opacity on a grey fill, which left its

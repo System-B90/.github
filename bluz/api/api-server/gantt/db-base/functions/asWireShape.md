@@ -8,7 +8,7 @@
 
 > **asWireShape**\<`T`\>(`row`): `T`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:159](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/gantt/db-base.ts#L159)
+Defined in: [ui/src/api-server/gantt/db-base.ts:159](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/db-base.ts#L159)
 
 Hand a relational-query row out under its `Api*` type.
 

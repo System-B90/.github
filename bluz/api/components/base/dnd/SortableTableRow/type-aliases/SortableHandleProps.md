@@ -8,6 +8,6 @@
 
 > **SortableHandleProps** = `Pick`\<`ReturnType`\<*typeof* `useSortable`\>, `"attributes"` \| `"listeners"`\>
 
-Defined in: [ui/src/components/base/dnd/SortableTableRow.tsx:8](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/dnd/SortableTableRow.tsx#L8)
+Defined in: [ui/src/components/base/dnd/SortableTableRow.tsx:8](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/dnd/SortableTableRow.tsx#L8)
 
 What the drag-handle cell needs from dnd-kit to start a sort.

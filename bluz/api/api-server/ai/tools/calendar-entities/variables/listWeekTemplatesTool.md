@@ -8,4 +8,4 @@
 
 > `const` **listWeekTemplatesTool**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`Record`\<`string`, `never`\>\>
 
-Defined in: [ui/src/api-server/ai/tools/calendar-entities.ts:692](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/tools/calendar-entities.ts#L692)
+Defined in: [ui/src/api-server/ai/tools/calendar-entities.ts:692](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/tools/calendar-entities.ts#L692)

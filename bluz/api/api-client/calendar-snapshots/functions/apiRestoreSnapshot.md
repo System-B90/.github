@@ -8,7 +8,7 @@
 
 > **apiRestoreSnapshot**(`snapshotId`, `iterationId?`): `Promise`\<[`CalendarSnapshotRestoreResult`](../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult.md)\>
 
-Defined in: [ui/src/api-client/calendar-snapshots.ts:75](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-client/calendar-snapshots.ts#L75)
+Defined in: [ui/src/api-client/calendar-snapshots.ts:83](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-client/calendar-snapshots.ts#L83)
 
 Restores the calendar to a snapshot's state on the server. The server
 archives live events within the snapshot's date range, re-inserts the

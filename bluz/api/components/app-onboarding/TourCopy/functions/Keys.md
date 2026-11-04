@@ -8,7 +8,7 @@
 
 > **Keys**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/app-onboarding/TourCopy.tsx:31](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/app-onboarding/TourCopy.tsx#L31)
+Defined in: [ui/src/components/app-onboarding/TourCopy.tsx:31](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/app-onboarding/TourCopy.tsx#L31)
 
 A keyboard shortcut inside Hebrew copy, e.g. `<Keys>Ctrl+K</Keys>`.
 

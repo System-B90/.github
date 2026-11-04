@@ -8,6 +8,6 @@
 
 > `const` **INSTRUCTOR\_PANEL\_WIDTH**: `168` = `168`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx:139](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx#L139)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx:139](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/instructor-dnd/InstructorPanel.tsx#L139)
 
 Width of the instructor list when it is the open side-dock panel.

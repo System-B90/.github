@@ -8,7 +8,7 @@
 
 > **CutProgressDashes**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutProgressDashes.tsx:16](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/cut-dialog/CutProgressDashes.tsx#L16)
+Defined in: [ui/src/components/gantt/cut-dialog/CutProgressDashes.tsx:16](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/cut-dialog/CutProgressDashes.tsx#L16)
 
 Renders one dash per decision question. Answered dashes are filled, the
 current one is highlighted, and the remaining ones stay muted so the user can

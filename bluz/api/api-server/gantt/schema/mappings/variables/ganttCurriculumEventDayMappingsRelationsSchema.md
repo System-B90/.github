@@ -8,6 +8,6 @@
 
 > `const` **ganttCurriculumEventDayMappingsRelationsSchema**: `Relations`\<`"cMDA"`, \{ `curriculum`: `One`\<`"c"`, `true`\>; `day`: `One`\<`"d"`, `true`\>; `event`: `One`\<`"e"`, `false`\>; `module`: `One`\<`"m"`, `true`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/mappings.ts:72](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/gantt/schema/mappings.ts#L72)
+Defined in: [ui/src/api-server/gantt/schema/mappings.ts:72](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/schema/mappings.ts#L72)
 
 Relations definition for the Curriculum Event Day Mappings schema.

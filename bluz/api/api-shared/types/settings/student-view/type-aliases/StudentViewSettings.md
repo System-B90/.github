@@ -8,7 +8,7 @@
 
 > **StudentViewSettings** = `object`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:17](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/settings/student-view.ts#L17)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/settings/student-view.ts#L18)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/settings/student-view.ts:17](https://github
 
 > **eventNameMode**: [`StudentEventNameMode`](../enumerations/StudentEventNameMode.md)
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:18](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/settings/student-view.ts#L18)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:19](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/settings/student-view.ts#L19)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/settings/student-view.ts:18](https://github
 
 > `optional` **refreshSeconds?**: `number`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:29](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/settings/student-view.ts#L29)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:30](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/settings/student-view.ts#L30)
 
 How often an open student board refetches, in seconds, set by staff from
 the student preview. The board does not follow edits live; this is how
@@ -36,7 +36,7 @@ changes reach it. Unset falls back to `BLUZ_STUDENT_REFRESH_SECONDS`.
 
 > **typeLabels**: `Partial`\<`Record`\<[`EventType`](../../../event/enumerations/EventType.md), `string`\>\>
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:23](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/settings/student-view.ts#L23)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:24](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/settings/student-view.ts#L24)
 
 Per-type label placed before the subject symbol. Missing types fall back
 to `DEFAULT_STUDENT_TYPE_LABELS`.

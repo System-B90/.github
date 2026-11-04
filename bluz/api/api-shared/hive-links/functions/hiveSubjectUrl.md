@@ -8,7 +8,7 @@
 
 > **hiveSubjectUrl**(`subjectId`, `baseUrl?`): `string` \| `null`
 
-Defined in: [ui/src/api-shared/hive-links.ts:52](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/hive-links.ts#L52)
+Defined in: [ui/src/api-shared/hive-links.ts:52](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/hive-links.ts#L52)
 
 Link to a subject's Hive page.
 

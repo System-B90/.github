@@ -8,7 +8,7 @@
 
 > **useScheduleTours**(`__namedParameters`): `void`
 
-Defined in: [ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx:22](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx#L22)
+Defined in: [ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx:22](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/app-onboarding/schedule/use-schedule-tours.tsx#L22)
 
 Registers every schedule tutorial (#986) for as long as the screen is
 mounted: the intro, which runs by itself on the first visit, and one tour

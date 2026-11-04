@@ -8,7 +8,7 @@
 
 > **InsightBars**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/visuals/charts.tsx:14](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/curriculum-view/components/insights/visuals/charts.tsx#L14)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/visuals/charts.tsx:14](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/components/insights/visuals/charts.tsx#L14)
 
 Capacity-relative bars; a bar over its max is painted in warning.
 

@@ -8,6 +8,6 @@
 
 > `const` **DEFAULT\_STUDENT\_REFRESH\_SECONDS**: `90` = `90`
 
-Defined in: [ui/src/api-server/student-refresh-interval.ts:4](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/student-refresh-interval.ts#L4)
+Defined in: [ui/src/api-server/student-refresh-interval.ts:4](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/student-refresh-interval.ts#L4)
 
 Used when `BLUZ_STUDENT_REFRESH_SECONDS` is unset or not a number.

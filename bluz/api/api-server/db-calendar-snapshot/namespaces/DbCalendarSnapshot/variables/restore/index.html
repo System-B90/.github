@@ -1001,11 +1001,12 @@
 <blockquote>
 <p><code>const</code> <strong>restore</strong>: (<code>snapshotId</code>, <code>controller</code>, <code>iterationId?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult/"><code>CalendarSnapshotRestoreResult</code></a>&gt; = <code>restoreSnapshot</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-calendar-snapshot.ts#L297">ui/src/api-server/db-calendar-snapshot.ts:297</a></p>
-<p>Restores the calendar to a snapshot's state within the snapshot's own date
-range: live events inside the range are archived (soft-deleted), the
-snapshot's events are upserted back, and connected clients are notified via
-WebSocket broadcasts.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-calendar-snapshot.ts#L348">ui/src/api-server/db-calendar-snapshot.ts:348</a></p>
+<p>Restores the calendar to a snapshot's state within the snapshot's range
+(stored at capture; the events' own span for older snapshots): live events
+inside the range are archived (soft-deleted), the snapshot's events are
+upserted back, and connected clients are notified via WebSocket broadcasts.
+A snapshot of an empty range restores that range to empty.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="snapshotid">snapshotId<a class="headerlink" href="#snapshotid" title="Permanent link">&para;</a></h3>
 <p><code>string</code></p>

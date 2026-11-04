@@ -8,7 +8,7 @@
 
 > **validateOutsider**(`values`): [`ValidationResult`](../../../common/UseEntityForm/type-aliases/ValidationResult.md)\<[`OutsiderValues`](../type-aliases/OutsiderValues.md)\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:45](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L45)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:45](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L45)
 
 ## Parameters
 

@@ -8,7 +8,7 @@
 
 > **settledChange**(`id`, `outcome`, `sent`): [`SettledChange`](../type-aliases/SettledChange.md) \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts:124](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts#L124)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts:124](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts#L124)
 
 Turns a write outcome into the local-state change it calls for. A
 confirmation only re-applies a real server-side normalization (#156); a

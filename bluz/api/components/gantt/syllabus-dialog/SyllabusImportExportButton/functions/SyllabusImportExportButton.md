@@ -8,7 +8,7 @@
 
 > **SyllabusImportExportButton**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:23](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L23)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:23](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L23)
 
 Export this syllabus, or import one into the curriculum (#757). An import
 adds a copy and switches the dialog to it.

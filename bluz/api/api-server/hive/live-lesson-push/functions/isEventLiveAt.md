@@ -8,7 +8,7 @@
 
 > **isEventLiveAt**(`event`, `now`): `boolean`
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:55](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/live-lesson-push.ts#L55)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:55](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/live-lesson-push.ts#L55)
 
 Whether an event is running right now and carries a Hive lesson for some
 course: the same gate the activator uses, without its lateness cap — an

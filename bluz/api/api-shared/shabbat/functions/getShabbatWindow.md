@@ -8,7 +8,7 @@
 
 > **getShabbatWindow**(`date`): [`ShabbatWindow`](../../types/shabbat/type-aliases/ShabbatWindow.md)
 
-Defined in: [ui/src/api-shared/shabbat.ts:60](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/shabbat.ts#L60)
+Defined in: [ui/src/api-shared/shabbat.ts:60](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/shabbat.ts#L60)
 
 Candle lighting, havdalah and the derived event bounds for the week that
 contains `date`. Pure: usable without any client-side hebcal execution.

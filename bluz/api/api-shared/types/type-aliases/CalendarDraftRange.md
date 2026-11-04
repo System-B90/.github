@@ -8,7 +8,7 @@
 
 > **CalendarDraftRange** = `object`
 
-Defined in: [ui/src/api-shared/types.ts:107](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types.ts#L107)
+Defined in: [ui/src/api-shared/types.ts:115](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types.ts#L115)
 
 A draft's covered range, as sent on create/update.
 
@@ -18,7 +18,7 @@ A draft's covered range, as sent on create/update.
 
 > **rangeEnd**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:107](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types.ts#L107)
+Defined in: [ui/src/api-shared/types.ts:115](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types.ts#L115)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-shared/types.ts:107](https://github.com/System-B90/Bluz/
 
 > **rangeStart**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:107](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types.ts#L107)
+Defined in: [ui/src/api-shared/types.ts:115](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types.ts#L115)

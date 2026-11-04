@@ -6,9 +6,9 @@
 
 # Type Alias: AiStreamEvent
 
-> **AiStreamEvent** = \{ `allowFreeText`: `boolean`; `options`: [`AiChoiceOption`](AiChoiceOption.md)[]; `question`: `string`; `toolCallId`: `string`; `type`: [`Choice`](../enumerations/AiStreamEventType.md#choice); \} \| \{ `text`: `string`; `type`: [`Delta`](../enumerations/AiStreamEventType.md#delta); \} \| \{ `awaitingApproval`: `boolean`; `messages`: [`AiMessage`](AiMessage.md)[]; `model`: `string`; `type`: [`Done`](../enumerations/AiStreamEventType.md#done); `usage?`: [`AiUsage`](AiUsage.md); \} \| \{ `message`: `string`; `messages?`: [`AiMessage`](AiMessage.md)[]; `type`: [`Error`](../enumerations/AiStreamEventType.md#error); \} \| \{ `text`: `string`; `type`: [`Reasoning`](../enumerations/AiStreamEventType.md#reasoning); \} \| \{ `text`: `string`; `type`: [`ReasoningDelta`](../enumerations/AiStreamEventType.md#reasoningdelta); \} \| \{ `arguments`: `unknown`; `danger`: [`AiToolDanger`](../enumerations/AiToolDanger.md); `impact?`: `string`[]; `name`: `string`; `summary`: `string`; `title`: `string`; `toolCallId`: `string`; `type`: [`ToolProposal`](../enumerations/AiStreamEventType.md#toolproposal); \} \| \{ `detail?`: `unknown`; `durationMs?`: `number`; `name`: `string`; `ok`: `boolean`; `summary`: `string`; `title`: `string`; `toolCallId`: `string`; `type`: [`ToolResult`](../enumerations/AiStreamEventType.md#toolresult); \} \| \{ `name`: `string`; `title`: `string`; `toolCallId`: `string`; `type`: [`ToolStart`](../enumerations/AiStreamEventType.md#toolstart); \}
+> **AiStreamEvent** = \{ `allowFreeText`: `boolean`; `options`: [`AiChoiceOption`](AiChoiceOption.md)[]; `question`: `string`; `toolCallId`: `string`; `type`: [`Choice`](../enumerations/AiStreamEventType.md#choice); \} \| \{ `text`: `string`; `type`: [`Delta`](../enumerations/AiStreamEventType.md#delta); \} \| \{ `awaitingApproval`: `boolean`; `messages`: [`AiMessage`](AiMessage.md)[]; `model`: `string`; `type`: [`Done`](../enumerations/AiStreamEventType.md#done); `usage?`: [`AiUsage`](AiUsage.md); \} \| \{ `loginUrl?`: `string`; `message`: `string`; `messages?`: [`AiMessage`](AiMessage.md)[]; `type`: [`Error`](../enumerations/AiStreamEventType.md#error); \} \| \{ `text`: `string`; `type`: [`Reasoning`](../enumerations/AiStreamEventType.md#reasoning); \} \| \{ `text`: `string`; `type`: [`ReasoningDelta`](../enumerations/AiStreamEventType.md#reasoningdelta); \} \| \{ `arguments`: `unknown`; `danger`: [`AiToolDanger`](../enumerations/AiToolDanger.md); `impact?`: `string`[]; `name`: `string`; `summary`: `string`; `title`: `string`; `toolCallId`: `string`; `type`: [`ToolProposal`](../enumerations/AiStreamEventType.md#toolproposal); \} \| \{ `detail?`: `unknown`; `durationMs?`: `number`; `name`: `string`; `ok`: `boolean`; `summary`: `string`; `title`: `string`; `toolCallId`: `string`; `type`: [`ToolResult`](../enumerations/AiStreamEventType.md#toolresult); \} \| \{ `name`: `string`; `title`: `string`; `toolCallId`: `string`; `type`: [`ToolStart`](../enumerations/AiStreamEventType.md#toolstart); \}
 
-Defined in: [ui/src/api-shared/types/ai.ts:167](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/ai.ts#L167)
+Defined in: [ui/src/api-shared/types/ai.ts:167](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/ai.ts#L167)
 
 One frame of a streamed turn. A turn ends with exactly one `Done` **or**
 one `Error`, never both.
@@ -85,7 +85,14 @@ their tool results so an approved call resumes with its context.
 
 ### Type Literal
 
-\{ `message`: `string`; `messages?`: [`AiMessage`](AiMessage.md)[]; `type`: [`Error`](../enumerations/AiStreamEventType.md#error); \}
+\{ `loginUrl?`: `string`; `message`: `string`; `messages?`: [`AiMessage`](AiMessage.md)[]; `type`: [`Error`](../enumerations/AiStreamEventType.md#error); \}
+
+#### loginUrl?
+
+> `optional` **loginUrl?**: `string`
+
+Set when the server's key helper waits on an SSO login: the
+browser opens it, and the next turn sent after signing in works.
 
 #### message
 

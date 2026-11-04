@@ -12,12 +12,10 @@
 - [ShuffleHiveGroups](type-aliases/ShuffleHiveGroups.md)
 - [ShuffleLevels](type-aliases/ShuffleLevels.md)
 - [ShuffleRenames](type-aliases/ShuffleRenames.md)
-- [ShuffleStaffLevel](type-aliases/ShuffleStaffLevel.md)
 
 ## Variables
 
 - [SHUFFLE\_DESCRIPTION\_MAX\_LENGTH](variables/SHUFFLE_DESCRIPTION_MAX_LENGTH.md)
-- [SHUFFLE\_STAFF\_LEVELS](variables/SHUFFLE_STAFF_LEVELS.md)
 
 ## Functions
 
@@ -36,5 +34,16 @@
 - [renameShuffleKeys](functions/renameShuffleKeys.md)
 - [retagShuffles](functions/retagShuffles.md)
 - [shuffleNameError](functions/shuffleNameError.md)
-- [shuffleNameLevelWord](functions/shuffleNameLevelWord.md)
 - [withShuffleLevel](functions/withShuffleLevel.md)
+
+## References
+
+### SHUFFLE\_STAFF\_LEVELS
+
+Re-exports [SHUFFLE_STAFF_LEVELS](../../student-hidden-words/variables/SHUFFLE_STAFF_LEVELS.md)
+
+***
+
+### ShuffleStaffLevel
+
+Re-exports [ShuffleStaffLevel](../../student-hidden-words/type-aliases/ShuffleStaffLevel.md)

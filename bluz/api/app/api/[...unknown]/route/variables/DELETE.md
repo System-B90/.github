@@ -8,7 +8,7 @@
 
 > `const` **DELETE**: (`request`) => `Promise`\<`Response`\> = `notFound`
 
-Defined in: [ui/src/app/api/\[...unknown\]/route.ts:43](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/app/api/[...unknown]/route.ts#L43)
+Defined in: [ui/src/app/api/\[...unknown\]/route.ts:43](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/[...unknown]/route.ts#L43)
 
 Every `/api/*` path no real route matches lands here — Next resolves a
 catch-all last. Answers the same 404 to everyone; a student session is

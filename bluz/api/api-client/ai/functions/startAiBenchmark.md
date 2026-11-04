@@ -8,7 +8,7 @@
 
 > **startAiBenchmark**(`signal?`): `Promise`\<[`AiBenchmarkJob`](../../../api-shared/types/ai-benchmark/type-aliases/AiBenchmarkJob.md)\>
 
-Defined in: [ui/src/api-client/ai.ts:131](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-client/ai.ts#L131)
+Defined in: [ui/src/api-client/ai.ts:131](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-client/ai.ts#L131)
 
 Starts the assistant self-test in the background (#704).
 

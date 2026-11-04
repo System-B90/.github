@@ -8,7 +8,7 @@
 
 > `const` **HELP\_GROUPS**: `object`
 
-Defined in: [ui/src/components/app-onboarding/labels.ts:26](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/app-onboarding/labels.ts#L26)
+Defined in: [ui/src/components/app-onboarding/labels.ts:26](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/app-onboarding/labels.ts#L26)
 
 Section headings in the help panel — centralised so two contributors never
 spell the same section differently and split it in two.

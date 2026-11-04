@@ -8,7 +8,7 @@
 
 > **constraintInsertFromPayload**(`body`): `object`
 
-Defined in: [ui/src/api-server/gantt/db-constraints.ts:89](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/gantt/db-constraints.ts#L89)
+Defined in: [ui/src/api-server/gantt/db-constraints.ts:89](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/db-constraints.ts#L89)
 
 Validates a client (or assistant) constraint payload and maps it to the
 row shape. Shared by the REST route and the AI tool so both enforce the

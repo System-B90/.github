@@ -8,7 +8,7 @@
 
 > **createRecurrenceException**(`data`, `executor?`): `Promise`\<\{ `createdAt`: `Date`; `curriculumId`: `string`; `dayId`: `string`; `eventId`: `string`; `id`: `string`; `materializedEventId`: `string` \| `null`; \}\>
 
-Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:38](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L38)
+Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:38](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L38)
 
 Removes a single recurring occurrence: marks the day as excepted so the
 event no longer echoes onto it, without touching the source event.

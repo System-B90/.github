@@ -6,7 +6,7 @@
 
 # Class: ApiKeyHelper
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:31](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L31)
+Defined in: [ui/src/api-server/ai/key-helper.ts:84](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L84)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/key-helper.ts:31](https://github.com/System-B9
 
 > **new ApiKeyHelper**(`options`): `ApiKeyHelper`
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:37](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L37)
+Defined in: [ui/src/api-server/ai/key-helper.ts:93](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L93)
 
 #### Parameters
 
@@ -36,6 +36,12 @@ Run through the platform shell (`/bin/sh`, `cmd.exe` on Windows).
 
 The helper's environment — where `CC_SSO_BACKEND` reaches it.
 
+###### keyFile?
+
+`string`
+
+File the helper writes its key to; read after each successful run.
+
 #### Returns
 
 `ApiKeyHelper`
@@ -46,7 +52,7 @@ The helper's environment — where `CC_SSO_BACKEND` reaches it.
 
 > **get**(`signal?`): `Promise`\<`string`\>
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:49](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L49)
+Defined in: [ui/src/api-server/ai/key-helper.ts:108](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L108)
 
 #### Parameters
 
@@ -61,6 +67,10 @@ the background and its key serves the next request.
 
 `Promise`\<`string`\>
 
+#### Throws
+
+AiLoginRequiredError when the helper waits on an SSO login.
+
 #### Implementation of
 
 `AiKeySource.get`
@@ -71,7 +81,7 @@ the background and its key serves the next request.
 
 > **invalidate**(): `void`
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:72](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L72)
+Defined in: [ui/src/api-server/ai/key-helper.ts:137](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L137)
 
 #### Returns
 

@@ -8,13 +8,14 @@
 
 > **studentEventName**(`event`, `subjectSymbol`, `settings`): `string`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:105](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/settings/student-view.ts#L105)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:107](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/settings/student-view.ts#L107)
 
 The name a student sees for an event. A staff-set `studentName` wins in
 every mode (#966). Otherwise, in symbol mode the real name is only used for
 break/prayer; everything else is built from the type label and the subject
 symbol, and degrades to the label (or a generic word) rather than falling
-back to the real name.
+back to the real name. Words students must never see are scrubbed from
+every result, the staff override included.
 
 ## Parameters
 

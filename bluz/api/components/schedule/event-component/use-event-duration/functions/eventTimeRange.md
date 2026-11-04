@@ -8,7 +8,7 @@
 
 > **eventTimeRange**(`start`, `end`): `string`
 
-Defined in: [ui/src/components/schedule/event-component/use-event-duration.ts:12](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-component/use-event-duration.ts#L12)
+Defined in: [ui/src/components/schedule/event-component/use-event-duration.ts:12](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-component/use-event-duration.ts#L12)
 
 The tooltip's `HH:mm - HH:mm` range, isolated so RTL layout cannot reverse
 the two sides. Split out from the hook so the isolation is unit-testable.

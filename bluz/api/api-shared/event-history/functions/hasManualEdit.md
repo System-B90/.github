@@ -8,7 +8,7 @@
 
 > **hasManualEdit**(`entries`): `boolean`
 
-Defined in: [ui/src/api-shared/event-history.ts:92](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/event-history.ts#L92)
+Defined in: [ui/src/api-shared/event-history.ts:92](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/event-history.ts#L92)
 
 Whether an event's log contains a human edit, i.e. any change whose
 initiator is not part of the gantt pipeline.

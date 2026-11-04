@@ -8,7 +8,7 @@
 
 > **EventStatusIcons**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-component/EventStatusIcons.tsx:43](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-component/EventStatusIcons.tsx#L43)
+Defined in: [ui/src/components/schedule/event-component/EventStatusIcons.tsx:44](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-component/EventStatusIcons.tsx#L44)
 
 ## Parameters
 

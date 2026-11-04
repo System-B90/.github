@@ -8,7 +8,7 @@
 
 > **AccessTokenDocument** = `object`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:41](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L41)
+Defined in: [ui/src/api-server/db-access-tokens.ts:41](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L41)
 
 One personal access token. `user` is the identity snapshot taken at
 creation — the token acts as that user with that clearance, the same data a
@@ -20,7 +20,7 @@ next-auth session carries.
 
 > **createdAt**: `Date`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:49](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L49)
+Defined in: [ui/src/api-server/db-access-tokens.ts:49](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L49)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:49](https://github.com/System
 
 > **expiresAt**: `Date`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:50](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L50)
+Defined in: [ui/src/api-server/db-access-tokens.ts:50](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L50)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:50](https://github.com/System
 
 > **hint**: `string`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:48](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L48)
+Defined in: [ui/src/api-server/db-access-tokens.ts:48](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L48)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:48](https://github.com/System
 
 > **id**: `string`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:42](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L42)
+Defined in: [ui/src/api-server/db-access-tokens.ts:42](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L42)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:42](https://github.com/System
 
 > **lastUsedAt**: `Date` \| `null`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:51](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L51)
+Defined in: [ui/src/api-server/db-access-tokens.ts:51](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L51)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:51](https://github.com/System
 
 > **name**: `string`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:45](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L45)
+Defined in: [ui/src/api-server/db-access-tokens.ts:45](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L45)
 
 ***
 
@@ -68,7 +68,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:45](https://github.com/System
 
 > **scope**: [`AccessTokenScope`](../../../api-shared/types/access-token/enumerations/AccessTokenScope.md)
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:46](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L46)
+Defined in: [ui/src/api-server/db-access-tokens.ts:46](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L46)
 
 ***
 
@@ -76,7 +76,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:46](https://github.com/System
 
 > **tokenHash**: `string`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:47](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L47)
+Defined in: [ui/src/api-server/db-access-tokens.ts:47](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L47)
 
 ***
 
@@ -84,7 +84,7 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:47](https://github.com/System
 
 > **user**: `AuthSessionUser`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:44](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L44)
+Defined in: [ui/src/api-server/db-access-tokens.ts:44](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L44)
 
 ***
 
@@ -92,4 +92,4 @@ Defined in: [ui/src/api-server/db-access-tokens.ts:44](https://github.com/System
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:43](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L43)
+Defined in: [ui/src/api-server/db-access-tokens.ts:43](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-access-tokens.ts#L43)

@@ -8,7 +8,7 @@
 
 > **ShuffleSubmenu**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:22](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L22)
+Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:22](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L22)
 
 The context menu's shuffle assignment, beside the course one. Stays open on click.
 

@@ -8,7 +8,7 @@
 
 > **User** = `object`
 
-Defined in: [ui/src/components/schedule/types/user.ts:3](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/types/user.ts#L3)
+Defined in: [ui/src/components/schedule/types/user.ts:3](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/types/user.ts#L3)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/types/user.ts:3](https://github.com/Syst
 
 > `optional` **email?**: `string`
 
-Defined in: [ui/src/components/schedule/types/user.ts:8](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/types/user.ts#L8)
+Defined in: [ui/src/components/schedule/types/user.ts:8](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/types/user.ts#L8)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/types/user.ts:8](https://github.com/Syst
 
 > **id**: `string`
 
-Defined in: [ui/src/components/schedule/types/user.ts:4](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/types/user.ts#L4)
+Defined in: [ui/src/components/schedule/types/user.ts:4](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/types/user.ts#L4)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/schedule/types/user.ts:4](https://github.com/Syst
 
 > **name**: `string`
 
-Defined in: [ui/src/components/schedule/types/user.ts:5](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/types/user.ts#L5)
+Defined in: [ui/src/components/schedule/types/user.ts:5](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/types/user.ts#L5)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/schedule/types/user.ts:5](https://github.com/Syst
 
 > **type**: [`UserType`](UserType.md)
 
-Defined in: [ui/src/components/schedule/types/user.ts:6](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/types/user.ts#L6)
+Defined in: [ui/src/components/schedule/types/user.ts:6](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/types/user.ts#L6)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [ui/src/components/schedule/types/user.ts:6](https://github.com/Syst
 
 > `optional` **username?**: `string`
 
-Defined in: [ui/src/components/schedule/types/user.ts:7](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/types/user.ts#L7)
+Defined in: [ui/src/components/schedule/types/user.ts:7](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/types/user.ts#L7)

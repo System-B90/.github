@@ -9,4 +9,5 @@
 ## Functions
 
 - [aiModelHelper](functions/aiModelHelper.md)
+- [looksLikeSsoJwt](functions/looksLikeSsoJwt.md)
 - [PersonalSettings](functions/PersonalSettings.md)

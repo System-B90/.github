@@ -8,7 +8,7 @@
 
 > **POST**(`request`): `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/ai/chat/route.ts:119](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/app/api/ai/chat/route.ts#L119)
+Defined in: [ui/src/app/api/ai/chat/route.ts:122](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/ai/chat/route.ts#L122)
 
 ## Parameters
 

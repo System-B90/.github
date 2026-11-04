@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/constraints/route.ts:65](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/app/api/gantt/curriculums/[id]/constraints/route.ts#L65)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/constraints/route.ts:65](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/gantt/curriculums/[id]/constraints/route.ts#L65)
 
 POST: Creates a new relational or temporal constraint.
 

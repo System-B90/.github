@@ -20,6 +20,12 @@ Re-exports [AiChatRequest](provider/type-aliases/AiChatRequest.md)
 
 ***
 
+### AiLoginRequiredError
+
+Re-exports [AiLoginRequiredError](provider/classes/AiLoginRequiredError.md)
+
+***
+
 ### AiNotConfiguredError
 
 Re-exports [AiNotConfiguredError](provider/classes/AiNotConfiguredError.md)

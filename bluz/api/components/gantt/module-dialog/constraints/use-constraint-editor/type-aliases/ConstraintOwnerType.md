@@ -8,6 +8,6 @@
 
 > **ConstraintOwnerType** = `"event"` \| `"module"`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts:15](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts#L15)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts:15](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts#L15)
 
 Identifies whose constraints are being edited — a module or a single event.

@@ -8,6 +8,6 @@
 
 > `const` **GanttHoursLabel**: `React.FC`\<\{ `minutes`: `number`; \}\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHoursLabel.tsx:7](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHoursLabel.tsx#L7)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHoursLabel.tsx:7](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHoursLabel.tsx#L7)
 
 Required-hours column pinned to the end of a label cell (#766).

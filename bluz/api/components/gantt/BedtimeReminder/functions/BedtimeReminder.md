@@ -8,7 +8,7 @@
 
 > **BedtimeReminder**(): `Element`
 
-Defined in: [ui/src/components/gantt/BedtimeReminder.tsx:36](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/BedtimeReminder.tsx#L36)
+Defined in: [ui/src/components/gantt/BedtimeReminder.tsx:36](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/BedtimeReminder.tsx#L36)
 
 Friendly nudge to go to sleep when the Gantt page is in use late at night.
 Checks the local clock every minute while the tab is visible; after the

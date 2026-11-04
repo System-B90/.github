@@ -9,3 +9,12 @@
 ## Classes
 
 - [ApiKeyHelper](classes/ApiKeyHelper.md)
+
+## Variables
+
+- [DEFAULT\_KEY\_FILE](variables/DEFAULT_KEY_FILE.md)
+
+## Functions
+
+- [findLoginUrl](functions/findLoginUrl.md)
+- [keyFromOutput](functions/keyFromOutput.md)

@@ -8,7 +8,7 @@
 
 > **CalendarFiltersContextState** = `object`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:24](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L24)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:25](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L25)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:24](https://githu
 
 > **clearFilters**: () => `void`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:63](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L63)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:64](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L64)
 
 Resets every filter to its default, showing the full calendar again.
 
@@ -30,7 +30,7 @@ Resets every filter to its default, showing the full calendar again.
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:25](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L25)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:26](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L26)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:25](https://githu
 
 > **eventFilteredOpacity**: (`event`) => `number`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:58](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L58)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:59](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L59)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:58](https://githu
 
 > **filteredCourses**: [`CourseId`](../../../../api-shared/types/course/type-aliases/CourseId.md)[]
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:28](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L28)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:29](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L29)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:28](https://githu
 
 > **filteredInstructors**: `number`[]
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:26](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L26)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:27](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L27)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:26](https://githu
 
 > **filteredRooms**: `string`[]
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:33](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L33)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:34](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L34)
 
 Room resource keys to show; empty shows every room (#1018).
 
@@ -82,7 +82,7 @@ Room resource keys to show; empty shows every room (#1018).
 
 > **hasActiveFilters**: `boolean`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:61](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L61)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:62](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L62)
 
 True when any filter is narrowing the calendar.
 
@@ -92,7 +92,7 @@ True when any filter is narrowing the calendar.
 
 > **setFilteredCourses**: `Dispatch`\<`SetStateAction`\<[`CourseId`](../../../../api-shared/types/course/type-aliases/CourseId.md)[]\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:29](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L29)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:30](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L30)
 
 ***
 
@@ -100,7 +100,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:29](https://githu
 
 > **setFilteredInstructors**: `Dispatch`\<`SetStateAction`\<`number`[]\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:27](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L27)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:28](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L28)
 
 ***
 
@@ -108,7 +108,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:27](https://githu
 
 > **setFilteredRooms**: `Dispatch`\<`SetStateAction`\<`string`[]\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:34](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L34)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:35](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L35)
 
 ***
 
@@ -116,7 +116,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:34](https://githu
 
 > **setShowHiveLessonIssues**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:50](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L50)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:51](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L51)
 
 ***
 
@@ -124,7 +124,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:50](https://githu
 
 > **setShowMisconfigurations**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:43](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L43)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:44](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L44)
 
 ***
 
@@ -132,7 +132,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:43](https://githu
 
 > **setShowPAsFor**: `Dispatch`\<`SetStateAction`\<`null` \| `number`\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:31](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L31)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:32](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L32)
 
 ***
 
@@ -140,7 +140,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:31](https://githu
 
 > **setShowPrayers**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:41](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L41)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:42](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L42)
 
 ***
 
@@ -148,7 +148,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:41](https://githu
 
 > **setShowUnstaffedOnly**: `Dispatch`\<`SetStateAction`\<`boolean`\>\>
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:56](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L56)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:57](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L57)
 
 ***
 
@@ -156,7 +156,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:56](https://githu
 
 > **showHiveLessonIssues**: `boolean`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:49](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L49)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:50](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L50)
 
 Mark events whose Hive lesson is missing or will not reach their
 shuffles (#1025). Off by default: a schedule still being built would be
@@ -168,7 +168,7 @@ all markers.
 
 > **showMisconfigurations**: `boolean`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:42](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L42)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:43](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L43)
 
 ***
 
@@ -176,7 +176,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:42](https://githu
 
 > **showPAsFor**: `null` \| `number`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:30](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L30)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:31](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L31)
 
 ***
 
@@ -184,7 +184,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:30](https://githu
 
 > **showPrayers**: `boolean`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:40](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L40)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:41](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L41)
 
 Tint the daily prayer windows and the Shabbat window (כניסת שבת → צאת
 שבת, #996) light red, and show the hand-made prayer events. Off hides
@@ -196,7 +196,7 @@ all three.
 
 > **showUnstaffedOnly**: `boolean`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:55](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/CalendarFilterProvider.tsx#L55)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:56](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/CalendarFilterProvider.tsx#L56)
 
 Show only events still missing a מבזר (#1029). Prayers and breaks never
 take one, so they leave the calendar too.

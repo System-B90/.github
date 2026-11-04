@@ -8,7 +8,7 @@
 
 > `const` **TEMPLATE\_REFERENCE\_WEEK\_START**: `"2023-01-01"` = `"2023-01-01"`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:150](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/week-template.ts#L150)
+Defined in: [ui/src/api-shared/types/week-template.ts:150](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/week-template.ts#L150)
 
 Sunday of the week every template is stored in. Any fixed Sunday works;
 only the weekday and wall-clock time of an event are meaningful.

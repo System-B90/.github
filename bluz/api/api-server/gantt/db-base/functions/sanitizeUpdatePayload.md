@@ -8,7 +8,7 @@
 
 > **sanitizeUpdatePayload**(`table`, `data`, `typeName`): `Record`\<`string`, `unknown`\>
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:126](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/gantt/db-base.ts#L126)
+Defined in: [ui/src/api-server/gantt/db-base.ts:126](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/db-base.ts#L126)
 
 The update-path counterpart of [sanitizeCreatePayload](sanitizeCreatePayload.md): same column
 allow-list and same enum validation, minus the required-field check (a PATCH

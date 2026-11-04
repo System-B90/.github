@@ -13,3 +13,4 @@
 ## Functions
 
 - [toWireRequest](functions/toWireRequest.md)
+- [withoutAuthHeaders](functions/withoutAuthHeaders.md)

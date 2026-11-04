@@ -8,7 +8,7 @@
 
 > **buildInsightContext**(`__namedParameters`): [`InsightContext`](../../types/type-aliases/InsightContext.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:121](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L121)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/build-context.ts:121](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/components/insights/build-context.ts#L121)
 
 Derives the per-week/day load and a flat, annotated event list once, so the
 ~40 generators each stay a cheap pass over precomputed arrays.

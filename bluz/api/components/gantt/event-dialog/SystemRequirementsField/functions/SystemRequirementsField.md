@@ -8,7 +8,7 @@
 
 > **SystemRequirementsField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/event-dialog/SystemRequirementsField.tsx:18](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/event-dialog/SystemRequirementsField.tsx#L18)
+Defined in: [ui/src/components/gantt/event-dialog/SystemRequirementsField.tsx:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/event-dialog/SystemRequirementsField.tsx#L18)
 
 Editable list of free-text system requirements. Edits are buffered locally
 and committed on blur / add / remove, mirroring the diff-on-blur pattern of

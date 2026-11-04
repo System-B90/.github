@@ -8,7 +8,7 @@
 
 > **GanttPageToolbar**(`gridTools`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/GanttPageToolbar.tsx:147](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/curriculum-view/tabs/GanttPageToolbar.tsx#L147)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/GanttPageToolbar.tsx:147](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/tabs/GanttPageToolbar.tsx#L147)
 
 Gantt page toolbar, inline with the tab names on the opposite side.
 Folds into a burger menu when the viewport is too narrow.

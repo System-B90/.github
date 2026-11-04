@@ -994,6 +994,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#keyfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        keyFile?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1089,6 +1100,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#throws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Throws
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#implementation-of" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1172,7 +1194,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/ai/key-helper</a> / ApiKeyHelper</p>
 <h1 id="class-apikeyhelper">Class: ApiKeyHelper<a class="headerlink" href="#class-apikeyhelper" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L31">ui/src/api-server/ai/key-helper.ts:31</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L84">ui/src/api-server/ai/key-helper.ts:84</a></p>
 <h2 id="implements">Implements<a class="headerlink" href="#implements" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../../key-source/type-aliases/AiKeySource/"><code>AiKeySource</code></a></li>
@@ -1182,7 +1204,7 @@
 <blockquote>
 <p><strong>new ApiKeyHelper</strong>(<code>options</code>): <code>ApiKeyHelper</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L37">ui/src/api-server/ai/key-helper.ts:37</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L93">ui/src/api-server/ai/key-helper.ts:93</a></p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <h5 id="options">options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h5>
 <h6 id="command">command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h6>
@@ -1191,6 +1213,9 @@
 <h6 id="env">env<a class="headerlink" href="#env" title="Permanent link">&para;</a></h6>
 <p><code>ProcessEnv</code></p>
 <p>The helper's environment — where <code>CC_SSO_BACKEND</code> reaches it.</p>
+<h6 id="keyfile">keyFile?<a class="headerlink" href="#keyfile" title="Permanent link">&para;</a></h6>
+<p><code>string</code></p>
+<p>File the helper writes its key to; read after each successful run.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
 <p><code>ApiKeyHelper</code></p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
@@ -1198,7 +1223,7 @@
 <blockquote>
 <p><strong>get</strong>(<code>signal?</code>): <code>Promise</code>\&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L49">ui/src/api-server/ai/key-helper.ts:49</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L108">ui/src/api-server/ai/key-helper.ts:108</a></p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
 <h5 id="signal">signal?<a class="headerlink" href="#signal" title="Permanent link">&para;</a></h5>
 <p><code>AbortSignal</code></p>
@@ -1206,6 +1231,8 @@
 the background and its key serves the next request.</p>
 <h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<code>string</code>&gt;</p>
+<h4 id="throws">Throws<a class="headerlink" href="#throws" title="Permanent link">&para;</a></h4>
+<p>AiLoginRequiredError when the helper waits on an SSO login.</p>
 <h4 id="implementation-of">Implementation of<a class="headerlink" href="#implementation-of" title="Permanent link">&para;</a></h4>
 <p><code>AiKeySource.get</code></p>
 <hr />
@@ -1213,7 +1240,7 @@ the background and its key serves the next request.</p>
 <blockquote>
 <p><strong>invalidate</strong>(): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-helper.ts#L72">ui/src/api-server/ai/key-helper.ts:72</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L137">ui/src/api-server/ai/key-helper.ts:137</a></p>
 <h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
 <h4 id="implementation-of_1">Implementation of<a class="headerlink" href="#implementation-of_1" title="Permanent link">&para;</a></h4>

@@ -8,12 +8,13 @@
 
 > `const` **restore**: (`snapshotId`, `controller`, `iterationId?`) => `Promise`\<[`CalendarSnapshotRestoreResult`](../../../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult.md)\> = `restoreSnapshot`
 
-Defined in: [ui/src/api-server/db-calendar-snapshot.ts:297](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-calendar-snapshot.ts#L297)
+Defined in: [ui/src/api-server/db-calendar-snapshot.ts:348](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-calendar-snapshot.ts#L348)
 
-Restores the calendar to a snapshot's state within the snapshot's own date
-range: live events inside the range are archived (soft-deleted), the
-snapshot's events are upserted back, and connected clients are notified via
-WebSocket broadcasts.
+Restores the calendar to a snapshot's state within the snapshot's range
+(stored at capture; the events' own span for older snapshots): live events
+inside the range are archived (soft-deleted), the snapshot's events are
+upserted back, and connected clients are notified via WebSocket broadcasts.
+A snapshot of an empty range restores that range to empty.
 
 ## Parameters
 

@@ -8,7 +8,7 @@
 
 > **normalizeShuffleDescriptions**(`descriptions`, `names`): [`ShuffleDescriptions`](../type-aliases/ShuffleDescriptions.md)
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:50](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/shuffle-names.ts#L50)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:58](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/gantt/shuffle-names.ts#L58)
 
 Keeps only the descriptions of `names`, trimmed and capped at Hive's limit.
 Blank descriptions are dropped so "no description" has one representation.

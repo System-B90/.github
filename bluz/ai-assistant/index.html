@@ -505,6 +505,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#sso-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSO login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#when-the-helper-fails" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1144,6 +1155,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#sso-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSO login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#when-the-helper-fails" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1270,7 +1292,7 @@ flows, what the model is told, and what stops it.</p>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1"># ...or a LiteLLM proxy with an SSO key helper (same values as Claude Code)</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">export</span><span class="w"> </span><span class="nv">AI_PROVIDER</span><span class="o">=</span>litellm
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span>https://litellm.corp<span class="w">   </span><span class="c1"># LiteLLM root</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nb">export</span><span class="w"> </span><span class="nv">LITELLM_API_KEY_HELPER</span><span class="o">=</span>cc-sso-helper<span class="w">      </span><span class="c1"># Claude Code's apiKeyHelper</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nb">export</span><span class="w"> </span><span class="nv">LITELLM_API_KEY_HELPER</span><span class="o">=</span><span class="s2">"npx -y --package=@applai/cc-sso-helper cc-sso-helper"</span><span class="w">  </span><span class="c1"># Claude Code's apiKeyHelper</span>
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CC_SSO_BACKEND</span><span class="o">=</span>&lt;backend&gt;<span class="w">                  </span><span class="c1"># read by the helper</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>npm<span class="w"> </span>run<span class="w"> </span>dev
@@ -1385,13 +1407,32 @@ when set, else the server key — the same provider chat would use.</p>
   Set it to any alias your LiteLLM routes.</li>
 </ul>
 <h4 id="installing-cc-sso-helper">Installing cc-sso-helper<a class="headerlink" href="#installing-cc-sso-helper" title="Permanent link">&para;</a></h4>
-<p>It ships from an internal npm registry. Bluz never installs or imports it —
-it is <strong>not</strong> in <code>package.json</code>, so <code>npm ci</code>, CI and the Docker build never
-need that registry. Install it on the host that runs Bluz:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@applai/cc-sso-helper<span class="w"> </span>--registry<span class="o">=</span>&lt;internal-registry-url&gt;
+<p>It ships from an internal npm registry. Bluz never imports it — it is <strong>not</strong>
+in <code>package.json</code>, so <code>npm ci</code> and CI never need that registry. The default
+helper command fetches it on first use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">LITELLM_API_KEY_HELPER</span><span class="o">=</span><span class="s2">"npx -y --package=@applai/cc-sso-helper cc-sso-helper"</span>
 </code></pre></div>
-<p>In Docker it must exist <strong>inside</strong> the container: mount it and point
-<code>LITELLM_API_KEY_HELPER</code> at its absolute path.</p>
+<p>The ui image points <code>@applai</code> at the internal Artifactory and turns off npm's
+TLS verification (<code>npm config set --global</code>, in <code>ui/Dockerfile</code>), so this works
+inside the container as is. Outside Docker, set the same two npm settings.</p>
+<h4 id="sso-login">SSO login<a class="headerlink" href="#sso-login" title="Permanent link">&para;</a></h4>
+<p>With no SSO session, cc-sso-helper prints a link like
+<code>https://sso-claude-code.dother.mil/login?code=&lt;code&gt;</code> and waits. Bluz watches
+the helper's output live:</p>
+<ul>
+<li>The chat request fails at once with "נדרשת התחברות ל-SSO", and the browser
+  opens the link in a new tab. A pop-up blocker may stop that tab, so the
+  error also has an <strong>התחברות</strong> button.</li>
+<li>The helper keeps running (up to 5 min) while the user signs in. The message
+  sent after signing in gets the new key.</li>
+<li>cc-sso-helper does not print the key. It writes it to
+  <code>~/.claude/cc_base.json</code> (the whole file is the raw key, not JSON). Bluz
+  reads that file after each successful run; <code>~</code> is the home of the user the
+  helper runs as (<code>/home/nextjs</code> in the ui container). Override the path with
+  <code>LITELLM_API_KEY_FILE</code>.</li>
+<li>With no such file, the key is the last non-empty line on stdout (Claude
+  Code's plain <code>apiKeyHelper</code> contract).</li>
+</ul>
 <h4 id="when-the-helper-fails">When the helper fails<a class="headerlink" href="#when-the-helper-fails" title="Permanent link">&para;</a></h4>
 <p>The helper is optional. Each request picks the first key that exists:</p>
 <table>

@@ -8,7 +8,7 @@
 
 > **buildInstructorsTour**(`__namedParameters`): `Tour`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tours/instructors.tsx:18](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/app-onboarding/schedule/tours/instructors.tsx#L18)
+Defined in: [ui/src/components/app-onboarding/schedule/tours/instructors.tsx:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/app-onboarding/schedule/tours/instructors.tsx#L18)
 
 Staffing מופעים: the מבוזרים list and the drags it supports, the right-click
 route to the same thing, narrowing the schedule to one person, finding a

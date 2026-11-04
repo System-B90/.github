@@ -6,11 +6,12 @@
 
 # Function: apiCreateSnapshot()
 
-> **apiCreateSnapshot**(`label`, `events`, `iterationId?`): `Promise`\<[`CalendarSnapshotSummary`](../../../api-shared/types/type-aliases/CalendarSnapshotSummary.md)\>
+> **apiCreateSnapshot**(`label`, `range`, `iterationId?`): `Promise`\<[`CalendarSnapshotSummary`](../../../api-shared/types/type-aliases/CalendarSnapshotSummary.md)\>
 
-Defined in: [ui/src/api-client/calendar-snapshots.ts:30](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-client/calendar-snapshots.ts#L30)
+Defined in: [ui/src/api-client/calendar-snapshots.ts:34](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-client/calendar-snapshots.ts#L34)
 
-Creates a named snapshot capturing the supplied events.
+Creates a named snapshot of `range`. The server captures the saved events
+inside it, so the snapshot never holds this browser's unsaved state.
 
 ## Parameters
 
@@ -18,9 +19,9 @@ Creates a named snapshot capturing the supplied events.
 
 `string`
 
-### events
+### range
 
-[`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]
+[`CalendarDraftRange`](../../../api-shared/types/type-aliases/CalendarDraftRange.md)
 
 ### iterationId?
 

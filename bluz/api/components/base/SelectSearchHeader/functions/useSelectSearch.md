@@ -8,7 +8,7 @@
 
 > **useSelectSearch**\<`T`\>(`options`, `nameOf`, `isSelected?`): `object`
 
-Defined in: [ui/src/components/base/SelectSearchHeader.tsx:106](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/SelectSearchHeader.tsx#L106)
+Defined in: [ui/src/components/base/SelectSearchHeader.tsx:106](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/SelectSearchHeader.tsx#L106)
 
 Query state for a Select topped by `SelectSearchHeader`: the options whose
 name matches, plus any selected ones (a single Select blanks a value with

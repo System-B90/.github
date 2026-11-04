@@ -8,7 +8,7 @@
 
 > **transcriptToJson**(`messages`, `meta`): `string`
 
-Defined in: [ui/src/components/ai/chat-export.ts:104](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/ai/chat-export.ts#L104)
+Defined in: [ui/src/components/ai/chat-export.ts:104](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/ai/chat-export.ts#L104)
 
 ## Parameters
 

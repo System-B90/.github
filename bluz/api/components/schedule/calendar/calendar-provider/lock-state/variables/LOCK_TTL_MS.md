@@ -8,7 +8,7 @@
 
 > `const` **LOCK\_TTL\_MS**: `30000` = `30_000`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:34](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L34)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:34](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L34)
 
 How long a received lock survives without a refreshing heartbeat. Set to a
 multiple of the heartbeat so a single dropped message never expires a lock

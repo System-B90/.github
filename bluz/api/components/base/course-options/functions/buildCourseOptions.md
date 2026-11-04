@@ -8,7 +8,7 @@
 
 > **buildCourseOptions**(`courses`, `__namedParameters?`): [`CourseOption`](../type-aliases/CourseOption.md)[]
 
-Defined in: [ui/src/components/base/course-options.ts:29](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/course-options.ts#L29)
+Defined in: [ui/src/components/base/course-options.ts:29](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/course-options.ts#L29)
 
 Flattens the course tree into select rows in depth-first order, siblings
 sorted by Hebrew name.

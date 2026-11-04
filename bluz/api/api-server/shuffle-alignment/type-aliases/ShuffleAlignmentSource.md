@@ -8,4 +8,4 @@
 
 > **ShuffleAlignmentSource** = \{ `draftId`: `string`; \} \| \{ `end`: `Date`; `start`: `Date`; \} \| \{ `events`: [`AlignmentEvent`](../../../api-shared/shuffle-alignment/type-aliases/AlignmentEvent.md)[]; \}
 
-Defined in: [ui/src/api-server/shuffle-alignment.ts:13](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/shuffle-alignment.ts#L13)
+Defined in: [ui/src/api-server/shuffle-alignment.ts:13](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/shuffle-alignment.ts#L13)

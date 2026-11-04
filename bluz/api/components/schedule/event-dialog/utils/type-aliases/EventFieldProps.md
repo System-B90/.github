@@ -8,7 +8,7 @@
 
 > **EventFieldProps** = `object`
 
-Defined in: [ui/src/components/schedule/event-dialog/utils.ts:8](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-dialog/utils.ts#L8)
+Defined in: [ui/src/components/schedule/event-dialog/utils.ts:8](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-dialog/utils.ts#L8)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-dialog/utils.ts:8](https://github.
 
 > `optional` **event?**: `Partial`\<[`Event`](../../../../../api-shared/types/event/type-aliases/Event.md)\>
 
-Defined in: [ui/src/components/schedule/event-dialog/utils.ts:9](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-dialog/utils.ts#L9)
+Defined in: [ui/src/components/schedule/event-dialog/utils.ts:9](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-dialog/utils.ts#L9)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/event-dialog/utils.ts:9](https://github.
 
 > **onBlurCallback**: (`event`) => `void`
 
-Defined in: [ui/src/components/schedule/event-dialog/utils.ts:10](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-dialog/utils.ts#L10)
+Defined in: [ui/src/components/schedule/event-dialog/utils.ts:10](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-dialog/utils.ts#L10)
 
 #### Parameters
 

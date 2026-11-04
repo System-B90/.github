@@ -8,7 +8,7 @@
 
 > `const` **AI\_SUGGESTED\_PROMPTS**: readonly \["מה יש בלו\"ז השבוע?", `"מי מבזר השבוע?"`, `"תוסיף הפסקות בין שיעורים"`\]
 
-Defined in: [ui/src/api-shared/types/ai.ts:271](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/ai.ts#L271)
+Defined in: [ui/src/api-shared/types/ai.ts:276](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/ai.ts#L276)
 
 Starter prompts on the empty chat. The self-test keys a case by each one
 (`SUGGESTED_PROMPT_CASES`), so a new chip without a case fails typecheck.

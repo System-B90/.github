@@ -8,7 +8,7 @@
 
 > **RoomZoomHeader**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx:13](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx#L13)
+Defined in: [ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx:13](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx#L13)
 
 A day-view room column header, shared by the staff calendar and the student
 board. Clicking it zooms the day to that room alone, and clicking the zoomed

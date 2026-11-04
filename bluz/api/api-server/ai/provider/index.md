@@ -8,6 +8,7 @@
 
 ## Classes
 
+- [AiLoginRequiredError](classes/AiLoginRequiredError.md)
 - [AiNotConfiguredError](classes/AiNotConfiguredError.md)
 - [AiProviderError](classes/AiProviderError.md)
 
