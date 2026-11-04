@@ -8,7 +8,7 @@
 
 > **CollectionContextState**\<`T`, `TCreate`\> = `object`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:128](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L128)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:128](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L128)
 
 ## Type Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:12
 
 > **addItem**: (`data`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:137](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L137)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:137](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L137)
 
 Mutations report failure with a snackbar and resolve to `false`
 instead of rejecting, so a form can keep what was typed.
@@ -47,7 +47,7 @@ instead of rejecting, so a form can keep what was typed.
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:129](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L129)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:129](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L129)
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:12
 
 > **deleteItem**: (`key`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:141](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L141)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:141](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L141)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:14
 
 > **getItem**: (`key`) => `T` \| `undefined`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:132](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L132)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:132](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L132)
 
 #### Parameters
 
@@ -91,7 +91,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:131](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L131)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:131](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L131)
 
 ***
 
@@ -99,7 +99,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 > **items**: `T`[]
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:130](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L130)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:130](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L130)
 
 ***
 
@@ -107,7 +107,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:13
 
 > **mutate**: (`mutation`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:143](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L143)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:143](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L143)
 
 Escape hatch for collection-specific writes (e.g. room extended info).
 
@@ -127,7 +127,7 @@ Escape hatch for collection-specific writes (e.g. room extended info).
 
 > **patchItem**: (`key`, `changes`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:140](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L140)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:140](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L140)
 
 Merges `changes` into the stored item and persists the merged result.
 
@@ -151,7 +151,7 @@ Merges `changes` into the stored item and persists the merged result.
 
 > **updateItem**: (`item`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:138](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L138)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:138](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L138)
 
 #### Parameters
 

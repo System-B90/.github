@@ -6,7 +6,7 @@
 
 # Class: HiveClient
 
-Defined in: [ui/src/api-server/hive/client.ts:24](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/client.ts#L24)
+Defined in: [ui/src/api-server/hive/client.ts:33](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/client.ts#L33)
 
 Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
@@ -53,7 +53,7 @@ Defined in: node\_modules/@system-b90/hive-core/dist/client.d.ts:173
 
 > **clearClassLesson**(`classId`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-server/hive/client.ts:89](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/client.ts#L89)
+Defined in: [ui/src/api-server/hive/client.ts:106](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/client.ts#L106)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ Defined in: [ui/src/api-server/hive/client.ts:89](https://github.com/System-B90/
 
 > **currentAccessToken**(): `string`
 
-Defined in: [ui/src/api-server/hive/client.ts:84](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/client.ts#L84)
+Defined in: [ui/src/api-server/hive/client.ts:101](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/client.ts#L101)
 
 The access token this client currently holds, for calling another
 System-B90 app (Peek-a-Boo) that checks it against Hive.
@@ -86,7 +86,7 @@ System-B90 app (Peek-a-Boo) that checks it against Hive.
 
 > **getClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:32](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/client.ts#L32)
+Defined in: [ui/src/api-server/hive/client.ts:41](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/client.ts#L41)
 
 Student groups change rarely and Bluz never writes them, yet every cut,
 activation tick and feed fetches them: share one request per Hive instance
@@ -103,11 +103,25 @@ the in-flight request; a failure is dropped so the next call retries.
 
 ***
 
+### getEventCategories()
+
+> **getEventCategories**(): `Promise`\<[`HiveEventCategory`](../type-aliases/HiveEventCategory.md)[]\>
+
+Defined in: [ui/src/api-server/hive/client.ts:84](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/client.ts#L84)
+
+Hive's schedule event categories (Segel clearance reads them).
+
+#### Returns
+
+`Promise`\<[`HiveEventCategory`](../type-aliases/HiveEventCategory.md)[]\>
+
+***
+
 ### getRooms()
 
 > **getRooms**(): `Promise`\<[`HiveRoom`](../../../../api-shared/types/room/type-aliases/HiveRoom.md)[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:65](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/client.ts#L65)
+Defined in: [ui/src/api-server/hive/client.ts:74](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/client.ts#L74)
 
 #### Returns
 
@@ -119,7 +133,7 @@ Defined in: [ui/src/api-server/hive/client.ts:65](https://github.com/System-B90/
 
 > **refreshClasses**(): `Promise`\<`Class`[]\>
 
-Defined in: [ui/src/api-server/hive/client.ts:59](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/client.ts#L59)
+Defined in: [ui/src/api-server/hive/client.ts:68](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/client.ts#L68)
 
 Drops this Hive's cached student groups and fetches them again, for a
 caller that just missed a group that may have been created since the

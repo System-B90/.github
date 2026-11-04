@@ -8,7 +8,7 @@
 
 > **spansMultipleDays**(`start`, `end`): `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/split/segments.ts:229](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/split/segments.ts#L229)
+Defined in: [ui/src/components/schedule/calendar/split/segments.ts:229](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/split/segments.ts#L229)
 
 Would a span starting at `start` and ending at `end` be drawn across more
 than one local calendar day? Used to reject a drag/resize *before* it's

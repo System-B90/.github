@@ -8,7 +8,7 @@
 
 > **useParkArmed**(`dragStore`, `readOnly`): `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx:35](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx#L35)
+Defined in: [ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx:35](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx#L35)
 
 True while a grid tile is being moved and may be released onto the box,
 which is when every park drop target lights up.

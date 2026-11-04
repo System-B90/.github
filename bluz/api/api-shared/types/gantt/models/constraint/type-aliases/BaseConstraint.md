@@ -8,4 +8,4 @@
 
 > **BaseConstraint** = \{ `id`: `string`; `ownerEventId`: [`GanttEventId`](../../shared/type-aliases/GanttEventId.md); `ownerModuleId?`: [`GanttModuleId`](../../shared/type-aliases/GanttModuleId.md); `ownerType`: `"event"`; `type`: [`ConstraintType`](../enumerations/ConstraintType.md); \} \| \{ `id`: `string`; `ownerEventId?`: [`GanttEventId`](../../shared/type-aliases/GanttEventId.md); `ownerModuleId`: [`GanttModuleId`](../../shared/type-aliases/GanttModuleId.md); `ownerType`: `"module"`; `type`: [`ConstraintType`](../enumerations/ConstraintType.md); \}
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:14](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/models/constraint.ts#L14)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:14](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/gantt/models/constraint.ts#L14)

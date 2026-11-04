@@ -8,7 +8,7 @@
 
 > **HiveLessonRow**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/event-dialog/HiveLessonRow.tsx:72](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-dialog/HiveLessonRow.tsx#L72)
+Defined in: [ui/src/components/schedule/event-dialog/HiveLessonRow.tsx:72](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-dialog/HiveLessonRow.tsx#L72)
 
 The event's Hive lesson problems, stated rather than inferred (#1025).
 Which queue each group gets is set on the lesson in Hive, so there is

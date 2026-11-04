@@ -8,7 +8,7 @@
 
 > **NoIterationPrompt**(): `Element`
 
-Defined in: [ui/src/components/base/NoIterationPrompt.tsx:24](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/NoIterationPrompt.tsx#L24)
+Defined in: [ui/src/components/base/NoIterationPrompt.tsx:24](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/NoIterationPrompt.tsx#L24)
 
 A fresh install no longer inherits an auto-created "current" iteration
 (#471) — that iteration had no real name, and its literal id collided with

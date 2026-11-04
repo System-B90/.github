@@ -8,7 +8,7 @@
 
 > **useAppDayRollover**(`onRollover`, `__namedParameters?`): `void`
 
-Defined in: [ui/src/components/base/server-clock.ts:133](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/server-clock.ts#L133)
+Defined in: [ui/src/components/base/server-clock.ts:133](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/server-clock.ts#L133)
 
 Calls `onRollover(newDate, previousDate)` when the server's day (Jerusalem
 time) changes: at midnight, on waking from sleep or returning to a tab whose

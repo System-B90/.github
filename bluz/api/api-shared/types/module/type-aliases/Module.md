@@ -8,7 +8,7 @@
 
 > **Module** = `object`
 
-Defined in: [ui/src/api-shared/types/module.ts:1](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/module.ts#L1)
+Defined in: [ui/src/api-shared/types/module.ts:1](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/module.ts#L1)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/module.ts:1](https://github.com/System-B90/
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/module.ts:2](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/module.ts#L2)
+Defined in: [ui/src/api-shared/types/module.ts:2](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/module.ts#L2)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/module.ts:2](https://github.com/System-B90/
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/module.ts:3](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/module.ts#L3)
+Defined in: [ui/src/api-shared/types/module.ts:3](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/module.ts#L3)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/module.ts:3](https://github.com/System-B90/
 
 > **parent\_subject**: `number`
 
-Defined in: [ui/src/api-shared/types/module.ts:4](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/module.ts#L4)
+Defined in: [ui/src/api-shared/types/module.ts:4](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/module.ts#L4)

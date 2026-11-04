@@ -8,6 +8,6 @@
 
 > **CurriculumPullBackErrorCode** = `"no-iteration"` \| `"not-cut"`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:240](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/gantt/cut.ts#L240)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:240](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/gantt/cut.ts#L240)
 
 Structured error codes returned when a pull-back is rejected.

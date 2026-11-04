@@ -8,7 +8,7 @@
 
 > **isModelListed**(`model`, `models`): `boolean`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:58](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/ai-models.ts#L58)
+Defined in: [ui/src/api-shared/types/ai-models.ts:58](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/ai-models.ts#L58)
 
 Whether a configured model slug is among the listed ones. An empty list
 means "unknown", not "absent", so it never triggers a warning.

@@ -8,7 +8,7 @@
 
 > **HiveScheduleFeed** = `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:294](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/schedule-feed.ts#L294)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:399](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/schedule-feed.ts#L399)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:294](https://github.com/Sys
 
 > **body**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:295](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/schedule-feed.ts#L295)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:400](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/schedule-feed.ts#L400)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:295](https://github.com/Sys
 
 > `optional` **calendarFile?**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:298](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/schedule-feed.ts#L298)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:403](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/schedule-feed.ts#L403)
 
 Where the sidecar should write it; unset ⇒ the sidecar's default.
 
@@ -34,4 +34,4 @@ Where the sidecar should write it; unset ⇒ the sidecar's default.
 
 > **etag**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:296](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/hive/schedule-feed.ts#L296)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:401](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/hive/schedule-feed.ts#L401)

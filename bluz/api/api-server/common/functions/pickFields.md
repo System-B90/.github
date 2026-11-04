@@ -8,7 +8,7 @@
 
 > **pickFields**\<`T`, `K`\>(`payload`, `fields`): `Pick`\<`T`, `K`\>
 
-Defined in: [ui/src/api-server/common.ts:66](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/common.ts#L66)
+Defined in: [ui/src/api-server/common.ts:66](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/common.ts#L66)
 
 Copy only the listed fields off a client-supplied payload.
 

@@ -8,7 +8,7 @@
 
 > **HiveLessonSelect**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/HiveLessonSelect.tsx:34](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/HiveLessonSelect.tsx#L34)
+Defined in: [ui/src/components/base/HiveLessonSelect.tsx:34](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/HiveLessonSelect.tsx#L34)
 
 Reusable, self-contained MUI selector for a single Hive Lesson.
 Data comes from HiveLessonsProvider; pass `module` to scope the list.

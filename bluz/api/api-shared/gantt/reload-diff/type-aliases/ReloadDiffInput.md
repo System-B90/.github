@@ -8,7 +8,7 @@
 
 > **ReloadDiffInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:84](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L84)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:84](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L84)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/reload-diff.ts:84](https://github.com/Syste
 
 > **actual**: [`DbEventDocument`](../../../types/event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:88](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L88)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:88](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L88)
 
 Live cut events currently in the schedule for this curriculum.
 
@@ -26,7 +26,7 @@ Live cut events currently in the schedule for this curriculum.
 
 > **desired**: [`DbEventDocument`](../../../types/event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:86](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L86)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:86](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L86)
 
 Documents the current plan would produce, ids irrelevant.
 
@@ -36,7 +36,7 @@ Documents the current plan would produce, ids irrelevant.
 
 > `optional` **fields?**: `ReadonlyArray`\<keyof [`DbEventDocument`](../../../types/event/type-aliases/DbEventDocument.md)\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:103](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L103)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:103](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L103)
 
 Fields compared; defaults to [GANTT\_OWNED\_FIELDS](../variables/GANTT_OWNED_FIELDS.md).
 
@@ -46,7 +46,7 @@ Fields compared; defaults to [GANTT\_OWNED\_FIELDS](../variables/GANTT_OWNED_FIE
 
 > `optional` **lastManualEditByEvent?**: `ReadonlyMap`\<`string`, [`ReloadConflictReason`](../../../types/gantt/reload/type-aliases/ReloadConflictReason.md)\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:92](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L92)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:92](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L92)
 
 Explanation per manually-edited event, for the conflicts dialog.
 
@@ -56,7 +56,7 @@ Explanation per manually-edited event, for the conflicts dialog.
 
 > `optional` **manuallyDeletedKeys?**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:101](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L101)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:101](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L101)
 
 [occurrenceKey](../functions/occurrenceKey.md)s of occurrences a human deleted from the schedule.
 Re-adding them would undo the user's work, so they come back parked
@@ -69,7 +69,7 @@ all ([isDeletedBreak](../functions/isDeletedBreak.md)).
 
 > **manuallyEditedIds**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:90](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L90)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:90](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L90)
 
 Event ids the change log marks as manually edited.
 
@@ -79,6 +79,6 @@ Event ids the change log marks as manually edited.
 
 > `optional` **overrideEventIds?**: `ReadonlySet`\<`string`\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:94](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L94)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:94](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L94)
 
 Manually-edited events the user chose to overwrite anyway.

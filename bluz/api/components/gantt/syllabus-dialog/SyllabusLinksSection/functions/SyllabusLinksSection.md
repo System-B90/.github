@@ -8,7 +8,7 @@
 
 > **SyllabusLinksSection**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx:36](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx#L36)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx:36](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx#L36)
 
 Links a syllabus to its courses (מסלולים) and אחראי מקצוע instructors
 (#702). Both are what the gantt filters narrow by, and the leads are pinned

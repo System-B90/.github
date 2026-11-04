@@ -8,7 +8,7 @@
 
 > **LaneKey**\<`TEvent`\> = (`event`) => `null` \| `string`
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:90](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/student-view/no-overlap-layout.ts#L90)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:90](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/student-view/no-overlap-layout.ts#L90)
 
 Groups tiles that must share a column band (#988): every tile with the same
 non-null key gets the same column(s) and the same width within a cluster.

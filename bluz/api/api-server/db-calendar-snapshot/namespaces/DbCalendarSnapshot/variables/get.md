@@ -8,7 +8,7 @@
 
 > `const` **get**: (`snapshotId`, `controller`) => `Promise`\<[`CalendarSnapshot`](../../../../../api-shared/types/type-aliases/CalendarSnapshot.md)\> = `getSnapshot`
 
-Defined in: [ui/src/api-server/db-calendar-snapshot.ts:295](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/db-calendar-snapshot.ts#L295)
+Defined in: [ui/src/api-server/db-calendar-snapshot.ts:295](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-calendar-snapshot.ts#L295)
 
 Fetches a single snapshot, including its full captured events.
 

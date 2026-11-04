@@ -8,7 +8,7 @@
 
 > **SetAllottedTimeArgs** = `object`
 
-Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:26](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/gantt-allotment.ts#L26)
+Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:26](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/tools/gantt-allotment.ts#L26)
 
 AI write for an event's allotted time (#857). An event's scheduled time is
 the sum of `allottedMinutes` over its (curriculum, event, day) mappings, so
@@ -22,7 +22,7 @@ the cut, exactly like the grid.
 
 > `optional` **curriculumId?**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:27](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/gantt-allotment.ts#L27)
+Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:27](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/tools/gantt-allotment.ts#L27)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:27](https://github.co
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:30](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/gantt-allotment.ts#L30)
+Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:30](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/tools/gantt-allotment.ts#L30)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:30](https://github.co
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:29](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/gantt-allotment.ts#L29)
+Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:29](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/tools/gantt-allotment.ts#L29)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:29](https://github.co
 
 > **minutes**: `number`
 
-Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:31](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/gantt-allotment.ts#L31)
+Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:31](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/tools/gantt-allotment.ts#L31)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:31](https://github.co
 
 > **moduleId**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:28](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/tools/gantt-allotment.ts#L28)
+Defined in: [ui/src/api-server/ai/tools/gantt-allotment.ts:28](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/tools/gantt-allotment.ts#L28)

@@ -8,7 +8,7 @@
 
 > **createCollectionProvider**\<`T`, `TId`, `TCreate`\>(`config`): `object`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:151](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/collection/create-collection-provider.tsx#L151)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:151](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/collection/create-collection-provider.tsx#L151)
 
 Builds an optimistic-CRUD-with-rollback provider around a REST collection:
 loads on mount, applies edits locally, rolls the whole map back when the

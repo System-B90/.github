@@ -1345,7 +1345,7 @@ schedule shows exactly that window. Widen it if staff use Hive's week view.</p>
 <tr>
 <td><code>HIVE_FEED_LESSON_CATEGORY</code></td>
 <td><code>שיעור</code></td>
-<td>Hive event category for subject events.</td>
+<td>Fallback category for events with a Hive lesson.</td>
 </tr>
 <tr>
 <td><code>HIVE_FEED_UID</code>/<code>_GID</code></td>
@@ -1355,8 +1355,16 @@ schedule shows exactly that window. Widen it if staff use Hive's week view.</p>
 </tbody>
 </table>
 <ul>
-<li>The lesson category must exist in Hive with <strong>has_lesson</strong> on. Hive creates a
-  missing one without it, and then never assigns a lesson.</li>
+<li>Each event goes under the Hive category named like its Bluz type (<code>ע"ע</code> →
+  <code>עע</code>, <code>הרצאה</code> → <code>הרצאה</code>). Hive's "Generate Daily Review" names fields from
+  that category's flags, so a category with <strong>hide details in review</strong> on
+  shows only its own name.</li>
+<li>The lesson category is the fallback for an event with a Hive lesson whose
+  type has no <strong>has_lesson</strong> category. It must exist in Hive with
+  <strong>has_lesson</strong> on. Hive creates a missing one without it, and then never
+  assigns a lesson.</li>
+<li>An event on Hive's <code>Daily Review</code> module (the מ"י slot) is linked to that
+  module's lesson, so the daily review leaves it out.</li>
 <li>Use the same directory as <code>HIVE_CALENDAR_DIRS_PATH</code> in Hive's <code>.env</code>, as an
   absolute path. A relative path resolves against the Bluz bundle, not Hive's.</li>
 <li>The feed needs the Hive API user (<code>HIVE_API_USERNAME</code>/<code>HIVE_API_PASSWORD</code>).</li>

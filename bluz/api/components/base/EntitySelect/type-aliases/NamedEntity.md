@@ -8,7 +8,7 @@
 
 > **NamedEntity**\<`TId`\> = `object`
 
-Defined in: [ui/src/components/base/EntitySelect.tsx:15](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/EntitySelect.tsx#L15)
+Defined in: [ui/src/components/base/EntitySelect.tsx:15](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/EntitySelect.tsx#L15)
 
 Minimal shape every Hive entity offered in a dropdown satisfies.
 
@@ -24,7 +24,7 @@ Minimal shape every Hive entity offered in a dropdown satisfies.
 
 > **id**: `TId`
 
-Defined in: [ui/src/components/base/EntitySelect.tsx:16](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/EntitySelect.tsx#L16)
+Defined in: [ui/src/components/base/EntitySelect.tsx:16](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/EntitySelect.tsx#L16)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/base/EntitySelect.tsx:16](https://github.com/Syst
 
 > **name**: `string`
 
-Defined in: [ui/src/components/base/EntitySelect.tsx:17](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/EntitySelect.tsx#L17)
+Defined in: [ui/src/components/base/EntitySelect.tsx:17](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/EntitySelect.tsx#L17)

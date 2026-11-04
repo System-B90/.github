@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/integrations/google-calendar/purge/route.ts:33](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/app/api/integrations/google-calendar/purge/route.ts#L33)
+Defined in: [ui/src/app/api/integrations/google-calendar/purge/route.ts:33](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/app/api/integrations/google-calendar/purge/route.ts#L33)
 
 POST /api/integrations/google-calendar/purge — removes Bluz-tagged events
 from the signed-in user's linked Google calendar: `orphaned` (no live,

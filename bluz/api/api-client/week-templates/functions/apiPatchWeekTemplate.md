@@ -8,7 +8,7 @@
 
 > **apiPatchWeekTemplate**(`id`, `payload`, `applyToCutWeeks?`): `Promise`\<[`ApiWeekTemplateSaveResponse`](../../../api-shared/types/week-template/type-aliases/ApiWeekTemplateSaveResponse.md)\>
 
-Defined in: [ui/src/api-client/week-templates.ts:75](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-client/week-templates.ts#L75)
+Defined in: [ui/src/api-client/week-templates.ts:75](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-client/week-templates.ts#L75)
 
 Renames, retimes or makes a template the default.
 

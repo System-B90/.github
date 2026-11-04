@@ -8,7 +8,7 @@
 
 > **ApiWeekTemplateCreatePayload** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:79](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L79)
+Defined in: [ui/src/api-shared/types/week-template.ts:79](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/week-template.ts#L79)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/week-template.ts:79](https://github.com/Sys
 
 > `optional` **copyTimesFrom?**: [`WeekTemplateId`](WeekTemplateId.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:82](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L82)
+Defined in: [ui/src/api-shared/types/week-template.ts:82](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/week-template.ts#L82)
 
 Copy times from this template instead of the defaults.
 
@@ -26,4 +26,4 @@ Copy times from this template instead of the defaults.
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:80](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/types/week-template.ts#L80)
+Defined in: [ui/src/api-shared/types/week-template.ts:80](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/types/week-template.ts#L80)

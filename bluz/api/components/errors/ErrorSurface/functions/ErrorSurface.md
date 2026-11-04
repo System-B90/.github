@@ -8,7 +8,7 @@
 
 > **ErrorSurface**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:27](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/errors/ErrorSurface.tsx#L27)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:27](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/errors/ErrorSurface.tsx#L27)
 
 The single visual for every full-page failure surface: segment errors, 404s
 and the global crash page. Keeping one component means the RTL Hebrew copy,

@@ -8,7 +8,7 @@
 
 > **AiKeySource** = `object`
 
-Defined in: [ui/src/api-server/ai/key-source.ts:14](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/key-source.ts#L14)
+Defined in: [ui/src/api-server/ai/key-source.ts:14](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-source.ts#L14)
 
 Where the token comes from. A plain key never changes; a helper-issued one
 (an SSO token) expires, so it is fetched per request and, when `invalidate`
@@ -20,7 +20,7 @@ exists, a 401 drops it and the request is retried once.
 
 > **get**: (`signal?`) => `Promise`\<`string`\>
 
-Defined in: [ui/src/api-server/ai/key-source.ts:16](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/key-source.ts#L16)
+Defined in: [ui/src/api-server/ai/key-source.ts:16](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-source.ts#L16)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ The caller gave up; a slow source stops waiting.
 
 > `optional` **invalidate?**: () => `void`
 
-Defined in: [ui/src/api-server/ai/key-source.ts:17](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/key-source.ts#L17)
+Defined in: [ui/src/api-server/ai/key-source.ts:17](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/key-source.ts#L17)
 
 #### Returns
 

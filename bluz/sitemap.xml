@@ -13861,6 +13861,10 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/hive/schedule-feed/variables/HIVE_DAILY_REVIEW_MODULE_NAME/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/hive/schedule-feed/functions/buildHiveScheduleIcs/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
@@ -13873,7 +13877,15 @@
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/hive/schedule-feed/functions/normalizeCategoryName/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/hive/schedule-feed/type-aliases/HiveFeedLookup/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/hive/schedule-feed/type-aliases/HiveFeedCategory/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>
@@ -13942,6 +13954,10 @@
     </url>
     <url>
          <loc>https://system-b90.github.io/bluz/api/api-server/hive/client/</loc>
+         <lastmod>2026-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://system-b90.github.io/bluz/api/api-server/hive/client/type-aliases/HiveEventCategory/</loc>
          <lastmod>2026-11-04</lastmod>
     </url>
     <url>

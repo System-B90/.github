@@ -8,7 +8,7 @@
 
 > **CurriculumListProviderProps** = `object`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:38](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L38)
+Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:38](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L38)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:38](http
 
 > **children**: `ReactNode`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:39](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L39)
+Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:39](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L39)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:39](http
 
 > `optional` **currentCurriculum?**: [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:40](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L40)
+Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:40](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L40)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:40](http
 
 > `optional` **initialCurriculums?**: `Record`\<[`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md), [`GanttCurriculumDocument`](../../../../../../api-client/gantt/curriculum/type-aliases/GanttCurriculumDocument.md)\>
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:42](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L42)
+Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:42](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L42)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:42](http
 
 > `optional` **setCurrentCurriculum?**: `Dispatch`\<`SetStateAction`\<[`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md) \| `null`\>\>
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:41](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L41)
+Defined in: [ui/src/components/gantt/state/curriculum-list/Provider.tsx:41](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/state/curriculum-list/Provider.tsx#L41)

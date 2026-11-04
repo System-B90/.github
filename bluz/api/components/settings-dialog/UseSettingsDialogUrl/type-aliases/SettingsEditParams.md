@@ -8,6 +8,6 @@
 
 > **SettingsEditParams** = `Partial`\<`Record`\<*typeof* `EDIT_PARAMS`\[`number`\], `string`\>\>
 
-Defined in: [ui/src/components/settings-dialog/UseSettingsDialogUrl.ts:20](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/settings-dialog/UseSettingsDialogUrl.ts#L20)
+Defined in: [ui/src/components/settings-dialog/UseSettingsDialogUrl.ts:20](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/settings-dialog/UseSettingsDialogUrl.ts#L20)
 
 Deep-link target within a tab, e.g. `{ editRoom: "<id>" }`.

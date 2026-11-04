@@ -8,7 +8,7 @@
 
 > **InsightVisual** = \{ `bars`: `object`[]; `kind`: `"bars"`; \} \| \{ `caption`: `string`; `kind`: `"bigNumber"`; `value`: `string`; \} \| \{ `chips`: `object`[]; `kind`: `"chips"`; \} \| \{ `centerLabel`: `string`; `kind`: `"donut"`; `slices`: `object`[]; \} \| \{ `kind`: `"leaderboard"`; `rows`: `object`[]; \} \| \{ `kind`: `"ring"`; `label`: `string`; `max`: `number`; `value`: `number`; \} \| \{ `endLabel`: `string`; `kind`: `"timeline"`; `progress`: `null` \| `number`; `startLabel`: `string`; \} \| \{ `cells`: `object`[]; `kind`: `"weekdayHeatmap"`; \}
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:18](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L18)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/types.ts:18](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/curriculum-view/components/insights/types.ts#L18)
 
 A visual is plain data so generators stay pure `.ts` functions; the card maps
 each `kind` to its renderer.

@@ -8,7 +8,7 @@
 
 > **ShuffleSubmenuProps** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:12](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L12)
+Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:12](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L12)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:12
 
 > `optional` **disabled?**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:18](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L18)
+Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:18](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L18)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:18
 
 > **onToggle**: (`courseId`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:17](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L17)
+Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:17](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L17)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:17
 
 > **shuffles**: `ReadonlyArray`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md)\>
 
-Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:14](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L14)
+Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:14](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L14)
 
 The event's syllabus shuffles, already resolved.
 
@@ -52,7 +52,7 @@ The event's syllabus shuffles, already resolved.
 
 > **stateOf**: (`courseId`) => `"all"` \| `"none"` \| `"some"`
 
-Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:16](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L16)
+Defined in: [ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx:16](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/event-context-menu/ShuffleSubmenu.tsx#L16)
 
 Whether all, some or none of the targeted events carry the shuffle.
 

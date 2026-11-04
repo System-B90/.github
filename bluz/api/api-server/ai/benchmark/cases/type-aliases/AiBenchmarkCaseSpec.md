@@ -8,7 +8,7 @@
 
 > **AiBenchmarkCaseSpec** = `object`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:50](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/benchmark/cases.ts#L50)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:50](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/benchmark/cases.ts#L50)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/ai/benchmark/cases.ts:50](https://github.com/Syst
 
 > **checks**: `object`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:54](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/benchmark/cases.ts#L54)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:54](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/benchmark/cases.ts#L54)
 
 #### detail
 
@@ -48,7 +48,7 @@ Shown when the check fails, to explain what was expected.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:51](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/benchmark/cases.ts#L51)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:51](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/benchmark/cases.ts#L51)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [ui/src/api-server/ai/benchmark/cases.ts:51](https://github.com/Syst
 
 > **prompt**: `string`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:53](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/benchmark/cases.ts#L53)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:53](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/benchmark/cases.ts#L53)
 
 ***
 
@@ -64,4 +64,4 @@ Defined in: [ui/src/api-server/ai/benchmark/cases.ts:53](https://github.com/Syst
 
 > **title**: `string`
 
-Defined in: [ui/src/api-server/ai/benchmark/cases.ts:52](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/ai/benchmark/cases.ts#L52)
+Defined in: [ui/src/api-server/ai/benchmark/cases.ts:52](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/ai/benchmark/cases.ts#L52)

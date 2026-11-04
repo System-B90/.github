@@ -6,7 +6,7 @@
 
 # Class: GoogleReauthRequiredError
 
-Defined in: [ui/src/api-shared/errors.ts:33](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/errors.ts#L33)
+Defined in: [ui/src/api-shared/errors.ts:33](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/errors.ts#L33)
 
 The user's stored Google refresh token was expired or revoked
 (`invalid_grant`): the link exists but cannot act until the user reconnects
@@ -22,7 +22,7 @@ The user's stored Google refresh token was expired or revoked
 
 > **new GoogleReauthRequiredError**(`message?`): `GoogleReauthRequiredError`
 
-Defined in: [ui/src/api-shared/errors.ts:35](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/errors.ts#L35)
+Defined in: [ui/src/api-shared/errors.ts:35](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/errors.ts#L35)
 
 #### Parameters
 

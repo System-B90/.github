@@ -8,7 +8,7 @@
 
 > **syncServerClock**(`serverMs`, `sentAt`, `receivedAt?`): `void`
 
-Defined in: [ui/src/components/base/server-clock.ts:44](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/base/server-clock.ts#L44)
+Defined in: [ui/src/components/base/server-clock.ts:44](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/base/server-clock.ts#L44)
 
 Records the server's clock from a response. `sentAt` / `receivedAt` are
 performance.now readings around the request; the server's reading is

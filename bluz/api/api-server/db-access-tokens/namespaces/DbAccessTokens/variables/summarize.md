@@ -8,7 +8,7 @@
 
 > `const` **summarize**: (`doc`) => [`AccessTokenSummary`](../../../../../api-shared/types/access-token/type-aliases/AccessTokenSummary.md) = `toSummary`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:181](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/db-access-tokens.ts#L181)
+Defined in: [ui/src/api-server/db-access-tokens.ts:181](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/db-access-tokens.ts#L181)
 
 ## Parameters
 

@@ -8,7 +8,7 @@
 
 > `const` **POST**: `ServerApiIterationSyncHive`
 
-Defined in: [ui/src/app/api/iterations/\[id\]/sync-hive/route.ts:25](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/app/api/iterations/[id]/sync-hive/route.ts#L25)
+Defined in: [ui/src/app/api/iterations/\[id\]/sync-hive/route.ts:25](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/app/api/iterations/[id]/sync-hive/route.ts#L25)
 
 Manually re-snapshot the Hive module/subject/room names for an iteration
 (#379), rather than relying only on the snapshot taken at creation time.

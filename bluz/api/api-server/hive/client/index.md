@@ -9,3 +9,7 @@
 ## Classes
 
 - [HiveClient](classes/HiveClient.md)
+
+## Type Aliases
+
+- [HiveEventCategory](type-aliases/HiveEventCategory.md)

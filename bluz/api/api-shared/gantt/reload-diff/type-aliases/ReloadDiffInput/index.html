@@ -1034,41 +1034,41 @@
 <blockquote>
 <p><strong>ReloadDiffInput</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L84">ui/src/api-shared/gantt/reload-diff.ts:84</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L84">ui/src/api-shared/gantt/reload-diff.ts:84</a></p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="actual">actual<a class="headerlink" href="#actual" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>actual</strong>: <a href="../../../../types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L88">ui/src/api-shared/gantt/reload-diff.ts:88</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L88">ui/src/api-shared/gantt/reload-diff.ts:88</a></p>
 <p>Live cut events currently in the schedule for this curriculum.</p>
 <hr />
 <h3 id="desired">desired<a class="headerlink" href="#desired" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>desired</strong>: <a href="../../../../types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L86">ui/src/api-shared/gantt/reload-diff.ts:86</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L86">ui/src/api-shared/gantt/reload-diff.ts:86</a></p>
 <p>Documents the current plan would produce, ids irrelevant.</p>
 <hr />
 <h3 id="fields">fields?<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>fields?</strong>: <code>ReadonlyArray</code>\&lt;keyof <a href="../../../../types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L103">ui/src/api-shared/gantt/reload-diff.ts:103</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L103">ui/src/api-shared/gantt/reload-diff.ts:103</a></p>
 <p>Fields compared; defaults to <a href="../../variables/GANTT_OWNED_FIELDS/">GANTT_OWNED_FIELDS</a>.</p>
 <hr />
 <h3 id="lastmanualeditbyevent">lastManualEditByEvent?<a class="headerlink" href="#lastmanualeditbyevent" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>lastManualEditByEvent?</strong>: <code>ReadonlyMap</code>\&lt;<code>string</code>, <a href="../../../../types/gantt/reload/type-aliases/ReloadConflictReason/"><code>ReloadConflictReason</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L92">ui/src/api-shared/gantt/reload-diff.ts:92</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L92">ui/src/api-shared/gantt/reload-diff.ts:92</a></p>
 <p>Explanation per manually-edited event, for the conflicts dialog.</p>
 <hr />
 <h3 id="manuallydeletedkeys">manuallyDeletedKeys?<a class="headerlink" href="#manuallydeletedkeys" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>manuallyDeletedKeys?</strong>: <code>ReadonlySet</code>\&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L101">ui/src/api-shared/gantt/reload-diff.ts:101</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L101">ui/src/api-shared/gantt/reload-diff.ts:101</a></p>
 <p><a href="../../functions/occurrenceKey/">occurrenceKey</a>s of occurrences a human deleted from the schedule.
 Re-adding them would undo the user's work, so they come back parked
 (in the unassigned-events box) instead of on the grid — breaks not at
@@ -1078,14 +1078,14 @@ all (<a href="../../functions/isDeletedBreak/">isDeletedBreak</a>).</p>
 <blockquote>
 <p><strong>manuallyEditedIds</strong>: <code>ReadonlySet</code>\&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L90">ui/src/api-shared/gantt/reload-diff.ts:90</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L90">ui/src/api-shared/gantt/reload-diff.ts:90</a></p>
 <p>Event ids the change log marks as manually edited.</p>
 <hr />
 <h3 id="overrideeventids">overrideEventIds?<a class="headerlink" href="#overrideeventids" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>overrideEventIds?</strong>: <code>ReadonlySet</code>\&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/reload-diff.ts#L94">ui/src/api-shared/gantt/reload-diff.ts:94</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/reload-diff.ts#L94">ui/src/api-shared/gantt/reload-diff.ts:94</a></p>
 <p>Manually-edited events the user chose to overwrite anyway.</p>
 
 

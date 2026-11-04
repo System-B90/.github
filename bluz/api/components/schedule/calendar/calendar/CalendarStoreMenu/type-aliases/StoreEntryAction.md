@@ -8,7 +8,7 @@
 
 > **StoreEntryAction**\<`TEntry`\> = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:22](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L22)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:22](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L22)
 
 One icon action rendered on the trailing edge of a stored-entry row.
 
@@ -24,7 +24,7 @@ One icon action rendered on the trailing edge of a stored-entry row.
 
 > `optional` **color?**: `"error"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:25](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:25](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L25)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > `optional` **confirm?**: `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:30](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L30)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:30](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L30)
 
 Asks before running — required for anything that cannot be undone,
 e.g. deleting a stored entry (docs/ux-guidelines.md §5.7).
@@ -65,7 +65,7 @@ e.g. deleting a stored entry (docs/ux-guidelines.md §5.7).
 
 > `optional` **disabled?**: (`entry`) => `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:36](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L36)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:36](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L36)
 
 Disables the action on rows it does not apply to.
 
@@ -85,7 +85,7 @@ Disables the action on rows it does not apply to.
 
 > **icon**: `ReactNode`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:24](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L24)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:24](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L24)
 
 ***
 
@@ -93,7 +93,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **onClick**: (`entry`, `close`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:38](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L38)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:38](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L38)
 
 `close` dismisses the popover — call it after a state-replacing action.
 
@@ -117,4 +117,4 @@ Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:
 
 > **tooltip**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:23](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L23)
+Defined in: [ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx:23](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/schedule/calendar/calendar/CalendarStoreMenu.tsx#L23)

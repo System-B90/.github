@@ -8,7 +8,7 @@
 
 > **normalizeShuffleName**(`name`): `string`
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:6](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/shuffle-names.ts#L6)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:6](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/shuffle-names.ts#L6)
 
 The canonical form of a shuffle name: trimmed, with inner runs of whitespace
 collapsed. Tags are matched by exact string, so "א  ב" and "א ב" would

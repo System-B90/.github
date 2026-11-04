@@ -8,7 +8,7 @@
 
 > `const` **BREAK\_KINDS**: readonly \[`"post-long-exercise"`, `"between-syllabuses"`, `"prayer-cover"`, `"post-lecture"`, `"room-change"`\]
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:169](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-shared/gantt/cut-rules.ts#L169)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:169](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-shared/gantt/cut-rules.ts#L169)
 
 Kinds of break the post-pass can insert, in **descending priority**. When a
 day has less slack than the breaks it wants, higher-priority kinds are

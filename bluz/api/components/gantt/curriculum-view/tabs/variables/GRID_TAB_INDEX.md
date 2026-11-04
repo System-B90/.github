@@ -8,6 +8,6 @@
 
 > `const` **GRID\_TAB\_INDEX**: `3` = `3`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/index.tsx:36](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/components/gantt/curriculum-view/tabs/index.tsx#L36)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/index.tsx:36](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/components/gantt/curriculum-view/tabs/index.tsx#L36)
 
 The table (טבלה) tab: the only one the grid toolbar controls apply to.

@@ -8,7 +8,7 @@
 
 > **planByTemplate**(`baseInput`, `templateByWeek`, `templates`, `templating`, `plan`): [`CutPlan`](../../../../api-shared/gantt/cut-planner/type-aliases/CutPlan.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1297](https://github.com/System-B90/Bluz/blob/92e9db4014b408fc300f0c61d7bd7e8f4dbbac3f/ui/src/api-server/gantt/cut.ts#L1297)
+Defined in: [ui/src/api-server/gantt/cut.ts:1297](https://github.com/System-B90/Bluz/blob/901cc8f4c754d82c12fc600337c5991c07a64502/ui/src/api-server/gantt/cut.ts#L1297)
 
 Plans a curriculum whose weeks may use different templates (#997). Weeks
 are grouped by template and each group is planned whole, so every week
