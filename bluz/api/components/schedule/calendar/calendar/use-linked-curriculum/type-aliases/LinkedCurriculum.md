@@ -8,4 +8,4 @@
 
 > **LinkedCurriculum** = `Awaited`\<`ReturnType`\<*typeof* [`apiGetCurriculum`](../../../../../../api-client/gantt/curriculum/variables/apiGetCurriculum.md)\>\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts:7](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts#L7)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts:7](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts#L7)

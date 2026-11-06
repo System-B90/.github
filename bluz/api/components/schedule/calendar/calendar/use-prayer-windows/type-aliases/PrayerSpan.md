@@ -8,7 +8,7 @@
 
 > **PrayerSpan** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:25](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:25](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L25)
 
 A window of time as epoch milliseconds, end exclusive.
 
@@ -18,7 +18,7 @@ A window of time as epoch milliseconds, end exclusive.
 
 > **end**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:25](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:25](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L25)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:
 
 > **start**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:25](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:25](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L25)

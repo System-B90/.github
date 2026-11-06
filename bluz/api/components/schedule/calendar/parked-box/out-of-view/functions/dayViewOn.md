@@ -8,7 +8,7 @@
 
 > **dayViewOn**(`at`, `dayStart`, `dayEnd`): [`Interval`](../../../../../../api-shared/interval-layout/type-aliases/Interval.md)
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/out-of-view.ts:21](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/parked-box/out-of-view.ts#L21)
+Defined in: [ui/src/components/schedule/calendar/parked-box/out-of-view.ts:21](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/parked-box/out-of-view.ts#L21)
 
 The window the grid draws on the day of `at` (Israel time): the time
 settings' day start–end, with an end at or before the start ("00:00") read

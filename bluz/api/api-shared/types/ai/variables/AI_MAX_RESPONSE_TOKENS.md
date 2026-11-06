@@ -8,7 +8,7 @@
 
 > `const` **AI\_MAX\_RESPONSE\_TOKENS**: `2000` = `2_000`
 
-Defined in: [ui/src/api-shared/types/ai.ts:263](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/ai.ts#L263)
+Defined in: [ui/src/api-shared/types/ai.ts:263](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/ai.ts#L263)
 
 Upstream completion cap, sent as `max_tokens` on every model call. Without
 it a runaway or adversarial prompt has no ceiling on the bill for a single

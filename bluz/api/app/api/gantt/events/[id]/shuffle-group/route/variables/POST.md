@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/events/\[id\]/shuffle-group/route.ts:17](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/gantt/events/[id]/shuffle-group/route.ts#L17)
+Defined in: [ui/src/app/api/gantt/events/\[id\]/shuffle-group/route.ts:17](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/gantt/events/[id]/shuffle-group/route.ts#L17)
 
 Reconciles this event's shuffle group against the requested shuffle names,
 creating one sibling event per name (#699). Fewer than two names ungroups.

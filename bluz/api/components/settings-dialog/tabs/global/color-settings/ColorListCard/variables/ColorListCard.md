@@ -8,4 +8,4 @@
 
 > `const` **ColorListCard**: [`ListCard`](../../../common/type-aliases/ListCard.md)\<[`ColorEntry`](../../types/type-aliases/ColorEntry.md)\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/ColorListCard.tsx:85](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/color-settings/ColorListCard.tsx#L85)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/ColorListCard.tsx:85](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/color-settings/ColorListCard.tsx#L85)

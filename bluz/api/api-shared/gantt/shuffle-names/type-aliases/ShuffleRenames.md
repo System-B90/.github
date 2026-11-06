@@ -8,6 +8,6 @@
 
 > **ShuffleRenames** = `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:91](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/gantt/shuffle-names.ts#L91)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:91](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/shuffle-names.ts#L91)
 
 Old shuffle name → new name, applied to the syllabus and every tag (#774).

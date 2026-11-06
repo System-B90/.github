@@ -8,7 +8,7 @@
 
 > **SlotContextMenu**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:42](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L42)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:42](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L42)
 
 Right-click menu for empty grid (#859): pastes the clipboard event at the
 slot under the pointer, like a desktop paste at the cursor, drops a break

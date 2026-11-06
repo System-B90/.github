@@ -8,7 +8,7 @@
 
 > **InstructorSubmenu**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-context-menu/InstructorSubmenu.tsx:35](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-context-menu/InstructorSubmenu.tsx#L35)
+Defined in: [ui/src/components/schedule/event-context-menu/InstructorSubmenu.tsx:35](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/event-context-menu/InstructorSubmenu.tsx#L35)
 
 The context menu's instructor assignment: grouped by course and searchable
 like `InstructorSelect`, but with tri-state checkboxes, since one click can

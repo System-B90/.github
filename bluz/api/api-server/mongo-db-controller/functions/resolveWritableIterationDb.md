@@ -8,7 +8,7 @@
 
 > **resolveWritableIterationDb**(`iterationId?`): `Promise`\<[`DatabaseController`](../classes/DatabaseController.md)\>
 
-Defined in: [ui/src/api-server/mongo-db-controller.ts:641](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/mongo-db-controller.ts#L641)
+Defined in: [ui/src/api-server/mongo-db-controller.ts:641](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/mongo-db-controller.ts#L641)
 
 Like [resolveIterationDb](resolveIterationDb.md) but also rejects past (non-current) iterations.
 Avoids the double Mongo lookup of calling resolveIterationDb + assertWritable separately.

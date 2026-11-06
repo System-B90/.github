@@ -8,4 +8,4 @@
 
 > `const` **SYLLABUS\_WRITE\_TOOLS**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`any`\>[]
 
-Defined in: [ui/src/api-server/ai/tools/gantt-authoring.ts:464](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/tools/gantt-authoring.ts#L464)
+Defined in: [ui/src/api-server/ai/tools/gantt-authoring.ts:464](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/tools/gantt-authoring.ts#L464)

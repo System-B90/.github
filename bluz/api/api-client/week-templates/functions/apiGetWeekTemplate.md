@@ -8,7 +8,7 @@
 
 > **apiGetWeekTemplate**(`id`, `weekStart`, `iterationId?`): `Promise`\<\{ `events`: [`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]; `template`: [`WeekTemplate`](../../../api-shared/types/week-template/type-aliases/WeekTemplate.md); \}\>
 
-Defined in: [ui/src/api-client/week-templates.ts:49](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-client/week-templates.ts#L49)
+Defined in: [ui/src/api-client/week-templates.ts:49](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-client/week-templates.ts#L49)
 
 Fetches a template's events placed into the week starting `weekStart`
 (Sunday, YYYY-MM-DD), with course ids of `iterationId`'s run.

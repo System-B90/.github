@@ -8,7 +8,7 @@
 
 > **StudentLoadIssue** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:49](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/student-load.ts#L49)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:49](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/student-load.ts#L49)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:49](https:/
 
 > **kind**: `"shuffles-misaligned"`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:50](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/student-load.ts#L50)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:50](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/student-load.ts#L50)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:50](https:/
 
 > **minutesByShuffle**: `Record`\<`string`, `number`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:53](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/student-load.ts#L53)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:53](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/student-load.ts#L53)
 
 Minutes each of the syllabus' shuffles has on the day.
 
@@ -34,4 +34,4 @@ Minutes each of the syllabus' shuffles has on the day.
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:51](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/student-load.ts#L51)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:51](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/student-load.ts#L51)

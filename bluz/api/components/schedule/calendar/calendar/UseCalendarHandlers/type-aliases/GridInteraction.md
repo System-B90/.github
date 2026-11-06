@@ -8,7 +8,7 @@
 
 > **GridInteraction** = `"duplicate"` \| `"move"` \| `"place"` \| `"resize"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:35](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L35)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:35](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L35)
 
 What a committed grid gesture was: a plain move, a resize, a Ctrl-held
 move that places a copy and leaves the original where it was (#575), or

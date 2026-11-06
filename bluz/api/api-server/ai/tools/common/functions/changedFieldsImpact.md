@@ -8,7 +8,7 @@
 
 > **changedFieldsImpact**(`args`, `labels`): `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/common.ts:129](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/tools/common.ts#L129)
+Defined in: [ui/src/api-server/ai/tools/common.ts:129](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/tools/common.ts#L129)
 
 Names the fields a partial update will write, in Hebrew. A human approving
 "עדכון X" has no way to tell a rename from a reschedule otherwise.

@@ -8,7 +8,7 @@
 
 > **ContextMenuSlice** = (`event`, `headWorkingMs`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:80](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-context-menu/index.tsx#L80)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:80](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/event-context-menu/index.tsx#L80)
 
 Cuts one event in two after this much working time — breaks it steps over
 don't count. Both pieces keep its fields (#657).

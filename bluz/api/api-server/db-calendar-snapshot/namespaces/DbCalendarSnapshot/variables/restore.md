@@ -8,7 +8,7 @@
 
 > `const` **restore**: (`snapshotId`, `controller`, `iterationId?`) => `Promise`\<[`CalendarSnapshotRestoreResult`](../../../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult.md)\> = `restoreSnapshot`
 
-Defined in: [ui/src/api-server/db-calendar-snapshot.ts:348](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-calendar-snapshot.ts#L348)
+Defined in: [ui/src/api-server/db-calendar-snapshot.ts:348](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/db-calendar-snapshot.ts#L348)
 
 Restores the calendar to a snapshot's state within the snapshot's range
 (stored at capture; the events' own span for older snapshots): live events

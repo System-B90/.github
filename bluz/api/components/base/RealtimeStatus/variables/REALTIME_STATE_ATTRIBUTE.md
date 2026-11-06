@@ -8,7 +8,7 @@
 
 > `const` **REALTIME\_STATE\_ATTRIBUTE**: `"data-realtime-state"` = `"data-realtime-state"`
 
-Defined in: [ui/src/components/base/RealtimeStatus.tsx:24](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/RealtimeStatus.tsx#L24)
+Defined in: [ui/src/components/base/RealtimeStatus.tsx:24](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/RealtimeStatus.tsx#L24)
 
 Attribute the state is published under, and the element carrying it.
 Exported so specs assert against one name rather than a copied string.

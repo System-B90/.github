@@ -8,7 +8,7 @@
 
 > **BuildGantLinkRoutesProps**\<`TEntity`\> = `object`
 
-Defined in: [ui/src/app/api/gantt/base-link.ts:17](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/gantt/base-link.ts#L17)
+Defined in: [ui/src/app/api/gantt/base-link.ts:17](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/gantt/base-link.ts#L17)
 
 ## Type Parameters
 
@@ -22,4 +22,4 @@ Defined in: [ui/src/app/api/gantt/base-link.ts:17](https://github.com/System-B90
 
 > **dbSet**: [`BasicGantLinkOperations`](BasicGantLinkOperations.md)\<`TEntity`\>
 
-Defined in: [ui/src/app/api/gantt/base-link.ts:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/gantt/base-link.ts#L18)
+Defined in: [ui/src/app/api/gantt/base-link.ts:18](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/gantt/base-link.ts#L18)

@@ -8,7 +8,7 @@
 
 > `const` **EventLockStoreContext**: `Context`\<[`EventLockStore`](../type-aliases/EventLockStore.md)\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:88](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L88)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx:88](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar-provider/CalendarContext.tsx#L88)
 
 The live lock map as a store with one stable identity (#955). Tiles read
 their own lock through [useEventLock](../functions/useEventLock.md) instead of `useCalendar()`,

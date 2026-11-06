@@ -8,7 +8,7 @@
 
 > **diffHiveCache**(`before`, `after`): [`HiveCacheChanges`](../../../../api-shared/types/iteration/type-aliases/HiveCacheChanges.md)
 
-Defined in: [ui/src/api-server/hive/build-cache.ts:51](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/build-cache.ts#L51)
+Defined in: [ui/src/api-server/hive/build-cache.ts:51](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/build-cache.ts#L51)
 
 Summarise what a fresh snapshot changes relative to the stored one, so a
 manual sync (#379) can report a result instead of succeeding silently. The

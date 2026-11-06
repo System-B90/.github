@@ -8,7 +8,7 @@
 
 > **LiveLessonChange** = `object`
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:29](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/live-lesson-push.ts#L29)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:29](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/live-lesson-push.ts#L29)
 
 A saved edit of an event that was or is live.
 
@@ -18,7 +18,7 @@ A saved edit of an event that was or is live.
 
 > `optional` **after?**: [`LiveLessonSide`](LiveLessonSide.md) & `object`
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:34](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/live-lesson-push.ts#L34)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:34](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/live-lesson-push.ts#L34)
 
 The event as saved, when it is live.
 
@@ -34,7 +34,7 @@ The event as saved, when it is live.
 
 > `optional` **before?**: [`LiveLessonSide`](LiveLessonSide.md)
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:32](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/live-lesson-push.ts#L32)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:32](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/live-lesson-push.ts#L32)
 
 The event as it stood, when it was live.
 
@@ -44,4 +44,4 @@ The event as it stood, when it was live.
 
 > **eventId**: [`EventId`](../../../../api-shared/types/event/type-aliases/EventId.md)
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:30](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/live-lesson-push.ts#L30)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:30](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/live-lesson-push.ts#L30)

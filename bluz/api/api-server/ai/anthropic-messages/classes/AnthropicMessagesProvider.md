@@ -6,7 +6,7 @@
 
 # Class: AnthropicMessagesProvider
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:212](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/anthropic-messages.ts#L212)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:212](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/anthropic-messages.ts#L212)
 
 ## Extended by
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-server/ai/anthropic-messages.ts:212](https://github.com/
 
 > **new AnthropicMessagesProvider**(`options`): `AnthropicMessagesProvider`
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:221](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/anthropic-messages.ts#L221)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:221](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/anthropic-messages.ts#L221)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Error shown when `apiKey` is empty — names the env var operators set.
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:215](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/anthropic-messages.ts#L215)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:215](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/anthropic-messages.ts#L215)
 
 Model used when a request does not name one.
 
@@ -84,7 +84,7 @@ Model used when a request does not name one.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:214](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/anthropic-messages.ts#L214)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:214](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/anthropic-messages.ts#L214)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -98,7 +98,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:248](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/anthropic-messages.ts#L248)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:248](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/anthropic-messages.ts#L248)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -122,7 +122,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **listModels**(`signal?`): `Promise`\<[`AiModelInfo`](../../../../api-shared/types/ai-models/type-aliases/AiModelInfo.md)[]\>
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:346](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/anthropic-messages.ts#L346)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:346](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/anthropic-messages.ts#L346)
 
 Models the backend offers (#779). Optional: a backend that cannot list
 them simply leaves the settings field free-text.
@@ -147,7 +147,7 @@ them simply leaves the settings field free-text.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:276](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/anthropic-messages.ts#L276)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:276](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/anthropic-messages.ts#L276)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

@@ -8,7 +8,7 @@
 
 > **MenuShortcut**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-context-menu/MenuShortcut.tsx:7](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-context-menu/MenuShortcut.tsx#L7)
+Defined in: [ui/src/components/schedule/event-context-menu/MenuShortcut.tsx:7](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/event-context-menu/MenuShortcut.tsx#L7)
 
 A menu item's keyboard hint, pushed to the end of the row. Rendered LTR so
 "Ctrl+X" never reads as "X+Ctrl" inside the RTL menu.

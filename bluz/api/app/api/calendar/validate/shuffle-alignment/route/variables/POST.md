@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/calendar/validate/shuffle-alignment/route.ts:21](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/calendar/validate/shuffle-alignment/route.ts#L21)
+Defined in: [ui/src/app/api/calendar/validate/shuffle-alignment/route.ts:21](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/calendar/validate/shuffle-alignment/route.ts#L21)
 
 POST /api/calendar/validate/shuffle-alignment (#1000) — R-50/R-51 over one
 of: `{ start, end }` (live calendar), `{ draftId }` (saved draft) or

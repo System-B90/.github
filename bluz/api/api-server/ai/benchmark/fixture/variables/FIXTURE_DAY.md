@@ -8,7 +8,7 @@
 
 > `const` **FIXTURE\_DAY**: `object`
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:46](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/benchmark/fixture.ts#L46)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:46](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/benchmark/fixture.ts#L46)
 
 Days after [FIXTURE\_NOW](FIXTURE_NOW.md), which is a Sunday.
 

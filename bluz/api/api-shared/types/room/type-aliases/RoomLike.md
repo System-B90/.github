@@ -8,4 +8,4 @@
 
 > **RoomLike** = [`ResolvableRoom`](ResolvableRoom.md) \| [`Room`](Room.md)
 
-Defined in: [ui/src/api-shared/types/room.ts:49](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/room.ts#L49)
+Defined in: [ui/src/api-shared/types/room.ts:49](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/room.ts#L49)

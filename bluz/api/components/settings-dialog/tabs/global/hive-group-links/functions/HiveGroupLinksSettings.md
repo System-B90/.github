@@ -8,7 +8,7 @@
 
 > **HiveGroupLinksSettings**(): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/index.tsx:305](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/hive-group-links/index.tsx#L305)
+Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/index.tsx:306](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/hive-group-links/index.tsx#L306)
 
 One place to see and set which Hive student group every course and shuffle
 syncs against (#1020). Courses live in the iteration's database and each

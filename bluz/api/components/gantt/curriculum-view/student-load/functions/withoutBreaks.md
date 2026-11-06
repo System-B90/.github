@@ -8,7 +8,7 @@
 
 > **withoutBreaks**(`byDay`): `Record`\<[`GanttDayId`](../../../../../api-shared/types/gantt/models/day/type-aliases/GanttDayId.md), [`DayStudentLoad`](../type-aliases/DayStudentLoad.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:565](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/student-load.ts#L565)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:565](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/student-load.ts#L565)
 
 The loads with break time taken out of every path and day.
 

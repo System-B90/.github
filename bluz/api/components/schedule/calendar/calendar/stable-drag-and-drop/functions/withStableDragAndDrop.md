@@ -8,7 +8,7 @@
 
 > **withStableDragAndDrop**\<`TEvent`, `TResource`\>(`Calendar`): `ComponentType`\<[`StableDragAndDropProps`](../type-aliases/StableDragAndDropProps.md)\<`TEvent`, `TResource`\>\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar/stable-drag-and-drop.tsx:120](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/stable-drag-and-drop.tsx#L120)
+Defined in: [ui/src/components/schedule/calendar/calendar/stable-drag-and-drop.tsx:120](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/stable-drag-and-drop.tsx#L120)
 
 react-big-calendar's `withDragAndDrop`, rebuilt so the drag layer does not
 re-render the calendar underneath it.

@@ -8,7 +8,7 @@
 
 > **HiveLessonsContextState** = `object`
 
-Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:14](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/HiveLessonsProvider.tsx#L14)
+Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/HiveLessonsProvider.tsx#L14)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:14](https://github.c
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:15](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/HiveLessonsProvider.tsx#L15)
+Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/HiveLessonsProvider.tsx#L15)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:15](https://github.c
 
 > **getLesson**: (`id`) => [`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md) \| `undefined`
 
-Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:19](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/HiveLessonsProvider.tsx#L19)
+Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:19](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/HiveLessonsProvider.tsx#L19)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:19](https://github.c
 
 > **getLessonsOfModule**: (`moduleId`) => [`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)[]
 
-Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:20](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/HiveLessonsProvider.tsx#L20)
+Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:20](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/HiveLessonsProvider.tsx#L20)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:20](https://github.c
 
 > **lessons**: [`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md)[]
 
-Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:16](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/HiveLessonsProvider.tsx#L16)
+Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:16](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/HiveLessonsProvider.tsx#L16)
 
 ***
 
@@ -68,6 +68,6 @@ Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:16](https://github.c
 
 > **loaded**: `boolean`
 
-Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/HiveLessonsProvider.tsx#L18)
+Defined in: [ui/src/components/base/HiveLessonsProvider.tsx:18](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/HiveLessonsProvider.tsx#L18)
 
 True once Hive answered: until then a missing lesson is not news.

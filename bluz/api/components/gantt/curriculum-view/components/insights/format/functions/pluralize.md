@@ -8,7 +8,7 @@
 
 > **pluralize**(`count`, `one`, `many`): `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/format.ts:47](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/components/insights/format.ts#L47)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/format.ts:47](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/components/insights/format.ts#L47)
 
 ## Parameters
 

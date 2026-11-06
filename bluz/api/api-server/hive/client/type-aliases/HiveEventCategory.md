@@ -8,7 +8,7 @@
 
 > **HiveEventCategory** = `object`
 
-Defined in: [ui/src/api-server/hive/client.ts:12](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/client.ts#L12)
+Defined in: [ui/src/api-server/hive/client.ts:12](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L12)
 
 A Hive schedule event category (`/api/core/schedule/categories/`).
 
@@ -18,7 +18,7 @@ A Hive schedule event category (`/api/core/schedule/categories/`).
 
 > **has\_lesson**: `boolean`
 
-Defined in: [ui/src/api-server/hive/client.ts:15](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/client.ts#L15)
+Defined in: [ui/src/api-server/hive/client.ts:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L15)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-server/hive/client.ts:15](https://github.com/System-B90/
 
 > **hide\_details\_in\_review**: `boolean`
 
-Defined in: [ui/src/api-server/hive/client.ts:17](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/client.ts#L17)
+Defined in: [ui/src/api-server/hive/client.ts:17](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L17)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-server/hive/client.ts:17](https://github.com/System-B90/
 
 > **id**: `string`
 
-Defined in: [ui/src/api-server/hive/client.ts:13](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/client.ts#L13)
+Defined in: [ui/src/api-server/hive/client.ts:13](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L13)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-server/hive/client.ts:13](https://github.com/System-B90/
 
 > **name**: `string`
 
-Defined in: [ui/src/api-server/hive/client.ts:14](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/client.ts#L14)
+Defined in: [ui/src/api-server/hive/client.ts:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L14)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [ui/src/api-server/hive/client.ts:14](https://github.com/System-B90/
 
 > **students\_see\_subject**: `boolean`
 
-Defined in: [ui/src/api-server/hive/client.ts:16](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/client.ts#L16)
+Defined in: [ui/src/api-server/hive/client.ts:16](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L16)

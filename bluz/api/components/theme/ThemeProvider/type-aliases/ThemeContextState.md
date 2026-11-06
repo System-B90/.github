@@ -8,7 +8,7 @@
 
 > **ThemeContextState** = `object`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:53](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/theme/ThemeProvider.tsx#L53)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:54](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/theme/ThemeProvider.tsx#L54)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/theme/ThemeProvider.tsx:53](https://github.com/Sy
 
 > **accent**: [`Accent`](Accent.md)
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:56](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/theme/ThemeProvider.tsx#L56)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:57](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/theme/ThemeProvider.tsx#L57)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/theme/ThemeProvider.tsx:56](https://github.com/Sy
 
 > **resolvedTheme**: [`Brightness`](Brightness.md)
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:55](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/theme/ThemeProvider.tsx#L55)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:56](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/theme/ThemeProvider.tsx#L56)
 
 Brightness only: pink is light, pink-dark is dark.
 
@@ -34,7 +34,7 @@ Brightness only: pink is light, pink-dark is dark.
 
 > **setAccent**: (`accent`) => `void`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:62](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/theme/ThemeProvider.tsx#L62)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:63](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/theme/ThemeProvider.tsx#L63)
 
 Switches brand/pink and keeps the current brightness.
 
@@ -54,7 +54,7 @@ Switches brand/pink and keeps the current brightness.
 
 > **setBrightness**: (`brightness`) => `void`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:60](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/theme/ThemeProvider.tsx#L60)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:61](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/theme/ThemeProvider.tsx#L61)
 
 Switches light/dark and keeps the current accent.
 
@@ -74,7 +74,7 @@ Switches light/dark and keeps the current accent.
 
 > **setTheme**: (`theme`) => `void`
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:58](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/theme/ThemeProvider.tsx#L58)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:59](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/theme/ThemeProvider.tsx#L59)
 
 #### Parameters
 
@@ -92,4 +92,4 @@ Defined in: [ui/src/components/theme/ThemeProvider.tsx:58](https://github.com/Sy
 
 > **theme**: [`ThemeMode`](ThemeMode.md)
 
-Defined in: [ui/src/components/theme/ThemeProvider.tsx:57](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/theme/ThemeProvider.tsx#L57)
+Defined in: [ui/src/components/theme/ThemeProvider.tsx:58](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/theme/ThemeProvider.tsx#L58)

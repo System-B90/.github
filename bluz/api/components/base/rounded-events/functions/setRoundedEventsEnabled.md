@@ -8,7 +8,7 @@
 
 > **setRoundedEventsEnabled**(`enabled`): `void`
 
-Defined in: [ui/src/components/base/rounded-events.ts:10](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/rounded-events.ts#L10)
+Defined in: [ui/src/components/base/rounded-events.ts:10](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/rounded-events.ts#L10)
 
 Personal setting (#976): schedule events are rectangles unless the user
 opts into rounded corners. A root class, since the calendar's events are

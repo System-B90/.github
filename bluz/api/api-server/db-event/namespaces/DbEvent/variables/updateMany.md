@@ -8,7 +8,7 @@
 
 > `const` **updateMany**: (`events`, `options?`, `controller`, `iterationId?`, `origin`) => `Promise`\<\{ `after`: [`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md)[]; `before`: `Map`\<`string`, [`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md)\>; \}\> = `updateDbEvents`
 
-Defined in: [ui/src/api-server/db-event.ts:798](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-event.ts#L798)
+Defined in: [ui/src/api-server/db-event.ts:798](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/db-event.ts#L798)
 
 [setDbEvents](setMany.md) that also returns the stored copies, keyed by id (#926).
 

@@ -10,7 +10,7 @@
 
 > **getPresentInstructors**(`event`): `number`[]
 
-Defined in: [ui/src/api-shared/types/event.ts:296](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/event.ts#L296)
+Defined in: [ui/src/api-shared/types/event.ts:296](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/event.ts#L296)
 
 Compiles a unique list of instructor and lecturer IDs present at an event.
 
@@ -38,7 +38,7 @@ const attendees = getPresentInstructors(event, true);
 
 > **getPresentInstructors**(`event`, `includeOutsiders`): [`PersonId`](../type-aliases/PersonId.md)[]
 
-Defined in: [ui/src/api-shared/types/event.ts:299](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/event.ts#L299)
+Defined in: [ui/src/api-shared/types/event.ts:299](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/event.ts#L299)
 
 Compiles a unique list of instructor and lecturer IDs present at an event.
 

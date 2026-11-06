@@ -8,7 +8,7 @@
 
 > **FieldError**\<`TValues`\> = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:10](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:10](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L10)
 
 A validation failure tied to one field: shown under it, not in a snackbar.
 
@@ -24,7 +24,7 @@ A validation failure tied to one field: shown under it, not in a snackbar.
 
 > **field**: `Extract`\<keyof `TValues`, `string`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:11](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:11](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L11)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.
 
 > **message**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:12](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:12](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L12)

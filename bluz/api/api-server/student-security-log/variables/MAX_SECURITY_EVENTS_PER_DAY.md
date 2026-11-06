@@ -8,7 +8,7 @@
 
 > `const` **MAX\_SECURITY\_EVENTS\_PER\_DAY**: `200` = `200`
 
-Defined in: [ui/src/api-server/student-security-log.ts:22](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/student-security-log.ts#L22)
+Defined in: [ui/src/api-server/student-security-log.ts:22](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/student-security-log.ts#L22)
 
 Most recent attempts kept per user per day. A hostile client can trigger
 one write per request, so the array is capped (oldest dropped) while

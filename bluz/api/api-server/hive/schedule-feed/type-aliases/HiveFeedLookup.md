@@ -8,7 +8,7 @@
 
 > **HiveFeedLookup** = `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:121](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/schedule-feed.ts#L121)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:121](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/schedule-feed.ts#L121)
 
 Hive names the feed resolves Bluz ids against.
 
@@ -18,7 +18,7 @@ Hive names the feed resolves Bluz ids against.
 
 > **category**: (`eventType`) => [`HiveFeedCategory`](HiveFeedCategory.md) \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:130](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/schedule-feed.ts#L130)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:130](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/schedule-feed.ts#L130)
 
 The Hive category matching a Bluz event type, if Hive has one.
 
@@ -38,7 +38,7 @@ The Hive category matching a Bluz event type, if Hive has one.
 
 > **dailyReviewLesson**: (`moduleId`) => `HiveFeedLesson` \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:128](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/schedule-feed.ts#L128)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:128](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/schedule-feed.ts#L128)
 
 The lesson of Hive's daily-review module, when `moduleId` is that
 module; undefined for every other module.
@@ -59,7 +59,7 @@ module; undefined for every other module.
 
 > **groupEmails**: (`courseIds`) => `string`[]
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:133](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/schedule-feed.ts#L133)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:133](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/schedule-feed.ts#L133)
 
 Group emails of the courses and all their sub-courses, deduplicated.
 
@@ -79,7 +79,7 @@ Group emails of the courses and all their sub-courses, deduplicated.
 
 > **lesson**: (`lessonId`) => `HiveFeedLesson` \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:123](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/schedule-feed.ts#L123)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:123](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/schedule-feed.ts#L123)
 
 #### Parameters
 
@@ -97,7 +97,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:123](https://github.com/Sys
 
 > **roomName**: (`roomId`) => `string` \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:131](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/schedule-feed.ts#L131)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:131](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/schedule-feed.ts#L131)
 
 #### Parameters
 
@@ -115,7 +115,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:131](https://github.com/Sys
 
 > **subjectName**: (`subjectId`) => `string` \| `undefined`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:122](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/hive/schedule-feed.ts#L122)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:122](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/schedule-feed.ts#L122)
 
 #### Parameters
 

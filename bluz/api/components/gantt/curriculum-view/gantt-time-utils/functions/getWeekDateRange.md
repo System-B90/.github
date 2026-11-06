@@ -8,7 +8,7 @@
 
 > **getWeekDateRange**(`startDate`, `weekIndex`): \{ `end`: `Dayjs`; `start`: `Dayjs`; \} \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:189](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L189)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-time-utils.ts:189](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/gantt-time-utils.ts#L189)
 
 ## Parameters
 

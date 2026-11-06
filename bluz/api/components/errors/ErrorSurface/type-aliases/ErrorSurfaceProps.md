@@ -8,7 +8,7 @@
 
 > **ErrorSurfaceProps** = `object`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:14](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/errors/ErrorSurface.tsx#L14)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L14)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/errors/ErrorSurface.tsx:14](https://github.com/Sy
 
 > `optional` **actions?**: [`ErrorSurfaceAction`](ErrorSurfaceAction.md)[]
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:19](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/errors/ErrorSurface.tsx#L19)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:19](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L19)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/errors/ErrorSurface.tsx:19](https://github.com/Sy
 
 > **description**: `string`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:16](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/errors/ErrorSurface.tsx#L16)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:16](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L16)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/errors/ErrorSurface.tsx:16](https://github.com/Sy
 
 > `optional` **details?**: `string`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/errors/ErrorSurface.tsx#L18)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:18](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L18)
 
 Short technical hint (digest / message). Rendered monospace, muted.
 
@@ -42,4 +42,4 @@ Short technical hint (digest / message). Rendered monospace, muted.
 
 > **title**: `string`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:15](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/errors/ErrorSurface.tsx#L15)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L15)

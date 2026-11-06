@@ -8,7 +8,7 @@
 
 > **ActiveDraft** = `object`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/OfflineProvider.tsx#L18)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:18](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/OfflineProvider.tsx#L18)
 
 The shared draft an offline session is editing (#62).
 
@@ -18,7 +18,7 @@ The shared draft an offline session is editing (#62).
 
 > **id**: `string`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:19](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/OfflineProvider.tsx#L19)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:19](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/OfflineProvider.tsx#L19)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:19](https://github.com/S
 
 > **label**: `string`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:20](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/OfflineProvider.tsx#L20)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:20](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/OfflineProvider.tsx#L20)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:20](https://github.com/S
 
 > **rangeEnd**: `string`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:22](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/OfflineProvider.tsx#L22)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:22](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/OfflineProvider.tsx#L22)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/base/OfflineProvider.tsx:22](https://github.com/S
 
 > **rangeStart**: `string`
 
-Defined in: [ui/src/components/base/OfflineProvider.tsx:21](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/OfflineProvider.tsx#L21)
+Defined in: [ui/src/components/base/OfflineProvider.tsx:21](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/OfflineProvider.tsx#L21)

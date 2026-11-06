@@ -8,7 +8,7 @@
 
 > **unknownToolEnvelope**(`name`): [`AiToolEnvelope`](../type-aliases/AiToolEnvelope.md)
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:201](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/tools/envelope.ts#L201)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:201](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/tools/envelope.ts#L201)
 
 Wraps the "you called something that does not exist" case.
 

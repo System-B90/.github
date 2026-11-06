@@ -8,7 +8,7 @@
 
 > **EventAudienceField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/event-dialog/EventAudienceField.tsx:310](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/event-dialog/EventAudienceField.tsx#L310)
+Defined in: [ui/src/components/gantt/event-dialog/EventAudienceField.tsx:310](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/event-dialog/EventAudienceField.tsx#L310)
 
 Who an event is for: the whole syllabus, a split into
 shuffles (one copy per shuffle, aligned in the same block), or only some of

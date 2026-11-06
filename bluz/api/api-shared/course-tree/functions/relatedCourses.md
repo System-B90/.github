@@ -8,7 +8,7 @@
 
 > **relatedCourses**(`courseIds`, `courses`): `Set`\<`string`\>
 
-Defined in: [ui/src/api-shared/course-tree.ts:46](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/course-tree.ts#L46)
+Defined in: [ui/src/api-shared/course-tree.ts:46](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/course-tree.ts#L46)
 
 Every course on the tree path through `courseIds`: the courses themselves,
 all their ancestors and all their descendants. An event tagged for a shuffle

@@ -6,7 +6,7 @@
 
 # Enumeration: WsScope
 
-Defined in: [session-server/session-common.ts:110](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/session-server/session-common.ts#L110)
+Defined in: [session-server/session-common.ts:110](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/session-server/session-common.ts#L110)
 
 Privilege label signed into a connect ticket (#656). Bluz serves two kinds
 of socket and they may not see the same traffic, so the scope decides what a
@@ -18,7 +18,7 @@ socket is allowed to register for — see `session-server.ts`.
 
 > **Hanich**: `"hanich"`
 
-Defined in: [session-server/session-common.ts:114](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/session-server/session-common.ts#L114)
+Defined in: [session-server/session-common.ts:114](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/session-server/session-common.ts#L114)
 
 Hanich. Content-free refresh pings and nothing else.
 
@@ -28,6 +28,6 @@ Hanich. Content-free refresh pings and nothing else.
 
 > **Segel**: `"segel"`
 
-Defined in: [session-server/session-common.ts:112](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/session-server/session-common.ts#L112)
+Defined in: [session-server/session-common.ts:112](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/session-server/session-common.ts#L112)
 
 Segel/Admin. The full staff calendar wire.

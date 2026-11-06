@@ -8,7 +8,7 @@
 
 > **cutCurriculumToSchedule**(`curriculumId`, `options?`, `origin?`): `Promise`\<[`CutOutcome`](../type-aliases/CutOutcome.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1769](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/cut.ts#L1769)
+Defined in: [ui/src/api-server/gantt/cut.ts:1769](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/cut.ts#L1769)
 
 Materialize a published, linked curriculum into schedule events. Any gating
 violation returns a structured error and writes nothing.

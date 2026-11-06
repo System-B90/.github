@@ -8,7 +8,7 @@
 
 > **noteLocalIterationSwitch**(`iterationId`): `void`
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:299](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/IterationProvider.tsx#L299)
+Defined in: [ui/src/components/base/IterationProvider.tsx:299](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/IterationProvider.tsx#L299)
 
 Call before requesting a current-iteration switch from this tab.
 

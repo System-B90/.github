@@ -8,6 +8,6 @@
 
 > `const` **DEFAULT\_KEY\_FILE**: `"~/.claude/cc_base.json"` = `"~/.claude/cc_base.json"`
 
-Defined in: [ui/src/api-server/ai/key-helper.ts:45](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/key-helper.ts#L45)
+Defined in: [ui/src/api-server/ai/key-helper.ts:45](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/key-helper.ts#L45)
 
 Where cc-sso-helper writes its key; `~` is the helper's home.

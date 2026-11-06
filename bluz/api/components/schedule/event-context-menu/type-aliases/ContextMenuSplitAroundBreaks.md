@@ -8,7 +8,7 @@
 
 > **ContextMenuSplitAroundBreaks** = (`event`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:83](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/event-context-menu/index.tsx#L83)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:83](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/event-context-menu/index.tsx#L83)
 
 Turns an event's blocks around its breaks into separate events (#1017).
 

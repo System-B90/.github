@@ -8,7 +8,7 @@
 
 > **CutMappingRow** = `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:112](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/cut.ts#L112)
+Defined in: [ui/src/api-server/gantt/cut.ts:112](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/cut.ts#L112)
 
 Plain-data mapping row (subset of the Drizzle `cMDA` row).
 
@@ -18,7 +18,7 @@ Plain-data mapping row (subset of the Drizzle `cMDA` row).
 
 > `optional` **allottedMinutes?**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:117](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/cut.ts#L117)
+Defined in: [ui/src/api-server/gantt/cut.ts:117](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/cut.ts#L117)
 
 Minutes the event takes on this day.
 
@@ -28,7 +28,7 @@ Minutes the event takes on this day.
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:114](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/cut.ts#L114)
+Defined in: [ui/src/api-server/gantt/cut.ts:114](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/cut.ts#L114)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:114](https://github.com/System-B90/B
 
 > **eventId**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:113](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/cut.ts#L113)
+Defined in: [ui/src/api-server/gantt/cut.ts:113](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/cut.ts#L113)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:113](https://github.com/System-B90/B
 
 > `optional` **sortOrder?**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:115](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/cut.ts#L115)
+Defined in: [ui/src/api-server/gantt/cut.ts:115](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/cut.ts#L115)
 
 ***
 
@@ -52,6 +52,6 @@ Defined in: [ui/src/api-server/gantt/cut.ts:115](https://github.com/System-B90/B
 
 > `optional` **weekOnly?**: `boolean` \| `null`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:119](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/gantt/cut.ts#L119)
+Defined in: [ui/src/api-server/gantt/cut.ts:119](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/cut.ts#L119)
 
 Placed for the week rather than this exact day (#964).

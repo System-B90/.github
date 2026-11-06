@@ -8,7 +8,7 @@
 
 > **unreachableWriteTool**(`name`, `title`, `description`, `danger`, `parameters`): [`AiTool`](../../../tools/types/type-aliases/AiTool.md)\<`Record`\<`string`, `unknown`\>\>
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:388](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/benchmark/fixture.ts#L388)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:388](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/benchmark/fixture.ts#L388)
 
 Builds a write tool that cannot write.
 

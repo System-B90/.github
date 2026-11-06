@@ -8,7 +8,7 @@
 
 > **TintSpan** = [`PrayerSpan`](../../use-prayer-windows/type-aliases/PrayerSpan.md) & `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/time-tint.tsx:18](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/calendar/time-tint.tsx#L18)
+Defined in: [ui/src/components/schedule/calendar/calendar/time-tint.tsx:18](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/time-tint.tsx#L18)
 
 A tinted stretch of time, epoch milliseconds, end exclusive. A prayer tint
 keeps its whole window, uncut by Shabbat, for the tooltip.

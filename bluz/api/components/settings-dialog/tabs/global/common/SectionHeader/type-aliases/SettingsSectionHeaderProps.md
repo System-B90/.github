@@ -8,7 +8,7 @@
 
 > **SettingsSectionHeaderProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:7](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L7)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:7](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L7)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > `optional` **action?**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:15](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L15)
 
 Trailing control: a switch, a button.
 
@@ -26,7 +26,7 @@ Trailing control: a switch, a button.
 
 > `optional` **color?**: `"info"` \| `"primary"` \| `"secondary"` \| `"success"` \| `"warning"`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:11](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:11](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L11)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > **icon**: `React.ElementType`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:8](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L8)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:8](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L8)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > **subtitle**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:10](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:10](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L10)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > **title**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:9](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:9](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L9)
 
 ***
 
@@ -58,6 +58,6 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.
 
 > `optional` **titleAdornment?**: `ReactNode`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:13](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:13](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L13)
 
 Sits right after the title, e.g. the AI model chip.

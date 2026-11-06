@@ -8,7 +8,7 @@
 
 > **archivedIterationCacheControl**(`iteration`): [`ApiCacheControl`](../../common/type-aliases/ApiCacheControl.md) \| `undefined`
 
-Defined in: [ui/src/api-server/iteration-request.ts:24](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/iteration-request.ts#L24)
+Defined in: [ui/src/api-server/iteration-request.ts:24](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/iteration-request.ts#L24)
 
 Cache directive for a response built from an archived iteration's frozen
 Hive snapshot: a week, and `private` because every route sits behind Hive

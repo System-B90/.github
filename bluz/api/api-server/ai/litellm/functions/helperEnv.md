@@ -8,7 +8,7 @@
 
 > **helperEnv**(`env`): `ProcessEnv`
 
-Defined in: [ui/src/api-server/ai/litellm.ts:83](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/ai/litellm.ts#L83)
+Defined in: [ui/src/api-server/ai/litellm.ts:83](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/litellm.ts#L83)
 
 Bluz's environment for the helper, minus [HELPER\_CONFLICTING\_ENV](../variables/HELPER_CONFLICTING_ENV.md).
 

@@ -8,7 +8,7 @@
 
 > **collapseCourseSelection**(`selectedIds`, `allCourses`): [`Course`](../../../../api-shared/types/course/type-aliases/Course.md)[]
 
-Defined in: [ui/src/components/base/collapse-course-selection.ts:15](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/base/collapse-course-selection.ts#L15)
+Defined in: [ui/src/components/base/collapse-course-selection.ts:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/base/collapse-course-selection.ts#L15)
 
 Collapses a flat course selection up the course tree.
 

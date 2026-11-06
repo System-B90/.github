@@ -8,7 +8,7 @@
 
 > `const` **DELETE**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:156](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L156)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/mappings/route.ts:156](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/gantt/curriculums/[id]/mappings/route.ts#L156)
 
 DELETE: Removes a module mapping.
 

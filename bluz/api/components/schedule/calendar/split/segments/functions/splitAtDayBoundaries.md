@@ -8,7 +8,7 @@
 
 > **splitAtDayBoundaries**(`start`, `end`): `object`[]
 
-Defined in: [ui/src/components/schedule/calendar/split/segments.ts:201](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/schedule/calendar/split/segments.ts#L201)
+Defined in: [ui/src/components/schedule/calendar/split/segments.ts:201](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/split/segments.ts#L201)
 
 react-big-calendar lays each event out in exactly one day column; a piece
 whose wall-clock span crosses local midnight has no such column and gets

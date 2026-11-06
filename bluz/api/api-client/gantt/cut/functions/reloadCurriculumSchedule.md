@@ -8,7 +8,7 @@
 
 > **reloadCurriculumSchedule**(`curriculumId`, `options?`): `Promise`\<[`ApiCurriculumReloadResponse`](../../../../api-shared/types/gantt/reload/type-aliases/ApiCurriculumReloadResponse.md)\>
 
-Defined in: [ui/src/api-client/gantt/cut.ts:129](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-client/gantt/cut.ts#L129)
+Defined in: [ui/src/api-client/gantt/cut.ts:129](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-client/gantt/cut.ts#L129)
 
 PATCH /api/gantt/curriculums/[id]/cut — reload an already-cut schedule from
 the current gantt. With `dryRun` the server only computes the diff.

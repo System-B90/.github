@@ -8,7 +8,7 @@
 
 > **normalizeOptionalStoredEvents**(`events`): [`DbEventDocument`](../../../api-shared/types/event/type-aliases/DbEventDocument.md)[] \| `undefined`
 
-Defined in: [ui/src/api-server/calendar-store-request.ts:44](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/calendar-store-request.ts#L44)
+Defined in: [ui/src/api-server/calendar-store-request.ts:44](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/calendar-store-request.ts#L44)
 
 Same coercion for PATCH-style bodies where `events` is optional: an absent
 key means "keep whatever is stored" and must be distinguishable from an

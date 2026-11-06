@@ -8,7 +8,7 @@
 
 > **parseTemplateId**(`raw`): `string` \| `undefined`
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:72](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/gantt/cut.ts#L72)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:72](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/gantt/cut.ts#L72)
 
 A request body's `templateId`: a non-empty string, else the default template.
 

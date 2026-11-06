@@ -8,6 +8,6 @@
 
 > `const` **TEMPORAL\_CONFLICT\_MESSAGE**: `"האילוצים הזמניים סותרים זה את זה — לא נותר אף יום חוקי לשיבוץ. ניתן לשמור, אך מומלץ לתקן."` = `"האילוצים הזמניים סותרים זה את זה — לא נותר אף יום חוקי לשיבוץ. ניתן לשמור, אך מומלץ לתקן."`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:97](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L97)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx:97](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/module-dialog/constraints/ConstraintRows.tsx#L97)
 
 Shared warning text for mutually exclusive temporal constraints (#104).

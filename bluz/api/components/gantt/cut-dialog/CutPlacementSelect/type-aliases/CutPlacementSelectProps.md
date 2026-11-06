@@ -8,7 +8,7 @@
 
 > **CutPlacementSelectProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:23](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L23)
+Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:23](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L23)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:23](https
 
 > `optional` **allowKeep?**: `boolean`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:27](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L27)
+Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:27](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L27)
 
 Offer `keep` (the reload's default).
 
@@ -26,7 +26,7 @@ Offer `keep` (the reload's default).
 
 > **onChange**: (`mode`) => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:25](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L25)
+Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:25](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L25)
 
 #### Parameters
 
@@ -44,4 +44,4 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:25](https
 
 > **value**: [`CutPlacementMode`](CutPlacementMode.md)
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:24](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L24)
+Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:24](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L24)

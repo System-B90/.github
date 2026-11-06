@@ -8,7 +8,7 @@
 
 > **wouldNestInsideItself**(`courses`, `movingId`, `targetId`): `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:10](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:10](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L10)
 
 Whether making `targetId` the parent of `movingId` would put the course
 inside itself: the target is the course or one of its descendants.

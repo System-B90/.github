@@ -8,7 +8,7 @@
 
 > `const` **AI\_BENCHMARK\_WINDOW\_MS**: `number`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:133](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/ai-benchmark.ts#L133)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:133](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/ai-benchmark.ts#L133)
 
 One run per user per this window. A run drives several full agent turns
 against a billed model, so it is throttled far harder than chat.

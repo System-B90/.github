@@ -8,7 +8,7 @@
 
 > **BluzHelpButton**(): `Element`
 
-Defined in: [ui/src/components/app-onboarding/BluzHelpButton.tsx:10](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/components/app-onboarding/BluzHelpButton.tsx#L10)
+Defined in: [ui/src/components/app-onboarding/BluzHelpButton.tsx:10](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/app-onboarding/BluzHelpButton.tsx#L10)
 
 The app bar's "?" — the package's button, plus the anchor that lets a tour
 point at it and say "this is how you get back here".

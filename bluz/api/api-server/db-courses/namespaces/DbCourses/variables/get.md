@@ -8,7 +8,7 @@
 
 > `const` **get**: (`options?`, `controller`) => `Promise`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md)[]\> = `getDbCourses`
 
-Defined in: [ui/src/api-server/db-courses.ts:86](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-server/db-courses.ts#L86)
+Defined in: [ui/src/api-server/db-courses.ts:86](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/db-courses.ts#L86)
 
 ## Parameters
 

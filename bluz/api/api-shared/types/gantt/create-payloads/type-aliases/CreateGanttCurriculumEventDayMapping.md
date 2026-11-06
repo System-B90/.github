@@ -8,4 +8,4 @@
 
 > **CreateGanttCurriculumEventDayMapping** = `object` & `Omit`\<[`GanttCurriculumEventDayMapping`](../../models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md), `"curriculumId"` \| `"id"`\>
 
-Defined in: [ui/src/api-shared/types/gantt/create-payloads.ts:86](https://github.com/System-B90/Bluz/blob/74a052ee6650922fac951de899a2c2178970d1c0/ui/src/api-shared/types/gantt/create-payloads.ts#L86)
+Defined in: [ui/src/api-shared/types/gantt/create-payloads.ts:86](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/gantt/create-payloads.ts#L86)
