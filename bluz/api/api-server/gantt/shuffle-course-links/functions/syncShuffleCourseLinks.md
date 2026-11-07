@@ -8,7 +8,7 @@
 
 > **syncShuffleCourseLinks**(`syllabusId`): `Promise`\<`number`\>
 
-Defined in: [ui/src/api-server/gantt/shuffle-course-links.ts:81](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/shuffle-course-links.ts#L81)
+Defined in: [ui/src/api-server/gantt/shuffle-course-links.ts:81](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/shuffle-course-links.ts#L81)
 
 After a syllabus save: relinks its shuffles' courses in every current
 iteration cut from a curriculum that holds it. Never throws — the save it

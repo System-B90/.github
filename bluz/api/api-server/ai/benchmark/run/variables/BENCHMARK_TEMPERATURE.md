@@ -8,7 +8,7 @@
 
 > `const` **BENCHMARK\_TEMPERATURE**: `0` = `0`
 
-Defined in: [ui/src/api-server/ai/benchmark/run.ts:46](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/benchmark/run.ts#L46)
+Defined in: [ui/src/api-server/ai/benchmark/run.ts:46](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/ai/benchmark/run.ts#L46)
 
 Pinned sampling for every case (#948). With the provider default a re-run
 of the same model scored differently, so two reports couldn't be compared.

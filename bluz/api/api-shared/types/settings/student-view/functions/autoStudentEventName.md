@@ -8,7 +8,7 @@
 
 > **autoStudentEventName**(`event`, `subjectSymbol`, `settings`): `string`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:119](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/settings/student-view.ts#L119)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:119](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/settings/student-view.ts#L119)
 
 [studentEventName](studentEventName.md) without the staff override: the auto-set name.
 

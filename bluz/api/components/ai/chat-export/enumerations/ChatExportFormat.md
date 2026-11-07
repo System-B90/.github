@@ -6,7 +6,7 @@
 
 # Enumeration: ChatExportFormat
 
-Defined in: [ui/src/components/ai/chat-export.ts:12](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/ai/chat-export.ts#L12)
+Defined in: [ui/src/components/ai/chat-export.ts:12](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/ai/chat-export.ts#L12)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/components/ai/chat-export.ts:12](https://github.com/System-B
 
 > **Json**: `"json"`
 
-Defined in: [ui/src/components/ai/chat-export.ts:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/ai/chat-export.ts#L14)
+Defined in: [ui/src/components/ai/chat-export.ts:14](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/ai/chat-export.ts#L14)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [ui/src/components/ai/chat-export.ts:14](https://github.com/System-B
 
 > **Markdown**: `"md"`
 
-Defined in: [ui/src/components/ai/chat-export.ts:13](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/ai/chat-export.ts#L13)
+Defined in: [ui/src/components/ai/chat-export.ts:13](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/ai/chat-export.ts#L13)

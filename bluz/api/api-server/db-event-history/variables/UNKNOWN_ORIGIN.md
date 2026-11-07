@@ -8,6 +8,6 @@
 
 > `const` **UNKNOWN\_ORIGIN**: [`EventWriteOrigin`](../type-aliases/EventWriteOrigin.md)
 
-Defined in: [ui/src/api-server/db-event-history.ts:40](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/db-event-history.ts#L40)
+Defined in: [ui/src/api-server/db-event-history.ts:40](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/db-event-history.ts#L40)
 
 Origin used when a call site declares nothing (CLI, scripts, legacy).

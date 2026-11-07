@@ -8,7 +8,7 @@
 
 > **resolveEventHiveGroups**\<`T`\>(`courseIds`, `resolveDescendants`, `courseById`, `groups`): [`EventHiveGroups`](../type-aliases/EventHiveGroups.md)\<`T`\>
 
-Defined in: [ui/src/api-shared/hive-groups.ts:48](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/hive-groups.ts#L48)
+Defined in: [ui/src/api-shared/hive-groups.ts:48](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/hive-groups.ts#L48)
 
 The Hive student groups an event reaches: those of its courses and of all
 their sub-courses, since groups exist per shuffle and an event set on a

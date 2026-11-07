@@ -8,7 +8,7 @@
 
 > `const` **FIXTURE\_NOW**: `Date`
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:43](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/benchmark/fixture.ts#L43)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:43](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/ai/benchmark/fixture.ts#L43)
 
 The fixed "now" every run shares: Sunday 2026-03-01, 08:00 Israel time.
 

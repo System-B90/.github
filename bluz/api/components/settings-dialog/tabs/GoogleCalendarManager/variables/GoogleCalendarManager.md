@@ -8,7 +8,7 @@
 
 > `const` **GoogleCalendarManager**: `NamedExoticComponent`\<`GoogleCalendarManagerProps`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/GoogleCalendarManager.tsx:46](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/settings-dialog/tabs/GoogleCalendarManager.tsx#L46)
+Defined in: [ui/src/components/settings-dialog/tabs/GoogleCalendarManager.tsx:46](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/settings-dialog/tabs/GoogleCalendarManager.tsx#L46)
 
 The connected-state extras of the Google Calendar card: which calendar the
 link mirrors into (own or shared — several users can pick the same one),

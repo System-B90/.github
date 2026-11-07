@@ -8,7 +8,7 @@
 
 > **GanttDbExecutor** = `Parameters`\<`Parameters`\<`PostgresJsDatabase`\<*typeof* [`api-server/gantt/schema`](../schema/index.md)\>\[`"transaction"`\]\>\[`0`\]\>\[`0`\] \| `PostgresJsDatabase`\<*typeof* [`api-server/gantt/schema`](../schema/index.md)\>
 
-Defined in: [ui/src/api-server/gantt/index.ts:44](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/gantt/index.ts#L44)
+Defined in: [ui/src/api-server/gantt/index.ts:44](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/index.ts#L44)
 
 Anything that can run gantt queries: the pool itself, or a transaction
 handle. Helpers accept one so a caller can compose several writes into a

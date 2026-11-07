@@ -8,7 +8,7 @@
 
 > **HoverStore** = [`ExternalStore`](../../../../../base/external-store/type-aliases/ExternalStore.md)\<[`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md) \| `null`\>
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:25](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L25)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:25](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L25)
 
 Which event the pointer is over, outside React state (#924). Held as
 `CalendarView` state, every enter/leave re-rendered the whole calendar and

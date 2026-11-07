@@ -8,7 +8,7 @@
 
 > **createWriteLedger**(): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts:33](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts#L33)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts:33](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar-provider/hooks/write-ledger.ts#L33)
 
 Orders optimistic event writes per event (#923). Each write claims a
 sequence; a response only touches local state while its write is still the

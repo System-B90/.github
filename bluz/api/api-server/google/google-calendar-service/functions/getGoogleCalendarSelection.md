@@ -8,7 +8,7 @@
 
 > **getGoogleCalendarSelection**(`userId`): `Promise`\<[`GoogleCalendarSelection`](../../../../api-shared/types/google-calendar/type-aliases/GoogleCalendarSelection.md) \| `null`\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:375](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/google/google-calendar-service.ts#L375)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:375](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/google/google-calendar-service.ts#L375)
 
 Client-safe description of the user's linked calendar, or null.
 

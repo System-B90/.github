@@ -8,7 +8,7 @@
 
 > **errorEnvelope**(`toolName`, `error`, `tool?`): [`AiToolEnvelope`](../type-aliases/AiToolEnvelope.md)
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:179](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/tools/envelope.ts#L179)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:179](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/ai/tools/envelope.ts#L179)
 
 Wraps a failed call, with the recovery path for its failure class.
 

@@ -8,7 +8,7 @@
 
 > **TemplateSessionDialog**(): `Element`
 
-Defined in: [ui/src/components/week-templates/TemplateSessionDialog.tsx:27](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/week-templates/TemplateSessionDialog.tsx#L27)
+Defined in: [ui/src/components/week-templates/TemplateSessionDialog.tsx:27](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/week-templates/TemplateSessionDialog.tsx#L27)
 
 Ends a week-template editing session (#997). Opens in place of the
 publish dialog when a template session leaves offline mode: the week is

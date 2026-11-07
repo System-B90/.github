@@ -1278,7 +1278,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-server/hive/client</a> / HiveClient</p>
 <h1 id="class-hiveclient">Class: HiveClient<a class="headerlink" href="#class-hiveclient" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L33">ui/src/api-server/hive/client.ts:33</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/hive/client.ts#L33">ui/src/api-server/hive/client.ts:33</a></p>
 <p>Bluz's Hive client: the request core (token refresh, 401 retry, 500
 backoff, network-error classification, users/classes, lessons and lesson
 rules, subjects, modules) lives in <code>@system-b90/hive-core</code>; this subclass
@@ -1309,7 +1309,7 @@ adds rooms, a cached student-group list and clearing a group's lesson.</p>
 <blockquote>
 <p><strong>clearClassLesson</strong>(<code>classId</code>): <code>Promise</code>\&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L106">ui/src/api-server/hive/client.ts:106</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/hive/client.ts#L106">ui/src/api-server/hive/client.ts:106</a></p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
 <h5 id="classid">classId<a class="headerlink" href="#classid" title="Permanent link">&para;</a></h5>
 <p><code>number</code></p>
@@ -1320,7 +1320,7 @@ adds rooms, a cached student-group list and clearing a group's lesson.</p>
 <blockquote>
 <p><strong>currentAccessToken</strong>(): <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L101">ui/src/api-server/hive/client.ts:101</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/hive/client.ts#L101">ui/src/api-server/hive/client.ts:101</a></p>
 <p>The access token this client currently holds, for calling another
 System-B90 app (Peek-a-Boo) that checks it against Hive.</p>
 <h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
@@ -1330,7 +1330,7 @@ System-B90 app (Peek-a-Boo) that checks it against Hive.</p>
 <blockquote>
 <p><strong>getClasses</strong>(): <code>Promise</code>\&lt;<code>Class</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L41">ui/src/api-server/hive/client.ts:41</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/hive/client.ts#L41">ui/src/api-server/hive/client.ts:41</a></p>
 <p>Student groups change rarely and Bluz never writes them, yet every cut,
 activation tick and feed fetches them: share one request per Hive instance
 for <code>CLASSES_TTL_MS</code>. The promise is cached, so concurrent callers share
@@ -1344,7 +1344,7 @@ the in-flight request; a failure is dropped so the next call retries.</p>
 <blockquote>
 <p><strong>getEventCategories</strong>(): <code>Promise</code>\&lt;<a href="../../type-aliases/HiveEventCategory/"><code>HiveEventCategory</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L84">ui/src/api-server/hive/client.ts:84</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/hive/client.ts#L84">ui/src/api-server/hive/client.ts:84</a></p>
 <p>Hive's schedule event categories (Segel clearance reads them).</p>
 <h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../type-aliases/HiveEventCategory/"><code>HiveEventCategory</code></a>[]&gt;</p>
@@ -1353,7 +1353,7 @@ the in-flight request; a failure is dropped so the next call retries.</p>
 <blockquote>
 <p><strong>getRooms</strong>(): <code>Promise</code>\&lt;<a href="../../../../../api-shared/types/room/type-aliases/HiveRoom/"><code>HiveRoom</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L74">ui/src/api-server/hive/client.ts:74</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/hive/client.ts#L74">ui/src/api-server/hive/client.ts:74</a></p>
 <h4 id="returns_5">Returns<a class="headerlink" href="#returns_5" title="Permanent link">&para;</a></h4>
 <p><code>Promise</code>\&lt;<a href="../../../../../api-shared/types/room/type-aliases/HiveRoom/"><code>HiveRoom</code></a>[]&gt;</p>
 <hr />
@@ -1361,7 +1361,7 @@ the in-flight request; a failure is dropped so the next call retries.</p>
 <blockquote>
 <p><strong>refreshClasses</strong>(): <code>Promise</code>\&lt;<code>Class</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/hive/client.ts#L68">ui/src/api-server/hive/client.ts:68</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/hive/client.ts#L68">ui/src/api-server/hive/client.ts:68</a></p>
 <p>Drops this Hive's cached student groups and fetches them again, for a
 caller that just missed a group that may have been created since the
 cache filled (the activator and feed, when a shuffle matches no group).</p>

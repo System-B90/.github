@@ -8,6 +8,6 @@
 
 > `const` **PUT**: [`ServerApi`](../../../../../../api-server/common/type-aliases/ServerApi.md)\<[`ApiEventCreateManyPayload`](../../../../../../api-shared/types/event/type-aliases/ApiEventCreateManyPayload.md), [`ApiEventCreateManyResponse`](../../../../../../api-shared/types/event/type-aliases/ApiEventCreateManyResponse.md)\>
 
-Defined in: [ui/src/app/api/event/bulk/route.ts:33](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/event/bulk/route.ts#L33)
+Defined in: [ui/src/app/api/event/bulk/route.ts:33](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/event/bulk/route.ts#L33)
 
 Creates many events with one insertMany. Body: array of events.

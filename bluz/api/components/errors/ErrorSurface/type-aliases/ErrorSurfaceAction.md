@@ -8,7 +8,7 @@
 
 > **ErrorSurfaceAction** = `object`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:7](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L7)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:7](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/errors/ErrorSurface.tsx#L7)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/errors/ErrorSurface.tsx:7](https://github.com/Sys
 
 > `optional` **href?**: `string`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:10](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L10)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:10](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/errors/ErrorSurface.tsx#L10)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/errors/ErrorSurface.tsx:10](https://github.com/Sy
 
 > **label**: `string`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:8](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L8)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:8](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/errors/ErrorSurface.tsx#L8)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/errors/ErrorSurface.tsx:8](https://github.com/Sys
 
 > `optional` **onClick?**: () => `void`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:9](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L9)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:9](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/errors/ErrorSurface.tsx#L9)
 
 #### Returns
 
@@ -44,4 +44,4 @@ Defined in: [ui/src/components/errors/ErrorSurface.tsx:9](https://github.com/Sys
 
 > `optional` **variant?**: `"contained"` \| `"outlined"` \| `"text"`
 
-Defined in: [ui/src/components/errors/ErrorSurface.tsx:11](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/errors/ErrorSurface.tsx#L11)
+Defined in: [ui/src/components/errors/ErrorSurface.tsx:11](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/errors/ErrorSurface.tsx#L11)

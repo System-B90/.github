@@ -8,7 +8,7 @@
 
 > **EventDisplayBlock** = `object`
 
-Defined in: [ui/src/components/gantt/event-display-order.ts:12](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/event-display-order.ts#L12)
+Defined in: [ui/src/components/gantt/event-display-order.ts:12](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/event-display-order.ts#L12)
 
 A lone event, or a whole event group with its members in order.
 
@@ -18,7 +18,7 @@ A lone event, or a whole event group with its members in order.
 
 > `optional` **groupId?**: `string`
 
-Defined in: [ui/src/components/gantt/event-display-order.ts:13](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/event-display-order.ts#L13)
+Defined in: [ui/src/components/gantt/event-display-order.ts:13](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/event-display-order.ts#L13)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/components/gantt/event-display-order.ts:13](https://github.c
 
 > **ids**: [`GanttEventId`](../../../../api-shared/types/gantt/models/shared/type-aliases/GanttEventId.md)[]
 
-Defined in: [ui/src/components/gantt/event-display-order.ts:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/event-display-order.ts#L14)
+Defined in: [ui/src/components/gantt/event-display-order.ts:14](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/event-display-order.ts#L14)

@@ -8,7 +8,7 @@
 
 > **lockHoldersOf**(`eventIds`, `eventLocks`): `string`[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts:16](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts#L16)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts:16](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar-provider/locked-edit.ts#L16)
 
 Display names of the other users currently editing any of the events,
 de-duplicated in first-seen order.

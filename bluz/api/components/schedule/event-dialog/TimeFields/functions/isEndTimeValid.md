@@ -8,7 +8,7 @@
 
 > **isEndTimeValid**(`startTime`, `endTime`): `boolean`
 
-Defined in: [ui/src/components/schedule/event-dialog/TimeFields.tsx:24](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/event-dialog/TimeFields.tsx#L24)
+Defined in: [ui/src/components/schedule/event-dialog/TimeFields.tsx:24](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/event-dialog/TimeFields.tsx#L24)
 
 Whether an end time may be written back for a given start.
 

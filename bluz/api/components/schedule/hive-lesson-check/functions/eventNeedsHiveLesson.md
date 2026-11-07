@@ -8,7 +8,7 @@
 
 > **eventNeedsHiveLesson**(`event`): `boolean`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:60](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/hive-lesson-check.ts#L60)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:60](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/hive-lesson-check.ts#L60)
 
 Whether an event should carry a Hive lesson at all: a subject-bound type
 ("אחר" only once a subject is set), real and visible to students.

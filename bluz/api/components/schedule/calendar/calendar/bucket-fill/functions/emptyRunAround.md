@@ -8,7 +8,7 @@
 
 > **emptyRunAround**(`at`, `obstacles`, `window`): [`Interval`](../../../../../../api-shared/interval-layout/type-aliases/Interval.md) \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/bucket-fill.ts:12](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/bucket-fill.ts#L12)
+Defined in: [ui/src/components/schedule/calendar/calendar/bucket-fill.ts:12](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar/bucket-fill.ts#L12)
 
 The empty run of time around `at`, like a paint-bucket fill: it spreads up
 to the nearest obstacle ending before `at` (or the window's start) and down

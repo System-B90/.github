@@ -8,4 +8,4 @@
 
 > **CliAuthStatus** = `"connecting"` \| `"fallback"` \| `"handoff"` \| `"success"`
 
-Defined in: [ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx:22](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx#L22)
+Defined in: [ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx:22](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/(themed)/(post-auth)/cli-auth/cli-auth-widget.tsx#L22)

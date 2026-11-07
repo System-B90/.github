@@ -8,7 +8,7 @@
 
 > **GanttExecutionContextType** = `object`
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/state/execution/context.ts#L14)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:14](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/execution/context.ts#L14)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/execution/context.ts:14](https://gith
 
 > **recreateOccurrence**: (`ganttEventId`, `occurrenceDate`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:22](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/state/execution/context.ts#L22)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:22](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/execution/context.ts#L22)
 
 Re-creates the schedule event for one deleted occurrence (#682), then
 refreshes the comparison so the new "actual" side shows up.
@@ -41,7 +41,7 @@ refreshes the comparison so the new "actual" side shows up.
 
 > **refreshExecution**: () => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:17](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/state/execution/context.ts#L17)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:17](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/execution/context.ts#L17)
 
 Re-fetches the execution comparison from the server.
 
@@ -55,4 +55,4 @@ Re-fetches the execution comparison from the server.
 
 > **state**: [`GanttExecutionState`](GanttExecutionState.md)
 
-Defined in: [ui/src/components/gantt/state/execution/context.ts:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/state/execution/context.ts#L15)
+Defined in: [ui/src/components/gantt/state/execution/context.ts:15](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/execution/context.ts#L15)

@@ -6,7 +6,7 @@
 
 # Enumeration: AccessTokenScope
 
-Defined in: [ui/src/api-shared/types/access-token.ts:28](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/access-token.ts#L28)
+Defined in: [ui/src/api-shared/types/access-token.ts:28](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/access-token.ts#L28)
 
 What a token may do. `ReadOnly` is limited to safe HTTP methods (GET/HEAD),
 so it can never change data, including reads the API exposes as POST.
@@ -18,7 +18,7 @@ so it can never change data, including reads the API exposes as POST.
 
 > **ReadOnly**: `"ReadOnly"`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:30](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/access-token.ts#L30)
+Defined in: [ui/src/api-shared/types/access-token.ts:30](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/access-token.ts#L30)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-shared/types/access-token.ts:30](https://github.com/Syst
 
 > **ReadWrite**: `"ReadWrite"`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:31](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/access-token.ts#L31)
+Defined in: [ui/src/api-shared/types/access-token.ts:31](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/access-token.ts#L31)

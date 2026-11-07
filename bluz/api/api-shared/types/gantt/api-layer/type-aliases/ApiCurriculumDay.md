@@ -8,4 +8,4 @@
 
 > **ApiCurriculumDay** = `object` & `Omit`\<[`GanttDay`](../../models/day/type-aliases/GanttDay.md) & [`RawBaseDocument`](RawBaseDocument.md), `"title"`\>
 
-Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:77](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/gantt/api-layer.ts#L77)
+Defined in: [ui/src/api-shared/types/gantt/api-layer.ts:77](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/gantt/api-layer.ts#L77)

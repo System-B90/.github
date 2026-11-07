@@ -8,7 +8,7 @@
 
 > `const` **FIXTURE\_EVENTS**: [`AiEventSummary`](../../../tools/calendar/type-aliases/AiEventSummary.md)[]
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:114](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/benchmark/fixture.ts#L114)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:114](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/ai/benchmark/fixture.ts#L114)
 
 Typed as the production projection so the fixture cannot answer with a shape
 the real `list_events` would never produce.

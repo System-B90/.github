@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/events/\[id\]/recurrence-exceptions/route.ts:26](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/gantt/events/[id]/recurrence-exceptions/route.ts#L26)
+Defined in: [ui/src/app/api/gantt/events/\[id\]/recurrence-exceptions/route.ts:26](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/gantt/events/[id]/recurrence-exceptions/route.ts#L26)
 
 POST: Deletes a single recurring occurrence (the event keeps recurring
 everywhere else — only this day is excepted).

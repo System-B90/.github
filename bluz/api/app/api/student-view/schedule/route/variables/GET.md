@@ -8,7 +8,7 @@
 
 > `const` **GET**: `ServerApiStudentScheduleGet`
 
-Defined in: [ui/src/app/api/student-view/schedule/route.ts:31](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/student-view/schedule/route.ts#L31)
+Defined in: [ui/src/app/api/student-view/schedule/route.ts:31](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/student-view/schedule/route.ts#L31)
 
 The only endpoint a student session may call (#656). It is read-only, serves
 a single day, and returns the `StudentEvent` projection — never a raw event

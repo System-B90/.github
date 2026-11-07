@@ -8,7 +8,7 @@
 
 > **ganttLinkCandidates**(`curriculum`, `event`): [`GanttLinkCandidate`](../type-aliases/GanttLinkCandidate.md)[]
 
-Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:19](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L19)
+Defined in: [ui/src/components/schedule/event-dialog/gantt-link-candidates.ts:19](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/event-dialog/gantt-link-candidates.ts#L19)
 
 Every event of the linked curriculum, in gantt order, scored against the
 schedule event's Hive lesson (3), module (2) or subject (1) so the likely

@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/route.ts:101](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/gantt/curriculums/[id]/cut/route.ts#L101)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/cut/route.ts:101](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/gantt/curriculums/[id]/cut/route.ts#L101)
 
 GET: cut status for a curriculum — whether its linked iteration currently
 holds live cut events, driving the UI toggle between "cut" and "pull back".

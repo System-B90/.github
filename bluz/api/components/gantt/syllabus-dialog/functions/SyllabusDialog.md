@@ -8,7 +8,7 @@
 
 > **SyllabusDialog**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:74](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/syllabus-dialog/index.tsx#L74)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:74](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/syllabus-dialog/index.tsx#L74)
 
 One dialog for everything that belongs to a syllabus rather than to a module:
 its title and description, its שיוך (courses and אחראי מקצוע), its shuffles,

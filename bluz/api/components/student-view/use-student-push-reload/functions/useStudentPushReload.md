@@ -8,7 +8,7 @@
 
 > **useStudentPushReload**(`onReload?`): `void`
 
-Defined in: [ui/src/components/student-view/use-student-push-reload.ts:38](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/student-view/use-student-push-reload.ts#L38)
+Defined in: [ui/src/components/student-view/use-student-push-reload.ts:38](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/student-view/use-student-push-reload.ts#L38)
 
 The student board's one socket subscription (#656): the staff "push update".
 

@@ -8,6 +8,6 @@
 
 > **DailyPrayer** = [`ARVIT`](../../event/enumerations/PrayerType.md#arvit) \| [`MINCHA`](../../event/enumerations/PrayerType.md#mincha) \| [`SHACHARIT`](../../event/enumerations/PrayerType.md#shacharit)
 
-Defined in: [ui/src/api-shared/types/prayer-windows.ts:6](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/prayer-windows.ts#L6)
+Defined in: [ui/src/api-shared/types/prayer-windows.ts:6](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/prayer-windows.ts#L6)
 
 The three daily prayers; the other prayer types are hand-made events only.

@@ -8,7 +8,7 @@
 
 > **sumAllottedMinutesByEvent**(`ctx`): `Map`\<`string`, `number`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:475](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/student-load.ts#L475)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:475](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/student-load.ts#L475)
 
 Minutes each event is allotted in a curriculum: every one of its mappings'
 allotted minutes, plus each surviving recurrence echo at its earliest

@@ -8,7 +8,7 @@
 
 > **checkHiveLesson**(`event`, `context`): [`HiveLessonIssue`](../type-aliases/HiveLessonIssue.md)[]
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:76](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/hive-lesson-check.ts#L76)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:76](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/hive-lesson-check.ts#L76)
 
 Everything wrong with an event's Hive lesson, worst first; empty when the
 lesson will reach every shuffle of the event.

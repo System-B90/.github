@@ -8,7 +8,7 @@
 
 > **invalidatePrayerWindows**(): `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:19](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L19)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:19](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L19)
 
 Refetch the shown week's prayer windows, e.g. after the week was linked to
 another template or a template's prayer times changed. The current tint

@@ -8,7 +8,7 @@
 
 > **DockPanelStore** = [`ExternalStore`](../../../../../base/external-store/type-aliases/ExternalStore.md)\<[`DockPanel`](DockPanel.md) \| `null`\>
 
-Defined in: [ui/src/components/schedule/calendar/side-dock/dock-panel.ts:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/side-dock/dock-panel.ts#L14)
+Defined in: [ui/src/components/schedule/calendar/side-dock/dock-panel.ts:14](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/side-dock/dock-panel.ts#L14)
 
 Which panel the side dock has open, or `null` for the bare rail.
 

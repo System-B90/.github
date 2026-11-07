@@ -8,7 +8,7 @@
 
 > **PaletteDragData** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:13](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L13)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:13](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L13)
 
 Payload carried by a drag that started in the instructor rail.
 
@@ -18,7 +18,7 @@ Payload carried by a drag that started in the instructor rail.
 
 > **kind**: `"palette-instructor"`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:14](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L14)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:14](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L14)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:14](htt
 
 > **personId**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L15)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:15](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L15)

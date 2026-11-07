@@ -8,7 +8,7 @@
 
 > **readInsightsDismissedUntil**(`now?`): `number` \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts:24](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts#L24)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts:24](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts#L24)
 
 Epoch ms until which the card stays hidden, or null when it is not dismissed.
 

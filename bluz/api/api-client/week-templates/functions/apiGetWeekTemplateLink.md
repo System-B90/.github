@@ -8,7 +8,7 @@
 
 > **apiGetWeekTemplateLink**(`weekStart`, `iterationId?`): `Promise`\<[`WeekTemplateLink`](../../../api-shared/types/week-template/type-aliases/WeekTemplateLink.md)\>
 
-Defined in: [ui/src/api-client/week-templates.ts:107](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-client/week-templates.ts#L107)
+Defined in: [ui/src/api-client/week-templates.ts:107](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-client/week-templates.ts#L107)
 
 The template the week starting `weekStart` is linked to.
 

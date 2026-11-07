@@ -8,7 +8,7 @@
 
 > `const` **GET**: `ServerApiEventCompare`
 
-Defined in: [ui/src/app/api/event/compare/route.ts:21](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/api/event/compare/route.ts#L21)
+Defined in: [ui/src/app/api/event/compare/route.ts:21](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/event/compare/route.ts#L21)
 
 Single round-trip side-by-side comparison: returns the events of two
 iterations over the same date range. `itA` / `itB` select the iterations

@@ -8,7 +8,7 @@
 
 > **CurriculumGanttView**(`props`): `ReactElement`\<`unknown`, `string` \| `JSXElementConstructor`\<`any`\>\> \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:28](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L28)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx:28](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/index.tsx#L28)
 
 Main export component for the Gantt View tab, integrating the Gantt chart with Bluz state providers.
 

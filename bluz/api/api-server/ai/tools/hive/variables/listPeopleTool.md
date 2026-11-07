@@ -8,7 +8,7 @@
 
 > `const` **listPeopleTool**: [`AiTool`](../../types/type-aliases/AiTool.md)\<`ListPeopleArgs`\>
 
-Defined in: [ui/src/api-server/ai/tools/hive.ts:102](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-server/ai/tools/hive.ts#L102)
+Defined in: [ui/src/api-server/ai/tools/hive.ts:102](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/ai/tools/hive.ts#L102)
 
 Hive users by id or name. Events, gantt rows and syllabuses store people as
 bare Hive user ids; without this the model can only answer "instructor 32".

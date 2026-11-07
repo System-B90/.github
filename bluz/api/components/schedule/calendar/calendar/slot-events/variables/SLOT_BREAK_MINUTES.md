@@ -8,6 +8,6 @@
 
 > `const` **SLOT\_BREAK\_MINUTES**: `15` = `15`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/slot-events.ts:9](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/schedule/calendar/calendar/slot-events.ts#L9)
+Defined in: [ui/src/components/schedule/calendar/calendar/slot-events.ts:9](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar/slot-events.ts#L9)
 
 Length of the break "הוספת הפסקה" drops on an empty slot.

@@ -8,7 +8,7 @@
 
 > **default**(`__namedParameters`): `Promise`\<`Element`\>
 
-Defined in: [ui/src/app/(themed)/(student)/student-view/layout.tsx:19](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/app/(themed)/(student)/student-view/layout.tsx#L19)
+Defined in: [ui/src/app/(themed)/(student)/student-view/layout.tsx:19](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/(themed)/(student)/student-view/layout.tsx#L19)
 
 The student view sits *outside* the `(post-auth)` group on purpose: that
 group's layout mounts the staff shell (app bar, command palette, Hive

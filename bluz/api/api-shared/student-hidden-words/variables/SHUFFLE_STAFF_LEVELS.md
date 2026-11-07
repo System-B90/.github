@@ -8,7 +8,7 @@
 
 > `const` **SHUFFLE\_STAFF\_LEVELS**: readonly \[`"מתחילים"`, `"בינוניים"`, `"מתקדמים"`\]
 
-Defined in: [ui/src/api-shared/student-hidden-words.ts:15](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/student-hidden-words.ts#L15)
+Defined in: [ui/src/api-shared/student-hidden-words.ts:15](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/student-hidden-words.ts#L15)
 
 Staff-facing (סגל) name of a shuffle (#991): its level. The shuffle's own
 name is the trainee-facing (חניכים) one and may never contain a level word.

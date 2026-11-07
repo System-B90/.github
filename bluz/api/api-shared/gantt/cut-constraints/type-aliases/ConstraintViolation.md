@@ -8,7 +8,7 @@
 
 > **ConstraintViolation** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:71](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/cut-constraints.ts#L71)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:71](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L71)
 
 A constraint that no legal placement can satisfy.
 
@@ -18,7 +18,7 @@ A constraint that no legal placement can satisfy.
 
 > **constraintId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:76](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/cut-constraints.ts#L76)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:76](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L76)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:76](https://github.com/S
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:75](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/cut-constraints.ts#L75)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:75](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L75)
 
 The event whose placement breaks the constraint.
 
@@ -36,7 +36,7 @@ The event whose placement breaks the constraint.
 
 > **kind**: `"relational"` \| `"temporal"`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:77](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/cut-constraints.ts#L77)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:77](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L77)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:77](https://github.com/S
 
 > **ownerId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:72](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/cut-constraints.ts#L72)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:72](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L72)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:72](https://github.com/S
 
 > **ownerTitle**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:73](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/cut-constraints.ts#L73)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:73](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L73)
 
 ***
 
@@ -60,6 +60,6 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:73](https://github.com/S
 
 > **reason**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:79](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/gantt/cut-constraints.ts#L79)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:79](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L79)
 
 Hebrew explanation of what could not be satisfied.

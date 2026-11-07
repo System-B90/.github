@@ -8,7 +8,7 @@
 
 > **CutSpillDetailsProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx:43](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx#L43)
+Defined in: [ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx:43](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx#L43)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx:43](https://
 
 > **count**: `number`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx:45](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx#L45)
+Defined in: [ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx:45](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx#L45)
 
 Number of relocated events, shown in the collapsed summary.
 
@@ -26,4 +26,4 @@ Number of relocated events, shown in the collapsed summary.
 
 > **spills**: [`CutSpillDetail`](../../../../../api-shared/gantt/cut-planner/type-aliases/CutSpillDetail.md)[]
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx:46](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx#L46)
+Defined in: [ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx:46](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/cut-dialog/CutSpillDetails.tsx#L46)

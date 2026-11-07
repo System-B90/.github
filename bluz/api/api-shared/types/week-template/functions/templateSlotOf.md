@@ -8,7 +8,7 @@
 
 > **templateSlotOf**(`event`): `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:223](https://github.com/System-B90/Bluz/blob/90114c31e10132d84c8c3bab079c25588fbe0459/ui/src/api-shared/types/week-template.ts#L223)
+Defined in: [ui/src/api-shared/types/week-template.ts:223](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/week-template.ts#L223)
 
 Where a template event sits in its week: weekday 0–6 and minutes of day.
 
