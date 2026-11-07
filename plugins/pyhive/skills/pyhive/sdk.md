@@ -8,7 +8,7 @@ objects.
 ```python
 from pyhive import HiveClient
 
-with HiveClient.from_sso("https://chive.bis.net") as client:
+with HiveClient.from_sso("https://hive.org") as client:
     for program in client.get_programs():
         for subject in program.get_subjects():
             print(program.name, subject.symbol, subject.name)
@@ -32,18 +32,18 @@ Python 3.10 or newer.
 from pyhive import HiveClient
 
 # Browser sign-in (SSO). The token refreshes itself.
-client = HiveClient.from_sso("https://chive.bis.net")
+client = HiveClient.from_sso("https://hive.org")
 
 # Username and password. The token refreshes itself.
-client = HiveClient("username", "password", "https://chive.bis.net")
+client = HiveClient("username", "password", "https://hive.org")
 
 # An access token you already have (e.g. from `pyhive token`).
 # It cannot refresh: when it expires, create a new client.
-client = HiveClient.from_api_token(token, "https://chive.bis.net")
+client = HiveClient.from_api_token(token, "https://hive.org")
 
 # An access token plus its refresh token: refreshes itself.
 client = HiveClient.from_api_token(
-    token, "https://chive.bis.net", refresh_token=refresh, auth_strategy="sso"
+    token, "https://hive.org", refresh_token=refresh, auth_strategy="sso"
 )
 
 # Whatever the `pyhive` CLI would use: the server and sign-in cached by
@@ -154,7 +154,7 @@ from pyhive.types import Assignment, AssignmentStatusEnum, ClearanceEnum, Subjec
 | `Program`    | `get_subjects()`, `create_subject(...)`, `delete()`, `.checker`, `.default_class`                |
 | `Subject`    | `get_modules()`, `get_module(name)`, `create_module(...)`, `delete()`, `.parent_program`         |
 | `Module`     | `get_exercises()`, `get_exercise(name)`, `create_exercise(...)`, `delete()`, `.parent_subject`   |
-| `Exercise`   | `get_assignments()`, `delete()`, `.parent_module`, `.parent_subject`                             |
+| `Exercise`   | `get_assignments()`, `save()`, `notify_students()`, `delete()`, `.parent_module`, `.parent_subject` |
 | `Assignment` | `get_responses()`, `.user`, `.checker`, `.exercise`                                              |
 | `AssignmentResponse` | `iter_contents()`, `.user`, `.assignment`                                                |
 | `User`       | `get_assignments()`, `update()`, `set_queue(q)`, `delete()`, `.mentor`, `.mentees`, `.classes`, `.program`, `.queue`, `.current_assignment` |
@@ -178,6 +178,9 @@ program = client.get_program(2)
 subject = program.create_subject(symbol="PY", name="Python", color="#3F51B5")
 module = subject.create_module(name="Basics", order=1)
 exercise = module.create_exercise(name="Loops", order=1, expected_duration="45:00")
+
+exercise.on_creation_data = "loops_v2"
+exercise.save()      # PUTs the writable fields, then refreshes from the reply
 
 subject.delete()     # also deletes its modules and exercises
 ```
@@ -319,7 +322,14 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 | `get_exercises(parent_module=, parent_subject=, exercise_name=, ...)` | List exercises                               |
 | `get_exercise(exercise_id)`                                | One exercise                                            |
 | `create_exercise(name, order, parent_module, ...)`         | Create an exercise                                      |
+| `update_exercise(exercise)`                                | Save an exercise's local state (PUT)                    |
+| `patch_exercise(exercise, **fields)`                       | Change some fields of an exercise                       |
 | `delete_exercise(exercise)`                                | Delete an exercise                                      |
+| `notify_exercise_students(exercise, classes=, response_type=, contents=, ...)` | Post a response to the exercise's students in some classes |
+| `get_exercise_student_files(exercise)`                     | Download the student files (bytes, or `None`)           |
+| `get_exercise_patbas_files(exercise)`                      | Download the patbas files (bytes, or `None`)            |
+| `get_exercise_preview(exercise, asset=)`                   | Download the preview (bytes, or `None`)                 |
+| `get_exercise_patbas_preview(exercise, asset=)`            | Download the patbas preview (bytes, or `None`)          |
 | `get_exercise_fields(exercise)`                            | The form fields of an exercise                          |
 | `get_exercise_field(exercise, field_id)`                   | One form field                                          |
 

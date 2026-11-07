@@ -1,7 +1,7 @@
 # PyHive
 
 PyHive is the Python SDK and command-line tool for the
-[Hive](https://chive.bis.net) learning management system. It reads and changes
+[Hive](https://hive.org) learning management system. It reads and changes
 programs, subjects, modules, exercises, assignments, users, classes, the
 schedule and help requests.
 
@@ -19,8 +19,8 @@ pip install PyHiveLMS --index-url https://system-b90.github.io/.github/pypi/
 pyhive version
 ```
 
-PyHive is published to the System-B90 package index, not to PyPI (whose
-`PyHiveLMS` is an old release). Python 3.10 or newer.
+Each release is published to both PyPI (`pip install PyHiveLMS`) and the System-B90
+package index above. Python 3.10 or newer.
 
 ## Try it
 
@@ -34,7 +34,7 @@ pyhive examples run program_tree
 ```python
 from pyhive import HiveClient
 
-with HiveClient.from_sso("https://chive.bis.net") as client:
+with HiveClient.from_sso("https://hive.org") as client:
     program = next(iter(client.get_programs()))
     for subject in program.get_subjects():
         modules = list(subject.get_modules())

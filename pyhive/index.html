@@ -593,7 +593,7 @@
 
 <h1 id="pyhive">PyHive<a class="headerlink" href="#pyhive" title="Permanent link">&para;</a></h1>
 <p>PyHive is the Python SDK and command-line tool for the
-<a href="https://chive.bis.net">Hive</a> learning management system. It reads and changes
+<a href="https://hive.org">Hive</a> learning management system. It reads and changes
 programs, subjects, modules, exercises, assignments, users, classes, the
 schedule and help requests.</p>
 <ul>
@@ -608,8 +608,8 @@ schedule and help requests.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>PyHiveLMS<span class="w"> </span>--index-url<span class="w"> </span>https://system-b90.github.io/.github/pypi/
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pyhive<span class="w"> </span>version
 </code></pre></div>
-<p>PyHive is published to the System-B90 package index, not to PyPI (whose
-<code>PyHiveLMS</code> is an old release). Python 3.10 or newer.</p>
+<p>Each release is published to both PyPI (<code>pip install PyHiveLMS</code>) and the System-B90
+package index above. Python 3.10 or newer.</p>
 <h2 id="try-it">Try it<a class="headerlink" href="#try-it" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pyhive<span class="w"> </span>auth<span class="w"> </span>login<span class="w">                   </span><span class="c1"># pick the server and sign in once through the browser</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pyhive<span class="w"> </span>programs<span class="w"> </span>list
@@ -618,7 +618,7 @@ schedule and help requests.</p>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyhive</span><span class="w"> </span><span class="kn">import</span> <span class="n">HiveClient</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">with</span> <span class="n">HiveClient</span><span class="o">.</span><span class="n">from_sso</span><span class="p">(</span><span class="s2">"https://chive.bis.net"</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">with</span> <span class="n">HiveClient</span><span class="o">.</span><span class="n">from_sso</span><span class="p">(</span><span class="s2">"https://hive.org"</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">program</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">get_programs</span><span class="p">()))</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="n">program</span><span class="o">.</span><span class="n">get_subjects</span><span class="p">():</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="n">modules</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">subject</span><span class="o">.</span><span class="n">get_modules</span><span class="p">())</span>

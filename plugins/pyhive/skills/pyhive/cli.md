@@ -27,7 +27,7 @@ and the command, or after the command. `pyhive --json programs list`,
 | `-t`, `--token`        | Hive access token                                                   |
 | `--json`               | Print one JSON document on stdout instead of text                   |
 | `--cache-token`        | Save the server and token in the OS keyring for later calls         |
-| `--hive-url URL`       | Server to talk to. Default: the cached one, else `https://chive.bis.net` |
+| `--hive-url URL`       | Server to talk to. Default: the cached one, else `https://hive.org` |
 | `--verify/--no-verify` | Verify TLS certificates. Default `--no-verify`                      |
 
 !!! note "A command's own option comes first"
@@ -72,7 +72,7 @@ Every command that talks to Hive picks the first credentials it finds:
 
 `--cache-token` on any command saves the server it used and the token it ended
 up with, the same way `auth login` does. Without `--hive-url`, commands use the
-cached server, or `https://chive.bis.net` if none is cached. Giving `--hive-url` for
+cached server, or `https://hive.org` if none is cached. Giving `--hive-url` for
 a different server ignores the cached token instead of sending it there.
 
 A token from `-t` or `HIVE_ACCESS_TOKEN` cannot be refreshed: when it expires,

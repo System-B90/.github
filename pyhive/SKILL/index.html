@@ -710,7 +710,7 @@ above), so they need no credentials of their own.</p>
   (<code>pyhive -p PW users create ...</code>).</li>
 <li>A <code>--hive-url</code> other than the cached server skips the cached token and falls
   back to SSO, so leave it out unless the user names another server.</li>
-<li>Defaults: the server cached by <code>auth login</code>, else <code>https://chive.bis.net</code>; TLS
+<li>Defaults: the server cached by <code>auth login</code>, else <code>https://hive.org</code>; TLS
   verification <strong>off</strong>.</li>
 <li>Exit code <code>0</code> on success, <code>1</code> on any error. In <code>--json</code> mode the error is JSON
   on <strong>stderr</strong>: <code>{"error": "...", "details": "..."}</code>.</li>
@@ -754,7 +754,7 @@ and the command has no <code>--program</code>. Use <code>client.create_student(.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyhive</span><span class="w"> </span><span class="kn">import</span> <span class="n">HiveClient</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyhive.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">AssignmentStatusEnum</span><span class="p">,</span> <span class="n">ClearanceEnum</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">with</span> <span class="n">HiveClient</span><span class="p">(</span><span class="s2">"admin"</span><span class="p">,</span> <span class="s2">"password"</span><span class="p">,</span> <span class="s2">"https://chive.bis.net"</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">with</span> <span class="n">HiveClient</span><span class="p">(</span><span class="s2">"admin"</span><span class="p">,</span> <span class="s2">"password"</span><span class="p">,</span> <span class="s2">"https://hive.org"</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">program</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_program</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="n">program</span><span class="o">.</span><span class="n">get_subjects</span><span class="p">():</span>          <span class="c1"># list endpoints return generators</span>
 <a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="k">for</span> <span class="n">module</span> <span class="ow">in</span> <span class="n">subject</span><span class="o">.</span><span class="n">get_modules</span><span class="p">():</span>
