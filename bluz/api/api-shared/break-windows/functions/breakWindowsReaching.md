@@ -8,7 +8,7 @@
 
 > **breakWindowsReaching**(`event`, `windows`, `options?`): [`Interval`](../../interval-layout/type-aliases/Interval.md)[]
 
-Defined in: [ui/src/api-shared/break-windows.ts:156](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/break-windows.ts#L156)
+Defined in: [ui/src/api-shared/break-windows.ts:156](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/break-windows.ts#L156)
 
 [breakWindowsFor](breakWindowsFor.md), narrowed to the windows the event can actually run
 into from where it starts now (#927). The cheap time test runs before the

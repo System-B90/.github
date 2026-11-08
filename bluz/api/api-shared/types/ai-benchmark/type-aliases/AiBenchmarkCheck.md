@@ -8,7 +8,7 @@
 
 > **AiBenchmarkCheck** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:18](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/ai-benchmark.ts#L18)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:18](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai-benchmark.ts#L18)
 
 One assertion about how the model behaved on a scripted prompt.
 
@@ -18,7 +18,7 @@ One assertion about how the model behaved on a scripted prompt.
 
 > `optional` **detail?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:23](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/ai-benchmark.ts#L23)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:23](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai-benchmark.ts#L23)
 
 Why it failed, when it did.
 
@@ -28,7 +28,7 @@ Why it failed, when it did.
 
 > **label**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:20](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/ai-benchmark.ts#L20)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:20](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai-benchmark.ts#L20)
 
 Hebrew, one line: what was expected.
 
@@ -38,4 +38,4 @@ Hebrew, one line: what was expected.
 
 > **passed**: `boolean`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:21](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/ai-benchmark.ts#L21)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:21](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai-benchmark.ts#L21)

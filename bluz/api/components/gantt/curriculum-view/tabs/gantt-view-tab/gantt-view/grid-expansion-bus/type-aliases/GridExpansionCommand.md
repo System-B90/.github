@@ -8,7 +8,7 @@
 
 > **GridExpansionCommand** = `"collapse"` \| `"expand"`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-expansion-bus.ts:8](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-expansion-bus.ts#L8)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-expansion-bus.ts:8](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/grid-expansion-bus.ts#L8)
 
 Lets the page toolbar collapse or expand every row of the grid, which keeps
 its expansion state to itself, and lets the grid report whether anything is

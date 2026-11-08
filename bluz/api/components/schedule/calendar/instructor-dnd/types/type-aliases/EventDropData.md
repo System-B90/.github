@@ -8,7 +8,7 @@
 
 > **EventDropData** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:71](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L71)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:71](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L71)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:71](htt
 
 > **event**: [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:73](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L73)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:73](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L73)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:73](htt
 
 > **kind**: `"event"`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:72](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L72)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:72](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L72)

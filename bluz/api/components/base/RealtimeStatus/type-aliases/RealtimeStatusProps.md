@@ -8,7 +8,7 @@
 
 > **RealtimeStatusProps** = `object`
 
-Defined in: [ui/src/components/base/RealtimeStatus.tsx:16](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/RealtimeStatus.tsx#L16)
+Defined in: [ui/src/components/base/RealtimeStatus.tsx:16](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/RealtimeStatus.tsx#L16)
 
 The socket ref owned by the single `useSessionWebSocketContext()` call in
 `AuthProvider`. Passed down rather than re-invoked here: that hook *opens* a
@@ -20,4 +20,4 @@ connection, so calling it again would run a second socket in parallel.
 
 > **ws**: `ReturnType`\<*typeof* [`useSessionWebSocketContext`](../../../SessionWs/functions/useSessionWebSocketContext.md)\>\[`"ws"`\]
 
-Defined in: [ui/src/components/base/RealtimeStatus.tsx:17](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/RealtimeStatus.tsx#L17)
+Defined in: [ui/src/components/base/RealtimeStatus.tsx:17](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/RealtimeStatus.tsx#L17)

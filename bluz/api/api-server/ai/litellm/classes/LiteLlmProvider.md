@@ -6,7 +6,7 @@
 
 # Class: LiteLlmProvider
 
-Defined in: [ui/src/api-server/ai/litellm.ts:97](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/litellm.ts#L97)
+Defined in: [ui/src/api-server/ai/litellm.ts:97](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/litellm.ts#L97)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [ui/src/api-server/ai/litellm.ts:97](https://github.com/System-B90/B
 
 > **new LiteLlmProvider**(`apiKeyOverride?`): `LiteLlmProvider`
 
-Defined in: [ui/src/api-server/ai/litellm.ts:102](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/litellm.ts#L102)
+Defined in: [ui/src/api-server/ai/litellm.ts:102](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/litellm.ts#L102)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ A user's own LiteLLM key; skips the helper.
 
 > `readonly` **defaultModel**: `string`
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:215](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/anthropic-messages.ts#L215)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:215](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/anthropic-messages.ts#L215)
 
 Model used when a request does not name one.
 
@@ -56,7 +56,7 @@ Model used when a request does not name one.
 
 > `readonly` **name**: `string`
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:214](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/anthropic-messages.ts#L214)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:214](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/anthropic-messages.ts#L214)
 
 Stable identifier, used in logs and in `AI_PROVIDER`.
 
@@ -70,7 +70,7 @@ Stable identifier, used in logs and in `AI_PROVIDER`.
 
 > **chat**(`request`): `Promise`\<[`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md)\>
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:248](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/anthropic-messages.ts#L248)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:248](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/anthropic-messages.ts#L248)
 
 One-shot completion, for callers with nothing to stream to.
 
@@ -94,7 +94,7 @@ One-shot completion, for callers with nothing to stream to.
 
 > **listModels**(`signal?`): `Promise`\<[`AiModelInfo`](../../../../api-shared/types/ai-models/type-aliases/AiModelInfo.md)[]\>
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:346](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/anthropic-messages.ts#L346)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:346](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/anthropic-messages.ts#L346)
 
 Models the backend offers (#779). Optional: a backend that cannot list
 them simply leaves the settings field free-text.
@@ -119,7 +119,7 @@ them simply leaves the settings field free-text.
 
 > **streamChat**(`request`): `AsyncIterable`\<[`AiProviderEvent`](../../provider/type-aliases/AiProviderEvent.md)\>
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:276](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/anthropic-messages.ts#L276)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:276](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/anthropic-messages.ts#L276)
 
 Incremental completion. Yields text as it arrives and terminates with a
 single `final` frame carrying tool calls and usage.

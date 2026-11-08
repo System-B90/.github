@@ -8,7 +8,7 @@
 
 > **CollapsibleSection**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/event-dialog/CollapsibleSection.tsx:37](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/event-dialog/CollapsibleSection.tsx#L37)
+Defined in: [ui/src/components/gantt/event-dialog/CollapsibleSection.tsx:37](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/event-dialog/CollapsibleSection.tsx#L37)
 
 A quiet, self-contained accordion for the event dialog's optional field
 groups. When collapsed, the `chips` summarize the group's state so the

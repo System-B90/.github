@@ -6,7 +6,7 @@
 
 # Enumeration: EventRecurrence
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:24](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/models/event.ts#L24)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:24](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/event.ts#L24)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:24](https://github.co
 
 > **Daily**: `"daily"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:26](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/models/event.ts#L26)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:26](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/event.ts#L26)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:26](https://github.co
 
 > **None**: `"none"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:25](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/models/event.ts#L25)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:25](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/event.ts#L25)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [ui/src/api-shared/types/gantt/models/event.ts:25](https://github.co
 
 > **Weekly**: `"weekly"`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:27](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/models/event.ts#L27)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:27](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/event.ts#L27)

@@ -8,7 +8,7 @@
 
 > **tlsTrustErrorCode**(`error`): `string` \| `null`
 
-Defined in: [ui/src/api-server/ai/tls.ts:37](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/tls.ts#L37)
+Defined in: [ui/src/api-server/ai/tls.ts:37](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/tls.ts#L37)
 
 The TLS trust code behind a failed fetch, if that is what it was. `fetch`
 wraps the socket error in `TypeError: fetch failed` with the real one in

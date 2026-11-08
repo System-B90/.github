@@ -8,4 +8,4 @@
 
 > `const` **DRAFT\_SECTIONS\_HINT**: `"אחרי שהסילבוס ייווצר יהיה אפשר לשייך אותו, להוסיף שאפלים ומערכים."` = `"אחרי שהסילבוס ייווצר יהיה אפשר לשייך אותו, להוסיף שאפלים ומערכים."`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:36](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/syllabus-dialog/index.tsx#L36)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:36](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/syllabus-dialog/index.tsx#L36)

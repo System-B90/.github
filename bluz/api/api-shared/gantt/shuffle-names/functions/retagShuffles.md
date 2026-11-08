@@ -8,7 +8,7 @@
 
 > **retagShuffles**(`tags`, `removed`, `renames`): `string`[]
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:115](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/shuffle-names.ts#L115)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:115](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/gantt/shuffle-names.ts#L115)
 
 A module/event's tags after a shuffle edit: removed names dropped, renamed
 ones rewritten. Shared by the server cascade and the client's local mirror.

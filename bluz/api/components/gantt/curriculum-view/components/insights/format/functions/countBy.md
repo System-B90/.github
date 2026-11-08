@@ -8,7 +8,7 @@
 
 > **countBy**\<`T`\>(`items`, `keyOf`): \[`string`, `number`\][]
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/format.ts:20](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/components/insights/format.ts#L20)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/format.ts:20](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/curriculum-view/components/insights/format.ts#L20)
 
 Counts items per key, sorted by descending count.
 

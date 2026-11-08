@@ -8,7 +8,7 @@
 
 > **looksLikeSsoJwt**(`token`, `provider`): `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/PersonalSettings.tsx:858](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/PersonalSettings.tsx#L858)
+Defined in: [ui/src/components/settings-dialog/tabs/PersonalSettings.tsx:860](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/PersonalSettings.tsx#L860)
 
 A pasted LiteLLM key that is really an SSO JWT (`eyJ…`). LiteLLM refuses it
 with "LiteLLM Virtual Key expected … start with 'sk-'".

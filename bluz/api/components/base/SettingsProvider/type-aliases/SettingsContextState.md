@@ -8,7 +8,7 @@
 
 > **SettingsContextState** = `object`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:77](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/SettingsProvider.tsx#L77)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:77](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/SettingsProvider.tsx#L77)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:77](https://github.com/
 
 > **calendarDayEndTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:81](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/SettingsProvider.tsx#L81)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:81](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/SettingsProvider.tsx#L81)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:81](https://github.com/
 
 > **calendarDayStartTime**: `string`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:79](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/SettingsProvider.tsx#L79)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:79](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/SettingsProvider.tsx#L79)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:79](https://github.com/
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:78](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/SettingsProvider.tsx#L78)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:78](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/SettingsProvider.tsx#L78)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:78](https://github.com/
 
 > **isReadOnlyIteration**: `boolean`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:84](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/SettingsProvider.tsx#L84)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:84](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/SettingsProvider.tsx#L84)
 
 True while viewing a past iteration — its settings are read-only.
 
@@ -50,7 +50,7 @@ True while viewing a past iteration — its settings are read-only.
 
 > **updateCalendarDayEndTime**: (`newCalendarDayEndTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:82](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/SettingsProvider.tsx#L82)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:82](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/SettingsProvider.tsx#L82)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [ui/src/components/base/SettingsProvider.tsx:82](https://github.com/
 
 > **updateCalendarDayStartTime**: (`newCalendarDayStartTime`) => `void`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:80](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/SettingsProvider.tsx#L80)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:80](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/SettingsProvider.tsx#L80)
 
 #### Parameters
 

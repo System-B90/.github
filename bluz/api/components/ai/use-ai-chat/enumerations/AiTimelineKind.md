@@ -6,7 +6,7 @@
 
 # Enumeration: AiTimelineKind
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:51](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L51)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:51](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L51)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:51](https://github.com/System-B
 
 > **Approval**: `"approval"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:58](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L58)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:58](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L58)
 
 A write waiting on the human — shown in place, not in a floating bar.
 
@@ -24,7 +24,7 @@ A write waiting on the human — shown in place, not in a floating bar.
 
 > **Assistant**: `"assistant"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:53](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L53)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:53](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L53)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:53](https://github.com/System-B
 
 > **Choice**: `"choice"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:60](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L60)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:60](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L60)
 
 A question from the model with buttons to answer it.
 
@@ -42,7 +42,7 @@ A question from the model with buttons to answer it.
 
 > **Failure**: `"failure"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:62](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L62)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:62](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L62)
 
 A failed turn, kept in place so the history stays truthful.
 
@@ -52,7 +52,7 @@ A failed turn, kept in place so the history stays truthful.
 
 > **Thinking**: `"thinking"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:55](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L55)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:55](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L55)
 
 The model's private reasoning, rendered collapsed.
 
@@ -62,7 +62,7 @@ The model's private reasoning, rendered collapsed.
 
 > **Tool**: `"tool"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:56](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L56)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:56](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L56)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:56](https://github.com/System-B
 
 > **User**: `"user"`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:52](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/use-ai-chat.ts#L52)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:52](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L52)

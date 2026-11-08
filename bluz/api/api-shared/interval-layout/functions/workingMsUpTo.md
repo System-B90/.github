@@ -8,7 +8,7 @@
 
 > **workingMsUpTo**(`start`, `point`, `windows`, `options?`): `number`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:175](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/interval-layout.ts#L175)
+Defined in: [ui/src/api-shared/interval-layout.ts:175](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/interval-layout.ts#L175)
 
 Inverse of [layoutAroundWindows](layoutAroundWindows.md): how much *working* time a run
 starting at `start` has consumed by the time the clock reaches `point`.

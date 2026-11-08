@@ -8,7 +8,7 @@
 
 > **EventFlagDef** = `object`
 
-Defined in: [ui/src/components/schedule/event-flags.ts:21](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/event-flags.ts#L21)
+Defined in: [ui/src/components/schedule/event-flags.ts:21](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-flags.ts#L21)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-flags.ts:21](https://github.com/Sy
 
 > **hue**: `string`
 
-Defined in: [ui/src/components/schedule/event-flags.ts:25](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/event-flags.ts#L25)
+Defined in: [ui/src/components/schedule/event-flags.ts:25](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-flags.ts#L25)
 
 Accent color of the flag's icon in the event context menu.
 
@@ -26,7 +26,7 @@ Accent color of the flag's icon in the event context menu.
 
 > **Icon**: `ComponentType`\<`SvgIconProps`\>
 
-Defined in: [ui/src/components/schedule/event-flags.ts:26](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/event-flags.ts#L26)
+Defined in: [ui/src/components/schedule/event-flags.ts:26](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-flags.ts#L26)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/schedule/event-flags.ts:26](https://github.com/Sy
 
 > **key**: [`EventFlagKey`](EventFlagKey.md)
 
-Defined in: [ui/src/components/schedule/event-flags.ts:22](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/event-flags.ts#L22)
+Defined in: [ui/src/components/schedule/event-flags.ts:22](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-flags.ts#L22)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/schedule/event-flags.ts:22](https://github.com/Sy
 
 > **label**: `string`
 
-Defined in: [ui/src/components/schedule/event-flags.ts:23](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/event-flags.ts#L23)
+Defined in: [ui/src/components/schedule/event-flags.ts:23](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-flags.ts#L23)

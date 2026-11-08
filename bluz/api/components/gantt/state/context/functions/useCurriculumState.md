@@ -8,7 +8,7 @@
 
 > **useCurriculumState**(): [`NormalizedStore`](../../../../../api-client/gantt/drizzle-normalize/type-aliases/NormalizedStore.md)
 
-Defined in: [ui/src/components/gantt/state/context.ts:77](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/context.ts#L77)
+Defined in: [ui/src/components/gantt/state/context.ts:77](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/context.ts#L77)
 
 Handles the full context of the current curriculum and its nested items.
 **FOR INTERNAL USE ONLY**

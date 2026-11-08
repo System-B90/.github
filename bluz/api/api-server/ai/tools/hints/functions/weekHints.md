@@ -8,7 +8,7 @@
 
 > **weekHints**(`hasDates`): `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/hints.ts:17](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/tools/hints.ts#L17)
+Defined in: [ui/src/api-server/ai/tools/hints.ts:17](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/tools/hints.ts#L17)
 
 ## Parameters
 

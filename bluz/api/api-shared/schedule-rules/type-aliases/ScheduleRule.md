@@ -8,7 +8,7 @@
 
 > **ScheduleRule** = `object`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:41](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L41)
+Defined in: [ui/src/api-shared/schedule-rules.ts:41](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L41)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/schedule-rules.ts:41](https://github.com/System-B
 
 > `optional` **checkedBy?**: `string`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:52](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L52)
+Defined in: [ui/src/api-shared/schedule-rules.ts:52](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L52)
 
 Where the app checks it automatically, if anywhere.
 
@@ -26,7 +26,7 @@ Where the app checks it automatically, if anywhere.
 
 > **description**: `string`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:48](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L48)
+Defined in: [ui/src/api-shared/schedule-rules.ts:48](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L48)
 
 What the rule means and why, in Hebrew.
 
@@ -36,7 +36,7 @@ What the rule means and why, in Hebrew.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:42](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L42)
+Defined in: [ui/src/api-shared/schedule-rules.ts:42](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L42)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-shared/schedule-rules.ts:42](https://github.com/System-B
 
 > `optional` **points?**: `ReadonlyArray`\<`string`\>
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:50](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L50)
+Defined in: [ui/src/api-shared/schedule-rules.ts:50](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L50)
 
 Optional sub-points (cases, exceptions).
 
@@ -54,7 +54,7 @@ Optional sub-points (cases, exceptions).
 
 > **section**: [`RuleSectionId`](RuleSectionId.md)
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:43](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L43)
+Defined in: [ui/src/api-shared/schedule-rules.ts:43](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L43)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [ui/src/api-shared/schedule-rules.ts:43](https://github.com/System-B
 
 > `optional` **tier?**: [`RuleTier`](RuleTier.md)
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:44](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L44)
+Defined in: [ui/src/api-shared/schedule-rules.ts:44](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L44)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [ui/src/api-shared/schedule-rules.ts:44](https://github.com/System-B
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:46](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L46)
+Defined in: [ui/src/api-shared/schedule-rules.ts:46](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L46)
 
 Short Hebrew name.
 
@@ -80,6 +80,6 @@ Short Hebrew name.
 
 > `optional` **violationLabel?**: `string`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:54](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-rules.ts#L54)
+Defined in: [ui/src/api-shared/schedule-rules.ts:54](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L54)
 
 Short Hebrew label for a violation of this rule, when the app reports one.

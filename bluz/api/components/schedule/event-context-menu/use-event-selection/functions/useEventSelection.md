@@ -8,7 +8,7 @@
 
 > **useEventSelection**(`events`): [`EventSelection`](../type-aliases/EventSelection.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:32](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L32)
+Defined in: [ui/src/components/schedule/event-context-menu/use-event-selection.ts:32](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-context-menu/use-event-selection.ts#L32)
 
 Multi-selection of calendar tiles (#706). Held above the calendar because
 both the grid (which draws the selection ring) and the right-click menu

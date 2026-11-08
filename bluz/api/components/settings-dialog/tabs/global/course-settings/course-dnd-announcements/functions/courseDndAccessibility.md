@@ -8,7 +8,7 @@
 
 > **courseDndAccessibility**(`courses`, `instructors`): `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-dnd-announcements.ts:15](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/course-settings/course-dnd-announcements.ts#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-dnd-announcements.ts:15](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/course-dnd-announcements.ts#L15)
 
 Hebrew screen-reader text for the course builder's drag and drop (#885).
 dnd-kit's defaults are English and name items by their internal ids.

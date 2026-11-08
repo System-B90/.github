@@ -8,7 +8,7 @@
 
 > **ExternalStore**\<`T`\> = `object`
 
-Defined in: [ui/src/components/base/external-store.ts:13](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/external-store.ts#L13)
+Defined in: [ui/src/components/base/external-store.ts:13](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/external-store.ts#L13)
 
 A value held outside React state, read through per-consumer selectors.
 
@@ -30,7 +30,7 @@ flight and the lock map (#955). A tile that reads through
 
 > **get**: () => `T`
 
-Defined in: [ui/src/components/base/external-store.ts:14](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/external-store.ts#L14)
+Defined in: [ui/src/components/base/external-store.ts:14](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/external-store.ts#L14)
 
 #### Returns
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/base/external-store.ts:14](https://github.com/Sys
 
 > **set**: (`value`) => `void`
 
-Defined in: [ui/src/components/base/external-store.ts:16](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/external-store.ts#L16)
+Defined in: [ui/src/components/base/external-store.ts:16](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/external-store.ts#L16)
 
 No-op (no notification) when `value` is identical to the current one.
 
@@ -62,7 +62,7 @@ No-op (no notification) when `value` is identical to the current one.
 
 > **subscribe**: (`listener`) => () => `void`
 
-Defined in: [ui/src/components/base/external-store.ts:19](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/external-store.ts#L19)
+Defined in: [ui/src/components/base/external-store.ts:19](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/external-store.ts#L19)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: [ui/src/components/base/external-store.ts:19](https://github.com/Sys
 
 > **update**: (`fn`) => `void`
 
-Defined in: [ui/src/components/base/external-store.ts:18](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/external-store.ts#L18)
+Defined in: [ui/src/components/base/external-store.ts:18](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/external-store.ts#L18)
 
 Functional update, like a state setter.
 

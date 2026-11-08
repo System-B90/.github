@@ -8,7 +8,7 @@
 
 > **GanttConstraintState** = `object`
 
-Defined in: [ui/src/components/gantt/state/constraints/types.ts:6](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/constraints/types.ts#L6)
+Defined in: [ui/src/components/gantt/state/constraints/types.ts:6](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/constraints/types.ts#L6)
 
 State representation for the Gantt constraints context provider.
 
@@ -18,7 +18,7 @@ State representation for the Gantt constraints context provider.
 
 > **constraints**: `Record`\<`string`, [`GanttConstraint`](../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md)\>
 
-Defined in: [ui/src/components/gantt/state/constraints/types.ts:8](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/constraints/types.ts#L8)
+Defined in: [ui/src/components/gantt/state/constraints/types.ts:8](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/constraints/types.ts#L8)
 
 Map of constraint IDs to their constraint records.
 
@@ -28,6 +28,6 @@ Map of constraint IDs to their constraint records.
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/constraints/types.ts:11](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/constraints/types.ts#L11)
+Defined in: [ui/src/components/gantt/state/constraints/types.ts:11](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/constraints/types.ts#L11)
 
 Flag indicating if the constraints are currently loading.

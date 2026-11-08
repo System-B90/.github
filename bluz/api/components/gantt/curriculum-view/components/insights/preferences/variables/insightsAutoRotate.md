@@ -8,7 +8,7 @@
 
 > `const` **insightsAutoRotate**: `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/preferences.ts:4](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/components/insights/preferences.ts#L4)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/preferences.ts:4](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/curriculum-view/components/insights/preferences.ts#L4)
 
 Whether the insights card rotates by itself. On by default.
 

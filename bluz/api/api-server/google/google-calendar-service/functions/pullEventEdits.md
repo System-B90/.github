@@ -8,7 +8,7 @@
 
 > **pullEventEdits**(`userId`): `Promise`\<`number`\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:930](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/google/google-calendar-service.ts#L930)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:930](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/google/google-calendar-service.ts#L930)
 
 Pulls Google-side edits from the user's linked calendar back into Bluz
 using the Calendar API incremental-sync protocol: the first call does a

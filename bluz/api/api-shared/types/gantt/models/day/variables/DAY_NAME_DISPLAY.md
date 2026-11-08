@@ -8,4 +8,4 @@
 
 > `const` **DAY\_NAME\_DISPLAY**: `Record`\<[`GanttDayIndex`](../enumerations/GanttDayIndex.md), `string`\>
 
-Defined in: [ui/src/api-shared/types/gantt/models/day.ts:14](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/models/day.ts#L14)
+Defined in: [ui/src/api-shared/types/gantt/models/day.ts:14](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/day.ts#L14)

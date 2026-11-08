@@ -8,7 +8,7 @@
 
 > **RuleCheckContext** = `object`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:41](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L41)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:41](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L41)
 
 What the checks know beyond the events. Name lookups only label results;
 the optional sources are loaded by the server only for the rules that
@@ -20,7 +20,7 @@ declare them (`RuleCheck.needs`).
 
 > **courseInstructors**: (`courseId`) => `number`[]
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:52](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L52)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:52](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L52)
 
 Instructors set on a course in the course builder; empty when none.
 
@@ -40,7 +40,7 @@ Instructors set on a course in the course builder; empty when none.
 
 > **courseLineage**: (`courseId`) => `string`[]
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:50](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L50)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:50](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L50)
 
 The course and its ancestors, nearest first.
 
@@ -60,7 +60,7 @@ The course and its ancestors, nearest first.
 
 > **courseName**: (`courseId`) => `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:46](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L46)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:46](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L46)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:46](https://github.c
 
 > `optional` **ganttRank?**: (`ganttEventId`) => [`GanttRank`](GanttRank.md) \| `undefined`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:58](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L58)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:58](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L58)
 
 The event's Gantt order, when it was cut from a curriculum that still has it.
 
@@ -98,7 +98,7 @@ The event's Gantt order, when it was cut from a curriculum that still has it.
 
 > **isShuffle**: (`courseId`) => `boolean`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:43](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L43)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:43](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L43)
 
 #### Parameters
 
@@ -116,7 +116,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:43](https://github.c
 
 > `optional` **mealTimes?**: (`date`) => [`MealSettings`](../../../types/settings/meal/type-aliases/MealSettings.md) \| `null`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:56](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L56)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:56](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L56)
 
 The linked week template's meal times for a date; null when the week has no template.
 
@@ -136,7 +136,7 @@ The linked week template's meal times for a date; null when the week has no temp
 
 > **personName**: (`id`) => `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:48](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L48)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:48](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L48)
 
 #### Parameters
 
@@ -154,7 +154,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:48](https://github.c
 
 > `optional` **prayerWindows?**: [`DayPrayerWindow`](../../../types/prayer-windows/type-aliases/DayPrayerWindow.md)[]
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:54](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L54)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:54](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L54)
 
 Daily prayer windows for the checked dates.
 
@@ -164,7 +164,7 @@ Daily prayer windows for the checked dates.
 
 > **roomName**: (`room`) => `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:47](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L47)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:47](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L47)
 
 #### Parameters
 
@@ -182,7 +182,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:47](https://github.c
 
 > **shuffleName**: (`courseId`) => `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:44](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L44)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:44](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L44)
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:44](https://github.c
 
 > **syllabusName**: (`subjectId`) => `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:45](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L45)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:45](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L45)
 
 #### Parameters
 
@@ -218,4 +218,4 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:45](https://github.c
 
 > `optional` **timezone?**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:42](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/schedule-validation/types.ts#L42)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:42](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/types.ts#L42)

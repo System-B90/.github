@@ -8,7 +8,7 @@
 
 > `const` **add**: (`args`) => `Promise`\<`void`\> = `record`
 
-Defined in: [ui/src/api-server/db-event-history.ts:244](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/db-event-history.ts#L244)
+Defined in: [ui/src/api-server/db-event-history.ts:244](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/db-event-history.ts#L244)
 
 Append one row describing a write. Never throws: the log is best-effort and
 must not take down the write it documents.

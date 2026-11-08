@@ -8,7 +8,7 @@
 
 > **FormCardBaseProps**\<`TEntity`\> = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:11](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:11](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L11)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:1
 
 > **handleCancelEdit**: () => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:15](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:15](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L15)
 
 #### Returns
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:1
 
 > **handleSave**: (`e`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:14](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L14)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:14](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L14)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:1
 
 > **isCreating**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:13](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:13](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L13)
 
 ***
 
@@ -60,4 +60,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:1
 
 > **selectedEntity**: `null` \| `TEntity`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:12](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx:12](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/FormCard.tsx#L12)

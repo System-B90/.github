@@ -8,7 +8,7 @@
 
 > **useFollowToday**(`view`, `setCurrentDate`): `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-follow-today.ts:23](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/calendar/use-follow-today.ts#L23)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-follow-today.ts:23](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/calendar/calendar/use-follow-today.ts#L23)
 
 Keeps the staff calendar on the server's "today" across midnight.
 

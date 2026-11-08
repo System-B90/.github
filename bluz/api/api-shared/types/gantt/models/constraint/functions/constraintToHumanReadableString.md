@@ -8,7 +8,7 @@
 
 > **constraintToHumanReadableString**(`constraint`, `state`): `string` \| `undefined`
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:198](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/models/constraint.ts#L198)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:198](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/constraint.ts#L198)
 
 ## Parameters
 

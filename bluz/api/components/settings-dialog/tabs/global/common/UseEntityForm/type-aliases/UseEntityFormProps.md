@@ -8,7 +8,7 @@
 
 > **UseEntityFormProps**\<`TEntity`, `TValues`\> = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:25](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L25)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:25](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L25)
 
 ## Type Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.
 
 > `optional` **confirmDelete?**: `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:63](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L63)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:63](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L63)
 
 The delete confirmation: its title, and the prompt for a given id.
 Omitted → deletes without asking.
@@ -55,7 +55,7 @@ Omitted → deletes without asking.
 
 > **emptyValues**: `TValues`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:27](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L27)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:27](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L27)
 
 Blank form — used for "create new" and for clearing after save/cancel.
 
@@ -65,7 +65,7 @@ Blank form — used for "create new" and for clearing after save/cancel.
 
 > **errorMessages**: `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:54](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L54)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:54](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L54)
 
 Error snackbar titles, e.g. `{ create: "שגיאה ביצירת איש חוץ" }`.
 
@@ -87,7 +87,7 @@ Error snackbar titles, e.g. `{ create: "שגיאה ביצירת איש חוץ" }
 
 > `optional` **keepSelectionAfterSave?**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:52](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L52)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:52](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L52)
 
 By default a successful save clears the form, which is what a
 list-and-add tab wants. Set this to keep the saved entity selected and
@@ -100,7 +100,7 @@ tabs where saving is "apply my edits", not "add another".
 
 > **onCreate**: (`values`) => `Promise`\<`TEntity` \| `unknown`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:43](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L43)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:43](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L43)
 
 Returning the saved entity lets `keepSelectionAfterSave` re-populate the
 form from the server's version. Returning nothing is fine otherwise.
@@ -123,7 +123,7 @@ form keeps what was typed.
 
 > `optional` **onDelete?**: (`id`) => `Promise`\<`unknown`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:45](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L45)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:45](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L45)
 
 #### Parameters
 
@@ -141,7 +141,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.
 
 > `optional` **onSelectionChange?**: (`entityId`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:68](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L68)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:68](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L68)
 
 Runs after the selection changes, e.g. to sync a URL query param.
 
@@ -161,7 +161,7 @@ Runs after the selection changes, e.g. to sync a URL query param.
 
 > **onUpdate**: (`entity`, `values`) => `Promise`\<`TEntity` \| `unknown`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:44](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L44)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:44](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L44)
 
 #### Parameters
 
@@ -183,7 +183,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.
 
 > **toValues**: (`entity`) => `TValues`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:29](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L29)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:29](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L29)
 
 Fills the form when an existing entity is selected for editing.
 
@@ -203,7 +203,7 @@ Fills the form when an existing entity is selected for editing.
 
 > **validate**: (`values`) => [`ValidationResult`](ValidationResult.md)\<`TValues`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:36](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L36)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:36](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L36)
 
 Checked before any request. Return the warning to show, or `null` to
 proceed. Trimming belongs here or in `onCreate`/`onUpdate` — the hook

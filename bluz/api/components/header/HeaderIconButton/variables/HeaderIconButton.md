@@ -8,7 +8,7 @@
 
 > `const` **HeaderIconButton**: `ForwardRefExoticComponent`\<`HeaderIconButtonProps` & `RefAttributes`\<`HTMLButtonElement`\>\>
 
-Defined in: [ui/src/components/header/HeaderIconButton.tsx:25](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/header/HeaderIconButton.tsx#L25)
+Defined in: [ui/src/components/header/HeaderIconButton.tsx:25](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/header/HeaderIconButton.tsx#L25)
 
 Every icon in the app bar. Hover is the theme's background tint and press
 is the ripple — the bar's icons used to scale, spin and pulse each in their
