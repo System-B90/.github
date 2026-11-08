@@ -8,7 +8,7 @@
 
 > **SyllabusNaming** = `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:340](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/cut.ts#L340)
+Defined in: [ui/src/api-server/gantt/cut.ts:340](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/gantt/cut.ts#L340)
 
 What a cut event's syllabus prefix is chosen from (#965).
 
@@ -18,7 +18,7 @@ What a cut event's syllabus prefix is chosen from (#965).
 
 > `optional` **color?**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:345](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/cut.ts#L345)
+Defined in: [ui/src/api-server/gantt/cut.ts:345](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/gantt/cut.ts#L345)
 
 The syllabus's default color id, stamped on its cut events (#960).
 
@@ -28,7 +28,7 @@ The syllabus's default color id, stamped on its cut events (#960).
 
 > **hiveSubjectId**: `null` \| `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:343](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/cut.ts#L343)
+Defined in: [ui/src/api-server/gantt/cut.ts:343](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/gantt/cut.ts#L343)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-server/gantt/cut.ts:343](https://github.com/System-B90/B
 
 > **shortName**: `null` \| `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:342](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/cut.ts#L342)
+Defined in: [ui/src/api-server/gantt/cut.ts:342](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/gantt/cut.ts#L342)
 
 ***
 
@@ -44,4 +44,4 @@ Defined in: [ui/src/api-server/gantt/cut.ts:342](https://github.com/System-B90/B
 
 > **title**: `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:341](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/cut.ts#L341)
+Defined in: [ui/src/api-server/gantt/cut.ts:341](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/gantt/cut.ts#L341)

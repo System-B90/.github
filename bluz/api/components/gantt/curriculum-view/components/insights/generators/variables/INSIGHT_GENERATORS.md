@@ -8,4 +8,4 @@
 
 > `const` **INSIGHT\_GENERATORS**: `ReadonlyArray`\<[`InsightGenerator`](../../types/type-aliases/InsightGenerator.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:14](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L14)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts:14](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/components/insights/generators/index.ts#L14)

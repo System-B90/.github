@@ -8,7 +8,7 @@
 
 > **RequestAuth** = `object`
 
-Defined in: [ui/src/api-server/session-user.ts:31](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/session-user.ts#L31)
+Defined in: [ui/src/api-server/session-user.ts:31](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/session-user.ts#L31)
 
 Who is calling, and how. `accessToken` is set when the caller sent a
 personal access token instead of a browser session cookie.
@@ -19,7 +19,7 @@ personal access token instead of a browser session cookie.
 
 > **accessToken**: [`AccessTokenDocument`](../../db-access-tokens/type-aliases/AccessTokenDocument.md) \| `null`
 
-Defined in: [ui/src/api-server/session-user.ts:33](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/session-user.ts#L33)
+Defined in: [ui/src/api-server/session-user.ts:33](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/session-user.ts#L33)
 
 ***
 
@@ -27,4 +27,4 @@ Defined in: [ui/src/api-server/session-user.ts:33](https://github.com/System-B90
 
 > **user**: `AuthSessionUser`
 
-Defined in: [ui/src/api-server/session-user.ts:32](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/session-user.ts#L32)
+Defined in: [ui/src/api-server/session-user.ts:32](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/session-user.ts#L32)

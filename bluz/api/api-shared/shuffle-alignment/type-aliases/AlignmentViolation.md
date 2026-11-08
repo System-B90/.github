@@ -8,7 +8,7 @@
 
 > **AlignmentViolation** = `object`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:20](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L20)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:28](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L28)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/shuffle-alignment.ts:20](https://github.com/Syste
 
 > **date**: `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:25](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L25)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:33](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L33)
 
 Local civil date, `YYYY-MM-DD`.
 
@@ -26,7 +26,7 @@ Local civil date, `YYYY-MM-DD`.
 
 > **details**: `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:29](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L29)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:37](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L37)
 
 Hebrew, human-readable.
 
@@ -36,7 +36,7 @@ Hebrew, human-readable.
 
 > **eventIds**: `string`[]
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:30](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L30)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:38](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L38)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-shared/shuffle-alignment.ts:30](https://github.com/Syste
 
 > **rule**: [`AlignmentRule`](AlignmentRule.md)
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:21](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L21)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:29](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L29)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-shared/shuffle-alignment.ts:21](https://github.com/Syste
 
 > **shuffles**: `string`[]
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:27](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L27)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:35](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L35)
 
 Display names of the shuffles that disagree.
 
@@ -62,6 +62,6 @@ Display names of the shuffles that disagree.
 
 > **syllabus**: `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:23](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L23)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:31](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L31)
 
 Syllabus display name (the event subject's name).

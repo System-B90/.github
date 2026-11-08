@@ -8,7 +8,7 @@
 
 > **toStablePublicLocks**(`previous`, `state`): `Record`\<[`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md), [`EventLockMessage`](../../../../../../api-shared/types/type-aliases/EventLockMessage.md)\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:158](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L158)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/lock-state.ts:158](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/calendar-provider/lock-state.ts#L158)
 
 [toPublicLocks](toPublicLocks.md), but returns `previous` itself when every event still
 has the same holder. A heartbeat only moves `expiresAt`, so without this

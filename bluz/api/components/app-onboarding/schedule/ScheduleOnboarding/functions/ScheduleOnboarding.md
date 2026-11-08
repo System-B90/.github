@@ -8,7 +8,7 @@
 
 > **ScheduleOnboarding**(`__namedParameters`): `null`
 
-Defined in: [ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx:19](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx#L19)
+Defined in: [ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx:19](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-onboarding/schedule/ScheduleOnboarding.tsx#L19)
 
 Registers the schedule's tutorials (#986) and their help-panel entries for
 as long as the screen is mounted.

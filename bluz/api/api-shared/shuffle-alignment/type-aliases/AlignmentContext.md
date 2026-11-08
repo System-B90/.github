@@ -8,7 +8,7 @@
 
 > **AlignmentContext** = `object`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:38](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L38)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:46](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L46)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/shuffle-alignment.ts:38](https://github.com/Syste
 
 > **isShuffle**: (`courseId`) => `boolean`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:40](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L40)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:48](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L48)
 
 True for course ids that are shuffles.
 
@@ -36,7 +36,7 @@ True for course ids that are shuffles.
 
 > **shuffleName**: (`courseId`) => `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:42](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L42)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:50](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L50)
 
 Shuffle course id → display name.
 
@@ -56,7 +56,7 @@ Shuffle course id → display name.
 
 > **syllabusName**: (`subjectId`) => `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:44](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L44)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:52](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L52)
 
 Hive subject id → syllabus display name.
 
@@ -76,4 +76,4 @@ Hive subject id → syllabus display name.
 
 > `optional` **timezone?**: `string`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:45](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L45)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:53](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L53)

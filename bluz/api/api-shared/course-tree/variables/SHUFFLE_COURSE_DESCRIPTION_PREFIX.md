@@ -8,7 +8,7 @@
 
 > `const` **SHUFFLE\_COURSE\_DESCRIPTION\_PREFIX**: `"נגזר מסילבוס"` = `"נגזר מסילבוס"`
 
-Defined in: [ui/src/api-shared/course-tree.ts:158](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/course-tree.ts#L158)
+Defined in: [ui/src/api-shared/course-tree.ts:158](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/course-tree.ts#L158)
 
 Description prefix the cut pipeline stamps on the courses it creates for
 shuffles. Course has no dedicated flag, so this marker is how the UI tells a

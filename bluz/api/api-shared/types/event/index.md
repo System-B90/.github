@@ -40,6 +40,7 @@
 - [eventHasRoom](functions/eventHasRoom.md)
 - [eventHasSubject](functions/eventHasSubject.md)
 - [eventNeedsInstructors](functions/eventNeedsInstructors.md)
+- [eventNeedsRoom](functions/eventNeedsRoom.md)
 - [eventTypeToHebrew](functions/eventTypeToHebrew.md)
 - [getPresentInstructors](functions/getPresentInstructors.md)
 - [lecturersLabelForType](functions/lecturersLabelForType.md)

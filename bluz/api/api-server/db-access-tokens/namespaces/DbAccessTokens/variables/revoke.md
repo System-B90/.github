@@ -8,7 +8,7 @@
 
 > `const` **revoke**: (`userId`, `id`) => `Promise`\<`void`\> = `revokeToken`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:180](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/db-access-tokens.ts#L180)
+Defined in: [ui/src/api-server/db-access-tokens.ts:180](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/db-access-tokens.ts#L180)
 
 Revoke one of the user's tokens. Scoped by `userId`, so nobody can revoke
 someone else's token by guessing its id.

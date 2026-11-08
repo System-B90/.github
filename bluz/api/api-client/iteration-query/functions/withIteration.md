@@ -8,7 +8,7 @@
 
 > **withIteration**(`endpoint`, `iterationId?`): `URL`
 
-Defined in: [ui/src/api-client/iteration-query.ts:10](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-client/iteration-query.ts#L10)
+Defined in: [ui/src/api-client/iteration-query.ts:10](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-client/iteration-query.ts#L10)
 
 Append the active iteration to a request, when one is selected. An absent id
 means the current (writable) run, which every route treats as the default.

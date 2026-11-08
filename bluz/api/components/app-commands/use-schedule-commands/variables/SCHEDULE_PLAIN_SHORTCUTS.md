@@ -8,7 +8,7 @@
 
 > `const` **SCHEDULE\_PLAIN\_SHORTCUTS**: `ReadonlyArray`\<`ReadonlyArray`\<`string`\>\>
 
-Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:63](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-commands/use-schedule-commands.tsx#L63)
+Defined in: [ui/src/components/app-commands/use-schedule-commands.tsx:66](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-commands/use-schedule-commands.tsx#L66)
 
 Non-Ctrl schedule shortcuts. A dialog swallows these while it is open, so a
 keystroke on a Select or chip does not flip the calendar behind it.

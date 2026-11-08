@@ -930,20 +930,27 @@
 <p><a href="../../../../">TypeDoc API</a> / <a href="../../">api-shared/shuffle-alignment</a> / AlignmentRule</p>
 <h1 id="type-alias-alignmentrule">Type Alias: AlignmentRule<a class="headerlink" href="#type-alias-alignmentrule" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>AlignmentRule</strong> = <code>"R-50"</code> | <code>"R-51"</code></p>
+<p><strong>AlignmentRule</strong> = <code>Extract</code>\&lt;<a href="../../../schedule-rules/type-aliases/ScheduleRuleId/"><code>ScheduleRuleId</code></a>, <code>"R-50"</code> | <code>"R-51"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/shuffle-alignment.ts#L18">ui/src/api-shared/shuffle-alignment.ts:18</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/shuffle-alignment.ts#L26">ui/src/api-shared/shuffle-alignment.ts:26</a></p>
 <p>Shuffle alignment on the calendar (#1000), one pure check behind the
 server route, the CLI and the schedule button.</p>
 <ul>
 <li><strong>R-50</strong> All shuffles of one syllabus share block edges: every block
   holding the syllabus starts and ends at the same times for each of its
   shuffles. A block is a maximal run of a shuffle's touching events;
-  breaks and prayers are not part of a run, so they cut it.</li>
-<li><strong>R-51</strong> A syllabus' daily minutes are equal across its shuffles.</li>
+  breaks and prayers are not part of a run, so they cut it — except a
+  break for exactly one shuffle (no rooms, its only course that shuffle),
+  which bridges that shuffle's block instead (R-54). A bridge never sets
+  a block edge on its own: blocks are trimmed to their content.</li>
+<li><strong>R-51</strong> A syllabus' daily minutes are equal across its shuffles. Break
+  minutes never count, bridging breaks included.</li>
 </ul>
 <p>Course-only events (no shuffle) are ignored (R-52). Syllabuses are told
-apart by Hive subject, so mutually exclusive courses never meet (R-53).</p>
+apart by Hive subject, and every shuffle holding a syllabus is compared,
+even across mutually exclusive courses: syllabus membership takes
+precedence over the course tree (R-53).
+Rule titles and meanings: <code>schedule-rules.ts</code>.</p>
 
 
 

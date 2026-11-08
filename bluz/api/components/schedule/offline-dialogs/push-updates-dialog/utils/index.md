@@ -24,3 +24,15 @@
 - [hasUnresolvedConflicts](functions/hasUnresolvedConflicts.md)
 - [pushSelectedCollisionUpdates](functions/pushSelectedCollisionUpdates.md)
 - [reconcileCollisionStatesAfterPush](functions/reconcileCollisionStatesAfterPush.md)
+
+## References
+
+### areEventContentsEqual
+
+Re-exports [areEventContentsEqual](../../../types/EventUtils/functions/areEventContentsEqual.md)
+
+***
+
+### DIFF\_IGNORED\_KEYS
+
+Re-exports [DIFF_IGNORED_KEYS](../../../types/EventUtils/variables/DIFF_IGNORED_KEYS.md)

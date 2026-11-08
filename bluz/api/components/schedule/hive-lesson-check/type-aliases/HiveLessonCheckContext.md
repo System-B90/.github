@@ -8,7 +8,7 @@
 
 > **HiveLessonCheckContext** = `object`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:26](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/hive-lesson-check.ts#L26)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:26](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/hive-lesson-check.ts#L26)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/hive-lesson-check.ts:26](https://github.
 
 > `optional` **getLesson?**: (`id`) => [`HiveLesson`](../../../../api-shared/types/hive/type-aliases/HiveLesson.md) \| `undefined`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:28](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/hive-lesson-check.ts#L28)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:28](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/hive-lesson-check.ts#L28)
 
 Hive's lessons; undefined while they load, so nothing is claimed missing.
 
@@ -36,7 +36,7 @@ Hive's lessons; undefined while they load, so nothing is claimed missing.
 
 > `optional` **unmatchedCourses?**: (`courseIds`) => `string`[]
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:33](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/hive-lesson-check.ts#L33)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:33](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/hive-lesson-check.ts#L33)
 
 The given courses that reach no Hive group, by name; undefined while
 Hive's groups load or are unreachable. See [unmatchedCoursesResolver](../functions/unmatchedCoursesResolver.md).

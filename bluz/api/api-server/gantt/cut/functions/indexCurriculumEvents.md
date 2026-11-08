@@ -8,7 +8,7 @@
 
 > **indexCurriculumEvents**(`curriculum`): `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:235](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/gantt/cut.ts#L235)
+Defined in: [ui/src/api-server/gantt/cut.ts:235](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/gantt/cut.ts#L235)
 
 Walk the full curriculum tree once, indexing every event by id and recording
 the title of the syllabus each event lives under (used as course provenance).

@@ -8,7 +8,7 @@
 
 > **ShuffleChip**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/ShuffleChip.tsx:30](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/ShuffleChip.tsx#L30)
+Defined in: [ui/src/components/gantt/ShuffleChip.tsx:30](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/ShuffleChip.tsx#L30)
 
 A shuffle tag. Links to its Hive student group (the explicitly linked one,
 else the same-named one, #774) when one exists;

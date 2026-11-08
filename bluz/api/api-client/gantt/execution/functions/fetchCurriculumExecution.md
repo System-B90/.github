@@ -8,7 +8,7 @@
 
 > **fetchCurriculumExecution**(`curriculumId`): `Promise`\<[`ApiCurriculumExecutionResponse`](../../../../api-shared/types/gantt/execution/type-aliases/ApiCurriculumExecutionResponse.md)\>
 
-Defined in: [ui/src/api-client/gantt/execution.ts:10](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-client/gantt/execution.ts#L10)
+Defined in: [ui/src/api-client/gantt/execution.ts:10](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-client/gantt/execution.ts#L10)
 
 GET /api/gantt/curriculums/[id]/execution — תכנון מול ביצוע comparison for a
 curriculum. Resolves to `{ events: {} }` when the curriculum has not been

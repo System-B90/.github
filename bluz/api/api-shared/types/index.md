@@ -16,6 +16,7 @@
 - [CalendarDraftRange](type-aliases/CalendarDraftRange.md)
 - [CalendarDraftSummary](type-aliases/CalendarDraftSummary.md)
 - [CalendarSnapshot](type-aliases/CalendarSnapshot.md)
+- [CalendarSnapshotRestoreRequest](type-aliases/CalendarSnapshotRestoreRequest.md)
 - [CalendarSnapshotRestoreResult](type-aliases/CalendarSnapshotRestoreResult.md)
 - [CalendarSnapshotSummary](type-aliases/CalendarSnapshotSummary.md)
 - [EventAddedOrRemovedMessage](type-aliases/EventAddedOrRemovedMessage.md)

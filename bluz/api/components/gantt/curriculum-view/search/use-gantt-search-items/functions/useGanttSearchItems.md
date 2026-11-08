@@ -8,7 +8,7 @@
 
 > **useGanttSearchItems**(): [`GanttSearchItem`](../type-aliases/GanttSearchItem.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:35](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L35)
+Defined in: [ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts:35](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/search/use-gantt-search-items.ts#L35)
 
 Flatten the current curriculum into a hierarchically-ordered list of
 searchable items (syllabus, then each of its modules, then each module's

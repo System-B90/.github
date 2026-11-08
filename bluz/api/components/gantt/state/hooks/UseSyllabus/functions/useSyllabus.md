@@ -10,7 +10,7 @@
 
 > **useSyllabus**(`syllabusId`): `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseSyllabus.ts:5](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/hooks/UseSyllabus.ts#L5)
+Defined in: [ui/src/components/gantt/state/hooks/UseSyllabus.ts:5](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/hooks/UseSyllabus.ts#L5)
 
 ### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/gantt/state/hooks/UseSyllabus.ts:5](https://githu
 
 > **useSyllabus**(`syllabusId`): [`SyllabusDocument`](../../../../../../api-client/gantt/syllabus/type-aliases/SyllabusDocument.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseSyllabus.ts:6](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/hooks/UseSyllabus.ts#L6)
+Defined in: [ui/src/components/gantt/state/hooks/UseSyllabus.ts:6](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/hooks/UseSyllabus.ts#L6)
 
 ### Parameters
 

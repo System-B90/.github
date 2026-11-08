@@ -8,7 +8,7 @@
 
 > **CourseOption** = `object`
 
-Defined in: [ui/src/components/base/course-options.ts:5](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/base/course-options.ts#L5)
+Defined in: [ui/src/components/base/course-options.ts:5](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/course-options.ts#L5)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/course-options.ts:5](https://github.com/Syst
 
 > **contextOnly**: `boolean`
 
-Defined in: [ui/src/components/base/course-options.ts:10](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/base/course-options.ts#L10)
+Defined in: [ui/src/components/base/course-options.ts:10](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/course-options.ts#L10)
 
 Shown only as context for a matching descendant, not a match itself.
 
@@ -26,7 +26,7 @@ Shown only as context for a matching descendant, not a match itself.
 
 > **course**: [`Course`](../../../../api-shared/types/course/type-aliases/Course.md)
 
-Defined in: [ui/src/components/base/course-options.ts:6](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/base/course-options.ts#L6)
+Defined in: [ui/src/components/base/course-options.ts:6](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/course-options.ts#L6)
 
 ***
 
@@ -34,6 +34,6 @@ Defined in: [ui/src/components/base/course-options.ts:6](https://github.com/Syst
 
 > **depth**: `number`
 
-Defined in: [ui/src/components/base/course-options.ts:8](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/base/course-options.ts#L8)
+Defined in: [ui/src/components/base/course-options.ts:8](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/course-options.ts#L8)
 
 Nesting level below the listed roots, 0 for top-level rows.

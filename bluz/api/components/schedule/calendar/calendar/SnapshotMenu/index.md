@@ -9,3 +9,4 @@
 ## Functions
 
 - [SnapshotMenu](functions/SnapshotMenu.md)
+- [timeframeRange](functions/timeframeRange.md)

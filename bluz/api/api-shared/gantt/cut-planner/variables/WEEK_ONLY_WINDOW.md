@@ -8,7 +8,7 @@
 
 > `const` **WEEK\_ONLY\_WINDOW**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:306](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-planner.ts#L306)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:306](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-planner.ts#L306)
 
 Weekend window for weeks scheduled only as a whole (#964): Friday 16:00
 through the end of Saturday, as minutes from that Friday's midnight.

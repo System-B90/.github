@@ -8,7 +8,7 @@
 
 > **buildGantItemRoutes**\<`TEntity`, `TCreatePayload`\>(`__namedParameters`): `object`
 
-Defined in: [ui/src/app/api/gantt/base-item.ts:32](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/gantt/base-item.ts#L32)
+Defined in: [ui/src/app/api/gantt/base-item.ts:32](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/app/api/gantt/base-item.ts#L32)
 
 ## Type Parameters
 

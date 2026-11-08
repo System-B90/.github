@@ -8,7 +8,7 @@
 
 > **ScheduleTutorial** = `object`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:13](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-onboarding/schedule/tutorials.ts#L13)
+Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:13](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-onboarding/schedule/tutorials.ts#L13)
 
 The schedule's tutorials: one tour per job a planner does on this screen.
 
@@ -27,7 +27,7 @@ from here, so they cannot drift apart.
 
 > **id**: `string`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:15](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-onboarding/schedule/tutorials.ts#L15)
+Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:15](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-onboarding/schedule/tutorials.ts#L15)
 
 The tour's id. It is the persistence key — never rename one.
 
@@ -37,7 +37,7 @@ The tour's id. It is the persistence key — never rename one.
 
 > **keywords**: `ReadonlyArray`\<`string`\>
 
-Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:20](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-onboarding/schedule/tutorials.ts#L20)
+Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:20](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-onboarding/schedule/tutorials.ts#L20)
 
 Extra palette match tokens: English aliases and synonyms.
 
@@ -47,7 +47,7 @@ Extra palette match tokens: English aliases and synonyms.
 
 > **summary**: `string`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:18](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-onboarding/schedule/tutorials.ts#L18)
+Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:18](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-onboarding/schedule/tutorials.ts#L18)
 
 What the tutorial is for, in one sentence.
 
@@ -57,4 +57,4 @@ What the tutorial is for, in one sentence.
 
 > **title**: `string`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:16](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-onboarding/schedule/tutorials.ts#L16)
+Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:16](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-onboarding/schedule/tutorials.ts#L16)

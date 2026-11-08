@@ -990,12 +990,14 @@
 <blockquote>
 <p><code>const</code> <strong>POST</strong>: (<code>request</code>, <code>context?</code>) =&gt; <code>Promise</code>\&lt;<code>Response</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/calendar/snapshots/restore/route.ts#L17">ui/src/app/api/calendar/snapshots/restore/route.ts:17</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/app/api/calendar/snapshots/restore/route.ts#L43">ui/src/app/api/calendar/snapshots/restore/route.ts:43</a></p>
 <p>POST /api/calendar/snapshots/restore?id=<uuid></p>
 <p>Restores the calendar to the snapshot's captured state within the snapshot's
 own date range: live events in that range are archived, the snapshot's
 events are written back, and all connected clients are notified via
 WebSocket broadcasts.</p>
+<p>Body <code>{ eventIds }</code> restores only those events (see
+<code>DbCalendarSnapshot.restore</code>); no body restores the whole snapshot.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="request">request<a class="headerlink" href="#request" title="Permanent link">&para;</a></h3>
 <p><code>Request</code></p>

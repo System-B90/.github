@@ -990,15 +990,17 @@
 <blockquote>
 <p><strong>eventHasRoom</strong>(<code>type</code>): <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/event.ts#L223">ui/src/api-shared/types/event.ts:223</a></p>
-<p>Checks if an event type is associated with a physical classroom/room.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/event.ts#L231">ui/src/api-shared/types/event.ts:231</a></p>
+<p>Checks if an event type can be placed in a room (the room picker applies).
+Prayers may carry one — "בית כנסת", say — but need not; see
+<a href="../eventNeedsRoom/">eventNeedsRoom</a>.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="type">type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
 <p><a href="../../enumerations/EventType/"><code>EventType</code></a></p>
 <p>The EventType to check.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>boolean</code></p>
-<p>true if the event type requires a room, false otherwise.</p>
+<p>true if the event type takes a room, false otherwise.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">eventHasRoom</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="kr">type</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="c1">// Render room picker field</span>

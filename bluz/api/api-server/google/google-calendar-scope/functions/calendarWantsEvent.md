@@ -8,7 +8,7 @@
 
 > **calendarWantsEvent**(`event`, `subscribers`): `boolean`
 
-Defined in: [ui/src/api-server/google/google-calendar-scope.ts:31](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/google/google-calendar-scope.ts#L31)
+Defined in: [ui/src/api-server/google/google-calendar-scope.ts:31](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/google/google-calendar-scope.ts#L31)
 
 A calendar holds an event when at least one of the users mirroring into it
 either syncs everything or is assigned to the event.

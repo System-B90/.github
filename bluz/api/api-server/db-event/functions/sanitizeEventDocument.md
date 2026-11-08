@@ -8,7 +8,7 @@
 
 > **sanitizeEventDocument**(`event`): [`DbEventDocument`](../../../api-shared/types/event/type-aliases/DbEventDocument.md)
 
-Defined in: [ui/src/api-server/db-event.ts:93](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/db-event.ts#L93)
+Defined in: [ui/src/api-server/db-event.ts:106](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/db-event.ts#L106)
 
 A stored-shape event built from an untrusted copy (a snapshot or draft):
 allow-listed fields, required arrays present, and the given id.

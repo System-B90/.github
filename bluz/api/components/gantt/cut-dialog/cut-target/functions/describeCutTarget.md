@@ -8,7 +8,7 @@
 
 > **describeCutTarget**(`target`): `string` \| `null`
 
-Defined in: [ui/src/components/gantt/cut-dialog/cut-target.ts:32](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/cut-dialog/cut-target.ts#L32)
+Defined in: [ui/src/components/gantt/cut-dialog/cut-target.ts:32](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/cut-dialog/cut-target.ts#L32)
 
 The one-line "what will happen" summary shown above the cut options.
 

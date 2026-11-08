@@ -737,10 +737,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#do-not-commit-the-seed-snapshot" class="md-nav__link">
+  <a href="#the-seed-snapshot-is-local" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Do not commit the seed snapshot
+        The seed snapshot is local
       
     </span>
   </a>
@@ -1219,10 +1219,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#do-not-commit-the-seed-snapshot" class="md-nav__link">
+  <a href="#the-seed-snapshot-is-local" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Do not commit the seed snapshot
+        The seed snapshot is local
       
     </span>
   </a>
@@ -1456,21 +1456,16 @@ not that the disk is full — delete build artifacts and stale images to recover
 first-run failure as suspect until you have matched it against the actual
 failure signature; do not assume the code is at fault before checking whether
 the stack came up cleanly.</p>
-<h2 id="do-not-commit-the-seed-snapshot">Do not commit the seed snapshot<a class="headerlink" href="#do-not-commit-the-seed-snapshot" title="Permanent link">&para;</a></h2>
-<p><code>--seed-hive</code> rewrites the tracked file <code>scripts/demo/hive_data.json</code>. It is a
-generated export of whatever Hive instance you just seeded, so it carries that
-instance's auto-increment IDs — a throwaway Hive in a fresh container produces
-different ids for the same users. It is tracked so a run <em>without</em>
-<code>--seed-hive</code> can reuse it, but your local churn is not a change anyone wants:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>--<span class="w"> </span>scripts/demo/hive_data.json
-</code></pre></div>
-<p>Revert it before committing anything else from an E2E session. A stop hook that
-nags about uncommitted changes will point at this file — it is the one thing
-here that should be discarded rather than committed.</p>
+<h2 id="the-seed-snapshot-is-local">The seed snapshot is local<a class="headerlink" href="#the-seed-snapshot-is-local" title="Permanent link">&para;</a></h2>
+<p><code>--seed-hive</code> writes <code>scripts/demo/hive_data.json</code>: a generated export of
+whatever Hive instance you just seeded, carrying that instance's
+auto-increment IDs. It is gitignored. A run without <code>--seed-hive</code> reuses the
+local copy, and <code>run_tests.py</code> seeds Hive whenever it is missing, so a fresh
+checkout (and CI, which always passes <code>--seed-hive</code>) needs nothing tracked.</p>
 <h2 id="teardown">Teardown<a class="headerlink" href="#teardown" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>--env-file<span class="w"> </span>.env<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span>-f<span class="w"> </span>deploy/docker-compose.yml<span class="w"> </span>-f<span class="w"> </span>deploy/docker-compose.test.yml<span class="w"> </span>down<span class="w"> </span>-v
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">cd</span><span class="w"> </span>/workspace/hive<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose.yaml<span class="w"> </span>down<span class="w"> </span>-v<span class="w"> </span>--remove-orphans
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>--env-file<span class="w"> </span>.env<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span>-f<span class="w"> </span>deploy/docker-compose.yml<span class="w"> </span>-f<span class="w"> </span>deploy/docker-compose.test.yml<span class="w"> </span>down<span class="w"> </span>-v
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">cd</span><span class="w"> </span>/workspace/hive<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose.yaml<span class="w"> </span>down<span class="w"> </span>-v<span class="w"> </span>--remove-orphans
 </code></pre></div>
 <p>Hive's services are <code>restart: always</code>, so they outlive the test run and keep
 holding ports and memory. Tear them down explicitly when finished.</p>

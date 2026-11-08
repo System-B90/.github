@@ -8,7 +8,7 @@
 
 > **OpenSlotContextMenu** = (`slot`, `clientX`, `clientY`, `gap`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:13](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L13)
+Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:13](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L13)
 
 Right-click on an empty grid slot, in viewport coordinates (#859). `gap` is
 the empty run around the slot in its column, null when the slot is covered.

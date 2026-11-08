@@ -8,7 +8,7 @@
 
 > **slotUnderPointer**(`clientX`, `clientY`, `root?`): [`PasteSlot`](../../paste/type-aliases/PasteSlot.md) \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:55](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L55)
+Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:55](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L55)
 
 The grid slot under the pointer, or null outside a day column (the time
 gutter, headers, all-day row).

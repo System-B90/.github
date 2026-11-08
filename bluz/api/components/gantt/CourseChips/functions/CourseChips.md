@@ -8,7 +8,7 @@
 
 > **CourseChips**(`__namedParameters`): `Element`[]
 
-Defined in: [ui/src/components/gantt/CourseChips.tsx:22](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/CourseChips.tsx#L22)
+Defined in: [ui/src/components/gantt/CourseChips.tsx:22](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/CourseChips.tsx#L22)
 
 Tags of the courses an event is limited to — the counterpart of the
 shuffle chips for an event that only some of the syllabus' courses attend.

@@ -10,6 +10,7 @@
 
 - [CalendarContextState](type-aliases/CalendarContextState.md)
 - [EventLockStore](type-aliases/EventLockStore.md)
+- [SnapshotView](type-aliases/SnapshotView.md)
 
 ## Variables
 

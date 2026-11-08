@@ -8,7 +8,7 @@
 
 > `const` **SCHEDULE\_TUTORIALS**: `object`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:23](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-onboarding/schedule/tutorials.ts#L23)
+Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:23](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-onboarding/schedule/tutorials.ts#L23)
 
 ## Type Declaration
 
@@ -126,7 +126,7 @@ Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:23](https://
 
 #### weekBuilding.summary
 
-> `readonly` **summary**: `"מצילום מצב ועד פרסום: טיוטה, תבנית שבוע, הארגז, מילוי רווחים ובדיקת יישור שאפלים."` = `"מצילום מצב ועד פרסום: טיוטה, תבנית שבוע, הארגז, מילוי רווחים ובדיקת יישור שאפלים."`
+> `readonly` **summary**: `"מצילום מצב ועד פרסום: טיוטה, תבנית שבוע, הארגז, מילוי רווחים ובדיקת חוקי לו״ז."` = `"מצילום מצב ועד פרסום: טיוטה, תבנית שבוע, הארגז, מילוי רווחים ובדיקת חוקי לו״ז."`
 
 #### weekBuilding.title
 

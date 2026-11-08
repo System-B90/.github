@@ -8,7 +8,7 @@
 
 > **curriculumShuffleHiveGroups**(`syllabuses`): `Map`\<`string`, `number`\>
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:246](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/shuffle-names.ts#L246)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:246](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/shuffle-names.ts#L246)
 
 Shuffle name → Hive group for a whole curriculum, the way the cut reads it
 (#774): the first syllabus that links a name decides, and a syllabus that

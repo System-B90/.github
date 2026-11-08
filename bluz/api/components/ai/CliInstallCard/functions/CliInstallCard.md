@@ -8,7 +8,7 @@
 
 > **CliInstallCard**(): `Element` \| `null`
 
-Defined in: [ui/src/components/ai/CliInstallCard.tsx:23](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/ai/CliInstallCard.tsx#L23)
+Defined in: [ui/src/components/ai/CliInstallCard.tsx:23](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/ai/CliInstallCard.tsx#L23)
 
 The minimal commands that install this instance's own `bluz` CLI and the
 `bluz` Claude Code plugin it serves (`/api/cli-dist`, built into the image).

@@ -8,7 +8,7 @@
 
 > **apiApplyShuffles**(`syllabusId`, `shuffles`, `descriptions?`, `renames?`): `Promise`\<[`ShuffleUsages`](../../../../api-shared/types/gantt/shuffles/type-aliases/ShuffleUsages.md)\>
 
-Defined in: [ui/src/api-client/gantt/shuffles.ts:29](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-client/gantt/shuffles.ts#L29)
+Defined in: [ui/src/api-client/gantt/shuffles.ts:29](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-client/gantt/shuffles.ts#L29)
 
 Replaces the syllabus' shuffle list, stripping every removed name off the
 modules and events that carry it and rewriting renamed ones (#774).

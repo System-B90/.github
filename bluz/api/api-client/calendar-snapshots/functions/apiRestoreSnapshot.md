@@ -6,13 +6,14 @@
 
 # Function: apiRestoreSnapshot()
 
-> **apiRestoreSnapshot**(`snapshotId`, `iterationId?`): `Promise`\<[`CalendarSnapshotRestoreResult`](../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult.md)\>
+> **apiRestoreSnapshot**(`snapshotId`, `iterationId?`, `eventIds?`): `Promise`\<[`CalendarSnapshotRestoreResult`](../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult.md)\>
 
-Defined in: [ui/src/api-client/calendar-snapshots.ts:83](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-client/calendar-snapshots.ts#L83)
+Defined in: [ui/src/api-client/calendar-snapshots.ts:85](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-client/calendar-snapshots.ts#L85)
 
 Restores the calendar to a snapshot's state on the server. The server
 archives live events within the snapshot's date range, re-inserts the
 snapshot's events, and broadcasts the change to all connected clients.
+With `eventIds`, only those events are restored.
 
 ## Parameters
 
@@ -23,6 +24,10 @@ snapshot's events, and broadcasts the change to all connected clients.
 ### iterationId?
 
 `string`
+
+### eventIds?
+
+`string`[]
 
 ## Returns
 

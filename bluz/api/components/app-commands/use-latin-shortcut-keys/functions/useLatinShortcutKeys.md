@@ -8,7 +8,7 @@
 
 > **useLatinShortcutKeys**(): `void`
 
-Defined in: [ui/src/components/app-commands/use-latin-shortcut-keys.ts:39](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/app-commands/use-latin-shortcut-keys.ts#L39)
+Defined in: [ui/src/components/app-commands/use-latin-shortcut-keys.ts:39](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/app-commands/use-latin-shortcut-keys.ts#L39)
 
 Makes Ctrl/Cmd+letter shortcuts layout-independent (#989). The palette and
 the calendar match `KeyboardEvent.key`, so on the Hebrew layout Ctrl+Z

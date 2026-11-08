@@ -8,7 +8,7 @@
 
 > **getSubmitLabel**(`collisionStates`, `selectedIds`): `string`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:166](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L166)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:170](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L170)
 
 Label for the dialog's submit button: reflects that saving with no
 conflicting event selected accepts the remote versions rather than

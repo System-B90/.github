@@ -8,7 +8,7 @@
 
 > **findCourseHiveGroup**\<`T`\>(`course`, `groups`): `T` \| `undefined`
 
-Defined in: [ui/src/api-shared/hive-groups.ts:11](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/hive-groups.ts#L11)
+Defined in: [ui/src/api-shared/hive-groups.ts:11](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/hive-groups.ts#L11)
 
 The Hive student group a Bluz course (a shuffle) syncs against: its
 explicitly linked group when set (#774), else the group with its name.

@@ -8,4 +8,4 @@
 
 > `const` **ColorFormCard**: [`FormCard`](../../../common/type-aliases/FormCard.md)\<[`ColorEntry`](../../types/type-aliases/ColorEntry.md), [`ColorFormCardProps`](../type-aliases/ColorFormCardProps.md)\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx:66](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx#L66)
+Defined in: [ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx:66](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/color-settings/ColorFormCard.tsx#L66)

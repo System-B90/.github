@@ -8,7 +8,7 @@
 
 > **CurriculumShuffle** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:17](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L17)
+Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:17](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L17)
 
 One shuffle name across a curriculum. The cut turns each name into a single
 course, so the same name in several syllabuses is the same Hive group.
@@ -19,7 +19,7 @@ course, so the same name in several syllabuses is the same Hive group.
 
 > **linkedIds**: `number`[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:21](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L21)
+Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:21](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L21)
 
 Distinct ids its syllabuses link it to; more than one is a conflict.
 
@@ -29,7 +29,7 @@ Distinct ids its syllabuses link it to; more than one is a conflict.
 
 > **name**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:18](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L18)
+Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:18](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L18)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-
 
 > **syllabuses**: `object`[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:19](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L19)
+Defined in: [ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts:19](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/settings-dialog/tabs/global/hive-group-links/use-curriculum-shuffles.ts#L19)
 
 #### id
 

@@ -8,7 +8,7 @@
 
 > **aiOrigin**(`context`): [`EventWriteOrigin`](../../../../db-event-history/type-aliases/EventWriteOrigin.md)
 
-Defined in: [ui/src/api-server/ai/tools/common.ts:51](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/ai/tools/common.ts#L51)
+Defined in: [ui/src/api-server/ai/tools/common.ts:51](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/ai/tools/common.ts#L51)
 
 Marks every assistant write in the event history, so a curious operator can
 always tell an AI edit from a human one after the fact.

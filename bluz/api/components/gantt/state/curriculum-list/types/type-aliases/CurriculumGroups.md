@@ -8,7 +8,7 @@
 
 > **CurriculumGroups** = `object`
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:4](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/curriculum-list/types.ts#L4)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:4](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/curriculum-list/types.ts#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:4](https://g
 
 > **active**: [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)[]
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:5](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/curriculum-list/types.ts#L5)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:5](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/curriculum-list/types.ts#L5)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:5](https://g
 
 > **archived**: [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)[]
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:7](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/curriculum-list/types.ts#L7)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:7](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/curriculum-list/types.ts#L7)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:7](https://g
 
 > **drafts**: [`GanttCurriculumId`](../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)[]
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:6](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/state/curriculum-list/types.ts#L6)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:6](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/state/curriculum-list/types.ts#L6)

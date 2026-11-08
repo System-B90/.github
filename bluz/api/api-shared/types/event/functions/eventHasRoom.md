@@ -8,9 +8,11 @@
 
 > **eventHasRoom**(`type`): `boolean`
 
-Defined in: [ui/src/api-shared/types/event.ts:223](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/event.ts#L223)
+Defined in: [ui/src/api-shared/types/event.ts:231](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/event.ts#L231)
 
-Checks if an event type is associated with a physical classroom/room.
+Checks if an event type can be placed in a room (the room picker applies).
+Prayers may carry one — "בית כנסת", say — but need not; see
+[eventNeedsRoom](eventNeedsRoom.md).
 
 ## Parameters
 
@@ -24,7 +26,7 @@ The EventType to check.
 
 `boolean`
 
-true if the event type requires a room, false otherwise.
+true if the event type takes a room, false otherwise.
 
 ## Example
 

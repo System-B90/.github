@@ -958,6 +958,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#eventids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eventIds?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -999,14 +1010,18 @@
 <p><a href="../../../../../../">TypeDoc API</a> / <a href="../../../../">api-server/db-calendar-snapshot</a> / <a href="../../">DbCalendarSnapshot</a> / restore</p>
 <h1 id="variable-restore">Variable: restore<a class="headerlink" href="#variable-restore" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><code>const</code> <strong>restore</strong>: (<code>snapshotId</code>, <code>controller</code>, <code>iterationId?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult/"><code>CalendarSnapshotRestoreResult</code></a>&gt; = <code>restoreSnapshot</code></p>
+<p><code>const</code> <strong>restore</strong>: (<code>snapshotId</code>, <code>controller</code>, <code>iterationId?</code>, <code>eventIds?</code>) =&gt; <code>Promise</code>\&lt;<a href="../../../../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult/"><code>CalendarSnapshotRestoreResult</code></a>&gt; = <code>restoreSnapshot</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-server/db-calendar-snapshot.ts#L348">ui/src/api-server/db-calendar-snapshot.ts:348</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-server/db-calendar-snapshot.ts#L369">ui/src/api-server/db-calendar-snapshot.ts:369</a></p>
 <p>Restores the calendar to a snapshot's state within the snapshot's range
 (stored at capture; the events' own span for older snapshots): live events
 inside the range are archived (soft-deleted), the snapshot's events are
 upserted back, and connected clients are notified via WebSocket broadcasts.
 A snapshot of an empty range restores that range to empty.</p>
+<p>With <code>eventIds</code>, only those events are restored: a listed snapshot event is
+written back as captured, and a listed live event inside the range that the
+snapshot does not hold (added since) is archived. Everything else is left
+as it is now.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="snapshotid">snapshotId<a class="headerlink" href="#snapshotid" title="Permanent link">&para;</a></h3>
 <p><code>string</code></p>
@@ -1014,6 +1029,8 @@ A snapshot of an empty range restores that range to empty.</p>
 <p><a href="../../../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a> = <code>databaseController</code></p>
 <h3 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h3>
 <p><code>string</code></p>
+<h3 id="eventids">eventIds?<a class="headerlink" href="#eventids" title="Permanent link">&para;</a></h3>
+<p>readonly <code>string</code>[]</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<a href="../../../../../../api-shared/types/type-aliases/CalendarSnapshotRestoreResult/"><code>CalendarSnapshotRestoreResult</code></a>&gt;</p>
 

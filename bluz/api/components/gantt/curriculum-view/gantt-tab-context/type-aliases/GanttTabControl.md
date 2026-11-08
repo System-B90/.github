@@ -8,7 +8,7 @@
 
 > **GanttTabControl** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:4](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L4)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:4](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:4](htt
 
 > **selectedTabIndex**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:5](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L5)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:5](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L5)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:5](htt
 
 > **setSelectedTabIndex**: (`index`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:6](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L6)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:6](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L6)
 
 #### Parameters
 

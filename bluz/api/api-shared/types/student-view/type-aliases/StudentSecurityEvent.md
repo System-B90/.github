@@ -8,7 +8,7 @@
 
 > **StudentSecurityEvent** = `object`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:166](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/student-view.ts#L166)
+Defined in: [ui/src/api-shared/types/student-view.ts:166](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/student-view.ts#L166)
 
 One recorded attempt.
 
@@ -18,7 +18,7 @@ One recorded attempt.
 
 > **action**: [`StudentSecurityAction`](../enumerations/StudentSecurityAction.md)
 
-Defined in: [ui/src/api-shared/types/student-view.ts:167](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/student-view.ts#L167)
+Defined in: [ui/src/api-shared/types/student-view.ts:167](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/student-view.ts#L167)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:167](https://github.com/Sys
 
 > **at**: `Date`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:169](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/student-view.ts#L169)
+Defined in: [ui/src/api-shared/types/student-view.ts:169](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/student-view.ts#L169)
 
 When it happened (server clock).
 
@@ -36,7 +36,7 @@ When it happened (server clock).
 
 > **detail**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:171](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/student-view.ts#L171)
+Defined in: [ui/src/api-shared/types/student-view.ts:171](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/student-view.ts#L171)
 
 Method + path, the offending parameter, the bad value — whatever applies.
 
@@ -46,6 +46,6 @@ Method + path, the offending parameter, the bad value — whatever applies.
 
 > `optional` **ip?**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:173](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/student-view.ts#L173)
+Defined in: [ui/src/api-shared/types/student-view.ts:173](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/student-view.ts#L173)
 
 As forwarded by nginx; absent outside a request.

@@ -140,6 +140,12 @@ Re-exports [eventNeedsInstructors](../../../../api-shared/types/event/functions/
 
 ***
 
+### eventNeedsRoom
+
+Re-exports [eventNeedsRoom](../../../../api-shared/types/event/functions/eventNeedsRoom.md)
+
+***
+
 ### EventType
 
 Re-exports [EventType](../../../../api-shared/types/event/enumerations/EventType.md)

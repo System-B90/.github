@@ -6,7 +6,7 @@
 
 # Class: CurriculumReloadError
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:146](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/gantt/reload.ts#L146)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:146](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/reload.ts#L146)
 
 Thrown by the client wrapper when a reload is rejected, carrying the coded
 reason so the dialog renders a specific Hebrew message.
@@ -25,7 +25,7 @@ reason so the dialog renders a specific Hebrew message.
 
 > **new CurriculumReloadError**(`payload`): `CurriculumReloadError`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:153](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/gantt/reload.ts#L153)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:153](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/reload.ts#L153)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:153](https://github.com/Sys
 
 > `readonly` **code**: [`CurriculumReloadErrorCode`](../type-aliases/CurriculumReloadErrorCode.md)
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:150](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/gantt/reload.ts#L150)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:150](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/reload.ts#L150)
 
 #### Implementation of
 
@@ -59,7 +59,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:150](https://github.com/Sys
 
 > `readonly` `optional` **errors?**: [`CutValidationError`](../../../../gantt/cut-planner/type-aliases/CutValidationError.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:151](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/gantt/reload.ts#L151)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:151](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/reload.ts#L151)
 
 Present for `invalid-plan`: the pure planner's validation errors.
 

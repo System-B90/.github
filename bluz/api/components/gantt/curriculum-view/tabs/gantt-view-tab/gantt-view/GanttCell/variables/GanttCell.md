@@ -8,4 +8,4 @@
 
 > `const` **GanttCell**: `NamedExoticComponent`\<[`GanttCellProps`](../../types/type-aliases/GanttCellProps.md)\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttCell.tsx:154](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttCell.tsx#L154)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttCell.tsx:154](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttCell.tsx#L154)

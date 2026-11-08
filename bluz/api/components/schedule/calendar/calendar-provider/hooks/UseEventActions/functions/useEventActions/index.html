@@ -1036,6 +1036,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#readonlymessage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        readOnlyMessage?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1046,6 +1057,17 @@
     <span class="md-ellipsis">
       
         undoDeletion?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        personName?
       
     </span>
   </a>
@@ -1434,9 +1456,9 @@
 <p><a href="../../../../../../../../">TypeDoc API</a> / <a href="../../">components/schedule/calendar/calendar-provider/hooks/UseEventActions</a> / useEventActions</p>
 <h1 id="function-useeventactions">Function: useEventActions()<a class="headerlink" href="#function-useeventactions" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>useEventActions</strong>(<code>events</code>, <code>offlineMode</code>, <code>captureEventBeforeEdit</code>, <code>dispatch</code>, <code>remoteDispatch</code>, <code>markEventCreatedLocally</code>, <code>isEventCreatedLocally</code>, <code>iterationScope?</code>, <code>undoDeletion?</code>): <code>object</code></p>
+<p><strong>useEventActions</strong>(<code>events</code>, <code>offlineMode</code>, <code>captureEventBeforeEdit</code>, <code>dispatch</code>, <code>remoteDispatch</code>, <code>markEventCreatedLocally</code>, <code>isEventCreatedLocally</code>, <code>iterationScope?</code>, <code>undoDeletion?</code>, <code>personName?</code>): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts#L58">ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts:58</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts#L59">ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventActions.ts:59</a></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <p><a href="../../../../../../../../api-shared/types/event/type-aliases/Event/"><code>Event</code></a>[]</p>
@@ -1457,8 +1479,14 @@
 <p><code>boolean</code></p>
 <h4 id="iterationid">iterationId?<a class="headerlink" href="#iterationid" title="Permanent link">&para;</a></h4>
 <p><code>string</code></p>
+<h4 id="readonlymessage">readOnlyMessage?<a class="headerlink" href="#readonlymessage" title="Permanent link">&para;</a></h4>
+<p><code>string</code></p>
+<p>Overrides the refusal snackbar, e.g. while a snapshot is shown.</p>
 <h3 id="undodeletion">undoDeletion?<a class="headerlink" href="#undodeletion" title="Permanent link">&para;</a></h3>
 <p>(<code>ids</code>) =&gt; <code>void</code></p>
+<h3 id="personname">personName?<a class="headerlink" href="#personname" title="Permanent link">&para;</a></h3>
+<p>(<code>id</code>) =&gt; <code>string</code> | <code>undefined</code></p>
+<p>Staff display names, for the unavailability clash warning.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <h3 id="deleteevent">deleteEvent<a class="headerlink" href="#deleteevent" title="Permanent link">&para;</a></h3>
 <blockquote>

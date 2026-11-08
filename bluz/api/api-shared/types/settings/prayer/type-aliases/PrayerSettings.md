@@ -8,7 +8,7 @@
 
 > **PrayerSettings** = `object`
 
-Defined in: [ui/src/api-shared/types/settings/prayer.ts:5](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/settings/prayer.ts#L5)
+Defined in: [ui/src/api-shared/types/settings/prayer.ts:5](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/settings/prayer.ts#L5)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/settings/prayer.ts:5](https://github.com/Sy
 
 > **arvit**: `Date` \| `Dayjs`
 
-Defined in: [ui/src/api-shared/types/settings/prayer.ts:8](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/settings/prayer.ts#L8)
+Defined in: [ui/src/api-shared/types/settings/prayer.ts:8](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/settings/prayer.ts#L8)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/settings/prayer.ts:8](https://github.com/Sy
 
 > **mincha**: `Date` \| `Dayjs`
 
-Defined in: [ui/src/api-shared/types/settings/prayer.ts:7](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/settings/prayer.ts#L7)
+Defined in: [ui/src/api-shared/types/settings/prayer.ts:7](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/settings/prayer.ts#L7)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-shared/types/settings/prayer.ts:7](https://github.com/Sy
 
 > **shacharit**: `Date` \| `Dayjs`
 
-Defined in: [ui/src/api-shared/types/settings/prayer.ts:6](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/settings/prayer.ts#L6)
+Defined in: [ui/src/api-shared/types/settings/prayer.ts:6](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/settings/prayer.ts#L6)

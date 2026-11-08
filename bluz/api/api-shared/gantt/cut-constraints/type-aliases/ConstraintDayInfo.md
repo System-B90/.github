@@ -8,7 +8,7 @@
 
 > **ConstraintDayInfo** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:50](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L50)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:50](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-constraints.ts#L50)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:50](https://github.com/S
 
 > **capacityMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:55](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L55)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:55](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-constraints.ts#L55)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:55](https://github.com/S
 
 > **dayIndex**: [`GanttDayIndex`](../../../types/gantt/models/day/enumerations/GanttDayIndex.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:52](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L52)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:52](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-constraints.ts#L52)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:52](https://github.com/S
 
 > **dayOrdinal**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:54](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L54)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:54](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-constraints.ts#L54)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:54](https://github.com/S
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:51](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L51)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:51](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-constraints.ts#L51)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:51](https://github.com/S
 
 > **loadMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:57](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L57)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:57](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-constraints.ts#L57)
 
 Minutes already committed on this day.
 
@@ -58,4 +58,4 @@ Minutes already committed on this day.
 
 > **weekId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:53](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/gantt/cut-constraints.ts#L53)
+Defined in: [ui/src/api-shared/gantt/cut-constraints.ts:53](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/gantt/cut-constraints.ts#L53)

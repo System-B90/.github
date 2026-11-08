@@ -1048,10 +1048,10 @@
 <li><a href="api-client/reservations/">api-client/reservations</a></li>
 <li><a href="api-client/rooms/">api-client/rooms</a></li>
 <li><a href="api-client/schedule-settings/">api-client/schedule-settings</a></li>
+<li><a href="api-client/schedule-validation/">api-client/schedule-validation</a></li>
 <li><a href="api-client/server-time/">api-client/server-time</a></li>
 <li><a href="api-client/settings/">api-client/settings</a></li>
 <li><a href="api-client/shabbat/">api-client/shabbat</a></li>
-<li><a href="api-client/shuffle-alignment/">api-client/shuffle-alignment</a></li>
 <li><a href="api-client/student-reload/">api-client/student-reload</a></li>
 <li><a href="api-client/student-view/">api-client/student-view</a></li>
 <li><a href="api-client/week-templates/">api-client/week-templates</a></li>
@@ -1164,6 +1164,7 @@
 <li><a href="api-server/peekaboo-security-tweet/">api-server/peekaboo-security-tweet</a></li>
 <li><a href="api-server/prayer-windows/">api-server/prayer-windows</a></li>
 <li><a href="api-server/request-method/">api-server/request-method</a></li>
+<li><a href="api-server/schedule-validation/">api-server/schedule-validation</a></li>
 <li><a href="api-server/secret-box/">api-server/secret-box</a></li>
 <li><a href="api-server/session-user/">api-server/session-user</a></li>
 <li><a href="api-server/shuffle-alignment/">api-server/shuffle-alignment</a></li>
@@ -1200,6 +1201,14 @@
 <li><a href="api-shared/interval-layout/">api-shared/interval-layout</a></li>
 <li><a href="api-shared/pa-students/">api-shared/pa-students</a></li>
 <li><a href="api-shared/prayer-windows/">api-shared/prayer-windows</a></li>
+<li><a href="api-shared/schedule-rules/">api-shared/schedule-rules</a></li>
+<li><a href="api-shared/schedule-validation/checks-placement/">api-shared/schedule-validation/checks-placement</a></li>
+<li><a href="api-shared/schedule-validation/checks-resources/">api-shared/schedule-validation/checks-resources</a></li>
+<li><a href="api-shared/schedule-validation/checks-week/">api-shared/schedule-validation/checks-week</a></li>
+<li><a href="api-shared/schedule-validation/common/">api-shared/schedule-validation/common</a></li>
+<li><a href="api-shared/schedule-validation/registry/">api-shared/schedule-validation/registry</a></li>
+<li><a href="api-shared/schedule-validation/rule-ids/">api-shared/schedule-validation/rule-ids</a></li>
+<li><a href="api-shared/schedule-validation/types/">api-shared/schedule-validation/types</a></li>
 <li><a href="api-shared/shabbat/">api-shared/shabbat</a></li>
 <li><a href="api-shared/shuffle-alignment/">api-shared/shuffle-alignment</a></li>
 <li><a href="api-shared/snapshot-range/">api-shared/snapshot-range</a></li>
@@ -1260,6 +1269,7 @@
 <li><a href="api-shared/types/student-view/">api-shared/types/student-view</a></li>
 <li><a href="api-shared/types/subject/">api-shared/types/subject</a></li>
 <li><a href="api-shared/types/week-template/">api-shared/types/week-template</a></li>
+<li><a href="api-shared/unavailability/">api-shared/unavailability</a></li>
 <li><a href="app/%28themed%29/%28post-auth%29/%28with-hive%29/%28schedule%29/page/">app/(themed)/(post-auth)/(with-hive)/(schedule)/page</a></li>
 <li><a href="app/%28themed%29/%28post-auth%29/%28with-hive%29/gantt/layout/">app/(themed)/(post-auth)/(with-hive)/gantt/layout</a></li>
 <li><a href="app/%28themed%29/%28post-auth%29/%28with-hive%29/gantt/page/">app/(themed)/(post-auth)/(with-hive)/gantt/page</a></li>
@@ -1268,6 +1278,7 @@
 <li><a href="app/%28themed%29/%28post-auth%29/cli-auth/page/">app/(themed)/(post-auth)/cli-auth/page</a></li>
 <li><a href="app/%28themed%29/%28post-auth%29/error/">app/(themed)/(post-auth)/error</a></li>
 <li><a href="app/%28themed%29/%28post-auth%29/layout/">app/(themed)/(post-auth)/layout</a></li>
+<li><a href="app/%28themed%29/%28post-auth%29/rules/page/">app/(themed)/(post-auth)/rules/page</a></li>
 <li><a href="app/%28themed%29/%28pre-auth%29/access-denied/page/">app/(themed)/(pre-auth)/access-denied/page</a></li>
 <li><a href="app/%28themed%29/%28pre-auth%29/layout/">app/(themed)/(pre-auth)/layout</a></li>
 <li><a href="app/%28themed%29/%28pre-auth%29/login/login-with-hive-button/">app/(themed)/(pre-auth)/login/login-with-hive-button</a></li>
@@ -1288,6 +1299,7 @@
 <li><a href="app/api/calendar/drafts/route/">app/api/calendar/drafts/route</a></li>
 <li><a href="app/api/calendar/snapshots/restore/route/">app/api/calendar/snapshots/restore/route</a></li>
 <li><a href="app/api/calendar/snapshots/route/">app/api/calendar/snapshots/route</a></li>
+<li><a href="app/api/calendar/validate/%5BruleId%5D/route/">app/api/calendar/validate/[ruleId]/route</a></li>
 <li><a href="app/api/calendar/validate/shuffle-alignment/route/">app/api/calendar/validate/shuffle-alignment/route</a></li>
 <li><a href="app/api/cli-auth/redeem/route/">app/api/cli-auth/redeem/route</a></li>
 <li><a href="app/api/cli-dist/%5Bfile%5D/route/">app/api/cli-dist/[file]/route</a></li>
@@ -1772,6 +1784,11 @@
 <li><a href="components/header/StudentViewIcon/">components/header/StudentViewIcon</a></li>
 <li><a href="components/header/ThemeSelector/">components/header/ThemeSelector</a></li>
 <li><a href="components/header/UserAccessCard/">components/header/UserAccessCard</a></li>
+<li><a href="components/schedule-rules/CourseTreeDiagram/">components/schedule-rules/CourseTreeDiagram</a></li>
+<li><a href="components/schedule-rules/rule-diagrams/">components/schedule-rules/rule-diagrams</a></li>
+<li><a href="components/schedule-rules/RuleExample/">components/schedule-rules/RuleExample</a></li>
+<li><a href="components/schedule-rules/ScheduleRulesSuite/">components/schedule-rules/ScheduleRulesSuite</a></li>
+<li><a href="components/schedule-rules/TimelineDiagram/">components/schedule-rules/TimelineDiagram</a></li>
 <li><a href="components/schedule/calendar/calendar/">components/schedule/calendar/calendar</a></li>
 <li><a href="components/schedule/calendar/calendar-provider/">components/schedule/calendar/calendar-provider</a></li>
 <li><a href="components/schedule/calendar/calendar-provider/CalendarContext/">components/schedule/calendar/calendar-provider/CalendarContext</a></li>
@@ -1783,7 +1800,7 @@
 <li><a href="components/schedule/calendar/calendar-provider/hooks/write-ledger/">components/schedule/calendar/calendar-provider/hooks/write-ledger</a></li>
 <li><a href="components/schedule/calendar/calendar-provider/lock-state/">components/schedule/calendar/calendar-provider/lock-state</a></li>
 <li><a href="components/schedule/calendar/calendar-provider/locked-edit/">components/schedule/calendar/calendar-provider/locked-edit</a></li>
-<li><a href="components/schedule/calendar/calendar/AlignmentCheckButton/">components/schedule/calendar/calendar/AlignmentCheckButton</a></li>
+<li><a href="components/schedule/calendar/calendar-provider/unavailability-warning/">components/schedule/calendar/calendar-provider/unavailability-warning</a></li>
 <li><a href="components/schedule/calendar/calendar/bucket-fill/">components/schedule/calendar/calendar/bucket-fill</a></li>
 <li><a href="components/schedule/calendar/calendar/CalendarStoreMenu/">components/schedule/calendar/calendar/CalendarStoreMenu</a></li>
 <li><a href="components/schedule/calendar/calendar/CalendarToolbar/">components/schedule/calendar/calendar/CalendarToolbar</a></li>
@@ -1796,9 +1813,13 @@
 <li><a href="components/schedule/calendar/calendar/range-header/">components/schedule/calendar/calendar/range-header</a></li>
 <li><a href="components/schedule/calendar/calendar/RoomZoomHeader/">components/schedule/calendar/calendar/RoomZoomHeader</a></li>
 <li><a href="components/schedule/calendar/calendar/schedule-week/">components/schedule/calendar/calendar/schedule-week</a></li>
+<li><a href="components/schedule/calendar/calendar/ScheduleValidationButton/">components/schedule/calendar/calendar/ScheduleValidationButton</a></li>
 <li><a href="components/schedule/calendar/calendar/slot-context-menu/">components/schedule/calendar/calendar/slot-context-menu</a></li>
 <li><a href="components/schedule/calendar/calendar/slot-events/">components/schedule/calendar/calendar/slot-events</a></li>
+<li><a href="components/schedule/calendar/calendar/snapshot-diff/">components/schedule/calendar/calendar/snapshot-diff</a></li>
 <li><a href="components/schedule/calendar/calendar/SnapshotMenu/">components/schedule/calendar/calendar/SnapshotMenu</a></li>
+<li><a href="components/schedule/calendar/calendar/SnapshotRestoreDialog/">components/schedule/calendar/calendar/SnapshotRestoreDialog</a></li>
+<li><a href="components/schedule/calendar/calendar/SnapshotViewBanner/">components/schedule/calendar/calendar/SnapshotViewBanner</a></li>
 <li><a href="components/schedule/calendar/calendar/stable-drag-and-drop/">components/schedule/calendar/calendar/stable-drag-and-drop</a></li>
 <li><a href="components/schedule/calendar/calendar/time-tint/">components/schedule/calendar/calendar/time-tint</a></li>
 <li><a href="components/schedule/calendar/calendar/toolbar-button-sx/">components/schedule/calendar/calendar/toolbar-button-sx</a></li>
@@ -1811,6 +1832,8 @@
 <li><a href="components/schedule/calendar/calendar/use-prayer-windows/">components/schedule/calendar/calendar/use-prayer-windows</a></li>
 <li><a href="components/schedule/calendar/calendar/use-schedule-week/">components/schedule/calendar/calendar/use-schedule-week</a></li>
 <li><a href="components/schedule/calendar/calendar/use-shabbat-window/">components/schedule/calendar/calendar/use-shabbat-window</a></li>
+<li><a href="components/schedule/calendar/calendar/use-snapshot-restore/">components/schedule/calendar/calendar/use-snapshot-restore</a></li>
+<li><a href="components/schedule/calendar/calendar/use-snapshot-url/">components/schedule/calendar/calendar/use-snapshot-url</a></li>
 <li><a href="components/schedule/calendar/calendar/use-view-range-sync/">components/schedule/calendar/calendar/use-view-range-sync</a></li>
 <li><a href="components/schedule/calendar/calendar/UseCalendarHandlers/">components/schedule/calendar/calendar/UseCalendarHandlers</a></li>
 <li><a href="components/schedule/calendar/calendar/UseDragModifiers/">components/schedule/calendar/calendar/UseDragModifiers</a></li>

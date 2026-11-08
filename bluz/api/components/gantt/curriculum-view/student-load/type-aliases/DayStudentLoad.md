@@ -8,7 +8,7 @@
 
 > **DayStudentLoad** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:65](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/student-load.ts#L65)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:65](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/student-load.ts#L65)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:65](https:/
 
 > **breakMinutes**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:69](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/student-load.ts#L69)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:69](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/student-load.ts#L69)
 
 Break time on the day (the busiest path's) — what "ignore breaks" removes.
 
@@ -26,7 +26,7 @@ Break time on the day (the busiest path's) — what "ignore breaks" removes.
 
 > **issues**: [`StudentLoadIssue`](StudentLoadIssue.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:71](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/student-load.ts#L71)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:71](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/student-load.ts#L71)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:71](https:/
 
 > **minutes**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:67](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/student-load.ts#L67)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:67](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/student-load.ts#L67)
 
 The busiest path's minutes — the day's scheduled time.
 
@@ -44,4 +44,4 @@ The busiest path's minutes — the day's scheduled time.
 
 > **paths**: [`PathDayLoad`](PathDayLoad.md)[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:70](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/gantt/curriculum-view/student-load.ts#L70)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:70](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/gantt/curriculum-view/student-load.ts#L70)

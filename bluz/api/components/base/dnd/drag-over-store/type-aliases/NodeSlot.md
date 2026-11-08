@@ -8,7 +8,7 @@
 
 > **NodeSlot** = `object`
 
-Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:132](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/base/dnd/drag-over-store.tsx#L132)
+Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:132](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/dnd/drag-over-store.tsx#L132)
 
 Hands the element a ref lands on to a dnd-kit registration rendered
 elsewhere: `setNode` is the ref, and `connect` is how a
@@ -21,7 +21,7 @@ the element, now and whenever it changes.
 
 > **connect**: (`attach`) => () => `void`
 
-Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:134](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/base/dnd/drag-over-store.tsx#L134)
+Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:134](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/dnd/drag-over-store.tsx#L134)
 
 #### Parameters
 
@@ -39,4 +39,4 @@ Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:134](https://github.
 
 > **setNode**: `RefCallback`\<`HTMLElement`\>
 
-Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:133](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/base/dnd/drag-over-store.tsx#L133)
+Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:133](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/base/dnd/drag-over-store.tsx#L133)

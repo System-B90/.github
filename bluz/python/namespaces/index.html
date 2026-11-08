@@ -1491,6 +1491,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#bluz.api.calendar.EventsAPI.validate_rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        validate_rule
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3686,6 +3697,17 @@
     <span class="md-ellipsis">
       
         validate_alignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bluz.api.calendar.EventsAPI.validate_rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        validate_rule
       
     </span>
   </a>
@@ -6611,6 +6633,38 @@ fields are carried over from the current value.</p>
         <p>R-50/R-51 shuffle-alignment violations (#1000); empty means aligned.</p>
 <p>Checks exactly one source: inline <code>events</code> (an unsaved draft), a saved
 <code>draft</code>, or the live calendar between <code>start</code> and <code>end</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="bluz.api.calendar.EventsAPI.validate_rule" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">validate_rule</span>
+
+
+<a href="#bluz.api.calendar.EventsAPI.validate_rule" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">validate_rule</span><span class="p">(</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">rule_id</span><span class="p">:</span> <span class="n"><span title="str">str</span></span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">start</span><span class="p">:</span> <span class="n"><span title="bluz.api.calendar.DateLike">DateLike</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">end</span><span class="p">:</span> <span class="n"><span title="bluz.api.calendar.DateLike">DateLike</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">draft</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="CalendarDraft (bluz.models.calendar.CalendarDraft)" href="../models/#bluz.models.calendar.CalendarDraft">CalendarDraft</a></span> <span class="o">|</span> <span class="n"><span title="str">str</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">events</span><span class="p">:</span> <span class="p">(</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="n"><span title="collections.abc.Iterable">Iterable</span></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="Event (bluz.models.calendar.Event)" href="../models/#bluz.models.calendar.Event">Event</a></span> <span class="o">|</span> <span class="n"><span title="collections.abc.Mapping">Mapping</span></span><span class="p">[</span><span class="n"><span title="str">str</span></span><span class="p">,</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">]]</span> <span class="o">|</span> <span class="kc">None</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">)</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">iteration</span><span class="p">:</span> <span class="n"><span title="str">str</span></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-internal" title="Iteration (bluz.models.iterations.Iteration)" href="../models/#bluz.models.iterations.Iteration">Iteration</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><span title="collections.abc.Sequence">Sequence</span></span><span class="p">[</span><span class="n"><span title="dict">dict</span></span><span class="p">[</span><span class="n"><span title="str">str</span></span><span class="p">,</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">]]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>One schedule rule's violations (<code>R-xx</code>, see /rules); empty means it holds.</p>
+<p>Same sources as <code>validate_alignment</code>. The server rejects a rule it does
+not check automatically.</p>
 
 
     </div>

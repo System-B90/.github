@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/calendar/snapshots/restore/route.ts:17](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/app/api/calendar/snapshots/restore/route.ts#L17)
+Defined in: [ui/src/app/api/calendar/snapshots/restore/route.ts:43](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/app/api/calendar/snapshots/restore/route.ts#L43)
 
 POST /api/calendar/snapshots/restore?id=<uuid>
 
@@ -16,6 +16,9 @@ Restores the calendar to the snapshot's captured state within the snapshot's
 own date range: live events in that range are archived, the snapshot's
 events are written back, and all connected clients are notified via
 WebSocket broadcasts.
+
+Body `{ eventIds }` restores only those events (see
+`DbCalendarSnapshot.restore`); no body restores the whole snapshot.
 
 ## Parameters
 

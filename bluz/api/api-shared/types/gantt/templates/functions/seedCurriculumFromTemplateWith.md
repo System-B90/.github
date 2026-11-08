@@ -8,7 +8,7 @@
 
 > **seedCurriculumFromTemplateWith**(`curriculumId`, `template`, `ops`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:93](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/api-shared/types/gantt/templates.ts#L93)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:93](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/api-shared/types/gantt/templates.ts#L93)
 
 Seeds a (blank) curriculum's weeks and per-day working minutes from a
 template: exactly `template.weekCount` weeks, each day's

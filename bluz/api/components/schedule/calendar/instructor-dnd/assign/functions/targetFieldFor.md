@@ -8,7 +8,7 @@
 
 > **targetFieldFor**(`event`, `withModifier`, `sourceField?`): [`PersonField`](../../types/type-aliases/PersonField.md)
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:24](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L24)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:25](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L25)
 
 Resolves which person field a drop writes into.
 

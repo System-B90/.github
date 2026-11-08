@@ -8,7 +8,7 @@
 
 > **SliceDialog**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:46](https://github.com/System-B90/Bluz/blob/1b02178048002eee34d502b2e3e2a402e1b9c9c0/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L46)
+Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:46](https://github.com/System-B90/Bluz/blob/71d1184149e053a7a1461d3b70913493e6ec8833/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L46)
 
 Asks for the head's length ("משך + שארית"), then cuts.
 
