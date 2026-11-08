@@ -46,8 +46,9 @@ and blocks** until someone signs in. An agent must supply credentials. The CLI
 tries, in order:
 
 1. `-u USER -p PASS` (root options)
-2. `-t TOKEN` / `--token TOKEN` (root option)
-3. the `HIVE_ACCESS_TOKEN` environment variable
+2. `-t TOKEN` / `--token TOKEN` (root option); a personal access token
+   (`hive_pat_...`) or an API token
+3. the `HIVE_ACCESS_TOKEN` environment variable (same kinds)
 4. the OS keyring cache from `pyhive auth login` (or `--cache-token`), used
    only for the server it was saved for
 5. SSO in the browser
@@ -60,6 +61,13 @@ and stores the URL and both tokens in the OS keyring. Every later `pyhive` call,
 and `get_hive_client(default_hive_url(), ...)` in scripts, then uses that server,
 signs in silently and refreshes the token itself. Never run `auth login`
 yourself: it prompts, then blocks on the browser.
+
+With no browser (CI, a remote box), use a Hive personal access token: the user
+creates one in Hive (account menu, Access Tokens; read only is enough for
+reading) and puts it in `HIVE_ACCESS_TOKEN`, or stores it once with
+`pyhive auth login --token hive_pat_... --hive-url URL`. A PAT is never
+refreshed. When Hive refuses one, the error says why: an expired token's message names its expiry
+date, and a read-only token's 403 names the refused method. Never print or log a token.
 
 Scripts reuse the same chain through `get_hive_client()` (as in the snippet
 above), so they need no credentials of their own.
@@ -93,7 +101,7 @@ pyhive --json users list | delete ID        # no get
 pyhive --json users create USERNAME --password PW --clearance checker --gender female \
     [--first-name --last-name --number --status --teacher/--no-teacher --confirmed/--no-confirmed]
 
-pyhive --json auth status                   # {"hive_url", "token_cached", "env_token_set"}; no network
+pyhive --json auth status                   # {"hive_url", "token_cached", "token_type", "env_token_set"}; no network
 pyhive auth login | logout                  # user runs login (prompts + browser); logout clears the cache
 pyhive --json token [--cache-token]         # SSO in the browser → {"access_token", "refresh_token", "expires_at"}
 pyhive --json register NAME REDIRECT_URI    # register an SSO client app → client_id/secret

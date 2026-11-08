@@ -24,7 +24,7 @@ and the command, or after the command. `pyhive --json programs list`,
 | ---------------------- | ------------------------------------------------------------------- |
 | `-u`, `--username`     | Hive username (with `-p`)                                           |
 | `-p`, `--password`     | Hive password (with `-u`)                                           |
-| `-t`, `--token`        | Hive access token                                                   |
+| `-t`, `--token`        | Hive personal access token (`hive_pat_...`) or API token            |
 | `--json`               | Print one JSON document on stdout instead of text                   |
 | `--cache-token`        | Save the server and token in the OS keyring for later calls         |
 | `--hive-url URL`       | Server to talk to. Default: the cached one, else `https://hive.org` |
@@ -53,12 +53,18 @@ your own machine.
 
 ```bash
 pyhive auth login --hive-url https://hive.example   # no prompt
-pyhive auth status                                  # cached server, and whether a token is cached
+pyhive auth login --token hive_pat_...              # store a personal access token instead (no browser)
+pyhive auth status                                  # cached server, and whether (and which kind of) token is cached
 pyhive auth logout                                  # forget the server and the tokens
 ```
 
 `auth status` only reads the keyring. It does not check that the token still
 works.
+
+`auth login --token` takes a personal access token made in Hive (account menu,
+Access Tokens). It checks the token against the server, then caches it the same
+way; it has no refresh token and works until it expires or is revoked. Use this
+on machines without a browser.
 
 Every command that talks to Hive picks the first credentials it finds:
 
@@ -75,8 +81,10 @@ up with, the same way `auth login` does. Without `--hive-url`, commands use the
 cached server, or `https://hive.org` if none is cached. Giving `--hive-url` for
 a different server ignores the cached token instead of sending it there.
 
-A token from `-t` or `HIVE_ACCESS_TOKEN` cannot be refreshed: when it expires,
-get a new one with `pyhive token`.
+A token from `-t` or `HIVE_ACCESS_TOKEN` cannot be refreshed. A personal access
+token (`hive_pat_...`) lasts until the expiry chosen when it was made, so it is
+the one to use for scripts and CI; a token from `pyhive token` expires soon, then
+get a new one.
 
 ## Output
 

@@ -684,8 +684,9 @@ and blocks</strong> until someone signs in. An agent must supply credentials. Th
 tries, in order:</p>
 <ol>
 <li><code>-u USER -p PASS</code> (root options)</li>
-<li><code>-t TOKEN</code> / <code>--token TOKEN</code> (root option)</li>
-<li>the <code>HIVE_ACCESS_TOKEN</code> environment variable</li>
+<li><code>-t TOKEN</code> / <code>--token TOKEN</code> (root option); a personal access token
+   (<code>hive_pat_...</code>) or an API token</li>
+<li>the <code>HIVE_ACCESS_TOKEN</code> environment variable (same kinds)</li>
 <li>the OS keyring cache from <code>pyhive auth login</code> (or <code>--cache-token</code>), used
    only for the server it was saved for</li>
 <li>SSO in the browser</li>
@@ -698,6 +699,12 @@ and stores the URL and both tokens in the OS keyring. Every later <code>pyhive</
 and <code>get_hive_client(default_hive_url(), ...)</code> in scripts, then uses that server,
 signs in silently and refreshes the token itself. Never run <code>auth login</code>
 yourself: it prompts, then blocks on the browser.</p>
+<p>With no browser (CI, a remote box), use a Hive personal access token: the user
+creates one in Hive (account menu, Access Tokens; read only is enough for
+reading) and puts it in <code>HIVE_ACCESS_TOKEN</code>, or stores it once with
+<code>pyhive auth login --token hive_pat_... --hive-url URL</code>. A PAT is never
+refreshed. When Hive refuses one, the error says why: an expired token's message names its expiry
+date, and a read-only token's 403 names the refused method. Never print or log a token.</p>
 <p>Scripts reuse the same chain through <code>get_hive_client()</code> (as in the snippet
 above), so they need no credentials of their own.</p>
 <h2 id="rules-for-calling-the-cli">Rules for calling the CLI<a class="headerlink" href="#rules-for-calling-the-cli" title="Permanent link">&para;</a></h2>
@@ -727,7 +734,7 @@ above), so they need no credentials of their own.</p>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>users<span class="w"> </span>create<span class="w"> </span>USERNAME<span class="w"> </span>--password<span class="w"> </span>PW<span class="w"> </span>--clearance<span class="w"> </span>checker<span class="w"> </span>--gender<span class="w"> </span>female<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="o">[</span>--first-name<span class="w"> </span>--last-name<span class="w"> </span>--number<span class="w"> </span>--status<span class="w"> </span>--teacher/--no-teacher<span class="w"> </span>--confirmed/--no-confirmed<span class="o">]</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>auth<span class="w"> </span>status<span class="w">                   </span><span class="c1"># {"hive_url", "token_cached", "env_token_set"}; no network</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>auth<span class="w"> </span>status<span class="w">                   </span><span class="c1"># {"hive_url", "token_cached", "token_type", "env_token_set"}; no network</span>
 <a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>pyhive<span class="w"> </span>auth<span class="w"> </span>login<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nb">logout</span><span class="w">                  </span><span class="c1"># user runs login (prompts + browser); logout clears the cache</span>
 <a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>token<span class="w"> </span><span class="o">[</span>--cache-token<span class="o">]</span><span class="w">         </span><span class="c1"># SSO in the browser → {"access_token", "refresh_token", "expires_at"}</span>
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>register<span class="w"> </span>NAME<span class="w"> </span>REDIRECT_URI<span class="w">    </span><span class="c1"># register an SSO client app → client_id/secret</span>

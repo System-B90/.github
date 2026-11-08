@@ -735,7 +735,7 @@ and the command, or after the command. <code>pyhive --json programs list</code>,
 </tr>
 <tr>
 <td><code>-t</code>, <code>--token</code></td>
-<td>Hive access token</td>
+<td>Hive personal access token (<code>hive_pat_...</code>) or API token</td>
 </tr>
 <tr>
 <td><code>--json</code></td>
@@ -773,11 +773,16 @@ default, sign in without a browser, and refresh the access token when it
 expires. Anyone who can read your keyring can act as you, so only do this on
 your own machine.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pyhive<span class="w"> </span>auth<span class="w"> </span>login<span class="w"> </span>--hive-url<span class="w"> </span>https://hive.example<span class="w">   </span><span class="c1"># no prompt</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>pyhive<span class="w"> </span>auth<span class="w"> </span>status<span class="w">                                  </span><span class="c1"># cached server, and whether a token is cached</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>pyhive<span class="w"> </span>auth<span class="w"> </span><span class="nb">logout</span><span class="w">                                  </span><span class="c1"># forget the server and the tokens</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>pyhive<span class="w"> </span>auth<span class="w"> </span>login<span class="w"> </span>--token<span class="w"> </span>hive_pat_...<span class="w">              </span><span class="c1"># store a personal access token instead (no browser)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>pyhive<span class="w"> </span>auth<span class="w"> </span>status<span class="w">                                  </span><span class="c1"># cached server, and whether (and which kind of) token is cached</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>pyhive<span class="w"> </span>auth<span class="w"> </span><span class="nb">logout</span><span class="w">                                  </span><span class="c1"># forget the server and the tokens</span>
 </code></pre></div>
 <p><code>auth status</code> only reads the keyring. It does not check that the token still
 works.</p>
+<p><code>auth login --token</code> takes a personal access token made in Hive (account menu,
+Access Tokens). It checks the token against the server, then caches it the same
+way; it has no refresh token and works until it expires or is revoked. Use this
+on machines without a browser.</p>
 <p>Every command that talks to Hive picks the first credentials it finds:</p>
 <ol>
 <li><code>-u USER -p PASS</code></li>
@@ -792,8 +797,10 @@ works.</p>
 up with, the same way <code>auth login</code> does. Without <code>--hive-url</code>, commands use the
 cached server, or <code>https://hive.org</code> if none is cached. Giving <code>--hive-url</code> for
 a different server ignores the cached token instead of sending it there.</p>
-<p>A token from <code>-t</code> or <code>HIVE_ACCESS_TOKEN</code> cannot be refreshed: when it expires,
-get a new one with <code>pyhive token</code>.</p>
+<p>A token from <code>-t</code> or <code>HIVE_ACCESS_TOKEN</code> cannot be refreshed. A personal access
+token (<code>hive_pat_...</code>) lasts until the expiry chosen when it was made, so it is
+the one to use for scripts and CI; a token from <code>pyhive token</code> expires soon, then
+get a new one.</p>
 <h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <p>Text mode prints progress lines and aligned lists for people. With <code>--json</code>,
 stdout holds exactly one JSON document:</p>

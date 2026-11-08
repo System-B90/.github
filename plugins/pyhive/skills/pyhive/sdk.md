@@ -37,8 +37,13 @@ client = HiveClient.from_sso("https://hive.org")
 # Username and password. The token refreshes itself.
 client = HiveClient("username", "password", "https://hive.org")
 
+# A personal access token (hive_pat_...), made in Hive from the account
+# menu, Access Tokens. Never refreshed: it works until it expires or is revoked.
+client = HiveClient.from_access_token("hive_pat_...", "https://hive.org")
+
 # An access token you already have (e.g. from `pyhive token`).
 # It cannot refresh: when it expires, create a new client.
+# A hive_pat_ token passed here is handled like from_access_token.
 client = HiveClient.from_api_token(token, "https://hive.org")
 
 # An access token plus its refresh token: refreshes itself.
@@ -66,6 +71,43 @@ Every constructor also takes:
 
 Requests that get HTTP 502 are retried with backoff (up to 5 tries). A 401
 triggers one token refresh and a retry, when the sign-in method can refresh.
+
+### Personal access tokens
+
+Segel and admins create personal access tokens in Hive (account menu, Access
+Tokens; admins can make them for any user). Each has a name, an expiry date
+(or none) and either read-only or read-and-write access. They are the simplest
+way to give a script or CI job its own credentials:
+
+```python
+import os
+from pyhive import HiveClient
+
+client = HiveClient.from_access_token(os.environ["HIVE_ACCESS_TOKEN"], "https://hive.org")
+```
+
+- `from_access_token` checks the token's format and checksum offline and raises
+  `ValueError` for a mistyped or truncated one, before any request.
+- A token that Hive rejects raises `AccessTokenRejectedError` (a
+  `RuntimeError`) carrying Hive's reason; it is never refreshed. An expired one
+  raises its subclass `AccessTokenExpiredError`, whose message names the token
+  and when it expired.
+- A read-only token used for a write raises `AccessTokenReadOnlyError` (a
+  subclass of `httpx.HTTPStatusError`, status 403), whose message names the
+  token and the refused method.
+- All three live in `pyhive.src.access_tokens`.
+
+```python
+from pyhive.src.access_tokens import AccessTokenExpiredError, AccessTokenReadOnlyError
+
+try:
+    client.create_tag("urgent", "#ff0000")
+except AccessTokenReadOnlyError:
+    print("this token is read only")
+except AccessTokenExpiredError as exc:
+    print(exc)  # Access token "CI runner" expired on 2026-03-01 14:30 IST. Regenerate it ...
+```
+- Tokens can't be used to create, regenerate or revoke tokens; do that in Hive.
 
 ## Reading data
 
@@ -259,6 +301,9 @@ A staff account can open only chats. `create_help_request` with another
 | Not found, forbidden, other HTTP errors     | `httpx.HTTPStatusError` (`exc.response.status_code`)                           |
 | A delete Hive did not confirm               | `RuntimeError("Failed to delete!")`                                            |
 | Bare token expired (`from_api_token` without refresh) | `RuntimeError`: sign in again and create a new client               |
+| Personal access token expired                | `AccessTokenExpiredError` (an `AccessTokenRejectedError`): regenerate it in Hive |
+| Personal access token revoked or regenerated  | `AccessTokenRejectedError` (a `RuntimeError`): make a new client with a new token |
+| Read-only personal access token used for a write | `AccessTokenReadOnlyError` (an `httpx.HTTPStatusError`, 403)        |
 | Server runs a Hive release PyHive has not verified | `UnverifiedHiveVersionError` (a `RuntimeError`)                          |
 | PyHive refuses the arguments               | `ValueError` / `AssertionError` with the reason                                |
 
@@ -294,6 +339,7 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 | `HiveClient(username, password, hive_url, ...)`           | Sign in with a password                                      |
 | `HiveClient.from_sso(hive_url, ...)`                      | Sign in through the browser                                  |
 | `HiveClient.from_api_token(api_token, hive_url, ...)`     | Use an existing token                                        |
+| `HiveClient.from_access_token(access_token, hive_url, ...)` | Use a personal access token (`hive_pat_...`)               |
 | `get_hive_version()`                                      | The server's Hive version                                    |
 | `get_server_time()`                                       | The server's clock                                           |
 | `get_powersync_token()`                                   | A PowerSync sync token                                       |
