@@ -8,7 +8,7 @@
 
 > **VCardQrCode**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/VCardQrCode.tsx:22](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/outsider-settings/VCardQrCode.tsx#L22)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/VCardQrCode.tsx:22](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/outsider-settings/VCardQrCode.tsx#L22)
 
 ## Parameters
 

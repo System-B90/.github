@@ -8,7 +8,7 @@
 
 > **IterationSelector**(): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/IterationSelector.tsx:25](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/calendar/calendar/IterationSelector.tsx#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar/IterationSelector.tsx:25](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/calendar/calendar/IterationSelector.tsx#L25)
 
 Lets the user switch the calendar between the current run and past iterations.
 Past iterations are read-only reference material. Hidden until more than one

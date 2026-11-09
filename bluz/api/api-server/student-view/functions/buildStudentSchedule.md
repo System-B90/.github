@@ -6,9 +6,9 @@
 
 # Function: buildStudentSchedule()
 
-> **buildStudentSchedule**(`date`, `controller`): `Promise`\<[`ApiStudentScheduleGetResponse`](../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse.md)\>
+> **buildStudentSchedule**(`date`, `controller`, `ownGroups?`): `Promise`\<[`ApiStudentScheduleGetResponse`](../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse.md)\>
 
-Defined in: [ui/src/api-server/student-view.ts:216](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/student-view.ts#L216)
+Defined in: [ui/src/api-server/student-view.ts:229](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/student-view.ts#L229)
 
 Builds the student projection of a single day's schedule.
 
@@ -26,6 +26,14 @@ events are excluded by `DbEvent.getInRange` itself.
 ### controller
 
 [`DatabaseController`](../../mongo-db-controller/classes/DatabaseController.md)
+
+### ownGroups?
+
+[`OwnHiveGroups`](../../student-own-groups/type-aliases/OwnHiveGroups.md) \| `Promise`\<[`OwnHiveGroups`](../../student-own-groups/type-aliases/OwnHiveGroups.md) \| `null`\> \| `null`
+
+The viewer's own Hive groups (`getOwnHiveGroups`), or null
+for staff and when Hive could not say. They only pick the board's default
+selection (`ownCourses`); they never widen or narrow the events served.
 
 ## Returns
 

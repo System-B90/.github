@@ -8,7 +8,7 @@
 
 > **normalizeSearchText**(`text`): `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/fuzzy.ts:10](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/curriculum-view/search/fuzzy.ts#L10)
+Defined in: [ui/src/components/gantt/curriculum-view/search/fuzzy.ts:10](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/curriculum-view/search/fuzzy.ts#L10)
 
 Normalize text for fuzzy matching: lowercase, strip quotation marks and
 collapse whitespace. Quote stripping is what lets the search shrug off the

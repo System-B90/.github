@@ -8,7 +8,7 @@
 
 > **AiToolSummary** = `object`
 
-Defined in: [ui/src/api-shared/types/ai.ts:76](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L76)
+Defined in: [ui/src/api-shared/types/ai.ts:76](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L76)
 
 A tool as advertised to the browser (for rendering, not for calling).
 
@@ -18,7 +18,7 @@ A tool as advertised to the browser (for rendering, not for calling).
 
 > **danger**: [`AiToolDanger`](../enumerations/AiToolDanger.md)
 
-Defined in: [ui/src/api-shared/types/ai.ts:82](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L82)
+Defined in: [ui/src/api-shared/types/ai.ts:82](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L82)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:82](https://github.com/System-B90/Blu
 
 > **description**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:80](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L80)
+Defined in: [ui/src/api-shared/types/ai.ts:80](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L80)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:80](https://github.com/System-B90/Blu
 
 > **kind**: [`AiToolKind`](../enumerations/AiToolKind.md)
 
-Defined in: [ui/src/api-shared/types/ai.ts:81](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L81)
+Defined in: [ui/src/api-shared/types/ai.ts:81](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L81)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:81](https://github.com/System-B90/Blu
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:77](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L77)
+Defined in: [ui/src/api-shared/types/ai.ts:77](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L77)
 
 ***
 
@@ -50,6 +50,6 @@ Defined in: [ui/src/api-shared/types/ai.ts:77](https://github.com/System-B90/Blu
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:79](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L79)
+Defined in: [ui/src/api-shared/types/ai.ts:79](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L79)
 
 Friendly Hebrew label. The raw `name` is never shown to a user.

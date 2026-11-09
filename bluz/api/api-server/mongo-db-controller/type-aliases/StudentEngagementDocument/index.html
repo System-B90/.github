@@ -1045,7 +1045,7 @@
 <blockquote>
 <p><strong>StudentEngagementDocument</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L455">ui/src/api-server/mongo-db-controller.ts:455</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L455">ui/src/api-server/mongo-db-controller.ts:455</a></p>
 <p>One student's focused time on the schedule board for one day. <code>id</code> is
 <code>&lt;userId&gt;:&lt;date&gt;</code> so the upsert is a single keyed <code>$inc</code> with no read.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
@@ -1053,54 +1053,54 @@
 <blockquote>
 <p><strong>date</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L459">ui/src/api-server/mongo-db-controller.ts:459</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L459">ui/src/api-server/mongo-db-controller.ts:459</a></p>
 <p><code>yyyy-MM-dd</code> in the app timezone.</p>
 <hr />
 <h3 id="id">id<a class="headerlink" href="#id" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>id</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L456">ui/src/api-server/mongo-db-controller.ts:456</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L456">ui/src/api-server/mongo-db-controller.ts:456</a></p>
 <hr />
 <h3 id="ips">ips?<a class="headerlink" href="#ips" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>ips?</strong>: <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L464">ui/src/api-server/mongo-db-controller.ts:464</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L464">ui/src/api-server/mongo-db-controller.ts:464</a></p>
 <p>Every address the board reported from that day (nginx-derived).</p>
 <hr />
 <h3 id="seconds">seconds<a class="headerlink" href="#seconds" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>seconds</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L461">ui/src/api-server/mongo-db-controller.ts:461</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L461">ui/src/api-server/mongo-db-controller.ts:461</a></p>
 <p>Total seconds the board was open <em>and</em> focused that day.</p>
 <hr />
 <h3 id="securityeventcount">securityEventCount?<a class="headerlink" href="#securityeventcount" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>securityEventCount?</strong>: <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L468">ui/src/api-server/mongo-db-controller.ts:468</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L468">ui/src/api-server/mongo-db-controller.ts:468</a></p>
 <p>True total, including any dropped from <code>securityEvents</code>.</p>
 <hr />
 <h3 id="securityevents">securityEvents?<a class="headerlink" href="#securityevents" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><code>optional</code> <strong>securityEvents?</strong>: <a href="../../../../api-shared/types/student-view/type-aliases/StudentSecurityEvent/"><code>StudentSecurityEvent</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L466">ui/src/api-server/mongo-db-controller.ts:466</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L466">ui/src/api-server/mongo-db-controller.ts:466</a></p>
 <p>Most recent suspected malicious attempts that day, oldest dropped first.</p>
 <hr />
 <h3 id="updatedat">updatedAt<a class="headerlink" href="#updatedat" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>updatedAt</strong>: <code>Date</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L462">ui/src/api-server/mongo-db-controller.ts:462</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L462">ui/src/api-server/mongo-db-controller.ts:462</a></p>
 <hr />
 <h3 id="userid">userId<a class="headerlink" href="#userid" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>userId</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-db-controller.ts#L457">ui/src/api-server/mongo-db-controller.ts:457</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-db-controller.ts#L457">ui/src/api-server/mongo-db-controller.ts:457</a></p>
 
 
 

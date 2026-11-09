@@ -8,7 +8,7 @@
 
 > `const` **DEFAULT\_LESSON\_CATEGORY**: `"שיעור"` = `"שיעור"`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:101](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/hive/schedule-feed.ts#L101)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:101](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/hive/schedule-feed.ts#L101)
 
 Fallback Hive category (with `has_lesson`) for an event with a Hive lesson
 whose type has no `has_lesson` category; see resolveCategory.

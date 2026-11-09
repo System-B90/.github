@@ -8,7 +8,7 @@
 
 > **CourseSubmenuProps** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:18](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L18)
+Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:18](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L18)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:18]
 
 > `optional` **disabled?**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:22](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L22)
+Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:22](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L22)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:22]
 
 > **onToggle**: (`courseId`) => `void`
 
-Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:21](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L21)
+Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:21](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L21)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:21]
 
 > **stateOf**: (`courseId`) => `"all"` \| `"none"` \| `"some"`
 
-Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:20](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L20)
+Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:20](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L20)
 
 Whether all, some or none of the targeted events carry the course.
 

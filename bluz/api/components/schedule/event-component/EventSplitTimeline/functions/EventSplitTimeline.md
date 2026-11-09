@@ -8,7 +8,7 @@
 
 > **EventSplitTimeline**(`activePiece`): `Element`
 
-Defined in: [ui/src/components/schedule/event-component/EventSplitTimeline.tsx:79](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-component/EventSplitTimeline.tsx#L79)
+Defined in: [ui/src/components/schedule/event-component/EventSplitTimeline.tsx:79](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/event-component/EventSplitTimeline.tsx#L79)
 
 The tooltip's itinerary for an event split across breaks. Time flows top to
 bottom like the day view it came from: a solid rail for each working piece,

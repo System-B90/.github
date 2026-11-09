@@ -8,7 +8,7 @@
 
 > **checkStudentClockSkew**(`userId`, `headers`, `serverNow?`): `number` \| `null`
 
-Defined in: [ui/src/api-server/student-clock-skew.ts:44](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/student-clock-skew.ts#L44)
+Defined in: [ui/src/api-server/student-clock-skew.ts:44](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/student-clock-skew.ts#L44)
 
 Compares a student board's device clock (the [STUDENT\_CLIENT\_TIME\_HEADER](../../../api-shared/types/student-view/variables/STUDENT_CLIENT_TIME_HEADER.md)
 it sends) with the server's, and records a `clock-tampering` attempt when

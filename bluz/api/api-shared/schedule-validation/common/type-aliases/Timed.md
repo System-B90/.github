@@ -8,7 +8,7 @@
 
 > **Timed** = `object`
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:14](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/common.ts#L14)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:14](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/common.ts#L14)
 
 A checked event with its instants and local day resolved once.
 
@@ -18,7 +18,7 @@ A checked event with its instants and local day resolved once.
 
 > **date**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:19](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/common.ts#L19)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:19](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/common.ts#L19)
 
 Local civil date of the start, `YYYY-MM-DD`.
 
@@ -28,7 +28,7 @@ Local civil date of the start, `YYYY-MM-DD`.
 
 > **end**: `number`
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:17](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/common.ts#L17)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:17](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/common.ts#L17)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-shared/schedule-validation/common.ts:17](https://github.
 
 > **event**: [`RuleCheckEvent`](../../types/type-aliases/RuleCheckEvent.md)
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:15](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/common.ts#L15)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:15](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/common.ts#L15)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-shared/schedule-validation/common.ts:15](https://github.
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:23](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/common.ts#L23)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:23](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/common.ts#L23)
 
 Normalized name (see [normalizeName](../functions/normalizeName.md)).
 
@@ -54,7 +54,7 @@ Normalized name (see [normalizeName](../functions/normalizeName.md)).
 
 > **start**: `number`
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:16](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/common.ts#L16)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:16](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/common.ts#L16)
 
 ***
 
@@ -62,6 +62,6 @@ Defined in: [ui/src/api-shared/schedule-validation/common.ts:16](https://github.
 
 > **weekday**: `number`
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:21](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-validation/common.ts#L21)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:21](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/common.ts#L21)
 
 0 = Sunday … 6 = Saturday, local.

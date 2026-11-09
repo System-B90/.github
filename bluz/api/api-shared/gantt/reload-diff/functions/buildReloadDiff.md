@@ -8,7 +8,7 @@
 
 > **buildReloadDiff**(`input`): [`ReloadDiff`](../../../types/gantt/reload/type-aliases/ReloadDiff.md)
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:115](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/gantt/reload-diff.ts#L115)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:115](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/gantt/reload-diff.ts#L115)
 
 Classify every occurrence into add / update / remove / conflict / unchanged.
 Manual edits win: a drifted event that a human touched becomes a conflict

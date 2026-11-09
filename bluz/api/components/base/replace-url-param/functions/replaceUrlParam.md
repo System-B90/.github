@@ -8,7 +8,7 @@
 
 > **replaceUrlParam**(`name`, `value`): `void`
 
-Defined in: [ui/src/components/base/replace-url-param.ts:7](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/replace-url-param.ts#L7)
+Defined in: [ui/src/components/base/replace-url-param.ts:7](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/replace-url-param.ts#L7)
 
 Sets `name` in the address bar's query to `value`, or removes it for
 `null`, without a navigation or a history entry. Keeps `history.state`:

@@ -914,6 +914,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__namedparameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __namedParameters?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="__namedParameters?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allowchecker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        allowChecker?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#returns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -949,13 +994,17 @@
 <p><a href="../../../../">TypeDoc API</a> / <a href="../../">api-server/student-view</a> / requireStudentViewSession</p>
 <h1 id="function-requirestudentviewsession">Function: requireStudentViewSession()<a class="headerlink" href="#function-requirestudentviewsession" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>requireStudentViewSession</strong>(): <code>Promise</code>\&lt;<a href="../../type-aliases/StudentViewSession/"><code>StudentViewSession</code></a>&gt;</p>
+<p><strong>requireStudentViewSession</strong>(<code>__namedParameters?</code>): <code>Promise</code>\&lt;<a href="../../type-aliases/StudentViewSession/"><code>StudentViewSession</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/student-view.ts#L64">ui/src/api-server/student-view.ts:64</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/student-view.ts#L68">ui/src/api-server/student-view.ts:68</a></p>
 <p>Gates the student-view endpoint. Unlike every other API route this one is
 reachable by a Hanich session — it is the single endpoint that is. Anything
 below Hanich (i.e. no session at all) is rejected: every student reaches
 Bluz through a Hive sign-in, so there is no anonymous viewer to serve.</p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<h3 id="__namedparameters">__namedParameters?<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
+<h4 id="allowchecker">allowChecker?<a class="headerlink" href="#allowchecker" title="Permanent link">&para;</a></h4>
+<p><code>boolean</code> = <code>false</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<a href="../../type-aliases/StudentViewSession/"><code>StudentViewSession</code></a>&gt;</p>
 

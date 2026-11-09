@@ -13,4 +13,5 @@
 ## Functions
 
 - [findCourseHiveGroup](functions/findCourseHiveGroup.md)
+- [memberCourseIds](functions/memberCourseIds.md)
 - [resolveEventHiveGroups](functions/resolveEventHiveGroups.md)

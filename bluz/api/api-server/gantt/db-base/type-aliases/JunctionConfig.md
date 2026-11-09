@@ -8,7 +8,7 @@
 
 > **JunctionConfig** = `object`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:169](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L169)
+Defined in: [ui/src/api-server/gantt/db-base.ts:169](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L169)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/gantt/db-base.ts:169](https://github.com/System-B
 
 > **apiKey**: `string`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:173](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L173)
+Defined in: [ui/src/api-server/gantt/db-base.ts:173](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L173)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/gantt/db-base.ts:173](https://github.com/System-B
 
 > **localKey**: `AnyPgColumn`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:171](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L171)
+Defined in: [ui/src/api-server/gantt/db-base.ts:171](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L171)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-server/gantt/db-base.ts:171](https://github.com/System-B
 
 > **relationKey**: `AnyPgColumn`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:172](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L172)
+Defined in: [ui/src/api-server/gantt/db-base.ts:172](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L172)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/api-server/gantt/db-base.ts:172](https://github.com/System-B
 
 > **table**: `PgTableWithColumns`\<`any`\>
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:170](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L170)
+Defined in: [ui/src/api-server/gantt/db-base.ts:170](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L170)

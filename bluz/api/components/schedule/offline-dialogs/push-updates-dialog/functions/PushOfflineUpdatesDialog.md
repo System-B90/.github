@@ -8,7 +8,7 @@
 
 > **PushOfflineUpdatesDialog**(): `Element`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/index.tsx:44](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/offline-dialogs/push-updates-dialog/index.tsx#L44)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/index.tsx:44](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/offline-dialogs/push-updates-dialog/index.tsx#L44)
 
 ## Returns
 

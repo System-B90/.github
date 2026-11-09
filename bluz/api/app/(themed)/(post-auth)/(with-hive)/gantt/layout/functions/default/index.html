@@ -977,14 +977,17 @@
 <p><a href="../../../../../../../../">TypeDoc API</a> / <a href="../../">app/(themed)/(post-auth)/(with-hive)/gantt/layout</a> / default</p>
 <h1 id="function-default">Function: default()<a class="headerlink" href="#function-default" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>default</strong>(<code>__namedParameters</code>): <code>Element</code></p>
+<p><strong>default</strong>(<code>__namedParameters</code>): <code>Promise</code>\&lt;<code>Element</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx#L5">ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx:5</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx#L11">ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx:11</a></p>
+<p>The gantt is staff-only: a Checker (read-only schedule viewer) is sent back
+to the schedule. Not a data gate — every gantt API refuses a Checker on its
+own (<code>requireStaffAuth</code>, <code>proxy.ts</code>) — just keeps it off a page it cannot use.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
 <p><code>Readonly</code>\&lt;{ <code>children</code>: <code>React.ReactNode</code>; }&gt;</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
-<p><code>Element</code></p>
+<p><code>Promise</code>\&lt;<code>Element</code>&gt;</p>
 
 
 

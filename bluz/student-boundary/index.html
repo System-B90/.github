@@ -1181,7 +1181,7 @@ that assumption.</p>
 <tr>
 <td>APIs (read)</td>
 <td><code>GET /api/student-view/schedule</code></td>
-<td>Returns the <code>StudentEvent</code> projection for <strong>the server's current day</strong>.</td>
+<td>Returns the <code>StudentEvent</code> projection for <strong>the server's current day</strong>, plus the student's own shuffles as the board's default selection. Takes no parameters.</td>
 </tr>
 <tr>
 <td>APIs (read)</td>
@@ -1227,9 +1227,10 @@ accounts hold real sessions.</p>
 <li><strong>Fake events look real.</strong> "פיקטיבי" events are returned as ordinary events by
    construction — they are meant to be indistinguishable.</li>
 <li><strong>The response envelope is closed.</strong> <code>date</code>, <code>events</code>, <code>courseNames</code>, <code>courseGroups</code>,
-   <code>courseOptions</code>, <code>roomNames</code>, <code>calendarDayStartTime</code>, <code>calendarDayEndTime</code>. The grid
-   bounds ride along precisely so the board never needs to call the settings API, which a
-   student may not call. <code>/api/server-time</code> is closed too: <code>now</code>, nothing else.</li>
+   <code>courseOptions</code>, <code>ownCourses</code>, <code>roomNames</code>, <code>calendarDayStartTime</code>,
+   <code>calendarDayEndTime</code>, <code>refreshSeconds</code>. The grid bounds ride along precisely so the
+   board never needs to call the settings API, which a student may not call.
+   <code>/api/server-time</code> is closed too: <code>now</code>, nothing else.</li>
 <li><strong>The board mounts no staff providers.</strong> <code>StudentDayBoard</code> pulls in no Courses/Hive/
    Settings provider, no dialogs, no app bar — there is no staff surface in the React
    tree to inspect, and nothing on screen implies the rest of the app exists.</li>
@@ -1241,8 +1242,9 @@ accounts hold real sessions.</p>
 <li><strong>A ticket opens one socket.</strong> <code>singleUseTickets</code> is on, so a ticket observed inside
     its 30s TTL cannot be replayed into a second socket carrying the holder's scope, and
     the core budgets connects per remote address before it even verifies a ticket.</li>
-<li><strong>The socket gates are an allow-list.</strong> A session, a sync subscription and a relayed
-    frame all require <code>WsScope.Segel</code> explicitly. The core still verifies scope-less
+<li><strong>The socket gates are an allow-list.</strong> A session and a sync subscription require
+    <code>WsScope.Segel</code> or <code>WsScope.Checker</code> (the read-only viewer tier) explicitly; a relayed
+    frame requires <code>WsScope.Segel</code>. The core still verifies scope-less
     (legacy) tickets and the internal sender is minted one, so "anything but Hanich"
     would hand such a ticket the whole staff wire.</li>
 <li><strong>A layout is not a data gate.</strong> App Router renders a layout and its page in parallel,
@@ -1250,6 +1252,26 @@ accounts hold real sessions.</p>
     redirect may not run before a page's own server code. Staff pages are client
     components whose data arrives through gated APIs; a page that does server work (e.g.
     <code>cli-auth</code>) gates itself.</li>
+<li><strong>Shuffle selection has no parameter.</strong> The board picks one or more shuffles and
+    shows the union of their events by filtering the day it was already sent (matching
+    <code>relatedCourses</code>, so a shuffle keeps its parents' events). The request never carries
+    the selection, so the query string stays empty and anything in it is still
+    <code>param-tampering</code>. A viewer can select only among <code>courseOptions</code> — names the day's
+    projection already carries; a stored or hand-edited name outside them is ignored.
+    Deliberately, a student may select shuffles other than their own: every event in the
+    response is already theirs to see, so selection narrows the view, never widens it.</li>
+<li><strong>Own shuffles come from the student's own Hive login.</strong> <code>ownCourses</code> (the board's
+    default selection until the viewer picks) is resolved by
+    <code>api-server/student-own-groups.ts</code> through <code>createHiveClient()</code> — never the service
+    account — calling only <code>me</code> (<code>/api/core/management/users/me/</code>, its <code>classes</code>) and the
+    student-group listing that token is allowed, outside the shared class cache. Groups
+    map to shuffles by <code>memberCourseIds</code> (<code>hiveClassId</code> link, else normalized name — the
+    same rule as <code>findCourseHiveGroup</code>). It is a subset of <code>courseNames</code> and of
+    <code>courseOptions</code>, so it names nothing the day would not carry, and it never changes
+    which events are served. The lookup is per session user, cached 5 minutes, capped at
+    3 seconds, and never throws: no Hive session, Hive down, slow or refusing gives <code>[]</code>
+    (the board shows everything) with no Hive detail in the response. Staff get <code>[]</code> and
+    no Hive call.</li>
 </ol>
 <h2 id="attempt-logging">Attempt logging<a class="headerlink" href="#attempt-logging" title="Permanent link">&para;</a></h2>
 <p>Suspected malicious attempts are recorded on the student's own daily time record
@@ -1282,7 +1304,7 @@ never the first, which is whatever the client claimed.</p>
 </tr>
 <tr>
 <td><code>param-tampering</code></td>
-<td>A Hanich session sends any query string to the schedule or clock route.</td>
+<td>A Hanich session sends any query string to the schedule or clock route — including a selection-shaped one (<code>?shuffle=</code>, <code>?courses=</code>, <code>?ownCourses=</code>): selection is client-side.</td>
 </tr>
 <tr>
 <td><code>engagement-tampering</code></td>
@@ -1322,6 +1344,10 @@ post-login landing on <code>/</code>).</p>
 <tr>
 <td>Session gate + projection</td>
 <td><code>ui/src/api-server/student-view.ts</code></td>
+</tr>
+<tr>
+<td>Own shuffles (own Hive)</td>
+<td><code>ui/src/api-server/student-own-groups.ts</code></td>
 </tr>
 <tr>
 <td>The schedule route</td>
@@ -1388,15 +1414,15 @@ post-login landing on <code>/</code>).</p>
 </tr>
 <tr>
 <td><code>tests/backend/student-projection-invariants.test.ts</code></td>
-<td><strong>Gate + builder in isolation.</strong> Every clearance value that may and may not pass, every <code>?date=</code> shape a student could send, and the projection against hostile documents (extra fields, nested staff blobs, inherited properties, <code>__proto__</code>, wrong types) asserted on own <em>and</em> inherited keys.</td>
+<td><strong>Gate + builder in isolation.</strong> Every clearance value that may and may not pass, every <code>?date=</code> shape a student could send, and the projection against hostile documents (extra fields, nested staff blobs, inherited properties, <code>__proto__</code>, wrong types) asserted on own <em>and</em> inherited keys; the own-shuffle lookup touching only <code>me</code> and the group listing, keeping only ids and names, caching per session user, never throwing; <code>memberCourseIds</code> link-before-name mapping.</td>
 </tr>
 <tr>
 <td><code>tests/backend/student-data-leak.test.ts</code></td>
-<td><strong>Adversarial.</strong> Date probes (casing, duplication, encoding, traversal, <code>$ne</code>), iteration probes, forged clearance headers, projection under fully-populated staff documents, unresolvable ids, Hive down, read-only verbs.</td>
+<td><strong>Adversarial.</strong> Date probes (casing, duplication, encoding, traversal, <code>$ne</code>), iteration probes, forged clearance headers, projection under fully-populated staff documents, unresolvable ids, Hive down, read-only verbs; shuffle-selection probes served exactly the board's own response, own shuffles never taken from headers or the service account, the student's Hive login failing without detail.</td>
 </tr>
 <tr>
 <td><code>tests/backend/student-view-route.test.ts</code></td>
-<td>Field whitelist, envelope keys, calendar hours, room short names, hidden-event filter, color resolution.</td>
+<td>Field whitelist, envelope keys, calendar hours, room short names, hidden-event filter, color resolution; own shuffles by link and name, never one with nothing today, Hive failure/timeout fallback, per-student cache, no Hive call for staff.</td>
 </tr>
 <tr>
 <td><code>tests/backend/student-clearance-gating.test.ts</code></td>
@@ -1412,7 +1438,7 @@ post-login landing on <code>/</code>).</p>
 </tr>
 <tr>
 <td><code>tests/backend/student-day-board.test.tsx</code></td>
-<td>The board derives its filters from delivered events only, and issues exactly one request.</td>
+<td>The board derives its filters from delivered events only, and issues exactly one request; multi-select union, own-shuffle default, stored pick and explicit "all" winning over it, foreign or malformed selections ignored, the selection never sent.</td>
 </tr>
 <tr>
 <td><code>tests/backend/access-token-boundary.test.ts</code></td>

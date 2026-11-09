@@ -8,7 +8,7 @@
 
 > `const` **BluzEventComponent**: `NamedExoticComponent`\<`EventProps`\<[`EventSegment`](../../../calendar/split/segments/type-aliases/EventSegment.md)\>\>
 
-Defined in: [ui/src/components/schedule/event-component/base.tsx:147](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/event-component/base.tsx#L147)
+Defined in: [ui/src/components/schedule/event-component/base.tsx:147](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/event-component/base.tsx#L147)
 
 react-big-calendar's `components.event`. The grid feeds it segments — one
 box per drawn piece of an event — and it renders either a real grid piece or

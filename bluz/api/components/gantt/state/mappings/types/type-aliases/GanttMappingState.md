@@ -8,7 +8,7 @@
 
 > **GanttMappingState** = `object`
 
-Defined in: [ui/src/components/gantt/state/mappings/types.ts:8](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/mappings/types.ts#L8)
+Defined in: [ui/src/components/gantt/state/mappings/types.ts:8](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/state/mappings/types.ts#L8)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/mappings/types.ts:8](https://github.c
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/mappings/types.ts:11](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/mappings/types.ts#L11)
+Defined in: [ui/src/components/gantt/state/mappings/types.ts:11](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/state/mappings/types.ts#L11)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/gantt/state/mappings/types.ts:11](https://github.
 
 > **mappings**: `Record`\<`string`, [`GanttCurriculumEventDayMapping`](../../../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md)\>
 
-Defined in: [ui/src/components/gantt/state/mappings/types.ts:10](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/mappings/types.ts#L10)
+Defined in: [ui/src/components/gantt/state/mappings/types.ts:10](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/state/mappings/types.ts#L10)

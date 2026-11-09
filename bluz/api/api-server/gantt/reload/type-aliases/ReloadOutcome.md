@@ -8,7 +8,7 @@
 
 > **ReloadOutcome** = \{ `error`: [`ApiCurriculumReloadError`](../../../../api-shared/types/gantt/reload/type-aliases/ApiCurriculumReloadError.md); `ok`: `false`; \} \| \{ `ok`: `true`; `result`: [`ApiCurriculumReloadResponse`](../../../../api-shared/types/gantt/reload/type-aliases/ApiCurriculumReloadResponse.md); \}
 
-Defined in: [ui/src/api-server/gantt/reload.ts:56](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/reload.ts#L56)
+Defined in: [ui/src/api-server/gantt/reload.ts:56](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/reload.ts#L56)
 
 Schedule reload ("עדכון הלו״ז לפי הגאנט"): re-plans a curriculum that was
 already cut and reconciles the difference into the linked iteration's

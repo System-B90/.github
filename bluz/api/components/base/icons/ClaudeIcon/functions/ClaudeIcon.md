@@ -8,7 +8,7 @@
 
 > **ClaudeIcon**(`props`): `Element`
 
-Defined in: [ui/src/components/base/icons/ClaudeIcon.tsx:7](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/icons/ClaudeIcon.tsx#L7)
+Defined in: [ui/src/components/base/icons/ClaudeIcon.tsx:7](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/icons/ClaudeIcon.tsx#L7)
 
 The Claude mark (simple-icons, CC0), colored with the current palette like
 any MUI icon. Marks changes made through the Bluz Claude plugin.

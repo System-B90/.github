@@ -6,7 +6,7 @@
 
 # Enumeration: PrayerType
 
-Defined in: [ui/src/api-shared/types/event.ts:143](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event.ts#L143)
+Defined in: [ui/src/api-shared/types/event.ts:143](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event.ts#L143)
 
 Standardized types of prayer events. These are hand-made for special
 occasions: the daily prayers are a schedule tint, not events.
@@ -17,7 +17,7 @@ occasions: the daily prayers are a schedule tint, not events.
 
 > **ARVIT**: `"arvit"`
 
-Defined in: [ui/src/api-shared/types/event.ts:147](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event.ts#L147)
+Defined in: [ui/src/api-shared/types/event.ts:147](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event.ts#L147)
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: [ui/src/api-shared/types/event.ts:147](https://github.com/System-B90
 
 > **MINCHA**: `"mincha"`
 
-Defined in: [ui/src/api-shared/types/event.ts:146](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event.ts#L146)
+Defined in: [ui/src/api-shared/types/event.ts:146](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event.ts#L146)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [ui/src/api-shared/types/event.ts:146](https://github.com/System-B90
 
 > **SHACHARIT**: `"shacharit"`
 
-Defined in: [ui/src/api-shared/types/event.ts:145](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event.ts#L145)
+Defined in: [ui/src/api-shared/types/event.ts:145](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event.ts#L145)
 
 ***
 
@@ -41,4 +41,4 @@ Defined in: [ui/src/api-shared/types/event.ts:145](https://github.com/System-B90
 
 > **YESHIVA\_DAY**: `"yeshivaDay"`
 
-Defined in: [ui/src/api-shared/types/event.ts:148](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event.ts#L148)
+Defined in: [ui/src/api-shared/types/event.ts:148](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event.ts#L148)

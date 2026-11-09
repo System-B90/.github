@@ -8,7 +8,7 @@
 
 > `const` **APP\_TIMEZONE**: `"Asia/Jerusalem"` = `"Asia/Jerusalem"`
 
-Defined in: [ui/src/api-shared/dayjs-setup.ts:24](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/dayjs-setup.ts#L24)
+Defined in: [ui/src/api-shared/dayjs-setup.ts:24](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/dayjs-setup.ts#L24)
 
 The single wall-clock timezone the scheduling app operates in. All calendar
 events are interpreted and displayed in Israel time regardless of the

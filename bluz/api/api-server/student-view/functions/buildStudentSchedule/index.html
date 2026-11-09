@@ -947,6 +947,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#owngroups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ownGroups?
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -988,9 +999,9 @@
 <p><a href="../../../../">TypeDoc API</a> / <a href="../../">api-server/student-view</a> / buildStudentSchedule</p>
 <h1 id="function-buildstudentschedule">Function: buildStudentSchedule()<a class="headerlink" href="#function-buildstudentschedule" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>buildStudentSchedule</strong>(<code>date</code>, <code>controller</code>): <code>Promise</code>\&lt;<a href="../../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse/"><code>ApiStudentScheduleGetResponse</code></a>&gt;</p>
+<p><strong>buildStudentSchedule</strong>(<code>date</code>, <code>controller</code>, <code>ownGroups?</code>): <code>Promise</code>\&lt;<a href="../../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse/"><code>ApiStudentScheduleGetResponse</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/student-view.ts#L216">ui/src/api-server/student-view.ts:216</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/student-view.ts#L229">ui/src/api-server/student-view.ts:229</a></p>
 <p>Builds the student projection of a single day's schedule.</p>
 <p>Two exclusions are enforced in the Mongo query itself rather than in the
 mapper below, so no future refactor of the mapping can leak them: hidden
@@ -1001,6 +1012,11 @@ events are excluded by <code>DbEvent.getInRange</code> itself.</p>
 <p><code>string</code></p>
 <h3 id="controller">controller<a class="headerlink" href="#controller" title="Permanent link">&para;</a></h3>
 <p><a href="../../../mongo-db-controller/classes/DatabaseController/"><code>DatabaseController</code></a></p>
+<h3 id="owngroups">ownGroups?<a class="headerlink" href="#owngroups" title="Permanent link">&para;</a></h3>
+<p><a href="../../../student-own-groups/type-aliases/OwnHiveGroups/"><code>OwnHiveGroups</code></a> | <code>Promise</code>\&lt;<a href="../../../student-own-groups/type-aliases/OwnHiveGroups/"><code>OwnHiveGroups</code></a> | <code>null</code>&gt; | <code>null</code></p>
+<p>The viewer's own Hive groups (<code>getOwnHiveGroups</code>), or null
+for staff and when Hive could not say. They only pick the board's default
+selection (<code>ownCourses</code>); they never widen or narrow the events served.</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Promise</code>\&lt;<a href="../../../../api-shared/types/student-view/type-aliases/ApiStudentScheduleGetResponse/"><code>ApiStudentScheduleGetResponse</code></a>&gt;</p>
 

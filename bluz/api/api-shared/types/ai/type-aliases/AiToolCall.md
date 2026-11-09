@@ -8,7 +8,7 @@
 
 > **AiToolCall** = `object`
 
-Defined in: [ui/src/api-shared/types/ai.ts:28](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L28)
+Defined in: [ui/src/api-shared/types/ai.ts:28](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L28)
 
 A tool invocation requested by the model. `arguments` stays a raw JSON
 string, exactly as the model emitted it: it is not always valid JSON, and
@@ -21,7 +21,7 @@ backend produced.
 
 > **arguments**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:31](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L31)
+Defined in: [ui/src/api-shared/types/ai.ts:31](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L31)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [ui/src/api-shared/types/ai.ts:31](https://github.com/System-B90/Blu
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:29](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L29)
+Defined in: [ui/src/api-shared/types/ai.ts:29](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L29)
 
 ***
 
@@ -37,4 +37,4 @@ Defined in: [ui/src/api-shared/types/ai.ts:29](https://github.com/System-B90/Blu
 
 > **name**: `string`
 
-Defined in: [ui/src/api-shared/types/ai.ts:30](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/ai.ts#L30)
+Defined in: [ui/src/api-shared/types/ai.ts:30](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/ai.ts#L30)

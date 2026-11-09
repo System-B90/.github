@@ -8,7 +8,7 @@
 
 > **isTransactionUnsupportedError**(`error`): `boolean`
 
-Defined in: [ui/src/api-server/mongo-transactions.ts:11](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/mongo-transactions.ts#L11)
+Defined in: [ui/src/api-server/mongo-transactions.ts:11](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/mongo-transactions.ts#L11)
 
 Mongo multi-document transactions require the server to run as a replica
 set. A standalone `mongod` — which is how some deployments (and every plain

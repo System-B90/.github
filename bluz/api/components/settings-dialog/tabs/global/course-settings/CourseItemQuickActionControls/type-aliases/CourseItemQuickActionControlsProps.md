@@ -8,7 +8,7 @@
 
 > **CourseItemQuickActionControlsProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:14](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L14)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:14](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L14)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/Cours
 
 > **course**: [`Course`](../../../../../../../api-shared/types/course/type-aliases/Course.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:15](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L15)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:15](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L15)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/Cours
 
 > **deleteCourse**: (`courseId`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:20](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L20)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:20](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L20)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/Cours
 
 > **handleCreateSubCourse**: () => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:19](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L19)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:19](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L19)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/Cours
 
 > **isHovered**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:16](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L16)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:16](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L16)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/Cours
 
 > **isMenuOpen**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:17](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L17)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:17](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L17)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/Cours
 
 > **setAnchorEl**: `React.Dispatch`\<`React.SetStateAction`\<`HTMLElement` \| `null`\>\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:18](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L18)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:18](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L18)
 
 ***
 
@@ -78,6 +78,6 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/Cours
 
 > **subCourseCount**: `number`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:22](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L22)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx:22](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/CourseItemQuickActionControls.tsx#L22)
 
 Direct sub-courses, which a delete leaves behind at the top level.

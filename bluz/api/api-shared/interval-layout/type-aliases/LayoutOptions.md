@@ -8,7 +8,7 @@
 
 > **LayoutOptions** = `object`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:19](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/interval-layout.ts#L19)
+Defined in: [ui/src/api-shared/interval-layout.ts:19](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/interval-layout.ts#L19)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/interval-layout.ts:19](https://github.com/System-
 
 > `optional` **minSegmentMs?**: `number`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:26](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/interval-layout.ts#L26)
+Defined in: [ui/src/api-shared/interval-layout.ts:26](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/interval-layout.ts#L26)
 
 Shortest piece worth drawing. A run of free time shorter than this is
 skipped over rather than emitted as an unreadable sliver — the working

@@ -8,7 +8,7 @@
 
 > **useCurriculumStatusSync**(`curriculumId`): `void`
 
-Defined in: [ui/src/components/gantt/state/hooks/UseCurriculumStatusSync.ts:14](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/gantt/state/hooks/UseCurriculumStatusSync.ts#L14)
+Defined in: [ui/src/components/gantt/state/hooks/UseCurriculumStatusSync.ts:14](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/state/hooks/UseCurriculumStatusSync.ts#L14)
 
 Draft/archive status is changed from the curriculum FAB, which only sees the
 curriculum list store. Mirror those flags into the open curriculum's own

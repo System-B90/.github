@@ -8,7 +8,7 @@
 
 > **RouteContext** = `object`
 
-Defined in: [ui/src/app/api/gantt/base-item.ts:16](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/app/api/gantt/base-item.ts#L16)
+Defined in: [ui/src/app/api/gantt/base-item.ts:16](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/app/api/gantt/base-item.ts#L16)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [ui/src/app/api/gantt/base-item.ts:16](https://github.com/System-B90
 
 > **params**: `Promise`\<\{ `id`: `string`; \}\>
 
-Defined in: [ui/src/app/api/gantt/base-item.ts:17](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/app/api/gantt/base-item.ts#L17)
+Defined in: [ui/src/app/api/gantt/base-item.ts:17](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/app/api/gantt/base-item.ts#L17)

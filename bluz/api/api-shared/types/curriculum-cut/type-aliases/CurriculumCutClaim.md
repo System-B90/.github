@@ -8,7 +8,7 @@
 
 > **CurriculumCutClaim** = `object`
 
-Defined in: [ui/src/api-shared/types/curriculum-cut.ts:9](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/curriculum-cut.ts#L9)
+Defined in: [ui/src/api-shared/types/curriculum-cut.ts:9](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/curriculum-cut.ts#L9)
 
 Ledger row claiming the one-shot cut of a curriculum into an iteration's
 calendar. The unique index on `curriculumId` *is* the concurrency control:
@@ -21,7 +21,7 @@ the same pattern as `hiveLessonActivations`).
 
 > **claimedAt**: `Date`
 
-Defined in: [ui/src/api-shared/types/curriculum-cut.ts:12](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/curriculum-cut.ts#L12)
+Defined in: [ui/src/api-shared/types/curriculum-cut.ts:12](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/curriculum-cut.ts#L12)
 
 When the claim was taken — an audit trail, not a lease.
 
@@ -31,4 +31,4 @@ When the claim was taken — an audit trail, not a lease.
 
 > **curriculumId**: [`GanttCurriculumId`](../../gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/api-shared/types/curriculum-cut.ts:10](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/curriculum-cut.ts#L10)
+Defined in: [ui/src/api-shared/types/curriculum-cut.ts:10](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/curriculum-cut.ts#L10)

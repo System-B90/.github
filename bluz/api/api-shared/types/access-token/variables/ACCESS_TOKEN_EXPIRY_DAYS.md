@@ -8,6 +8,6 @@
 
 > `const` **ACCESS\_TOKEN\_EXPIRY\_DAYS**: readonly \[`7`, `30`, `90`, `180`, `365`\]
 
-Defined in: [ui/src/api-shared/types/access-token.ts:17](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/access-token.ts#L17)
+Defined in: [ui/src/api-shared/types/access-token.ts:17](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/access-token.ts#L17)
 
 Lifetimes offered at creation. No non-expiring tokens: a year is the cap.

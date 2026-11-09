@@ -8,7 +8,7 @@
 
 > **GanttEventId** = [`BaseGantItem`](BaseGantItem.md)\[`"id"`\]
 
-Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:11](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/shared.ts#L11)
+Defined in: [ui/src/api-shared/types/gantt/models/shared.ts:11](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/gantt/models/shared.ts#L11)
 
 Split out of `event.ts` so `constraint.ts` (which an event's own
 `constraints` field references) can depend on the id type without the two

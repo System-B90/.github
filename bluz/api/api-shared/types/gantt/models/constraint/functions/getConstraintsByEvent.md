@@ -8,7 +8,7 @@
 
 > **getConstraintsByEvent**(`constraints`, `eventIdsByModule`): `Record`\<`string`, [`GanttConstraint`](../type-aliases/GanttConstraint.md)[]\>
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:126](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/gantt/models/constraint.ts#L126)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:126](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/gantt/models/constraint.ts#L126)
 
 Every constraint that binds each event: its own plus those of every module
 containing it. Events don't carry their constraints in the curriculum

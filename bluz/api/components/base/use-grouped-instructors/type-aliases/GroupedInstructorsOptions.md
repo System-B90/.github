@@ -8,7 +8,7 @@
 
 > **GroupedInstructorsOptions** = `object`
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:22](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/use-grouped-instructors.ts#L22)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:22](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/use-grouped-instructors.ts#L22)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/use-grouped-instructors.ts:22](https://githu
 
 > `optional` **enabled?**: `boolean`
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:26](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/use-grouped-instructors.ts#L26)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:26](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/use-grouped-instructors.ts#L26)
 
 False skips the grouping and returns no groups (e.g. a closed menu).
 
@@ -26,7 +26,7 @@ False skips the grouping and returns no groups (e.g. a closed menu).
 
 > `optional` **excludeTeachers?**: `boolean`
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:24](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/use-grouped-instructors.ts#L24)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:24](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/use-grouped-instructors.ts#L24)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/components/base/use-grouped-instructors.ts:24](https://githu
 
 > `optional` **searchQuery?**: `string`
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:23](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/use-grouped-instructors.ts#L23)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:23](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/use-grouped-instructors.ts#L23)

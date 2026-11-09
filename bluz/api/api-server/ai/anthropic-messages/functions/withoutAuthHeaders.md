@@ -8,7 +8,7 @@
 
 > **withoutAuthHeaders**(`headers`, `provider`): `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:194](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/ai/anthropic-messages.ts#L194)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:194](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/anthropic-messages.ts#L194)
 
 `headers` without credential headers. One in `ANTHROPIC_CUSTOM_HEADERS`
 (e.g. a Claude Code `ANTHROPIC_AUTH_TOKEN` carried over as a header) used

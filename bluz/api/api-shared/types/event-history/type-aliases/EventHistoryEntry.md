@@ -8,7 +8,7 @@
 
 > **EventHistoryEntry** = `object`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:133](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L133)
+Defined in: [ui/src/api-shared/types/event-history.ts:133](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L133)
 
 One immutable change row. `actorName` is denormalized on purpose: display
 names live in Hive (an external service), so the log stores the name as it
@@ -21,7 +21,7 @@ user is gone.
 
 > **action**: [`EventChangeAction`](../enumerations/EventChangeAction.md)
 
-Defined in: [ui/src/api-shared/types/event-history.ts:138](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L138)
+Defined in: [ui/src/api-shared/types/event-history.ts:138](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L138)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [ui/src/api-shared/types/event-history.ts:138](https://github.com/Sy
 
 > **actorHiveId**: `null` \| `number`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:150](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L150)
+Defined in: [ui/src/api-shared/types/event-history.ts:150](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L150)
 
 Same identity in numeric form, for joins and aggregations against Hive
 user ids. Null when absent or non-numeric.
@@ -40,7 +40,7 @@ user ids. Null when absent or non-numeric.
 
 > **actorId**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:145](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L145)
+Defined in: [ui/src/api-shared/types/event-history.ts:145](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L145)
 
 Hive user id exactly as the SSO session issued it (string), or null for
 machine/unauthenticated writes. This is the row's foreign key to Hive.
@@ -51,7 +51,7 @@ machine/unauthenticated writes. This is the row's foreign key to Hive.
 
 > **actorName**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:152](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L152)
+Defined in: [ui/src/api-shared/types/event-history.ts:152](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L152)
 
 Display name as read at write time; null for machine writes.
 
@@ -61,7 +61,7 @@ Display name as read at write time; null for machine writes.
 
 > **changedAt**: `Date`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:153](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L153)
+Defined in: [ui/src/api-shared/types/event-history.ts:153](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L153)
 
 ***
 
@@ -69,7 +69,7 @@ Defined in: [ui/src/api-shared/types/event-history.ts:153](https://github.com/Sy
 
 > **changes**: [`EventFieldChange`](EventFieldChange.md)[]
 
-Defined in: [ui/src/api-shared/types/event-history.ts:155](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L155)
+Defined in: [ui/src/api-shared/types/event-history.ts:155](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L155)
 
 Empty for [EventChangeAction.Created](../enumerations/EventChangeAction.md#created).
 
@@ -79,7 +79,7 @@ Empty for [EventChangeAction.Created](../enumerations/EventChangeAction.md#creat
 
 > `optional` **context?**: [`EventChangeContext`](EventChangeContext.md)
 
-Defined in: [ui/src/api-shared/types/event-history.ts:140](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L140)
+Defined in: [ui/src/api-shared/types/event-history.ts:140](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L140)
 
 ***
 
@@ -87,7 +87,7 @@ Defined in: [ui/src/api-shared/types/event-history.ts:140](https://github.com/Sy
 
 > **eventId**: [`EventId`](../../event/type-aliases/EventId.md)
 
-Defined in: [ui/src/api-shared/types/event-history.ts:137](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L137)
+Defined in: [ui/src/api-shared/types/event-history.ts:137](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L137)
 
 The event this row describes. Never embeds the event itself.
 
@@ -97,7 +97,7 @@ The event this row describes. Never embeds the event itself.
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:135](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L135)
+Defined in: [ui/src/api-shared/types/event-history.ts:135](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L135)
 
 Row id (uuid).
 
@@ -107,4 +107,4 @@ Row id (uuid).
 
 > **initiator**: [`EventChangeInitiator`](../enumerations/EventChangeInitiator.md)
 
-Defined in: [ui/src/api-shared/types/event-history.ts:139](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/event-history.ts#L139)
+Defined in: [ui/src/api-shared/types/event-history.ts:139](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/event-history.ts#L139)

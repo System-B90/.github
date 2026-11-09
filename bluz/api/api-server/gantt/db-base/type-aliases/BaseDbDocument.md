@@ -8,7 +8,7 @@
 
 > **BaseDbDocument** = `object`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:164](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L164)
+Defined in: [ui/src/api-server/gantt/db-base.ts:164](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L164)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/gantt/db-base.ts:164](https://github.com/System-B
 
 > **createdAt**: `Date`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:165](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L165)
+Defined in: [ui/src/api-server/gantt/db-base.ts:165](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L165)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-server/gantt/db-base.ts:165](https://github.com/System-B
 
 > **updatedAt**: `Date`
 
-Defined in: [ui/src/api-server/gantt/db-base.ts:166](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/db-base.ts#L166)
+Defined in: [ui/src/api-server/gantt/db-base.ts:166](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/db-base.ts#L166)

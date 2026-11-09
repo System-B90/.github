@@ -8,7 +8,7 @@
 
 > **CollectionOps**\<`T`\> = `object`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:78](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/collection/create-collection-provider.tsx#L78)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:78](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/collection/create-collection-provider.tsx#L78)
 
 Optimistic edits a mutation applies to the store before the request runs.
 
@@ -24,7 +24,7 @@ Optimistic edits a mutation applies to the store before the request runs.
 
 > **patch**: (`key`, `changes`) => `void`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:80](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/collection/create-collection-provider.tsx#L80)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:80](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/collection/create-collection-provider.tsx#L80)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:80
 
 > **put**: (`key`, `item`) => `void`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:79](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/collection/create-collection-provider.tsx#L79)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:79](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/collection/create-collection-provider.tsx#L79)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:79
 
 > **remove**: (`key`) => `void`
 
-Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:81](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/collection/create-collection-provider.tsx#L81)
+Defined in: [ui/src/components/base/collection/create-collection-provider.tsx:81](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/collection/create-collection-provider.tsx#L81)
 
 #### Parameters
 

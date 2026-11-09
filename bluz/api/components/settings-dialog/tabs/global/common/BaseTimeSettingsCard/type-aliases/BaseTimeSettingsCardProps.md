@@ -8,7 +8,7 @@
 
 > **BaseTimeSettingsCardProps** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:21](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L21)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:21](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L21)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > **description**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:23](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L23)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:23](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L23)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > `optional` **disabled?**: `boolean`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:27](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L27)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:27](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L27)
 
 Locks the pickers, e.g. while a past iteration is being viewed.
 
@@ -34,7 +34,7 @@ Locks the pickers, e.g. while a past iteration is being viewed.
 
 > `optional` **icon?**: `React.ElementType`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:24](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L24)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:24](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L24)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > **rows**: [`TimeSettingRow`](TimeSettingRow.md)[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:25](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L25)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:25](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L25)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > `optional` **sx?**: `SxProps`\<`Theme`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:28](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L28)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:28](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L28)
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettin
 
 > **title**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:22](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L22)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx:22](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/common/BaseTimeSettingsCard.tsx#L22)

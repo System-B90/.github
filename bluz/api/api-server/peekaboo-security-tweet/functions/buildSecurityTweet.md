@@ -8,7 +8,7 @@
 
 > **buildSecurityTweet**(`event`): `string`
 
-Defined in: [ui/src/api-server/peekaboo-security-tweet.ts:75](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/peekaboo-security-tweet.ts#L75)
+Defined in: [ui/src/api-server/peekaboo-security-tweet.ts:75](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/peekaboo-security-tweet.ts#L75)
 
 The tweet body under Peek-a-Boo's `המפקד/ת … על …` prefix: the reason
 (the action and what triggers it) and the data recorded with it.

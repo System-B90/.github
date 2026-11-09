@@ -8,7 +8,7 @@
 
 > `const` **update**: (`eventData`, `options?`, `controller`, `iterationId?`, `origin`) => `Promise`\<\{ `after`: [`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md); `before`: [`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md); `stale?`: `boolean`; \}\> = `updateDbEvent`
 
-Defined in: [ui/src/api-server/db-event.ts:807](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/db-event.ts#L807)
+Defined in: [ui/src/api-server/db-event.ts:807](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/db-event.ts#L807)
 
 [setDbEvent](set.md) that also returns the stored copy it replaced, so callers
 that need the old version (the Google fan-out) don't read it again (#926).

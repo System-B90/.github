@@ -8,7 +8,7 @@
 
 > **TravelOutcome** = `"applied"` \| `"conflict"` \| `"empty"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:272](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L272)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:272](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L272)
 
 What one undo/redo did: `empty` when there was no step to take, `conflict`
 when every event in it had since been changed by someone else (so the step

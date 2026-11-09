@@ -8,7 +8,7 @@
 
 > **formatDateTimeChangeNote**(`from`, `to`): `string` \| `null`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:109](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L109)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:109](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L109)
 
 Builds a human-readable Hebrew note describing a startTime/endTime change,
 e.g. "הוקדם משעה 11:15 לשעה 10:15" / "נדחה משעה 10:15 לשעה 11:15" for a

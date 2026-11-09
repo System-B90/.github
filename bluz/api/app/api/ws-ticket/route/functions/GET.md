@@ -8,7 +8,7 @@
 
 > **GET**(): `Promise`\<`NextResponse`\<`unknown`\>\>
 
-Defined in: [ui/src/app/api/ws-ticket/route.ts:16](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/app/api/ws-ticket/route.ts#L16)
+Defined in: [ui/src/app/api/ws-ticket/route.ts:17](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/app/api/ws-ticket/route.ts#L17)
 
 Issues a session-server WebSocket ticket, scoped to the caller's clearance
 (#656).
@@ -17,7 +17,8 @@ The scope is signed, so the browser cannot upgrade itself, and it is what
 the session server gates on: a `hanich` socket may not register a session
 (which would put it on the untargeted broadcast, where course/outsider/room
 payloads travel) and may listen only to the student refresh channel, which
-carries nothing but empty pings.
+carries nothing but empty pings. A `checker` socket receives the staff
+wire but may not relay (lock presence) frames.
 
 ## Returns
 

@@ -8,7 +8,7 @@
 
 > **TemplateMatchTarget** = `object`
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:29](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/week-template-cut.ts#L29)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:29](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/week-template-cut.ts#L29)
 
 What the cut needs to know about a gantt event to match it (#997).
 
@@ -18,7 +18,7 @@ What the cut needs to know about a gantt event to match it (#997).
 
 > **courseNames**: `string`[]
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:34](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/week-template-cut.ts#L34)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:34](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/week-template-cut.ts#L34)
 
 Its shuffles and courses (with their ancestors), by name.
 
@@ -28,7 +28,7 @@ Its shuffles and courses (with their ancestors), by name.
 
 > `optional` **daily?**: `boolean`
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:39](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/week-template-cut.ts#L39)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:39](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/week-template-cut.ts#L39)
 
 Recurs every day. One template placement then stands for every weekday
 the template does not place it on itself.
@@ -39,7 +39,7 @@ the template does not place it on itself.
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:30](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/week-template-cut.ts#L30)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:30](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/week-template-cut.ts#L30)
 
 ***
 
@@ -47,6 +47,6 @@ Defined in: [ui/src/api-server/gantt/week-template-cut.ts:30](https://github.com
 
 > **names**: `string`[]
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:32](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/week-template-cut.ts#L32)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:32](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/week-template-cut.ts#L32)
 
 Every name the event may carry: its gantt title and its cut name.

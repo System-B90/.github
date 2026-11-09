@@ -8,7 +8,7 @@
 
 > **DropTargetRootData** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:20](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L20)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:20](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L20)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-t
 
 > **type**: `"ROOT_DROP"`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:21](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L21)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts:21](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/dnd-types.ts#L21)

@@ -8,7 +8,7 @@
 
 > **moduleEventTypeToCalendarType**(`type`): [`EventType`](../../../../api-shared/types/event/enumerations/EventType.md)
 
-Defined in: [ui/src/api-server/gantt/cut.ts:199](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/gantt/cut.ts#L199)
+Defined in: [ui/src/api-server/gantt/cut.ts:199](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/gantt/cut.ts#L199)
 
 Maps a Gantt module event type to its calendar counterpart. The enum values
 are aligned one-to-one (הרצאה/ע"ע/ל"ע/הפסקה/אחר), but the mapping is explicit so a

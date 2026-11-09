@@ -8,7 +8,7 @@
 
 > **createFastPointerWithin**(): `CollisionDetection`
 
-Defined in: [ui/src/components/base/dnd/fast-rect-intersection.ts:174](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/dnd/fast-rect-intersection.ts#L174)
+Defined in: [ui/src/components/base/dnd/fast-rect-intersection.ts:174](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/dnd/fast-rect-intersection.ts#L174)
 
 dnd-kit's `pointerWithin`, with the same caching as
 [createFastRectIntersection](createFastRectIntersection.md). For drags aimed with the pointer rather

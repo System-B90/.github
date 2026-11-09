@@ -8,7 +8,7 @@
 
 > **rateLimitKeyForRequest**(`request`): `string`
 
-Defined in: [ui/src/api-server/cli-handoff-rate-limit.ts:55](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/cli-handoff-rate-limit.ts#L55)
+Defined in: [ui/src/api-server/cli-handoff-rate-limit.ts:55](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/cli-handoff-rate-limit.ts#L55)
 
 Best-effort caller identity for rate limiting. Behind the app's own nginx
 (see AGENTS.md) `x-real-ip` is `$remote_addr`. The first `x-forwarded-for`

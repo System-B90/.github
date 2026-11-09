@@ -8,7 +8,7 @@
 
 > **describeHiveSyncChanges**(`changes`): `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:55](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L55)
+Defined in: [ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts:55](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/iteration-settings/values.ts#L55)
 
 Human summary of a manual Hive sync (#379). A sync that changed nothing is
 still a result worth stating — silent success reads as a no-op.

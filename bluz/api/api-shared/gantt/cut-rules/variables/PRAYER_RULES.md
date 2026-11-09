@@ -8,7 +8,7 @@
 
 > `const` **PRAYER\_RULES**: `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:354](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/gantt/cut-rules.ts#L354)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:354](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/gantt/cut-rules.ts#L354)
 
 Prayers (שחרית / מנחה / ערבית) come from the schedule settings in MongoDB and
 are handed to the pure planner by `api-server/gantt/cut.ts`.

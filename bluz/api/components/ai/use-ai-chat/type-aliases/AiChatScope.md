@@ -8,7 +8,7 @@
 
 > **AiChatScope** = `object`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:131](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L131)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:131](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/ai/use-ai-chat.ts#L131)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:131](https://github.com/System-
 
 > `optional` **curriculumId?**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:133](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L133)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:133](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/ai/use-ai-chat.ts#L133)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/ai/use-ai-chat.ts:133](https://github.com/System-
 
 > `optional` **iterationId?**: `string`
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:132](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/ai/use-ai-chat.ts#L132)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:132](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/ai/use-ai-chat.ts#L132)

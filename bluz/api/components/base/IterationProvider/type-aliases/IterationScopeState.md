@@ -8,7 +8,7 @@
 
 > **IterationScopeState** = `object`
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:36](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/IterationProvider.tsx#L36)
+Defined in: [ui/src/components/base/IterationProvider.tsx:54](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L54)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/IterationProvider.tsx:36](https://github.com
 
 > **currentIterationId**: [`IterationId`](../../../../api-shared/types/iteration/type-aliases/IterationId.md) \| `undefined`
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:45](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/IterationProvider.tsx#L45)
+Defined in: [ui/src/components/base/IterationProvider.tsx:70](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L70)
 
 Id of the current (writable) run, once `iterations` has loaded.
 
@@ -26,9 +26,10 @@ Id of the current (writable) run, once `iterations` has loaded.
 
 > **isReadOnlyIteration**: `boolean`
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:41](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/IterationProvider.tsx#L41)
+Defined in: [ui/src/components/base/IterationProvider.tsx:62](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L62)
 
-True while viewing a past iteration — every write route rejects it.
+True while viewing a past iteration, or always for a view-only
+(Checker) user — every write route rejects both.
 
 ***
 
@@ -36,7 +37,7 @@ True while viewing a past iteration — every write route rejects it.
 
 > **iterationId**: [`IterationId`](../../../../api-shared/types/iteration/type-aliases/IterationId.md) \| `undefined`
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:38](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/IterationProvider.tsx#L38)
+Defined in: [ui/src/components/base/IterationProvider.tsx:56](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L56)
 
 Active iteration. `undefined` ⇒ the current (writable) run.
 
@@ -46,9 +47,29 @@ Active iteration. `undefined` ⇒ the current (writable) run.
 
 > **iterations**: [`Iteration`](../../../../api-shared/types/iteration/type-aliases/Iteration.md)[]
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:43](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/IterationProvider.tsx#L43)
+Defined in: [ui/src/components/base/IterationProvider.tsx:68](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L68)
 
 All registered iterations, for pickers like `IterationSelector`.
+
+***
+
+### readOnlyHint
+
+> **readOnlyHint**: `string`
+
+Defined in: [ui/src/components/base/IterationProvider.tsx:64](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L64)
+
+Tooltip for a write control disabled by `isReadOnlyIteration`.
+
+***
+
+### readOnlyMessage
+
+> **readOnlyMessage**: `string`
+
+Defined in: [ui/src/components/base/IterationProvider.tsx:66](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L66)
+
+Refusal text for a write attempted under `isReadOnlyIteration`.
 
 ***
 
@@ -56,4 +77,4 @@ All registered iterations, for pickers like `IterationSelector`.
 
 > **setIterationId**: `Dispatch`\<`SetStateAction`\<[`IterationId`](../../../../api-shared/types/iteration/type-aliases/IterationId.md) \| `undefined`\>\>
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:39](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/base/IterationProvider.tsx#L39)
+Defined in: [ui/src/components/base/IterationProvider.tsx:57](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/IterationProvider.tsx#L57)

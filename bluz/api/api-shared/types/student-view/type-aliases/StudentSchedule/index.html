@@ -947,6 +947,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#owncourses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ownCourses
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -977,9 +988,9 @@
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/student-view</a> / StudentSchedule</p>
 <h1 id="type-alias-studentschedule">Type Alias: StudentSchedule<a class="headerlink" href="#type-alias-studentschedule" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>StudentSchedule</strong> = <code>Omit</code>\&lt;<a href="../ApiStudentScheduleGetResponse/"><code>ApiStudentScheduleGetResponse</code></a>, <code>"courseGroups"</code> | <code>"courseNames"</code> | <code>"courseOptions"</code> | <code>"events"</code> | <code>"roomNames"</code>&gt; &amp; <code>object</code></p>
+<p><strong>StudentSchedule</strong> = <code>Omit</code>\&lt;<a href="../ApiStudentScheduleGetResponse/"><code>ApiStudentScheduleGetResponse</code></a>, <code>"courseGroups"</code> | <code>"courseNames"</code> | <code>"courseOptions"</code> | <code>"events"</code> | <code>"ownCourses"</code> | <code>"roomNames"</code>&gt; &amp; <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/types/student-view.ts#L101">ui/src/api-shared/types/student-view.ts:101</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L111">ui/src/api-shared/types/student-view.ts:111</a></p>
 <p>Client-side result of <code>apiGetStudentSchedule</code>, names resolved.</p>
 <h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
 <h3 id="courseoptions">courseOptions<a class="headerlink" href="#courseoptions" title="Permanent link">&para;</a></h3>
@@ -989,6 +1000,10 @@
 <h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>events</strong>: <a href="../StudentEvent/"><code>StudentEvent</code></a>[]</p>
+</blockquote>
+<h3 id="owncourses">ownCourses<a class="headerlink" href="#owncourses" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>ownCourses</strong>: <code>string</code>[]</p>
 </blockquote>
 
 

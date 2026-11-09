@@ -8,11 +8,15 @@
 
 > **requireStaffAuth**(): `Promise`\<[`RequestAuth`](../type-aliases/RequestAuth.md)\>
 
-Defined in: [ui/src/api-server/session-user.ts:203](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-server/session-user.ts#L203)
+Defined in: [ui/src/api-server/session-user.ts:229](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/session-user.ts#L229)
 
 Gates a route to Segel/Admin clearance (#199), returning how the caller
 authenticated. Every request re-checks the JWT (or token), not just the
 one-time sign-in gate in `sso.ts`'s `signInCallback`.
+
+A Checker passes too, but only for a read (GET/HEAD) outside
+`CHECKER_DENIED_API_PREFIXES` — see `api-shared/clearance.ts`. The check is
+on the user's clearance, so it holds for an access token a Checker holds.
 
 ## Returns
 

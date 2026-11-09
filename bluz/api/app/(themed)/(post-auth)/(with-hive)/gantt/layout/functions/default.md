@@ -6,9 +6,13 @@
 
 # Function: default()
 
-> **default**(`__namedParameters`): `Element`
+> **default**(`__namedParameters`): `Promise`\<`Element`\>
 
-Defined in: [ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx:5](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx#L5)
+Defined in: [ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx:11](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx#L11)
+
+The gantt is staff-only: a Checker (read-only schedule viewer) is sent back
+to the schedule. Not a data gate — every gantt API refuses a Checker on its
+own (`requireStaffAuth`, `proxy.ts`) — just keeps it off a page it cannot use.
 
 ## Parameters
 
@@ -18,4 +22,4 @@ Defined in: [ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx:5](htt
 
 ## Returns
 
-`Element`
+`Promise`\<`Element`\>

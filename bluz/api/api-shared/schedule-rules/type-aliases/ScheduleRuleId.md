@@ -8,4 +8,4 @@
 
 > **ScheduleRuleId** = *typeof* [`SCHEDULE_RULES`](../variables/SCHEDULE_RULES.md)\[`number`\]\[`"id"`\]
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:584](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/api-shared/schedule-rules.ts#L584)
+Defined in: [ui/src/api-shared/schedule-rules.ts:584](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-rules.ts#L584)

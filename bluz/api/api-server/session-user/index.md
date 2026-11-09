@@ -16,5 +16,6 @@
 - [getRequestAuth](functions/getRequestAuth.md)
 - [getSessionUser](functions/getSessionUser.md)
 - [getStaffSession](functions/getStaffSession.md)
+- [getStaffShellSession](functions/getStaffShellSession.md)
 - [requireStaffAuth](functions/requireStaffAuth.md)
 - [requireStaffSession](functions/requireStaffSession.md)

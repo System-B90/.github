@@ -8,7 +8,7 @@
 
 > **moveTargets**(`courses`, `course`, `searchQuery?`): [`CourseOption`](../../../../../../base/course-options/type-aliases/CourseOption.md)[]
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:33](https://github.com/System-B90/Bluz/blob/1023d781d8ebc75af95baadcabc62a9e9bf002f3/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L33)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:33](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L33)
 
 Where `course` can move to, as course-tree rows: every course except the
 course itself, its descendants (which would make a cycle) and its current
