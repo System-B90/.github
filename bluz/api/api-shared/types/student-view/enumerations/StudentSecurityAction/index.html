@@ -959,6 +959,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#future_date_probe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FUTURE_DATE_PROBE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#header_tampering" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1042,7 +1053,7 @@
 <hr />
 <p><a href="../../../../../">TypeDoc API</a> / <a href="../../">api-shared/types/student-view</a> / StudentSecurityAction</p>
 <h1 id="enumeration-studentsecurityaction">Enumeration: StudentSecurityAction<a class="headerlink" href="#enumeration-studentsecurityaction" title="Permanent link">&para;</a></h1>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L148">ui/src/api-shared/types/student-view.ts:148</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L148">ui/src/api-shared/types/student-view.ts:148</a></p>
 <p>Suspected malicious attempts recorded against a student's daily time record.
 Each value names <em>what</em> was tried; the specifics ride in <code>detail</code>.</p>
 <h2 id="enumeration-members">Enumeration Members<a class="headerlink" href="#enumeration-members" title="Permanent link">&para;</a></h2>
@@ -1050,7 +1061,7 @@ Each value names <em>what</em> was tried; the specifics ride in <code>detail</co
 <blockquote>
 <p><strong>CLOCK_TAMPERING</strong>: <code>"clock-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L172">ui/src/api-shared/types/student-view.ts:172</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L172">ui/src/api-shared/types/student-view.ts:172</a></p>
 <p>The board's device clock is more than <a href="../../variables/MAX_STUDENT_CLOCK_SKEW_MS/">MAX_STUDENT_CLOCK_SKEW_MS</a>
 off the server's (or the clock header is not a timestamp): a student
 winding the clock to reach another day.</p>
@@ -1059,21 +1070,30 @@ winding the clock to reach another day.</p>
 <blockquote>
 <p><strong>ENGAGEMENT_TAMPERING</strong>: <code>"engagement-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L156">ui/src/api-shared/types/student-view.ts:156</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L156">ui/src/api-shared/types/student-view.ts:156</a></p>
 <p>A malformed engagement report — a body the board cannot produce.</p>
 <hr />
 <h3 id="forged_session_token">FORGED_SESSION_TOKEN<a class="headerlink" href="#forged_session_token" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>FORGED_SESSION_TOKEN</strong>: <code>"forged-session-token"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L158">ui/src/api-shared/types/student-view.ts:158</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L158">ui/src/api-shared/types/student-view.ts:158</a></p>
 <p>A session cookie that fails decryption: forged or altered, not merely expired.</p>
+<hr />
+<h3 id="future_date_probe">FUTURE_DATE_PROBE<a class="headerlink" href="#future_date_probe" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>FUTURE_DATE_PROBE</strong>: <code>"future-date-probe"</code></p>
+</blockquote>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L178">ui/src/api-shared/types/student-view.ts:178</a></p>
+<p>A page or API request whose <code>?date=</code> lies more than
+<a href="../../variables/FUTURE_DATE_PROBE_MS/">FUTURE_DATE_PROBE_MS</a> ahead: reaching for a schedule that is
+not out yet. Seen in <code>proxy.ts</code>, so pages count, not only APIs.</p>
 <hr />
 <h3 id="header_tampering">HEADER_TAMPERING<a class="headerlink" href="#header_tampering" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>HEADER_TAMPERING</strong>: <code>"header-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L166">ui/src/api-shared/types/student-view.ts:166</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L166">ui/src/api-shared/types/student-view.ts:166</a></p>
 <p>Headers a browser never sends — Next.js internals, verb/path overrides,
 spoofed client addresses. nginx strips them and names them in
 <a href="../../variables/HEADER_TAMPERING_HEADER/">HEADER_TAMPERING_HEADER</a>.</p>
@@ -1082,28 +1102,28 @@ spoofed client addresses. nginx strips them and names them in
 <blockquote>
 <p><strong>INVALID_ACCESS_TOKEN</strong>: <code>"invalid-access-token"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L160">ui/src/api-shared/types/student-view.ts:160</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L160">ui/src/api-shared/types/student-view.ts:160</a></p>
 <p>A bearer token that is not a live Bluz access token.</p>
 <hr />
 <h3 id="param_tampering">PARAM_TAMPERING<a class="headerlink" href="#param_tampering" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>PARAM_TAMPERING</strong>: <code>"param-tampering"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L154">ui/src/api-shared/types/student-view.ts:154</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L154">ui/src/api-shared/types/student-view.ts:154</a></p>
 <p>A Hanich session sent query parameters the board never sends (<code>?date=</code>, <code>?it=</code>, …).</p>
 <hr />
 <h3 id="staff_api_probe">STAFF_API_PROBE<a class="headerlink" href="#staff_api_probe" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>STAFF_API_PROBE</strong>: <code>"staff-api-probe"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L150">ui/src/api-shared/types/student-view.ts:150</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L150">ui/src/api-shared/types/student-view.ts:150</a></p>
 <p>A Hanich session called a staff-only API.</p>
 <hr />
 <h3 id="unknown_route">UNKNOWN_ROUTE<a class="headerlink" href="#unknown_route" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>UNKNOWN_ROUTE</strong>: <code>"unknown-route"</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L152">ui/src/api-shared/types/student-view.ts:152</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L152">ui/src/api-shared/types/student-view.ts:152</a></p>
 <p>A Hanich session requested an API path that does not exist (dir-busting).</p>
 
 

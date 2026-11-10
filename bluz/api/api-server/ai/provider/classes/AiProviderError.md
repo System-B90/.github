@@ -6,7 +6,7 @@
 
 # Class: AiProviderError
 
-Defined in: [ui/src/api-server/ai/provider.ts:83](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/provider.ts#L83)
+Defined in: [ui/src/api-server/ai/provider.ts:83](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/provider.ts#L83)
 
 An upstream model backend failed or refused. Distinct from
 `ClientApiError`: the caller's request was well-formed, the dependency was
@@ -27,7 +27,7 @@ not, so this maps to 502 rather than 400.
 
 > **new AiProviderError**(`message`, `status?`): `AiProviderError`
 
-Defined in: [ui/src/api-server/ai/provider.ts:87](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/provider.ts#L87)
+Defined in: [ui/src/api-server/ai/provider.ts:87](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/provider.ts#L87)
 
 #### Parameters
 
@@ -53,4 +53,4 @@ Defined in: [ui/src/api-server/ai/provider.ts:87](https://github.com/System-B90/
 
 > `readonly` `optional` **status?**: `number`
 
-Defined in: [ui/src/api-server/ai/provider.ts:85](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/provider.ts#L85)
+Defined in: [ui/src/api-server/ai/provider.ts:85](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/provider.ts#L85)

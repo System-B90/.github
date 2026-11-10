@@ -8,7 +8,7 @@
 
 > **SnapshotRestoreDialog**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/SnapshotRestoreDialog.tsx:61](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/calendar/calendar/SnapshotRestoreDialog.tsx#L61)
+Defined in: [ui/src/components/schedule/calendar/calendar/SnapshotRestoreDialog.tsx:61](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/schedule/calendar/calendar/SnapshotRestoreDialog.tsx#L61)
 
 Picks which of a snapshot's differences to restore: every event the
 snapshot and the live schedule disagree on, each with what a restore does

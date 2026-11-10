@@ -8,7 +8,7 @@
 
 > **ApiStudentScheduleGetResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:69](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L69)
+Defined in: [ui/src/api-shared/types/student-view.ts:69](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L69)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:69](https://github.com/Syst
 
 > **calendarDayEndTime**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:101](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L101)
+Defined in: [ui/src/api-shared/types/student-view.ts:101](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L101)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:101](https://github.com/Sys
 
 > **calendarDayStartTime**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:100](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L100)
+Defined in: [ui/src/api-shared/types/student-view.ts:100](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L100)
 
 The staff calendar's own grid bounds (`HH:mm`), so the student board
 shows the same window instead of a bare 00:00-24:00 day. Carried on the
@@ -36,7 +36,7 @@ response because the student bundle mounts no settings provider.
 
 > **courseGroups**: `number`[][]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:76](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L76)
+Defined in: [ui/src/api-shared/types/student-view.ts:76](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L76)
 
 Distinct course-name index sets referenced by events.
 
@@ -46,7 +46,7 @@ Distinct course-name index sets referenced by events.
 
 > **courseNames**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:74](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L74)
+Defined in: [ui/src/api-shared/types/student-view.ts:74](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L74)
 
 Course / shuffle display names referenced by `courseGroups`.
 
@@ -56,7 +56,7 @@ Course / shuffle display names referenced by `courseGroups`.
 
 > **courseOptions**: `number`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:82](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L82)
+Defined in: [ui/src/api-shared/types/student-view.ts:82](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L82)
 
 The board's filter options, indexing `courseNames` (#1027): courses the
 day's events name plus their parents, and only the shuffles an event
@@ -68,7 +68,7 @@ names outright. Never a name `courseNames` would not carry anyway.
 
 > **date**: `string`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:71](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L71)
+Defined in: [ui/src/api-shared/types/student-view.ts:71](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L71)
 
 The day the events belong to, `yyyy-MM-dd` in the app timezone.
 
@@ -78,7 +78,7 @@ The day the events belong to, `yyyy-MM-dd` in the app timezone.
 
 > **events**: [`StudentEventWire`](StudentEventWire.md)[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:72](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L72)
+Defined in: [ui/src/api-shared/types/student-view.ts:72](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L72)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [ui/src/api-shared/types/student-view.ts:72](https://github.com/Syst
 
 > **ownCourses**: `number`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:92](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L92)
+Defined in: [ui/src/api-shared/types/student-view.ts:92](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L92)
 
 The viewer's own shuffles, indexing `courseNames`: the board's default
 selection. Resolved server-side from the student's own Hive group
@@ -102,7 +102,7 @@ defaults to every event.
 
 > **refreshSeconds**: `number`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:107](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L107)
+Defined in: [ui/src/api-shared/types/student-view.ts:107](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L107)
 
 How often the board refetches, in seconds (staff-set, else the
 deployment default; `0` = off). On every response so a change reaches
@@ -114,6 +114,6 @@ open boards at their next refetch.
 
 > **roomNames**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-view.ts:94](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L94)
+Defined in: [ui/src/api-shared/types/student-view.ts:94](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L94)
 
 Room display names referenced by `events[].rooms`.

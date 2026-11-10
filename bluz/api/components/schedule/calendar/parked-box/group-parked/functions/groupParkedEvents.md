@@ -8,7 +8,7 @@
 
 > **groupParkedEvents**(`events`, `rank`, `nameOf`): [`ParkedGroup`](../type-aliases/ParkedGroup.md)[]
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:20](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L20)
+Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:20](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L20)
 
 Groups parked events by subject (#981). Groups follow the subjects' order
 in the gantt; subjects the gantt doesn't rank come after, by name, and

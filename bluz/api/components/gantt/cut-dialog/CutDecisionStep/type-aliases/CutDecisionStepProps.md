@@ -8,7 +8,7 @@
 
 > **CutDecisionStepProps** = `object`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:71](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L71)
+Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:71](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L71)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:71](https://
 
 > **answer**: [`CutDecisionAnswer`](CutDecisionAnswer.md) \| `undefined`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:73](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L73)
+Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:73](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L73)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:73](https://
 
 > **decision**: [`CutDecision`](../../../../../api-shared/gantt/cut-planner/type-aliases/CutDecision.md)
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:72](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L72)
+Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:72](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L72)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:72](https://
 
 > **onAnswer**: (`answer`) => `void`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:74](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L74)
+Defined in: [ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx:74](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/cut-dialog/CutDecisionStep.tsx#L74)
 
 #### Parameters
 

@@ -1281,7 +1281,14 @@ Unattributable attempts (forged credentials) go under user id <code>anonymous</c
 fire-and-forget (<code>ui/src/api-server/student-security-log.ts</code>) and never changes the
 response. Each attempt is also tweeted, in Hebrew, to Peek-a-Boo's staff-only tweet
 channel (<code>ui/src/api-server/peekaboo-security-tweet.ts</code>) as "מערכת בלוז", with the
-reason and the recorded data, when <code>PEEKABOO_URL</code> and the Hive service account are set.</p>
+reason and the recorded data, when <code>PEEKABOO_URL</code> and the Hive service account are set.
+Startup logs whether the tweets are on (<code>[student-security] Peek-a-Boo tweets enabled</code> /
+<code>disabled</code>). Peek-a-Boo's certificate is not verified, for that destination only, since it
+is usually self-signed; <code>PEEKABOO_TLS_VERIFY=true</code> turns verification back on.</p>
+<p>Staff read the records in the <strong>מעקב חניכים</strong> dialog on the student-view preview bar: per
+day, each student's focused time, addresses and attempts. It reads the staff route
+<code>GET /api/student-monitor?date=</code> (<code>requireStaffSession</code>, closed to a Checker), never the
+student surface.</p>
 <p>Every address the board reports from is also kept on that record as <code>ips</code>, so an
 <code>anonymous</code> attempt can be matched to a student by address. Addresses come from nginx
 only: <code>X-Real-IP</code> (which nginx overwrites), else the <em>last</em> <code>X-Forwarded-For</code> entry —
@@ -1321,6 +1328,10 @@ never the first, which is whatever the client claimed.</p>
 <tr>
 <td><code>clock-tampering</code></td>
 <td>The board's device clock (<code>X-Bluz-Client-Time</code>, sent with every <code>/api/server-time</code> request) is more than 10 minutes off the server's, or the header is not a timestamp. At most once per student per hour. A missing header is not logged. Nothing is computed from the header.</td>
+</tr>
+<tr>
+<td><code>future-date-probe</code></td>
+<td>Any page or API request (<code>proxy.ts</code>) carrying a <code>?date=</code> more than 24 hours ahead — a bare <code>yyyy-MM-dd</code> counts from that day's Jerusalem midnight. Staff and Checkers skipped; unauthenticated callers logged as <code>anonymous</code>. The schedule route is skipped: it logs the same request as <code>param-tampering</code>.</td>
 </tr>
 <tr>
 <td><code>header-tampering</code></td>

@@ -6,7 +6,7 @@
 
 # Class: HiveSessionRequiredError
 
-Defined in: [ui/src/api-shared/errors.ts:93](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/errors.ts#L93)
+Defined in: [ui/src/api-shared/errors.ts:93](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/errors.ts#L93)
 
 Hive was asked for on behalf of a personal access token. Tokens carry no
 Hive credentials of their own, and borrowing the service account would hand
@@ -23,7 +23,7 @@ Served as 403 with this message, unlike a generic ForbiddenError.
 
 > **new HiveSessionRequiredError**(`message?`): `HiveSessionRequiredError`
 
-Defined in: [ui/src/api-shared/errors.ts:95](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/errors.ts#L95)
+Defined in: [ui/src/api-shared/errors.ts:95](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/errors.ts#L95)
 
 #### Parameters
 

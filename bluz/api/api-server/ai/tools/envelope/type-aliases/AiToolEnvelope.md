@@ -8,7 +8,7 @@
 
 > **AiToolEnvelope** = `object`
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:21](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L21)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:21](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L21)
 
 What the model receives as the content of a `tool` message.
 
@@ -18,7 +18,7 @@ What the model receives as the content of a `tool` message.
 
 > `optional` **data?**: `unknown`
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:26](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L26)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:26](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L26)
 
 Present on success.
 
@@ -28,7 +28,7 @@ Present on success.
 
 > `optional` **error?**: `object`
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:28](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L28)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:28](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L28)
 
 Present on failure.
 
@@ -46,7 +46,7 @@ Present on failure.
 
 > **next**: `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:34](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L34)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:34](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L34)
 
 Imperative instructions: what to do with this result.
 
@@ -56,7 +56,7 @@ Imperative instructions: what to do with this result.
 
 > `optional` **notes?**: `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:32](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L32)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:32](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L32)
 
 Transport notes the model must know about, e.g. truncation.
 
@@ -66,7 +66,7 @@ Transport notes the model must know about, e.g. truncation.
 
 > **ok**: `boolean`
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:22](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L22)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:22](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L22)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [ui/src/api-server/ai/tools/envelope.ts:22](https://github.com/Syste
 
 > `optional` **retryable?**: `boolean`
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:30](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L30)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:30](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L30)
 
 Whether calling again — with corrected arguments — can succeed.
 
@@ -84,7 +84,7 @@ Whether calling again — with corrected arguments — can succeed.
 
 > **summary**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:24](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L24)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:24](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L24)
 
 ***
 
@@ -92,4 +92,4 @@ Defined in: [ui/src/api-server/ai/tools/envelope.ts:24](https://github.com/Syste
 
 > **tool**: `string`
 
-Defined in: [ui/src/api-server/ai/tools/envelope.ts:23](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-server/ai/tools/envelope.ts#L23)
+Defined in: [ui/src/api-server/ai/tools/envelope.ts:23](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/ai/tools/envelope.ts#L23)

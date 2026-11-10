@@ -8,7 +8,7 @@
 
 > **orchestratedFirst**\<`TId`\>(`syllabusIds`, `userId`, `state`): `TId`[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts:27](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts#L27)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts:27](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/curriculum-view/tabs/syllabuses-tab/orchestrated-first.ts#L27)
 
 Stable partition: syllabuses the user orchestrates first, each group keeping
 its existing order (#748). Returns the input array untouched when nothing moves.

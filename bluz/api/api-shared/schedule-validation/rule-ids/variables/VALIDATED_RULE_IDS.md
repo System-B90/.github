@@ -8,7 +8,7 @@
 
 > `const` **VALIDATED\_RULE\_IDS**: readonly \[`"R-10"`, `"R-11"`, `"R-12"`, `"R-20"`, `"R-21"`, `"R-23"`, `"R-24"`, `"R-25"`, `"R-26"`, `"R-27"`, `"R-32"`, `"R-40"`, `"R-41"`, `"R-42"`, `"R-47"`, `"R-49b"`, `"R-49d"`, `"R-48a"`, `"R-50"`, `"R-51"`, `"R-55"`, `"R-57"`, `"R-58"`, `"R-60"`, `"R-64"`, `"R-65"`, `"R-71"`, `"R-68"`, `"R-69"`, `"R-6A"`\]
 
-Defined in: [ui/src/api-shared/schedule-validation/rule-ids.ts:17](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/schedule-validation/rule-ids.ts#L17)
+Defined in: [ui/src/api-shared/schedule-validation/rule-ids.ts:17](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/schedule-validation/rule-ids.ts#L17)
 
 The rules the schedule validator checks, in the order it runs them (the
 rules page order). Kept apart from the checks so the client can list them

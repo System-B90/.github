@@ -14,3 +14,4 @@
 
 - [addStudentEngagementSeconds](functions/addStudentEngagementSeconds.md)
 - [getStudentEngagement](functions/getStudentEngagement.md)
+- [listStudentEngagementForDate](functions/listStudentEngagementForDate.md)

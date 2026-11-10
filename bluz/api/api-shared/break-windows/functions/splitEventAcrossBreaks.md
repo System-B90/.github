@@ -8,7 +8,7 @@
 
 > **splitEventAcrossBreaks**(`event`, `windows`, `options?`): [`Interval`](../../interval-layout/type-aliases/Interval.md)[]
 
-Defined in: [ui/src/api-shared/break-windows.ts:189](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/break-windows.ts#L189)
+Defined in: [ui/src/api-shared/break-windows.ts:189](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/break-windows.ts#L189)
 
 Lays an event out across the breaks that interrupt it.
 

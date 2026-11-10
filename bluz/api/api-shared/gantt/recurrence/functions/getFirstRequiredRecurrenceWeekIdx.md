@@ -8,7 +8,7 @@
 
 > **getFirstRequiredRecurrenceWeekIdx**(`recurrenceStartDate`, `weeks`, `dateOf`): `number`
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:165](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/gantt/recurrence.ts#L165)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:165](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/gantt/recurrence.ts#L165)
 
 Index of the first timeline week the recurrence must cover, given its
 configured start date (#468). Returns 0 when there is no start date or it

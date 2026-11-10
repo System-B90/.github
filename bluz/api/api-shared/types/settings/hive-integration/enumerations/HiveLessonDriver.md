@@ -6,7 +6,7 @@
 
 # Enumeration: HiveLessonDriver
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:7](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/settings/hive-integration.ts#L7)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:7](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/settings/hive-integration.ts#L7)
 
 Who opens Hive lessons when a Bluz event goes live. One value, so the two
 paths can never run together and double-assign a class.
@@ -17,7 +17,7 @@ paths can never run together and double-assign a class.
 
 > **ACTIVATOR**: `"activator"`
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:9](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/settings/hive-integration.ts#L9)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:9](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/settings/hive-integration.ts#L9)
 
 Bluz's own 30s activator calls `classes/{id}/lesson/` (the default).
 
@@ -27,7 +27,7 @@ Bluz's own 30s activator calls `classes/{id}/lesson/` (the default).
 
 > **ICS\_FEED**: `"icsFeed"`
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:14](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/settings/hive-integration.ts#L14)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:14](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/settings/hive-integration.ts#L14)
 
 Bluz publishes its schedule as ICS for Hive's external schedule mode
 and Hive's `update_schedule` task assigns the lessons itself.

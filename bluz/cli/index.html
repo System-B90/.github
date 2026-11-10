@@ -7624,15 +7624,60 @@ is clamped and the daily total capped server-side.</p>
 </tr>
 </tbody>
 </table>
+<h5 id="bluz-student-view-monitor"><code>bluz student-view monitor</code><a class="headerlink" href="#bluz-student-view-monitor" title="Permanent link">&para;</a></h5>
+<p>Every student's focused board time and suspected attempts (staff only).</p>
+<p>Mirrors the staff student monitor: students with attempts first, then by
+focused time. A Checker session is refused.</p>
+<h6 id="usage_111">Usage<a class="headerlink" href="#usage_111" title="Permanent link">&para;</a></h6>
+<p><code>bluz student-view monitor [OPTIONS]</code></p>
+<h6 id="arguments_111">Arguments<a class="headerlink" href="#arguments_111" title="Permanent link">&para;</a></h6>
+<p><em>No arguments available</em></p>
+<h6 id="options_111">Options<a class="headerlink" href="#options_111" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--date <str></code></td>
+<td>Day to show (ISO). Defaults to the server's today.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--limit <int></code></td>
+<td>Cap the number of rows shown.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--offset <int></code></td>
+<td>Skip this many rows before showing.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>--help</code></td>
+<td>Show this message and exit.</td>
+<td>No</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 <h5 id="bluz-student-view-push-reload"><code>bluz student-view push-reload</code><a class="headerlink" href="#bluz-student-view-push-reload" title="Permanent link">&para;</a></h5>
 <p>Force every open student board to reload now (staff only).</p>
 <p>Sent over the students' websocket; each board reloads after a short
 random delay so they do not all hit the server at once.</p>
-<h6 id="usage_111">Usage<a class="headerlink" href="#usage_111" title="Permanent link">&para;</a></h6>
+<h6 id="usage_112">Usage<a class="headerlink" href="#usage_112" title="Permanent link">&para;</a></h6>
 <p><code>bluz student-view push-reload [OPTIONS]</code></p>
-<h6 id="arguments_111">Arguments<a class="headerlink" href="#arguments_111" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_112">Arguments<a class="headerlink" href="#arguments_112" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_111">Options<a class="headerlink" href="#options_111" title="Permanent link">&para;</a></h6>
+<h6 id="options_112">Options<a class="headerlink" href="#options_112" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7655,9 +7700,9 @@ random delay so they do not all hit the server at once.</p>
 <p>Show or set how often every student board refreshes (staff only).</p>
 <p>Boards do not follow schedule edits live; they refetch on this interval.
 Mirrors the interval field on the student preview bar.</p>
-<h6 id="usage_112">Usage<a class="headerlink" href="#usage_112" title="Permanent link">&para;</a></h6>
+<h6 id="usage_113">Usage<a class="headerlink" href="#usage_113" title="Permanent link">&para;</a></h6>
 <p><code>bluz student-view refresh-interval [OPTIONS][seconds]</code></p>
-<h6 id="arguments_112">Arguments<a class="headerlink" href="#arguments_112" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_113">Arguments<a class="headerlink" href="#arguments_113" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7674,7 +7719,7 @@ Mirrors the interval field on the student preview bar.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_112">Options<a class="headerlink" href="#options_112" title="Permanent link">&para;</a></h6>
+<h6 id="options_113">Options<a class="headerlink" href="#options_113" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7695,11 +7740,11 @@ Mirrors the interval field on the student preview bar.</p>
 </table>
 <h3 id="bluz-ai"><code>bluz ai</code><a class="headerlink" href="#bluz-ai" title="Permanent link">&para;</a></h3>
 <p>The Bluz AI assistant.</p>
-<h4 id="usage_113">Usage<a class="headerlink" href="#usage_113" title="Permanent link">&para;</a></h4>
+<h4 id="usage_114">Usage<a class="headerlink" href="#usage_114" title="Permanent link">&para;</a></h4>
 <p><code>bluz ai [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_113">Arguments<a class="headerlink" href="#arguments_113" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_114">Arguments<a class="headerlink" href="#arguments_114" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_113">Options<a class="headerlink" href="#options_113" title="Permanent link">&para;</a></h4>
+<h4 id="options_114">Options<a class="headerlink" href="#options_114" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -7723,11 +7768,11 @@ Mirrors the interval field on the student preview bar.</p>
 <p>What the assistant can do, and whether AI is configured at all.</p>
 <p>Reports <code>enabled: false</code> on a deployment with no model key rather than
 failing — the same signal the UI uses to hide the launcher.</p>
-<h6 id="usage_114">Usage<a class="headerlink" href="#usage_114" title="Permanent link">&para;</a></h6>
+<h6 id="usage_115">Usage<a class="headerlink" href="#usage_115" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai tools [OPTIONS]</code></p>
-<h6 id="arguments_114">Arguments<a class="headerlink" href="#arguments_114" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_115">Arguments<a class="headerlink" href="#arguments_115" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_114">Options<a class="headerlink" href="#options_114" title="Permanent link">&para;</a></h6>
+<h6 id="options_115">Options<a class="headerlink" href="#options_115" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7750,11 +7795,11 @@ failing — the same signal the UI uses to hide the launcher.</p>
 <p>List the models the configured AI backend offers.</p>
 <p>Use it to pick a valid <code>AI_MODEL</code>; an empty list comes with the reason
 (e.g. an untrusted certificate or a backend without <code>/models</code>).</p>
-<h6 id="usage_115">Usage<a class="headerlink" href="#usage_115" title="Permanent link">&para;</a></h6>
+<h6 id="usage_116">Usage<a class="headerlink" href="#usage_116" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai models [OPTIONS]</code></p>
-<h6 id="arguments_115">Arguments<a class="headerlink" href="#arguments_115" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_116">Arguments<a class="headerlink" href="#arguments_116" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_115">Options<a class="headerlink" href="#options_115" title="Permanent link">&para;</a></h6>
+<h6 id="options_116">Options<a class="headerlink" href="#options_116" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7777,11 +7822,11 @@ failing — the same signal the UI uses to hide the launcher.</p>
 <p>Run the assistant self-test against a fabricated fixture.</p>
 <p>Throttled server-side to once an hour per user (a run costs real tokens),
 which comes back as an <code>AiRateLimitError</code>.</p>
-<h6 id="usage_116">Usage<a class="headerlink" href="#usage_116" title="Permanent link">&para;</a></h6>
+<h6 id="usage_117">Usage<a class="headerlink" href="#usage_117" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai benchmark [OPTIONS]</code></p>
-<h6 id="arguments_116">Arguments<a class="headerlink" href="#arguments_116" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_117">Arguments<a class="headerlink" href="#arguments_117" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_116">Options<a class="headerlink" href="#options_116" title="Permanent link">&para;</a></h6>
+<h6 id="options_117">Options<a class="headerlink" href="#options_117" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7806,9 +7851,9 @@ which comes back as an <code>AiRateLimitError</code>.</p>
 Re-run with <code>--approve &lt;toolCallId&gt;</code> (plus <code>--messages</code> carrying the
 transcript the <code>done</code> frame returned) to let one through, or pass <code>--yes</code>
 to approve and resume in a single invocation.</p>
-<h6 id="usage_117">Usage<a class="headerlink" href="#usage_117" title="Permanent link">&para;</a></h6>
+<h6 id="usage_118">Usage<a class="headerlink" href="#usage_118" title="Permanent link">&para;</a></h6>
 <p><code>bluz ai chat [OPTIONS][prompt]</code></p>
-<h6 id="arguments_117">Arguments<a class="headerlink" href="#arguments_117" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_118">Arguments<a class="headerlink" href="#arguments_118" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7825,7 +7870,7 @@ to approve and resume in a single invocation.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="options_117">Options<a class="headerlink" href="#options_117" title="Permanent link">&para;</a></h6>
+<h6 id="options_118">Options<a class="headerlink" href="#options_118" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>
@@ -7882,11 +7927,11 @@ to approve and resume in a single invocation.</p>
 </table>
 <h3 id="bluz-plugin"><code>bluz plugin</code><a class="headerlink" href="#bluz-plugin" title="Permanent link">&para;</a></h3>
 <p>The bluz Claude Code plugin served by the Bluz instance.</p>
-<h4 id="usage_118">Usage<a class="headerlink" href="#usage_118" title="Permanent link">&para;</a></h4>
+<h4 id="usage_119">Usage<a class="headerlink" href="#usage_119" title="Permanent link">&para;</a></h4>
 <p><code>bluz plugin [OPTIONS] COMMAND [ARGS]...</code></p>
-<h4 id="arguments_118">Arguments<a class="headerlink" href="#arguments_118" title="Permanent link">&para;</a></h4>
+<h4 id="arguments_119">Arguments<a class="headerlink" href="#arguments_119" title="Permanent link">&para;</a></h4>
 <p><em>No arguments available</em></p>
-<h4 id="options_118">Options<a class="headerlink" href="#options_118" title="Permanent link">&para;</a></h4>
+<h4 id="options_119">Options<a class="headerlink" href="#options_119" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -7908,11 +7953,11 @@ to approve and resume in a single invocation.</p>
 <h4 id="subcommands_18">Subcommands<a class="headerlink" href="#subcommands_18" title="Permanent link">&para;</a></h4>
 <h5 id="bluz-plugin-install"><code>bluz plugin install</code><a class="headerlink" href="#bluz-plugin-install" title="Permanent link">&para;</a></h5>
 <p>Download the plugin, register it as marketplace <code>bluz</code>, install <code>bluz@bluz</code>.</p>
-<h6 id="usage_119">Usage<a class="headerlink" href="#usage_119" title="Permanent link">&para;</a></h6>
+<h6 id="usage_120">Usage<a class="headerlink" href="#usage_120" title="Permanent link">&para;</a></h6>
 <p><code>bluz plugin install [OPTIONS]</code></p>
-<h6 id="arguments_119">Arguments<a class="headerlink" href="#arguments_119" title="Permanent link">&para;</a></h6>
+<h6 id="arguments_120">Arguments<a class="headerlink" href="#arguments_120" title="Permanent link">&para;</a></h6>
 <p><em>No arguments available</em></p>
-<h6 id="options_119">Options<a class="headerlink" href="#options_119" title="Permanent link">&para;</a></h6>
+<h6 id="options_120">Options<a class="headerlink" href="#options_120" title="Permanent link">&para;</a></h6>
 <table>
 <thead>
 <tr>

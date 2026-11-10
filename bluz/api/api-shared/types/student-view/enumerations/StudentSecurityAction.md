@@ -6,7 +6,7 @@
 
 # Enumeration: StudentSecurityAction
 
-Defined in: [ui/src/api-shared/types/student-view.ts:148](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L148)
+Defined in: [ui/src/api-shared/types/student-view.ts:148](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L148)
 
 Suspected malicious attempts recorded against a student's daily time record.
 Each value names *what* was tried; the specifics ride in `detail`.
@@ -17,7 +17,7 @@ Each value names *what* was tried; the specifics ride in `detail`.
 
 > **CLOCK\_TAMPERING**: `"clock-tampering"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:172](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L172)
+Defined in: [ui/src/api-shared/types/student-view.ts:172](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L172)
 
 The board's device clock is more than [MAX\_STUDENT\_CLOCK\_SKEW\_MS](../variables/MAX_STUDENT_CLOCK_SKEW_MS.md)
 off the server's (or the clock header is not a timestamp): a student
@@ -29,7 +29,7 @@ winding the clock to reach another day.
 
 > **ENGAGEMENT\_TAMPERING**: `"engagement-tampering"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:156](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L156)
+Defined in: [ui/src/api-shared/types/student-view.ts:156](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L156)
 
 A malformed engagement report — a body the board cannot produce.
 
@@ -39,9 +39,21 @@ A malformed engagement report — a body the board cannot produce.
 
 > **FORGED\_SESSION\_TOKEN**: `"forged-session-token"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:158](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L158)
+Defined in: [ui/src/api-shared/types/student-view.ts:158](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L158)
 
 A session cookie that fails decryption: forged or altered, not merely expired.
+
+***
+
+### FUTURE\_DATE\_PROBE
+
+> **FUTURE\_DATE\_PROBE**: `"future-date-probe"`
+
+Defined in: [ui/src/api-shared/types/student-view.ts:178](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L178)
+
+A page or API request whose `?date=` lies more than
+[FUTURE\_DATE\_PROBE\_MS](../variables/FUTURE_DATE_PROBE_MS.md) ahead: reaching for a schedule that is
+not out yet. Seen in `proxy.ts`, so pages count, not only APIs.
 
 ***
 
@@ -49,7 +61,7 @@ A session cookie that fails decryption: forged or altered, not merely expired.
 
 > **HEADER\_TAMPERING**: `"header-tampering"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:166](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L166)
+Defined in: [ui/src/api-shared/types/student-view.ts:166](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L166)
 
 Headers a browser never sends — Next.js internals, verb/path overrides,
 spoofed client addresses. nginx strips them and names them in
@@ -61,7 +73,7 @@ spoofed client addresses. nginx strips them and names them in
 
 > **INVALID\_ACCESS\_TOKEN**: `"invalid-access-token"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:160](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L160)
+Defined in: [ui/src/api-shared/types/student-view.ts:160](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L160)
 
 A bearer token that is not a live Bluz access token.
 
@@ -71,7 +83,7 @@ A bearer token that is not a live Bluz access token.
 
 > **PARAM\_TAMPERING**: `"param-tampering"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:154](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L154)
+Defined in: [ui/src/api-shared/types/student-view.ts:154](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L154)
 
 A Hanich session sent query parameters the board never sends (`?date=`, `?it=`, …).
 
@@ -81,7 +93,7 @@ A Hanich session sent query parameters the board never sends (`?date=`, `?it=`, 
 
 > **STAFF\_API\_PROBE**: `"staff-api-probe"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:150](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L150)
+Defined in: [ui/src/api-shared/types/student-view.ts:150](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L150)
 
 A Hanich session called a staff-only API.
 
@@ -91,6 +103,6 @@ A Hanich session called a staff-only API.
 
 > **UNKNOWN\_ROUTE**: `"unknown-route"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:152](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/student-view.ts#L152)
+Defined in: [ui/src/api-shared/types/student-view.ts:152](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L152)
 
 A Hanich session requested an API path that does not exist (dir-busting).

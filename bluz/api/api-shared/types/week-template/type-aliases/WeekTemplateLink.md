@@ -8,7 +8,7 @@
 
 > **WeekTemplateLink** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:123](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/week-template.ts#L123)
+Defined in: [ui/src/api-shared/types/week-template.ts:123](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/week-template.ts#L123)
 
 The template a schedule week is linked to: the one stamped on its cut
 events. Drives the week's prayer tint and its next reload.
@@ -19,7 +19,7 @@ events. Drives the week's prayer tint and its next reload.
 
 > **cut**: `boolean`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:131](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/week-template.ts#L131)
+Defined in: [ui/src/api-shared/types/week-template.ts:131](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/week-template.ts#L131)
 
 The week has live cut events. Linking needs at least one to stamp.
 
@@ -29,7 +29,7 @@ The week has live cut events. Linking needs at least one to stamp.
 
 > **stamped**: `boolean`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:129](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/week-template.ts#L129)
+Defined in: [ui/src/api-shared/types/week-template.ts:129](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/week-template.ts#L129)
 
 False when no event names a live template: the default applies implicitly.
 
@@ -39,7 +39,7 @@ False when no event names a live template: the default applies implicitly.
 
 > **templateId**: `null` \| [`WeekTemplateId`](WeekTemplateId.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:127](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/week-template.ts#L127)
+Defined in: [ui/src/api-shared/types/week-template.ts:127](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/week-template.ts#L127)
 
 The stamped template, else the default. Null only when none exists.
 
@@ -49,6 +49,6 @@ The stamped template, else the default. Null only when none exists.
 
 > **weekStart**: `string`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:125](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/week-template.ts#L125)
+Defined in: [ui/src/api-shared/types/week-template.ts:125](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/week-template.ts#L125)
 
 Sunday of the week, `YYYY-MM-DD`.

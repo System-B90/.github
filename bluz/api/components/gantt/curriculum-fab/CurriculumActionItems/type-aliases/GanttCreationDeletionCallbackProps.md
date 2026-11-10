@@ -8,7 +8,7 @@
 
 > **GanttCreationDeletionCallbackProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:24](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx#L24)
+Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:24](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx#L24)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:24
 
 > `optional` **onCreate?**: (`newCurriculum`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:25](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx#L25)
+Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:25](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx#L25)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:25
 
 > `optional` **onDelete?**: (`deletedCurriculumId`) => `void`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:26](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx#L26)
+Defined in: [ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx:26](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/curriculum-fab/CurriculumActionItems.tsx#L26)
 
 #### Parameters
 

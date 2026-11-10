@@ -18,6 +18,10 @@
 - [Reservation](type-aliases/Reservation.md)
 - [ReserverType](type-aliases/ReserverType.md)
 
+## Variables
+
+- [RESERVER\_TYPE\_LABELS](variables/RESERVER_TYPE_LABELS.md)
+
 ## Functions
 
 - [reservationDateFixup](functions/reservationDateFixup.md)

@@ -8,7 +8,7 @@
 
 > **GanttCellContextType** = `Pick`\<[`GanttContextType`](../../types/type-aliases/GanttContextType.md), `"dayCellWidth"` \| `"getDropWarning"`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/context.ts:24](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/context.ts#L24)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/context.ts:24](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/context.ts#L24)
 
 The two timeline values a day cell reads, apart from the rest. The full
 context changes on every mapping change, and a cell reading it re-rendered

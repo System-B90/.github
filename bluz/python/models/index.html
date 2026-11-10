@@ -2568,6 +2568,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#bluz.models.misc.StudentMonitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StudentMonitor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bluz.models.misc.CutPlan" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4565,6 +4576,17 @@
     <span class="md-ellipsis">
       
         StudentSchedule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bluz.models.misc.StudentMonitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StudentMonitor
       
     </span>
   </a>
@@ -8907,6 +8929,58 @@ day-start, meal and prayer times a cut uses ("HH:mm").</p>
 
 
         <p>One day of the student board (the wire's compact, index-based form).</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="bluz.models.misc.StudentMonitor" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">StudentMonitor</span>
+
+
+<a href="#bluz.models.misc.StudentMonitor" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="BluzModel (bluz.models._base.BluzModel)" href="#bluz.models._base.BluzModel">BluzModel</a></code></p>
+
+
+
+        <p>Staff-only: every student's focused board time on one day, with the
+suspected attempts recorded against them (and against <code>anonymous</code>).</p>
+<p>Each row: userId, name (Hive display name or None), seconds, ips,
+securityEventCount (the true total) and securityEvents (newest first).
+Rows come sorted with attempts first, then by focused time.</p>
 
 
 

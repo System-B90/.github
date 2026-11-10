@@ -8,7 +8,7 @@
 
 > **useLoadTemplate**(): (`templateId`) => `Promise`\<\{ `eventCount`: `number`; `name`: `string`; \}\>
 
-Defined in: [ui/src/components/week-templates/use-load-template.ts:24](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/week-templates/use-load-template.ts#L24)
+Defined in: [ui/src/components/week-templates/use-load-template.ts:24](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/week-templates/use-load-template.ts#L24)
 
 Opens a week template for editing (#997). Editing a template is offline by
 nature: its events replace the shown week, every edit stays local, and

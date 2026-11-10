@@ -8,7 +8,7 @@
 
 > **TemplateSeedOps** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:73](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/gantt/templates.ts#L73)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:73](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/gantt/templates.ts#L73)
 
 Persistence the template seeder needs; the client and server each supply their own.
 
@@ -18,7 +18,7 @@ Persistence the template seeder needs; the client and server each supply their o
 
 > **createWeek**: (`payload`) => `Promise`\<\{ `w2d?`: `object`[]; \}\>
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:74](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/gantt/templates.ts#L74)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:74](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/gantt/templates.ts#L74)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-shared/types/gantt/templates.ts:74](https://github.com/S
 
 > **setDayMinutes**: (`dayId`, `minutes`) => `Promise`\<`unknown`\>
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:84](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/api-shared/types/gantt/templates.ts#L84)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:84](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/gantt/templates.ts#L84)
 
 #### Parameters
 

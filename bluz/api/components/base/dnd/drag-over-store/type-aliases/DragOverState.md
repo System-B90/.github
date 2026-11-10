@@ -8,7 +8,7 @@
 
 > **DragOverState** = `object`
 
-Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:38](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/dnd/drag-over-store.tsx#L38)
+Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:38](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/base/dnd/drag-over-store.tsx#L38)
 
 The drag in flight inside one `DndContext`, as its drop targets read it.
 
@@ -26,7 +26,7 @@ crossing re-renders only the target the drag left and the one it entered.
 
 > **active**: \{ `data`: `Data` \| `undefined`; `id`: `UniqueIdentifier`; \} \| `null`
 
-Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:40](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/dnd/drag-over-store.tsx#L40)
+Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:40](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/base/dnd/drag-over-store.tsx#L40)
 
 The dragged item, or null when nothing is being dragged.
 
@@ -36,6 +36,6 @@ The dragged item, or null when nothing is being dragged.
 
 > **overId**: `null` \| `UniqueIdentifier`
 
-Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:42](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/base/dnd/drag-over-store.tsx#L42)
+Defined in: [ui/src/components/base/dnd/drag-over-store.tsx:42](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/base/dnd/drag-over-store.tsx#L42)
 
 The droppable currently under the drag, if any.

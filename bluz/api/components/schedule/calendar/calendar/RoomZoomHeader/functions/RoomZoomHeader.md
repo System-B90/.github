@@ -8,7 +8,7 @@
 
 > **RoomZoomHeader**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx:13](https://github.com/System-B90/Bluz/blob/9a5da7a95daa31576d4bad28f2fe0e1ff1161c4a/ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx#L13)
+Defined in: [ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx:14](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/schedule/calendar/calendar/RoomZoomHeader.tsx#L14)
 
 A day-view room column header, shared by the staff calendar and the student
 board. Clicking it zooms the day to that room alone, and clicking the zoomed
@@ -27,6 +27,12 @@ The room has no events that day; its column is drawn narrow.
 #### label
 
 `string`
+
+#### onContextMenu?
+
+(`event`) => `void`
+
+Right-click on the header (the staff calendar's room menu).
 
 #### onToggle
 
