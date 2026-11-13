@@ -199,10 +199,11 @@ from pyhive.types import Assignment, AssignmentStatusEnum, ClearanceEnum, Subjec
 | `Exercise`   | `get_assignments()`, `save()`, `notify_students()`, `delete()`, `.parent_module`, `.parent_subject` |
 | `Assignment` | `get_responses()`, `.user`, `.checker`, `.exercise`                                              |
 | `AssignmentResponse` | `iter_contents()`, `.user`, `.assignment`                                                |
-| `User`       | `get_assignments()`, `update()`, `set_queue(q)`, `delete()`, `.mentor`, `.mentees`, `.classes`, `.program`, `.queue`, `.current_assignment` |
-| `Class`      | `update()`, `delete()`, `.users`, `.program`                                                     |
+| `User`       | `get_assignments()`, `update()`, `set_queue(q)`, `set_queues(...)`, `delete()`, `.mentor`, `.mentees`, `.classes`, `.program`, `.queue`, `.user_queue`, `.override_queue`, `.current_assignment` |
+| `Class`      | `update()`, `delete()`, `set_queue(q)`, `set_lesson(l)`, `.users`, `.program`                    |
 | `Lesson`     | `get_rules()`, `.module`                                                                         |
-| `Queue`      | `delete()`, `.user`, `.module`, `.subject`, `.program`                                           |
+| `Queue`      | `get_items()`, `add_item(...)`, `update(...)`, `duplicate(name)`, `delete()`, `.user`, `.module`, `.subject`, `.program` |
+| `QueueItem`  | `update(...)`, `move(n)`, `expand()`, `delete()`, `.exercise`, `.nested_queue`, `.order`, `.queue_rule` |
 | `Help`       | `delete()`, `.user`, `.checker`, `.for_exercise`                                                 |
 
 Common enums: `ClearanceEnum` (`HANICH` = student, `CHECKER`, `SEGEL` = staff,
@@ -252,6 +253,45 @@ group = client.create_class(
 )
 client.get_students(of_class=group)  # also of_mentor=, of_program=
 ```
+
+### Queues
+
+A queue is the ordered list of exercises a student works through. It belongs
+to exactly one owner: a module (a *module queue*, shared) or a user (that
+user's *own queue*). Its items are exercises, other queues nested inside it,
+or a module's exercises.
+
+```python
+from pyhive.types import QueueRuleEnum
+
+queue = client.create_queue("Week 3", module=module)       # or user=student
+queue.add_item(exercise=exercise)                            # appended
+item = queue.add_item(nested_queue=other, queue_rule=QueueRuleEnum.WAIT_FOR_DONE)
+item.move(0)                                 # 0-based; the rest are renumbered
+item.update(enabled=False)                   # rule and flags; None = unchanged
+item.expand()                                # replace it with the nested queue's items
+copy = queue.duplicate("Week 3 (copy)")      # same owner, same items
+queue.update(name="Week 3a")
+```
+
+Every student has three queue slots: `queue` (the class queue, usually set
+for a whole class), `user_queue` (their own queue) and `override_queue`.
+`None` clears a slot; a slot you leave out keeps its value:
+
+```python
+client.set_user_queues(student, user_queue=own, disable_user_queue=False)
+client.set_user_queues(student, override_queue=None)
+
+group.set_queue(queue)        # every student in the class; None clears it
+group.set_lesson(lesson)      # apply the lesson's queue rules to the class
+client.unassign_class_override_queues(group)
+```
+
+Hive's own rules, which it enforces with a `ValueError` (HTTP 400): a user's
+own queue cannot be nested in a module queue or used in a lesson rule; an
+empty queue cannot be duplicated, and an empty module cannot be added as an
+item; an item's position changes only through `move`. Setting a class's lesson
+to `None` keeps the queues the lesson assigned.
 
 ### Assignments
 
@@ -347,6 +387,7 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 | `register_sso_service(service_name, redirect_uris)`       | Register an SSO client app; returns its id and secret        |
 | `get(endpoint)`, `post(endpoint, data)`, `put(...)`, `patch(...)`, `delete(endpoint)` | Raw JSON requests to any Hive endpoint |
 | `post_empty(endpoint)`, `put_empty(endpoint)`             | Raw request with an empty body                               |
+| `post_action(endpoint, data)`, `patch_action(endpoint, data)` | Raw request to an endpoint that replies with no body     |
 
 ### Programs, subjects, modules, exercises
 
@@ -409,18 +450,31 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 | `create_student(username, password, gender, number=, program=, ...)` | Create a student                                   |
 | `update_user(user)`                                       | Save a locally changed user (same as `user.update()`)         |
 | `delete_user(user)`                                       | Delete a user                                                 |
-| `set_users_queue(user, queue)`                            | Put a user on a queue                                         |
+| `set_users_queue(user, queue)`                            | Set a user's class queue                                      |
+| `set_user_queues(user, queue=, user_queue=, override_queue=, disable_queue=, disable_user_queue=)` | Assign, clear (`None`) or disable a user's queues |
 | `get_classes(id__in=, name=, program__id__in=, type_=)`   | List classes                                                  |
 | `get_class(class_id)`                                     | One class                                                     |
 | `create_class(name, program=, users=, type_=, ...)`       | Create a class                                                |
 | `update_class(class_, users_from_classes=)`               | Save a locally changed class                                  |
 | `delete_class(class_)`                                    | Delete a class                                                |
 | `import_users_to_class(to_class, from_classes)`           | Add every member of other classes to a class                  |
+| `set_class_queue(class_, queue)`                          | Set every student's class queue; `None` clears it             |
+| `set_class_lesson(class_, lesson)`                        | Apply a lesson's queue rules to every student in a class      |
+| `unassign_class_override_queues(class_)`                  | Clear every student's override queue (Hive 6.1.1+)            |
 | `get_seatings(classroom__id=)`, `get_seating(seating_id)` | Seats in rooms                                                |
 | `create_seating(classroom, x, y, hostname=, hanich=)`     | Add a seat                                                    |
 | `update_seating(seating, **fields)`, `delete_seating(seating_id)` | Change / remove a seat                                |
+| `get_queues(user=, module=, class_=, mentor=, program__id__in=, user_queues=)` | List queues                              |
 | `get_queue(queue_id)`                                     | One queue                                                     |
-| `create_queue(name, description=, module=, user=)`, `delete_queue(queue)` | Create / delete a queue                       |
+| `create_queue(name, description=, module=, user=)`, `delete_queue(queue)` | Create (exactly one owner) / delete a queue   |
+| `update_queue(queue, name=, description=)`                | Rename or re-describe a queue                                 |
+| `duplicate_queue(queue, name)`                            | Copy a queue and its items (same owner)                       |
+| `get_queue_items(queue)`, `get_queue_item(queue, item)`   | A queue's items, in order                                     |
+| `add_queue_item(queue, exercise= / nested_queue= / module=, order=, queue_rule=, enabled=, continue_on_redo=)` | Add an item (appended by default) |
+| `update_queue_item(queue, item, queue_rule=, enabled=, continue_on_redo=)` | Change an item's rule or flags               |
+| `move_queue_item(queue, item, new_order)`                 | Move an item (0-based)                                        |
+| `expand_queue_item(queue, item)`                          | Replace a nested-queue item with that queue's items           |
+| `delete_queue_item(queue, item)`                          | Remove an item                                                |
 
 ### Help requests and notifications
 

@@ -164,13 +164,24 @@ A class is either a room or a student group (`"type": "Room"` /
 pyhive classes list
 pyhive classes get 3
 pyhive classes delete 3
+
+# Assign to every student in the class:
+pyhive classes set-queue 3 12          # class queue 12; `none` clears it
+pyhive classes set-lesson 3 6c14e49d-ab72-4675-8279-2aa840d6a95b   # or `none`
+pyhive classes clear-override-queues 3 # Hive 6.1.1+
 ```
+
+`set-lesson` applies the lesson's queue rules: each student a rule matches
+gets that rule's queue as their class queue. Find lesson ids with
+`pyhive lessons list` (UUIDs on Hive 7.3+, integers before). Setting the
+lesson to `none` keeps the queues it assigned.
 
 ## Users
 
 ```bash
 pyhive users list
 pyhive users delete 15
+pyhive users set-queues 15 --queue 12 --user-queue none --enable-queue
 pyhive users create jdoe --password 'S3cret!' --clearance checker --gender female \
     --first-name Jane --last-name Doe
 ```
@@ -197,6 +208,52 @@ On success the JSON is `{"user": {...}, "status": "created"}`.
     has no `--program` option, so it can only create staff.
     Create students with `client.create_student(username, password, gender,
     number=..., program=...)`.
+
+`users set-queues` sets a student's three queue slots, each to a queue id or
+`none` (clears it); a slot you leave out keeps its value:
+
+| Option                                        | Sets                                        |
+| --------------------------------------------- | ------------------------------------------- |
+| `--queue ID\|none`                            | the class queue                             |
+| `--user-queue ID\|none`                       | the student's own queue                     |
+| `--override-queue ID\|none`                   | the override queue                          |
+| `--disable-queue` / `--enable-queue`          | pauses or resumes the class queue           |
+| `--disable-user-queue` / `--enable-user-queue` | pauses or resumes the student's own queue  |
+
+## Queues
+
+A queue belongs to exactly one owner: a module (shared) or one user (their own
+queue). Its items are exercises, nested queues, or a module's exercises, in
+order from position 0.
+
+```bash
+pyhive queues list [--user 15 | --module 7 | --class 3] [--user-queues | --module-queues]
+pyhive queues get 12
+pyhive queues create "Week 3" --module 7        # or --user 15; --description TEXT
+pyhive queues update 12 --name "Week 3a" --description "..."
+pyhive queues duplicate 12 "Week 3 (copy)"      # same owner, same items
+pyhive queues delete 12
+
+pyhive queues items 12                          # the items, in order
+pyhive queues add-item 12 --exercise 40         # or --nested-queue 13 / --module 7
+pyhive queues add-item 12 --nested-queue 13 --order 0 --rule "wait for done" --disabled
+pyhive queues update-item 12 51 --rule choose --enabled --no-continue-on-redo
+pyhive queues move-item 12 51 0                 # 0-based; the rest are renumbered
+pyhive queues expand-item 12 51                 # replace a nested queue with its items
+pyhive queues remove-item 12 51
+```
+
+`--rule` takes `Choose`, `Wait For Submitted`, `Wait For AutoChecks` or
+`Wait For Done` (any case). `add-item` appends unless `--order` is given;
+`update-item` changes only what you pass and never the position (use
+`move-item`). Hive refuses (HTTP 400) to nest a user's own queue in a module
+queue, to duplicate an empty queue, and to add a module with no exercises.
+
+## Lessons
+
+```bash
+pyhive lessons list [--module 7]        # ids for `classes set-lesson`
+```
 
 ## Sign-in helpers
 

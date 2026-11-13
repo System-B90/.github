@@ -426,6 +426,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#queues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queues
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lessons
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sign-in-helpers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -644,6 +666,28 @@
     <span class="md-ellipsis">
       
         Users
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queues
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lessons
       
     </span>
   </a>
@@ -879,12 +923,22 @@ mentor, module, subject…), use <code>client.get_assignments(...)</code> in the
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pyhive<span class="w"> </span>classes<span class="w"> </span>list
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>pyhive<span class="w"> </span>classes<span class="w"> </span>get<span class="w"> </span><span class="m">3</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>pyhive<span class="w"> </span>classes<span class="w"> </span>delete<span class="w"> </span><span class="m">3</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Assign to every student in the class:</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>pyhive<span class="w"> </span>classes<span class="w"> </span>set-queue<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">12</span><span class="w">          </span><span class="c1"># class queue 12; `none` clears it</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>pyhive<span class="w"> </span>classes<span class="w"> </span>set-lesson<span class="w"> </span><span class="m">3</span><span class="w"> </span>6c14e49d-ab72-4675-8279-2aa840d6a95b<span class="w">   </span><span class="c1"># or `none`</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>pyhive<span class="w"> </span>classes<span class="w"> </span>clear-override-queues<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="c1"># Hive 6.1.1+</span>
 </code></pre></div>
+<p><code>set-lesson</code> applies the lesson's queue rules: each student a rule matches
+gets that rule's queue as their class queue. Find lesson ids with
+<code>pyhive lessons list</code> (UUIDs on Hive 7.3+, integers before). Setting the
+lesson to <code>none</code> keeps the queues it assigned.</p>
 <h2 id="users">Users<a class="headerlink" href="#users" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pyhive<span class="w"> </span>users<span class="w"> </span>list
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>pyhive<span class="w"> </span>users<span class="w"> </span>delete<span class="w"> </span><span class="m">15</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>pyhive<span class="w"> </span>users<span class="w"> </span>create<span class="w"> </span>jdoe<span class="w"> </span>--password<span class="w"> </span><span class="s1">'S3cret!'</span><span class="w"> </span>--clearance<span class="w"> </span>checker<span class="w"> </span>--gender<span class="w"> </span>female<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span>--first-name<span class="w"> </span>Jane<span class="w"> </span>--last-name<span class="w"> </span>Doe
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>pyhive<span class="w"> </span>users<span class="w"> </span>set-queues<span class="w"> </span><span class="m">15</span><span class="w"> </span>--queue<span class="w"> </span><span class="m">12</span><span class="w"> </span>--user-queue<span class="w"> </span>none<span class="w"> </span>--enable-queue
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>pyhive<span class="w"> </span>users<span class="w"> </span>create<span class="w"> </span>jdoe<span class="w"> </span>--password<span class="w"> </span><span class="s1">'S3cret!'</span><span class="w"> </span>--clearance<span class="w"> </span>checker<span class="w"> </span>--gender<span class="w"> </span>female<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span>--first-name<span class="w"> </span>Jane<span class="w"> </span>--last-name<span class="w"> </span>Doe
 </code></pre></div>
 <p><code>users create</code> options:</p>
 <table>
@@ -945,34 +999,93 @@ has no <code>--program</code> option, so it can only create staff.
 Create students with <code>client.create_student(username, password, gender,
 number=..., program=...)</code>.</p>
 </div>
+<p><code>users set-queues</code> sets a student's three queue slots, each to a queue id or
+<code>none</code> (clears it); a slot you leave out keeps its value:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Sets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--queue ID\|none</code></td>
+<td>the class queue</td>
+</tr>
+<tr>
+<td><code>--user-queue ID\|none</code></td>
+<td>the student's own queue</td>
+</tr>
+<tr>
+<td><code>--override-queue ID\|none</code></td>
+<td>the override queue</td>
+</tr>
+<tr>
+<td><code>--disable-queue</code> / <code>--enable-queue</code></td>
+<td>pauses or resumes the class queue</td>
+</tr>
+<tr>
+<td><code>--disable-user-queue</code> / <code>--enable-user-queue</code></td>
+<td>pauses or resumes the student's own queue</td>
+</tr>
+</tbody>
+</table>
+<h2 id="queues">Queues<a class="headerlink" href="#queues" title="Permanent link">&para;</a></h2>
+<p>A queue belongs to exactly one owner: a module (shared) or one user (their own
+queue). Its items are exercises, nested queues, or a module's exercises, in
+order from position 0.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>list<span class="w"> </span><span class="o">[</span>--user<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>--module<span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>--class<span class="w"> </span><span class="m">3</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>--user-queues<span class="w"> </span><span class="p">|</span><span class="w"> </span>--module-queues<span class="o">]</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>get<span class="w"> </span><span class="m">12</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>create<span class="w"> </span><span class="s2">"Week 3"</span><span class="w"> </span>--module<span class="w"> </span><span class="m">7</span><span class="w">        </span><span class="c1"># or --user 15; --description TEXT</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>update<span class="w"> </span><span class="m">12</span><span class="w"> </span>--name<span class="w"> </span><span class="s2">"Week 3a"</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">"..."</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>duplicate<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="s2">"Week 3 (copy)"</span><span class="w">      </span><span class="c1"># same owner, same items</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>delete<span class="w"> </span><span class="m">12</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>items<span class="w"> </span><span class="m">12</span><span class="w">                          </span><span class="c1"># the items, in order</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>add-item<span class="w"> </span><span class="m">12</span><span class="w"> </span>--exercise<span class="w"> </span><span class="m">40</span><span class="w">         </span><span class="c1"># or --nested-queue 13 / --module 7</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>add-item<span class="w"> </span><span class="m">12</span><span class="w"> </span>--nested-queue<span class="w"> </span><span class="m">13</span><span class="w"> </span>--order<span class="w"> </span><span class="m">0</span><span class="w"> </span>--rule<span class="w"> </span><span class="s2">"wait for done"</span><span class="w"> </span>--disabled
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>update-item<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">51</span><span class="w"> </span>--rule<span class="w"> </span>choose<span class="w"> </span>--enabled<span class="w"> </span>--no-continue-on-redo
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>move-item<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">51</span><span class="w"> </span><span class="m">0</span><span class="w">                 </span><span class="c1"># 0-based; the rest are renumbered</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>expand-item<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">51</span><span class="w">                 </span><span class="c1"># replace a nested queue with its items</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>pyhive<span class="w"> </span>queues<span class="w"> </span>remove-item<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">51</span>
+</code></pre></div>
+<p><code>--rule</code> takes <code>Choose</code>, <code>Wait For Submitted</code>, <code>Wait For AutoChecks</code> or
+<code>Wait For Done</code> (any case). <code>add-item</code> appends unless <code>--order</code> is given;
+<code>update-item</code> changes only what you pass and never the position (use
+<code>move-item</code>). Hive refuses (HTTP 400) to nest a user's own queue in a module
+queue, to duplicate an empty queue, and to add a module with no exercises.</p>
+<h2 id="lessons">Lessons<a class="headerlink" href="#lessons" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pyhive<span class="w"> </span>lessons<span class="w"> </span>list<span class="w"> </span><span class="o">[</span>--module<span class="w"> </span><span class="m">7</span><span class="o">]</span><span class="w">        </span><span class="c1"># ids for `classes set-lesson`</span>
+</code></pre></div>
 <h2 id="sign-in-helpers">Sign-in helpers<a class="headerlink" href="#sign-in-helpers" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pyhive<span class="w"> </span>token<span class="w">                        </span><span class="c1"># SSO in the browser, prints the access token</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>token<span class="w">                 </span><span class="c1"># {"access_token", "refresh_token", "expires_at"}</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>pyhive<span class="w"> </span>token<span class="w"> </span>--cache-token<span class="w">          </span><span class="c1"># ...and saves the server and both tokens, like `auth login`</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>pyhive<span class="w"> </span>register<span class="w"> </span><span class="s2">"My service"</span><span class="w"> </span>http://localhost:5000/api/auth/callback/hive
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pyhive<span class="w"> </span>token<span class="w">                        </span><span class="c1"># SSO in the browser, prints the access token</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>token<span class="w">                 </span><span class="c1"># {"access_token", "refresh_token", "expires_at"}</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>pyhive<span class="w"> </span>token<span class="w"> </span>--cache-token<span class="w">          </span><span class="c1"># ...and saves the server and both tokens, like `auth login`</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>pyhive<span class="w"> </span>register<span class="w"> </span><span class="s2">"My service"</span><span class="w"> </span>http://localhost:5000/api/auth/callback/hive
 </code></pre></div>
 <p><code>register</code> creates an SSO (OAuth) client application on Hive and prints its
 <code>client_id</code> and <code>client_secret</code>, for building another service that signs in
 with Hive. It needs an account allowed to manage SSO applications.</p>
 <h2 id="versions">Versions<a class="headerlink" href="#versions" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pyhive<span class="w"> </span>version<span class="w">       </span><span class="c1"># this PyHive's version</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>pyhive<span class="w"> </span>versions<span class="w">      </span><span class="c1"># every Hive release this PyHive is verified against</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>pyhive<span class="w"> </span>version<span class="w">       </span><span class="c1"># this PyHive's version</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>pyhive<span class="w"> </span>versions<span class="w">      </span><span class="c1"># every Hive release this PyHive is verified against</span>
 </code></pre></div>
 <p>PyHive checks the server's version when it connects and refuses a Hive
 release it has not been verified against. Upgrade PyHive when the server is
 newer; from the SDK, <code>skip_version_check=True</code> tries anyway.</p>
 <h2 id="docs-and-examples">Docs and examples<a class="headerlink" href="#docs-and-examples" title="Permanent link">&para;</a></h2>
 <p>The documentation and example scripts ship inside the package.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>list<span class="w">                    </span><span class="c1"># list the pages (also plain `pyhive docs`)</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>show<span class="w"> </span>sdk<span class="w">                </span><span class="c1"># print a page as Markdown</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>path<span class="w">                    </span><span class="c1"># where the files are</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w">           </span><span class="c1"># install them as the Claude Code skill `pyhive`</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w"> </span>--project<span class="w"> </span>.<span class="w">   </span><span class="c1"># ...into ./.claude/skills instead of ~/.claude/skills</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>list<span class="w">                </span><span class="c1"># list the example scripts (also plain `pyhive examples`)</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>show<span class="w"> </span>program_tree<span class="w">   </span><span class="c1"># print one</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>run<span class="w"> </span>program_tree<span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="c1"># run one against the server</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>list<span class="w">                    </span><span class="c1"># list the pages (also plain `pyhive docs`)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>show<span class="w"> </span>sdk<span class="w">                </span><span class="c1"># print a page as Markdown</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>path<span class="w">                    </span><span class="c1"># where the files are</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w">           </span><span class="c1"># install them as the Claude Code skill `pyhive`</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w"> </span>--project<span class="w"> </span>.<span class="w">   </span><span class="c1"># ...into ./.claude/skills instead of ~/.claude/skills</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>list<span class="w">                </span><span class="c1"># list the example scripts (also plain `pyhive examples`)</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>show<span class="w"> </span>program_tree<span class="w">   </span><span class="c1"># print one</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>run<span class="w"> </span>program_tree<span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="c1"># run one against the server</span>
 </code></pre></div>
 <p><code>examples run</code> signs in exactly like every other command and passes any extra
 arguments to the example. Its output is the example's own text, not JSON.

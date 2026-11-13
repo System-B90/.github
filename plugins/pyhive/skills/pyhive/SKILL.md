@@ -95,7 +95,13 @@ above), so they need no credentials of their own.
 pyhive --json programs list                 # {"programs": [...]}
 pyhive --json programs get 2                # {"program": {...}}
 pyhive --json programs delete 2             # {"deleted_program_id": 2, "status": "success"}
-# Same list/get/delete for: subjects, modules, exercises, classes
+# Same list/get/delete for: subjects, modules, exercises, classes, queues
+pyhive --json queues items QID | add-item QID --exercise ID|--nested-queue ID|--module ID [--order N --rule R --disabled]
+pyhive --json queues update-item QID ITEM [--rule R --enabled/--disabled] | move-item QID ITEM POS | expand-item QID ITEM | remove-item QID ITEM
+pyhive --json queues create NAME --module ID|--user ID | update QID [--name --description] | duplicate QID NAME
+pyhive --json users set-queues UID [--queue ID|none --user-queue ID|none --override-queue ID|none --disable-queue/--enable-queue]
+pyhive --json classes set-queue CID QID|none | set-lesson CID LESSON|none | clear-override-queues CID
+pyhive --json lessons list [--module ID]    # lesson ids: UUIDs on Hive 7.3+
 pyhive --json assignments list | get ID     # no delete
 pyhive --json users list | delete ID        # no get
 pyhive --json users create USERNAME --password PW --clearance checker --gender female \
@@ -166,6 +172,12 @@ Full method reference and recipes: [sdk.md](sdk.md).
 
 ## Known quirks
 
+- Queues: a queue has exactly one owner (`--module` or `--user`). Item
+  positions are 0-based and change only through `move-item`. Hive rejects
+  nesting a user's own queue in a module queue, duplicating an empty queue,
+  and adding a module that has no exercises. `duplicate` always keeps the
+  original's owner. `classes set-lesson CID none` keeps the queues the lesson
+  assigned.
 - `get_user_me()` raises `NotImplementedError`.
 - Staff accounts can only open **chat** help requests
   (`client.create_chat(with_user=…)`); `create_help_request` with another type

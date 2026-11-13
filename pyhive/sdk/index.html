@@ -521,6 +521,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#queues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#assignments" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -901,6 +912,17 @@
     <span class="md-ellipsis">
       
         Users and classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queues
       
     </span>
   </a>
@@ -1291,11 +1313,11 @@ the related table once and join by id instead:</p>
 </tr>
 <tr>
 <td><code>User</code></td>
-<td><code>get_assignments()</code>, <code>update()</code>, <code>set_queue(q)</code>, <code>delete()</code>, <code>.mentor</code>, <code>.mentees</code>, <code>.classes</code>, <code>.program</code>, <code>.queue</code>, <code>.current_assignment</code></td>
+<td><code>get_assignments()</code>, <code>update()</code>, <code>set_queue(q)</code>, <code>set_queues(...)</code>, <code>delete()</code>, <code>.mentor</code>, <code>.mentees</code>, <code>.classes</code>, <code>.program</code>, <code>.queue</code>, <code>.user_queue</code>, <code>.override_queue</code>, <code>.current_assignment</code></td>
 </tr>
 <tr>
 <td><code>Class</code></td>
-<td><code>update()</code>, <code>delete()</code>, <code>.users</code>, <code>.program</code></td>
+<td><code>update()</code>, <code>delete()</code>, <code>set_queue(q)</code>, <code>set_lesson(l)</code>, <code>.users</code>, <code>.program</code></td>
 </tr>
 <tr>
 <td><code>Lesson</code></td>
@@ -1303,7 +1325,11 @@ the related table once and join by id instead:</p>
 </tr>
 <tr>
 <td><code>Queue</code></td>
-<td><code>delete()</code>, <code>.user</code>, <code>.module</code>, <code>.subject</code>, <code>.program</code></td>
+<td><code>get_items()</code>, <code>add_item(...)</code>, <code>update(...)</code>, <code>duplicate(name)</code>, <code>delete()</code>, <code>.user</code>, <code>.module</code>, <code>.subject</code>, <code>.program</code></td>
+</tr>
+<tr>
+<td><code>QueueItem</code></td>
+<td><code>update(...)</code>, <code>move(n)</code>, <code>expand()</code>, <code>delete()</code>, <code>.exercise</code>, <code>.nested_queue</code>, <code>.order</code>, <code>.queue_rule</code></td>
 </tr>
 <tr>
 <td><code>Help</code></td>
@@ -1350,32 +1376,63 @@ program, color)</code>, <code>client.create_module(name, parent_subject, order)<
 <a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="p">)</span>
 <a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="n">client</span><span class="o">.</span><span class="n">get_students</span><span class="p">(</span><span class="n">of_class</span><span class="o">=</span><span class="n">group</span><span class="p">)</span>  <span class="c1"># also of_mentor=, of_program=</span>
 </code></pre></div>
+<h3 id="queues">Queues<a class="headerlink" href="#queues" title="Permanent link">&para;</a></h3>
+<p>A queue is the ordered list of exercises a student works through. It belongs
+to exactly one owner: a module (a <em>module queue</em>, shared) or a user (that
+user's <em>own queue</em>). Its items are exercises, other queues nested inside it,
+or a module's exercises.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyhive.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">QueueRuleEnum</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">queue</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_queue</span><span class="p">(</span><span class="s2">"Week 3"</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="n">module</span><span class="p">)</span>       <span class="c1"># or user=student</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">queue</span><span class="o">.</span><span class="n">add_item</span><span class="p">(</span><span class="n">exercise</span><span class="o">=</span><span class="n">exercise</span><span class="p">)</span>                            <span class="c1"># appended</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">item</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">add_item</span><span class="p">(</span><span class="n">nested_queue</span><span class="o">=</span><span class="n">other</span><span class="p">,</span> <span class="n">queue_rule</span><span class="o">=</span><span class="n">QueueRuleEnum</span><span class="o">.</span><span class="n">WAIT_FOR_DONE</span><span class="p">)</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="n">item</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>                                 <span class="c1"># 0-based; the rest are renumbered</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">item</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">enabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>                   <span class="c1"># rule and flags; None = unchanged</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">item</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span>                                <span class="c1"># replace it with the nested queue's items</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">copy</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">duplicate</span><span class="p">(</span><span class="s2">"Week 3 (copy)"</span><span class="p">)</span>      <span class="c1"># same owner, same items</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="n">queue</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Week 3a"</span><span class="p">)</span>
+</code></pre></div>
+<p>Every student has three queue slots: <code>queue</code> (the class queue, usually set
+for a whole class), <code>user_queue</code> (their own queue) and <code>override_queue</code>.
+<code>None</code> clears a slot; a slot you leave out keeps its value:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">client</span><span class="o">.</span><span class="n">set_user_queues</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="n">user_queue</span><span class="o">=</span><span class="n">own</span><span class="p">,</span> <span class="n">disable_user_queue</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">client</span><span class="o">.</span><span class="n">set_user_queues</span><span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="n">override_queue</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">group</span><span class="o">.</span><span class="n">set_queue</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>        <span class="c1"># every student in the class; None clears it</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">group</span><span class="o">.</span><span class="n">set_lesson</span><span class="p">(</span><span class="n">lesson</span><span class="p">)</span>      <span class="c1"># apply the lesson's queue rules to the class</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="n">client</span><span class="o">.</span><span class="n">unassign_class_override_queues</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+</code></pre></div>
+<p>Hive's own rules, which it enforces with a <code>ValueError</code> (HTTP 400): a user's
+own queue cannot be nested in a module queue or used in a lesson rule; an
+empty queue cannot be duplicated, and an empty module cannot be added as an
+item; an item's position changes only through <code>move</code>. Setting a class's lesson
+to <code>None</code> keeps the queues the lesson assigned.</p>
 <h3 id="assignments">Assignments<a class="headerlink" href="#assignments" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">client</span><span class="o">.</span><span class="n">patch_assignment</span><span class="p">(</span><span class="n">assignment</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Look at line 12"</span><span class="p">)</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">client</span><span class="o">.</span><span class="n">lock_assignment</span><span class="p">(</span><span class="n">assignment</span><span class="p">)</span>       <span class="c1"># the student can no longer submit</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">client</span><span class="o">.</span><span class="n">unlock_assignment</span><span class="p">(</span><span class="n">assignment</span><span class="p">)</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">for</span> <span class="n">response</span> <span class="ow">in</span> <span class="n">assignment</span><span class="o">.</span><span class="n">get_responses</span><span class="p">():</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">response_type</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">dear_student</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">client</span><span class="o">.</span><span class="n">patch_assignment</span><span class="p">(</span><span class="n">assignment</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Look at line 12"</span><span class="p">)</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">client</span><span class="o">.</span><span class="n">lock_assignment</span><span class="p">(</span><span class="n">assignment</span><span class="p">)</span>       <span class="c1"># the student can no longer submit</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">client</span><span class="o">.</span><span class="n">unlock_assignment</span><span class="p">(</span><span class="n">assignment</span><span class="p">)</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="k">for</span> <span class="n">response</span> <span class="ow">in</span> <span class="n">assignment</span><span class="o">.</span><span class="n">get_responses</span><span class="p">():</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">response_type</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">dear_student</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="schedule">Schedule<a class="headerlink" href="#schedule" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span><span class="p">,</span> <span class="n">timezone</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">event</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_schedule_event</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">start</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Lecture"</span><span class="p">)</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">client</span><span class="o">.</span><span class="n">create_event_attendee</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">attendee_class</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>    <span class="c1"># a class attends</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="n">client</span><span class="o">.</span><span class="n">create_event_instructor</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">instructor</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>      <span class="c1"># a user teaches</span>
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="n">week</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_schedule_events</span><span class="p">(</span><span class="n">start__gte</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end__lte</span><span class="o">=</span><span class="n">start</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">))</span>
-<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="n">client</span><span class="o">.</span><span class="n">delete_schedule_event</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span><span class="p">,</span> <span class="n">timezone</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">event</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_schedule_event</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">start</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Lecture"</span><span class="p">)</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="n">client</span><span class="o">.</span><span class="n">create_event_attendee</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">attendee_class</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>    <span class="c1"># a class attends</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="n">client</span><span class="o">.</span><span class="n">create_event_instructor</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">instructor</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>      <span class="c1"># a user teaches</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="n">week</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_schedule_events</span><span class="p">(</span><span class="n">start__gte</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end__lte</span><span class="o">=</span><span class="n">start</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">))</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="n">client</span><span class="o">.</span><span class="n">delete_schedule_event</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
 </code></pre></div>
 <p>Newer Hive releases identify lessons, events, event categories, tags and
 their links by UUID instead of an integer. Methods that take one accept a
 <code>UUID</code>, its string form, an <code>int</code>, or the model itself.</p>
 <h3 id="help-requests">Help requests<a class="headerlink" href="#help-requests" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_chat</span><span class="p">(</span><span class="n">with_user</span><span class="o">=</span><span class="n">student</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Checking in"</span><span class="p">)</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">for</span> <span class="n">response</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">get_help_responses</span><span class="p">(</span><span class="n">chat</span><span class="p">):</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">response_type</span><span class="p">)</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">chat</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_chat</span><span class="p">(</span><span class="n">with_user</span><span class="o">=</span><span class="n">student</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Checking in"</span><span class="p">)</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">for</span> <span class="n">response</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">get_help_responses</span><span class="p">(</span><span class="n">chat</span><span class="p">):</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">response_type</span><span class="p">)</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">chat</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
 </code></pre></div>
 <p>A staff account can open only chats. <code>create_help_request</code> with another
 <code>HelpTypeEnum</code> is for student accounts.</p>
@@ -1426,20 +1483,20 @@ their links by UUID instead of an integer. Methods that take one accept a
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="n">client</span><span class="o">.</span><span class="n">get_program</span><span class="p">(</span><span class="mi">999</span><span class="p">)</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="k">except</span> <span class="n">httpx</span><span class="o">.</span><span class="n">HTTPStatusError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    <span class="k">if</span> <span class="n">exc</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"no such program"</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="n">client</span><span class="o">.</span><span class="n">get_program</span><span class="p">(</span><span class="mi">999</span><span class="p">)</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="k">except</span> <span class="n">httpx</span><span class="o">.</span><span class="n">HTTPStatusError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    <span class="k">if</span> <span class="n">exc</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"no such program"</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="versions">Versions<a class="headerlink" href="#versions" title="Permanent link">&para;</a></h2>
 <p>When it connects, the client asks the server for its Hive version and checks
 it against the exact releases this PyHive is verified against (<code>pyhive
 versions</code> lists them). An unlisted release raises <code>UnverifiedHiveVersionError</code>:
 upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">client</span><span class="o">.</span><span class="n">get_hive_version</span><span class="p">()</span>     <span class="c1"># e.g. "7.2.0"</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">client</span><span class="o">.</span><span class="n">get_hive_version</span><span class="p">()</span>     <span class="c1"># e.g. "7.2.0"</span>
 </code></pre></div>
 <h2 id="method-reference">Method reference<a class="headerlink" href="#method-reference" title="Permanent link">&para;</a></h2>
 <p>Every public <code>HiveClient</code> method. "Id or model" arguments accept either.</p>
@@ -1495,6 +1552,10 @@ upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
 <tr>
 <td><code>post_empty(endpoint)</code>, <code>put_empty(endpoint)</code></td>
 <td>Raw request with an empty body</td>
+</tr>
+<tr>
+<td><code>post_action(endpoint, data)</code>, <code>patch_action(endpoint, data)</code></td>
+<td>Raw request to an endpoint that replies with no body</td>
 </tr>
 </tbody>
 </table>
@@ -1719,7 +1780,11 @@ upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
 </tr>
 <tr>
 <td><code>set_users_queue(user, queue)</code></td>
-<td>Put a user on a queue</td>
+<td>Set a user's class queue</td>
+</tr>
+<tr>
+<td><code>set_user_queues(user, queue=, user_queue=, override_queue=, disable_queue=, disable_user_queue=)</code></td>
+<td>Assign, clear (<code>None</code>) or disable a user's queues</td>
 </tr>
 <tr>
 <td><code>get_classes(id__in=, name=, program__id__in=, type_=)</code></td>
@@ -1746,6 +1811,18 @@ upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
 <td>Add every member of other classes to a class</td>
 </tr>
 <tr>
+<td><code>set_class_queue(class_, queue)</code></td>
+<td>Set every student's class queue; <code>None</code> clears it</td>
+</tr>
+<tr>
+<td><code>set_class_lesson(class_, lesson)</code></td>
+<td>Apply a lesson's queue rules to every student in a class</td>
+</tr>
+<tr>
+<td><code>unassign_class_override_queues(class_)</code></td>
+<td>Clear every student's override queue (Hive 6.1.1+)</td>
+</tr>
+<tr>
 <td><code>get_seatings(classroom__id=)</code>, <code>get_seating(seating_id)</code></td>
 <td>Seats in rooms</td>
 </tr>
@@ -1758,12 +1835,48 @@ upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
 <td>Change / remove a seat</td>
 </tr>
 <tr>
+<td><code>get_queues(user=, module=, class_=, mentor=, program__id__in=, user_queues=)</code></td>
+<td>List queues</td>
+</tr>
+<tr>
 <td><code>get_queue(queue_id)</code></td>
 <td>One queue</td>
 </tr>
 <tr>
 <td><code>create_queue(name, description=, module=, user=)</code>, <code>delete_queue(queue)</code></td>
-<td>Create / delete a queue</td>
+<td>Create (exactly one owner) / delete a queue</td>
+</tr>
+<tr>
+<td><code>update_queue(queue, name=, description=)</code></td>
+<td>Rename or re-describe a queue</td>
+</tr>
+<tr>
+<td><code>duplicate_queue(queue, name)</code></td>
+<td>Copy a queue and its items (same owner)</td>
+</tr>
+<tr>
+<td><code>get_queue_items(queue)</code>, <code>get_queue_item(queue, item)</code></td>
+<td>A queue's items, in order</td>
+</tr>
+<tr>
+<td><code>add_queue_item(queue, exercise= / nested_queue= / module=, order=, queue_rule=, enabled=, continue_on_redo=)</code></td>
+<td>Add an item (appended by default)</td>
+</tr>
+<tr>
+<td><code>update_queue_item(queue, item, queue_rule=, enabled=, continue_on_redo=)</code></td>
+<td>Change an item's rule or flags</td>
+</tr>
+<tr>
+<td><code>move_queue_item(queue, item, new_order)</code></td>
+<td>Move an item (0-based)</td>
+</tr>
+<tr>
+<td><code>expand_queue_item(queue, item)</code></td>
+<td>Replace a nested-queue item with that queue's items</td>
+</tr>
+<tr>
+<td><code>delete_queue_item(queue, item)</code></td>
+<td>Remove an item</td>
 </tr>
 </tbody>
 </table>
