@@ -8,7 +8,7 @@
 
 > **snapshotRangeOf**(`snapshot`, `events`): \{ `rangeEnd`: `Date`; `rangeStart`: `Date`; \} \| `undefined`
 
-Defined in: [ui/src/api-shared/snapshot-range.ts:34](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/snapshot-range.ts#L34)
+Defined in: [ui/src/api-shared/snapshot-range.ts:34](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/snapshot-range.ts#L34)
 
 The range a snapshot covers: the one stored at capture time, else (for
 snapshots taken before ranges were stored) the span of its own events.

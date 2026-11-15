@@ -8,7 +8,7 @@
 
 > **StudentEventWire** = `Omit`\<[`StudentEvent`](StudentEvent.md), `"courses"` \| `"relatedCourses"` \| `"rooms"`\> & `object`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:59](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/student-view.ts#L59)
+Defined in: [ui/src/api-shared/types/student-view.ts:59](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/student-view.ts#L59)
 
 Wire form of `StudentEvent`. Course and room names are shared by most of a
 day's events, and `relatedCourses` can span a whole course tree, so each

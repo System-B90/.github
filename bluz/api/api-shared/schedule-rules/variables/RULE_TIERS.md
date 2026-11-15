@@ -8,7 +8,7 @@
 
 > `const` **RULE\_TIERS**: `object`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:14](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/schedule-rules.ts#L14)
+Defined in: [ui/src/api-shared/schedule-rules.ts:14](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/schedule-rules.ts#L14)
 
 Priority tiers (RULES.md §0). On conflict the higher tier wins; inside one, the lower id.
 

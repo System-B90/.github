@@ -8,7 +8,7 @@
 
 > **resolveWritableIterationFromRequest**(`request`): `Promise`\<[`ResolvedIteration`](../type-aliases/ResolvedIteration.md)\>
 
-Defined in: [ui/src/api-server/iteration-request.ts:74](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/iteration-request.ts#L74)
+Defined in: [ui/src/api-server/iteration-request.ts:74](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/iteration-request.ts#L74)
 
 Same as [resolveIterationFromRequest](resolveIterationFromRequest.md) but rejects writes to a past
 (non-current) iteration. Use for POST/PUT/PATCH/DELETE handlers.

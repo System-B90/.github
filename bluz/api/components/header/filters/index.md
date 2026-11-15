@@ -9,3 +9,4 @@
 ## Functions
 
 - [Filters](functions/Filters.md)
+- [usePaWindowsToggle](functions/usePaWindowsToggle.md)

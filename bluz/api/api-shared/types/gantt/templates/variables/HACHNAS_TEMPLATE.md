@@ -8,7 +8,7 @@
 
 > `const` **HACHNAS\_TEMPLATE**: [`GanttCurriculumTemplate`](../type-aliases/GanttCurriculumTemplate.md)
 
-Defined in: [ui/src/api-shared/types/gantt/templates.ts:49](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/gantt/templates.ts#L49)
+Defined in: [ui/src/api-shared/types/gantt/templates.ts:49](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/gantt/templates.ts#L49)
 
 Standard HACHNAS (הכנת סגל) schedule:
   Sun–Thu  08:00–17:00  →  9 hours = 540 min

@@ -8,7 +8,7 @@
 
 > **PinkModeAllowedProvider**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/theme/PinkModeAllowed.tsx:8](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/theme/PinkModeAllowed.tsx#L8)
+Defined in: [ui/src/components/theme/PinkModeAllowed.tsx:8](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/theme/PinkModeAllowed.tsx#L8)
 
 Lets a server layout decide whether `PinkModeToggle` renders below it.
 

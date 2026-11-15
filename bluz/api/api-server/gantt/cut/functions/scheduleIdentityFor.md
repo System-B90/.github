@@ -8,7 +8,7 @@
 
 > **scheduleIdentityFor**(`ganttEvent`, `moduleHiveIds`, `hiveModuleSubjectById`, `naming?`): `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:610](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/gantt/cut.ts#L610)
+Defined in: [ui/src/api-server/gantt/cut.ts:610](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/cut.ts#L610)
 
 The Hive linkage and schedule name a gantt event is cut with. Shared by the
 cut itself and week-template matching (#997), which must see exactly the

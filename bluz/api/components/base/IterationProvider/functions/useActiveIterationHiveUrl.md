@@ -8,7 +8,7 @@
 
 > **useActiveIterationHiveUrl**(): `string` \| `undefined`
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:348](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/base/IterationProvider.tsx#L348)
+Defined in: [ui/src/components/base/IterationProvider.tsx:348](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/base/IterationProvider.tsx#L348)
 
 The Hive instance backing the currently viewed iteration — each iteration
 runs against its own Hive, so a hard-coded/env-default base URL would link

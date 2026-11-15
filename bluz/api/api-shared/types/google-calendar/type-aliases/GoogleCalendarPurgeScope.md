@@ -8,7 +8,7 @@
 
 > **GoogleCalendarPurgeScope** = `"all"` \| `"orphaned"`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:123](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/google-calendar.ts#L123)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:123](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/google-calendar.ts#L123)
 
 `orphaned`: remove Bluz-tagged Google events whose Bluz event no longer
 exists, belongs to another iteration than the calendar's, or no longer

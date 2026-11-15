@@ -8,7 +8,7 @@
 
 > **studentRefreshSeconds**(`raw?`): `number`
 
-Defined in: [ui/src/api-server/student-refresh-interval.ts:16](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/student-refresh-interval.ts#L16)
+Defined in: [ui/src/api-server/student-refresh-interval.ts:16](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/student-refresh-interval.ts#L16)
 
 The deployment default for how often the student board refetches, in
 seconds. The board does not follow staff edits live: it refetches on this

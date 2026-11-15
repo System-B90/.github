@@ -8,7 +8,7 @@
 
 > **serverNowDate**(): `Date`
 
-Defined in: [ui/src/components/base/server-clock.ts:85](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/base/server-clock.ts#L85)
+Defined in: [ui/src/components/base/server-clock.ts:85](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/base/server-clock.ts#L85)
 
 [serverNow](serverNow.md) as a `Date`, for react-big-calendar's `getNow`.
 

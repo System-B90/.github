@@ -8,7 +8,7 @@
 
 > **HiveFeedOptions** = `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:136](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/hive/schedule-feed.ts#L136)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:136](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/schedule-feed.ts#L136)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:136](https://github.com/Sys
 
 > **lessonCategory**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:141](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/hive/schedule-feed.ts#L141)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:141](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/schedule-feed.ts#L141)
 
 Hive category (with `has_lesson`) for an event that carries a Hive
 lesson but whose type has no `has_lesson` category of its own.

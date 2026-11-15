@@ -8,7 +8,7 @@
 
 > **unavailabilityFixedFields**(): `Pick`\<[`Event`](../../types/event/type-aliases/Event.md), `"courses"` \| `"fake"` \| `"hidden"` \| `"hiveLesson"` \| `"hiveModule"` \| `"lecturers"` \| `"locked"` \| `"personalTalk"` \| `"required"` \| `"rooms"` \| `"splitAcrossBreaks"` \| `"subject"`\>
 
-Defined in: [ui/src/api-shared/unavailability.ts:42](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/unavailability.ts#L42)
+Defined in: [ui/src/api-shared/unavailability.ts:42](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/unavailability.ts#L42)
 
 The fields an unavailability is pinned to: the pseudo-room, always hidden
 from students, and none of a lesson's attributes. Applied by the client

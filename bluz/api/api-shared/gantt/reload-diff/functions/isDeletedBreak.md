@@ -8,7 +8,7 @@
 
 > **isDeletedBreak**(`document`, `manuallyDeletedKeys`): `boolean`
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:47](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/gantt/reload-diff.ts#L47)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:47](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/gantt/reload-diff.ts#L47)
 
 Whether a planned occurrence is a break a human deleted from the schedule.
 Other deleted occurrences come back parked for the user to place; a parked

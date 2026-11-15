@@ -8,4 +8,30 @@
 
 > **EventTypeFieldProps** = `object` & [`EventFieldProps`](../../utils/type-aliases/EventFieldProps.md)
 
-Defined in: [ui/src/components/schedule/event-dialog/EventTypeField.tsx:53](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/schedule/event-dialog/EventTypeField.tsx#L53)
+Defined in: [ui/src/components/schedule/event-dialog/EventTypeField.tsx:97](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/event-dialog/EventTypeField.tsx#L97)
+
+## Type Declaration
+
+### onReservingChange?
+
+> `optional` **onReservingChange?**: (`reserving`) => `void`
+
+Offers the שיריון כיתה pseudo-type, and reports picking it or leaving
+it. Omitted (a saved event) → not offered: an event never turns into a
+reservation.
+
+#### Parameters
+
+##### reserving
+
+`boolean`
+
+#### Returns
+
+`void`
+
+### reserving?
+
+> `optional` **reserving?**: `boolean`
+
+The dialog is in its שיריון כיתה mode (see `room-reservation.ts`).

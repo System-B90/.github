@@ -8,7 +8,7 @@
 
 > **selectGoogleCalendar**(`userId`, `payload`): `Promise`\<[`GoogleCalendarSelection`](../../../../api-shared/types/google-calendar/type-aliases/GoogleCalendarSelection.md)\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:676](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/google/google-calendar-service.ts#L676)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:676](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/google/google-calendar-service.ts#L676)
 
 Re-points the user's link at another calendar (an existing writable one,
 typically shared by a colleague, or a fresh Bluz-created one). The sync

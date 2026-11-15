@@ -8,7 +8,7 @@
 
 > `const` **create**: (`label`, `events`, `controller`, `iterationId?`, `range?`) => `Promise`\<[`CalendarSnapshotSummary`](../../../../../api-shared/types/type-aliases/CalendarSnapshotSummary.md)\> = `createSnapshot`
 
-Defined in: [ui/src/api-server/db-calendar-snapshot.ts:365](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/db-calendar-snapshot.ts#L365)
+Defined in: [ui/src/api-server/db-calendar-snapshot.ts:365](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/db-calendar-snapshot.ts#L365)
 
 Captures a named, git-tag-like restore point of the calendar. The full event
 documents are stored so the calendar can later be restored to this exact state.

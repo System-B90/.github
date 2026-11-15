@@ -8,7 +8,7 @@
 
 > **previewCurriculumCut**(`curriculumId`, `options?`): `Promise`\<[`ApiCurriculumCutPreviewResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutPreviewResponse.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:826](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-server/gantt/cut.ts#L826)
+Defined in: [ui/src/api-server/gantt/cut.ts:826](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/cut.ts#L826)
 
 Dry-run of the cut (CLI preview route, AI preview tool): runs the exact same
 pipeline as `cutCurriculumToSchedule` up to and including `planCut`, but

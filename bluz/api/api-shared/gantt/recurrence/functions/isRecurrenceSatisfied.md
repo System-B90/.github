@@ -8,7 +8,7 @@
 
 > **isRecurrenceSatisfied**(`recurrence`, `startWeekIdx`, `firstRequiredWeekIdx?`): `boolean`
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:149](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/gantt/recurrence.ts#L149)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:149](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/gantt/recurrence.ts#L149)
 
 Whether a recurring event's obligation is met: an occurrence exists in every
 week the recurrence is supposed to cover. Since occurrences echo forward from

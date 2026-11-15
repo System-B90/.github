@@ -8,4 +8,4 @@
 
 > `const` **dayApi**: [`BasicGantApi`](../../base/type-aliases/BasicGantApi.md)\<[`GanttDay`](../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md), [`CreateGanttDayPayload`](../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttDayPayload.md)\>
 
-Defined in: [ui/src/api-client/gantt/day.ts:12](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-client/gantt/day.ts#L12)
+Defined in: [ui/src/api-client/gantt/day.ts:12](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-client/gantt/day.ts#L12)

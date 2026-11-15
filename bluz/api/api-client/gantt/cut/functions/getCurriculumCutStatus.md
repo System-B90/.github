@@ -8,7 +8,7 @@
 
 > **getCurriculumCutStatus**(`curriculumId`): `Promise`\<[`ApiCurriculumCutStatus`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumCutStatus.md)\>
 
-Defined in: [ui/src/api-client/gantt/cut.ts:82](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-client/gantt/cut.ts#L82)
+Defined in: [ui/src/api-client/gantt/cut.ts:82](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-client/gantt/cut.ts#L82)
 
 GET /api/gantt/curriculums/[id]/cut — whether the curriculum currently holds
 live cut events, used to toggle between the "cut" and "pull back" actions.

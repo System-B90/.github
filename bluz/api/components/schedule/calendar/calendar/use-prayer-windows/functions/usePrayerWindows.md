@@ -8,7 +8,7 @@
 
 > **usePrayerWindows**(`date`, `enabled`, `iterationId?`): [`PrayerWindowSpan`](../type-aliases/PrayerWindowSpan.md)[] \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:51](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L51)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts:51](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/use-prayer-windows.ts#L51)
 
 The server-computed prayer windows of the week holding `date`, in the viewed
 iteration, or null while off, loading, or failed — the tint is a nicety.

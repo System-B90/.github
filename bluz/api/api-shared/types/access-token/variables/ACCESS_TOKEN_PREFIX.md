@@ -8,7 +8,7 @@
 
 > `const` **ACCESS\_TOKEN\_PREFIX**: `"bluz_pat_"` = `"bluz_pat_"`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:14](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/api-shared/types/access-token.ts#L14)
+Defined in: [ui/src/api-shared/types/access-token.ts:14](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/access-token.ts#L14)
 
 Every token starts with this, so secret scanners (and people) can spot a
 leaked one. The CLI keys its header choice off it too.

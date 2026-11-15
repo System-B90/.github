@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/ai/benchmark/route.ts:27](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/app/api/ai/benchmark/route.ts#L27)
+Defined in: [ui/src/app/api/ai/benchmark/route.ts:27](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/app/api/ai/benchmark/route.ts#L27)
 
 Assistant self-test against a fabricated fixture (#704).
 

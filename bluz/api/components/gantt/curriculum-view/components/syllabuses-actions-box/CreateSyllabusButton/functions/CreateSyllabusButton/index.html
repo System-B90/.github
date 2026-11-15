@@ -914,6 +914,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__namedparameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __namedParameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="__namedParameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#curriculumid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        curriculumId
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#returns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -949,13 +994,17 @@
 <p><a href="../../../../../../../../">TypeDoc API</a> / <a href="../../">components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton</a> / CreateSyllabusButton</p>
 <h1 id="function-createsyllabusbutton">Function: CreateSyllabusButton()<a class="headerlink" href="#function-createsyllabusbutton" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>CreateSyllabusButton</strong>(): <code>Element</code></p>
+<p><strong>CreateSyllabusButton</strong>(<code>__namedParameters</code>): <code>Element</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L14">ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:14</a></p>
-<p>"סילבוס חדש" opens the syllabus dialog as a draft (#881): the user names the
-syllabus and fills in its fields in one place, and nothing is saved until
-the name is committed. It used to save a placeholder "סילבוס חדש" record on
-every click (#845), then asked for the name in a separate prompt.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx#L24">ui/src/components/gantt/curriculum-view/components/syllabuses-actions-box/CreateSyllabusButton.tsx:24</a></p>
+<p>"סילבוס חדש" opens a menu: create a syllabus, or (rare) add an existing one
+to this gantt. Creating opens the syllabus dialog as a draft (#881): the
+user names the syllabus and fills in its fields in one place, and nothing is
+saved until the name is committed.</p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<h3 id="__namedparameters">__namedParameters<a class="headerlink" href="#__namedparameters" title="Permanent link">&para;</a></h3>
+<h4 id="curriculumid">curriculumId<a class="headerlink" href="#curriculumid" title="Permanent link">&para;</a></h4>
+<p><code>string</code></p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
 <p><code>Element</code></p>
 

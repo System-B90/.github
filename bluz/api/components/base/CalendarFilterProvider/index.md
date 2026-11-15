@@ -10,6 +10,7 @@
 
 - [BusyInterval](type-aliases/BusyInterval.md)
 - [CalendarFiltersContextState](type-aliases/CalendarFiltersContextState.md)
+- [PaTarget](type-aliases/PaTarget.md)
 
 ## Functions
 

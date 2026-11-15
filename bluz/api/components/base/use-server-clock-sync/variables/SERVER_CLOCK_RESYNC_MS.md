@@ -8,7 +8,7 @@
 
 > `const` **SERVER\_CLOCK\_RESYNC\_MS**: `number`
 
-Defined in: [ui/src/components/base/use-server-clock-sync.ts:12](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/base/use-server-clock-sync.ts#L12)
+Defined in: [ui/src/components/base/use-server-clock-sync.ts:12](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/base/use-server-clock-sync.ts#L12)
 
 Resync cadence. The monotonic clock does not drift meaningfully, but it may
 pause while a device sleeps; waking resyncs at once, this is the backstop.

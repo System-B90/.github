@@ -8,6 +8,6 @@
 
 > `const` **RELOAD\_JITTER\_MS**: `5000` = `5_000`
 
-Defined in: [ui/src/components/student-view/use-student-push-reload.ts:9](https://github.com/System-B90/Bluz/blob/8b8a83c5f7e9b6a85cfab9741a183d82b8eeaea9/ui/src/components/student-view/use-student-push-reload.ts#L9)
+Defined in: [ui/src/components/student-view/use-student-push-reload.ts:9](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/student-view/use-student-push-reload.ts#L9)
 
 Upper bound on how long a board waits before a pushed reload.
