@@ -8,7 +8,7 @@
 
 > **pushSelectedCollisionUpdates**(`collisionStates`, `selectedIds`, `api`): `Promise`\<[`PushOutcome`](../type-aliases/PushOutcome.md)\>
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:209](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L209)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:209](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L209)
 
 Pushes the selected offline edits to the server one at a time, isolating
 each write in its own try/catch (#157). A failure mid-loop no longer aborts

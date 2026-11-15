@@ -8,7 +8,7 @@
 
 > `const` **PATCH**: [`ServerApi`](../../../../../api-server/common/type-aliases/ServerApi.md)\<[`ApiEventUpdateManyPayload`](../../../../../api-shared/types/event/type-aliases/ApiEventUpdateManyPayload.md), [`ApiEventUpdateManyResponse`](../../../../../api-shared/types/event/type-aliases/ApiEventUpdateManyResponse.md)\>
 
-Defined in: [ui/src/app/api/event/route.ts:168](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/event/route.ts#L168)
+Defined in: [ui/src/app/api/event/route.ts:168](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/api/event/route.ts#L168)
 
 Bulk update (#932): the body is an array of events. One bulkWrite and one
 history insert instead of a request per event.

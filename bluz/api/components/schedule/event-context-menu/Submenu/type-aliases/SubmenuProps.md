@@ -8,7 +8,7 @@
 
 > **SubmenuProps** = `object` & `Omit`\<`MenuItemProps`, `"children"` \| `"onClick"`\>
 
-Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:44](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-context-menu/Submenu.tsx#L44)
+Defined in: [ui/src/components/schedule/event-context-menu/Submenu.tsx:44](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-context-menu/Submenu.tsx#L44)
 
 Anything the parent `MenuList` injects into what it believes is a plain
 menu item — `ref`, `tabIndex`, `autoFocus` — plus the submenu's own props.

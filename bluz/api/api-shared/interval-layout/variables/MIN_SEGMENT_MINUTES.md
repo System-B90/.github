@@ -8,7 +8,7 @@
 
 > `const` **MIN\_SEGMENT\_MINUTES**: `5` = `5`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:15](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/interval-layout.ts#L15)
+Defined in: [ui/src/api-shared/interval-layout.ts:15](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/interval-layout.ts#L15)
 
 Grid resolution of the calendar (minutes). A gap shorter than this can't be
 rendered legibly, so the layout refuses to emit slivers that small.

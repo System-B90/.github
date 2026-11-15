@@ -8,7 +8,7 @@
 
 > **PasteSlot** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:12](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/paste.ts#L12)
+Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:12](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/paste.ts#L12)
 
 Where a paste lands: a grid slot, optionally inside a day-view room column.
 
@@ -18,7 +18,7 @@ Where a paste lands: a grid slot, optionally inside a day-view room column.
 
 > `optional` **resourceId?**: `SlotInfo`\[`"resourceId"`\]
 
-Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:14](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/paste.ts#L14)
+Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:14](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/paste.ts#L14)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:14](https://g
 
 > **start**: `Date`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:13](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/paste.ts#L13)
+Defined in: [ui/src/components/schedule/calendar/calendar/paste.ts:13](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/paste.ts#L13)

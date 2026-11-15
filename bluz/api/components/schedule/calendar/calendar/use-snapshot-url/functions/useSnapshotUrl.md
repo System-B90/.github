@@ -8,7 +8,7 @@
 
 > **useSnapshotUrl**(): `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-snapshot-url.ts:26](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/use-snapshot-url.ts#L26)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-snapshot-url.ts:26](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/use-snapshot-url.ts#L26)
 
 Two-way sync between `?snapshot=` and the provider's snapshot view: opening
 the URL shows the snapshot (once the first live fetch lands, so the view's

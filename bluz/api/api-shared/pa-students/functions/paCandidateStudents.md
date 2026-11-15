@@ -8,7 +8,7 @@
 
 > **paCandidateStudents**(`instructorId`, `users`, `eventGroups`): `CourseUser`[]
 
-Defined in: [ui/src/api-shared/pa-students.ts:17](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/pa-students.ts#L17)
+Defined in: [ui/src/api-shared/pa-students.ts:17](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/pa-students.ts#L17)
 
 An instructor's students (Hive mentees) who attend an event, i.e. whom they
 could take out of it for a personal talk (פ"א).

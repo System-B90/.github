@@ -8,7 +8,7 @@
 
 > `const` **ToolbarIconButton**: `ForwardRefExoticComponent`\<`Omit`\<`ToolbarIconButtonProps`, `"ref"`\> & `RefAttributes`\<`HTMLButtonElement`\>\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar/ToolbarIconButton.tsx:22](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/ToolbarIconButton.tsx#L22)
+Defined in: [ui/src/components/schedule/calendar/calendar/ToolbarIconButton.tsx:22](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/ToolbarIconButton.tsx#L22)
 
 The one icon-only control of the schedule toolbar and its floating chrome
 (docs/ux-guidelines.md §5.2–5.3). The tooltip hangs on a span so it still

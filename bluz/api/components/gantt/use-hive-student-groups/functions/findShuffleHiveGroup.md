@@ -8,7 +8,7 @@
 
 > **findShuffleHiveGroup**(`groups`, `name`, `linkedGroupId?`): `Class` \| `undefined`
 
-Defined in: [ui/src/components/gantt/use-hive-student-groups.ts:55](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/use-hive-student-groups.ts#L55)
+Defined in: [ui/src/components/gantt/use-hive-student-groups.ts:55](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/use-hive-student-groups.ts#L55)
 
 The Hive group a shuffle syncs against: its explicitly linked group when
 the syllabus sets one (#774), else the same-named group.

@@ -8,7 +8,7 @@
 
 > **EventChangeContext** = `object`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:120](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/event-history.ts#L120)
+Defined in: [ui/src/api-shared/types/event-history.ts:120](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/event-history.ts#L120)
 
 Extra provenance for a change, kept as a narrow, additive record rather than
 a free-form blob so it stays queryable.
@@ -19,7 +19,7 @@ a free-form blob so it stays queryable.
 
 > `optional` **curriculumId?**: `string`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:122](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/event-history.ts#L122)
+Defined in: [ui/src/api-shared/types/event-history.ts:122](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/event-history.ts#L122)
 
 Curriculum whose cut/reload produced this change.
 
@@ -29,6 +29,6 @@ Curriculum whose cut/reload produced this change.
 
 > `optional` **snapshotId?**: `string`
 
-Defined in: [ui/src/api-shared/types/event-history.ts:124](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/event-history.ts#L124)
+Defined in: [ui/src/api-shared/types/event-history.ts:124](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/event-history.ts#L124)
 
 Snapshot restored, for SnapshotRestore.

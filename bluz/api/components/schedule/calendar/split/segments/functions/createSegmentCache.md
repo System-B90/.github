@@ -8,7 +8,7 @@
 
 > **createSegmentCache**(): `object`
 
-Defined in: [ui/src/components/schedule/calendar/split/segments.ts:138](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/split/segments.ts#L138)
+Defined in: [ui/src/components/schedule/calendar/split/segments.ts:138](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/split/segments.ts#L138)
 
 Incremental [buildEventSegments](buildEventSegments.md) for the calendar (#927). One websocket
 upsert used to rebuild every segment, so every tile and day column

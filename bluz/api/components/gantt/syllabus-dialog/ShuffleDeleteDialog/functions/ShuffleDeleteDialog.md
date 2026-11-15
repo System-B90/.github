@@ -8,7 +8,7 @@
 
 > **ShuffleDeleteDialog**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:63](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L63)
+Defined in: [ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx:63](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/syllabus-dialog/ShuffleDeleteDialog.tsx#L63)
 
 Confirms deleting shuffle names that modules or events still use, listing
 every item the deletion would strip them from (#485).

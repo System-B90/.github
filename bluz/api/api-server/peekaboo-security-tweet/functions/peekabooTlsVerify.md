@@ -8,7 +8,7 @@
 
 > **peekabooTlsVerify**(`value?`): `boolean`
 
-Defined in: [ui/src/api-server/peekaboo-security-tweet.ts:26](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/peekaboo-security-tweet.ts#L26)
+Defined in: [ui/src/api-server/peekaboo-security-tweet.ts:26](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/peekaboo-security-tweet.ts#L26)
 
 Peek-a-Boo usually sits behind an internal, self-signed certificate, and an
 alert that dies on a TLS handshake is worse than none: certificate checks

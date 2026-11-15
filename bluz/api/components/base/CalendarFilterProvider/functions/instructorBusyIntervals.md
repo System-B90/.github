@@ -8,7 +8,7 @@
 
 > **instructorBusyIntervals**(`instructor`, `events`): [`BusyInterval`](../type-aliases/BusyInterval.md)[]
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:138](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/CalendarFilterProvider.tsx#L138)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:139](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/CalendarFilterProvider.tsx#L139)
 
 The spans `instructor` instructs or lectures in. Parked events are off the
 grid and keep no one busy.

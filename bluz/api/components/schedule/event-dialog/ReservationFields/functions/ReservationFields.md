@@ -8,7 +8,7 @@
 
 > **ReservationFields**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-dialog/ReservationFields.tsx:18](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-dialog/ReservationFields.tsx#L18)
+Defined in: [ui/src/components/schedule/event-dialog/ReservationFields.tsx:18](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-dialog/ReservationFields.tsx#L18)
 
 The event dialog's body in its שיריון כיתה mode: the type picker (to switch
 back), the rooms and times the drag seeded, and who the reservation is for.

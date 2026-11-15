@@ -812,6 +812,7 @@
 - [components/schedule/calendar/calendar/DraftsMenu](components/schedule/calendar/calendar/DraftsMenu/index.md)
 - [components/schedule/calendar/calendar/IterationSelector](components/schedule/calendar/calendar/IterationSelector/index.md)
 - [components/schedule/calendar/calendar/paste](components/schedule/calendar/calendar/paste/index.md)
+- [components/schedule/calendar/calendar/PaWindowsButton](components/schedule/calendar/calendar/PaWindowsButton/index.md)
 - [components/schedule/calendar/calendar/range-header](components/schedule/calendar/calendar/range-header/index.md)
 - [components/schedule/calendar/calendar/reservation-overlay](components/schedule/calendar/calendar/reservation-overlay/index.md)
 - [components/schedule/calendar/calendar/RoomZoomHeader](components/schedule/calendar/calendar/RoomZoomHeader/index.md)

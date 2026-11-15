@@ -8,7 +8,7 @@
 
 > **halfWorkingMs**(`event`): `number`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:39](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L39)
+Defined in: [ui/src/components/schedule/event-context-menu/SliceDialog.tsx:39](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-context-menu/SliceDialog.tsx#L39)
 
 Half the event's working time, rounded to the nearest 5 minutes, so both
 pieces are multiples of 5 whenever the whole is (45 → 25 + 20). An event too

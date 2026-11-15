@@ -8,4 +8,4 @@
 
 > `const` **GanttHeader**: `React.FC`\<\{ `showConstraints`: `boolean`; \}\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx:47](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx#L47)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx:47](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx#L47)

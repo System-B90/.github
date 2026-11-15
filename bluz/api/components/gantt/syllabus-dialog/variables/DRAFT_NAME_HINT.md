@@ -8,4 +8,4 @@
 
 > `const` **DRAFT\_NAME\_HINT**: `"הסילבוס ייווצר כשתאשרו את השם (Enter או מעבר לשדה הבא)"` = `"הסילבוס ייווצר כשתאשרו את השם (Enter או מעבר לשדה הבא)"`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:35](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-dialog/index.tsx#L35)
+Defined in: [ui/src/components/gantt/syllabus-dialog/index.tsx:35](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/syllabus-dialog/index.tsx#L35)

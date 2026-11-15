@@ -8,7 +8,7 @@
 
 > **StudentMonitorDialog**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/student-monitor/StudentMonitorDialog.tsx:55](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/student-monitor/StudentMonitorDialog.tsx#L55)
+Defined in: [ui/src/components/student-monitor/StudentMonitorDialog.tsx:55](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/student-monitor/StudentMonitorDialog.tsx#L55)
 
 Staff-only: for one day, how long each student had the board open and
 focused, and every suspected malicious attempt recorded against them.

@@ -8,7 +8,7 @@
 
 > **withShuffleLevel**(`levels`, `name`, `level`): [`ShuffleLevels`](../type-aliases/ShuffleLevels.md)
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:201](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/shuffle-names.ts#L201)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:201](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/shuffle-names.ts#L201)
 
 `levels` with `name` set to `level`, or without `name` for "" — the level is
 optional, and no level is stored as no entry (the map holds valid levels only).

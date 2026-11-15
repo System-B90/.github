@@ -8,7 +8,7 @@
 
 > **CutPlacementMode** = `"auto"` \| `"keep"` \| `"park"`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:9](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L9)
+Defined in: [ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx:9](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/cut-dialog/CutPlacementSelect.tsx#L9)
 
 What happens to work the week template does not place (#997): planned
 around the template's events, parked in the unassigned box, or (reload

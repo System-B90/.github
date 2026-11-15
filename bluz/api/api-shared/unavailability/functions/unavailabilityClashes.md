@@ -8,7 +8,7 @@
 
 > **unavailabilityClashes**(`event`, `others`): [`UnavailabilityClash`](../type-aliases/UnavailabilityClash.md)[]
 
-Defined in: [ui/src/api-shared/unavailability.ts:110](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/unavailability.ts#L110)
+Defined in: [ui/src/api-shared/unavailability.ts:110](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/unavailability.ts#L110)
 
 Every clash `event` takes part in against `others`: as an assignment, a
 person on it marked unavailable over it; as an unavailability, an event its

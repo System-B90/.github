@@ -8,7 +8,7 @@
 
 > `const` **setHiveCache**: (`id`, `hiveCache`) => `Promise`\<[`Iteration`](../../../../../api-shared/types/iteration/type-aliases/Iteration.md)\> = `setIterationHiveCache`
 
-Defined in: [ui/src/api-server/db-iterations.ts:459](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/db-iterations.ts#L459)
+Defined in: [ui/src/api-server/db-iterations.ts:459](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/db-iterations.ts#L459)
 
 Overwrite an iteration's Hive name cache, e.g. after a manual "sync Hive
 info" request (#379).

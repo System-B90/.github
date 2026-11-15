@@ -8,7 +8,7 @@
 
 > `const` **DELETE**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/access-tokens/\[id\]/route.ts:24](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/access-tokens/[id]/route.ts#L24)
+Defined in: [ui/src/app/api/access-tokens/\[id\]/route.ts:24](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/api/access-tokens/[id]/route.ts#L24)
 
 DELETE /api/access-tokens/:id — revoke immediately. A ReadWrite token may
 revoke itself or a sibling; a ReadOnly one is stopped by its scope.

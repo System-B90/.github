@@ -8,7 +8,7 @@
 
 > **TemplateTimesDialog**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/week-templates/TemplateTimesDialog.tsx:77](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/week-templates/TemplateTimesDialog.tsx#L77)
+Defined in: [ui/src/components/week-templates/TemplateTimesDialog.tsx:77](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/week-templates/TemplateTimesDialog.tsx#L77)
 
 Edits a week template's name and its day-start, meal and prayer times
 (#997). Saving asks whether to re-apply the template to weeks already cut

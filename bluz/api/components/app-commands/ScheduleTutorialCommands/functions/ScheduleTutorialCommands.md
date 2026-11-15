@@ -8,7 +8,7 @@
 
 > **ScheduleTutorialCommands**(): `null`
 
-Defined in: [ui/src/components/app-commands/ScheduleTutorialCommands.tsx:20](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/app-commands/ScheduleTutorialCommands.tsx#L20)
+Defined in: [ui/src/components/app-commands/ScheduleTutorialCommands.tsx:20](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/app-commands/ScheduleTutorialCommands.tsx#L20)
 
 The help panel and each schedule tutorial, from the palette: typing "הדרכה"
 finds every tutorial even while the toolbar, and with it the "?" button, is

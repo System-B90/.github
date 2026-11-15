@@ -8,6 +8,6 @@
 
 > `const` **DELETE**: [`ServerApi`](../../../../../../api-server/common/type-aliases/ServerApi.md)\<[`ApiEventDeleteManyPayload`](../../../../../../api-shared/types/event/type-aliases/ApiEventDeleteManyPayload.md), [`ApiEventDeleteResponse`](../../../../../../api-shared/types/event/type-aliases/ApiEventDeleteResponse.md)\>
 
-Defined in: [ui/src/app/api/event/bulk/route.ts:68](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/event/bulk/route.ts#L68)
+Defined in: [ui/src/app/api/event/bulk/route.ts:68](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/api/event/bulk/route.ts#L68)
 
 Soft-deletes many events with one updateMany. Body: array of ids.

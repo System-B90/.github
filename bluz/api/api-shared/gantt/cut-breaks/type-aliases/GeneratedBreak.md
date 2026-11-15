@@ -8,7 +8,7 @@
 
 > **GeneratedBreak** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:62](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/cut-breaks.ts#L62)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:62](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L62)
 
 A break the pass decided to create.
 
@@ -18,7 +18,7 @@ A break the pass decided to create.
 
 > **afterItemKey**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:70](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/cut-breaks.ts#L70)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:70](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L70)
 
 Key of the item this break follows.
 
@@ -28,7 +28,7 @@ Key of the item this break follows.
 
 > **coversPrayer**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:68](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/cut-breaks.ts#L68)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:68](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L68)
 
 Prayer this break was positioned to cover, when any.
 
@@ -38,7 +38,7 @@ Prayer this break was positioned to cover, when any.
 
 > **endMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:66](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/cut-breaks.ts#L66)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:66](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L66)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:66](https://github.com/System
 
 > **kind**: [`BreakKind`](../../cut-rules/type-aliases/BreakKind.md)
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:63](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/cut-breaks.ts#L63)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:63](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L63)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:63](https://github.com/System
 
 > **startMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:65](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/cut-breaks.ts#L65)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:65](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L65)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:65](https://github.com/System
 
 > **title**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:64](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/cut-breaks.ts#L64)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:64](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L64)

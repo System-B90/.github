@@ -8,7 +8,7 @@
 
 > **courseFilterMatches**(`picked`, `courses`): `Set`\<`string`\>
 
-Defined in: [ui/src/api-shared/course-tree.ts:179](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/course-tree.ts#L179)
+Defined in: [ui/src/api-shared/course-tree.ts:179](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/course-tree.ts#L179)
 
 Courses whose events a course filter shows. Each picked course matches its
 ancestors too: their events apply to its students. Child courses do not

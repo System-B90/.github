@@ -8,4 +8,4 @@
 
 > `const` **RULE\_SECTIONS**: readonly \[\{ `id`: `"priorities"`; `title`: `"עדיפויות"`; \}, \{ `id`: `"sunday"`; `title`: `"יום ראשון: הגעה מהבית"`; \}, \{ `id`: `"friday"`; `title`: `"יום שישי: יציאה הביתה"`; \}, \{ `id`: `"thursday"`; `title`: `"יום חמישי בבוקר"`; \}, \{ `id`: `"shabbat"`; `title`: `"סגירת שבת ושבת"`; \}, \{ `id`: `"placement"`; `title`: `"שיבוץ לפי סוג מופע"`; \}, \{ `id`: `"feedback"`; `title`: `"משוב יומי"`; \}, \{ `id`: `"ag"`; `title`: `"א״ג והתארגנות"`; \}, \{ `id`: `"alignment"`; `title`: `"יישור שאפלים"`; \}, \{ `id`: `"splitting"`; `title`: `"פיצול מופעים"`; \}, \{ `id`: `"rooms"`; `title`: `"כיתות"`; \}, \{ `id`: `"instructors"`; `title`: `"מבוזרים ומרצים"`; \}, \{ `id`: `"constraints"`; `title`: `"מעבר אילוצים"`; \}\]
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:23](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-rules.ts#L23)
+Defined in: [ui/src/api-shared/schedule-rules.ts:23](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-rules.ts#L23)

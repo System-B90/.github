@@ -8,7 +8,7 @@
 
 > **shortenInstructorName**(`fullName`, `allInstructors`): `string`
 
-Defined in: [ui/src/components/schedule/event-component/NameUtils.ts:16](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-component/NameUtils.ts#L16)
+Defined in: [ui/src/components/schedule/event-component/NameUtils.ts:16](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-component/NameUtils.ts#L16)
 
 Shortens an instructor display name to their first name.
 Differentiates instructors with the same first name by appending the minimum

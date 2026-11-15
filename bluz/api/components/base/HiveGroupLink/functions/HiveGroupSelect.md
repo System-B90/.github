@@ -8,7 +8,7 @@
 
 > **HiveGroupSelect**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/HiveGroupLink.tsx:60](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/HiveGroupLink.tsx#L60)
+Defined in: [ui/src/components/base/HiveGroupLink.tsx:60](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/HiveGroupLink.tsx#L60)
 
 Picks the Hive student group a shuffle or course syncs against (#774), for
 when the names differ. Clearing it falls back to matching by name.

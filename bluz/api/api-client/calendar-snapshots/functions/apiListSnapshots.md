@@ -8,7 +8,7 @@
 
 > **apiListSnapshots**(`iterationId?`): `Promise`\<[`CalendarSnapshotSummary`](../../../api-shared/types/type-aliases/CalendarSnapshotSummary.md)[]\>
 
-Defined in: [ui/src/api-client/calendar-snapshots.ts:17](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-client/calendar-snapshots.ts#L17)
+Defined in: [ui/src/api-client/calendar-snapshots.ts:17](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/calendar-snapshots.ts#L17)
 
 Lists all calendar snapshots (newest first), without their events payload.
 

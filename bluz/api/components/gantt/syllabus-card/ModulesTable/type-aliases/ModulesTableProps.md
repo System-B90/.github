@@ -8,7 +8,7 @@
 
 > **ModulesTableProps** = `object`
 
-Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:41](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L41)
+Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:41](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L41)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:41](https://
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:43](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L43)
+Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:43](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L43)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:43](https://
 
 > `optional` **maxHeight?**: `number` \| `string`
 
-Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:46](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L46)
+Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:46](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L46)
 
 Overridden by the syllabus dialog, which has far more room than the card.
 
@@ -34,7 +34,7 @@ Overridden by the syllabus dialog, which has far more room than the card.
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md)
 
-Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:42](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L42)
+Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:42](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L42)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:42](https://
 
 > **syllabusModules**: [`GanttSyllabus`](../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabus.md)\[`"modules"`\]
 
-Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:44](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L44)
+Defined in: [ui/src/components/gantt/syllabus-card/ModulesTable.tsx:44](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/syllabus-card/ModulesTable.tsx#L44)

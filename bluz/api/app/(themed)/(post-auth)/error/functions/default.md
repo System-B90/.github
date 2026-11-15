@@ -8,7 +8,7 @@
 
 > **default**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/app/(themed)/(post-auth)/error.tsx:11](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/(themed)/(post-auth)/error.tsx#L11)
+Defined in: [ui/src/app/(themed)/(post-auth)/error.tsx:11](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/(themed)/(post-auth)/error.tsx#L11)
 
 Segment-level error page for every authenticated route. Covers server
 component throws and render-phase throws that escape the finer-grained

@@ -8,7 +8,7 @@
 
 > **iterationWeekNumber**(`date`, `iterationStart`): `number` \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/schedule-week.ts:8](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/schedule-week.ts#L8)
+Defined in: [ui/src/components/schedule/calendar/calendar/schedule-week.ts:8](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/schedule-week.ts#L8)
 
 The iteration week a calendar date falls in: week 1 is the Sunday-started
 week containing the iteration's start date. Null before the iteration

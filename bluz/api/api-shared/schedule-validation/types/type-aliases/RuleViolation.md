@@ -8,7 +8,7 @@
 
 > **RuleViolation** = `object`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:63](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L63)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:63](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L63)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:63](https://github.c
 
 > **date**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:66](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L66)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:66](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L66)
 
 Local civil date, `YYYY-MM-DD`.
 
@@ -26,7 +26,7 @@ Local civil date, `YYYY-MM-DD`.
 
 > **details**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:70](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L70)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:70](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L70)
 
 Hebrew, the specifics. May be empty.
 
@@ -36,7 +36,7 @@ Hebrew, the specifics. May be empty.
 
 > **eventIds**: `string`[]
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:72](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L72)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:72](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L72)
 
 Events to select when the row is opened; may be empty (e.g. a missing event).
 
@@ -46,7 +46,7 @@ Events to select when the row is opened; may be empty (e.g. a missing event).
 
 > **rule**: [`ScheduleRuleId`](../../../schedule-rules/type-aliases/ScheduleRuleId.md)
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:64](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L64)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:64](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L64)
 
 ***
 
@@ -54,6 +54,6 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:64](https://github.c
 
 > **summary**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:68](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L68)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:68](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L68)
 
 Hebrew, one line.

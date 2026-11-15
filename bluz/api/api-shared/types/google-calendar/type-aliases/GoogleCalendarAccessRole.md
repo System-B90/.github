@@ -8,6 +8,6 @@
 
 > **GoogleCalendarAccessRole** = `"freeBusyReader"` \| `"owner"` \| `"reader"` \| `"writer"`
 
-Defined in: [ui/src/api-shared/types/google-calendar.ts:45](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/google-calendar.ts#L45)
+Defined in: [ui/src/api-shared/types/google-calendar.ts:45](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/google-calendar.ts#L45)
 
 Calendar API access roles (calendarList.accessRole). Bluz needs `writer` or better.

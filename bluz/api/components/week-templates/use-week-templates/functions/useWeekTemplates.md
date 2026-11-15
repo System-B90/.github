@@ -8,7 +8,7 @@
 
 > **useWeekTemplates**(`enabled?`): `object`
 
-Defined in: [ui/src/components/week-templates/use-week-templates.ts:12](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/week-templates/use-week-templates.ts#L12)
+Defined in: [ui/src/components/week-templates/use-week-templates.ts:12](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/week-templates/use-week-templates.ts#L12)
 
 The week templates (#997), loaded on mount. `refresh` reloads them after a
 change; `setTemplates` lets a caller apply a known result without a round trip.

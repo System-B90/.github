@@ -8,4 +8,4 @@
 
 > `const` **ganttSyllabusesRelationsSchema**: `Relations`\<`"s"`, \{ `c2s`: `Many`\<`"c2s"`\>; `s2m`: `Many`\<`"s2m"`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/syllabuses.ts:48](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/schema/syllabuses.ts#L48)
+Defined in: [ui/src/api-server/gantt/schema/syllabuses.ts:48](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/schema/syllabuses.ts#L48)

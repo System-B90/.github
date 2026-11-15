@@ -8,7 +8,7 @@
 
 > **RuleCheck** = `object`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:75](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L75)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:75](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L75)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:75](https://github.c
 
 > **id**: [`ScheduleRuleId`](../../../schedule-rules/type-aliases/ScheduleRuleId.md)
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:76](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L76)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:76](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L76)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:76](https://github.c
 
 > `optional` **needs?**: `ReadonlyArray`\<[`RuleCheckNeed`](RuleCheckNeed.md)\>
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:77](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L77)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:77](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L77)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:77](https://github.c
 
 > **run**: (`events`, `context`) => [`RuleViolation`](RuleViolation.md)[]
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:78](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L78)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:78](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L78)
 
 #### Parameters
 

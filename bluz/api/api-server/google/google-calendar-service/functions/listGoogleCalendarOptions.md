@@ -8,7 +8,7 @@
 
 > **listGoogleCalendarOptions**(`userId`): `Promise`\<\{ `calendars`: [`GoogleCalendarOption`](../../../../api-shared/types/google-calendar/type-aliases/GoogleCalendarOption.md)[]; `selectedId`: `string`; \}\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:658](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/google/google-calendar-service.ts#L658)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:658](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/google/google-calendar-service.ts#L658)
 
 Calendars the connected user could mirror into — their own plus any a
 colleague shared with write access. Throws when not connected.

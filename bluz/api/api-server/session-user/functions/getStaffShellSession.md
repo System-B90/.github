@@ -8,7 +8,7 @@
 
 > **getStaffShellSession**(): `Promise`\<`AuthSessionUser` & `object` \| `null`\>
 
-Defined in: [ui/src/api-server/session-user.ts:209](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/session-user.ts#L209)
+Defined in: [ui/src/api-server/session-user.ts:209](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/session-user.ts#L209)
 
 Like [getStaffSession](getStaffSession.md), but also admits a Checker — for page code and
 read-only handlers that serve the staff shell rather than gate a write.

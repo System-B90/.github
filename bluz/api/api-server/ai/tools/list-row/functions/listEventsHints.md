@@ -8,7 +8,7 @@
 
 > **listEventsHints**(`events`, `fields`): `string`[]
 
-Defined in: [ui/src/api-server/ai/tools/list-row.ts:24](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/tools/list-row.ts#L24)
+Defined in: [ui/src/api-server/ai/tools/list-row.ts:24](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/list-row.ts#L24)
 
 Per-result guidance for list_events; the people rules only when people show.
 

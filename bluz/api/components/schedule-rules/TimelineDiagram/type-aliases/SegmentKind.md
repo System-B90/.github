@@ -8,7 +8,7 @@
 
 > **SegmentKind** = `"absent"` \| `"break"` \| `"exercise"` \| `"forbidden"` \| `"frame"` \| `"free"` \| `"lecture"` \| `"other"`
 
-Defined in: [ui/src/components/schedule-rules/TimelineDiagram.tsx:15](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule-rules/TimelineDiagram.tsx#L15)
+Defined in: [ui/src/components/schedule-rules/TimelineDiagram.tsx:15](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule-rules/TimelineDiagram.tsx#L15)
 
 A small horizontal day timeline for the rules page: lanes (shuffles, rooms,
 days) of labelled segments over a clock range. Time runs with the reading

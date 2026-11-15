@@ -8,7 +8,7 @@
 
 > **SubjectField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-dialog/SubjectField.tsx:12](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-dialog/SubjectField.tsx#L12)
+Defined in: [ui/src/components/schedule/event-dialog/SubjectField.tsx:12](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-dialog/SubjectField.tsx#L12)
 
 Event-dialog binding around the reusable [HiveSubjectSelect](../../../../base/HiveSubjectSelect/functions/HiveSubjectSelect.md).
 

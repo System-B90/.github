@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/access-tokens/route.ts:27](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/access-tokens/route.ts#L27)
+Defined in: [ui/src/app/api/access-tokens/route.ts:27](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/api/access-tokens/route.ts#L27)
 
 GET /api/access-tokens — the caller's tokens, newest first. Secrets are never included.
 

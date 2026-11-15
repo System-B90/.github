@@ -8,7 +8,7 @@
 
 > **PushOutcome** = `object`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:197](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L197)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:197](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L197)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/util
 
 > **failedIds**: [`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md)[]
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:199](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L199)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:199](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L199)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/util
 
 > **succeededIds**: [`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md)[]
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:198](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L198)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:198](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L198)

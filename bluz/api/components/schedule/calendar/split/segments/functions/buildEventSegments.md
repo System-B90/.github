@@ -8,7 +8,7 @@
 
 > **buildEventSegments**(`events`, `windows?`): [`EventSegment`](../type-aliases/EventSegment.md)[]
 
-Defined in: [ui/src/components/schedule/calendar/split/segments.ts:78](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/split/segments.ts#L78)
+Defined in: [ui/src/components/schedule/calendar/split/segments.ts:78](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/split/segments.ts#L78)
 
 Expands every event into its drawn pieces.
 

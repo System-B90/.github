@@ -8,7 +8,7 @@
 
 > **memberCourseIds**\<`T`\>(`courses`, `memberOf`, `groups`): `string`[]
 
-Defined in: [ui/src/api-shared/hive-groups.ts:38](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/hive-groups.ts#L38)
+Defined in: [ui/src/api-shared/hive-groups.ts:38](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/hive-groups.ts#L38)
 
 The courses a Hive user belongs to: those whose student group (by the same
 rule as `findCourseHiveGroup`) is one of the user's groups. A course linked

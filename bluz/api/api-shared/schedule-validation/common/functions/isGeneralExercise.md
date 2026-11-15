@@ -8,7 +8,7 @@
 
 > **isGeneralExercise**(`item`, `context`): `boolean`
 
-Defined in: [ui/src/api-shared/schedule-validation/common.ts:168](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/common.ts#L168)
+Defined in: [ui/src/api-shared/schedule-validation/common.ts:168](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/common.ts#L168)
 
 `ע"ע` of the general (כללי) syllabus, by syllabus name or by the `ע"ע כ'` title.
 

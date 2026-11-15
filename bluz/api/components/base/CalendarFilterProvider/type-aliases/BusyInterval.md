@@ -8,7 +8,7 @@
 
 > **BusyInterval** = `object`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:132](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/CalendarFilterProvider.tsx#L132)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:133](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/CalendarFilterProvider.tsx#L133)
 
 When an instructor is busy: one of their events, as ms epoch bounds.
 
@@ -18,7 +18,7 @@ When an instructor is busy: one of their events, as ms epoch bounds.
 
 > **end**: `number`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:132](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/CalendarFilterProvider.tsx#L132)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:133](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/CalendarFilterProvider.tsx#L133)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:132](https://gith
 
 > **eventId**: [`Event`](../../../../api-shared/types/event/type-aliases/Event.md)\[`"id"`\]
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:132](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/CalendarFilterProvider.tsx#L132)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:133](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/CalendarFilterProvider.tsx#L133)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:132](https://gith
 
 > **start**: `number`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:132](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/CalendarFilterProvider.tsx#L132)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:133](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/CalendarFilterProvider.tsx#L133)

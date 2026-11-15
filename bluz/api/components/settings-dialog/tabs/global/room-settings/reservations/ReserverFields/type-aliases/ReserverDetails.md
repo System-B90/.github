@@ -8,7 +8,7 @@
 
 > **ReserverDetails** = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:10](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:10](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L10)
 
 Who a reservation is for, and why: what both reservation forms ask.
 
@@ -18,7 +18,7 @@ Who a reservation is for, and why: what both reservation forms ask.
 
 > **note**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:13](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L13)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:13](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L13)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reserva
 
 > **reserverId**: `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:12](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L12)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:12](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L12)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reserva
 
 > **reserverType**: [`ReserverType`](../../../../../../../../api-shared/types/reservation/type-aliases/ReserverType.md)
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:11](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L11)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx:11](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/room-settings/reservations/ReserverFields.tsx#L11)

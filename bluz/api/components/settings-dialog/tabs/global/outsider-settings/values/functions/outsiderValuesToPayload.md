@@ -8,7 +8,7 @@
 
 > **outsiderValuesToPayload**(`values`): `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:60](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L60)
+Defined in: [ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts:60](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/outsider-settings/values.ts#L60)
 
 Maps the form values onto the API payload, trimming blanks to `null`.
 

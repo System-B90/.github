@@ -8,7 +8,7 @@
 
 > **TemporalConstraint** = [`BaseConstraint`](BaseConstraint.md) & `object`
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:45](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/gantt/models/constraint.ts#L45)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:45](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/models/constraint.ts#L45)
 
 Handles fixed calendar and day-of-week constraints.
 

@@ -8,7 +8,7 @@
 
 > **groupEventBlocks**(`eventIds`, `events`): [`EventDisplayBlock`](../type-aliases/EventDisplayBlock.md)[]
 
-Defined in: [ui/src/components/gantt/event-display-order.ts:21](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/event-display-order.ts#L21)
+Defined in: [ui/src/components/gantt/event-display-order.ts:21](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/event-display-order.ts#L21)
 
 Splits `eventIds` (the module's saved order) into top-level blocks: a
 group sits where its first member is, with every member gathered under it.

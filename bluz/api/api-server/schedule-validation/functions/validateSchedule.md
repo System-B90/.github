@@ -8,7 +8,7 @@
 
 > **validateSchedule**(`source`, `controller`): `Promise`\<[`RuleViolation`](../../../api-shared/schedule-validation/types/type-aliases/RuleViolation.md)[]\>
 
-Defined in: [ui/src/api-server/schedule-validation.ts:199](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/schedule-validation.ts#L199)
+Defined in: [ui/src/api-server/schedule-validation.ts:199](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/schedule-validation.ts#L199)
 
 Every rule, in order — for callers that want the whole report at once (the CLI).
 

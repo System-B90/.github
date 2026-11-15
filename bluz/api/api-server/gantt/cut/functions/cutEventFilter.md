@@ -8,7 +8,7 @@
 
 > **cutEventFilter**(`curriculumId`): `Filter`\<[`DbEventDocument`](../../../../api-shared/types/event/type-aliases/DbEventDocument.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:976](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/cut.ts#L976)
+Defined in: [ui/src/api-server/gantt/cut.ts:976](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/cut.ts#L976)
 
 Matches the live (non-archived) schedule events produced by cutting
 `curriculumId`. Cut events always store a string `ganttEventId`, so that

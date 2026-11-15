@@ -8,7 +8,7 @@
 
 > **ApiAiModelsResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:16](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/ai-models.ts#L16)
+Defined in: [ui/src/api-shared/types/ai-models.ts:16](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/ai-models.ts#L16)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/ai-models.ts:16](https://github.com/System-
 
 > **defaultModel**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:20](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/ai-models.ts#L20)
+Defined in: [ui/src/api-shared/types/ai-models.ts:20](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/ai-models.ts#L20)
 
 The server's configured `AI_MODEL`.
 
@@ -26,7 +26,7 @@ The server's configured `AI_MODEL`.
 
 > `optional` **error?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:24](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/ai-models.ts#L24)
+Defined in: [ui/src/api-shared/types/ai-models.ts:24](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/ai-models.ts#L24)
 
 Why the list is empty, when listing failed.
 
@@ -36,7 +36,7 @@ Why the list is empty, when listing failed.
 
 > **models**: [`AiModelInfo`](AiModelInfo.md)[]
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:18](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/ai-models.ts#L18)
+Defined in: [ui/src/api-shared/types/ai-models.ts:18](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/ai-models.ts#L18)
 
 Empty when the backend cannot list models; the UI falls back to free text.
 
@@ -46,6 +46,6 @@ Empty when the backend cannot list models; the UI falls back to free text.
 
 > `optional` **provider?**: `string`
 
-Defined in: [ui/src/api-shared/types/ai-models.ts:22](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/ai-models.ts#L22)
+Defined in: [ui/src/api-shared/types/ai-models.ts:22](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/ai-models.ts#L22)
 
 The backend in use (`AI_PROVIDER`), so Settings can check a pasted key's shape.

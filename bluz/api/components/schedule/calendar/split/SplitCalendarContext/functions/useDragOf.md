@@ -8,7 +8,7 @@
 
 > **useDragOf**(`eventId`): [`ActiveDrag`](../type-aliases/ActiveDrag.md) \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:130](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L130)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:130](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L130)
 
 The drag in flight if it is `eventId`'s, else `null`. Every other tile gets
 `null` throughout a drag and never re-renders for it.

@@ -8,4 +8,4 @@
 
 > **CalendarAction** = \{ `payload`: [`EventId`](../../../../../../../api-shared/types/event/type-aliases/EventId.md); `type`: `"DELETE_EVENT"`; \} \| \{ `payload`: [`EventId`](../../../../../../../api-shared/types/event/type-aliases/EventId.md)[]; `type`: `"DELETE_MANY"`; \} \| \{ `payload`: [`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md)[]; `type`: `"SET_EVENTS"`; \} \| \{ `payload`: [`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md); `type`: `"UPSERT_EVENT"`; \} \| \{ `payload`: [`Event`](../../../../../../../api-shared/types/event/type-aliases/Event.md)[]; `type`: `"UPSERT_MANY"`; \}
 
-Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:5](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L5)
+Defined in: [ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts:5](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar-provider/hooks/UseEventState.ts#L5)

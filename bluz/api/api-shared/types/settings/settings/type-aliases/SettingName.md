@@ -8,4 +8,4 @@
 
 > **SettingName** = *typeof* [`HIVE_INTEGRATION_SETTING_KEY`](../../hive-integration/variables/HIVE_INTEGRATION_SETTING_KEY.md) \| *typeof* [`MEAL_TIMES_SETTING_KEY`](../../meal/variables/MEAL_TIMES_SETTING_KEY.md) \| *typeof* [`PRAYER_TIMES_SETTING_KEY`](../../prayer/variables/PRAYER_TIMES_SETTING_KEY.md) \| *typeof* [`SCHEDULE_SETTINGS_KEY`](../../schedule/variables/SCHEDULE_SETTINGS_KEY.md) \| *typeof* [`STUDENT_VIEW_SETTING_KEY`](../../student-view/variables/STUDENT_VIEW_SETTING_KEY.md)
 
-Defined in: [ui/src/api-shared/types/settings/settings.ts:28](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/settings/settings.ts#L28)
+Defined in: [ui/src/api-shared/types/settings/settings.ts:28](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/settings/settings.ts#L28)

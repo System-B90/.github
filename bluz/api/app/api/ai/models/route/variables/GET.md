@@ -8,7 +8,7 @@
 
 > `const` **GET**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/ai/models/route.ts:14](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/ai/models/route.ts#L14)
+Defined in: [ui/src/app/api/ai/models/route.ts:14](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/api/ai/models/route.ts#L14)
 
 Models the configured backend offers (#779), for the personal-settings
 dropdown. Listed with the same key chat would use, so a personal key sees

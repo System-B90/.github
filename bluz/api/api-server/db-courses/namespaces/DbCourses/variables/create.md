@@ -8,7 +8,7 @@
 
 > `const` **create**: (`course`, `controller`) => `Promise`\<`Pick`\<[`Course`](../../../../../api-shared/types/course/type-aliases/Course.md), `"id"` \| `"name"` \| `"description"` \| `"color"` \| `"parentId"` \| `"hiveClassId"` \| `"instructorIds"`\>\> = `createDbCourse`
 
-Defined in: [ui/src/api-server/db-courses.ts:88](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/db-courses.ts#L88)
+Defined in: [ui/src/api-server/db-courses.ts:88](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/db-courses.ts#L88)
 
 ## Parameters
 

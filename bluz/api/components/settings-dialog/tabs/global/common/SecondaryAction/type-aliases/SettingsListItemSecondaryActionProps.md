@@ -8,7 +8,7 @@
 
 > **SettingsListItemSecondaryActionProps**\<`TEntity`\> = `object`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:7](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L7)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:7](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L7)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryActio
 
 > **handleDelete**: (`id`) => `Promise`\<`void`\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:10](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L10)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:10](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L10)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryActio
 
 > **item**: `TEntity`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:8](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L8)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:8](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L8)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryActio
 
 > **populateFormFrom**: (`entity`) => `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:9](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx:9](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/common/SecondaryAction.tsx#L9)
 
 #### Parameters
 

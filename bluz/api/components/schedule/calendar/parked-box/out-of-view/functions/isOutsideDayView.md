@@ -8,7 +8,7 @@
 
 > **isOutsideDayView**(`event`, `dayStart`, `dayEnd`): `boolean`
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/out-of-view.ts:46](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/parked-box/out-of-view.ts#L46)
+Defined in: [ui/src/components/schedule/calendar/parked-box/out-of-view.ts:46](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/parked-box/out-of-view.ts#L46)
 
 Whether the event misses the schedule's day view on every day it spans: it
 begins and ends outside the window the grid draws (the time settings' day

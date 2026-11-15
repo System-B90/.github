@@ -8,7 +8,7 @@
 
 > `const` **GANTT\_PAGE\_PADDING**: `2` = `2`
 
-Defined in: [ui/src/components/gantt/layout.ts:5](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/layout.ts#L5)
+Defined in: [ui/src/components/gantt/layout.ts:5](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/layout.ts#L5)
 
 The gantt page's padding around the curriculum view, in theme spacing units.
 The tabs' scrollers move their scrollbar into it (see scrollbarInContainerPaddingSx).

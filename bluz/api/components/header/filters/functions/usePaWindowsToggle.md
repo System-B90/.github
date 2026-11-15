@@ -8,15 +8,14 @@
 
 > **usePaWindowsToggle**(): `object`
 
-Defined in: [ui/src/components/header/filters.tsx:45](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/header/filters.tsx#L45)
+Defined in: [ui/src/components/header/filters.tsx:47](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/header/filters.tsx#L47)
 
-The פ"א view toggle, in the main toolbar. It shows every PA window; narrowed
-to one instructor, it instead greys out the slots that instructor is
-already busy in.
+The פ"א view toggle, in the main toolbar. A click shows one person's PA
+windows, dimming the slots they are busy in: the single filtered
+instructor, else the signed-in user. The button's right-click menu
+(`PaWindowsButton`) picks another target, or every window ("all").
 
 ## Returns
-
-`object`
 
 ### label
 
@@ -26,6 +25,24 @@ already busy in.
 
 > **on**: `boolean`
 
+### setTarget
+
+> **setTarget**: (`target`) => `void`
+
+#### Parameters
+
+##### target
+
+[`PaTarget`](../../../base/CalendarFilterProvider/type-aliases/PaTarget.md)
+
+#### Returns
+
+`void`
+
+### target
+
+> **target**: [`PaTarget`](../../../base/CalendarFilterProvider/type-aliases/PaTarget.md)
+
 ### toggle
 
 > **toggle**: () => `void`
@@ -33,3 +50,9 @@ already busy in.
 #### Returns
 
 `void`
+
+### userId
+
+> **userId**: `number` \| `null`
+
+The signed-in user's Hive id, when they have one.

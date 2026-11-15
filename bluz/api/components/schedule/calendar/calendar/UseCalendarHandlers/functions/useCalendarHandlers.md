@@ -8,7 +8,7 @@
 
 > **useCalendarHandlers**(`events`, `handleSaveEvent`, `handleDeleteEvent`, `setSelectedEvent`, `setOpenEventDialog`, `confirmLockedEdit?`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:57](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L57)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts:57](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/UseCalendarHandlers.ts#L57)
 
 Custom React hook to manage calendar event logic, user interactions (e.g. drag & drop, select, click),
 and keyboard shortcuts (copy, paste, delete).

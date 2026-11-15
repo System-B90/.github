@@ -8,4 +8,4 @@
 
 > `const` **ganttEventsRelationsSchema**: `Relations`\<`"e"`, \{ `constraints`: `Many`\<`"cntrs"`\>; `eRE`: `Many`\<`"eRE"`\>; `m2e`: `Many`\<`"m2e"`\>; `targetedByConstraints`: `Many`\<`"cntrs"`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/events.ts:73](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/schema/events.ts#L73)
+Defined in: [ui/src/api-server/gantt/schema/events.ts:73](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/schema/events.ts#L73)

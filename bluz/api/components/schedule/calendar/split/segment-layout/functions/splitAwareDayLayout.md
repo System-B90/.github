@@ -8,7 +8,7 @@
 
 > **splitAwareDayLayout**(`input`, `laneKey?`): `StyledSegment`[]
 
-Defined in: [ui/src/components/schedule/calendar/split/segment-layout.ts:66](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/split/segment-layout.ts#L66)
+Defined in: [ui/src/components/schedule/calendar/split/segment-layout.ts:66](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/split/segment-layout.ts#L66)
 
 The built-in `overlap` layout, with the pieces of a split event squared up
 into a single column band.

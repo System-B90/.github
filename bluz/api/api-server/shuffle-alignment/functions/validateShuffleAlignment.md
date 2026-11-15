@@ -8,7 +8,7 @@
 
 > **validateShuffleAlignment**(`source`, `controller`): `Promise`\<[`AlignmentViolation`](../../../api-shared/shuffle-alignment/type-aliases/AlignmentViolation.md)[]\>
 
-Defined in: [ui/src/api-server/shuffle-alignment.ts:23](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/shuffle-alignment.ts#L23)
+Defined in: [ui/src/api-server/shuffle-alignment.ts:23](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/shuffle-alignment.ts#L23)
 
 Runs the shared R-50/R-51 check (#1000) over the live calendar in a range,
 a saved draft, or events sent inline (an unsaved draft). Course and subject

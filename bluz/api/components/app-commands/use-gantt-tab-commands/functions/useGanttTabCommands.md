@@ -8,7 +8,7 @@
 
 > **useGanttTabCommands**(`__namedParameters`): `void`
 
-Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:64](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L64)
+Defined in: [ui/src/components/app-commands/use-gantt-tab-commands.tsx:64](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/app-commands/use-gantt-tab-commands.tsx#L64)
 
 One command per gantt view tab. Contributed by `CurriculumView`, which owns
 the selected tab.

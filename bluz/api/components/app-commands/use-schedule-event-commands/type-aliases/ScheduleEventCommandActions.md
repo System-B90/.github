@@ -8,7 +8,7 @@
 
 > **ScheduleEventCommandActions** = `object`
 
-Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:10](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/app-commands/use-schedule-event-commands.tsx#L10)
+Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:10](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/app-commands/use-schedule-event-commands.tsx#L10)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:10](
 
 > **events**: [`Event`](../../../../api-shared/types/event/type-aliases/Event.md)[]
 
-Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:11](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/app-commands/use-schedule-event-commands.tsx#L11)
+Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:11](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/app-commands/use-schedule-event-commands.tsx#L11)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:11](
 
 > **onSelect**: (`event`) => `void`
 
-Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:12](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/app-commands/use-schedule-event-commands.tsx#L12)
+Defined in: [ui/src/components/app-commands/use-schedule-event-commands.tsx:12](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/app-commands/use-schedule-event-commands.tsx#L12)
 
 #### Parameters
 

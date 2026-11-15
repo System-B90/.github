@@ -8,7 +8,7 @@
 
 > **HiveSubjectsContextState** = `object`
 
-Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:14](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/HiveSubjectsProvider.tsx#L14)
+Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:14](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/HiveSubjectsProvider.tsx#L14)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:14](https://github.
 
 > **default**: `boolean`
 
-Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:15](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/HiveSubjectsProvider.tsx#L15)
+Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:15](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/HiveSubjectsProvider.tsx#L15)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:15](https://github.
 
 > **getSubject**: (`id`) => [`Subject`](../../../../api-shared/types/subject/type-aliases/Subject.md) \| `undefined`
 
-Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:17](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/HiveSubjectsProvider.tsx#L17)
+Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:17](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/HiveSubjectsProvider.tsx#L17)
 
 #### Parameters
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:17](https://github.
 
 > **subjects**: [`Subject`](../../../../api-shared/types/subject/type-aliases/Subject.md)[]
 
-Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:16](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/HiveSubjectsProvider.tsx#L16)
+Defined in: [ui/src/components/base/HiveSubjectsProvider.tsx:16](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/HiveSubjectsProvider.tsx#L16)

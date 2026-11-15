@@ -948,16 +948,44 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#toggle" class="md-nav__link">
+  <a href="#settarget" class="md-nav__link">
     <span class="md-ellipsis">
       
-        toggle
+        setTarget
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="toggle">
+    <nav class="md-nav" aria-label="setTarget">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        target
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#returns_1" class="md-nav__link">
@@ -972,6 +1000,56 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        target
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        toggle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="toggle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Returns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        userId
+      
+    </span>
+  </a>
   
 </li>
         
@@ -1007,12 +1085,12 @@
 <blockquote>
 <p><strong>usePaWindowsToggle</strong>(): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/header/filters.tsx#L45">ui/src/components/header/filters.tsx:45</a></p>
-<p>The פ"א view toggle, in the main toolbar. It shows every PA window; narrowed
-to one instructor, it instead greys out the slots that instructor is
-already busy in.</p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/header/filters.tsx#L47">ui/src/components/header/filters.tsx:47</a></p>
+<p>The פ"א view toggle, in the main toolbar. A click shows one person's PA
+windows, dimming the slots they are busy in: the single filtered
+instructor, else the signed-in user. The button's right-click menu
+(<code>PaWindowsButton</code>) picks another target, or every window ("all").</p>
 <h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
-<p><code>object</code></p>
 <h3 id="label">label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>label</strong>: <code>string</code></p>
@@ -1021,12 +1099,30 @@ already busy in.</p>
 <blockquote>
 <p><strong>on</strong>: <code>boolean</code></p>
 </blockquote>
+<h3 id="settarget">setTarget<a class="headerlink" href="#settarget" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>setTarget</strong>: (<code>target</code>) =&gt; <code>void</code></p>
+</blockquote>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
+<h5 id="target">target<a class="headerlink" href="#target" title="Permanent link">&para;</a></h5>
+<p><a href="../../../../base/CalendarFilterProvider/type-aliases/PaTarget/"><code>PaTarget</code></a></p>
+<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
+<p><code>void</code></p>
+<h3 id="target_1">target<a class="headerlink" href="#target_1" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>target</strong>: <a href="../../../../base/CalendarFilterProvider/type-aliases/PaTarget/"><code>PaTarget</code></a></p>
+</blockquote>
 <h3 id="toggle">toggle<a class="headerlink" href="#toggle" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>toggle</strong>: () =&gt; <code>void</code></p>
 </blockquote>
-<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
+<h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
 <p><code>void</code></p>
+<h3 id="userid">userId<a class="headerlink" href="#userid" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>userId</strong>: <code>number</code> | <code>null</code></p>
+</blockquote>
+<p>The signed-in user's Hive id, when they have one.</p>
 
 
 

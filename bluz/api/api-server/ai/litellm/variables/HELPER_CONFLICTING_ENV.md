@@ -8,7 +8,7 @@
 
 > `const` **HELPER\_CONFLICTING\_ENV**: readonly \[`"ANTHROPIC_AUTH_TOKEN"`, `"ANTHROPIC_API_KEY"`\]
 
-Defined in: [ui/src/api-server/ai/litellm.ts:80](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/litellm.ts#L80)
+Defined in: [ui/src/api-server/ai/litellm.ts:80](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/litellm.ts#L80)
 
 Claude Code credentials that outrank an `apiKeyHelper`. Set alongside
 cc-sso-helper they make it hand LiteLLM an SSO JWT instead of the `sk-`

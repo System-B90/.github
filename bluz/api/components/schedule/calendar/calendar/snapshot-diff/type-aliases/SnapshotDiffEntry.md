@@ -8,7 +8,7 @@
 
 > **SnapshotDiffEntry** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:32](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L32)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:32](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L32)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:32](h
 
 > **change**: [`SnapshotChange`](../enumerations/SnapshotChange.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L34)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:34](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L34)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:34](h
 
 > **event**: [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:36](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L36)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:36](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L36)
 
 The version a restore leaves behind, or the one it removes for `Added`.
 
@@ -34,7 +34,7 @@ The version a restore leaves behind, or the one it removes for `Added`.
 
 > **fields**: `string`[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:40](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L40)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:40](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L40)
 
 For `Changed`: the fields a restore puts back.
 
@@ -44,7 +44,7 @@ For `Changed`: the fields a restore puts back.
 
 > **id**: [`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:33](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L33)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:33](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L33)
 
 ***
 
@@ -52,6 +52,6 @@ Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:33](h
 
 > `optional` **live?**: [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:38](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L38)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:38](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L38)
 
 The live version, when there is one.

@@ -8,7 +8,7 @@
 
 > **UnavailabilityClash** = `object`
 
-Defined in: [ui/src/api-shared/unavailability.ts:86](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/unavailability.ts#L86)
+Defined in: [ui/src/api-shared/unavailability.ts:86](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/unavailability.ts#L86)
 
 One person booked in parallel to their own unavailability.
 
@@ -18,7 +18,7 @@ One person booked in parallel to their own unavailability.
 
 > **assignment**: [`Event`](../../types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/api-shared/unavailability.ts:89](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/unavailability.ts#L89)
+Defined in: [ui/src/api-shared/unavailability.ts:89](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/unavailability.ts#L89)
 
 The event the person instructs or lectures in.
 
@@ -28,7 +28,7 @@ The event the person instructs or lectures in.
 
 > **personId**: `number`
 
-Defined in: [ui/src/api-shared/unavailability.ts:87](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/unavailability.ts#L87)
+Defined in: [ui/src/api-shared/unavailability.ts:87](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/unavailability.ts#L87)
 
 ***
 
@@ -36,4 +36,4 @@ Defined in: [ui/src/api-shared/unavailability.ts:87](https://github.com/System-B
 
 > **unavailability**: [`Event`](../../types/event/type-aliases/Event.md)
 
-Defined in: [ui/src/api-shared/unavailability.ts:90](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/unavailability.ts#L90)
+Defined in: [ui/src/api-shared/unavailability.ts:90](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/unavailability.ts#L90)

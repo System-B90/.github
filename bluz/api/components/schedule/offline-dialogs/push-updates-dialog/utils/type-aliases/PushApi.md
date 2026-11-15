@@ -8,7 +8,7 @@
 
 > **PushApi** = `object`
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:191](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L191)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:191](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L191)
 
 The three server operations the push dialog can perform per event. Injected
 so the sync loop stays pure and unit-testable (no React / api-client).
@@ -19,7 +19,7 @@ so the sync loop stays pure and unit-testable (no React / api-client).
 
 > **createEvent**: (`event`) => `Promise`\<`unknown`\>
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:192](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L192)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:192](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L192)
 
 #### Parameters
 
@@ -37,7 +37,7 @@ Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/util
 
 > **deleteEvent**: (`eventId`) => `Promise`\<`unknown`\>
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:194](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L194)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:194](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L194)
 
 #### Parameters
 
@@ -55,7 +55,7 @@ Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/util
 
 > **updateEvent**: (`event`) => `Promise`\<`unknown`\>
 
-Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:193](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L193)
+Defined in: [ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts:193](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/offline-dialogs/push-updates-dialog/utils.ts#L193)
 
 #### Parameters
 

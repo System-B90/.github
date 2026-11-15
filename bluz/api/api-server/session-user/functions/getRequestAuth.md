@@ -8,7 +8,7 @@
 
 > **getRequestAuth**(): `Promise`\<[`RequestAuth`](../type-aliases/RequestAuth.md) \| `null`\>
 
-Defined in: [ui/src/api-server/session-user.ts:85](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/session-user.ts#L85)
+Defined in: [ui/src/api-server/session-user.ts:85](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/session-user.ts#L85)
 
 Resolve the caller: the next-auth session cookie first, else a personal
 access token. A cookie wins when both are sent — the browser never sends a

@@ -8,7 +8,7 @@
 
 > **ImportIdMaps** = `object`
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:24](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/import-tree.ts#L24)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:24](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/import-tree.ts#L24)
 
 Old → new ids, filled while the tree is copied, read by `importConstraints`.
 
@@ -18,7 +18,7 @@ Old → new ids, filled while the tree is copied, read by `importConstraints`.
 
 > **eventIdMap**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:26](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/import-tree.ts#L26)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:26](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/import-tree.ts#L26)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-server/gantt/import-tree.ts:26](https://github.com/Syste
 
 > **moduleIdMap**: `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:25](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/import-tree.ts#L25)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:25](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/import-tree.ts#L25)

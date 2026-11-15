@@ -8,7 +8,7 @@
 
 > **eventNeedsRoom**(`type`): `boolean`
 
-Defined in: [ui/src/api-shared/types/event.ts:244](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/event.ts#L244)
+Defined in: [ui/src/api-shared/types/event.ts:244](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/event.ts#L244)
 
 Whether a missing room is worth flagging. Prayers and breaks may sit in a
 room but need not; an unavailability's room is the fixed pseudo-room.

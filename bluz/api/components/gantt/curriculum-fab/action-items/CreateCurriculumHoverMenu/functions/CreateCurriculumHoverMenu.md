@@ -8,7 +8,7 @@
 
 > **CreateCurriculumHoverMenu**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/curriculum-fab/action-items/CreateCurriculumHoverMenu.tsx:22](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/curriculum-fab/action-items/CreateCurriculumHoverMenu.tsx#L22)
+Defined in: [ui/src/components/gantt/curriculum-fab/action-items/CreateCurriculumHoverMenu.tsx:22](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-fab/action-items/CreateCurriculumHoverMenu.tsx#L22)
 
 Create options (blank / duplicate / template) sit next to a static "+"
 label. They are always visible: no hover-reveal, no collapse animation.

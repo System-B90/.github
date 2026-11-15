@@ -8,7 +8,7 @@
 
 > **ApiWeekTemplateApplyResult** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:103](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/week-template.ts#L103)
+Defined in: [ui/src/api-shared/types/week-template.ts:103](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L103)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/week-template.ts:103](https://github.com/Sy
 
 > **skippedConflicts**: `number`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:108](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/week-template.ts#L108)
+Defined in: [ui/src/api-shared/types/week-template.ts:108](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L108)
 
 Events left alone because a person edited them after the cut.
 
@@ -26,7 +26,7 @@ Events left alone because a person edited them after the cut.
 
 > **updatedEvents**: `number`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:106](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/week-template.ts#L106)
+Defined in: [ui/src/api-shared/types/week-template.ts:106](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L106)
 
 ***
 
@@ -34,6 +34,6 @@ Defined in: [ui/src/api-shared/types/week-template.ts:106](https://github.com/Sy
 
 > **weeks**: `number`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:105](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/week-template.ts#L105)
+Defined in: [ui/src/api-shared/types/week-template.ts:105](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L105)
 
 Cut weeks the template was re-applied to.

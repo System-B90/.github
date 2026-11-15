@@ -8,6 +8,6 @@
 
 > **ShuffleLevels** = `Record`\<`string`, [`ShuffleStaffLevel`](../../../student-hidden-words/type-aliases/ShuffleStaffLevel.md)\>
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:180](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/shuffle-names.ts#L180)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:180](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/shuffle-names.ts#L180)
 
 Shuffle name → its staff level (#991); see [SHUFFLE\_STAFF\_LEVELS](../../../student-hidden-words/variables/SHUFFLE_STAFF_LEVELS.md).

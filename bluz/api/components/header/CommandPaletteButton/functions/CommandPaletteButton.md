@@ -8,7 +8,7 @@
 
 > **CommandPaletteButton**(): `Element`
 
-Defined in: [ui/src/components/header/CommandPaletteButton.tsx:22](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/header/CommandPaletteButton.tsx#L22)
+Defined in: [ui/src/components/header/CommandPaletteButton.tsx:22](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/header/CommandPaletteButton.tsx#L22)
 
 The mouse affordance for the command palette: a VSCode-style centred quick
 input bar, styled as a Bluz search pill.

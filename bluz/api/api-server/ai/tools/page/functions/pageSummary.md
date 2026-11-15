@@ -8,7 +8,7 @@
 
 > **pageSummary**(`page`, `noun`): `string`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:65](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/tools/page.ts#L65)
+Defined in: [ui/src/api-server/ai/tools/page.ts:65](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/page.ts#L65)
 
 Hebrew summary line for a page: "נמצאו 400 חדרים (מוצגים 1–50)".
 

@@ -8,7 +8,7 @@
 
 > **hasUnsavedChanges**(`initial`, `current`): `boolean`
 
-Defined in: [ui/src/components/schedule/event-dialog/utils.ts:47](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-dialog/utils.ts#L47)
+Defined in: [ui/src/components/schedule/event-dialog/utils.ts:47](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-dialog/utils.ts#L47)
 
 Whether the form differs from what the dialog opened with. Blank values
 (undefined, null, "", []) count as equal, so a field that only normalises

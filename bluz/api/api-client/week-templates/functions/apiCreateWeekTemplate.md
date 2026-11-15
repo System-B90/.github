@@ -8,7 +8,7 @@
 
 > **apiCreateWeekTemplate**(`payload`): `Promise`\<[`WeekTemplate`](../../../api-shared/types/week-template/type-aliases/WeekTemplate.md)\>
 
-Defined in: [ui/src/api-client/week-templates.ts:35](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-client/week-templates.ts#L35)
+Defined in: [ui/src/api-client/week-templates.ts:35](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/week-templates.ts#L35)
 
 Creates a template seeded with the recurring events, parked.
 

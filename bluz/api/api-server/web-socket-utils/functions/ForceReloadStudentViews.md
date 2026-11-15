@@ -8,7 +8,7 @@
 
 > **ForceReloadStudentViews**(): `void`
 
-Defined in: [ui/src/api-server/web-socket-utils.ts:245](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/web-socket-utils.ts#L245)
+Defined in: [ui/src/api-server/web-socket-utils.ts:245](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/web-socket-utils.ts#L245)
 
 Staff "push update": every open student board reloads the whole page.
 

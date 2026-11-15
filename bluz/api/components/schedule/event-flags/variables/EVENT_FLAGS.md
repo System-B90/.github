@@ -8,7 +8,7 @@
 
 > `const` **EVENT\_FLAGS**: `ReadonlyArray`\<[`EventFlagDef`](../type-aliases/EventFlagDef.md)\>
 
-Defined in: [ui/src/components/schedule/event-flags.ts:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-flags.ts#L34)
+Defined in: [ui/src/components/schedule/event-flags.ts:34](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-flags.ts#L34)
 
 Single source of truth for the event markers, shared by the event dialog's
 toggle chips and the calendar's right-click "סמן כ…" submenu (#706) — the

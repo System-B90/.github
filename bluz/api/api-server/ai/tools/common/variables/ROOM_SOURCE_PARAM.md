@@ -8,7 +8,7 @@
 
 > `const` **ROOM\_SOURCE\_PARAM**: `object`
 
-Defined in: [ui/src/api-server/ai/tools/common.ts:31](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/tools/common.ts#L31)
+Defined in: [ui/src/api-server/ai/tools/common.ts:31](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/common.ts#L31)
 
 `RoomSource` is a numeric enum, so `Object.values` would also advertise its
 reverse-mapped names ("Custom", "Hive") — values the store never matches.

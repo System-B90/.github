@@ -8,6 +8,6 @@
 
 > **DockPanel** = `"instructors"` \| `"parked"`
 
-Defined in: [ui/src/components/schedule/calendar/side-dock/dock-panel.ts:4](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/side-dock/dock-panel.ts#L4)
+Defined in: [ui/src/components/schedule/calendar/side-dock/dock-panel.ts:4](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/side-dock/dock-panel.ts#L4)
 
 The two panels the side dock can show beside its rail.

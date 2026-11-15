@@ -8,7 +8,7 @@
 
 > **toAnthropicBase**(`url`): `string`
 
-Defined in: [ui/src/api-server/ai/litellm.ts:70](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/litellm.ts#L70)
+Defined in: [ui/src/api-server/ai/litellm.ts:70](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/litellm.ts#L70)
 
 `ANTHROPIC_BASE_URL` as Claude Code reads it: the LiteLLM root or its
 `/anthropic` pass-through, with `/v1/messages` appended. A pasted `/v1`

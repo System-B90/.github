@@ -8,7 +8,7 @@
 
 > **DuplicateCurriculumOverrides** = `object`
 
-Defined in: [ui/src/api-server/gantt/db-curriculum.ts:168](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/db-curriculum.ts#L168)
+Defined in: [ui/src/api-server/gantt/db-curriculum.ts:168](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/db-curriculum.ts#L168)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/gantt/db-curriculum.ts:168](https://github.com/Sy
 
 > `optional` **isArchived?**: `boolean`
 
-Defined in: [ui/src/api-server/gantt/db-curriculum.ts:171](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/db-curriculum.ts#L171)
+Defined in: [ui/src/api-server/gantt/db-curriculum.ts:171](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/db-curriculum.ts#L171)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/gantt/db-curriculum.ts:171](https://github.com/Sy
 
 > `optional` **isDraft?**: `boolean`
 
-Defined in: [ui/src/api-server/gantt/db-curriculum.ts:170](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/db-curriculum.ts#L170)
+Defined in: [ui/src/api-server/gantt/db-curriculum.ts:170](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/db-curriculum.ts#L170)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/api-server/gantt/db-curriculum.ts:170](https://github.com/Sy
 
 > `optional` **title?**: `string`
 
-Defined in: [ui/src/api-server/gantt/db-curriculum.ts:169](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/db-curriculum.ts#L169)
+Defined in: [ui/src/api-server/gantt/db-curriculum.ts:169](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/db-curriculum.ts#L169)

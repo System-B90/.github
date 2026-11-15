@@ -8,7 +8,7 @@
 
 > **planLiveLessonPush**(`change`, `opened`, `heldElsewhere`): [`LiveLessonPlan`](../type-aliases/LiveLessonPlan.md)
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:94](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/live-lesson-push.ts#L94)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:94](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/hive/live-lesson-push.ts#L94)
 
 Decides which groups an edit touches. Kept pure so it is testable without
 a Hive.

@@ -8,4 +8,4 @@
 
 > `const` **DEFAULT\_WEEK\_TEMPLATE\_TIMES**: [`WeekTemplateTimes`](../type-aliases/WeekTemplateTimes.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:40](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/week-template.ts#L40)
+Defined in: [ui/src/api-shared/types/week-template.ts:40](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L40)

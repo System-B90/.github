@@ -8,7 +8,7 @@
 
 > **HiveModuleSelect**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/HiveModuleSelect.tsx:32](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/base/HiveModuleSelect.tsx#L32)
+Defined in: [ui/src/components/base/HiveModuleSelect.tsx:32](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/HiveModuleSelect.tsx#L32)
 
 Reusable, self-contained MUI selector for a single Hive Module.
 Data comes from HiveModulesProvider; pass `subject` to scope the list.

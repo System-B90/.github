@@ -8,7 +8,7 @@
 
 > **createHiveClient**(`hiveUrl?`): `Promise`\<[`HiveClient`](../../client/classes/HiveClient.md)\>
 
-Defined in: [ui/src/api-server/hive/session-client.ts:31](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/session-client.ts#L31)
+Defined in: [ui/src/api-server/hive/session-client.ts:31](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/hive/session-client.ts#L31)
 
 A Hive client acting as the current caller, with the caller's own Hive SSO
 tokens — so Hive applies that user's permissions, never broader ones.

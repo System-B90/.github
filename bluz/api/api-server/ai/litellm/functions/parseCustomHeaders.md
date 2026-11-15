@@ -8,7 +8,7 @@
 
 > **parseCustomHeaders**(`raw`): `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-server/ai/litellm.ts:36](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/litellm.ts#L36)
+Defined in: [ui/src/api-server/ai/litellm.ts:36](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/litellm.ts#L36)
 
 `ANTHROPIC_CUSTOM_HEADERS` as Claude Code reads it: one `Name: Value` per
 line. Lines without a name and a colon are skipped.

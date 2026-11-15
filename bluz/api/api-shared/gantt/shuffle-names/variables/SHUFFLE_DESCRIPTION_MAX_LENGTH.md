@@ -8,7 +8,7 @@
 
 > `const` **SHUFFLE\_DESCRIPTION\_MAX\_LENGTH**: `100` = `100`
 
-Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:49](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/shuffle-names.ts#L49)
+Defined in: [ui/src/api-shared/gantt/shuffle-names.ts:49](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/shuffle-names.ts#L49)
 
 Hive's `Class.description` limit. A shuffle is 1:1 with a Hive student group,
 so its description is held to the same cap to stay importable both ways.

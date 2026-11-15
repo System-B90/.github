@@ -8,7 +8,7 @@
 
 > **GanttRank** = `object`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L34)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L34)
 
 A Gantt event's place in its syllabus: module order, then event order.
 
@@ -18,7 +18,7 @@ A Gantt event's place in its syllabus: module order, then event order.
 
 > **label**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L34)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L34)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.c
 
 > **rank**: `number`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L34)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L34)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.c
 
 > **syllabus**: `string`
 
-Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/schedule-validation/types.ts#L34)
+Defined in: [ui/src/api-shared/schedule-validation/types.ts:34](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/schedule-validation/types.ts#L34)
