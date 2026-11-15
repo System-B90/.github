@@ -13,6 +13,7 @@
 ## Variables
 
 - [DayReservationsContext](variables/DayReservationsContext.md)
+- [ReservationClickContext](variables/ReservationClickContext.md)
 
 ## Functions
 

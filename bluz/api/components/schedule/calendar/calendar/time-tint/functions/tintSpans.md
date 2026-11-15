@@ -8,7 +8,7 @@
 
 > **tintSpans**(`shabbat`, `prayers`): [`TintSpan`](../type-aliases/TintSpan.md)[]
 
-Defined in: [ui/src/components/schedule/calendar/calendar/time-tint.tsx:30](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/time-tint.tsx#L30)
+Defined in: [ui/src/components/schedule/calendar/calendar/time-tint.tsx:30](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/time-tint.tsx#L30)
 
 The Shabbat window plus the prayer windows, prayers cut where they meet
 Shabbat so the two translucent tints never stack.

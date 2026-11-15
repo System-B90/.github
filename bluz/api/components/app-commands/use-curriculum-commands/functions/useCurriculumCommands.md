@@ -8,7 +8,7 @@
 
 > **useCurriculumCommands**(`__namedParameters`): `void`
 
-Defined in: [ui/src/components/app-commands/use-curriculum-commands.tsx:28](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/app-commands/use-curriculum-commands.tsx#L28)
+Defined in: [ui/src/components/app-commands/use-curriculum-commands.tsx:28](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/app-commands/use-curriculum-commands.tsx#L28)
 
 Entity lane over the curriculum list — the palette equivalent of opening the
 curriculum drawer and picking one. Contributed by the drawer itself, which

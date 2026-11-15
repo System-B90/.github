@@ -8,7 +8,7 @@
 
 > **HealthReport** = `object`
 
-Defined in: [ui/src/api-server/health.ts:12](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/health.ts#L12)
+Defined in: [ui/src/api-server/health.ts:12](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/health.ts#L12)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/health.ts:12](https://github.com/System-B90/Bluz/
 
 > **checks**: `Record`\<`string`, [`DependencyStatus`](DependencyStatus.md)\>
 
-Defined in: [ui/src/api-server/health.ts:14](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/health.ts#L14)
+Defined in: [ui/src/api-server/health.ts:14](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/health.ts#L14)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-server/health.ts:14](https://github.com/System-B90/Bluz/
 
 > **status**: `"degraded"` \| `"healthy"` \| `"unhealthy"`
 
-Defined in: [ui/src/api-server/health.ts:13](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/health.ts#L13)
+Defined in: [ui/src/api-server/health.ts:13](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/health.ts#L13)

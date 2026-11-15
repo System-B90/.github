@@ -8,7 +8,7 @@
 
 > **eventFieldLabel**(`field`): `string`
 
-Defined in: [ui/src/api-shared/event-history.ts:166](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/event-history.ts#L166)
+Defined in: [ui/src/api-shared/event-history.ts:166](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/event-history.ts#L166)
 
 Display label for a changed field, falling back to the raw key so a field
 added later still renders something meaningful.

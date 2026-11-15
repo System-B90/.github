@@ -8,7 +8,7 @@
 
 > **TemporalDraft** = `object`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:21](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/module-dialog/constraints/types.ts#L21)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:21](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/module-dialog/constraints/types.ts#L21)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:21](http
 
 > **allowedDays**: [`GanttDayIndex`](../../../../../../api-shared/types/gantt/models/day/enumerations/GanttDayIndex.md)[]
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:23](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/module-dialog/constraints/types.ts#L23)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:23](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/module-dialog/constraints/types.ts#L23)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:23](http
 
 > **forbiddenDays**: [`GanttDayIndex`](../../../../../../api-shared/types/gantt/models/day/enumerations/GanttDayIndex.md)[]
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:24](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/module-dialog/constraints/types.ts#L24)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:24](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/module-dialog/constraints/types.ts#L24)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:24](http
 
 > **type**: [`Temporal`](../../../../../../api-shared/types/gantt/models/constraint/enumerations/ConstraintType.md#temporal)
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:22](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/module-dialog/constraints/types.ts#L22)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/types.ts:22](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/module-dialog/constraints/types.ts#L22)

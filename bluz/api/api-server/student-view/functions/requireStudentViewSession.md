@@ -8,7 +8,7 @@
 
 > **requireStudentViewSession**(`__namedParameters?`): `Promise`\<[`StudentViewSession`](../type-aliases/StudentViewSession.md)\>
 
-Defined in: [ui/src/api-server/student-view.ts:68](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/student-view.ts#L68)
+Defined in: [ui/src/api-server/student-view.ts:68](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/student-view.ts#L68)
 
 Gates the student-view endpoint. Unlike every other API route this one is
 reachable by a Hanich session — it is the single endpoint that is. Anything

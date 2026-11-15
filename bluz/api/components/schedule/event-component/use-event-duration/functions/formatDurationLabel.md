@@ -8,7 +8,7 @@
 
 > **formatDurationLabel**(`totalMinutes`): `string`
 
-Defined in: [ui/src/components/schedule/event-component/use-event-duration.ts:18](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/event-component/use-event-duration.ts#L18)
+Defined in: [ui/src/components/schedule/event-component/use-event-duration.ts:18](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-component/use-event-duration.ts#L18)
 
 Hebrew short-form length, e.g. `1 ש׳ 30 ד׳`, `2 ש׳`, `45 ד׳`.
 

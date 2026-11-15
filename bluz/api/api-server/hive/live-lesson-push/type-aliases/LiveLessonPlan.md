@@ -8,7 +8,7 @@
 
 > **LiveLessonPlan** = `object`
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:37](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/live-lesson-push.ts#L37)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:37](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/live-lesson-push.ts#L37)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/hive/live-lesson-push.ts:37](https://github.com/S
 
 > **assign**: `number`[]
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:39](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/live-lesson-push.ts#L39)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:39](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/live-lesson-push.ts#L39)
 
 Groups to (re-)assign the after lesson to.
 
@@ -26,6 +26,6 @@ Groups to (re-)assign the after lesson to.
 
 > **clear**: `number`[]
 
-Defined in: [ui/src/api-server/hive/live-lesson-push.ts:41](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/live-lesson-push.ts#L41)
+Defined in: [ui/src/api-server/hive/live-lesson-push.ts:41](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/live-lesson-push.ts#L41)
 
 Groups to take off the lesson.

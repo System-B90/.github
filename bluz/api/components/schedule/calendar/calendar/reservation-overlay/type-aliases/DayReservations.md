@@ -8,6 +8,6 @@
 
 > **DayReservations** = `ReadonlyMap`\<`string`, [`Reservation`](../../../../../../api-shared/types/reservation/type-aliases/Reservation.md)[]\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx:30](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx#L30)
+Defined in: [ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx:31](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx#L31)
 
 Room resource key → that room's reservations on the shown day.

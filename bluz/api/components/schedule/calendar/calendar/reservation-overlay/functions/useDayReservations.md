@@ -8,7 +8,7 @@
 
 > **useDayReservations**(`date`, `enabled`, `iterationId?`): [`DayReservations`](../type-aliases/DayReservations.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx:40](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx#L40)
+Defined in: [ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx:44](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/reservation-overlay.tsx#L44)
 
 The reservations overlapping the day holding `date`, by room, or an empty
 map while off, loading, or failed — an overlay is a nicety.

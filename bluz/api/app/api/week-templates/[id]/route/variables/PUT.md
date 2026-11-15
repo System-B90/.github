@@ -8,7 +8,7 @@
 
 > `const` **PUT**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/week-templates/\[id\]/route.ts:77](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/app/api/week-templates/[id]/route.ts#L77)
+Defined in: [ui/src/app/api/week-templates/\[id\]/route.ts:77](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/week-templates/[id]/route.ts#L77)
 
 PUT /api/week-templates/[id] — replace the template's events with an edited
 week. Course names are taken from the current iteration.

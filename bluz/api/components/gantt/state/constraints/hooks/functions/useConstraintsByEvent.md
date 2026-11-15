@@ -8,7 +8,7 @@
 
 > **useConstraintsByEvent**(): `Record`\<`string`, [`GanttConstraint`](../../../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md)[]\>
 
-Defined in: [ui/src/components/gantt/state/constraints/hooks.ts:24](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/state/constraints/hooks.ts#L24)
+Defined in: [ui/src/components/gantt/state/constraints/hooks.ts:24](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/state/constraints/hooks.ts#L24)
 
 Constraints binding each event (own + modules'), curriculum-wide.
 

@@ -8,7 +8,7 @@
 
 > **descendantCoursesResolver**(`courses`): (`courseIds`) => `Set`\<`string`\>
 
-Defined in: [ui/src/api-shared/course-tree.ts:126](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/course-tree.ts#L126)
+Defined in: [ui/src/api-shared/course-tree.ts:126](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/course-tree.ts#L126)
 
 Resolver for `courseIds` plus all their descendants. A break for Bis90 also
 reaches Apollo, whose students are part of Bis90 (#974). Unknown ids pass

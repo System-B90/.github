@@ -8,7 +8,7 @@
 
 > **requireStaffAuth**(): `Promise`\<[`RequestAuth`](../type-aliases/RequestAuth.md)\>
 
-Defined in: [ui/src/api-server/session-user.ts:229](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/session-user.ts#L229)
+Defined in: [ui/src/api-server/session-user.ts:229](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/session-user.ts#L229)
 
 Gates a route to Segel/Admin clearance (#199), returning how the caller
 authenticated. Every request re-checks the JWT (or token), not just the

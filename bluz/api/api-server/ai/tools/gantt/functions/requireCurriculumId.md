@@ -8,7 +8,7 @@
 
 > **requireCurriculumId**(`args`, `context`): `string`
 
-Defined in: [ui/src/api-server/ai/tools/gantt.ts:25](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/ai/tools/gantt.ts#L25)
+Defined in: [ui/src/api-server/ai/tools/gantt.ts:25](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/tools/gantt.ts#L25)
 
 Resolves which curriculum a call targets: an explicit argument wins, and the
 screen the user is on is the fallback, so "תגזור את זה" works without the

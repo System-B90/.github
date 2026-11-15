@@ -8,7 +8,7 @@
 
 > **useScheduleWeek**(`date`): `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-schedule-week.ts:13](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/use-schedule-week.ts#L13)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-schedule-week.ts:13](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/use-schedule-week.ts#L13)
 
 The iteration week shown in the calendar (counted from the viewed
 iteration's start date) and the comment of the same-numbered week in the

@@ -8,4 +8,4 @@
 
 > `const` **dynamic**: `"force-dynamic"` = `"force-dynamic"`
 
-Defined in: [ui/src/app/api/settings/\[slug\]/route.ts:1](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/app/api/settings/[slug]/route.ts#L1)
+Defined in: [ui/src/app/api/settings/\[slug\]/route.ts:1](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/settings/[slug]/route.ts#L1)

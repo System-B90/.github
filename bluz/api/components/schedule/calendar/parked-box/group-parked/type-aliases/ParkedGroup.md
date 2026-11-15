@@ -8,7 +8,7 @@
 
 > **ParkedGroup** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:3](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L3)
+Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:3](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L3)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:3](h
 
 > **events**: [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md)[]
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:6](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L6)
+Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:6](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L6)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:6](h
 
 > **key**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:4](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L4)
+Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:4](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L4)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:4](h
 
 > **label**: `string`
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:5](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L5)
+Defined in: [ui/src/components/schedule/calendar/parked-box/group-parked.ts:5](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/parked-box/group-parked.ts#L5)

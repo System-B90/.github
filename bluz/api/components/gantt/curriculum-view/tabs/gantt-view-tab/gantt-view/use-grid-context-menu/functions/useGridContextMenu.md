@@ -8,7 +8,7 @@
 
 > **useGridContextMenu**(`deps`): `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-context-menu.ts:39](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-context-menu.ts#L39)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-context-menu.ts:39](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/use-grid-context-menu.ts#L39)
 
 The gantt table's right-click menu (#858): which entries a cell offers,
 and what each one does. Rendering stays in GridContextMenu.

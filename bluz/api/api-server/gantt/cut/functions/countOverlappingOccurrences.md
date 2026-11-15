@@ -8,7 +8,7 @@
 
 > **countOverlappingOccurrences**(`occurrences`, `events`): `number`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:550](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/cut.ts#L550)
+Defined in: [ui/src/api-server/gantt/cut.ts:550](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/cut.ts#L550)
 
 Number of overlapping pairs of occurrences: two occurrences on the same date
 whose time ranges intersect. Purely informational for the cut summary.

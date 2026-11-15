@@ -14,3 +14,4 @@
 ## Functions
 
 - [apiGetReservations](functions/apiGetReservations.md)
+- [apiUpdateReservation](functions/apiUpdateReservation.md)

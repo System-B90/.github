@@ -8,7 +8,7 @@
 
 > **SyllabusImportExportButtonProps** = `object`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:13](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L13)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:13](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L13)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.
 
 > **curriculumId**: [`GanttCurriculumId`](../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculumId.md)
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:14](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L14)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:14](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L14)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md)
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:15](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L15)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:15](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L15)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.
 
 > **title**: `string` \| `undefined`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:16](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L16)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx:16](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/syllabus-dialog/SyllabusImportExportButton.tsx#L16)

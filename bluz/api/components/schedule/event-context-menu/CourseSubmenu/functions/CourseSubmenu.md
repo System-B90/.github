@@ -8,7 +8,7 @@
 
 > **CourseSubmenu**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:31](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L31)
+Defined in: [ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx:31](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-context-menu/CourseSubmenu.tsx#L31)
 
 The context menu's course assignment: the real-course tree (shuffles have
 their own submenu) nested like

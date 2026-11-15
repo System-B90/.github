@@ -8,6 +8,6 @@
 
 > `const` **MEAL\_BREAKS\_SYLLABUS\_TITLE**: `"הפסקות"` = `"הפסקות"`
 
-Defined in: [ui/src/api-shared/types/settings/meal.ts:17](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/settings/meal.ts#L17)
+Defined in: [ui/src/api-shared/types/settings/meal.ts:17](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/settings/meal.ts#L17)
 
 Title of the syllabus auto-seeded into every new curriculum for meal breaks.

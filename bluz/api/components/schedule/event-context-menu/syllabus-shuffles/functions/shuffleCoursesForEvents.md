@@ -8,7 +8,7 @@
 
 > **shuffleCoursesForEvents**(`events`, `curriculum`, `courses`): [`Course`](../../../../../api-shared/types/course/type-aliases/Course.md)[]
 
-Defined in: [ui/src/components/schedule/event-context-menu/syllabus-shuffles.ts:36](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/event-context-menu/syllabus-shuffles.ts#L36)
+Defined in: [ui/src/components/schedule/event-context-menu/syllabus-shuffles.ts:36](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-context-menu/syllabus-shuffles.ts#L36)
 
 Shuffle courses on offer for `events`: their syllabuses' shuffles, in
 syllabus order, plus any shuffle already assigned so it can be removed.

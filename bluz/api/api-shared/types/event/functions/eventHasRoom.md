@@ -8,7 +8,7 @@
 
 > **eventHasRoom**(`type`): `boolean`
 
-Defined in: [ui/src/api-shared/types/event.ts:232](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/event.ts#L232)
+Defined in: [ui/src/api-shared/types/event.ts:232](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/event.ts#L232)
 
 Checks if an event type can be placed in a room (the room picker applies).
 Prayers may carry one — "בית כנסת", say — but need not; see

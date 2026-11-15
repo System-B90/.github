@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/import-syllabus/route.ts:27](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/app/api/gantt/curriculums/[id]/import-syllabus/route.ts#L27)
+Defined in: [ui/src/app/api/gantt/curriculums/\[id\]/import-syllabus/route.ts:27](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/gantt/curriculums/[id]/import-syllabus/route.ts#L27)
 
 Adds a syllabus exported with `/api/gantt/syllabuses/{id}/export` to this
 curriculum as a new copy (#757). Returns the full syllabus tree.

@@ -8,7 +8,7 @@
 
 > **claudeCodeHeaders**(`customHeaders`): `Record`\<`string`, `string`\>
 
-Defined in: [ui/src/api-server/ai/litellm.ts:53](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/ai/litellm.ts#L53)
+Defined in: [ui/src/api-server/ai/litellm.ts:53](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/litellm.ts#L53)
 
 Claude Code's headers with `ANTHROPIC_CUSTOM_HEADERS` on top. Names are
 compared case-insensitively, so a custom `user-agent` replaces the default.

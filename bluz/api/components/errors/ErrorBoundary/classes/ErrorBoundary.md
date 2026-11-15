@@ -6,7 +6,7 @@
 
 # Class: ErrorBoundary
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:27](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/errors/ErrorBoundary.tsx#L27)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:27](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/errors/ErrorBoundary.tsx#L27)
 
 React render-phase errors escape the notistack path entirely: a throw
 unmounts the tree holding `SnackbarProvider`, so nothing is left to show a
@@ -76,7 +76,7 @@ in `contextType`.
 
 > **state**: `ErrorBoundaryState`
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:32](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/errors/ErrorBoundary.tsx#L32)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:32](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/errors/ErrorBoundary.tsx#L32)
 
 #### Overrides
 
@@ -88,7 +88,7 @@ Defined in: [ui/src/components/errors/ErrorBoundary.tsx:32](https://github.com/S
 
 > **componentDidCatch**(`error`, `info`): `void`
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:39](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/errors/ErrorBoundary.tsx#L39)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:39](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/errors/ErrorBoundary.tsx#L39)
 
 Catches exceptions generated in descendant components. Unhandled exceptions will cause
 the entire component tree to unmount.
@@ -117,7 +117,7 @@ the entire component tree to unmount.
 
 > **render**(): `ReactNode`
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:50](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/errors/ErrorBoundary.tsx#L50)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:50](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/errors/ErrorBoundary.tsx#L50)
 
 #### Returns
 
@@ -133,7 +133,7 @@ Defined in: [ui/src/components/errors/ErrorBoundary.tsx:50](https://github.com/S
 
 > `static` **getDerivedStateFromError**(`error`): `ErrorBoundaryState`
 
-Defined in: [ui/src/components/errors/ErrorBoundary.tsx:34](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/errors/ErrorBoundary.tsx#L34)
+Defined in: [ui/src/components/errors/ErrorBoundary.tsx:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/errors/ErrorBoundary.tsx#L34)
 
 #### Parameters
 

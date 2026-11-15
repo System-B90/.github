@@ -8,7 +8,7 @@
 
 > **HiveFeedCategory** = `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:118](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/schedule-feed.ts#L118)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:118](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/schedule-feed.ts#L118)
 
 A Hive event category as the feed needs it.
 
@@ -18,7 +18,7 @@ A Hive event category as the feed needs it.
 
 > **hasLesson**: `boolean`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:118](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/schedule-feed.ts#L118)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:118](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/schedule-feed.ts#L118)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-server/hive/schedule-feed.ts:118](https://github.com/Sys
 
 > **name**: `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:118](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/hive/schedule-feed.ts#L118)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:118](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/hive/schedule-feed.ts#L118)

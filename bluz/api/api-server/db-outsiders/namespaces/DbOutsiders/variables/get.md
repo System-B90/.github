@@ -8,7 +8,7 @@
 
 > `const` **get**: (`options?`, `controller`) => `Promise`\<[`Outsider`](../../../../../api-shared/types/outsider/type-aliases/Outsider.md)[]\> = `getDbOutsiders`
 
-Defined in: [ui/src/api-server/db-outsiders.ts:91](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/db-outsiders.ts#L91)
+Defined in: [ui/src/api-server/db-outsiders.ts:91](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/db-outsiders.ts#L91)
 
 ## Parameters
 

@@ -8,4 +8,4 @@
 
 > `const` **RoomListCard**: [`ListCard`](../../../common/type-aliases/ListCard.md)\<[`Room`](../../../../../../../api-shared/types/room/type-aliases/Room.md)\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/RoomListCard.tsx:9](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/settings-dialog/tabs/global/room-settings/RoomListCard.tsx#L9)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/RoomListCard.tsx:9](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/room-settings/RoomListCard.tsx#L9)

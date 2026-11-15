@@ -8,7 +8,7 @@
 
 > **pushAllEvents**(`userId`, `events`, `iterationId?`): `Promise`\<`number`\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:819](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/google/google-calendar-service.ts#L819)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:819](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/google/google-calendar-service.ts#L819)
 
 Pushes a full batch of the user's events (used by the manual "sync now"
 action to backfill everything at once).

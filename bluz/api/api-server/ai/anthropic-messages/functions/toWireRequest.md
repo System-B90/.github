@@ -8,7 +8,7 @@
 
 > **toWireRequest**(`messages`): `object`
 
-Defined in: [ui/src/api-server/ai/anthropic-messages.ts:120](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/ai/anthropic-messages.ts#L120)
+Defined in: [ui/src/api-server/ai/anthropic-messages.ts:120](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/ai/anthropic-messages.ts#L120)
 
 Maps Bluz's transcript onto the wire: system text goes top-level, tool
 results ride in user turns, and same-role neighbours merge — the wire wants

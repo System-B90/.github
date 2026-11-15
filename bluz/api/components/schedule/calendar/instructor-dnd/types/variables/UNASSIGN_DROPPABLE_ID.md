@@ -8,4 +8,4 @@
 
 > `const` **UNASSIGN\_DROPPABLE\_ID**: `"instructor-unassign-zone"` = `"instructor-unassign-zone"`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:35](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L35)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/types.ts:35](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/instructor-dnd/types.ts#L35)

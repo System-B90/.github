@@ -8,7 +8,7 @@
 
 > `const` **ModuleEventView**: `NamedExoticComponent`\<\{ `eventId`: `string`; `isHighlighted?`: `boolean`; `moduleId`: `string`; \}\>
 
-Defined in: [ui/src/components/gantt/module-dialog/ModuleEventView.tsx:99](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/gantt/module-dialog/ModuleEventView.tsx#L99)
+Defined in: [ui/src/components/gantt/module-dialog/ModuleEventView.tsx:99](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/gantt/module-dialog/ModuleEventView.tsx#L99)
 
 One event's row in the module dialog. Memoised, and its sortable row owns
 the drag subscription: a sort re-renders the row element and its handle,

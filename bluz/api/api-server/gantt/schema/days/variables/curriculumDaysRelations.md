@@ -8,4 +8,4 @@
 
 > `const` **curriculumDaysRelations**: `Relations`\<`"d"`, \{ `w2d`: `Many`\<`"w2d"`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/days.ts:21](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/schema/days.ts#L21)
+Defined in: [ui/src/api-server/gantt/schema/days.ts:21](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/schema/days.ts#L21)

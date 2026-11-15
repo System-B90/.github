@@ -6,7 +6,7 @@
 
 # Enumeration: SnapshotChange
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:22](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L22)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:22](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L22)
 
 How one event differs between a snapshot and the live schedule.
 
@@ -16,7 +16,7 @@ How one event differs between a snapshot and the live schedule.
 
 > **Added**: `"added"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:29](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L29)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:29](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L29)
 
 Live only (added since): restoring removes it.
 
@@ -26,7 +26,7 @@ Live only (added since): restoring removes it.
 
 > **Changed**: `"changed"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:25](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L25)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:25](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L25)
 
 In both, with different content: restoring writes the snapshot's back.
 
@@ -36,6 +36,6 @@ In both, with different content: restoring writes the snapshot's back.
 
 > **Deleted**: `"deleted"`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:27](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L27)
+Defined in: [ui/src/components/schedule/calendar/calendar/snapshot-diff.ts:27](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/calendar/snapshot-diff.ts#L27)
 
 In the snapshot only (deleted since): restoring re-creates it.

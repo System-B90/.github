@@ -8,4 +8,4 @@
 
 > `const` **SHABBAT\_DATE\_PARAM**: `"date"` = `"date"`
 
-Defined in: [ui/src/api-shared/types/shabbat.ts:1](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/shabbat.ts#L1)
+Defined in: [ui/src/api-shared/types/shabbat.ts:1](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/shabbat.ts#L1)

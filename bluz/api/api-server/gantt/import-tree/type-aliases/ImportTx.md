@@ -8,7 +8,7 @@
 
 > **ImportTx** = `Parameters`\<`Parameters`\<*typeof* `postgresDb.transaction`\>\[`0`\]\>\[`0`\]
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:21](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/import-tree.ts#L21)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:21](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/import-tree.ts#L21)
 
 Shared by the curriculum import and the single-syllabus import (#757): both
 copy a syllabus subtree and the constraints between its modules/events.

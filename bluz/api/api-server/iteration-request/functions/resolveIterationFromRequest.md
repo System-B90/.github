@@ -8,7 +8,7 @@
 
 > **resolveIterationFromRequest**(`request`): `Promise`\<[`ResolvedIteration`](../type-aliases/ResolvedIteration.md)\>
 
-Defined in: [ui/src/api-server/iteration-request.ts:61](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/iteration-request.ts#L61)
+Defined in: [ui/src/api-server/iteration-request.ts:61](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/iteration-request.ts#L61)
 
 Resolve the iteration a calendar request targets. Use for read paths.
 

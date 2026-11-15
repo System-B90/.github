@@ -8,7 +8,7 @@
 
 > **WeekTemplatesSetting**(): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/WeekTemplatesSetting.tsx:43](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/settings-dialog/tabs/global/WeekTemplatesSetting.tsx#L43)
+Defined in: [ui/src/components/settings-dialog/tabs/global/WeekTemplatesSetting.tsx:43](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/WeekTemplatesSetting.tsx#L43)
 
 Week templates (#997): the weeks a cut can start from. Replaces the old
 day-start, meal and prayer preferences, which now live per template.

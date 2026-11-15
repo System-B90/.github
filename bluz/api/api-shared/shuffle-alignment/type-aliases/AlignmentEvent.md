@@ -8,7 +8,7 @@
 
 > **AlignmentEvent** = `Pick`\<[`DbEventDocument`](../../types/event/type-aliases/DbEventDocument.md), `"courses"` \| `"endTime"` \| `"id"` \| `"startTime"` \| `"subject"` \| `"type"`\> & `Partial`\<`Pick`\<[`DbEventDocument`](../../types/event/type-aliases/DbEventDocument.md), `"rooms"`\>\> & `object`
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:41](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/shuffle-alignment.ts#L41)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:41](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/shuffle-alignment.ts#L41)
 
 ## Type Declaration
 

@@ -8,7 +8,7 @@
 
 > **AlignmentRule** = `Extract`\<[`ScheduleRuleId`](../../schedule-rules/type-aliases/ScheduleRuleId.md), `"R-50"` \| `"R-51"`\>
 
-Defined in: [ui/src/api-shared/shuffle-alignment.ts:26](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/shuffle-alignment.ts#L26)
+Defined in: [ui/src/api-shared/shuffle-alignment.ts:26](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/shuffle-alignment.ts#L26)
 
 Shuffle alignment on the calendar (#1000), one pure check behind the
 server route, the CLI and the schedule button.

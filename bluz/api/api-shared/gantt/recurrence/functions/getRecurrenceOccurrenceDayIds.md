@@ -8,7 +8,7 @@
 
 > **getRecurrenceOccurrenceDayIds**(`__namedParameters`): `Set`\<`string`\>
 
-Defined in: [ui/src/api-shared/gantt/recurrence.ts:71](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/gantt/recurrence.ts#L71)
+Defined in: [ui/src/api-shared/gantt/recurrence.ts:71](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/recurrence.ts#L71)
 
 The day ids a recurring event echoes onto, excluding its start day and any
 excepted days (deleted occurrences or occurrences materialized into their

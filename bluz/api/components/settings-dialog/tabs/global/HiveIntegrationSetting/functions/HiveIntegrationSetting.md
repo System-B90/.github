@@ -8,7 +8,7 @@
 
 > **HiveIntegrationSetting**(): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/HiveIntegrationSetting.tsx:98](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/settings-dialog/tabs/global/HiveIntegrationSetting.tsx#L98)
+Defined in: [ui/src/components/settings-dialog/tabs/global/HiveIntegrationSetting.tsx:98](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/settings-dialog/tabs/global/HiveIntegrationSetting.tsx#L98)
 
 Picks the one path that opens Hive lessons (Bluz's activator or the ICS
 feed) and, for the feed, where the sidecar writes the calendar file and how

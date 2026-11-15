@@ -8,7 +8,7 @@
 
 > **apiCreateEvents**(`events`, `initiator?`, `props?`, `iterationId?`): `Promise`\<[`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]\>
 
-Defined in: [ui/src/api-client/calendar.ts:254](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-client/calendar.ts#L254)
+Defined in: [ui/src/api-client/calendar.ts:254](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-client/calendar.ts#L254)
 
 Creates many events in one request (`PUT /api/event/bulk`).
 

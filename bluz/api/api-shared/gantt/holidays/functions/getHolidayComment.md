@@ -8,7 +8,7 @@
 
 > **getHolidayComment**(`date`): `string` \| `undefined`
 
-Defined in: [ui/src/api-shared/gantt/holidays.ts:11](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/gantt/holidays.ts#L11)
+Defined in: [ui/src/api-shared/gantt/holidays.ts:11](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/gantt/holidays.ts#L11)
 
 Jewish holidays begin at sunset the evening before their civil (Gregorian)
 date, so a holiday is "on" the day whose night carries it in. @hebcal/core

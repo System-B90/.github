@@ -8,7 +8,7 @@
 
 > `const` **get**: (`draftId`, `controller`) => `Promise`\<[`CalendarDraft`](../../../../../api-shared/types/type-aliases/CalendarDraft.md)\> = `getDraft`
 
-Defined in: [ui/src/api-server/db-calendar-draft.ts:237](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/db-calendar-draft.ts#L237)
+Defined in: [ui/src/api-server/db-calendar-draft.ts:237](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/db-calendar-draft.ts#L237)
 
 Fetches a single draft including its full events, ready to load.
 

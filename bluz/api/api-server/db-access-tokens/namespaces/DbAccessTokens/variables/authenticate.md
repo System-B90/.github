@@ -8,7 +8,7 @@
 
 > `const` **authenticate**: (`token`) => `Promise`\<[`AccessTokenDocument`](../../../type-aliases/AccessTokenDocument.md) \| `null`\> = `authenticateToken`
 
-Defined in: [ui/src/api-server/db-access-tokens.ts:179](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/db-access-tokens.ts#L179)
+Defined in: [ui/src/api-server/db-access-tokens.ts:179](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/db-access-tokens.ts#L179)
 
 Resolve a presented token to its document, or null when it is malformed,
 unknown, revoked or expired. Expiry is checked here rather than left to the

@@ -14,6 +14,8 @@
 - [ApiReservationDeleteResponse](type-aliases/ApiReservationDeleteResponse.md)
 - [ApiReservationsGetPayload](type-aliases/ApiReservationsGetPayload.md)
 - [ApiReservationsGetResponse](type-aliases/ApiReservationsGetResponse.md)
+- [ApiReservationUpdatePayload](type-aliases/ApiReservationUpdatePayload.md)
+- [ApiReservationUpdateResponse](type-aliases/ApiReservationUpdateResponse.md)
 - [DbReservation](type-aliases/DbReservation.md)
 - [Reservation](type-aliases/Reservation.md)
 - [ReserverType](type-aliases/ReserverType.md)

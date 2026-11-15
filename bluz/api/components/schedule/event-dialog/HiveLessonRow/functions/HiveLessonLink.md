@@ -8,7 +8,7 @@
 
 > **HiveLessonLink**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/event-dialog/HiveLessonRow.tsx:34](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/event-dialog/HiveLessonRow.tsx#L34)
+Defined in: [ui/src/components/schedule/event-dialog/HiveLessonRow.tsx:34](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/event-dialog/HiveLessonRow.tsx#L34)
 
 Opens the event's Hive lesson, as the lesson field's end adornment. Hive has
 no page per lesson: its module's page lists the lesson cards. Renders

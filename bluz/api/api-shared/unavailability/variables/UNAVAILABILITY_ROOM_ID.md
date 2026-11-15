@@ -8,7 +8,7 @@
 
 > `const` **UNAVAILABILITY\_ROOM\_ID**: `"unavailability"` = `"unavailability"`
 
-Defined in: [ui/src/api-shared/unavailability.ts:9](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/unavailability.ts#L9)
+Defined in: [ui/src/api-shared/unavailability.ts:9](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/unavailability.ts#L9)
 
 Staff unavailability (אי זמינות): an event a staff member creates to mark
 time they cannot instruct. All of them sit in one pseudo-room that exists

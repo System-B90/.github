@@ -8,7 +8,7 @@
 
 > **ApiAccessTokenCurrentResponse** = `object`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:72](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/access-token.ts#L72)
+Defined in: [ui/src/api-shared/types/access-token.ts:72](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/access-token.ts#L72)
 
 `GET /api/access-tokens/current`: who the calling token acts as. Shaped
 like next-auth's `/api/auth/session` so `bz.whoami()` parses either.
@@ -19,7 +19,7 @@ like next-auth's `/api/auth/session` so `bz.whoami()` parses either.
 
 > **accessToken**: [`AccessTokenSummary`](AccessTokenSummary.md)
 
-Defined in: [ui/src/api-shared/types/access-token.ts:75](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/access-token.ts#L75)
+Defined in: [ui/src/api-shared/types/access-token.ts:75](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/access-token.ts#L75)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:75](https://github.com/Syst
 
 > **expires**: `string`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:74](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/access-token.ts#L74)
+Defined in: [ui/src/api-shared/types/access-token.ts:74](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/access-token.ts#L74)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [ui/src/api-shared/types/access-token.ts:74](https://github.com/Syst
 
 > **user**: `object`
 
-Defined in: [ui/src/api-shared/types/access-token.ts:73](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/types/access-token.ts#L73)
+Defined in: [ui/src/api-shared/types/access-token.ts:73](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/types/access-token.ts#L73)
 
 #### email
 

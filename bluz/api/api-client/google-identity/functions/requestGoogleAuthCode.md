@@ -8,7 +8,7 @@
 
 > **requestGoogleAuthCode**(`clientId`, `scopes`): `Promise`\<`string`\>
 
-Defined in: [ui/src/api-client/google-identity.ts:59](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-client/google-identity.ts#L59)
+Defined in: [ui/src/api-client/google-identity.ts:59](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-client/google-identity.ts#L59)
 
 Opens the Google consent popup and resolves with the authorization code.
 Rejects when the popup is closed/blocked or Google reports an error.

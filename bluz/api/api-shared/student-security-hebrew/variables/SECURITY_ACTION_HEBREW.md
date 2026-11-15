@@ -8,7 +8,7 @@
 
 > `const` **SECURITY\_ACTION\_HEBREW**: `Record`\<[`StudentSecurityAction`](../../types/student-view/enumerations/StudentSecurityAction.md), \{ `firesOn`: `string`; `title`: `string`; \}\>
 
-Defined in: [ui/src/api-shared/student-security-hebrew.ts:11](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-shared/student-security-hebrew.ts#L11)
+Defined in: [ui/src/api-shared/student-security-hebrew.ts:11](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-shared/student-security-hebrew.ts#L11)
 
 Readable Hebrew for each security action: what it is, and what triggers it.
 Shared by the Peek-a-Boo tweet and the staff student monitor.

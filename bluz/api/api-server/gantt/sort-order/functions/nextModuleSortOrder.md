@@ -8,7 +8,7 @@
 
 > **nextModuleSortOrder**(`syllabusId`): `SQL`
 
-Defined in: [ui/src/api-server/gantt/sort-order.ts:17](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/sort-order.ts#L17)
+Defined in: [ui/src/api-server/gantt/sort-order.ts:17](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/sort-order.ts#L17)
 
 `sort_order` for a module appended to `syllabusId`: one past the current
 last. Linking with the column default (0) put new rows at the top after a

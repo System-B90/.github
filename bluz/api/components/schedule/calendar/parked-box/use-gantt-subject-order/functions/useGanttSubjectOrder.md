@@ -8,7 +8,7 @@
 
 > **useGanttSubjectOrder**(`enabled`): `ReadonlyMap`\<`number`, `number`\>
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/use-gantt-subject-order.ts:13](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/components/schedule/calendar/parked-box/use-gantt-subject-order.ts#L13)
+Defined in: [ui/src/components/schedule/calendar/parked-box/use-gantt-subject-order.ts:13](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/components/schedule/calendar/parked-box/use-gantt-subject-order.ts#L13)
 
 Hive subject id → its position in the gantt linked to the viewed
 iteration: the order of the syllabuses that carry it (#981). Fetched only

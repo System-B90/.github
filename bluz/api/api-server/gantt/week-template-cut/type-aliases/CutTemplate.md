@@ -8,7 +8,7 @@
 
 > **CutTemplate** = `object`
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:23](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/week-template-cut.ts#L23)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:23](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/week-template-cut.ts#L23)
 
 A template as the cut consumes it.
 
@@ -18,7 +18,7 @@ A template as the cut consumes it.
 
 > **events**: [`WeekTemplateEventDocument`](../../../../api-shared/types/week-template/type-aliases/WeekTemplateEventDocument.md)[]
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:25](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/week-template-cut.ts#L25)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:25](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/week-template-cut.ts#L25)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-server/gantt/week-template-cut.ts:25](https://github.com
 
 > **template**: [`WeekTemplate`](../../../../api-shared/types/week-template/type-aliases/WeekTemplate.md)
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:24](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/week-template-cut.ts#L24)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:24](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/week-template-cut.ts#L24)

@@ -8,7 +8,7 @@
 
 > `const` **ganttCurriculumEventDayMappingsSchema**: `PgTableWithColumns`\<\{ \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/mappings.ts:23](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/schema/mappings.ts#L23)
+Defined in: [ui/src/api-server/gantt/schema/mappings.ts:23](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/schema/mappings.ts#L23)
 
 Drizzle database schema definition for the Gantt Curriculum Event Day Mappings table (`cMDA`).
 Schedules modules into specific week/day slots.

@@ -8,7 +8,7 @@
 
 > `const` **ANONYMOUS\_SECURITY\_USER**: `"anonymous"` = `"anonymous"`
 
-Defined in: [ui/src/api-server/student-security-log.ts:15](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/student-security-log.ts#L15)
+Defined in: [ui/src/api-server/student-security-log.ts:15](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/student-security-log.ts#L15)
 
 Stand-in user id for an attempt that carries no identity — a forged session
 cookie or access token is, by definition, not attributable to anyone.

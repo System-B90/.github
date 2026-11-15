@@ -8,7 +8,7 @@
 
 > **default**(`__namedParameters`): `Promise`\<`Element`\>
 
-Defined in: [ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx:11](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx#L11)
+Defined in: [ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx:11](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/(themed)/(post-auth)/(with-hive)/gantt/layout.tsx#L11)
 
 The gantt is staff-only: a Checker (read-only schedule viewer) is sent back
 to the schedule. Not a data gate — every gantt API refuses a Checker on its

@@ -8,7 +8,7 @@
 
 > `const` **POST**: `ServerApiLessonActivationRun`
 
-Defined in: [ui/src/app/api/hive/lesson-activation/route.ts:21](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/app/api/hive/lesson-activation/route.ts#L21)
+Defined in: [ui/src/app/api/hive/lesson-activation/route.ts:21](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/app/api/hive/lesson-activation/route.ts#L21)
 
 POST /api/hive/lesson-activation — run one activation pass now and report
 what it did.

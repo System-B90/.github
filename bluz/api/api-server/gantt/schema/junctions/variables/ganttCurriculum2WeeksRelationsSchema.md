@@ -8,6 +8,6 @@
 
 > `const` **ganttCurriculum2WeeksRelationsSchema**: `Relations`\<`"c2w"`, \{ `curriculum`: `One`\<`"c"`, `true`\>; `week`: `One`\<`"w"`, `true`\>; \}\>
 
-Defined in: [ui/src/api-server/gantt/schema/junctions.ts:147](https://github.com/System-B90/Bluz/blob/e82087d51f2769f8b338ee03029e86c8d2549994/ui/src/api-server/gantt/schema/junctions.ts#L147)
+Defined in: [ui/src/api-server/gantt/schema/junctions.ts:147](https://github.com/System-B90/Bluz/blob/ef5f1592ad9f013b150ea581b494f4fff71a8490/ui/src/api-server/gantt/schema/junctions.ts#L147)
 
 Relations definition for the Curriculum to Weeks junction schema.
