@@ -8,7 +8,7 @@
 
 > **IterationLinkField**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx:30](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx#L30)
+Defined in: [ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx:30](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/components/curriculum-about-card/IterationLinkField.tsx#L30)
 
 Lets the user link the curriculum to a schedule iteration — required before
 "גזירה ללו"ז" (cut to schedule) can succeed, since the cut endpoint resolves

@@ -8,7 +8,7 @@
 
 > **GoogleSyncSubscriber** = `object`
 
-Defined in: [ui/src/api-server/google/google-calendar-scope.ts:9](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/google/google-calendar-scope.ts#L9)
+Defined in: [ui/src/api-server/google/google-calendar-scope.ts:9](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/google/google-calendar-scope.ts#L9)
 
 The bit of a user's personal settings the scope decision needs.
 
@@ -18,7 +18,7 @@ The bit of a user's personal settings the scope decision needs.
 
 > **syncAllEvents**: `boolean`
 
-Defined in: [ui/src/api-server/google/google-calendar-scope.ts:12](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/google/google-calendar-scope.ts#L12)
+Defined in: [ui/src/api-server/google/google-calendar-scope.ts:12](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/google/google-calendar-scope.ts#L12)
 
 `googleCalendarSyncAllEvents`: every event, regardless of assignment.
 
@@ -28,4 +28,4 @@ Defined in: [ui/src/api-server/google/google-calendar-scope.ts:12](https://githu
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-server/google/google-calendar-scope.ts:10](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/google/google-calendar-scope.ts#L10)
+Defined in: [ui/src/api-server/google/google-calendar-scope.ts:10](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/google/google-calendar-scope.ts#L10)

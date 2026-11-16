@@ -8,7 +8,7 @@
 
 > **defaultModuleEventSplitAcrossWeeks**(`type`): `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/models/event.ts:119](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/models/event.ts#L119)
+Defined in: [ui/src/api-shared/types/gantt/models/event.ts:119](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/gantt/models/event.ts#L119)
 
 Default value for `splitAcrossWeeks` when an event's type is picked/changed:
 opt-out for exercises, opt-in for everything else (lectures included), the

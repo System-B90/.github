@@ -8,7 +8,7 @@
 
 > **recurrenceRootDayId**(`eventId`, `mappings`, `linearDays`): `string` \| `undefined`
 
-Defined in: [ui/src/components/gantt/utils.tsx:64](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/utils.tsx#L64)
+Defined in: [ui/src/components/gantt/utils.tsx:64](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/utils.tsx#L64)
 
 The day a recurrence echoes from: the event's earliest mapped day on the
 timeline, as the cut and the student-load view root it. Map order is not

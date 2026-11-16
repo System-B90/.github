@@ -8,7 +8,7 @@
 
 > **CutTemplateSelect**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:22](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L22)
+Defined in: [ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx:22](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/cut-dialog/CutTemplateSelect.tsx#L22)
 
 Week-template picker for the cut (#997): placements and day-start, meal and
 prayer times come from the chosen template, or from the default one.

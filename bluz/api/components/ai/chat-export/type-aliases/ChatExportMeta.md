@@ -8,7 +8,7 @@
 
 > **ChatExportMeta** = `object`
 
-Defined in: [ui/src/components/ai/chat-export.ts:17](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/ai/chat-export.ts#L17)
+Defined in: [ui/src/components/ai/chat-export.ts:17](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/ai/chat-export.ts#L17)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/ai/chat-export.ts:17](https://github.com/System-B
 
 > **exportedAt**: `Date`
 
-Defined in: [ui/src/components/ai/chat-export.ts:18](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/ai/chat-export.ts#L18)
+Defined in: [ui/src/components/ai/chat-export.ts:18](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/ai/chat-export.ts#L18)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/ai/chat-export.ts:18](https://github.com/System-B
 
 > `optional` **model?**: `string`
 
-Defined in: [ui/src/components/ai/chat-export.ts:19](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/ai/chat-export.ts#L19)
+Defined in: [ui/src/components/ai/chat-export.ts:19](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/ai/chat-export.ts#L19)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/components/ai/chat-export.ts:19](https://github.com/System-B
 
 > `optional` **reasoning?**: `object`[]
 
-Defined in: [ui/src/components/ai/chat-export.ts:21](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/ai/chat-export.ts#L21)
+Defined in: [ui/src/components/ai/chat-export.ts:21](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/ai/chat-export.ts#L21)
 
 Thinking/reasoning blocks, in order, for inclusion in export.
 

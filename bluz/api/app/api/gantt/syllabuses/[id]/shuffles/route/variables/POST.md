@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/syllabuses/\[id\]/shuffles/route.ts:53](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/app/api/gantt/syllabuses/[id]/shuffles/route.ts#L53)
+Defined in: [ui/src/app/api/gantt/syllabuses/\[id\]/shuffles/route.ts:53](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/app/api/gantt/syllabuses/[id]/shuffles/route.ts#L53)
 
 Applies the new shuffle list, cascading removals onto modules and events.
 An optional `descriptions` (name → text) replaces the shuffle descriptions;

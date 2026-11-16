@@ -8,7 +8,7 @@
 
 > **prayerWindowsFromSettings**(`settings`): `object`[]
 
-Defined in: [ui/src/api-server/gantt/cut.ts:377](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/cut.ts#L377)
+Defined in: [ui/src/api-server/gantt/cut.ts:377](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/cut.ts#L377)
 
 Prayer windows for the planner, read out of the MongoDB schedule settings.
 

@@ -8,7 +8,7 @@
 
 > **HiveLessonCheckProvider**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/HiveLessonCheckProvider.tsx:31](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/HiveLessonCheckProvider.tsx#L31)
+Defined in: [ui/src/components/base/HiveLessonCheckProvider.tsx:31](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/HiveLessonCheckProvider.tsx#L31)
 
 Shares one Hive group list and one indexed course tree among every event on
 the schedule, so the lesson check stays a lookup per event. Groups come from

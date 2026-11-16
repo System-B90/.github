@@ -8,7 +8,7 @@
 
 > **buildViewsTour**(): `Tour`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tours/views.tsx:15](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/app-onboarding/schedule/tours/views.tsx#L15)
+Defined in: [ui/src/components/app-onboarding/schedule/tours/views.tsx:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/app-onboarding/schedule/tours/views.tsx#L15)
 
 Looking at the schedule rather than changing it: moving through time,
 choosing a view, narrowing it with filters and markings, getting the chrome

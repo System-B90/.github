@@ -8,7 +8,7 @@
 
 > `const` **DELETE**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/gantt/events/\[id\]/recurrence-exceptions/route.ts:61](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/app/api/gantt/events/[id]/recurrence-exceptions/route.ts#L61)
+Defined in: [ui/src/app/api/gantt/events/\[id\]/recurrence-exceptions/route.ts:61](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/app/api/gantt/events/[id]/recurrence-exceptions/route.ts#L61)
 
 DELETE: Restores a skipped occurrence — the event echoes onto that day
 again (#469). A materialized occurrence is not restorable: its standalone

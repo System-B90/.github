@@ -8,7 +8,7 @@
 
 > **deleteConstraint**(`constraintId`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-constraints.ts:184](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/db-constraints.ts#L184)
+Defined in: [ui/src/api-server/gantt/db-constraints.ts:184](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/db-constraints.ts#L184)
 
 Deletes a constraint from the database by its identifier.
 

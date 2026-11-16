@@ -8,7 +8,7 @@
 
 > `const` **FIXTURE\_ROOMS**: `FixtureRoom`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:87](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/benchmark/fixture.ts#L87)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:87](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/benchmark/fixture.ts#L87)
 
 One room of each kind on purpose. Hive room ids are numbers, custom room ids
 are strings, and a model that assumes every id is numeric round-trips a

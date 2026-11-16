@@ -8,7 +8,7 @@
 
 > `const` **MAX\_IMPORT\_NODES**: `50000` = `50_000`
 
-Defined in: [ui/src/api-server/gantt/import-tree.ts:34](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/import-tree.ts#L34)
+Defined in: [ui/src/api-server/gantt/import-tree.ts:34](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/import-tree.ts#L34)
 
 Upper bound on the total number of entities a single import may create.
 Guards the recursive walk against a hostile/corrupt payload that would

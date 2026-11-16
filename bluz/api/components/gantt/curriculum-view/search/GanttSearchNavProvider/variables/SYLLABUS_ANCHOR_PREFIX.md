@@ -8,6 +8,6 @@
 
 > `const` **SYLLABUS\_ANCHOR\_PREFIX**: `"gantt-syllabus-"` = `"gantt-syllabus-"`
 
-Defined in: [ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx:15](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx#L15)
+Defined in: [ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/search/GanttSearchNavProvider.tsx#L15)
 
 DOM id prefix used to anchor a syllabus card for scroll-into-view.

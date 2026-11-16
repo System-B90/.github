@@ -8,7 +8,7 @@
 
 > **StudentViewSession** = `object`
 
-Defined in: [ui/src/api-server/student-view.ts:52](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/student-view.ts#L52)
+Defined in: [ui/src/api-server/student-view.ts:52](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-view.ts#L52)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-server/student-view.ts:52](https://github.com/System-B90
 
 > **clearance**: `Clearance`
 
-Defined in: [ui/src/api-server/student-view.ts:53](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/student-view.ts#L53)
+Defined in: [ui/src/api-server/student-view.ts:53](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-view.ts#L53)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-server/student-view.ts:53](https://github.com/System-B90
 
 > **isChecker**: `boolean`
 
-Defined in: [ui/src/api-server/student-view.ts:57](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/student-view.ts#L57)
+Defined in: [ui/src/api-server/student-view.ts:57](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-view.ts#L57)
 
 Checker (read-only staff-shell viewer). Only with `allowChecker`.
 
@@ -34,7 +34,7 @@ Checker (read-only staff-shell viewer). Only with `allowChecker`.
 
 > **isStaff**: `boolean`
 
-Defined in: [ui/src/api-server/student-view.ts:55](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/student-view.ts#L55)
+Defined in: [ui/src/api-server/student-view.ts:55](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-view.ts#L55)
 
 Staff (Segel/Admin) get the preview affordances; students never do.
 
@@ -44,6 +44,6 @@ Staff (Segel/Admin) get the preview affordances; students never do.
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-server/student-view.ts:59](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/student-view.ts#L59)
+Defined in: [ui/src/api-server/student-view.ts:59](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-view.ts#L59)
 
 Session-derived user id. Never taken from a request body.

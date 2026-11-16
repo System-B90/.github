@@ -8,7 +8,7 @@
 
 > **dayHoursStepLabel**(`direction`, `dayName`, `dateLabel`): `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts:2](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts#L2)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts:2](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/day-cell-labels.ts#L2)
 
 Accessible names for a weeks-tab day cell's controls (#842).
 

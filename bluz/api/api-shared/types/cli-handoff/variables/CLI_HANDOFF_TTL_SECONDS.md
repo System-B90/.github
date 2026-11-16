@@ -8,7 +8,7 @@
 
 > `const` **CLI\_HANDOFF\_TTL\_SECONDS**: `120` = `120`
 
-Defined in: [ui/src/api-shared/types/cli-handoff.ts:35](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/cli-handoff.ts#L35)
+Defined in: [ui/src/api-shared/types/cli-handoff.ts:35](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/cli-handoff.ts#L35)
 
 How long a handoff code is redeemable for. Kept short: the whole login
 round trip (page load, loopback fetch/navigation, CLI's HTTPS redeem call)

@@ -8,7 +8,7 @@
 
 > **TemplatesMenu**(): `Element`
 
-Defined in: [ui/src/components/week-templates/TemplatesMenu.tsx:46](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/week-templates/TemplatesMenu.tsx#L46)
+Defined in: [ui/src/components/week-templates/TemplatesMenu.tsx:46](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/week-templates/TemplatesMenu.tsx#L46)
 
 Toolbar entry to week templates (#997): see which template the shown week
 is linked to and relink it without a re-cut, open one for editing in the

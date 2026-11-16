@@ -8,7 +8,7 @@
 
 > **SettingsProvider**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/SettingsProvider.tsx:101](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/SettingsProvider.tsx#L101)
+Defined in: [ui/src/components/base/SettingsProvider.tsx:101](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/SettingsProvider.tsx#L101)
 
 Iteration-scoped schedule settings. Day-start, meal and prayer times moved
 into week templates (#997); what is left here is the calendar's visible

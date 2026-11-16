@@ -8,7 +8,7 @@
 
 > `const` **INSIGHTS\_DISMISS\_KEY**: `"bluz.gantt.insights.dismissedUntil"` = `"bluz.gantt.insights.dismissedUntil"`
 
-Defined in: [ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts:8](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts#L8)
+Defined in: [ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts:8](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/components/insights/dismiss.ts#L8)
 
 Session-scoped "dismiss for an hour" for the gantt insights card (#854).
 

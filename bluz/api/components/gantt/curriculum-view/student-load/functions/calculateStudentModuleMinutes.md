@@ -8,7 +8,7 @@
 
 > **calculateStudentModuleMinutes**(`moduleId`, `state`, `courses`, `occurrenceCtx?`, `ignoreBreaks?`): `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:636](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/student-load.ts#L636)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:636](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/student-load.ts#L636)
 
 One student's minimum time in a module, recurring events per occurrence.
 

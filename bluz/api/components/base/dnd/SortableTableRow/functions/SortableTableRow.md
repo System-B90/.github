@@ -8,7 +8,7 @@
 
 > **SortableTableRow**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/base/dnd/SortableTableRow.tsx:27](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/dnd/SortableTableRow.tsx#L27)
+Defined in: [ui/src/components/base/dnd/SortableTableRow.tsx:27](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/dnd/SortableTableRow.tsx#L27)
 
 A table row that is a dnd-kit sortable item, with `useSortable` confined to
 the row element and its handle cell.

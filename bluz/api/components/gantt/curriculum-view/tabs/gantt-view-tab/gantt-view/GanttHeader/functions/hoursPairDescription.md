@@ -8,7 +8,7 @@
 
 > **hoursPairDescription**(`scheduledMinutes`, `availableMinutes`): `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx:42](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx#L42)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx:42](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/tabs/gantt-view-tab/gantt-view/GanttHeader.tsx#L42)
 
 Spoken/hovered meaning of the `X / Y` pair, which on screen has no labels (#812).
 

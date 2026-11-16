@@ -8,7 +8,7 @@
 
 > **apiCreateSnapshot**(`label`, `range`, `iterationId?`): `Promise`\<[`CalendarSnapshotSummary`](../../../api-shared/types/type-aliases/CalendarSnapshotSummary.md)\>
 
-Defined in: [ui/src/api-client/calendar-snapshots.ts:35](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/calendar-snapshots.ts#L35)
+Defined in: [ui/src/api-client/calendar-snapshots.ts:35](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-client/calendar-snapshots.ts#L35)
 
 Creates a named snapshot of `range`. The server captures the saved events
 inside it, so the snapshot never holds this browser's unsaved state.

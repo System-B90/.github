@@ -8,7 +8,7 @@
 
 > `const` **GET**: `ServerApiShabbatGet`
 
-Defined in: [ui/src/app/api/shabbat/route.ts:24](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/app/api/shabbat/route.ts#L24)
+Defined in: [ui/src/app/api/shabbat/route.ts:24](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/app/api/shabbat/route.ts#L24)
 
 Shabbat window (Beer Sheva) for the week containing `?date=YYYY-MM-DD`:
 candle lighting, havdalah, and the Friday/Saturday event bounds (R-32).

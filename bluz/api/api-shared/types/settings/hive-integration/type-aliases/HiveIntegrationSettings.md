@@ -8,7 +8,7 @@
 
 > **HiveIntegrationSettings** = `object`
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:17](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/hive-integration.ts#L17)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:17](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/hive-integration.ts#L17)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:17](https://gi
 
 > `optional` **calendarFile?**: `string`
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:26](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/hive-integration.ts#L26)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:26](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/hive-integration.ts#L26)
 
 Where the `hive-feed` sidecar writes the ICS feed, relative to the
 directory it shares with Hive (`HIVE_CALENDAR_DIRS_PATH`). The directory
@@ -30,7 +30,7 @@ path inside it is editable here. Unset ⇒ the sidecar's own
 
 > `optional` **feedWindowHours?**: `number`
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:33](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/hive-integration.ts#L33)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:33](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/hive-integration.ts#L33)
 
 How far the ICS feed reaches, in hours, before the start and after the
 end of the current day (Israel time). Hive deletes every Bluz event the
@@ -43,4 +43,4 @@ Unset ⇒ [DEFAULT\_HIVE\_FEED\_WINDOW\_HOURS](../variables/DEFAULT_HIVE_FEED_WI
 
 > **lessonDriver**: [`HiveLessonDriver`](../enumerations/HiveLessonDriver.md)
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:18](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/hive-integration.ts#L18)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:18](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/hive-integration.ts#L18)

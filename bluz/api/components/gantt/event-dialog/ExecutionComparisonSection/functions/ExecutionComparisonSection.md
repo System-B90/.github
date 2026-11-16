@@ -8,7 +8,7 @@
 
 > **ExecutionComparisonSection**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/gantt/event-dialog/ExecutionComparisonSection.tsx:178](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/event-dialog/ExecutionComparisonSection.tsx#L178)
+Defined in: [ui/src/components/gantt/event-dialog/ExecutionComparisonSection.tsx:178](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/event-dialog/ExecutionComparisonSection.tsx#L178)
 
 תכנון מול ביצוע (#121): per-occurrence comparison between this gantt
 event's plan and the schedule events that were cut from it. Refreshes on

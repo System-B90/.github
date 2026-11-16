@@ -8,7 +8,7 @@
 
 > **CalendarSnapshotRestoreRequest** = `object`
 
-Defined in: [ui/src/api-shared/types.ts:95](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types.ts#L95)
+Defined in: [ui/src/api-shared/types.ts:95](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types.ts#L95)
 
 Body of POST /api/calendar/snapshots/restore. `eventIds` picks the events
 to restore (snapshot events to write back, events added since to remove);
@@ -20,4 +20,4 @@ absent ⇒ the whole snapshot.
 
 > `optional` **eventIds?**: `string`[]
 
-Defined in: [ui/src/api-shared/types.ts:96](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types.ts#L96)
+Defined in: [ui/src/api-shared/types.ts:96](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types.ts#L96)

@@ -8,7 +8,7 @@
 
 > **InstructorHours** = `object`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:5](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L5)
+Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:5](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L5)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:5]
 
 > **earlyDays**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:10](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L10)
+Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:10](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L10)
 
 Days (Israel time) whose first teaching starts before the early cutoff.
 
@@ -26,7 +26,7 @@ Days (Israel time) whose first teaching starts before the early cutoff.
 
 > **eventCount**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:8](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L8)
+Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:8](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L8)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:8]
 
 > **instructorId**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:6](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L6)
+Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:6](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L6)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:6]
 
 > **minutes**: `number`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:7](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L7)
+Defined in: [ui/src/components/schedule/calendar/calendar/instructor-hours.ts:7](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/instructor-hours.ts#L7)

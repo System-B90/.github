@@ -8,7 +8,7 @@
 
 > **shabbatSpan**(`window`): [`PrayerSpan`](../../use-prayer-windows/type-aliases/PrayerSpan.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts:9](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts#L9)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts:9](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts#L9)
 
 Candle lighting through havdalah of `window`, as instants.
 

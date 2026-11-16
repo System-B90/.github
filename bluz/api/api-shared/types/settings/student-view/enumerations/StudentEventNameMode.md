@@ -6,7 +6,7 @@
 
 # Enumeration: StudentEventNameMode
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:11](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/student-view.ts#L11)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:11](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/student-view.ts#L11)
 
 How `/student-view` names an event (#744). Students should not learn an
 event's real name, so the default shows only its type and the Hive
@@ -18,7 +18,7 @@ subject's symbol.
 
 > **FULL**: `"full"`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:15](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/student-view.ts#L15)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/student-view.ts#L15)
 
 The event's real name, as staff see it.
 
@@ -28,6 +28,6 @@ The event's real name, as staff see it.
 
 > **SYMBOL**: `"symbol"`
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:13](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/student-view.ts#L13)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:13](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/student-view.ts#L13)
 
 "{type label} {subject symbol}", e.g. `ע"ע פא`, `הרצאת פא`.

@@ -8,7 +8,7 @@
 
 > **getConstraintsForSyllabus**(`syllabusId`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-constraints.ts:264](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/db-constraints.ts#L264)
+Defined in: [ui/src/api-server/gantt/db-constraints.ts:264](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/db-constraints.ts#L264)
 
 Retrieves all constraints for any module or event within a specific syllabus using a single database query.
 

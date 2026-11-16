@@ -8,7 +8,7 @@
 
 > **SyllabusLinksSectionProps** = `object`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx:24](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx#L24)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx:24](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx#L24)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx:24
 
 > **syllabusId**: [`GanttSyllabusId`](../../../../../api-shared/types/gantt/models/syllabus/type-aliases/GanttSyllabusId.md) \| `null`
 
-Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx:25](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx#L25)
+Defined in: [ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx:25](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/syllabus-dialog/SyllabusLinksSection.tsx#L25)

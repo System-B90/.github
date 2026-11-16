@@ -8,4 +8,4 @@
 
 > `const` **CUT\_NO\_ITERATION\_REASON**: `"יש לקשר מחזור לפני גזירה"` = `"יש לקשר מחזור לפני גזירה"`
 
-Defined in: [ui/src/components/gantt/cut-dialog/cut-target.ts:14](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/cut-dialog/cut-target.ts#L14)
+Defined in: [ui/src/components/gantt/cut-dialog/cut-target.ts:14](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/cut-dialog/cut-target.ts#L14)

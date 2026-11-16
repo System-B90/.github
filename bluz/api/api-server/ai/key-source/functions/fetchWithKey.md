@@ -8,7 +8,7 @@
 
 > **fetchWithKey**(`key`, `authHeaders`, `url`, `init`): `Promise`\<`Response`\>
 
-Defined in: [ui/src/api-server/ai/key-source.ts:30](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/key-source.ts#L30)
+Defined in: [ui/src/api-server/ai/key-source.ts:30](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/key-source.ts#L30)
 
 `aiFetch` with auth headers built from the current token, retried once on
 a 401 from an expiring key.

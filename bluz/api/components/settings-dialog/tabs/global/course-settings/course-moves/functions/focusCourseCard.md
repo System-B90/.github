@@ -8,7 +8,7 @@
 
 > **focusCourseCard**(`courseId`): `void`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:53](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L53)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts:53](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/settings-dialog/tabs/global/course-settings/course-moves.ts#L53)
 
 Focuses a course's card once the tree has re-rendered after a move: the
 card that held focus may have just unmounted under a collapsed parent.
