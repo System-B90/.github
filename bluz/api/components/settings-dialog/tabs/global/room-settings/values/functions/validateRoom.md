@@ -8,7 +8,7 @@
 
 > **validateRoom**(`values`, `requireName?`): [`ValidationResult`](../../../common/UseEntityForm/type-aliases/ValidationResult.md)\<[`RoomValues`](../type-aliases/RoomValues.md)\>
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:76](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L76)
+Defined in: [ui/src/components/settings-dialog/tabs/global/room-settings/values.ts:76](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/settings-dialog/tabs/global/room-settings/values.ts#L76)
 
 Only the name is required, and only for custom rooms — a Hive room's name is
 read-only here, so editing one submits extended info alone. The caller

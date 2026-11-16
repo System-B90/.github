@@ -8,7 +8,7 @@
 
 > **BreakPassInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:54](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L54)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:54](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-breaks.ts#L54)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:54](https://github.com/System
 
 > **dayEndMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:57](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L57)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:57](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-breaks.ts#L57)
 
 End of the day's working window, minutes-of-day.
 
@@ -26,7 +26,7 @@ End of the day's working window, minutes-of-day.
 
 > **items**: [`PlacedItem`](PlacedItem.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:55](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L55)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:55](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-breaks.ts#L55)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:55](https://github.com/System
 
 > **prayers**: [`PrayerWindow`](PrayerWindow.md)[]
 
-Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:58](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-breaks.ts#L58)
+Defined in: [ui/src/api-shared/gantt/cut-breaks.ts:58](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-breaks.ts#L58)

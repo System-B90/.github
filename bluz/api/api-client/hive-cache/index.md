@@ -9,5 +9,7 @@
 ## Functions
 
 - [getCachedHiveClasses](functions/getCachedHiveClasses.md)
+- [hiveCacheVersion](functions/hiveCacheVersion.md)
 - [invalidateHiveCache](functions/invalidateHiveCache.md)
 - [peekCachedHiveClasses](functions/peekCachedHiveClasses.md)
+- [subscribeHiveCache](functions/subscribeHiveCache.md)

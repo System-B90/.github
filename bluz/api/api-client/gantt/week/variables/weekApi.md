@@ -8,4 +8,4 @@
 
 > `const` **weekApi**: [`BasicGantApi`](../../base/type-aliases/BasicGantApi.md)\<[`GanttWeek`](../../../../api-shared/types/gantt/models/week/type-aliases/GanttWeek.md), [`CreateGanttWeekPayload`](../../../../api-shared/types/gantt/create-payloads/type-aliases/CreateGanttWeekPayload.md)\>
 
-Defined in: [ui/src/api-client/gantt/week.ts:12](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/week.ts#L12)
+Defined in: [ui/src/api-client/gantt/week.ts:12](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/week.ts#L12)

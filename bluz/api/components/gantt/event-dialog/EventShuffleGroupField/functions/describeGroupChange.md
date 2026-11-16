@@ -8,7 +8,7 @@
 
 > **describeGroupChange**(`current`, `selected`, `memberCount`): \{ `destructive`: `boolean`; `text`: `string`; \} \| `null`
 
-Defined in: [ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx:52](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx#L52)
+Defined in: [ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx:52](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/event-dialog/EventShuffleGroupField.tsx#L52)
 
 What applying `selected` does to the group, in the server's terms (see
 `applyShuffleGroup`): fewer than two names only drops the group marker and

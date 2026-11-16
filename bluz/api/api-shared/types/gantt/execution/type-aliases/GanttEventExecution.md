@@ -8,7 +8,7 @@
 
 > **GanttEventExecution** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:47](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/execution.ts#L47)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:47](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/execution.ts#L47)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/gantt/execution.ts:47](https://github.com/S
 
 > **drifted**: `boolean`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:58](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/execution.ts#L58)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:58](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/execution.ts#L58)
 
 True when any occurrence drifted.
 
@@ -26,7 +26,7 @@ True when any occurrence drifted.
 
 > **ganttEventId**: [`GanttEventId`](../../models/shared/type-aliases/GanttEventId.md)
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:48](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/execution.ts#L48)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:48](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/execution.ts#L48)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/types/gantt/execution.ts:48](https://github.com/S
 
 > **occurrences**: [`OccurrenceExecution`](OccurrenceExecution.md)[]
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:49](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/execution.ts#L49)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:49](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/execution.ts#L49)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/types/gantt/execution.ts:49](https://github.com/S
 
 > **totals**: `object`
 
-Defined in: [ui/src/api-shared/types/gantt/execution.ts:51](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/execution.ts#L51)
+Defined in: [ui/src/api-shared/types/gantt/execution.ts:51](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/execution.ts#L51)
 
 Aggregates, mainly useful for recurring events.
 

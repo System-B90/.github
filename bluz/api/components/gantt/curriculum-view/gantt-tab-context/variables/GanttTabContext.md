@@ -8,7 +8,7 @@
 
 > `const` **GanttTabContext**: `Context`\<[`GanttTabControl`](../type-aliases/GanttTabControl.md) \| `null`\>
 
-Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:14](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L14)
+Defined in: [ui/src/components/gantt/curriculum-view/gantt-tab-context.ts:14](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/gantt-tab-context.ts#L14)
 
 The selected gantt tab, for code inside a tab that must act on its own tab.
 Visited tabs stay mounted while hidden (#326), so anything they register

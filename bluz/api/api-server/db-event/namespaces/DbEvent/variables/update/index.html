@@ -1023,7 +1023,7 @@
 <blockquote>
 <p><code>const</code> <strong>update</strong>: (<code>eventData</code>, <code>options?</code>, <code>controller</code>, <code>iterationId?</code>, <code>origin</code>) =&gt; <code>Promise</code>\&lt;{ <code>after</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>before</code>: <a href="../../../../../../api-shared/types/event/type-aliases/DbEventDocument/"><code>DbEventDocument</code></a>; <code>stale?</code>: <code>boolean</code>; }&gt; = <code>updateDbEvent</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/db-event.ts#L809">ui/src/api-server/db-event.ts:809</a></p>
+<p>Defined in: <a href="https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/db-event.ts#L809">ui/src/api-server/db-event.ts:809</a></p>
 <p><a href="../set/">setDbEvent</a> that also returns the stored copy it replaced, so callers
 that need the old version (the Google fan-out) don't read it again (#926).
 Read and write are one atomic <code>findOneAndUpdate</code>, so <code>before</code> is exactly

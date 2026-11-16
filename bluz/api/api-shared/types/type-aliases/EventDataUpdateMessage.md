@@ -8,7 +8,7 @@
 
 > **EventDataUpdateMessage**\<`T`\> = `object`
 
-Defined in: [ui/src/api-shared/types.ts:3](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types.ts#L3)
+Defined in: [ui/src/api-shared/types.ts:3](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types.ts#L3)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/types.ts:3](https://github.com/System-B90/Bluz/bl
 
 > **events**: `Record`\<`string`, `T`\>
 
-Defined in: [ui/src/api-shared/types.ts:4](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types.ts#L4)
+Defined in: [ui/src/api-shared/types.ts:4](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types.ts#L4)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [ui/src/api-shared/types.ts:4](https://github.com/System-B90/Bluz/bl
 
 > `optional` **iterationId?**: `string`
 
-Defined in: [ui/src/api-shared/types.ts:7](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types.ts#L7)
+Defined in: [ui/src/api-shared/types.ts:7](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types.ts#L7)

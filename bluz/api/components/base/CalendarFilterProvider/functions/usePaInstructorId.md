@@ -8,7 +8,7 @@
 
 > **usePaInstructorId**(): `number`
 
-Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:451](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/CalendarFilterProvider.tsx#L451)
+Defined in: [ui/src/components/base/CalendarFilterProvider.tsx:463](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/CalendarFilterProvider.tsx#L463)
 
 The one instructor the פ"א view is about: the PA view's own instructor while
 it is on, else whoever the instructor filter is narrowed to, else the

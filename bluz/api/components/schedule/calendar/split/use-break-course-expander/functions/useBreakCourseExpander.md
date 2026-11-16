@@ -8,7 +8,7 @@
 
 > **useBreakCourseExpander**(): (`courseIds`) => `Set`\<`string`\>
 
-Defined in: [ui/src/components/schedule/calendar/split/use-break-course-expander.ts:10](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/split/use-break-course-expander.ts#L10)
+Defined in: [ui/src/components/schedule/calendar/split/use-break-course-expander.ts:10](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/split/use-break-course-expander.ts#L10)
 
 Widens a break's courses to their descendants, so a Bis90 break also
 interrupts Apollo events (#974). Stable while the course tree is unchanged.

@@ -8,7 +8,7 @@
 
 > **listGoogleCalendarLinks**(`userIds`): `Promise`\<[`GoogleCalendarLink`](../../../../api-shared/types/google-calendar/type-aliases/GoogleCalendarLink.md)[]\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:357](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/google/google-calendar-service.ts#L357)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:357](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/google/google-calendar-service.ts#L357)
 
 The links of the given users, for the fan-out to group by calendar.
 

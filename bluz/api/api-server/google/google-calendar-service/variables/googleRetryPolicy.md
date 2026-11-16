@@ -8,7 +8,7 @@
 
 > `const` **googleRetryPolicy**: `object`
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:110](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/google/google-calendar-service.ts#L110)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:110](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/google/google-calendar-service.ts#L110)
 
 Retry policy for Calendar API calls. Mutable so tests can zero the delays;
 production keeps Google's recommended truncated exponential backoff.

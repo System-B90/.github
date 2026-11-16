@@ -8,7 +8,7 @@
 
 > **Interval** = `object`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:9](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/interval-layout.ts#L9)
+Defined in: [ui/src/api-shared/interval-layout.ts:9](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/interval-layout.ts#L9)
 
 Pure interval arithmetic for laying a continuous run of work around windows
 it must not occupy ("jumping over" them). Deliberately domain-free —
@@ -22,7 +22,7 @@ re-deriving it.
 
 > **end**: `number`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:9](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/interval-layout.ts#L9)
+Defined in: [ui/src/api-shared/interval-layout.ts:9](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/interval-layout.ts#L9)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [ui/src/api-shared/interval-layout.ts:9](https://github.com/System-B
 
 > **start**: `number`
 
-Defined in: [ui/src/api-shared/interval-layout.ts:9](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/interval-layout.ts#L9)
+Defined in: [ui/src/api-shared/interval-layout.ts:9](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/interval-layout.ts#L9)

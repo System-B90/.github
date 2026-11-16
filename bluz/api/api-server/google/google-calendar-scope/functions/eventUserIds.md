@@ -8,7 +8,7 @@
 
 > **eventUserIds**(`event`): `Set`\<`string`\>
 
-Defined in: [ui/src/api-server/google/google-calendar-scope.ts:16](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/google/google-calendar-scope.ts#L16)
+Defined in: [ui/src/api-server/google/google-calendar-scope.ts:16](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/google/google-calendar-scope.ts#L16)
 
 Bluz user ids (as strings) assigned to the event as instructor/lecturer.
 

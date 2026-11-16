@@ -8,7 +8,7 @@
 
 > **SpillCandidate** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:107](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-rules.ts#L107)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:107](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-rules.ts#L107)
 
 Whether an occurrence may be moved off the day it was mapped to.
 
@@ -30,7 +30,7 @@ preference rather than a promise.
 
 > **isDailyRecurrence**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:113](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-rules.ts#L113)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:113](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-rules.ts#L113)
 
 True when the source event recurs daily.
 
@@ -40,7 +40,7 @@ True when the source event recurs daily.
 
 > **isPinnedMeal**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:109](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-rules.ts#L109)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:109](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-rules.ts#L109)
 
 True for the auto-seeded meal events pinned to a clock time.
 
@@ -50,6 +50,6 @@ True for the auto-seeded meal events pinned to a clock time.
 
 > **isRecurrenceEcho**: `boolean`
 
-Defined in: [ui/src/api-shared/gantt/cut-rules.ts:111](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-rules.ts#L111)
+Defined in: [ui/src/api-shared/gantt/cut-rules.ts:111](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-rules.ts#L111)
 
 True when this occurrence is a recurrence echo rather than the mapped day.

@@ -8,7 +8,7 @@
 
 > `const` **POST**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/calendar/validate/\[ruleId\]/route.ts:24](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/api/calendar/validate/[ruleId]/route.ts#L24)
+Defined in: [ui/src/app/api/calendar/validate/\[ruleId\]/route.ts:24](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/app/api/calendar/validate/[ruleId]/route.ts#L24)
 
 POST /api/calendar/validate/[ruleId] — one schedule rule (`R-xx`, see
 `rule-ids.ts`) over `{ start, end }` (live calendar), `{ draftId }` (saved

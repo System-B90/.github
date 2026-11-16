@@ -8,7 +8,7 @@
 
 > `const` **ensure**: () => `Promise`\<`void`\> = `ensureSeeded`
 
-Defined in: [ui/src/api-server/db-iterations.ts:449](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/db-iterations.ts#L449)
+Defined in: [ui/src/api-server/db-iterations.ts:449](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/db-iterations.ts#L449)
 
 One-off migration for installs that predate the registry: the existing `bluz`
 database is registered as the first, current iteration so its data stays

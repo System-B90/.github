@@ -8,7 +8,7 @@
 
 > **withPersonRemoved**(`event`, `personId`): [`Event`](../../../../../../api-shared/types/event/type-aliases/Event.md) \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:108](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L108)
+Defined in: [ui/src/components/schedule/calendar/instructor-dnd/assign.ts:108](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/instructor-dnd/assign.ts#L108)
 
 Removes a person from both person fields of an event.
 

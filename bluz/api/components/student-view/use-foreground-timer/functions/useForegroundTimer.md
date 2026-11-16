@@ -8,7 +8,7 @@
 
 > **useForegroundTimer**(): `void`
 
-Defined in: [ui/src/components/student-view/use-foreground-timer.ts:56](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/student-view/use-foreground-timer.ts#L56)
+Defined in: [ui/src/components/student-view/use-foreground-timer.ts:56](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/student-view/use-foreground-timer.ts#L56)
 
 Counts the time this page spends open and in the foreground, flushing it to
 the server on a heartbeat and whenever the page stops being foreground

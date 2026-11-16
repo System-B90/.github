@@ -8,7 +8,7 @@
 
 > **loadManuallyDeletedKeys**(`controller`, `curriculumId`, `week?`): `Promise`\<`Set`\<`string`\>\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1001](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/cut.ts#L1001)
+Defined in: [ui/src/api-server/gantt/cut.ts:1001](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/cut.ts#L1001)
 
 Occurrences a human deleted from the schedule since the cut: archived cut
 events whose change log holds a non-gantt archive row. Archives written by

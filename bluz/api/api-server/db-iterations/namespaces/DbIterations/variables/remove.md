@@ -8,7 +8,7 @@
 
 > `const` **remove**: (`id`) => `Promise`\<`void`\> = `deleteIteration`
 
-Defined in: [ui/src/api-server/db-iterations.ts:458](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/db-iterations.ts#L458)
+Defined in: [ui/src/api-server/db-iterations.ts:458](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/db-iterations.ts#L458)
 
 Delete an iteration from the registry. Only an orphaned iteration qualifies:
 the current one is never deletable (there must always be exactly one writable

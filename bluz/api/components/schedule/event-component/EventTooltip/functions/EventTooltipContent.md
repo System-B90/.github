@@ -8,7 +8,7 @@
 
 > **EventTooltipContent**(`breakWindows`): `Element`
 
-Defined in: [ui/src/components/schedule/event-component/EventTooltip.tsx:53](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-component/EventTooltip.tsx#L53)
+Defined in: [ui/src/components/schedule/event-component/EventTooltip.tsx:53](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-component/EventTooltip.tsx#L53)
 
 Rich tooltip content displayed on long-hover over any event.
 Shows ALL event information regardless of event size.

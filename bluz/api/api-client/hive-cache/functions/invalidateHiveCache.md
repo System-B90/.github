@@ -8,9 +8,10 @@
 
 > **invalidateHiveCache**(): `void`
 
-Defined in: [ui/src/api-client/hive-cache.ts:64](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/hive-cache.ts#L64)
+Defined in: [ui/src/api-client/hive-cache.ts:85](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/hive-cache.ts#L85)
 
-Drops every cached list, e.g. after groups were edited in Hive.
+Drops every cached list, e.g. after groups were edited in Hive or the
+iteration's Hive details were synced, and tells mounted readers to refetch.
 
 ## Returns
 

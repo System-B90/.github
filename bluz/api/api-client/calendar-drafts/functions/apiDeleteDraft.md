@@ -8,7 +8,7 @@
 
 > **apiDeleteDraft**(`draftId`, `iterationId?`): `Promise`\<`void`\>
 
-Defined in: [ui/src/api-client/calendar-drafts.ts:87](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/calendar-drafts.ts#L87)
+Defined in: [ui/src/api-client/calendar-drafts.ts:87](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/calendar-drafts.ts#L87)
 
 Permanently deletes a shared draft.
 

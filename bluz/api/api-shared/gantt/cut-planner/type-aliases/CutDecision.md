@@ -8,7 +8,7 @@
 
 > **CutDecision** = \{ `proposals`: [`ConstraintMoveProposal`](../../cut-constraints/type-aliases/ConstraintMoveProposal.md)[]; `type`: `"constraint-moves"`; \} \| \{ `type`: `"constraint-violation"`; `violation`: [`ConstraintViolation`](../../cut-constraints/type-aliases/ConstraintViolation.md); \} \| \{ `excessMinutes`: `number`; `overloadedDays`: `object`[]; `type`: `"week-overflow"`; `weekId`: `string`; `weekNumber`: `number`; \}
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:232](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/gantt/cut-planner.ts#L232)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:232](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/gantt/cut-planner.ts#L232)
 
 A question the cut could not answer on its own. The dialog walks these one at
 a time rather than presenting a switchboard, and sends the answers back with

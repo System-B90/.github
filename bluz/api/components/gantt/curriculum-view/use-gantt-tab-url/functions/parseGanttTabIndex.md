@@ -8,7 +8,7 @@
 
 > **parseGanttTabIndex**(`raw`): `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/use-gantt-tab-url.ts:9](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/use-gantt-tab-url.ts#L9)
+Defined in: [ui/src/components/gantt/curriculum-view/use-gantt-tab-url.ts:9](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/use-gantt-tab-url.ts#L9)
 
 The tab index a `v=` value names, or 0 when missing, garbage or out of range.
 

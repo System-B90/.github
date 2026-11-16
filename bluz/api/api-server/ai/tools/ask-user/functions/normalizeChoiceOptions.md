@@ -8,7 +8,7 @@
 
 > **normalizeChoiceOptions**(`options`): [`AiChoiceOption`](../../../../../api-shared/types/ai/type-aliases/AiChoiceOption.md)[]
 
-Defined in: [ui/src/api-server/ai/tools/ask-user.ts:33](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/ask-user.ts#L33)
+Defined in: [ui/src/api-server/ai/tools/ask-user.ts:33](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/tools/ask-user.ts#L33)
 
 Normalises what the model produced into something renderable. A missing
 `value`, a duplicate, or an over-long list is a model mistake that must not

@@ -8,7 +8,7 @@
 
 > **useNavigationCommands**(): `void`
 
-Defined in: [ui/src/components/app-commands/use-navigation-commands.tsx:56](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/app-commands/use-navigation-commands.tsx#L56)
+Defined in: [ui/src/components/app-commands/use-navigation-commands.tsx:56](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/app-commands/use-navigation-commands.tsx#L56)
 
 Top-level page navigation. Registered app-wide.
 

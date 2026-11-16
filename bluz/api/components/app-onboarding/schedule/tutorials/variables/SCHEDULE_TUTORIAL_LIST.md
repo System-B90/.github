@@ -8,6 +8,6 @@
 
 > `const` **SCHEDULE\_TUTORIAL\_LIST**: `ReadonlyArray`\<[`ScheduleTutorial`](../type-aliases/ScheduleTutorial.md)\>
 
-Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:63](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/app-onboarding/schedule/tutorials.ts#L63)
+Defined in: [ui/src/components/app-onboarding/schedule/tutorials.ts:63](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/app-onboarding/schedule/tutorials.ts#L63)
 
 In the order the help panel and the palette list them.

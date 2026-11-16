@@ -8,7 +8,7 @@
 
 > **mergeTouching**\<`T`\>(`tiles`): `T`[]
 
-Defined in: [ui/src/components/student-view/merge-touching.ts:19](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/student-view/merge-touching.ts#L19)
+Defined in: [ui/src/components/student-view/merge-touching.ts:19](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/student-view/merge-touching.ts#L19)
 
 Joins tiles that continue one another into one long tile (#1028): same
 name, color, room and courses, one ending exactly where the next starts.

@@ -8,6 +8,6 @@
 
 > **SelectionStore** = [`ExternalStore`](../../../../../base/external-store/type-aliases/ExternalStore.md)\<[`EventId`](../../../../../../api-shared/types/event/type-aliases/EventId.md) \| `null`\>
 
-Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:45](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L45)
+Defined in: [ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx:45](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/split/SplitCalendarContext.tsx#L45)
 
 The single-clicked event, outside React state for the same reason (#955).

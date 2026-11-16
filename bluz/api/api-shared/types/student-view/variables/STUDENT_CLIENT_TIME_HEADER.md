@@ -8,7 +8,7 @@
 
 > `const` **STUDENT\_CLIENT\_TIME\_HEADER**: `"x-bluz-client-time"` = `"x-bluz-client-time"`
 
-Defined in: [ui/src/api-shared/types/student-view.ts:185](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/student-view.ts#L185)
+Defined in: [ui/src/api-shared/types/student-view.ts:185](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/student-view.ts#L185)
 
 Sent with every `/api/server-time` request: the device clock, epoch ms. Only
 ever compared against the server clock — nothing is computed from it.

@@ -8,7 +8,7 @@
 
 > **CutExceptionRow** = `object`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/cut.ts#L123)
+Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/cut.ts#L123)
 
 Plain-data recurrence-exception row.
 
@@ -18,7 +18,7 @@ Plain-data recurrence-exception row.
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/cut.ts#L123)
+Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/cut.ts#L123)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/B
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/cut.ts#L123)
+Defined in: [ui/src/api-server/gantt/cut.ts:123](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/cut.ts#L123)

@@ -8,7 +8,7 @@
 
 > **formatRange**(`start`, `end`): `string`
 
-Defined in: [ui/src/components/base/bidi.ts:39](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/bidi.ts#L39)
+Defined in: [ui/src/components/base/bidi.ts:39](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/bidi.ts#L39)
 
 Formats `start - end` as a single LTR run. Both sides are already-formatted
 strings, so this works for times (`10:00`), day numbers (`05`), or anything

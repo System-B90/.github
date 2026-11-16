@@ -8,7 +8,7 @@
 
 > **DraggableState** = `object`
 
-Defined in: [ui/src/components/base/dnd/DraggableBox.tsx:19](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/dnd/DraggableBox.tsx#L19)
+Defined in: [ui/src/components/base/dnd/DraggableBox.tsx:19](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/dnd/DraggableBox.tsx#L19)
 
 What a [DraggableBox](../functions/DraggableBox.md) tells its own handlers about the drag.
 
@@ -18,4 +18,4 @@ What a [DraggableBox](../functions/DraggableBox.md) tells its own handlers about
 
 > **isDragging**: `boolean`
 
-Defined in: [ui/src/components/base/dnd/DraggableBox.tsx:19](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/dnd/DraggableBox.tsx#L19)
+Defined in: [ui/src/components/base/dnd/DraggableBox.tsx:19](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/dnd/DraggableBox.tsx#L19)

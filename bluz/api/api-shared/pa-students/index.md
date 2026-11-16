@@ -8,4 +8,5 @@
 
 ## Functions
 
+- [menteeIds](functions/menteeIds.md)
 - [paCandidateStudents](functions/paCandidateStudents.md)

@@ -8,7 +8,7 @@
 
 > **AiTimelineItem** = \{ `calls`: [`AiApprovalCall`](AiApprovalCall.md)[]; `id`: `string`; `kind`: [`Approval`](../enumerations/AiTimelineKind.md#approval); `state`: [`AiApprovalState`](../enumerations/AiApprovalState.md); \} \| \{ `id`: `string`; `kind`: [`Assistant`](../enumerations/AiTimelineKind.md#assistant); `text`: `string`; \} \| \{ `allowFreeText`: `boolean`; `answer?`: `string`; `id`: `string`; `kind`: [`Choice`](../enumerations/AiTimelineKind.md#choice); `options`: [`AiChoiceOption`](../../../../api-shared/types/ai/type-aliases/AiChoiceOption.md)[]; `question`: `string`; `toolCallId`: `string`; \} \| \{ `id`: `string`; `kind`: [`Failure`](../enumerations/AiTimelineKind.md#failure); `loginUrl?`: `string`; `message`: `string`; \} \| \{ `id`: `string`; `kind`: [`Thinking`](../enumerations/AiTimelineKind.md#thinking); `text`: `string`; \} \| \{ `detail?`: `unknown`; `durationMs?`: `number`; `id`: `string`; `kind`: [`Tool`](../enumerations/AiTimelineKind.md#tool); `name`: `string`; `state`: [`AiToolState`](../enumerations/AiToolState.md); `summary`: `string`; `title`: `string`; \} \| \{ `id`: `string`; `kind`: [`User`](../enumerations/AiTimelineKind.md#user); `text`: `string`; \}
 
-Defined in: [ui/src/components/ai/use-ai-chat.ts:88](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/ai/use-ai-chat.ts#L88)
+Defined in: [ui/src/components/ai/use-ai-chat.ts:88](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/ai/use-ai-chat.ts#L88)
 
 ## Union Members
 

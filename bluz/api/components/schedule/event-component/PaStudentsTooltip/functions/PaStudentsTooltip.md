@@ -8,7 +8,7 @@
 
 > **PaStudentsTooltip**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-component/PaStudentsTooltip.tsx:25](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-component/PaStudentsTooltip.tsx#L25)
+Defined in: [ui/src/components/schedule/event-component/PaStudentsTooltip.tsx:23](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-component/PaStudentsTooltip.tsx#L23)
 
 Tooltip body of an event's פ"א icon: which of the PA instructor's students
 (Hive mentees) are in the event's shuffles/courses, and so can be taken out

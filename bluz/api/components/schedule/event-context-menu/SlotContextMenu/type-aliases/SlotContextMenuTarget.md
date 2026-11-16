@@ -8,7 +8,7 @@
 
 > **SlotContextMenuTarget** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:17](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L17)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:17](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L17)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:1
 
 > **gap**: [`Interval`](../../../../../api-shared/interval-layout/type-aliases/Interval.md) \| `null`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:21](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L21)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:21](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L21)
 
 The empty run around the slot; null when the slot is covered.
 
@@ -26,7 +26,7 @@ The empty run around the slot; null when the slot is covered.
 
 > **position**: `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:18](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L18)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:18](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L18)
 
 #### left
 
@@ -42,4 +42,4 @@ Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:1
 
 > **slot**: [`PasteSlot`](../../../calendar/calendar/paste/type-aliases/PasteSlot.md)
 
-Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:19](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L19)
+Defined in: [ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx:19](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-context-menu/SlotContextMenu.tsx#L19)

@@ -8,7 +8,7 @@
 
 > **Page**\<`T`\> = `object`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:32](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/page.ts#L32)
+Defined in: [ui/src/api-server/ai/tools/page.ts:32](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/tools/page.ts#L32)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-server/ai/tools/page.ts:32](https://github.com/System-B9
 
 > **items**: `T`[]
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:33](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/page.ts#L33)
+Defined in: [ui/src/api-server/ai/tools/page.ts:33](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/tools/page.ts#L33)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/api-server/ai/tools/page.ts:33](https://github.com/System-B9
 
 > `optional` **nextOffset?**: `number`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:37](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/page.ts#L37)
+Defined in: [ui/src/api-server/ai/tools/page.ts:37](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/tools/page.ts#L37)
 
 Present only when more items remain.
 
@@ -40,7 +40,7 @@ Present only when more items remain.
 
 > **offset**: `number`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:35](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/page.ts#L35)
+Defined in: [ui/src/api-server/ai/tools/page.ts:35](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/tools/page.ts#L35)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [ui/src/api-server/ai/tools/page.ts:35](https://github.com/System-B9
 
 > **total**: `number`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:34](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tools/page.ts#L34)
+Defined in: [ui/src/api-server/ai/tools/page.ts:34](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/tools/page.ts#L34)

@@ -8,4 +8,4 @@
 
 > **GanttDayDocument** = [`GanttDay`](../../../../api-shared/types/gantt/models/day/type-aliases/GanttDay.md) & [`BaseDocument`](../../base/type-aliases/BaseDocument.md)
 
-Defined in: [ui/src/api-client/gantt/day.ts:10](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/day.ts#L10)
+Defined in: [ui/src/api-client/gantt/day.ts:10](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/day.ts#L10)

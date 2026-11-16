@@ -8,7 +8,7 @@
 
 > **ReloadConflictReason** = `object`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:50](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/reload.ts#L50)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:50](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/reload.ts#L50)
 
 Why a change was withheld: the event carries a manual edit.
 
@@ -18,7 +18,7 @@ Why a change was withheld: the event carries a manual edit.
 
 > **actorName**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:53](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/reload.ts#L53)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:53](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/reload.ts#L53)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/types/gantt/reload.ts:53](https://github.com/Syst
 
 > **changedAt**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:55](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/reload.ts#L55)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:55](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/reload.ts#L55)
 
 ISO datetime of the last manual change.
 
@@ -36,6 +36,6 @@ ISO datetime of the last manual change.
 
 > **initiator**: `string`
 
-Defined in: [ui/src/api-shared/types/gantt/reload.ts:52](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/reload.ts#L52)
+Defined in: [ui/src/api-shared/types/gantt/reload.ts:52](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/reload.ts#L52)
 
 Initiator of the last manual change.

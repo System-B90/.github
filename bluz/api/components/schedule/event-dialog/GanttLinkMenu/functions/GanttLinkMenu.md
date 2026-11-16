@@ -8,7 +8,7 @@
 
 > **GanttLinkMenu**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/event-dialog/GanttLinkMenu.tsx:51](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-dialog/GanttLinkMenu.tsx#L51)
+Defined in: [ui/src/components/schedule/event-dialog/GanttLinkMenu.tsx:51](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-dialog/GanttLinkMenu.tsx#L51)
 
 Links the event to a gantt event of the iteration's curriculum: one created
 in the schedule, or one that lost its link. Also unlinks it. A rare action,

@@ -8,7 +8,7 @@
 
 > **pullBackCurriculumSchedule**(`curriculumId`): `Promise`\<[`ApiCurriculumPullBackResponse`](../../../../api-shared/types/gantt/cut/type-aliases/ApiCurriculumPullBackResponse.md)\>
 
-Defined in: [ui/src/api-client/gantt/cut.ts:96](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/cut.ts#L96)
+Defined in: [ui/src/api-client/gantt/cut.ts:96](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/cut.ts#L96)
 
 DELETE /api/gantt/curriculums/[id]/cut — soft-delete every schedule event a
 previous cut generated. Throws a [CurriculumPullBackError](../../../../api-shared/types/gantt/cut/classes/CurriculumPullBackError.md) carrying the

@@ -8,7 +8,7 @@
 
 > **StudentNameField**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/schedule/event-dialog/StudentNameField.tsx:26](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-dialog/StudentNameField.tsx#L26)
+Defined in: [ui/src/components/schedule/event-dialog/StudentNameField.tsx:26](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-dialog/StudentNameField.tsx#L26)
 
 The name students see in /student-view (#966). Left blank, the auto-set
 name applies — shown as the placeholder, so staff see exactly what they

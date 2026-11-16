@@ -8,7 +8,7 @@
 
 > **HiveSubjectSelectProps** = `object` & `Omit`\<`FormControlProps`, `"onChange"`\>
 
-Defined in: [ui/src/components/base/HiveSubjectSelect.tsx:6](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/base/HiveSubjectSelect.tsx#L6)
+Defined in: [ui/src/components/base/HiveSubjectSelect.tsx:6](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/base/HiveSubjectSelect.tsx#L6)
 
 ## Type Declaration
 

@@ -8,7 +8,7 @@
 
 > **ApplyToCutWeeksChoice**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/week-templates/ApplyToCutWeeksChoice.tsx:10](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/week-templates/ApplyToCutWeeksChoice.tsx#L10)
+Defined in: [ui/src/components/week-templates/ApplyToCutWeeksChoice.tsx:10](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/week-templates/ApplyToCutWeeksChoice.tsx#L10)
 
 The question every template save asks (#997): should the change also move
 events in weeks already cut from this template?

@@ -8,7 +8,7 @@
 
 > **linkWeekTemplate**(`date`, `templateId`, `controller`): `Promise`\<\{ `link`: [`WeekTemplateLink`](../../../api-shared/types/week-template/type-aliases/WeekTemplateLink.md); `updatedEvents`: `number`; \}\>
 
-Defined in: [ui/src/api-server/week-template-link.ts:80](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/week-template-link.ts#L80)
+Defined in: [ui/src/api-server/week-template-link.ts:80](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/week-template-link.ts#L80)
 
 Link the week holding `date` to `templateId` without re-cutting it: every
 live cut event of the week is restamped, so its prayer tint and its next

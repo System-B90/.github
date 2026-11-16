@@ -8,7 +8,7 @@
 
 > **AssignToCourseButton**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx:35](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx#L35)
+Defined in: [ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx:35](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/settings-dialog/tabs/global/course-settings/AssignToCourseButton.tsx#L35)
 
 Keyboard/click alternative to dragging an instructor into a course (#848):
 a menu of the course tree; picking a course toggles the instructor on it.

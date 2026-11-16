@@ -8,7 +8,7 @@
 
 > **futureDateParam**(`searchParams`, `now?`): `string` \| `null`
 
-Defined in: [ui/src/api-server/student-future-date.ts:13](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/student-future-date.ts#L13)
+Defined in: [ui/src/api-server/student-future-date.ts:13](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/student-future-date.ts#L13)
 
 The first `?date=` value that points more than [FUTURE\_DATE\_PROBE\_MS](../../../api-shared/types/student-view/variables/FUTURE_DATE_PROBE_MS.md)
 past `now`, or null. A bare `yyyy-MM-dd` means the start of that day in

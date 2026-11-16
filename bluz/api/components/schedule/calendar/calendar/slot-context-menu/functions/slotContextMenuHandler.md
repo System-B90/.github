@@ -8,7 +8,7 @@
 
 > **slotContextMenuHandler**(`open`, `gapAt`): (`pointer`) => `void`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:73](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L73)
+Defined in: [ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx:73](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/slot-context-menu.tsx#L73)
 
 `onContextMenu` for the grid: opens the slot menu on empty grid, leaves the
 browser's own menu everywhere else. Tiles stop propagation themselves.

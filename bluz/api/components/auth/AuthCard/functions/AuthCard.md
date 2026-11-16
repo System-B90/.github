@@ -8,7 +8,7 @@
 
 > **AuthCard**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/auth/AuthCard.tsx:38](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/auth/AuthCard.tsx#L38)
+Defined in: [ui/src/components/auth/AuthCard.tsx:38](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/auth/AuthCard.tsx#L38)
 
 The one card shape the auth pages share. Radius and elevation come from the theme.
 

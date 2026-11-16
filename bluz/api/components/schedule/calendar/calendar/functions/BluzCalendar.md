@@ -8,7 +8,7 @@
 
 > **BluzCalendar**(`props`): `Element`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/index.tsx:120](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/index.tsx#L120)
+Defined in: [ui/src/components/schedule/calendar/calendar/index.tsx:120](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/index.tsx#L120)
 
 Entry point component for the Bluz Schedule Calendar.
 Renders the calendar view, toolbars, fullscreen toggle, and side filter drawer, integrating state and filters.

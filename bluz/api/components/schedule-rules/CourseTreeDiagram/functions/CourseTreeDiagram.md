@@ -8,7 +8,7 @@
 
 > **CourseTreeDiagram**(): `Element`
 
-Defined in: [ui/src/components/schedule-rules/CourseTreeDiagram.tsx:26](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule-rules/CourseTreeDiagram.tsx#L26)
+Defined in: [ui/src/components/schedule-rules/CourseTreeDiagram.tsx:26](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule-rules/CourseTreeDiagram.tsx#L26)
 
 R-53: the course tree. Every student is in Bis90 and in at most one of the
 exclusive courses, so their separate syllabuses never constrain each other.

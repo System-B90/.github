@@ -8,7 +8,7 @@
 
 > **namedCourseOptions**(`courseIds`, `courses`): `Set`\<`string`\>
 
-Defined in: [ui/src/api-shared/course-tree.ts:225](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/course-tree.ts#L225)
+Defined in: [ui/src/api-shared/course-tree.ts:225](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/course-tree.ts#L225)
 
 The courses a day's events offer as filter options on the student board
 (#1027): every course an event names, plus the courses above it. Shuffles

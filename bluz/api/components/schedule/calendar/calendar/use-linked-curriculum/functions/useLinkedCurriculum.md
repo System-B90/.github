@@ -8,7 +8,7 @@
 
 > **useLinkedCurriculum**(`enabled?`): `object` & `Omit`\<`object` & [`BaseGantItem`](../../../../../../api-shared/types/gantt/models/shared/type-aliases/BaseGantItem.md) & [`RawBaseDocument`](../../../../../../api-shared/types/gantt/api-layer/type-aliases/RawBaseDocument.md), `"syllabuses"` \| `"weeks"`\> \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts:24](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts#L24)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts:24](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/use-linked-curriculum.ts#L24)
 
 The gantt curriculum linked to the viewed iteration, or null while there is
 none, it is loading, or the fetch failed — every caller treats it as a

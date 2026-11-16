@@ -8,7 +8,7 @@
 
 > `const` **list**: () => `Promise`\<[`WeekTemplate`](../../../../../api-shared/types/week-template/type-aliases/WeekTemplate.md)[]\> = `listTemplates`
 
-Defined in: [ui/src/api-server/db-week-templates.ts:328](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/db-week-templates.ts#L328)
+Defined in: [ui/src/api-server/db-week-templates.ts:328](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/db-week-templates.ts#L328)
 
 ## Returns
 

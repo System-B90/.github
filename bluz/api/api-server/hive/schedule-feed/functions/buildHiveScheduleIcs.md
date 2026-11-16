@@ -8,7 +8,7 @@
 
 > **buildHiveScheduleIcs**(`events`, `lookup`, `options`): `string`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:257](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/hive/schedule-feed.ts#L257)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:257](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/hive/schedule-feed.ts#L257)
 
 Renders events as Hive-loadable ICS. Pure: same input, same bytes, which
 is what lets the route answer `If-None-Match` with a 304.

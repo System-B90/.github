@@ -8,7 +8,7 @@
 
 > **ValidationResult**\<`TValues`\> = [`FieldError`](FieldError.md)\<`TValues`\> \| `null` \| `string`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:20](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L20)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx:20](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/settings-dialog/tabs/global/common/UseEntityForm.tsx#L20)
 
 A validation failure. A `FieldError` is shown on its field, which gets
 focus; a bare string (no single field to blame) is a warning snackbar.

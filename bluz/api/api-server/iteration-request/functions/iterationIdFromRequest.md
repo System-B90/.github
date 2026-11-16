@@ -8,7 +8,7 @@
 
 > **iterationIdFromRequest**(`request`): `string` \| `undefined`
 
-Defined in: [ui/src/api-server/iteration-request.ts:46](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/iteration-request.ts#L46)
+Defined in: [ui/src/api-server/iteration-request.ts:46](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/iteration-request.ts#L46)
 
 Read the `it` query param off a request. Absent or empty means the current
 iteration (backward compatible with single-iteration callers).

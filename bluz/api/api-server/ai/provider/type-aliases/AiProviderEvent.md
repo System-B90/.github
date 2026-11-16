@@ -8,7 +8,7 @@
 
 > **AiProviderEvent** = \{ `kind`: `"reasoning"`; `text`: `string`; \} \| \{ `kind`: `"final"`; `result`: [`AiChatResult`](../../../../api-shared/types/ai/type-aliases/AiChatResult.md); \} \| \{ `kind`: `"text"`; `text`: `string`; \}
 
-Defined in: [ui/src/api-server/ai/provider.ts:40](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/provider.ts#L40)
+Defined in: [ui/src/api-server/ai/provider.ts:40](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/provider.ts#L40)
 
 Provider-level stream frame. Deliberately narrower than the app-level
 `AiStreamEvent`: a provider knows about text and completions, not about

@@ -8,7 +8,7 @@
 
 > **PathDayLoad** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:56](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/student-load.ts#L56)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:56](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/student-load.ts#L56)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:56](https:/
 
 > **breakMinutes**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:60](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/student-load.ts#L60)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:60](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/student-load.ts#L60)
 
 Of `minutes`, the time in break events (meals…).
 
@@ -26,7 +26,7 @@ Of `minutes`, the time in break events (meals…).
 
 > **bySyllabus**: `object`[]
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:62](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/student-load.ts#L62)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:62](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/student-load.ts#L62)
 
 Minutes per syllabus on this path, largest first.
 
@@ -44,7 +44,7 @@ Minutes per syllabus on this path, largest first.
 
 > **minutes**: `number`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:58](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/student-load.ts#L58)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:58](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/student-load.ts#L58)
 
 ***
 
@@ -52,4 +52,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:58](https:/
 
 > **pathId**: `string`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:57](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/student-load.ts#L57)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:57](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/student-load.ts#L57)

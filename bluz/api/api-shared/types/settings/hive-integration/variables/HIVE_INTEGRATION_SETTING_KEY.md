@@ -8,4 +8,4 @@
 
 > `const` **HIVE\_INTEGRATION\_SETTING\_KEY**: `"hiveIntegration"` = `"hiveIntegration"`
 
-Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:1](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/settings/hive-integration.ts#L1)
+Defined in: [ui/src/api-shared/types/settings/hive-integration.ts:1](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/settings/hive-integration.ts#L1)

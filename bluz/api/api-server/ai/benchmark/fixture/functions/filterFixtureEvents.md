@@ -8,7 +8,7 @@
 
 > **filterFixtureEvents**(`args`): `object`[]
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:304](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/benchmark/fixture.ts#L304)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:304](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/benchmark/fixture.ts#L304)
 
 Answers `list_events` the way production does — range overlap and the
 hidden/fake/name filters — so a model that reads only Tuesday sees only

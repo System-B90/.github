@@ -8,7 +8,7 @@
 
 > **useTemplateUrl**(): `void`
 
-Defined in: [ui/src/components/week-templates/use-load-template.ts:81](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/week-templates/use-load-template.ts#L81)
+Defined in: [ui/src/components/week-templates/use-load-template.ts:81](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/week-templates/use-load-template.ts#L81)
 
 Every template has its own editing URL, `/?template=<id>`. Opening that URL
 opens the template once the first fetch lands. While a template is open,

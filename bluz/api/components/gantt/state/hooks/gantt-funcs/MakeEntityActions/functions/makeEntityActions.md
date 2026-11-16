@@ -8,7 +8,7 @@
 
 > **makeEntityActions**\<`TEntity`, `TContainerId`, `TCreatePayload`\>(`__namedParameters`): `object`
 
-Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:56](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L56)
+Defined in: [ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx:56](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/state/hooks/gantt-funcs/MakeEntityActions.tsx#L56)
 
 Factors the "call gantt API → dispatch reducer action" pattern shared by the
 module/syllabus/event action hooks (#190) so behavior fixes land in one

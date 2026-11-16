@@ -8,7 +8,7 @@
 
 > **listRecurrenceExceptionsForCurriculum**(`curriculumId`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:20](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L20)
+Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:20](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L20)
 
 Retrieves every recurrence exception (deleted/materialized occurrence day)
 for a curriculum, keyed for cheap client-side lookup.

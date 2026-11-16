@@ -8,7 +8,7 @@
 
 > **EventHistoryPanelProps** = `object`
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/index.tsx:39](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-dialog/event-history/index.tsx#L39)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/index.tsx:39](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-dialog/event-history/index.tsx#L39)
 
 "היסטוריית שינויים" — the audit trail of one schedule event, rendered inside
 the event dialog. Collapsed by default (the dialog is an editing surface
@@ -21,4 +21,4 @@ extra until the user asks for the history.
 
 > **eventId**: [`EventId`](../../../../../api-shared/types/event/type-aliases/EventId.md)
 
-Defined in: [ui/src/components/schedule/event-dialog/event-history/index.tsx:40](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/event-dialog/event-history/index.tsx#L40)
+Defined in: [ui/src/components/schedule/event-dialog/event-history/index.tsx:40](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/event-dialog/event-history/index.tsx#L40)

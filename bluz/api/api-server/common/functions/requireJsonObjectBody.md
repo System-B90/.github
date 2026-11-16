@@ -8,7 +8,7 @@
 
 > **requireJsonObjectBody**\<`T`\>(`request`): `Promise`\<`T`\>
 
-Defined in: [ui/src/api-server/common.ts:96](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/common.ts#L96)
+Defined in: [ui/src/api-server/common.ts:96](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/common.ts#L96)
 
 Read a request body that must be a JSON object, and reject anything else at
 the boundary.

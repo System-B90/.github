@@ -8,7 +8,7 @@
 
 > **forEachRecurrenceOccurrence**(`__namedParameters`, `visit`): `void`
 
-Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:407](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/curriculum-view/student-load.ts#L407)
+Defined in: [ui/src/components/gantt/curriculum-view/student-load.ts:407](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/curriculum-view/student-load.ts#L407)
 
 Calls `visit` once per recurrence echo of every mapped recurring event (its
 start day excluded), with its root mapping's allotted minutes. Skipped and materialized

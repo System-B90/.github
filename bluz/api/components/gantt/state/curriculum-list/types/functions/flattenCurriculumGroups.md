@@ -8,7 +8,7 @@
 
 > **flattenCurriculumGroups**(`groups`): `string`[]
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:78](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/gantt/state/curriculum-list/types.ts#L78)
+Defined in: [ui/src/components/gantt/state/curriculum-list/types.ts:78](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/gantt/state/curriculum-list/types.ts#L78)
 
 Flatten groups into a single render/selection order: active → drafts → archived.
 

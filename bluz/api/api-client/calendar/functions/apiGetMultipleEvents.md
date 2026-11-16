@@ -8,7 +8,7 @@
 
 > **apiGetMultipleEvents**(`eventIds`, `iterationId?`): `Promise`\<`Partial`\<`Record`\<`string`, [`Event`](../../../api-shared/types/event/type-aliases/Event.md)\>\>\>
 
-Defined in: [ui/src/api-client/calendar.ts:58](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/calendar.ts#L58)
+Defined in: [ui/src/api-client/calendar.ts:58](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/calendar.ts#L58)
 
 Fetches several events by id in one round-trip. The route
 (`app/api/event/route.ts`) filters out malformed ids and silently omits

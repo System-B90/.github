@@ -8,7 +8,7 @@
 
 > **hiveFeedWindow**(`now`, `hours`): `object`
 
-Defined in: [ui/src/api-server/hive/schedule-feed.ts:85](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/hive/schedule-feed.ts#L85)
+Defined in: [ui/src/api-server/hive/schedule-feed.ts:85](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/hive/schedule-feed.ts#L85)
 
 The span the feed publishes: `hours` before the start of the current day
 and `hours` after its end, the day taken in Israel time. The default 24

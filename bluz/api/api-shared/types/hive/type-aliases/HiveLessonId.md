@@ -8,6 +8,6 @@
 
 > **HiveLessonId** = `LessonId`
 
-Defined in: [ui/src/api-shared/types/hive.ts:30](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/hive.ts#L30)
+Defined in: [ui/src/api-shared/types/hive.ts:30](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/hive.ts#L30)
 
 App-side names for hive-core's lesson id / lesson (UUID + `module_id` aware).

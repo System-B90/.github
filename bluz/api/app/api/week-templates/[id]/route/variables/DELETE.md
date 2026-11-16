@@ -8,7 +8,7 @@
 
 > `const` **DELETE**: (`request`, `context?`) => `Promise`\<`Response`\>
 
-Defined in: [ui/src/app/api/week-templates/\[id\]/route.ts:98](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/app/api/week-templates/[id]/route.ts#L98)
+Defined in: [ui/src/app/api/week-templates/\[id\]/route.ts:98](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/app/api/week-templates/[id]/route.ts#L98)
 
 DELETE /api/week-templates/[id] — any template but the default.
 

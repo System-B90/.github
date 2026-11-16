@@ -8,7 +8,7 @@
 
 > `const` **aiFetch**: *typeof* `fetch`
 
-Defined in: [ui/src/api-server/ai/tls.ts:90](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-server/ai/tls.ts#L90)
+Defined in: [ui/src/api-server/ai/tls.ts:90](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-server/ai/tls.ts#L90)
 
 `fetch` for AI backends: the global one, or undici's with the CA agent when
 `AI_CA_CERT_PATH` is set (global fetch cannot take a per-call CA).

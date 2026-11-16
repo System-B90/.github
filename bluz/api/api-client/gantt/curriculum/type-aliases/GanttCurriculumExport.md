@@ -8,7 +8,7 @@
 
 > **GanttCurriculumExport** = `object`
 
-Defined in: [ui/src/api-client/gantt/curriculum.ts:23](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/curriculum.ts#L23)
+Defined in: [ui/src/api-client/gantt/curriculum.ts:23](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/curriculum.ts#L23)
 
 Shape returned by `GET /api/gantt/curriculums/[id]/export` — the full
 curriculum tree plus its day mappings and constraints, versioned so a
@@ -20,7 +20,7 @@ future export format change can be detected on import.
 
 > **constraints**: [`GanttConstraint`](../../../../api-shared/types/gantt/models/constraint/type-aliases/GanttConstraint.md)[]
 
-Defined in: [ui/src/api-client/gantt/curriculum.ts:27](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/curriculum.ts#L27)
+Defined in: [ui/src/api-client/gantt/curriculum.ts:27](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/curriculum.ts#L27)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [ui/src/api-client/gantt/curriculum.ts:27](https://github.com/System
 
 > **curriculum**: [`RawBaseDocument`](../../../../api-shared/types/gantt/api-layer/type-aliases/RawBaseDocument.md)
 
-Defined in: [ui/src/api-client/gantt/curriculum.ts:25](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/curriculum.ts#L25)
+Defined in: [ui/src/api-client/gantt/curriculum.ts:25](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/curriculum.ts#L25)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [ui/src/api-client/gantt/curriculum.ts:25](https://github.com/System
 
 > **mappings**: [`GanttCurriculumEventDayMapping`](../../../../api-shared/types/gantt/models/curriculum-day-module-mapping/type-aliases/GanttCurriculumEventDayMapping.md)[]
 
-Defined in: [ui/src/api-client/gantt/curriculum.ts:26](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/curriculum.ts#L26)
+Defined in: [ui/src/api-client/gantt/curriculum.ts:26](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/curriculum.ts#L26)
 
 ***
 
@@ -44,4 +44,4 @@ Defined in: [ui/src/api-client/gantt/curriculum.ts:26](https://github.com/System
 
 > **version**: `string`
 
-Defined in: [ui/src/api-client/gantt/curriculum.ts:24](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-client/gantt/curriculum.ts#L24)
+Defined in: [ui/src/api-client/gantt/curriculum.ts:24](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-client/gantt/curriculum.ts#L24)

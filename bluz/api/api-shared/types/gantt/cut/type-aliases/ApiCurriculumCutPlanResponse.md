@@ -8,7 +8,7 @@
 
 > **ApiCurriculumCutPlanResponse** = \{ `errors`: [`CutValidationError`](../../../../gantt/cut-planner/type-aliases/CutValidationError.md)[]; `ok`: `false`; `weeks`: [`ApiCutWeek`](ApiCutWeek.md)[]; \} \| \{ `ok`: `true`; `overlaps`: `number`; `plannedEvents`: `number`; `report`: [`CutPlanReport`](../../../../gantt/cut-planner/type-aliases/CutPlanReport.md); `weeks`: [`ApiCutWeek`](ApiCutWeek.md)[]; \}
 
-Defined in: [ui/src/api-shared/types/gantt/cut.ts:102](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/gantt/cut.ts#L102)
+Defined in: [ui/src/api-shared/types/gantt/cut.ts:102](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/gantt/cut.ts#L102)
 
 Response of POST .../cut/plan — the "plan" half of the plan-then-confirm
 flow. Runs the whole pipeline without writing and reports what the cut would

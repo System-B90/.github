@@ -8,7 +8,7 @@
 
 > **TintTimeGutterWrapper**(`__namedParameters`): `string` \| `number` \| `bigint` \| `boolean` \| `Iterable`\<`ReactNode`, `any`, `any`\> \| `Promise`\<`AwaitedReactNode`\> \| `ReactElement`\<\{ \}, `string` \| `JSXElementConstructor`\<`any`\>\> \| `null` \| `undefined`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/time-tint.tsx:184](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/components/schedule/calendar/calendar/time-tint.tsx#L184)
+Defined in: [ui/src/components/schedule/calendar/calendar/time-tint.tsx:184](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/components/schedule/calendar/calendar/time-tint.tsx#L184)
 
 react-big-calendar `timeGutterWrapper`: adds the tint inside the gutter
 column itself, since a wrapping element would break the time grid's flex row.

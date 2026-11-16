@@ -6,7 +6,7 @@
 
 # Enumeration: WsScope
 
-Defined in: [session-server/session-common.ts:110](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/session-server/session-common.ts#L110)
+Defined in: [session-server/session-common.ts:110](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/session-server/session-common.ts#L110)
 
 Privilege label signed into a connect ticket (#656). Bluz serves two kinds
 of socket and they may not see the same traffic, so the scope decides what a
@@ -18,7 +18,7 @@ socket is allowed to register for — see `session-server.ts`.
 
 > **Checker**: `"checker"`
 
-Defined in: [session-server/session-common.ts:116](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/session-server/session-common.ts#L116)
+Defined in: [session-server/session-common.ts:116](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/session-server/session-common.ts#L116)
 
 Checker. Receives the staff wire read-only; relays nothing.
 
@@ -28,7 +28,7 @@ Checker. Receives the staff wire read-only; relays nothing.
 
 > **Hanich**: `"hanich"`
 
-Defined in: [session-server/session-common.ts:114](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/session-server/session-common.ts#L114)
+Defined in: [session-server/session-common.ts:114](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/session-server/session-common.ts#L114)
 
 Hanich. Content-free refresh pings and nothing else.
 
@@ -38,6 +38,6 @@ Hanich. Content-free refresh pings and nothing else.
 
 > **Segel**: `"segel"`
 
-Defined in: [session-server/session-common.ts:112](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/session-server/session-common.ts#L112)
+Defined in: [session-server/session-common.ts:112](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/session-server/session-common.ts#L112)
 
 Segel/Admin. The full staff calendar wire.

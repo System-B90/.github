@@ -8,7 +8,7 @@
 
 > **ApiWeekTemplateLinkPayload** = `object`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:134](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L134)
+Defined in: [ui/src/api-shared/types/week-template.ts:134](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/week-template.ts#L134)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/week-template.ts:134](https://github.com/Sy
 
 > **templateId**: [`WeekTemplateId`](WeekTemplateId.md)
 
-Defined in: [ui/src/api-shared/types/week-template.ts:137](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L137)
+Defined in: [ui/src/api-shared/types/week-template.ts:137](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/week-template.ts#L137)
 
 ***
 
@@ -24,6 +24,6 @@ Defined in: [ui/src/api-shared/types/week-template.ts:137](https://github.com/Sy
 
 > **weekStart**: `string`
 
-Defined in: [ui/src/api-shared/types/week-template.ts:136](https://github.com/System-B90/Bluz/blob/d77dcf130db661461363a52910f62a34b3514ebd/ui/src/api-shared/types/week-template.ts#L136)
+Defined in: [ui/src/api-shared/types/week-template.ts:136](https://github.com/System-B90/Bluz/blob/182d51c797407c7b0ea37986b1a45ab0e64c4df0/ui/src/api-shared/types/week-template.ts#L136)
 
 Any date in the week, `YYYY-MM-DD`.
