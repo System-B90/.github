@@ -309,13 +309,27 @@ for response in assignment.get_responses():
 from datetime import datetime, timedelta, timezone
 
 start = datetime(2026, 11, 1, 8, 0, tzinfo=timezone.utc)
+end = start + timedelta(days=7)
+
+# Hive 8.2.0+: events overlapping the window
+for event in client.get_schedule_events(start__lt=end, end__gt=start):
+    print(event.start, event.title, event.room_name, event.subject_symbol)
+
+# Hive <= 7.3.0: events inside the window, and events can be edited
+week = client.get_schedule_events(start__gte=start, end__lte=end)
 event = client.create_schedule_event(start, start + timedelta(hours=2), title="Lecture")
 client.create_event_attendee(event, attendee_class=3)    # a class attends
 client.create_event_instructor(event, instructor=1)      # a user teaches
-
-week = client.get_schedule_events(start__gte=start, end__lte=start + timedelta(days=7))
 client.delete_schedule_event(event)
 ```
+
+From Hive 8.2.0 the schedule is read-only: Hive imports it from an ICS
+calendar, so creating or deleting events, event tags, taggings, attendees,
+instructors and `get_powersync_token()` are refused (those endpoints exist
+only up to 7.3.0). 8.2.0 events carry their category, room, lesson and
+subject display fields (`category_color`, `room_name`, `subject_symbol`, ...)
+and attendees with `program_id`; on older servers those are `None`. Students
+get an empty `title` and no lesson or staff-only details.
 
 Newer Hive releases identify lessons, events, event categories, tags and
 their links by UUID instead of an integer. Methods that take one accept a
@@ -365,7 +379,7 @@ versions` lists them). An unlisted release raises `UnverifiedHiveVersionError`:
 upgrade PyHive, or pass `skip_version_check=True` to try anyway.
 
 ```python
-client.get_hive_version()     # e.g. "7.2.0"
+client.get_hive_version()     # e.g. "8.2.0"
 ```
 
 ## Method reference
@@ -382,7 +396,7 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 | `HiveClient.from_access_token(access_token, hive_url, ...)` | Use a personal access token (`hive_pat_...`)               |
 | `get_hive_version()`                                      | The server's Hive version                                    |
 | `get_server_time()`                                       | The server's clock                                           |
-| `get_powersync_token()`                                   | A PowerSync sync token                                       |
+| `get_powersync_token()`                                   | A PowerSync sync token (Hive <= 7.3.0)                       |
 | `get_client_info(client_id)`                              | Public metadata of an SSO client                             |
 | `register_sso_service(service_name, redirect_uris)`       | Register an SSO client app; returns its id and secret        |
 | `get(endpoint)`, `post(endpoint, data)`, `put(...)`, `patch(...)`, `delete(endpoint)` | Raw JSON requests to any Hive endpoint |
@@ -497,17 +511,17 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 
 | Method                                                    | Does                                                          |
 | --------------------------------------------------------- | ------------------------------------------------------------- |
-| `get_schedule_events(start__gte=, end__lte=, lesson__id=)` | Events in a time window                                      |
+| `get_schedule_events(start__lt=, end__gt=, start__gte=, end__lte=, lesson__id=)` | Events in a time window (8.2.0+ filters `start__lt`/`end__gt`, older `start__gte`/`end__lte`) |
 | `get_schedule_event(event_id)`                            | One event                                                     |
-| `create_schedule_event(start, end, title=, category=, room=, lesson=, ...)` | Create an event                             |
-| `delete_schedule_event(event_id)`                         | Delete an event                                               |
+| `create_schedule_event(start, end, title=, category=, room=, lesson=, ...)` | Create an event (Hive <= 7.3.0)             |
+| `delete_schedule_event(event_id)`                         | Delete an event (Hive <= 7.3.0)                               |
 | `get_event_categories()`, `get_event_category(id)`        | Event categories                                              |
 | `create_event_category(name, color, ...)`, `update_event_category(category, **fields)`, `delete_event_category(id)` | Manage categories |
-| `get_event_tags()`, `get_event_tag(id)`                   | Event tags                                                    |
-| `create_event_tag(name, color)`, `update_event_tag(id, name=, color=)`, `delete_event_tag(id)` | Manage event tags        |
-| `get_event_taggings()`, `create_event_tagging(event, tag)`, `delete_event_tagging(id)` | Tags on events                   |
-| `get_event_attendees()`, `create_event_attendee(event, attendee_class)`, `delete_event_attendee(id)` | Classes attending events |
-| `get_event_instructors()`, `create_event_instructor(event, instructor)`, `delete_event_instructor(id)` | Users teaching events  |
+| `get_event_tags()`, `get_event_tag(id)`                   | Event tags (Hive <= 7.3.0)                                    |
+| `create_event_tag(name, color)`, `update_event_tag(id, name=, color=)`, `delete_event_tag(id)` | Manage event tags (Hive <= 7.3.0) |
+| `get_event_taggings()`, `create_event_tagging(event, tag)`, `delete_event_tagging(id)` | Tags on events (Hive <= 7.3.0) |
+| `get_event_attendees()`, `create_event_attendee(event, attendee_class)`, `delete_event_attendee(id)` | Classes attending events (Hive <= 7.3.0) |
+| `get_event_instructors()`, `create_event_instructor(event, instructor)`, `delete_event_instructor(id)` | Users teaching events (Hive <= 7.3.0) |
 | `get_lessons(module=)`, `get_lesson(lesson_id)`           | Lessons                                                       |
 | `create_lesson(name, module, description=)`, `update_lesson(lesson, **fields)`, `delete_lesson(lesson_id)` | Manage lessons |
 | `get_lesson_rules(lesson=)`                               | A lesson's queue rules                                        |
