@@ -8,7 +8,7 @@
 
 > **latinShortcutKey**(`e`): `string` \| `null`
 
-Defined in: [ui/src/components/app-commands/use-latin-shortcut-keys.ts:11](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/app-commands/use-latin-shortcut-keys.ts#L11)
+Defined in: [ui/src/components/app-commands/use-latin-shortcut-keys.ts:11](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/app-commands/use-latin-shortcut-keys.ts#L11)
 
 The Latin letter a Ctrl/Cmd keystroke stands for when the active layout
 types something else there, e.g. "z" for the "ז" the Hebrew layout reports

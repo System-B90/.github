@@ -8,7 +8,7 @@
 
 > **WeeksCapacityGridProps** = `object`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:50](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L50)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:50](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L50)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacit
 
 > **curriculum**: [`GanttCurriculum`](../../../../../../../api-shared/types/gantt/models/curriculum/type-aliases/GanttCurriculum.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:51](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L51)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:51](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L51)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacit
 
 > `optional` **isCompact?**: `boolean`
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:52](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L52)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:52](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L52)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacit
 
 > **state**: [`NormalizedStore`](../../../../../../../api-client/gantt/drizzle-normalize/type-aliases/NormalizedStore.md)
 
-Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:53](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L53)
+Defined in: [ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx:53](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/curriculum-view/tabs/weeks-tab/WeeksCapacityGrid.tsx#L53)

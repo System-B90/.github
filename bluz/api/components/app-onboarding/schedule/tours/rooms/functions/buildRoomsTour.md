@@ -8,7 +8,7 @@
 
 > **buildRoomsTour**(): `Tour`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tours/rooms.tsx:18](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/app-onboarding/schedule/tours/rooms.tsx#L18)
+Defined in: [ui/src/components/app-onboarding/schedule/tours/rooms.tsx:18](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/app-onboarding/schedule/tours/rooms.tsx#L18)
 
 Rooms, from the tile to the settings: what a tile says about its room, the
 two ways to assign one, the day view's column per room, the room filter,

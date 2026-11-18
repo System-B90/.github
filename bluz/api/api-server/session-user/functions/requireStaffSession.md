@@ -8,7 +8,7 @@
 
 > **requireStaffSession**(): `Promise`\<`AuthSessionUser` & `object`\>
 
-Defined in: [ui/src/api-server/session-user.ts:264](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/session-user.ts#L264)
+Defined in: [ui/src/api-server/session-user.ts:264](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/session-user.ts#L264)
 
 Gates a route to Segel/Admin clearance (#199). Accepts a browser session or
 a personal access token. Throws so callers can just

@@ -8,7 +8,7 @@
 
 > **isRetryableGoogleError**(`error`): `boolean`
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:161](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/google/google-calendar-service.ts#L161)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:161](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/google/google-calendar-service.ts#L161)
 
 Per Google's error guide: back off on 429, 5xx and the two 403 rate-limit
 reasons; never on other 4xx (400/401/403-forbidden/404/409/410/412), which

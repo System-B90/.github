@@ -8,7 +8,7 @@
 
 > **AuthContextState** = `object`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:28](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L28)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:28](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L28)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:28](https://github.com/Syst
 
 > **addMessageHandler**: (`handler`) => () => `void`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:35](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L35)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:37](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L37)
 
 #### Parameters
 
@@ -30,11 +30,21 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:35](https://github.com/Syst
 
 ***
 
+### breakGlass
+
+> **breakGlass**: `boolean`
+
+Defined in: [ui/src/components/auth/AuthProvider.tsx:36](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L36)
+
+Signed in with the break-glass user while Hive is offline: no Hive data.
+
+***
+
 ### canEdit
 
 > **canEdit**: `boolean`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:31](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L31)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:31](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L31)
 
 ***
 
@@ -42,7 +52,7 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:31](https://github.com/Syst
 
 > **degraded**: `boolean`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:34](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L34)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:34](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L34)
 
 ***
 
@@ -50,7 +60,7 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:34](https://github.com/Syst
 
 > **deregisterSyncObject**: (`syncObjectId`) => `void`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:43](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L43)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:45](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L45)
 
 #### Parameters
 
@@ -68,7 +78,7 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:43](https://github.com/Syst
 
 > **isReadOnlyUser**: `boolean`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:33](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L33)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:33](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L33)
 
 Checker clearance: may view the schedule, never write or open the gantt.
 
@@ -78,7 +88,7 @@ Checker clearance: may view the schedule, never write or open the gantt.
 
 > **logout**: () => `void`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:30](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L30)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:30](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L30)
 
 #### Returns
 
@@ -90,7 +100,7 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:30](https://github.com/Syst
 
 > **registerSyncObject**: (`syncObjectId`) => `void`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:42](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L42)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:44](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L44)
 
 Subscribe to a sync object for scoped broadcasts. Survives reconnects —
 the transport replays every registered id on each new socket, so callers
@@ -112,7 +122,7 @@ must not try to re-register on their own (#525).
 
 > **sendMessage**: (`data`) => `void`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:36](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L36)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:38](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L38)
 
 #### Parameters
 
@@ -130,4 +140,4 @@ Defined in: [ui/src/components/auth/AuthProvider.tsx:36](https://github.com/Syst
 
 > **userData**: `AuthSessionUser`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:29](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L29)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:29](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L29)

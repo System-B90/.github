@@ -6,7 +6,7 @@
 
 # Enumeration: HiveLessonIssueKind
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/hive-lesson-check.ts#L15)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:15](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/hive-lesson-check.ts#L15)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/components/schedule/hive-lesson-check.ts:15](https://github.
 
 > **MISSING**: `"missing"`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:17](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/hive-lesson-check.ts#L17)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:17](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/hive-lesson-check.ts#L17)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/components/schedule/hive-lesson-check.ts:17](https://github.
 
 > **NO\_COURSES**: `"noCourses"`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:20](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/hive-lesson-check.ts#L20)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:20](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/hive-lesson-check.ts#L20)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/components/schedule/hive-lesson-check.ts:20](https://github.
 
 > **NO\_GROUP**: `"noGroup"`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:21](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/hive-lesson-check.ts#L21)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:21](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/hive-lesson-check.ts#L21)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [ui/src/components/schedule/hive-lesson-check.ts:21](https://github.
 
 > **NOT\_FOUND**: `"notFound"`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:18](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/hive-lesson-check.ts#L18)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:18](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/hive-lesson-check.ts#L18)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [ui/src/components/schedule/hive-lesson-check.ts:18](https://github.
 
 > **WRONG\_MODULE**: `"wrongModule"`
 
-Defined in: [ui/src/components/schedule/hive-lesson-check.ts:19](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/hive-lesson-check.ts#L19)
+Defined in: [ui/src/components/schedule/hive-lesson-check.ts:19](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/hive-lesson-check.ts#L19)

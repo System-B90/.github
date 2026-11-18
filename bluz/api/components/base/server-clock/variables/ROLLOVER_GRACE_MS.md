@@ -8,7 +8,7 @@
 
 > `const` **ROLLOVER\_GRACE\_MS**: `1000` = `1_000`
 
-Defined in: [ui/src/components/base/server-clock.ts:17](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/server-clock.ts#L17)
+Defined in: [ui/src/components/base/server-clock.ts:17](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/base/server-clock.ts#L17)
 
 How long past midnight a rollover fires. Covers the sync's error (half a
 round trip), so the server has really moved on to the new day.

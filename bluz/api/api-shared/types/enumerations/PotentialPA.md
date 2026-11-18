@@ -6,7 +6,7 @@
 
 # Enumeration: PotentialPA
 
-Defined in: [ui/src/api-shared/types.ts:26](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types.ts#L26)
+Defined in: [ui/src/api-shared/types.ts:26](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types.ts#L26)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types.ts:26](https://github.com/System-B90/Bluz/b
 
 > **No**: `2`
 
-Defined in: [ui/src/api-shared/types.ts:29](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types.ts#L29)
+Defined in: [ui/src/api-shared/types.ts:29](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types.ts#L29)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/types.ts:29](https://github.com/System-B90/Bluz/b
 
 > **NoRecommendedButBusy**: `3`
 
-Defined in: [ui/src/api-shared/types.ts:30](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types.ts#L30)
+Defined in: [ui/src/api-shared/types.ts:30](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types.ts#L30)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [ui/src/api-shared/types.ts:30](https://github.com/System-B90/Bluz/b
 
 > **YesNotRecommended**: `1`
 
-Defined in: [ui/src/api-shared/types.ts:28](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types.ts#L28)
+Defined in: [ui/src/api-shared/types.ts:28](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types.ts#L28)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [ui/src/api-shared/types.ts:28](https://github.com/System-B90/Bluz/b
 
 > **YesRecommended**: `0`
 
-Defined in: [ui/src/api-shared/types.ts:27](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types.ts#L27)
+Defined in: [ui/src/api-shared/types.ts:27](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types.ts#L27)

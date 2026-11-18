@@ -8,7 +8,7 @@
 
 > **apiUpdateEvents**(`events`, `initiator?`, `props?`, `iterationId?`): `Promise`\<[`Event`](../../../api-shared/types/event/type-aliases/Event.md)[]\>
 
-Defined in: [ui/src/api-client/calendar.ts:235](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-client/calendar.ts#L235)
+Defined in: [ui/src/api-client/calendar.ts:235](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-client/calendar.ts#L235)
 
 Updates many existing events in one request (`PATCH /api/event`).
 

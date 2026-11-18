@@ -8,7 +8,7 @@
 
 > `const` **GANTT\_OWNED\_FIELDS\_WITH\_PARKED**: `ReadonlyArray`\<keyof [`DbEventDocument`](../../../types/event/type-aliases/DbEventDocument.md)\>
 
-Defined in: [ui/src/api-shared/gantt/reload-diff.ts:64](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/reload-diff.ts#L64)
+Defined in: [ui/src/api-shared/gantt/reload-diff.ts:64](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/reload-diff.ts#L64)
 
 The owned fields plus `parked`, for a reload that was told whether to park
 what the week template does not place (#997).

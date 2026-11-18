@@ -8,7 +8,7 @@
 
 > **CutPlanRecurrenceExceptionInput** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:118](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-planner.ts#L118)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:118](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-planner.ts#L118)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:118](https://github.com/Syst
 
 > **dayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:120](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-planner.ts#L120)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:120](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-planner.ts#L120)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/api-shared/gantt/cut-planner.ts:120](https://github.com/Syst
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-planner.ts:119](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-planner.ts#L119)
+Defined in: [ui/src/api-shared/gantt/cut-planner.ts:119](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-planner.ts#L119)

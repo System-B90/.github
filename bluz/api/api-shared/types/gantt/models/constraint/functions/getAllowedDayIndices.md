@@ -8,7 +8,7 @@
 
 > **getAllowedDayIndices**(`constraints`): `Set`\<[`GanttDayIndex`](../../day/enumerations/GanttDayIndex.md)\> \| `null`
 
-Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:111](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/gantt/models/constraint.ts#L111)
+Defined in: [ui/src/api-shared/types/gantt/models/constraint.ts:111](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/gantt/models/constraint.ts#L111)
 
 Weekdays a set of temporal constraints permits: intersects every
 `allowedDays`, then subtracts every `forbiddenDays`. `null` means

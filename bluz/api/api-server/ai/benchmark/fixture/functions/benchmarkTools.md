@@ -8,7 +8,7 @@
 
 > **benchmarkTools**(`production`): [`AiTool`](../../../tools/types/type-aliases/AiTool.md)\<`any`\>[]
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:628](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/benchmark/fixture.ts#L628)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:628](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/ai/benchmark/fixture.ts#L628)
 
 The tool surface a run offers: every production tool, by its production
 name, description and schema, so tool choice is as hard as in real chat.

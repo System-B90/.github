@@ -8,7 +8,7 @@
 
 > **loadCutTemplate**(`id?`): `Promise`\<[`CutTemplate`](../type-aliases/CutTemplate.md) \| `null`\>
 
-Defined in: [ui/src/api-server/gantt/week-template-cut.ts:43](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/week-template-cut.ts#L43)
+Defined in: [ui/src/api-server/gantt/week-template-cut.ts:43](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/gantt/week-template-cut.ts#L43)
 
 Loads a template and its stored events; null when none exists at all.
 

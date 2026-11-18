@@ -8,7 +8,7 @@
 
 > **deleteRecurrenceException**(`data`): `Promise`\<`boolean`\>
 
-Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:135](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L135)
+Defined in: [ui/src/api-server/gantt/db-recurrence-exceptions.ts:135](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/gantt/db-recurrence-exceptions.ts#L135)
 
 Restores a skipped occurrence: drops the exception so the event echoes onto
 that day again (#469). Materialized occurrences are left alone — their

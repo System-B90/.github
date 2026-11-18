@@ -6,7 +6,7 @@
 
 # Class: AiLoginRequiredError
 
-Defined in: [ui/src/api-server/ai/provider.ts:100](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/provider.ts#L100)
+Defined in: [ui/src/api-server/ai/provider.ts:100](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/ai/provider.ts#L100)
 
 The key helper is waiting for an interactive SSO login (cc-sso-helper prints
 a `…/login?code=…` link). The browser opens `loginUrl`; the helper keeps
@@ -22,7 +22,7 @@ running, and its key serves the next request once the login completes.
 
 > **new AiLoginRequiredError**(`loginUrl`): `AiLoginRequiredError`
 
-Defined in: [ui/src/api-server/ai/provider.ts:104](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/provider.ts#L104)
+Defined in: [ui/src/api-server/ai/provider.ts:104](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/ai/provider.ts#L104)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [ui/src/api-server/ai/provider.ts:104](https://github.com/System-B90
 
 > `readonly` **loginUrl**: `string`
 
-Defined in: [ui/src/api-server/ai/provider.ts:102](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/provider.ts#L102)
+Defined in: [ui/src/api-server/ai/provider.ts:102](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/ai/provider.ts#L102)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [ui/src/api-server/ai/provider.ts:102](https://github.com/System-B90
 
 > `readonly` `optional` **status?**: `number`
 
-Defined in: [ui/src/api-server/ai/provider.ts:85](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/provider.ts#L85)
+Defined in: [ui/src/api-server/ai/provider.ts:85](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/ai/provider.ts#L85)
 
 #### Inherited from
 

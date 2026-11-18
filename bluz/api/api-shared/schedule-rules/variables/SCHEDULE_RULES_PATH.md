@@ -8,7 +8,7 @@
 
 > `const` **SCHEDULE\_RULES\_PATH**: `"/rules"` = `"/rules"`
 
-Defined in: [ui/src/api-shared/schedule-rules.ts:11](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/schedule-rules.ts#L11)
+Defined in: [ui/src/api-shared/schedule-rules.ts:11](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/schedule-rules.ts#L11)
 
 The week-building rules ("R-<n>") as data: one id, title and meaning per
 rule. Mirrors `plugin/bluz/skills/bluz/RULES.md` (the agent's copy); keep

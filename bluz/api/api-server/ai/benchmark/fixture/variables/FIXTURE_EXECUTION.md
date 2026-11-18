@@ -8,7 +8,7 @@
 
 > `const` **FIXTURE\_EXECUTION**: `object`
 
-Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:338](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/benchmark/fixture.ts#L338)
+Defined in: [ui/src/api-server/ai/benchmark/fixture.ts:338](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/ai/benchmark/fixture.ts#L338)
 
 The planned-vs-actual gap the benchmark expects the model to notice: the
 networking module is planned for 8 hours and only 3 are on the schedule.

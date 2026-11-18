@@ -8,7 +8,7 @@
 
 > `const` **SLIGHT\_OVERLAP\_MS**: `number`
 
-Defined in: [ui/src/components/student-view/no-overlap-layout.ts:31](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/student-view/no-overlap-layout.ts#L31)
+Defined in: [ui/src/components/student-view/no-overlap-layout.ts:31](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/student-view/no-overlap-layout.ts#L31)
 
 Overlap that still counts as back-to-back: events stack at full width only
 when one ends where the next starts, give or take this much. Anything more

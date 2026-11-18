@@ -8,7 +8,7 @@
 
 > **BuildGantCollectionRoutesProps**\<`TEntity`, `TCreatePayload`\> = `object`
 
-Defined in: [ui/src/app/api/gantt/base-collection.ts:22](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/app/api/gantt/base-collection.ts#L22)
+Defined in: [ui/src/app/api/gantt/base-collection.ts:22](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/app/api/gantt/base-collection.ts#L22)
 
 ## Type Parameters
 
@@ -26,4 +26,4 @@ Defined in: [ui/src/app/api/gantt/base-collection.ts:22](https://github.com/Syst
 
 > **dbSet**: [`BasicGantOperations`](../../../../../api-shared/types/gantt/api-layer/type-aliases/BasicGantOperations.md)\<`TEntity`, `TCreatePayload`\>
 
-Defined in: [ui/src/app/api/gantt/base-collection.ts:26](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/app/api/gantt/base-collection.ts#L26)
+Defined in: [ui/src/app/api/gantt/base-collection.ts:26](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/app/api/gantt/base-collection.ts#L26)

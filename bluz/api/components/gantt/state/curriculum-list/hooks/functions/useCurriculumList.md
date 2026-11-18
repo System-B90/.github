@@ -8,7 +8,7 @@
 
 > **useCurriculumList**(): [`CurriculumListContextType`](../../context/type-aliases/CurriculumListContextType.md)
 
-Defined in: [ui/src/components/gantt/state/curriculum-list/hooks.ts:8](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/state/curriculum-list/hooks.ts#L8)
+Defined in: [ui/src/components/gantt/state/curriculum-list/hooks.ts:8](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/state/curriculum-list/hooks.ts#L8)
 
 ## Returns
 

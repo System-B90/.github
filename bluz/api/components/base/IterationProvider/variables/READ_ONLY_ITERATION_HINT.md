@@ -8,6 +8,6 @@
 
 > `const` **READ\_ONLY\_ITERATION\_HINT**: `"מחזור קודם מוצג לקריאה בלבד"` = `"מחזור קודם מוצג לקריאה בלבד"`
 
-Defined in: [ui/src/components/base/IterationProvider.tsx:41](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/IterationProvider.tsx#L41)
+Defined in: [ui/src/components/base/IterationProvider.tsx:41](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/base/IterationProvider.tsx#L41)
 
 Why a write control is off while a past iteration is shown.

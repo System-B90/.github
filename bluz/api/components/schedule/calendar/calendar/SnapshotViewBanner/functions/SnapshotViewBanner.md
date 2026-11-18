@@ -8,7 +8,7 @@
 
 > **SnapshotViewBanner**(`__namedParameters`): `Element` \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/SnapshotViewBanner.tsx:37](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/SnapshotViewBanner.tsx#L37)
+Defined in: [ui/src/components/schedule/calendar/calendar/SnapshotViewBanner.tsx:37](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/calendar/calendar/SnapshotViewBanner.tsx#L37)
 
 Shown above the schedule while a snapshot is on show (`?snapshot=<id>`), so
 it is never mistaken for the live schedule: what is on screen is read-only,

@@ -8,7 +8,7 @@
 
 > **TemplateSessionBanner**(): `Element` \| `null`
 
-Defined in: [ui/src/components/week-templates/TemplateSessionBanner.tsx:20](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/week-templates/TemplateSessionBanner.tsx#L20)
+Defined in: [ui/src/components/week-templates/TemplateSessionBanner.tsx:20](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/week-templates/TemplateSessionBanner.tsx#L20)
 
 Shown above the schedule for the whole of a template editing session
 (#997), so it is never mistaken for the live week: what is on screen is the

@@ -8,7 +8,7 @@
 
 > **GroupedInstructors** = `object`
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/use-grouped-instructors.ts#L15)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:15](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/base/use-grouped-instructors.ts#L15)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/use-grouped-instructors.ts:15](https://githu
 
 > **courseGroups**: [`InstructorCourseGroup`](InstructorCourseGroup.md)[]
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:17](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/use-grouped-instructors.ts#L17)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:17](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/base/use-grouped-instructors.ts#L17)
 
 Course groups in parent-before-child order, empty groups dropped.
 
@@ -26,6 +26,6 @@ Course groups in parent-before-child order, empty groups dropped.
 
 > **unassigned**: `CourseUser`[]
 
-Defined in: [ui/src/components/base/use-grouped-instructors.ts:19](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/use-grouped-instructors.ts#L19)
+Defined in: [ui/src/components/base/use-grouped-instructors.ts:19](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/base/use-grouped-instructors.ts#L19)
 
 Instructors no course claims (ללא מסלול).

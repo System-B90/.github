@@ -8,7 +8,7 @@
 
 > **parseDraftRange**(`value`, `what?`): [`CalendarDraftRange`](../../../api-shared/types/type-aliases/CalendarDraftRange.md) \| `undefined`
 
-Defined in: [ui/src/api-server/calendar-store-request.ts:74](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/calendar-store-request.ts#L74)
+Defined in: [ui/src/api-server/calendar-store-request.ts:74](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/calendar-store-request.ts#L74)
 
 A validated range, or `undefined` when none was sent. Both ends are
 required together and must be real instants in order.

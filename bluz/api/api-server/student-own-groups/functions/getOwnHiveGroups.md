@@ -8,7 +8,7 @@
 
 > **getOwnHiveGroups**(`userId`): `Promise`\<[`OwnHiveGroups`](../type-aliases/OwnHiveGroups.md) \| `null`\>
 
-Defined in: [ui/src/api-server/student-own-groups.ts:60](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-own-groups.ts#L60)
+Defined in: [ui/src/api-server/student-own-groups.ts:60](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/student-own-groups.ts#L60)
 
 The student's own Hive groups, for the board's default shuffle selection.
 Never throws: no Hive session, Hive down, slow or refusing all yield null,

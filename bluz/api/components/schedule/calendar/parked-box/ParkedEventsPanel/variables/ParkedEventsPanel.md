@@ -8,7 +8,7 @@
 
 > `const` **ParkedEventsPanel**: `NamedExoticComponent`\<`ParkedEventsPanelProps`\>
 
-Defined in: [ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx:67](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx#L67)
+Defined in: [ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx:67](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/calendar/parked-box/ParkedEventsPanel.tsx#L67)
 
 The unassigned-events box (#981): a place to set events aside while the
 week is rearranged, without deleting them. Drag a tile here (or onto the

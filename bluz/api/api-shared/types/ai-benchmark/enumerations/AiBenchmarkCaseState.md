@@ -6,7 +6,7 @@
 
 # Enumeration: AiBenchmarkCaseState
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:66](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/ai-benchmark.ts#L66)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:66](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/ai-benchmark.ts#L66)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:66](https://github.com/Syst
 
 > **Done**: `"done"`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:69](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/ai-benchmark.ts#L69)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:69](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/ai-benchmark.ts#L69)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:69](https://github.com/Syst
 
 > **Pending**: `"pending"`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:67](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/ai-benchmark.ts#L67)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:67](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/ai-benchmark.ts#L67)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [ui/src/api-shared/types/ai-benchmark.ts:67](https://github.com/Syst
 
 > **Running**: `"running"`
 
-Defined in: [ui/src/api-shared/types/ai-benchmark.ts:68](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/ai-benchmark.ts#L68)
+Defined in: [ui/src/api-shared/types/ai-benchmark.ts:68](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/ai-benchmark.ts#L68)

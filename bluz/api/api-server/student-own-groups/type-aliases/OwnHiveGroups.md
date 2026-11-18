@@ -8,7 +8,7 @@
 
 > **OwnHiveGroups** = `object`
 
-Defined in: [ui/src/api-server/student-own-groups.ts:5](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-own-groups.ts#L5)
+Defined in: [ui/src/api-server/student-own-groups.ts:5](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/student-own-groups.ts#L5)
 
 A student's own Hive student groups, as their own Hive login sees them.
 
@@ -18,7 +18,7 @@ A student's own Hive student groups, as their own Hive login sees them.
 
 > **groups**: `Pick`\<`Class`, `"id"` \| `"name"`\>[]
 
-Defined in: [ui/src/api-server/student-own-groups.ts:12](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-own-groups.ts#L12)
+Defined in: [ui/src/api-server/student-own-groups.ts:12](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/student-own-groups.ts#L12)
 
 Student groups the student's token could list, for name matching. Empty
 when Hive refuses a Hanich the listing: explicit links still resolve.
@@ -29,6 +29,6 @@ when Hive refuses a Hanich the listing: explicit links still resolve.
 
 > **memberOf**: `ReadonlySet`\<`number`\>
 
-Defined in: [ui/src/api-server/student-own-groups.ts:7](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/student-own-groups.ts#L7)
+Defined in: [ui/src/api-server/student-own-groups.ts:7](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/student-own-groups.ts#L7)
 
 Hive group ids the student is a member of (`me.classes`).

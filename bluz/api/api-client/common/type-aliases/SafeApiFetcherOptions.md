@@ -8,7 +8,7 @@
 
 > **SafeApiFetcherOptions** = `object`
 
-Defined in: [ui/src/api-client/common.ts:45](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-client/common.ts#L45)
+Defined in: [ui/src/api-client/common.ts:45](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-client/common.ts#L45)
 
 Per-call overrides for [safeApiFetcher](../functions/safeApiFetcher.md).
 
@@ -18,7 +18,7 @@ Per-call overrides for [safeApiFetcher](../functions/safeApiFetcher.md).
 
 > `optional` **timeoutMs?**: `number`
 
-Defined in: [ui/src/api-client/common.ts:51](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-client/common.ts#L51)
+Defined in: [ui/src/api-client/common.ts:51](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-client/common.ts#L51)
 
 Overrides the default request ceiling. Only raise it for an endpoint
 whose work genuinely takes longer than DEFAULT\_API\_TIMEOUT\_MS;

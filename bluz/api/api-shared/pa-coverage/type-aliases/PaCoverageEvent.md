@@ -8,7 +8,7 @@
 
 > **PaCoverageEvent** = `object`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:9](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L9)
+Defined in: [ui/src/api-shared/pa-coverage.ts:9](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L9)
 
 The event fields the check reads; works on Dayjs or Date instants.
 
@@ -18,7 +18,7 @@ The event fields the check reads; works on Dayjs or Date instants.
 
 > **endTime**: `object`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:12](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L12)
+Defined in: [ui/src/api-shared/pa-coverage.ts:12](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L12)
 
 #### valueOf
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/pa-coverage.ts:12](https://github.com/System-B90/
 
 > **id**: `string`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:10](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L10)
+Defined in: [ui/src/api-shared/pa-coverage.ts:10](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L10)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/pa-coverage.ts:10](https://github.com/System-B90/
 
 > **instructors**: `number`[]
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:13](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L13)
+Defined in: [ui/src/api-shared/pa-coverage.ts:13](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L13)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [ui/src/api-shared/pa-coverage.ts:13](https://github.com/System-B90/
 
 > `optional` **lecturers?**: (`number` \| `string`)[]
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:14](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L14)
+Defined in: [ui/src/api-shared/pa-coverage.ts:14](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L14)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [ui/src/api-shared/pa-coverage.ts:14](https://github.com/System-B90/
 
 > `optional` **parked?**: `boolean`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:16](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L16)
+Defined in: [ui/src/api-shared/pa-coverage.ts:16](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L16)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [ui/src/api-shared/pa-coverage.ts:16](https://github.com/System-B90/
 
 > **personalTalk**: `boolean`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L15)
+Defined in: [ui/src/api-shared/pa-coverage.ts:15](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L15)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [ui/src/api-shared/pa-coverage.ts:15](https://github.com/System-B90/
 
 > **startTime**: `object`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:11](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L11)
+Defined in: [ui/src/api-shared/pa-coverage.ts:11](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L11)
 
 #### valueOf
 

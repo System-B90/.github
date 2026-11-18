@@ -8,7 +8,7 @@
 
 > `const` **SCHEDULE\_INTRO\_VERSION**: `2` = `2`
 
-Defined in: [ui/src/components/app-onboarding/schedule/tours/intro.tsx:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/app-onboarding/schedule/tours/intro.tsx#L15)
+Defined in: [ui/src/components/app-onboarding/schedule/tours/intro.tsx:15](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/app-onboarding/schedule/tours/intro.tsx#L15)
 
 Bump to re-show the tour to people who already saw an older version of it.
 2: the intro became a map of the screen that hands off to the task tours.

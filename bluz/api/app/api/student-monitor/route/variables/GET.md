@@ -8,7 +8,7 @@
 
 > `const` **GET**: [`ServerApi`](../../../../../api-server/common/type-aliases/ServerApi.md)\<`void`, [`ApiStudentMonitorGetResponse`](../../../../../api-shared/types/student-monitor/type-aliases/ApiStudentMonitorGetResponse.md)\>
 
-Defined in: [ui/src/app/api/student-monitor/route.ts:74](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/app/api/student-monitor/route.ts#L74)
+Defined in: [ui/src/app/api/student-monitor/route.ts:74](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/app/api/student-monitor/route.ts#L74)
 
 GET /api/student-monitor?date=yyyy-MM-dd — staff-only: every student's
 focused time on the board that day, with the suspected attempts recorded

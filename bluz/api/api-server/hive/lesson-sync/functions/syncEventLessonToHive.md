@@ -8,7 +8,7 @@
 
 > **syncEventLessonToHive**(`event`, `action`, `controller?`, `previous?`): `void`
 
-Defined in: [ui/src/api-server/hive/lesson-sync.ts:122](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/hive/lesson-sync.ts#L122)
+Defined in: [ui/src/api-server/hive/lesson-sync.ts:122](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/hive/lesson-sync.ts#L122)
 
 Fire-and-forget hook on the event write routes, mirroring how Google
 Calendar sync is attached: it can never fail the Bluz write it accompanies.

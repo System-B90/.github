@@ -8,7 +8,7 @@
 
 > `const` **ROOM\_RESERVATION\_TYPE**: `"שיריון כיתה"` = `"שיריון כיתה"`
 
-Defined in: [ui/src/components/schedule/event-dialog/room-reservation.ts:11](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/event-dialog/room-reservation.ts#L11)
+Defined in: [ui/src/components/schedule/event-dialog/room-reservation.ts:11](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/event-dialog/room-reservation.ts#L11)
 
 שיריון כיתה: a pseudo event type the event dialog offers so a room can be
 reserved with the grid's own drag-to-create. It is never stored on an

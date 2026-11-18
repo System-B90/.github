@@ -8,6 +8,6 @@
 
 > `const` **STUDENT\_NAME\_PASSTHROUGH\_TYPES**: `ReadonlySet`\<[`EventType`](../../../event/enumerations/EventType.md)\>
 
-Defined in: [ui/src/api-shared/types/settings/student-view.ts:48](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/settings/student-view.ts#L48)
+Defined in: [ui/src/api-shared/types/settings/student-view.ts:48](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/settings/student-view.ts#L48)
 
 Types whose real name is shown even in symbol mode: nothing to hide.

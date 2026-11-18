@@ -283,6 +283,7 @@
 - [app/(themed)/(post-auth)/rules/page](app/(themed)/(post-auth)/rules/page/index.md)
 - [app/(themed)/(pre-auth)/access-denied/page](app/(themed)/(pre-auth)/access-denied/page/index.md)
 - [app/(themed)/(pre-auth)/layout](app/(themed)/(pre-auth)/layout/index.md)
+- [app/(themed)/(pre-auth)/login/login-page-content](app/(themed)/(pre-auth)/login/login-page-content/index.md)
 - [app/(themed)/(pre-auth)/login/login-with-hive-button](app/(themed)/(pre-auth)/login/login-with-hive-button/index.md)
 - [app/(themed)/(pre-auth)/login/page](app/(themed)/(pre-auth)/login/page/index.md)
 - [app/(themed)/(student)/student-view/layout](app/(themed)/(student)/student-view/layout/index.md)

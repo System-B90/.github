@@ -8,7 +8,7 @@
 
 > **SpillMove** = `object`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:59](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-balancer.ts#L59)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:59](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-balancer.ts#L59)
 
 A slot the balancer relocated, reported for the preview's diff highlight.
 
@@ -18,7 +18,7 @@ A slot the balancer relocated, reported for the preview's diff highlight.
 
 > **durationMinutes**: `number`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:64](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-balancer.ts#L64)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:64](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-balancer.ts#L64)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:64](https://github.com/Syst
 
 > **eventId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:61](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-balancer.ts#L61)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:61](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-balancer.ts#L61)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:61](https://github.com/Syst
 
 > **fromDayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:62](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-balancer.ts#L62)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:62](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-balancer.ts#L62)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:62](https://github.com/Syst
 
 > **slotKey**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:60](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-balancer.ts#L60)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:60](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-balancer.ts#L60)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:60](https://github.com/Syst
 
 > **toDayId**: `string`
 
-Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:63](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/gantt/cut-balancer.ts#L63)
+Defined in: [ui/src/api-shared/gantt/cut-balancer.ts:63](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/gantt/cut-balancer.ts#L63)

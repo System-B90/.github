@@ -8,7 +8,7 @@
 
 > **useConstraintEditor**(`ownerType`, `ownerId`): `object`
 
-Defined in: [ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts:99](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts#L99)
+Defined in: [ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts:99](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/module-dialog/constraints/use-constraint-editor.ts#L99)
 
 Create/edit/remove state machine shared by the module- and event-level
 constraint panels. The only difference between the two is the owner fields

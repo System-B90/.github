@@ -8,7 +8,7 @@
 
 > **normalizeStoredEvents**(`events`): [`DbEventDocument`](../../../api-shared/types/event/type-aliases/DbEventDocument.md)[]
 
-Defined in: [ui/src/api-server/calendar-store-request.ts:10](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/calendar-store-request.ts#L10)
+Defined in: [ui/src/api-server/calendar-store-request.ts:10](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/calendar-store-request.ts#L10)
 
 Coerce a request body's `events` field into stored event documents, fixing up
 date fields that crossed the wire as strings. Anything else becomes empty.

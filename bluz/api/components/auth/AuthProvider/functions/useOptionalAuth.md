@@ -8,7 +8,7 @@
 
 > **useOptionalAuth**(): [`AuthContextState`](../type-aliases/AuthContextState.md) \| `undefined`
 
-Defined in: [ui/src/components/auth/AuthProvider.tsx:239](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/auth/AuthProvider.tsx#L239)
+Defined in: [ui/src/components/auth/AuthProvider.tsx:260](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/auth/AuthProvider.tsx#L260)
 
 Like useAuth, but returns undefined outside an AuthProvider instead of throwing.
 

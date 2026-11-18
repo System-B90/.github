@@ -8,7 +8,7 @@
 
 > `const` **MAX\_EVENT\_RANGE\_DAYS**: `366` = `366`
 
-Defined in: [ui/src/settings.tsx:19](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/settings.tsx#L19)
+Defined in: [ui/src/settings.tsx:19](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/settings.tsx#L19)
 
 Widest date range a single event query may ask for. A leap year, so a
 legitimate "one full year" export is never rejected, while an unbounded

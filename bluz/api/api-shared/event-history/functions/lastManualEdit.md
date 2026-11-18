@@ -8,7 +8,7 @@
 
 > **lastManualEdit**\<`T`\>(`entries`): `T` \| `null`
 
-Defined in: [ui/src/api-shared/event-history.ts:105](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/event-history.ts#L105)
+Defined in: [ui/src/api-shared/event-history.ts:105](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/event-history.ts#L105)
 
 The most recent manual change of an event, used to explain a skipped reload
 in the conflicts dialog.

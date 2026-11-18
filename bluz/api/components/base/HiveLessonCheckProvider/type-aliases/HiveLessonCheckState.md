@@ -8,7 +8,7 @@
 
 > **HiveLessonCheckState** = `object`
 
-Defined in: [ui/src/components/base/HiveLessonCheckProvider.tsx:16](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/HiveLessonCheckProvider.tsx#L16)
+Defined in: [ui/src/components/base/HiveLessonCheckProvider.tsx:16](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/base/HiveLessonCheckProvider.tsx#L16)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/base/HiveLessonCheckProvider.tsx:16](https://gith
 
 > **checkEvent**: (`event`) => [`HiveLessonIssue`](../../../schedule/hive-lesson-check/type-aliases/HiveLessonIssue.md)[]
 
-Defined in: [ui/src/components/base/HiveLessonCheckProvider.tsx:18](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/base/HiveLessonCheckProvider.tsx#L18)
+Defined in: [ui/src/components/base/HiveLessonCheckProvider.tsx:18](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/base/HiveLessonCheckProvider.tsx#L18)
 
 What is wrong with an event's Hive lesson; empty when nothing is.
 

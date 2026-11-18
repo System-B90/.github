@@ -8,7 +8,7 @@
 
 > **purgeGoogleEvents**(`userId`, `scope`): `Promise`\<[`ApiGoogleCalendarPurgeResponse`](../../../../api-shared/types/google-calendar/type-aliases/ApiGoogleCalendarPurgeResponse.md)\>
 
-Defined in: [ui/src/api-server/google/google-calendar-service.ts:1164](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/google/google-calendar-service.ts#L1164)
+Defined in: [ui/src/api-server/google/google-calendar-service.ts:1164](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/google/google-calendar-service.ts#L1164)
 
 Removes Bluz-tagged events from the user's linked Google calendar — the
 orphaned ones, or all of them. Never touches events created by hand in

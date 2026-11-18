@@ -8,7 +8,7 @@
 
 > **ApiReservationsGetPayload** = `object`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:42](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/reservation.ts#L42)
+Defined in: [ui/src/api-shared/types/reservation.ts:42](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/reservation.ts#L42)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:42](https://github.com/Syste
 
 > `optional` **from?**: `string`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:45](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/reservation.ts#L45)
+Defined in: [ui/src/api-shared/types/reservation.ts:45](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/reservation.ts#L45)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:45](https://github.com/Syste
 
 > `optional` **roomId?**: [`RoomId`](../../room/type-aliases/RoomId.md)
 
-Defined in: [ui/src/api-shared/types/reservation.ts:43](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/reservation.ts#L43)
+Defined in: [ui/src/api-shared/types/reservation.ts:43](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/reservation.ts#L43)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [ui/src/api-shared/types/reservation.ts:43](https://github.com/Syste
 
 > `optional` **roomSource?**: [`RoomSource`](../../room/enumerations/RoomSource.md)
 
-Defined in: [ui/src/api-shared/types/reservation.ts:44](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/reservation.ts#L44)
+Defined in: [ui/src/api-shared/types/reservation.ts:44](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/reservation.ts#L44)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [ui/src/api-shared/types/reservation.ts:44](https://github.com/Syste
 
 > `optional` **to?**: `string`
 
-Defined in: [ui/src/api-shared/types/reservation.ts:46](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/reservation.ts#L46)
+Defined in: [ui/src/api-shared/types/reservation.ts:46](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/reservation.ts#L46)

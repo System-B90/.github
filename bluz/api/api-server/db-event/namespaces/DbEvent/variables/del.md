@@ -8,7 +8,7 @@
 
 > `const` **del**: (`eventId`, `options?`, `controller`, `iterationId?`, `origin`) => `Promise`\<`void`\> = `deleteDbEvent`
 
-Defined in: [ui/src/api-server/db-event.ts:810](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/db-event.ts#L810)
+Defined in: [ui/src/api-server/db-event.ts:810](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/db-event.ts#L810)
 
 Soft-deletes a calendar event by setting its `archived` flag rather than
 removing the document. Archived events are filtered out of every read path,

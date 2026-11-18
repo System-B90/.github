@@ -8,7 +8,7 @@
 
 > **useShabbatWindow**(`date`, `enabled`): [`ShabbatWindow`](../../../../../../api-shared/types/shabbat/type-aliases/ShabbatWindow.md) \| `null`
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts:21](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts#L21)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts:21](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/calendar/calendar/use-shabbat-window.ts#L21)
 
 The server-computed Shabbat window of the week holding `date` (#996), or
 null while off, loading, or failed — the tint is a nicety.

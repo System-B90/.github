@@ -8,7 +8,7 @@
 
 > `const` **FULLSCREEN\_EVENTS\_CLASS**: `"bluz-fullscreen-events"` = `"bluz-fullscreen-events"`
 
-Defined in: [ui/src/components/schedule/calendar/short-event.ts:20](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/short-event.ts#L20)
+Defined in: [ui/src/components/schedule/calendar/short-event.ts:20](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/calendar/short-event.ts#L20)
 
 Class on a calendar's container while it is fullscreen: event text may then
 run past the bottom of its tile instead of being cut (calendar.css).

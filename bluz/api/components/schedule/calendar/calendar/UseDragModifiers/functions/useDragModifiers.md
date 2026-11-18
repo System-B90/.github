@@ -8,7 +8,7 @@
 
 > **useDragModifiers**(`dragging`, `onChange`): () => [`DragModifiers`](../type-aliases/DragModifiers.md)
 
-Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:55](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L55)
+Defined in: [ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts:55](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/calendar/calendar/UseDragModifiers.ts#L55)
 
 Live modifier state for react-big-calendar drags, and the reason a modifier
 can be pressed mid-drag at all.

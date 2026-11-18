@@ -8,7 +8,7 @@
 
 > **collectBreakWindows**(`events`, `expandCourses?`): [`BreakWindow`](../type-aliases/BreakWindow.md)[]
 
-Defined in: [ui/src/api-shared/break-windows.ts:65](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/break-windows.ts#L65)
+Defined in: [ui/src/api-shared/break-windows.ts:65](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/break-windows.ts#L65)
 
 Extracts every break event in `events` as a scoped window. Pass the complete
 event set, not a filtered/visible subset — a break hidden by a filter still

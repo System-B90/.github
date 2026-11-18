@@ -8,7 +8,7 @@
 
 > **getSessionUser**(): `Promise`\<[`SessionUser`](../type-aliases/SessionUser.md) \| `null`\>
 
-Defined in: [ui/src/api-server/session-user.ts:168](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/session-user.ts#L168)
+Defined in: [ui/src/api-server/session-user.ts:168](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/session-user.ts#L168)
 
 Resolves the currently authenticated user from the NextAuth session (or a
 personal access token), or `null` when there is none. Use for attributing

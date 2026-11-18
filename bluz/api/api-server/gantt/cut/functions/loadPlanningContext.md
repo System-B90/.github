@@ -8,7 +8,7 @@
 
 > **loadPlanningContext**(`curriculum`, `iteration`, `controller`, `selection?`): `Promise`\<[`PlanningContext`](../type-aliases/PlanningContext.md)\>
 
-Defined in: [ui/src/api-server/gantt/cut.ts:1369](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/cut.ts#L1369)
+Defined in: [ui/src/api-server/gantt/cut.ts:1369](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/gantt/cut.ts#L1369)
 
 Loads a curriculum's gantt rows, the iteration's courses, the Hive maps and
 the week templates, and binds them into a planner. Each week uses the

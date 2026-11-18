@@ -8,7 +8,7 @@
 
 > **StudentMonitorRow** = `object`
 
-Defined in: [ui/src/api-shared/types/student-monitor.ts:4](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/student-monitor.ts#L4)
+Defined in: [ui/src/api-shared/types/student-monitor.ts:4](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/student-monitor.ts#L4)
 
 Staff-only: one student's day on the board, as the monitor shows it.
 
@@ -18,7 +18,7 @@ Staff-only: one student's day on the board, as the monitor shows it.
 
 > **ips**: `string`[]
 
-Defined in: [ui/src/api-shared/types/student-monitor.ts:11](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/student-monitor.ts#L11)
+Defined in: [ui/src/api-shared/types/student-monitor.ts:11](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/student-monitor.ts#L11)
 
 Every address the board reported from, plus those of recorded attempts.
 
@@ -28,7 +28,7 @@ Every address the board reported from, plus those of recorded attempts.
 
 > **name**: `null` \| `string`
 
-Defined in: [ui/src/api-shared/types/student-monitor.ts:7](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/student-monitor.ts#L7)
+Defined in: [ui/src/api-shared/types/student-monitor.ts:7](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/student-monitor.ts#L7)
 
 Hive display name; null when Hive could not name the id (or `anonymous`).
 
@@ -38,7 +38,7 @@ Hive display name; null when Hive could not name the id (or `anonymous`).
 
 > **seconds**: `number`
 
-Defined in: [ui/src/api-shared/types/student-monitor.ts:9](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/student-monitor.ts#L9)
+Defined in: [ui/src/api-shared/types/student-monitor.ts:9](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/student-monitor.ts#L9)
 
 Seconds the board was open and focused.
 
@@ -48,7 +48,7 @@ Seconds the board was open and focused.
 
 > **securityEventCount**: `number`
 
-Defined in: [ui/src/api-shared/types/student-monitor.ts:13](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/student-monitor.ts#L13)
+Defined in: [ui/src/api-shared/types/student-monitor.ts:13](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/student-monitor.ts#L13)
 
 True total of suspected attempts, including any dropped from `securityEvents`.
 
@@ -58,7 +58,7 @@ True total of suspected attempts, including any dropped from `securityEvents`.
 
 > **securityEvents**: `object`[]
 
-Defined in: [ui/src/api-shared/types/student-monitor.ts:15](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/student-monitor.ts#L15)
+Defined in: [ui/src/api-shared/types/student-monitor.ts:15](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/student-monitor.ts#L15)
 
 Most recent attempts, newest first.
 
@@ -86,4 +86,4 @@ ISO timestamp.
 
 > **userId**: `string`
 
-Defined in: [ui/src/api-shared/types/student-monitor.ts:5](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/types/student-monitor.ts#L5)
+Defined in: [ui/src/api-shared/types/student-monitor.ts:5](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/types/student-monitor.ts#L5)

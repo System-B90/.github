@@ -8,7 +8,7 @@
 
 > **deleteCurriculumModuleDayMapping**(`curriculumId`, `moduleId`, `eventId`, `dayId`): `Promise`\<`object`[]\>
 
-Defined in: [ui/src/api-server/gantt/db-mappings.ts:218](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/gantt/db-mappings.ts#L218)
+Defined in: [ui/src/api-server/gantt/db-mappings.ts:218](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/gantt/db-mappings.ts#L218)
 
 Deletes an existing curriculum day mapping.
 

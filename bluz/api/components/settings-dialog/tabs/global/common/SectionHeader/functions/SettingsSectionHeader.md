@@ -8,7 +8,7 @@
 
 > **SettingsSectionHeader**(`__namedParameters`): `Element`
 
-Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:23](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L23)
+Defined in: [ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx:23](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/settings-dialog/tabs/global/common/SectionHeader.tsx#L23)
 
 The one header of every settings card: icon badge, title, subtitle and an
 optional trailing control (docs/ux-guidelines.md §5.10). Cards used to

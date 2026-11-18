@@ -8,7 +8,7 @@
 
 > **PaCoverage** = `object`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:19](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L19)
+Defined in: [ui/src/api-shared/pa-coverage.ts:19](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L19)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/api-shared/pa-coverage.ts:19](https://github.com/System-B90/
 
 > **covered**: `number`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:23](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L23)
+Defined in: [ui/src/api-shared/pa-coverage.ts:23](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L23)
 
 How many of them can get a talk at once, at best.
 
@@ -26,7 +26,7 @@ How many of them can get a talk at once, at best.
 
 > **students**: `number`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:21](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L21)
+Defined in: [ui/src/api-shared/pa-coverage.ts:21](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L21)
 
 Students (mentees) the instructor has.
 
@@ -36,7 +36,7 @@ Students (mentees) the instructor has.
 
 > **uncoveredIds**: `number`[]
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:25](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L25)
+Defined in: [ui/src/api-shared/pa-coverage.ts:25](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L25)
 
 Students left without a slot in one best assignment.
 
@@ -46,6 +46,6 @@ Students left without a slot in one best assignment.
 
 > **windowMinutes**: `number`
 
-Defined in: [ui/src/api-shared/pa-coverage.ts:27](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/pa-coverage.ts#L27)
+Defined in: [ui/src/api-shared/pa-coverage.ts:27](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/pa-coverage.ts#L27)
 
 Free פ"א time with at least one of the students there, overlaps once.

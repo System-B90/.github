@@ -8,7 +8,7 @@
 
 > `const` **GANTT\_EVENT\_DEEP\_LINK\_PARAM**: `"ge"` = `"ge"`
 
-Defined in: [ui/src/components/gantt/state/context.ts:40](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/state/context.ts#L40)
+Defined in: [ui/src/components/gantt/state/context.ts:40](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/state/context.ts#L40)
 
 Query param carrying the gantt event id to jump to — both the deep link
 (e.g. from the schedule event dialog's "cut from" link, #576) and the

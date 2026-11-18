@@ -8,4 +8,4 @@
 
 > **ValidatedRuleId** = *typeof* [`VALIDATED_RULE_IDS`](../variables/VALIDATED_RULE_IDS.md)\[`number`\]
 
-Defined in: [ui/src/api-shared/schedule-validation/rule-ids.ts:50](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-shared/schedule-validation/rule-ids.ts#L50)
+Defined in: [ui/src/api-shared/schedule-validation/rule-ids.ts:50](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-shared/schedule-validation/rule-ids.ts#L50)

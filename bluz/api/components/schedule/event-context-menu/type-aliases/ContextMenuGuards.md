@@ -8,7 +8,7 @@
 
 > **ContextMenuGuards** = `object`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:92](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/event-context-menu/index.tsx#L92)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:92](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/event-context-menu/index.tsx#L92)
 
 What stands between a menu entry and a write.
 
@@ -18,7 +18,7 @@ What stands between a menu entry and a write.
 
 > **confirm**: (`message`, `options?`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:94](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/event-context-menu/index.tsx#L94)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:94](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/event-context-menu/index.tsx#L94)
 
 Guards the bulk deletes; resolves false when the user backs out.
 
@@ -44,7 +44,7 @@ Guards the bulk deletes; resolves false when the user backs out.
 
 > **confirmLockedEdit**: (`eventIds`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:99](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/event-context-menu/index.tsx#L99)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:99](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/event-context-menu/index.tsx#L99)
 
 Asks before editing events another user has open (#775); resolves true
 at once when none of them is locked.
@@ -65,7 +65,7 @@ at once when none of them is locked.
 
 > **readOnly**: `boolean`
 
-Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:104](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/event-context-menu/index.tsx#L104)
+Defined in: [ui/src/components/schedule/event-context-menu/index.tsx:104](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/event-context-menu/index.tsx#L104)
 
 A past iteration: the server rejects its writes, so only Copy (to paste
 into a writable iteration) and navigation stay enabled.

@@ -8,7 +8,7 @@
 
 > `const` **setMany**: (`events`, `options?`, `controller`, `iterationId?`, `origin`) => `Promise`\<[`DbEventDocument`](../../../../../api-shared/types/event/type-aliases/DbEventDocument.md)[]\> = `setDbEvents`
 
-Defined in: [ui/src/api-server/db-event.ts:812](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/db-event.ts#L812)
+Defined in: [ui/src/api-server/db-event.ts:812](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/db-event.ts#L812)
 
 Bulk [setDbEvent](set.md): one read, one bulkWrite, one history insertMany and
 one broadcast for the whole batch instead of N of each (#932).

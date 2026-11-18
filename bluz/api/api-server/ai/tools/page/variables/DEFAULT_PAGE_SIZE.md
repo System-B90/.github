@@ -8,6 +8,6 @@
 
 > `const` **DEFAULT\_PAGE\_SIZE**: `50` = `50`
 
-Defined in: [ui/src/api-server/ai/tools/page.ts:7](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/api-server/ai/tools/page.ts#L7)
+Defined in: [ui/src/api-server/ai/tools/page.ts:7](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/api-server/ai/tools/page.ts#L7)
 
 Default page size for list tools — each result is re-sent every turn.

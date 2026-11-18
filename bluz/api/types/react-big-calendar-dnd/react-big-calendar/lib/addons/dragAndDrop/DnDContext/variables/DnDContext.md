@@ -8,4 +8,4 @@
 
 > `const` **DnDContext**: `Context`\<`unknown`\>
 
-Defined in: [ui/src/types/react-big-calendar-dnd.d.ts:11](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/types/react-big-calendar-dnd.d.ts#L11)
+Defined in: [ui/src/types/react-big-calendar-dnd.d.ts:11](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/types/react-big-calendar-dnd.d.ts#L11)

@@ -8,7 +8,7 @@
 
 > **GanttRecurrenceExceptionState** = `object`
 
-Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:7](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/state/recurrence-exceptions/types.ts#L7)
+Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:7](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/state/recurrence-exceptions/types.ts#L7)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:7](htt
 
 > **exceptions**: `Record`\<`string`, [`GanttEventRecurrenceException`](../../../../../../api-shared/types/gantt/models/recurrence-exception/type-aliases/GanttEventRecurrenceException.md)\>
 
-Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:9](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/state/recurrence-exceptions/types.ts#L9)
+Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:9](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/state/recurrence-exceptions/types.ts#L9)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:9](htt
 
 > **isLoading**: `boolean`
 
-Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:10](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/gantt/state/recurrence-exceptions/types.ts#L10)
+Defined in: [ui/src/components/gantt/state/recurrence-exceptions/types.ts:10](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/gantt/state/recurrence-exceptions/types.ts#L10)

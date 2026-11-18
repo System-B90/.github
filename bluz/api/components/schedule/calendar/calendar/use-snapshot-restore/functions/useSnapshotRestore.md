@@ -8,7 +8,7 @@
 
 > **useSnapshotRestore**(): (`snapshotId`, `eventIds?`) => `Promise`\<`boolean`\>
 
-Defined in: [ui/src/components/schedule/calendar/calendar/use-snapshot-restore.ts:16](https://github.com/System-B90/Bluz/blob/9da30d3fe7bc9583b86fb81afc4a7774c580c249/ui/src/components/schedule/calendar/calendar/use-snapshot-restore.ts#L16)
+Defined in: [ui/src/components/schedule/calendar/calendar/use-snapshot-restore.ts:16](https://github.com/System-B90/Bluz/blob/04ebae9cb334a01c6e7a55f885993f021e83cd92/ui/src/components/schedule/calendar/calendar/use-snapshot-restore.ts#L16)
 
 Runs a server-side snapshot restore — all of it, or just `eventIds` — and
 returns to the live schedule to show the result. The calendar is refetched
