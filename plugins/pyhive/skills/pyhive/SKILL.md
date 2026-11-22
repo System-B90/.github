@@ -185,8 +185,8 @@ Full method reference and recipes: [sdk.md](sdk.md).
 - `get_student(name=…)` matches the full name, display name or username first,
   then the first name alone. It returns `None` when nothing matches and raises
   `RuntimeError` when several users share that first name.
-- Hive 8.2.0+ schedule is read-only (imported from ICS): creating/deleting
+- Hive 8.0.0+ schedule is read-only (imported from ICS): creating/deleting
   events and anything about event tags, taggings, attendees or instructors,
-  plus `get_powersync_token()`, only works on Hive <= 7.3.0. Filter 8.2.0
-  events with `get_schedule_events(start__lt=…, end__gt=…)`; 8.2.0 ignores
+  plus `get_powersync_token()`, only works on Hive <= 7.3.0. Filter 8.0.0
+  events with `get_schedule_events(start__lt=…, end__gt=…)`; 8.0.0 ignores
   the old `start__gte`/`end__lte` filters.

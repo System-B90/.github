@@ -809,10 +809,10 @@ and the command has no <code>--program</code>. Use <code>client.create_student(.
 <li><code>get_student(name=…)</code> matches the full name, display name or username first,
   then the first name alone. It returns <code>None</code> when nothing matches and raises
   <code>RuntimeError</code> when several users share that first name.</li>
-<li>Hive 8.2.0+ schedule is read-only (imported from ICS): creating/deleting
+<li>Hive 8.0.0+ schedule is read-only (imported from ICS): creating/deleting
   events and anything about event tags, taggings, attendees or instructors,
-  plus <code>get_powersync_token()</code>, only works on Hive &lt;= 7.3.0. Filter 8.2.0
-  events with <code>get_schedule_events(start__lt=…, end__gt=…)</code>; 8.2.0 ignores
+  plus <code>get_powersync_token()</code>, only works on Hive &lt;= 7.3.0. Filter 8.0.0
+  events with <code>get_schedule_events(start__lt=…, end__gt=…)</code>; 8.0.0 ignores
   the old <code>start__gte</code>/<code>end__lte</code> filters.</li>
 </ul>
 

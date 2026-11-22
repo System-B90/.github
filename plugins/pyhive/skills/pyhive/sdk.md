@@ -311,7 +311,7 @@ from datetime import datetime, timedelta, timezone
 start = datetime(2026, 11, 1, 8, 0, tzinfo=timezone.utc)
 end = start + timedelta(days=7)
 
-# Hive 8.2.0+: events overlapping the window
+# Hive 8.0.0+: events overlapping the window
 for event in client.get_schedule_events(start__lt=end, end__gt=start):
     print(event.start, event.title, event.room_name, event.subject_symbol)
 
@@ -323,10 +323,10 @@ client.create_event_instructor(event, instructor=1)      # a user teaches
 client.delete_schedule_event(event)
 ```
 
-From Hive 8.2.0 the schedule is read-only: Hive imports it from an ICS
+From Hive 8.0.0 the schedule is read-only: Hive imports it from an ICS
 calendar, so creating or deleting events, event tags, taggings, attendees,
 instructors and `get_powersync_token()` are refused (those endpoints exist
-only up to 7.3.0). 8.2.0 events carry their category, room, lesson and
+only up to 7.3.0). 8.0.0 events carry their category, room, lesson and
 subject display fields (`category_color`, `room_name`, `subject_symbol`, ...)
 and attendees with `program_id`; on older servers those are `None`. Students
 get an empty `title` and no lesson or staff-only details.
@@ -379,7 +379,7 @@ versions` lists them). An unlisted release raises `UnverifiedHiveVersionError`:
 upgrade PyHive, or pass `skip_version_check=True` to try anyway.
 
 ```python
-client.get_hive_version()     # e.g. "8.2.0"
+client.get_hive_version()     # e.g. "8.0.0"
 ```
 
 ## Method reference
@@ -511,7 +511,7 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 
 | Method                                                    | Does                                                          |
 | --------------------------------------------------------- | ------------------------------------------------------------- |
-| `get_schedule_events(start__lt=, end__gt=, start__gte=, end__lte=, lesson__id=)` | Events in a time window (8.2.0+ filters `start__lt`/`end__gt`, older `start__gte`/`end__lte`) |
+| `get_schedule_events(start__lt=, end__gt=, start__gte=, end__lte=, lesson__id=)` | Events in a time window (8.0.0+ filters `start__lt`/`end__gt`, older `start__gte`/`end__lte`) |
 | `get_schedule_event(event_id)`                            | One event                                                     |
 | `create_schedule_event(start, end, title=, category=, room=, lesson=, ...)` | Create an event (Hive <= 7.3.0)             |
 | `delete_schedule_event(event_id)`                         | Delete an event (Hive <= 7.3.0)                               |
