@@ -311,7 +311,7 @@ from datetime import datetime, timedelta, timezone
 start = datetime(2026, 11, 1, 8, 0, tzinfo=timezone.utc)
 end = start + timedelta(days=7)
 
-# Hive 8.0.0+: events overlapping the window
+# Hive 8: events overlapping the window
 for event in client.get_schedule_events(start__lt=end, end__gt=start):
     print(event.start, event.title, event.room_name, event.subject_symbol)
 
@@ -323,10 +323,10 @@ client.create_event_instructor(event, instructor=1)      # a user teaches
 client.delete_schedule_event(event)
 ```
 
-From Hive 8.0.0 the schedule is read-only: Hive imports it from an ICS
+From Hive 8 the schedule is read-only: Hive imports it from an ICS
 calendar, so creating or deleting events, event tags, taggings, attendees,
 instructors and `get_powersync_token()` are refused (those endpoints exist
-only up to 7.3.0). 8.0.0 events carry their category, room, lesson and
+only up to 7.3.0). Hive 8 events carry their category, room, lesson and
 subject display fields (`category_color`, `room_name`, `subject_symbol`, ...)
 and attendees with `program_id`; on older servers those are `None`. Students
 get an empty `title` and no lesson or staff-only details.
@@ -359,6 +359,8 @@ A staff account can open only chats. `create_help_request` with another
 | Personal access token revoked or regenerated  | `AccessTokenRejectedError` (a `RuntimeError`): make a new client with a new token |
 | Read-only personal access token used for a write | `AccessTokenReadOnlyError` (an `httpx.HTTPStatusError`, 403)        |
 | Server runs a Hive release PyHive has not verified | `UnverifiedHiveVersionError` (a `RuntimeError`)                          |
+| A version-specific client meets a server of an incompatible Hive version | `GenerationMismatchError` (a `RuntimeError`, `pyhive.core`) |
+| The package serving the server's Hive version is not installed | `BackendNotInstalledError` (a `LookupError`, `pyhive.core`): the message names the `pip install` |
 | PyHive refuses the arguments               | `ValueError` / `AssertionError` with the reason                                |
 
 ```python
@@ -378,8 +380,39 @@ it against the exact releases this PyHive is verified against (`pyhive
 versions` lists them). An unlisted release raises `UnverifiedHiveVersionError`:
 upgrade PyHive, or pass `skip_version_check=True` to try anyway.
 
+The client then adapts to that release's API: `HiveClient(...)` returns an
+instance of the client class built for the server's version (still a
+`HiveClient`, so `isinstance` checks keep working). With
+`skip_version_check=True` it uses the newest Hive API this PyHive installs.
+
+`pip install PyHiveLMS` installs the core (`pyhivelms-core`) and one small
+package per family of Hive releases that share an API (all of them, in 3.x;
+`pip install "PyHiveLMS[7.3.0]"` names one, and `pyhive backends` adds or
+removes them). A server whose family is not installed raises
+`BackendNotInstalledError` naming the `pip install` to run.
+`from pyhive.client import HiveClient`, `pyhive.types` and `pyhive.src.types`
+keep working as before; they resolve to the newest Hive's models.
+
 ```python
-client.get_hive_version()     # e.g. "8.0.0"
+client.hive_version                      # what the server reported, e.g. "7.3.0"
+
+# Pin one Hive release: typed models of exactly that release, and an error
+# instead of adapting if the server runs an incompatible one.
+from pyhive.hive.v7_3_0 import HiveClient, ScheduleEvent
+
+# Or pin from the auto client:
+client = HiveClient(username, password, url, hive_version="7.3.0")
+
+# A server PyHive has not verified: warn and use the newest Hive API.
+client = HiveClient(username, password, url, allow_unverified=True)
+```
+
+Methods a Hive release does not offer are absent from its client: on Hive 8,
+for example, the schedule is read-only, so `create_schedule_event` exists only
+on Hive 7.x clients.
+
+```python
+client.get_hive_version()     # e.g. "8.0.4"
 ```
 
 ## Method reference
@@ -402,6 +435,12 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 | `get(endpoint)`, `post(endpoint, data)`, `put(...)`, `patch(...)`, `delete(endpoint)` | Raw JSON requests to any Hive endpoint |
 | `post_empty(endpoint)`, `put_empty(endpoint)`             | Raw request with an empty body                               |
 | `post_action(endpoint, data)`, `patch_action(endpoint, data)` | Raw request to an endpoint that replies with no body     |
+| `get_json(endpoint)`                                      | Raw GET of any JSON value, scalars included                  |
+| `get_bytes(endpoint, params)`                             | Raw GET of a file body; `None` on 404                        |
+| `paginate(endpoint, params)`                              | Every raw item of a list endpoint, following pages           |
+| `map_http_error(exc)`                                     | The exception PyHive raises for a failed write               |
+| `close()`                                                 | Close the HTTP session (or use `with HiveClient(...)`)       |
+| `hive_version`                                            | The Hive version the server reported (property)              |
 
 ### Programs, subjects, modules, exercises
 
@@ -511,7 +550,7 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 
 | Method                                                    | Does                                                          |
 | --------------------------------------------------------- | ------------------------------------------------------------- |
-| `get_schedule_events(start__lt=, end__gt=, start__gte=, end__lte=, lesson__id=)` | Events in a time window (8.0.0+ filters `start__lt`/`end__gt`, older `start__gte`/`end__lte`) |
+| `get_schedule_events(start__lt=, end__gt=, start__gte=, end__lte=, lesson__id=)` | Events in a time window (Hive 8 filters `start__lt`/`end__gt`, older `start__gte`/`end__lte`) |
 | `get_schedule_event(event_id)`                            | One event                                                     |
 | `create_schedule_event(start, end, title=, category=, room=, lesson=, ...)` | Create an event (Hive <= 7.3.0)             |
 | `delete_schedule_event(event_id)`                         | Delete an event (Hive <= 7.3.0)                               |

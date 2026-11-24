@@ -745,9 +745,10 @@ above), so they need no credentials of their own.</p>
 <a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>token<span class="w"> </span><span class="o">[</span>--cache-token<span class="o">]</span><span class="w">         </span><span class="c1"># SSO in the browser → {"access_token", "refresh_token", "expires_at"}</span>
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>register<span class="w"> </span>NAME<span class="w"> </span>REDIRECT_URI<span class="w">    </span><span class="c1"># register an SSO client app → client_id/secret</span>
 <a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>version<span class="w"> </span><span class="p">|</span><span class="w"> </span>versions<span class="w">            </span><span class="c1"># PyHive version / Hive versions it supports</span>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>pyhive<span class="w"> </span>docs<span class="w"> </span><span class="o">[</span>show<span class="w"> </span>PAGE<span class="w"> </span><span class="p">|</span><span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>install-skill<span class="o">]</span>
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>pyhive<span class="w"> </span>examples<span class="w"> </span><span class="o">[</span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>show<span class="w"> </span>NAME<span class="w"> </span><span class="p">|</span><span class="w"> </span>run<span class="w"> </span>NAME<span class="w"> </span><span class="o">[</span>ARGS...<span class="o">]]</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>pyhive<span class="w"> </span>--json<span class="w"> </span>backends<span class="w"> </span>list<span class="w">                 </span><span class="c1"># installed Hive-version backends; add | remove VERSION... to change</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>pyhive<span class="w"> </span>docs<span class="w"> </span><span class="o">[</span>show<span class="w"> </span>PAGE<span class="w"> </span><span class="p">|</span><span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>install-skill<span class="o">]</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>pyhive<span class="w"> </span>examples<span class="w"> </span><span class="o">[</span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>show<span class="w"> </span>NAME<span class="w"> </span><span class="p">|</span><span class="w"> </span>run<span class="w"> </span>NAME<span class="w"> </span><span class="o">[</span>ARGS...<span class="o">]]</span>
 </code></pre></div>
 <p><code>list</code> and <code>get</code> return every field Hive sends, under <strong>Hive's wire names</strong>:
 related objects are plain ids under <code>program</code>, <code>checker</code>, <code>mentor</code>,
@@ -809,10 +810,10 @@ and the command has no <code>--program</code>. Use <code>client.create_student(.
 <li><code>get_student(name=…)</code> matches the full name, display name or username first,
   then the first name alone. It returns <code>None</code> when nothing matches and raises
   <code>RuntimeError</code> when several users share that first name.</li>
-<li>Hive 8.0.0+ schedule is read-only (imported from ICS): creating/deleting
+<li>Hive 8 schedule is read-only (imported from ICS): creating/deleting
   events and anything about event tags, taggings, attendees or instructors,
-  plus <code>get_powersync_token()</code>, only works on Hive &lt;= 7.3.0. Filter 8.0.0
-  events with <code>get_schedule_events(start__lt=…, end__gt=…)</code>; 8.0.0 ignores
+  plus <code>get_powersync_token()</code>, only works on Hive &lt;= 7.3.0. Filter Hive 8
+  events with <code>get_schedule_events(start__lt=…, end__gt=…)</code>; Hive 8 ignores
   the old <code>start__gte</code>/<code>end__lte</code> filters.</li>
 </ul>
 

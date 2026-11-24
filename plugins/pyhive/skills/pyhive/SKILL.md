@@ -112,6 +112,7 @@ pyhive auth login | logout                  # user runs login (prompts + browser
 pyhive --json token [--cache-token]         # SSO in the browser → {"access_token", "refresh_token", "expires_at"}
 pyhive --json register NAME REDIRECT_URI    # register an SSO client app → client_id/secret
 pyhive --json version | versions            # PyHive version / Hive versions it supports
+pyhive --json backends list                 # installed Hive-version backends; add | remove VERSION... to change
 
 pyhive docs [show PAGE | path | install-skill]
 pyhive examples [list | show NAME | run NAME [ARGS...]]
@@ -185,8 +186,8 @@ Full method reference and recipes: [sdk.md](sdk.md).
 - `get_student(name=…)` matches the full name, display name or username first,
   then the first name alone. It returns `None` when nothing matches and raises
   `RuntimeError` when several users share that first name.
-- Hive 8.0.0+ schedule is read-only (imported from ICS): creating/deleting
+- Hive 8 schedule is read-only (imported from ICS): creating/deleting
   events and anything about event tags, taggings, attendees or instructors,
-  plus `get_powersync_token()`, only works on Hive <= 7.3.0. Filter 8.0.0
-  events with `get_schedule_events(start__lt=…, end__gt=…)`; 8.0.0 ignores
+  plus `get_powersync_token()`, only works on Hive <= 7.3.0. Filter Hive 8
+  events with `get_schedule_events(start__lt=…, end__gt=…)`; Hive 8 ignores
   the old `start__gte`/`end__lte` filters.

@@ -1442,7 +1442,7 @@ to <code>None</code> keeps the queues the lesson assigned.</p>
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2026</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span>
 <a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">end</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
 <a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="c1"># Hive 8.0.0+: events overlapping the window</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="c1"># Hive 8: events overlapping the window</span>
 <a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">get_schedule_events</span><span class="p">(</span><span class="n">start__lt</span><span class="o">=</span><span class="n">end</span><span class="p">,</span> <span class="n">end__gt</span><span class="o">=</span><span class="n">start</span><span class="p">):</span>
 <a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">start</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">room_name</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">subject_symbol</span><span class="p">)</span>
 <a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
@@ -1453,10 +1453,10 @@ to <code>None</code> keeps the queues the lesson assigned.</p>
 <a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="n">client</span><span class="o">.</span><span class="n">create_event_instructor</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">instructor</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>      <span class="c1"># a user teaches</span>
 <a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="n">client</span><span class="o">.</span><span class="n">delete_schedule_event</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
 </code></pre></div>
-<p>From Hive 8.0.0 the schedule is read-only: Hive imports it from an ICS
+<p>From Hive 8 the schedule is read-only: Hive imports it from an ICS
 calendar, so creating or deleting events, event tags, taggings, attendees,
 instructors and <code>get_powersync_token()</code> are refused (those endpoints exist
-only up to 7.3.0). 8.0.0 events carry their category, room, lesson and
+only up to 7.3.0). Hive 8 events carry their category, room, lesson and
 subject display fields (<code>category_color</code>, <code>room_name</code>, <code>subject_symbol</code>, ...)
 and attendees with <code>program_id</code>; on older servers those are <code>None</code>. Students
 get an empty <code>title</code> and no lesson or staff-only details.</p>
@@ -1513,6 +1513,14 @@ their links by UUID instead of an integer. Methods that take one accept a
 <td><code>UnverifiedHiveVersionError</code> (a <code>RuntimeError</code>)</td>
 </tr>
 <tr>
+<td>A version-specific client meets a server of an incompatible Hive version</td>
+<td><code>GenerationMismatchError</code> (a <code>RuntimeError</code>, <code>pyhive.core</code>)</td>
+</tr>
+<tr>
+<td>The package serving the server's Hive version is not installed</td>
+<td><code>BackendNotInstalledError</code> (a <code>LookupError</code>, <code>pyhive.core</code>): the message names the <code>pip install</code></td>
+</tr>
+<tr>
 <td>PyHive refuses the arguments</td>
 <td><code>ValueError</code> / <code>AssertionError</code> with the reason</td>
 </tr>
@@ -1531,7 +1539,33 @@ their links by UUID instead of an integer. Methods that take one accept a
 it against the exact releases this PyHive is verified against (<code>pyhive
 versions</code> lists them). An unlisted release raises <code>UnverifiedHiveVersionError</code>:
 upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">client</span><span class="o">.</span><span class="n">get_hive_version</span><span class="p">()</span>     <span class="c1"># e.g. "8.0.0"</span>
+<p>The client then adapts to that release's API: <code>HiveClient(...)</code> returns an
+instance of the client class built for the server's version (still a
+<code>HiveClient</code>, so <code>isinstance</code> checks keep working). With
+<code>skip_version_check=True</code> it uses the newest Hive API this PyHive installs.</p>
+<p><code>pip install PyHiveLMS</code> installs the core (<code>pyhivelms-core</code>) and one small
+package per family of Hive releases that share an API (all of them, in 3.x;
+<code>pip install "PyHiveLMS[7.3.0]"</code> names one, and <code>pyhive backends</code> adds or
+removes them). A server whose family is not installed raises
+<code>BackendNotInstalledError</code> naming the <code>pip install</code> to run.
+<code>from pyhive.client import HiveClient</code>, <code>pyhive.types</code> and <code>pyhive.src.types</code>
+keep working as before; they resolve to the newest Hive's models.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">client</span><span class="o">.</span><span class="n">hive_version</span>                      <span class="c1"># what the server reported, e.g. "7.3.0"</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="c1"># Pin one Hive release: typed models of exactly that release, and an error</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1"># instead of adapting if the server runs an incompatible one.</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pyhive.hive.v7_3_0</span><span class="w"> </span><span class="kn">import</span> <span class="n">HiveClient</span><span class="p">,</span> <span class="n">ScheduleEvent</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="c1"># Or pin from the auto client:</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">HiveClient</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">hive_version</span><span class="o">=</span><span class="s2">"7.3.0"</span><span class="p">)</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="c1"># A server PyHive has not verified: warn and use the newest Hive API.</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="n">client</span> <span class="o">=</span> <span class="n">HiveClient</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">allow_unverified</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<p>Methods a Hive release does not offer are absent from its client: on Hive 8,
+for example, the schedule is read-only, so <code>create_schedule_event</code> exists only
+on Hive 7.x clients.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">client</span><span class="o">.</span><span class="n">get_hive_version</span><span class="p">()</span>     <span class="c1"># e.g. "8.0.4"</span>
 </code></pre></div>
 <h2 id="method-reference">Method reference<a class="headerlink" href="#method-reference" title="Permanent link">&para;</a></h2>
 <p>Every public <code>HiveClient</code> method. "Id or model" arguments accept either.</p>
@@ -1591,6 +1625,30 @@ upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
 <tr>
 <td><code>post_action(endpoint, data)</code>, <code>patch_action(endpoint, data)</code></td>
 <td>Raw request to an endpoint that replies with no body</td>
+</tr>
+<tr>
+<td><code>get_json(endpoint)</code></td>
+<td>Raw GET of any JSON value, scalars included</td>
+</tr>
+<tr>
+<td><code>get_bytes(endpoint, params)</code></td>
+<td>Raw GET of a file body; <code>None</code> on 404</td>
+</tr>
+<tr>
+<td><code>paginate(endpoint, params)</code></td>
+<td>Every raw item of a list endpoint, following pages</td>
+</tr>
+<tr>
+<td><code>map_http_error(exc)</code></td>
+<td>The exception PyHive raises for a failed write</td>
+</tr>
+<tr>
+<td><code>close()</code></td>
+<td>Close the HTTP session (or use <code>with HiveClient(...)</code>)</td>
+</tr>
+<tr>
+<td><code>hive_version</code></td>
+<td>The Hive version the server reported (property)</td>
 </tr>
 </tbody>
 </table>
@@ -1985,7 +2043,7 @@ upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
 <tbody>
 <tr>
 <td><code>get_schedule_events(start__lt=, end__gt=, start__gte=, end__lte=, lesson__id=)</code></td>
-<td>Events in a time window (8.0.0+ filters <code>start__lt</code>/<code>end__gt</code>, older <code>start__gte</code>/<code>end__lte</code>)</td>
+<td>Events in a time window (Hive 8 filters <code>start__lt</code>/<code>end__gt</code>, older <code>start__gte</code>/<code>end__lte</code>)</td>
 </tr>
 <tr>
 <td><code>get_schedule_event(event_id)</code></td>

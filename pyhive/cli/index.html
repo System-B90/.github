@@ -467,6 +467,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Versions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#which-hive-versions-are-installed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which Hive versions are installed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -713,6 +730,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Versions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#which-hive-versions-are-installed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which Hive versions are installed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1075,17 +1109,31 @@ with Hive. It needs an account allowed to manage SSO applications.</p>
 <p>PyHive checks the server's version when it connects and refuses a Hive
 release it has not been verified against. Upgrade PyHive when the server is
 newer; from the SDK, <code>skip_version_check=True</code> tries anyway.</p>
+<h3 id="which-hive-versions-are-installed">Which Hive versions are installed<a class="headerlink" href="#which-hive-versions-are-installed" title="Permanent link">&para;</a></h3>
+<p>Each family of Hive releases that share an API is served by its own small
+package (a <em>backend</em>). <code>pip install PyHiveLMS</code> installs all of them; these
+commands add or drop them one at a time:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>pyhive<span class="w"> </span>backends<span class="w"> </span>list<span class="w">                 </span><span class="c1"># every supported Hive version, installed or not</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>pyhive<span class="w"> </span>backends<span class="w"> </span>add<span class="w"> </span><span class="m">7</span>.3.0<span class="w">            </span><span class="c1"># install the package serving Hive 7.3.0</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>pyhive<span class="w"> </span>backends<span class="w"> </span>remove<span class="w"> </span><span class="m">6</span>.4.0<span class="w"> </span><span class="m">7</span>.3.0<span class="w">   </span><span class="c1"># uninstall those (never the newest Hive's)</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>pyhive<span class="w"> </span>backends<span class="w"> </span>pick<span class="w">                 </span><span class="c1"># interactive checklist (needs a terminal)</span>
+</code></pre></div>
+<p><code>add</code> and <code>remove</code> run <code>pip</code> (or <code>pipx inject</code> under pipx) once and never
+retry. Under <code>uv tool</code>, or a Python that forbids installs (PEP 668), they print
+the command to run instead. The first interactive run with a backend missing
+offers the checklist once; <code>PYHIVE_NO_BACKEND_PROMPT=1</code>, <code>--json</code> or a
+non-terminal skips it, and <code>pyhive backends pick</code> brings it back.</p>
 <h2 id="docs-and-examples">Docs and examples<a class="headerlink" href="#docs-and-examples" title="Permanent link">&para;</a></h2>
 <p>The documentation and example scripts ship inside the package.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>list<span class="w">                    </span><span class="c1"># list the pages (also plain `pyhive docs`)</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>show<span class="w"> </span>sdk<span class="w">                </span><span class="c1"># print a page as Markdown</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>path<span class="w">                    </span><span class="c1"># where the files are</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w">           </span><span class="c1"># install them as the Claude Code skill `pyhive`</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w"> </span>--project<span class="w"> </span>.<span class="w">   </span><span class="c1"># ...into ./.claude/skills instead of ~/.claude/skills</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>list<span class="w">                </span><span class="c1"># list the example scripts (also plain `pyhive examples`)</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>show<span class="w"> </span>program_tree<span class="w">   </span><span class="c1"># print one</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>run<span class="w"> </span>program_tree<span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="c1"># run one against the server</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>list<span class="w">                    </span><span class="c1"># list the pages (also plain `pyhive docs`)</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>show<span class="w"> </span>sdk<span class="w">                </span><span class="c1"># print a page as Markdown</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>path<span class="w">                    </span><span class="c1"># where the files are</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w">           </span><span class="c1"># install them as the Claude Code skill `pyhive`</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>pyhive<span class="w"> </span>docs<span class="w"> </span>install-skill<span class="w"> </span>--project<span class="w"> </span>.<span class="w">   </span><span class="c1"># ...into ./.claude/skills instead of ~/.claude/skills</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>list<span class="w">                </span><span class="c1"># list the example scripts (also plain `pyhive examples`)</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>show<span class="w"> </span>program_tree<span class="w">   </span><span class="c1"># print one</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>pyhive<span class="w"> </span>examples<span class="w"> </span>run<span class="w"> </span>program_tree<span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="c1"># run one against the server</span>
 </code></pre></div>
 <p><code>examples run</code> signs in exactly like every other command and passes any extra
 arguments to the example. Its output is the example's own text, not JSON.

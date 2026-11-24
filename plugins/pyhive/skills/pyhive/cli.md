@@ -280,6 +280,25 @@ PyHive checks the server's version when it connects and refuses a Hive
 release it has not been verified against. Upgrade PyHive when the server is
 newer; from the SDK, `skip_version_check=True` tries anyway.
 
+### Which Hive versions are installed
+
+Each family of Hive releases that share an API is served by its own small
+package (a *backend*). `pip install PyHiveLMS` installs all of them; these
+commands add or drop them one at a time:
+
+```bash
+pyhive backends list                 # every supported Hive version, installed or not
+pyhive backends add 7.3.0            # install the package serving Hive 7.3.0
+pyhive backends remove 6.4.0 7.3.0   # uninstall those (never the newest Hive's)
+pyhive backends pick                 # interactive checklist (needs a terminal)
+```
+
+`add` and `remove` run `pip` (or `pipx inject` under pipx) once and never
+retry. Under `uv tool`, or a Python that forbids installs (PEP 668), they print
+the command to run instead. The first interactive run with a backend missing
+offers the checklist once; `PYHIVE_NO_BACKEND_PROMPT=1`, `--json` or a
+non-terminal skips it, and `pyhive backends pick` brings it back.
+
 ## Docs and examples
 
 The documentation and example scripts ship inside the package.
