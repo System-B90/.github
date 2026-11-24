@@ -537,5 +537,19 @@ Every public `HiveClient` method. "Id or model" arguments accept either.
 | `create_sso_application(name, redirect_uris=, skip_authorization=)` | Register one                                        |
 | `update_sso_application(application, **fields)`, `delete_sso_application(application_id)` | Change / remove one          |
 
+### Access tokens and webhooks
+
+Hive refuses the access token endpoints to a client signed in with an access
+token: sign in with a password or SSO to create one. Webhooks are admins only.
+
+| Method                                                    | Does                                                          |
+| --------------------------------------------------------- | ------------------------------------------------------------- |
+| `get_access_tokens()`                                     | Access tokens (an admin's list includes everyone's)           |
+| `create_access_token(name, access=, expires_at=, user=)`  | Make one; `.token` is shown only on what this returns. `user=`: admins only |
+| `revoke_access_token(token)`                              | Revoke one (model or id)                                      |
+| `get_webhook_endpoints()`                                 | Outgoing webhooks                                             |
+| `create_webhook_endpoint(name, url, events, description=, active=, secret=)` | Make one; `.secret` (its signing key) is shown only on what this returns |
+| `delete_webhook_endpoint(endpoint)`                       | Remove one (model or id)                                      |
+
 Signatures and filters in full: `help(HiveClient.get_assignments)`, or
 `inspect.signature(...)` in a script.

@@ -680,6 +680,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#access-tokens-and-webhooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access tokens and webhooks
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1072,6 +1083,17 @@
     <span class="md-ellipsis">
       
         Tags and SSO applications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-tokens-and-webhooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access tokens and webhooks
       
     </span>
   </a>
@@ -2051,6 +2073,43 @@ upgrade PyHive, or pass <code>skip_version_check=True</code> to try anyway.</p>
 <tr>
 <td><code>update_sso_application(application, **fields)</code>, <code>delete_sso_application(application_id)</code></td>
 <td>Change / remove one</td>
+</tr>
+</tbody>
+</table>
+<h3 id="access-tokens-and-webhooks">Access tokens and webhooks<a class="headerlink" href="#access-tokens-and-webhooks" title="Permanent link">&para;</a></h3>
+<p>Hive refuses the access token endpoints to a client signed in with an access
+token: sign in with a password or SSO to create one. Webhooks are admins only.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>get_access_tokens()</code></td>
+<td>Access tokens (an admin's list includes everyone's)</td>
+</tr>
+<tr>
+<td><code>create_access_token(name, access=, expires_at=, user=)</code></td>
+<td>Make one; <code>.token</code> is shown only on what this returns. <code>user=</code>: admins only</td>
+</tr>
+<tr>
+<td><code>revoke_access_token(token)</code></td>
+<td>Revoke one (model or id)</td>
+</tr>
+<tr>
+<td><code>get_webhook_endpoints()</code></td>
+<td>Outgoing webhooks</td>
+</tr>
+<tr>
+<td><code>create_webhook_endpoint(name, url, events, description=, active=, secret=)</code></td>
+<td>Make one; <code>.secret</code> (its signing key) is shown only on what this returns</td>
+</tr>
+<tr>
+<td><code>delete_webhook_endpoint(endpoint)</code></td>
+<td>Remove one (model or id)</td>
 </tr>
 </tbody>
 </table>
